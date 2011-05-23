@@ -1,0 +1,191 @@
+<metal:page define-macro="master"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<metal:block define-slot="top_slot" />
+<html>
+  <head>
+    <title>MARS Data Model</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <metal:baseslot define-slot="base">
+      <base tal:attributes="href here/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+    </metal:baseslot>
+
+    <div tal:replace="structure provider:plone.htmlhead" />
+
+    <link tal:replace="structure provider:plone.htmlhead.links" />
+
+    <link rel="stylesheet" type="text/css"
+          href="++resource++datamodel.css" />
+  </head>
+  <body>
+    <h1><a name="top"/>Mars Collection Objects</h1>
+    <p class="documentDescription description">
+      Description of the data model used in the MARS framework
+    </p>
+    <ol id="collection-toc-links">
+      <li tal:repeat="klass view/model_as_dicts"
+          ><a href="#"
+              tal:attributes="href string:#class-${klass/klass/name};"
+              ><img src="#"
+                    tal:attributes="src klass/fti/content_icon"
+                   /><span tal:content="klass/fti/title"
+                   >Link to content name</span></a>
+      </li>
+    </ol>
+    <div tal:repeat="klass view/model_as_dicts" class="class-wrapper">
+      <h2><a href="#top" name="classname"
+             tal:attributes="name string:class-${klass/klass/name}"
+             ><img src="#"
+                   tal:attributes="src klass/fti/content_icon"
+                   /><span tal:content="klass/fti/title">Content Name</span></a></h2>
+      <div class="class-subsections">
+        <div id="attributes" class="class-subsection class-subsection-attributes"
+             tal:attributes="id string:${klass/klass/meta_type}-attributes">
+          <h3>Class attributes</h3>
+          <div class="subsection-content">
+            <dl>
+              <dt>meta_type</dt>
+              <dd tal:content="klass/klass/meta_type" />
+              <dt>portal_type</dt>
+              <dd tal:content="klass/klass/portal_type" />
+              <dt>archetype_name</dt>
+              <dd tal:content="klass/klass/archetype_name" />
+            </dl>
+          </div>
+        </div>
+        <div id="fti" class="class-subsection class-subsection-fti"
+             tal:attributes="id string:${klass/klass/meta_type}-fti">
+          <h3>Factory Type Information (FTI)</h3>
+          <div class="subsection-content">
+            <dl>
+              <dt>Title<dt>
+                <dd tal:content="klass/fti/title" />
+              <dt>Description</dt>
+                <dd tal:content="klass/fti/description" />
+              <tal:allowed_types
+                   define="is_filtered klass/fti/filter_content_types;
+                           has_allowed klass/fti/allowed_content_types;">
+              <dt>Container for<dt>
+                <dd>
+                  <ul tal:condition="python:is_filtered and has_allowed">
+                    <li tal:repeat="act klass/fti/allowed_content_types">
+                      <a href=""
+                        tal:attributes="href string:#class-${act/klassname}"
+                        tal:content="act/display" />
+                    </li>
+                  </ul>
+                  <span tal:condition="python:not is_filtered or not has_allowed">
+                    Any Content Type
+                  </span>
+                </dd>
+              </tal:allowed_types>
+              <dt>Contained in<dt>
+                <dd>
+                  <ul tal:condition="klass/contained_in">
+                    <li tal:repeat="cct klass/contained_in">
+                      <a href=""
+                        tal:attributes="href string:#class-${cct/klassname}"
+                        tal:content="cct/display" />
+                    </li>
+                  </ul>
+                  <span tal:condition="not:klass/contained_in">
+                    Any Container Type
+                  </span>
+                </dd>
+            </dl>
+          </div>
+        </div>
+        <div id="schema" class="class-subsection class-subsection-schema"
+             tal:attributes="id string:${klass/klass/meta_type}-schema">
+          <h3>Schema</h3>
+          <div class="subsection-content">
+            <h4>Schemata</h4>
+            <ul>
+              <li tal:repeat="schemata klass/schematas"
+                  tal:content="schemata/name" />
+            </ul>
+            <h4>Detailed Schema</h4>
+<!--
+<dl class="enableFormTabbing">
+  <dt id="fieldsetlegend-[unique-id]">Title</dt>
+  <dd id="fieldset-[same-id-as-above]">
+  </dd>
+</dl>
+-->
+
+            <dl tal:repeat="schemata klass/schematas"
+                class="enableFormTabbing">
+              <dt tal:content="schemata/name"
+                  tal:attributes="id string:fieldsetlegend-${klass/klass/name}-${schemata/name}" />
+              <dd tal:attributes="id string:fieldset-${klass/klass/name}-${schemata/name}">
+                <dl>
+                  <tal:field repeat="field schemata/fields">
+                  <dt><span tal:content="field/name"
+                            class="field-name">Field Name</span>
+                    (<span tal:replace="field/type"/>)
+                    <tal:req condition="field/required">[required]</tal:req>
+                    <tal:multi condition="field/multivalued">[multivalued]</tal:multi>
+                    <tal:search condition="field/searchable">[searchable]</tal:search>
+                    <tal:meta condition="field/isMetadata">[metadata]</tal:meta>
+                    </dt>
+                  <dd>
+                    <dl>
+                      <dt>Accessor</dt>
+                      <dd tal:content="field/accessor"/>
+                      <dt>Edit Accessor</dt>
+                      <dd tal:content="field/edit_accessor"/>
+                      <dt>Mutator</dt>
+                      <dd tal:content="field/mutator"/>
+                      <tal:vocab condition="field/vocabulary">
+                        <dt>Vocabulary</dt>
+                        <dd tal:content="field/vocabulary"/>
+                        <tal:enforce condition="field/enforceVocabulary">
+                          <dt>Enforce vocabulary</dt>
+                          <dd tal:content="field/enforceVocabulary"/>
+                        </tal:enforce>
+                      </tal:vocab>
+                      <tal:default condition="field/default">
+                        <dt>Default</dt>
+                        <dd tal:content="field/default"/>
+                      </tal:default>
+                      <tal:defaultmethod condition="field/default_method">
+                        <dt>Default method</dt>
+                        <dd tal:content="field/default_method"/>
+                      </tal:defaultmethod>
+                      <tal:mode condition="python:field['mode']!='rw'">
+                        <dt>Mode</dt>
+                        <dd tal:content="field/mode"/>
+                      </tal:mode>
+                      <tal:readperm
+                           condition="python:field['read_permission']!='View'">
+                        <dt>Read permission</dt>
+                        <dd tal:content="field/read_permission"/>
+                      </tal:readperm>
+                      <tal:writeperm
+                           condition="python:field['write_permission']!='Modify portal content'">
+                        <dt>Write permission</dt>
+                        <dd tal:content="field/write_permission"/>
+                      </tal:writeperm>
+                      <dt>Storage</dt>
+                      <dd tal:content="field/storage"/>
+                    </dl>
+  <!--
+                          'widget': {
+                              'name': field.widget.getName(),
+                              'label': field.widget.label,
+                              'description': field.widget.description,
+
+  -->
+                  </dd>
+                  </tal:field>
+                </dl>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
+</metal:page>

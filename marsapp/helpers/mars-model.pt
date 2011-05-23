@@ -1,0 +1,187 @@
+<metal:page define-macro="master"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<metal:block define-slot="top_slot" />
+<html>
+
+  <tal:cache tal:define="charset string:utf-8;
+                         lang string:en;">
+    <metal:cache use-macro="here/global_cache_settings/macros/cacheheaders">
+      Get the global cache headers located in global_cache_settings.
+    </metal:cache>
+  </tal:cache>
+
+  <head>
+    <title>MARS Data Model</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <div tal:replace="structure provider:plone.htmlhead" />
+    <link tal:replace="structure provider:plone.htmlhead.links" />
+
+    <link rel="stylesheet" type="text/css"
+          href="++resource++datamodel.css" />
+
+  </head>
+  <body>
+    <h1>Mars Collection Objects</h1>
+    <p class="documentDescription description">
+      Description of the data model used in the MARS framework
+    </p>
+
+    <dl class="collapsible collapsedOnLoad klassWrapper"
+        tal:repeat="klass view/model_as_dicts"
+        tal:attributes="id string:klass-${klass/klass/name}">
+      <dt class="collapsibleHeader"
+          ><img src="#"
+                tal:attributes="src klass/fti/content_icon"
+                /><span tal:content="klass/fti/title"
+                        >Content Name</span></dt>
+      <dd class="collapsibleContent">
+        <dl>
+          <dt>Name</dt>
+            <dd tal:content="klass/fti/title" />
+          <dt>Description</dt>
+            <dd tal:content="klass/fti/description" />
+          <dt>meta_type</dt>
+            <dd tal:content="klass/klass/meta_type" />
+          <dt>portal_type</dt>
+            <dd tal:content="klass/klass/portal_type" />
+          <dt>archetype_name</dt>
+            <dd tal:content="klass/klass/archetype_name" />
+        </dl>
+
+        <dl class="collapsible collapsedOnLoad klassSectionWrapper"
+            tal:attributes="id string:containment-${klass/klass/name}">
+          <dt class="collapsibleHeader">
+            Containment
+          </dt>
+          <dd class="collapsibleContent">
+            <dl>
+              <tal:allowed_types
+                   define="is_filtered klass/fti/filter_content_types;
+                           has_allowed klass/fti/allowed_content_types;">
+              <dt>Container for<dt>
+                <dd>
+                  <ul tal:condition="python:is_filtered and has_allowed">
+                    <li tal:repeat="act klass/fti/allowed_content_types"
+                        tal:content="act/display" />
+                  </ul>
+                  <span tal:condition="python:not is_filtered or not has_allowed">
+                    Any Content Type
+                  </span>
+                </dd>
+              </tal:allowed_types>
+              <dt>Contained in<dt>
+                <dd>
+                  <ul tal:condition="klass/contained_in">
+                    <li tal:repeat="cct klass/contained_in"
+                        tal:content="cct/display" />
+                  </ul>
+                  <span tal:condition="not:klass/contained_in">
+                    Any Container Type
+                  </span>
+                </dd>
+            </dl>
+          </dd>
+        </dl>
+
+        <dl class="collapsible collapsedOnLoad klassSectionWrapper"
+            tal:attributes="id string:schema-${klass/klass/name}">
+          <dt class="collapsibleHeader">
+            Schema
+          </dt>
+          <dd class="collapsibleContent">
+            <dl class="enableFormTabbing">
+              <tal:schemata repeat="schemata klass/schematas">
+              <dt id="fieldsetlegend"
+                  tal:attributes="id string:fieldsetlegend-${klass/klass/name}-${schemata/name}"
+                  tal:content="schemata/name"
+                  >Schemata name</dt>
+              <dd id="fieldset"
+                  tal:attributes="id string:fieldset-${klass/klass/name}-${schemata/name}">
+                <dl>
+                  <tal:field repeat="field schemata/fields">
+                  <dt><span tal:content="field/name"
+                            class="field-name">Field Name</span>
+                    (<span tal:replace="field/type"/>)
+                    <tal:req condition="field/required">[required]</tal:req>
+                    <tal:multi condition="field/multivalued">[multivalued]</tal:multi>
+                    <tal:search condition="field/searchable">[searchable]</tal:search>
+                    <tal:meta condition="field/isMetadata">[metadata]</tal:meta>
+                  </dt>
+                  <dd>
+                    <dl>
+                      <dt>Label</dt>
+                        <dd tal:content="field/widget/label" />
+                      <tal:field-description condition="field/widget/description">
+                      <dt>Description</dt>
+                        <dd tal:content="field/widget/description" />
+                      </tal:field-description>
+                      <dt>Visible</dt>
+                        <dd tal:content="field/widget/visible" />
+                    </dl>
+                    <dl class="collapsible collapsedOnLoad">
+                      <dt class="collapsibleHeader">
+                        Details
+                      </dt>
+                      <dd class="collapsibleContent">
+
+                        <dl>
+                          <dt>Accessor</dt>
+                          <dd tal:content="field/accessor"/>
+                          <dt>Edit Accessor</dt>
+                          <dd tal:content="field/edit_accessor"/>
+                          <dt>Mutator</dt>
+                          <dd tal:content="field/mutator"/>
+                          <tal:vocab condition="field/vocabulary">
+                            <dt>Vocabulary</dt>
+                            <dd tal:content="field/vocabulary"/>
+                            <tal:enforce condition="field/enforceVocabulary">
+                              <dt>Enforce vocabulary</dt>
+                              <dd tal:content="field/enforceVocabulary"/>
+                            </tal:enforce>
+                          </tal:vocab>
+                          <tal:default condition="field/default">
+                            <dt>Default</dt>
+                            <dd tal:content="field/default"/>
+                          </tal:default>
+                          <tal:defaultmethod condition="field/default_method">
+                            <dt>Default method</dt>
+                            <dd tal:content="field/default_method"/>
+                          </tal:defaultmethod>
+                          <tal:mode condition="python:field['mode']!='rw'">
+                            <dt>Mode</dt>
+                            <dd tal:content="field/mode"/>
+                          </tal:mode>
+                          <tal:readperm
+                               condition="python:field['read_permission']!='View'">
+                            <dt>Read permission</dt>
+                            <dd tal:content="field/read_permission"/>
+                          </tal:readperm>
+                          <tal:writeperm
+                              condition="python:field['write_permission']!='Modify portal content'">
+                            <dt>Write permission</dt>
+                            <dd tal:content="field/write_permission"/>
+                          </tal:writeperm>
+                          <dt>Storage</dt>
+                          <dd tal:content="field/storage"/>
+                          <tal:marscats condition="field/category_path">
+                          <dt>Category Path</dt>
+                          <dd tal:content="field/category_path" />
+                          </tal:marscats>
+                        </dl>
+                      </dd> <!-- .collapsibleContent -->
+                     </dd>
+                  </tal:field>
+                </dl>
+              </dd>
+              </tal:schemata>
+            </dl> <!-- .enableFormTabbing -->
+          </dd>
+        </dl>
+        <span class="visual-break" />
+
+      </dd>
+    </dl>
+  </body>
+</html>
+</metal:page>

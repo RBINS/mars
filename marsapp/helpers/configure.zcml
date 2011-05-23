@@ -1,0 +1,35 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="marsapp.helpers">
+
+    <five:registerPackage package="." />
+
+  <browser:page
+      name="mars-model"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".model_description.MarsModelView"
+      template="mars-model.pt"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="raw-model"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".model_description.CompleteModelView"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="test-stuff"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".test_server_script.StuffTester"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:resource
+      name="datamodel.css" file="datamodel.css"
+      />
+
+</configure>

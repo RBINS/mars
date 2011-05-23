@@ -1,9 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-setup(name='marsapp.migration',
+version = '0.1'
+
+setup(name='marsapp.helpers',
       version=version,
-      description="Package for migrating old mars items to the new system",
+      description="",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
@@ -14,10 +16,10 @@ setup(name='marsapp.migration',
           "Framework :: Zope3", 
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='plone mars migration zope  archaeology',
-      author='David Convent',
-      author_email='david.convent@naturalsciences.be',
-      url='http://svn.naturalsciences.be/projects/mars',
+      keywords='plone mars migration zope archaeology',
+      author='Mathieu Le Marec - Pasquet',
+      author_email='kiorky@cryptelium.net',
+      url='http://naturalsciences.be',
       license='GPL',
       namespace_packages=[                'mars', 'mars.testing', 'marsapp'],  
       packages=find_packages('src'),
@@ -29,7 +31,10 @@ setup(name='marsapp.migration',
           'collective.testcaselayer',
           'demjson',
           #'plone.reload',
+          'ordereddict',
           'Products.CMFBibliographyAT',
+          'Products.contentmigration',
+          'Products.csvreplicata',
           'setuptools',
           'z3c.autoinclude',
           'zope.component',
