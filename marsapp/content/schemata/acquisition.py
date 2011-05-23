@@ -54,6 +54,7 @@ AcquisitionSchema = Schema((
             label_msgid='label_acquis_acquisition',
             description='Select the protocol used to acquire this sound',
             description_msgid='help_acquis_acquisition',
+            startup_directory='/marscategories/acquisition-protocol',
             domain='mars',
             ),
         schemata='acquisition',
