@@ -1,0 +1,28 @@
+
+
+This doctest aims to test the "testing infrastructure" as a integration test for the collective.generic.testing template.
+You can either keep or delete it if you think it is not relevant for your needs.
+
+
+
+Default options flags
+
+    >>> print 'foo'
+    f...
+
+
+globals
+
+    >>> pprint('foo')
+    'foo'
+
+
+Utilities
+
+    >>> get_interfaces
+    <function get_interfaces at ...>
+
+
+
+
+

@@ -21,12 +21,11 @@ classifiers = [
     "Topic :: Software Development",]
 
 
-name = 'mars.tma'
 setup(
     name=name,
-    namespace_packages=[                'mars', 'mars.tma',],  
+    namespace_packages=[                'mars', 'mars.testing',],  
     version=version,
-    description='Project cadredeville tma product',
+    description='Project cadredeville testing product',
     long_description=long_description,
     classifiers=classifiers,
     keywords='',
@@ -38,11 +37,14 @@ setup(
     package_dir = {'': 'src'},
     include_package_data=True,
     install_requires=[
+        # -*- Extra requirements: -*-
         'collective.testcaselayer',
         'demjson',
-        # -*- Extra requirements: -*-
         'setuptools',
         'z3c.autoinclude',
+        'zope.component',
+        'zope.interface',
+        'zope.testing',
     ],
     entry_points = {
         'z3c.autoinclude.plugin': [
@@ -50,5 +52,6 @@ setup(
         ], 
 
     },
+    extras_require={'test': ['IPython', 'zope.testing', 'mocker']},
 )
 # vim:set ft=python:
