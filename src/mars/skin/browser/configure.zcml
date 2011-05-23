@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="mars.skin">
+
+  <!-- ' mars.skin' Zope 3 browser layer -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="mars.skin"
+    />
+
+  <!-- Viewlets registration -->
+  <!-- Zope 3 browser resources -->
+
+  <!-- Resource directory for images -->
+  <browser:resourceDirectory
+      name="mars.skin.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+    />
+
+  <!-- Resource directory for stylesheets -->
+  <browser:resourceDirectory
+      name="mars.skin.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+    />
+  <!-- vim:set ft=xml: -->
+</configure>

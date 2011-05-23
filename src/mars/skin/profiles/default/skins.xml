@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+    default_skin="mars.skin">
+ <object name="mars_skin_custom_images"
+    meta_type="Filesystem Directory View"
+    directory="mars.skin:skins/mars_skin_custom_images"/>
+ <object name="mars_skin_custom_templates"
+    meta_type="Filesystem Directory View"
+    directory="mars.skin:skins/mars_skin_custom_templates"/>
+ <object name="mars_skin_styles"
+    meta_type="Filesystem Directory View"
+    directory="mars.skin:skins/mars_skin_styles"/>
+<skin-path name="mars.skin" based-on="Sunburst Theme">
+  <layer name="mars_skin_custom_images"
+     insert-after="custom"/>
+  <layer name="mars_skin_custom_templates"
+     insert-after="mars_skin_custom_images"/>
+  <layer name="mars_skin_styles"
+     insert-after="mars_skin_custom_templates"/>
+ </skin-path>
+</object>
