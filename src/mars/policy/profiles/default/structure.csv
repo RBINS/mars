@@ -1,0 +1,10 @@
+"/plone";20090713122925;;;
+"parent";"id";"type";"title";"description"
+"Parent folder";"Identifier";"Content type";"Title";"label_description"
+;"territoire";"Folder";"TERRITOIRE";
+"territoire";"portrait-type";"Folder";"Portrait type";
+;"economie";"Folder";"ECONOMIE";
+"economie";"contexte";"Folder";"Contexte";
+;"competences";"Folder";"COMPETENCES";
+"competences";"etudier";"Folder";"Etudier";
+"competences";"travailler";"Folder";"Travailler";

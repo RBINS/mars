@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<node>
+ <property name="description">A property without type="string"</property>
+ <property name="default_page" type="string">A property with 'string' attribute</property>
+ <property name="selectable_views" type="lines">
+  <element value="folder_listing"/>
+  <element value="news_listing"/>
+ </property>
+ <property name="validate_email" type="boolean">True</property>
+ <property name="enable_permalink" type="boolean">False</property>
+ <property name="empty"></property>
+ <property name="count" type="integer">12</property>
+ <property name="float" type="float">0.0</property>
+</node>

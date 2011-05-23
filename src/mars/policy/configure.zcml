@@ -1,0 +1,75 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="mars.policy">
+  <include package="Products.Five" file="configure.zcml"/>
+  <!-- Load the ZCML configuration for the mars.policy package.-->
+  <!--with_ploneproduct_fivegrok -->
+  <!--with_ploneproduct_cz3cformgrok -->
+  <!--with_ploneproduct_pz3cform -->
+  <include package="five.grok" file="configure.zcml"/>
+  <!--with_ploneproduct_ploneappblob -->
+  <include package="plone.app.blob" file="configure.zcml"/>
+  <!--with_ploneproduct_cz3cformgrok -->
+  <!--with_ploneproduct_pz3cform -->
+  <include package="plone.app.z3cform" file="configure.zcml"/>
+  <!--with_ploneproduct_dexterity -->
+  <include package="plone.app.dexterity" file="configure.zcml"/>
+  <!--with_ploneproduct_dexterity -->
+  <include package="plone.app.dexterity" file="meta.zcml"/>
+  <!--with_ploneproduct_csvreplica -->
+  <!--<include package="Products.csvreplicata" file="configure.zcml"/>-->
+  <!--with_ploneproduct_contentwellportlet -->
+  <include package="Products.ContentWellPortlets" file="configure.zcml"/>
+  <!--with_ploneproduct_plominotinymce -->
+  <!--with_ploneproduct_tinymce -->
+  <include package="Products.TinyMCE" file="configure.zcml"/>
+  <!--with_ploneproduct_pz3cform -->
+  <include package="plone.directives.form" file="configure.zcml"/>
+  <!--with_ploneproduct_pz3cform -->
+  <include package="plone.directives.form" file="meta.zcml"/>
+  <!--with_ploneproduct_cz3cformgrok -->
+  <!--with_ploneproduct_pz3cform -->
+  <include package="plone.z3cform" file="configure.zcml"/>
+  <five:registerPackage package="." initialize=".policy.initialize" />
+  <include package="z3c.autoinclude" file="meta.zcml" />
+  <!-- Include direct package dependencies -->
+  <include package="mars.skin" />
+  <include package="mars.tma" />
+<!--uncomment to register at content types with fss
+  <include package="iw.fss" file="atct.zcml" />-->
+  <genericsetup:registerProfile
+      name="qi"
+      title="mars Policy QI"
+      directory="profiles/qi"
+      description="Turn a Plone site into the mars QIINFO site."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+  <genericsetup:registerProfile
+      name="default"
+      title="mars Policy"
+      directory="profiles/default"
+      description="Turn a Plone site into the mars site."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+  <adapter factory=".dashboard.MyPortalDefaultDashboard"/>
+  <utility factory=".app_config.HiddenProducts" name="mars.hiddenproducts"/>
+  <utility factory=".app_config.HiddenProfiles" name="mars.hiddenprofiles"/>
+  <genericsetup:importStep
+      name="mars_policy setupVarious"
+      title="various setup for policy Policy"
+      description="description"
+      handler="mars.policy.setuphandlers.setupVarious">
+    <depends name="content"/>
+  </genericsetup:importStep>
+  <genericsetup:importStep
+      name="mars_policy setupQi"
+      title="Quick Installer  setup for policy Policy"
+      description="description"
+      handler="mars.policy.setuphandlers.setupQi">
+    <depends name="content"/>
+  </genericsetup:importStep> 
+  <include package=".migrations"/>
+<!-- vim:set ft=xml: -->
+</configure>

@@ -1,0 +1,13 @@
+"members";;;;;;;;
+"id";"fullname";"password";"roles";"description";"email";"location";"home_page";"language"
+"member11";"Membre 11";"corpus";"Member, Reviewer";"Membre 11 est Reviewer";"jpc@makinacorpus.com";;;
+"member12";"Membre 12";"corpus";"Member";"Descriptif Membre 12";"jpc@makinacorpus.com";;;
+"member13";"Membre 13";"corpus";"Member";"Descriptif Membre 13";"jpc@makinacorpus.com";;;
+"member21";"Membre 21";"corpus";"Member, Reviewer";"Membre 21 est Reviewer";"jpc@makinacorpus.com";;;
+"member22";"Membre 22";"corpus";"Member";"Descriptif Membre 22";"jpc@makinacorpus.com";;;
+"member23";"Membre 23";"corpus";"Member";"Descriptif Membre 23";"jpc@makinacorpus.com";;;
+"administrateur";"Administrateur du Portail";"corpus";"Member, Reviewer, Manager";;"jpc@makinacorpus.com";;;
+"groups";;;;;;;;
+"name";"title";"role";"description";"email";"members";;;
+"group1";"Groupe 1";"Manager";"Description groupe1";"gr1@makina-corpus.com";"member11, member12, member13";;;
+"group2";"Groupe 2";"Member, Reviewer";"Description groupe2";"gr2@makina-corpus.com";"member21, member22, member23";;;

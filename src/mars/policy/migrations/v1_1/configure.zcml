@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="mars.policy">
+  <genericsetup:registerProfile
+      name="1.0-1.1"
+      title="mars.policy migration 1.0 to 1.1"
+      description=""
+      directory="profile"
+      for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+  <genericsetup:upgradeSteps
+      profile="mars.policy.migrations:default"
+      source="1.0"
+      destination="1.1">
+    <genericsetup:upgradeStep
+        title="mars.policy.migrations 1.0 - 1.1"
+        description=""
+        handler=".upgrade"
+      />
+  </genericsetup:upgradeSteps>
+<!-- vim:set ft=xml: -->
+</configure>
