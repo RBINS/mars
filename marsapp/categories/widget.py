@@ -11,6 +11,7 @@ from Products.ATReferenceBrowserWidget.ATReferenceBrowserWidget import \
 from Products.Archetypes.Registry import registerWidget
 
 class MarscatWidget(ReferenceBrowserWidget):
+    show_fullpath = True
     _properties = ReferenceBrowserWidget._properties.copy()
     _properties.update({
         'macro': "marscatsbrowser",
