@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<import-steps>
+ <import-step id="mars_csvreplicata" version="20081023-01"
+              handler="marsapp.csvreplicata.setuphandlers.importVarious"
+              title="Installs mars handlers for csvreplicata">
+  <!-- <dependency step="plone_various"/> -->
+    MARS specific settings
+ </import-step>
+</import-steps>
