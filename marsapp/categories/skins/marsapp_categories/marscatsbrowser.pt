@@ -1,0 +1,132 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone">
+
+  <head><title></title></head>
+
+  <body>
+
+    <!-- Mars Categories Widgets -->
+    <metal:view_macro define-macro="view">
+        <tal:define define="cats accessor;
+                            show_path field/widget/show_path|nothing;"
+                    condition="cats">
+
+            <tal:block tal:condition="not:field/multiValued">
+                <span tal:content="structure accessor">category</span>
+            </tal:block>
+            <tal:block tal:condition="field/multiValued">
+                <metal:item tal:repeat="item accessor">
+                  <span tal:content="item"/><br />
+                </metal:item>
+            </tal:block>
+        </tal:define>
+    </metal:view_macro>
+
+    <metal:reference_edit define-macro="reference_edit"
+             tal:define="multiVal           python:test(field.multiValued, 1, 0);
+                         show_path          field/widget/show_path|nothing;
+                         image_portal_types widget/image_portal_types;
+                         image_method       widget/image_method|string:;
+                         portal_path        python:'/'.join(context.portal_url.getPortalObject().getPhysicalPath());
+                         fieldName          fieldName;
+                         fieldRealName      field/getName;
+                         uids               python:same_type(value, []) and value or [value];
+                         ">
+
+          <input type="hidden"
+                 value=""
+                 tal:condition="python:not field.required and multiVal"
+                 tal:attributes="name string:$fieldName:default:list"
+                 />
+
+          <tal:single tal:condition="not: multiVal" >
+              <tal:value tal:condition="value">
+                  <tal:block tal:define="obj python:here.reference_catalog.lookupObject(value);
+                                         obj_path python: '/'.join(obj.getPhysicalPath())" >
+                      <input size=""
+                             type="text"
+                             value=""
+                             id=""
+                             tal:attributes="value obj/title_or_id;
+                                             size python:test(widget.size=='', 30, widget.size);
+                                             id string:${fieldName}_label" readonly="readonly" />
+
+                      <img tal:condition="python: obj.portal_type in image_portal_types"
+                           tal:attributes="src string:${obj/absolute_url}/$image_method" />
+
+                      <tal:if condition="show_path"
+                              i18n:translate="label_directory">
+                        (Directory: <span i18n:name="directory" tal:replace="python: obj_path.replace(portal_path + '/', '')">directory</span>)
+                      </tal:if>
+
+                  </tal:block>
+              </tal:value>
+              <input id=""
+                     size="50"
+                     type="text"
+                     value="No reference set. Click the browse button to select."
+                     readonly="readonly"
+                     i18n:attributes="value label_no_reference_set;"
+                     tal:condition="not:  value"
+                     tal:attributes="id string:${fieldName}_label"/>
+              <input type="hidden"
+                     value=""
+                     name=""
+                     tal:attributes="name fieldName;
+                                     value value;
+                                     id string:${fieldName}" />
+
+          </tal:single>
+          <tal:multi tal:condition="multiVal"
+                     tal:define="targets python:[(here.reference_catalog.lookupObject(u),u) for u in uids if u]">
+            <div style="float: left">
+<!-- This should be enabled if we can remove it when an item is inserted.
+              <p class="discreet"
+                 tal:condition="not: targets">No items currently selected</p>
+-->
+              <ul class="visualNoMarker"
+                  tal:attributes="id string:${fieldName};">
+                <li tal:repeat="set targets">
+                  <label tal:define="title    python: set[0].title_or_id();
+                                     obj_path python: '/'.join(set[0].getPhysicalPath());">
+                    <input type="checkbox" 
+                           tal:attributes="name string:${fieldName}:list; 
+                                           value python:set[1];" 
+                           checked="checked">
+                    <tal:block replace="python: show_path and '%s (%s)' % (title, obj_path.replace(portal_path, '')) or title" />
+                  </label>
+                </li>
+              </ul>
+              </div>
+          </tal:multi>
+          <div style="clear: both"
+               tal:define="sd python:field.getStartupDirectory(context);
+                           startup_directory string:$portal_url/${sd};
+                           global at_url at_url|python:'/'.join(here.getPhysicalPath())">
+              <input type="button"
+                     class="searchButton"
+                     value="Add..."
+                     onClick=""
+                     i18n:attributes="value label_add;"
+                     tal:attributes="onClick string:javascript:referencebrowser_openBrowser('${startup_directory}','${fieldName}', '${at_url}', '${fieldRealName}')" />
+          </div>
+          <!-- Todo? -->
+          <metal:addable metal:use-macro="here/widgets/addable_support/macros/addable"/>
+    </metal:reference_edit>
+
+    <metal:edit_macro define-macro="edit">
+      <metal:use use-macro="field_macro | here/widgets/field/macros/edit">
+        <metal:fill fill-slot="widget_body">
+          <metal:use use-macro="here/marscatsbrowser/macros/reference_edit" />
+        </metal:fill>
+      </metal:use>
+    </metal:edit_macro>
+
+    <metal:search_macro define-macro="search">
+      <div metal:use-macro="context/referencebrowser/macros/edit" />
+    </metal:search_macro>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+<!--  <adapter factory=".marscat.MarscatControlPanelAdapter" /> -->
+
+  <adapter factory=".marscatsettings.MarscatSettingsControlPanelAdapter" />
+
+
+  <!-- display widgets -->
+  <view
+      type="zope.publisher.interfaces.browser.IBrowserRequest"
+      for=".marscatsettings.IPortalTypesListField"
+      provides="zope.app.form.interfaces.IDisplayWidget"
+      factory="zope.app.form.browser.SequenceDisplayWidget"
+      permission="zope.Public"
+      />
+
+  <view
+      type="zope.publisher.interfaces.browser.IBrowserRequest"
+      for=".marscatsettings.IPortalTypeMappingField"
+      provides="zope.app.form.interfaces.IDisplayWidget"
+      factory="zope.app.form.browser.DisplayWidget"
+      permission="zope.Public"
+      />
+
+  <!-- edit widgets -->
+  <view
+      type="zope.publisher.interfaces.browser.IBrowserRequest"
+      for=".marscatsettings.IPortalTypesListField"
+      provides="zope.app.form.interfaces.IInputWidget"
+      factory="zope.app.form.browser.ListSequenceWidget"
+      permission="zope.Public"
+      />
+
+  <view
+      type="zope.publisher.interfaces.browser.IBrowserRequest"
+      for=".marscatsettings.IPortalTypeMappingField"
+      provides="zope.app.form.interfaces.IInputWidget"
+      factory="zope.app.form.browser.ObjectWidget"
+      permission="zope.Public"
+      />
+
+  <browser:page
+      name="marscats-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".marscat_import.MarscatControlPanel"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="marscatsettings-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".marscatsettings.MarscatSettingsControlPanel"
+      permission="cmf.ManagePortal"
+      />
+
+</configure>

@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="marsapp.categories">
+
+  <adapter
+      factory=".storage.MarscatsSettingsStorageNodeAdapter"
+      provides="Products.GenericSetup.interfaces.IBody"
+      for="marsapp.categories.storage.IMarscatsSettingsStorage
+           Products.GenericSetup.interfaces.ISetupEnviron"
+      />
+
+</configure>

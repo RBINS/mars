@@ -1,0 +1,63 @@
+
+We just import the storage.
+
+    >>> from marsapp.categories.storage import MarscatsSettingsStorage
+    >>> storage = MarscatsSettingsStorage()
+
+We need to know the name of the categories container.
+
+    >>> from marsapp.categories.storage import CAT_CONTAINER
+
+We don't have any 'startup_directory' value stored for any field by default.
+
+    >>> storage._fields.keys()
+    []
+
+But we already have a default value for all fields.
+
+    >>> storage.getStartupDir('my_field', 'my_portal_type') == CAT_CONTAINER
+    True
+
+We can change that value for any field though.
+
+    >>> storage.setStartupDir('my_field', 'my_category')
+    >>> storage.getStartupDir('my_field')
+    'my_category'
+
+It becomes the default value for that field
+
+    >>> storage.getStartupDir('my_field', 'my_portal_type')
+    'my_category'
+
+We can override that value for any field.
+
+    >>> storage.setStartupDir('my_field', 'my_other_category', 'my_portal_type')
+    >>> storage.getStartupDir('my_field', 'my_portal_type')
+    'my_other_category'
+
+We still keep the default value for the same field.
+
+    >>> storage.getStartupDir('my_field', 'any_other_portal_type')
+    'my_category'
+
+    >>> storage.getStartupDir('my_field')
+    'my_category'
+
+    >>> storage.getStartupDir('my_field')
+    'my_category'
+
+The storage is a utility, so test if it works like that.
+
+    >>> import zope.component
+    >>> from marsapp.categories.storage import IMarscatsSettingsStorage
+
+    >>> zope.component.getUtility(IMarscatsSettingsStorage)
+    Traceback (most recent call last):
+        ...
+    ComponentLookupError: (<InterfaceClass marsapp.categories.storage.IMarscatsSettingsStorage>, '')
+
+    >>> zope.component.provideUtility(storage, IMarscatsSettingsStorage)
+
+    >>> zope.component.getUtility(IMarscatsSettingsStorage)
+    <marsapp.categories.storage.MarscatsSettingsStorage object at ...>
+

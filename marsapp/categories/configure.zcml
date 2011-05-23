@@ -1,0 +1,32 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="marsapp.categories">
+
+    <five:registerPackage package="." initialize=".initialize" />
+
+    <include package=".exportimport" />
+    <include package=".controlpanel" />
+
+    <browser:resourceDirectory
+        name="marsapp.categories.icons"
+        directory="icons"
+        />
+
+  <browser:page
+      name="marscats-export"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".exporter.MarscatFlatExporter"
+      permission="cmf.ManagePortal"
+      />
+
+    <subscriber
+        for=".category.IMarsCategory
+             zope.app.event.interfaces.IObjectModifiedEvent"
+        handler=".events.modifiedCategoryEventHandler" />
+
+  <cmf:registerDirectory name="marsapp_categories"/>
+
+</configure>

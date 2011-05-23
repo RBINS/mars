@@ -1,0 +1,216 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xml:lang="en" lang="en"
+      metal:use-macro="context/prefs_main_template/macros/master"
+      i18n:domain="plone">
+
+<metal:block metal:fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border', 1)" />
+
+<body>
+
+<div metal:fill-slot="prefs_configlet_main">
+
+    <div metal:define-macro="form">
+
+        <div id="viewspace" metal:define-slot="viewspace">
+
+            <metal:block define-macro="header">
+
+                <dl tal:define="status view/status"
+                     tal:condition="status"
+                     class="portalMessage info">
+                    <dt i18n:translate="">
+                        Info
+                    </dt>
+                    <dd tal:content="view/status" />
+                </dl>
+
+            </metal:block>
+
+            <h1 class="documentFirstHeading"
+                i18n:translate=""
+                tal:condition="view/label"
+                tal:content="view/label"
+                metal:define-slot="heading">
+                Do something
+            </h1>
+
+            <a href=""
+               class="link-parent"
+               tal:attributes="href string: $portal_url/plone_control_panel"
+               i18n:translate="label_up_to_plone_setup">
+                Up to Site Setup
+            </a>
+
+            <p i18n:translate=""
+               tal:condition="view/description"
+               tal:content="view/description">
+                Description
+            </p>
+
+            <form tal:condition="not:view/hasCatContainer"
+                  action="."
+                  tal:attributes="action request/URL"
+                  method="post"
+                  class="edit-form"
+                  enctype="multipart/form-data"
+                  id="add_form">
+
+                <fieldset>
+                    <legend i18n:translate="heading_mars_categories">
+                        Mars Categories
+                    </legend>
+
+                    <p i18n:translate="alert_no_cats_container">
+                        You need to add one.
+                    </p>
+
+                    <div id="actionsView" class="formControls">
+                        <span class="actionButtons">
+                            <input type="submit"
+                                   id="form.actions.create_cats"
+                                   name="form.actions.create_cats"
+                                   value="Create categories repository"
+                                   i18n:attributes="value"
+                                   class="standalone" />
+
+                        </span>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+            <form tal:condition="view/hasCatContainer"
+                  action="."
+                  metal:define-macro="master"
+                  tal:attributes="action request/URL"
+                  method="post"
+                  class="edit-form"
+                  enctype="multipart/form-data"
+                  id="import_form">
+
+                <div metal:define-slot="extra_info" tal:replace="nothing">
+                </div>
+
+                <fieldset>
+                    <legend tal:define="form_name view/form_name|nothing"
+                            tal:condition="form_name"
+                            tal:content="form_name">Form name</legend>
+
+                    <tal:block tal:repeat="widget view/widgets">
+
+                        <div class="field"
+                             tal:define="description widget/hint;
+                                         error widget/error"
+                             tal:attributes="class python:'field'+(error and ' error' or '')">
+
+                            <label i18n:translate=""
+                                   tal:attributes="for widget/name"
+                                   tal:content="widget/label">
+                                label
+                            </label>
+
+                            <span class="fieldRequired"
+                                  title="Required"
+                                  i18n:attributes="title title_required;"
+                                  i18n:translate="label_required"
+                                  tal:condition="widget/required">
+                                (Required)
+                            </span>
+
+                            <div class="formHelp"
+                                 i18n:translate=""
+                                 tal:content="description"
+                                 tal:condition="description">
+                                field description
+                            </div>
+
+                            <div tal:condition="error"
+                                 tal:content="structure error">
+                                The Error
+                            </div>
+
+                            <div class="widget" tal:content="structure widget">
+                                <input type="text" />
+                            </div>
+                        </div>
+
+                    </tal:block>
+
+                    <metal:block define-slot="above_buttons" />
+
+                    <div class="visualClear"><!-- --></div>
+
+                    <div id="actionsView" class="formControls">
+                        <span class="actionButtons">
+                            <input type="submit"
+                                   id="form.actions.import_cats"
+                                   name="form.actions.import_cats"
+                                   value="Import categories from CSV text"
+                                   i18n:attributes="value"
+                                   class="standalone" />
+                        </span>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </div>
+
+        <form tal:define="storage view/getMarscatsSettings"
+              action="."
+              tal:attributes="action request/URL"
+              method="post"
+              class="edit-form"
+              enctype="multipart/form-data"
+              id="setup_form">
+            <fieldset><legend>Categories settings</legend>
+                <fieldset tal:repeat="fieldname storage/getFieldNames">
+                    <legend tal:content="fieldname"/>
+                    <input type="hidden" name="fields.name:records"
+                           tal:attributes="value fieldname" />
+                    <div>
+                        <label>Startup Directory</label>
+                        <input type="text" name ="fields.startup_directory:records" value=""
+                               tal:attributes="value python:storage.getStartupDir(fieldname, fallback=False)">
+                    </div>
+                   <fieldset>
+                        <legend>Content Types</legend>
+                        <dl tal:repeat="portal_type python:storage.getTypesForField(fieldname)">
+                            <dt tal:content="portal_type"/>
+                            <dd>
+                            <input type="text" name ="" value=""
+                                   tal:attributes="value python:storage.getStartupDir(fieldname, portal_type, fallback=False)">
+                            </dd>
+                        </dl>
+                    </fieldset>
+                </fieldset>
+                <div id="actionsView" class="formControls">
+                    <span class="actionButtons">
+                        <input type="submit"
+                               id="form.actions.setup_fields"
+                               name="form.actions.setup_fields"
+                               value="Save settings"
+                               i18n:attributes="value"
+                               class="standalone" />
+                    </span>
+                </div>
+            </fieldset>
+        </form>
+
+        <script type="text/javascript"
+            tal:define="extra_script view/extra_script | nothing"
+            tal:condition="extra_script"
+            tal:content="structure extra_script">
+        </script>
+
+    </div>
+
+</div>
+</body>
+</html>
