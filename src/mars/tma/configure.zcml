@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="mars.tma">
+  <five:registerPackage package="." initialize=".tma.initialize"/>
+  <genericsetup:importStep
+      name="mars_tma setupVvarious"
+      title="setup for tma Tma"
+      description="description"
+      handler="mars.tma.setuphandlers.setupVarious">
+    <depends name="content"/>
+  </genericsetup:importStep>
+  <!-- vim:set ft=xml: -->
+</configure>

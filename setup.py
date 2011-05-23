@@ -20,12 +20,13 @@ classifiers = [
     "Programming Language :: Python",
     "Topic :: Software Development",]
 
-name = 'mars.skin'
+
+name = 'mars.tma'
 setup(
     name=name,
-    namespace_packages=[                'mars', 'mars.skin',],  
+    namespace_packages=[                'mars', 'mars.tma',],  
     version=version,
-    description='Project cadredeville skin product',
+    description='Project cadredeville tma product',
     long_description=long_description,
     classifiers=classifiers,
     keywords='',
