@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/five"
+    >
+  <!-- Using Zope3 interfaces  -->
+
+  <!-- Content Types -->
+<!--
+  <implements
+      class="marsapp.content.artefact.MarsArtefact"
+      interface=".interfaces.ISchemataViewletEnabled"
+      />
+-->
+</configure>

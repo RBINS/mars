@@ -1,0 +1,51 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="marsapp.policy">
+
+    <include file="implements.zcml"/>
+
+    <!-- viewlets declaration -->
+    <browser:viewlet
+        name="marsapp.schemata"
+        for="..interfaces.IMarsCollectionObject"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+        class=".schemata_viewlet.SchemataViewlet"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="marsapp.schemata"
+        for="..interfaces.ISchemataViewletEnabled"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+        class=".schemata_viewlet.SchemataViewlet"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="marsapp.imagecaption"
+        for="..interfaces.IMarsCollectionObject"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+        template="imagecaption_viewlet.pt"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="marsapp.imagepreview"
+        for="..interfaces.IMarsCollectionObject"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+        class=".imagepreview_viewlet.ImagePreviewViewlet"
+        permission="zope2.View"
+        />
+
+<!--
+    <browser:viewlet  
+        name="marsapp.collectionobject.stylesheets" 
+        for="..interfaces.IMarsCollectionObject"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+        class=".stylesheets.StylesheetsViewlet"
+        permission="zope2.View" 
+        />
+-->
+
+</configure>

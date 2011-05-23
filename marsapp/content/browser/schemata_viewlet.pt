@@ -1,0 +1,27 @@
+<div id="schemata-view-schemata-list"
+     class="field"
+     tal:define="portal view/portal_state/portal">
+    <tal:schemata repeat="fieldset view/getCollapsibleSchemata">
+    <dl class="collapsible inline collapsedOnLoad"
+        tal:define="set_id fieldset/name;
+                    isfirst repeat/fieldset/start;
+                    collapsible string:collapsible inline;
+                    collapsed string:$collapsible collapsedOnLoad;"
+        tal:attributes="id string:viewfieldset-$set_id;
+                        class python:isfirst and collapsible or collapsed"
+        tal:condition="fieldset/fields|nothing">
+        <dt class="collapsibleHeader"
+            tal:content="set_id"
+            i18n:translate="">Fieldset name</dt>
+            <dd class="collapsibleContent">
+                <tal:field repeat="field fieldset/fields">
+                <tal:mode define="mode string:view;">
+                <metal:use_field use-macro="context/widgets/field/macros/view">
+                  Field Macro
+                </metal:use_field>
+                </tal:mode>
+                </tal:field>
+          </dd>
+    </dl>
+    </tal:schemata>
+</div>

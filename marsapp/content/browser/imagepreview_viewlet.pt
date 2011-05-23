@@ -1,0 +1,23 @@
+<tal:viewlet define="putils view/putils">
+
+<div class="imagesPreviewBox"
+        tal:define="images python:context.getFolderContents(contentFilter = {'portal_type' : ['Image', 'Picture']}, full_objects = True)"
+        tal:condition="nocall:images">
+    <div class="imagesPreviewBoxHeader">Images</div> 
+    <div class="imagesPreviewBoxBody">
+    <tal:block repeat="image images">
+    <div class="" tal:attributes="class python:repeat['image'].end and 'imagesPeviewBoxImage' or 'imagesPreviewBoxImage bottomDivider';">
+        <a href="#" alt="" title="" onClick=""
+            tal:attributes="onClick string: window.open ('${image/absolute_url}', '${image/Title}', 'title=${image/Title},width=${image/width},height=${image/height},directories=no,location=no,menubar=no,scrollbars=yes,status=no,toolbar=no,resizable=yes,screenX=0,screenY=0');; return false; 
+                            title image/Title;">
+            <img tal:replace="structure python:image.tag(scale='thumb')"/>
+            <div class="discreet" tal:content="image/Title">
+                Title
+            </div>
+        </a>
+    </div>
+    </tal:block>
+    </div>
+</div>
+
+</tal:viewlet>

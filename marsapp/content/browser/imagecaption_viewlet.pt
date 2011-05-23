@@ -1,0 +1,10 @@
+<!--
+<tal:viewlet define="images python:context.getFolderContents(contentFilter = {'portal_type' : ['Image', 'Picture']});
+                     firstImage python:images and images[0] or None;
+                     displaycondition python:context.getImageCaption() and firstImage;">
+        <div class="imageFloat" tal:condition="displaycondition">
+            <img tal:replace="structure python:firstImage.getObject()"/>
+            <div class="caption" tal:content="firstImage/Title">Caption</div>
+        </div>
+</tal:viewlet>
+-->
