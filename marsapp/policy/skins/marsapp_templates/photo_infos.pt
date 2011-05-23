@@ -1,0 +1,35 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="plone">
+<body>
+    <metal:exif metal:define-macro="exif"
+                tal:define="values values|context/getEXIF|nothing">
+        <table class="listing" align="center"
+               tal:define="global odd python:1"
+               tal:condition="values">
+            <tr>
+                <th><span i18n:translate="Key">Key</span></th>
+                <th><span i18n:translate="Value">Value</span></th>
+                <th><span i18n:translate="Key">Key</span></th>
+                <th><span i18n:translate="Value">Value</span></th>
+                <th><span i18n:translate="Key">Key</span></th>
+                <th><span i18n:translate="Value">Value</span></th>
+            </tr>
+            <tr>
+                <tal:block tal:repeat="key values/keys">
+                  <td tal:condition="key">
+                    <span tal:replace="key"/>
+                    </td>
+                  <td tal:condition="key" tal:define="value python:values[key]">
+                    <span tal:replace="value"
+                          tal:condition="value"/>
+                    </td>
+                    <tal:block tal:condition="python:repeat['key'].number() % 3 == 0 and not repeat['key'].end"
+                               tal:replace="structure python:test(odd,'</tr><tr class=\'odd\'>','</tr><tr class=\'even\'>')"
+                               tal:define="global odd python:test(odd,0,1);"/>
+                </tal:block>
+            </tr>
+        </table>
+    </metal:exif>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<object name="Collection"
+   i18n:domain="mars" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <property name="title" i18n:translate="">Collection</property>
+ <property name="description" i18n:translate="">Collection</property>
+ <property name="content_icon">++resource++marsapp.content.icons/collection_icon.gif</property>
+ <property name="content_meta_type">MarsCollection</property>
+ <property name="product">marsapp.content</property>
+ <property name="factory">addMarsCollection</property>
+ <property name="immediate_view">schemata.html</property>
+ <property name="global_allow">True</property>
+ <property name="filter_content_types">True</property>
+ <property name="allowed_content_types"/>
+ <property name="allowed_content_types">
+  <element value="Hominid Remain"/>
+  <element value="Hominid Individual"/>
+  <element value="Hominid Assemblage"/>
+  <element value="Flora Remain"/>
+  <element value="Flora Individual"/>
+  <element value="Flora Assemblage"/>
+  <element value="Fauna Remain"/>
+  <element value="Fauna Individual"/>
+  <element value="Fauna Assemblage"/>
+  <element value="Artefact"/>
+  <element value="Artefact Individual"/>
+  <element value="Artefact Assemblage"/>
+  <element value="Structure Assemblage"/>
+ </property>
+ <property name="allow_discussion">False</property>
+ <property name="default_view">schemata.html</property>
+ <property name="view_methods">
+  <element value="folder_summary_view"/>
+  <element value="folder_tabular_view"/>
+  <element value="folder_listing"/>
+  <element value="schemata.html"/>
+ </property>
+ <alias from="(Default)" to="(dynamic view)"/>
+ <alias from="edit" to="atct_edit"/>
+ <alias from="sharing" to="@@sharing"/>
+ <alias from="view" to="(selected layout)"/>
+ <action title="View" action_id="view" category="object" condition_expr=""
+    url_expr="string:${object_url}" visible="True">
+  <permission value="View"/>
+ </action>
+ <action title="Edit" action_id="edit" category="object"
+     condition_expr="not:object/@@plone_lock_info/is_locked_for_current_user|python:True"
+    url_expr="string:${object_url}/edit" visible="True"
+    i18n:attributes="title">
+  <permission value="Modify portal content"/>
+ </action>
+ <action title="References" action_id="references" category="object"
+    condition_expr="object/archetype_tool/has_graphviz"
+    url_expr="string:${object_url}/reference_graph" visible="True">
+  <permission value="Modify portal content"/>
+  <permission value="Review portal content"/>
+ </action>
+ <action title="Folder Listing" action_id="folderlisting" category="folder"
+    condition_expr="object/isPrincipiaFolderish"
+    url_expr="string:${folder_url}/view" visible="False">
+  <permission value="View"/>
+ </action>
+</object>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<export-steps>
+ <export-step id="marscats"
+              handler="marsapp.categories.exportimport.storage.exportMarscatsSettingsStorage"
+              title="MARS Categories Settings">
+    Export MARS Categories settings
+ </export-step>
+</export-steps>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<tool-setup>
+ <!-- bibliography -->
+ <required tool_id="portal_bibliography"
+           class="Products.CMFBibliographyAT.tool.bibliography.BibliographyTool"/>
+ <required tool_id="portal_bibliostyles"
+           class="Products.ATBiblioStyles.tool.bibliostyles.BiblioStylesTool"/>
+ <!-- end bibliography -->
+ <required tool_id="marshaller_registry"
+           class="Products.Marshall.registry.Registry"/>
+</tool-setup>

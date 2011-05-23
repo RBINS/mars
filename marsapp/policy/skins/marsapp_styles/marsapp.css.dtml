@@ -1,0 +1,7 @@
+* a.link-plain img,.link-plain:link,.link-plain:visited {
+    border:none;
+    } 
+
+* a img,:link,:visited {
+    border:none;
+    } 

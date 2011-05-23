@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<object name="Image"
+   i18n:domain="plone" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <property name="title" i18n:translate="">AT Image</property>
+ <property name="global_allow">False</property>
+</object>

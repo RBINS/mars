@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<object name="portal_workflow">
+ <bindings>
+   <!--
+  <default>
+   <bound-workflow workflow_id="intranet_workflow"/>
+  </default>
+   -->
+
+  <!-- We want a workflow for these (overrides Plone defaults) -->
+  <type type_id="Image" remove="true"/>
+  <type type_id="File" remove="true"/>
+
+  <!-- Categories and their container should not have a workflow -->
+  <type type_id="Categories Container"/>
+  <type type_id="Mars Category"/>
+
+  <!--
+  <type type_id="Folder">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Large Plone Folder">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Topic">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  -->
+
+  <!-- the (generally) folderish MARS types
+  <type type_id="Site">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Collection">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Stratigraphy">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Stratigraphical Layer">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  -->
+
+  <!-- the MarsCollectionObject types
+  <type type_id="Artefact">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Artefact Individual">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Artefact Assemblage">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Reference Sample">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Artefact Reference Sample">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Fauna Remain">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Fauna Individual">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Fauna Assemblage">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Fauna Reference Sample">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Flora Remain">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Flora Individual">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Flora Assemblage">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Flora Reference Sample">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Hominid Remain">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Hominid Individual">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Hominid Assemblage">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Hominid Reference Sample">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  <type type_id="Structure Assemblage">
+   <bound-workflow workflow_id="intranet_folder_workflow"/>
+  </type>
+  -->
+ </bindings>
+</object>

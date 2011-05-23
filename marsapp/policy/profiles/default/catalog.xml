@@ -1,0 +1,633 @@
+<?xml version="1.0"?>
+<object name="portal_catalog">
+ <!-- bibliography -->
+ <index name="AuthorItems" meta_type="KeywordIndex">
+  <indexed_attr value="AuthorItems"/>
+ </index>
+ <index name="Authors" meta_type="FieldIndex">
+  <indexed_attr value="Authors"/>
+ </index>
+ <index name="publication_date" meta_type="DateIndex">
+  <property name="index_naive_time_as_local">True</property>
+ </index>
+ <index name="publication_year" meta_type="FieldIndex">
+  <indexed_attr value="publication_year"/>
+ </index>
+ <!-- end bibliography -->
+
+ <!-- MARS -->
+  <!-- StringField: 'insuranceValue' -->
+  <index name="getInsuranceValue" meta_type="ZCTextIndex">
+  <indexed_attr value="getInsuranceValue"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'legalProperty' -->
+  <index name="getLegalProperty" meta_type="ZCTextIndex">
+  <indexed_attr value="getLegalProperty"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'copyright' -->
+  <index name="getCopyright" meta_type="ZCTextIndex">
+  <indexed_attr value="getCopyright"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'curations' -->
+  <index name="getCurations" meta_type="ZCTextIndex">
+  <indexed_attr value="getCurations"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'curator' -->
+  <index name="getCurator" meta_type="ZCTextIndex">
+  <indexed_attr value="getCurator"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'repository' -->
+  <index name="getRepository" meta_type="ZCTextIndex">
+  <indexed_attr value="getRepository"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'preciseRepository' -->
+  <index name="getPreciseRepository" meta_type="ZCTextIndex">
+  <indexed_attr value="getPreciseRepository"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'repositoryLink' -->
+  <index name="getRepositoryLink" meta_type="ZCTextIndex">
+  <indexed_attr value="getRepositoryLink"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'repositoryStatus' -->
+  <index name="getRepositoryStatus" meta_type="ZCTextIndex">
+  <indexed_attr value="getRepositoryStatus"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'repositoryConditions' -->
+  <index name="getRepositoryConditions" meta_type="ZCTextIndex">
+  <indexed_attr value="getRepositoryConditions"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- IntegerField: 'howManyComponents' -->
+<!--
+  <index name="getHowManyComponents" meta_type="">
+  </index>
+-->
+
+  <!-- IntegerField: 'MNI' -->
+<!--
+  <index name="getMNI" meta_type="">
+  </index>
+-->
+
+  <!-- ReferenceField: 'components' -->
+  <index name="getComponents" meta_type="ZCTextIndex">
+  <indexed_attr value="getComponents"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- LinesField: 'componentsDistribution' -->
+  <index name="getComponentsDistribution" meta_type="ZCTextIndex">
+  <indexed_attr value="getComponentsDistribution"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'origin' -->
+  <index name="getOrigin" meta_type="ZCTextIndex">
+  <indexed_attr value="getOrigin"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'paleoecology' -->
+  <index name="getPaleoecology" meta_type="ZCTextIndex">
+  <indexed_attr value="getPaleoecology"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'igNumber' -->
+  <!-- LinesField: 'igNumbers' -->
+  <index name="IGNumber" meta_type="ZCTextIndex">
+  <indexed_attr value="getIgNumber"/>
+  <indexed_attr value="getIgNumbers"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- LinesField: 'synonyms' -->
+  <index name="getSynonyms" meta_type="ZCTextIndex">
+  <indexed_attr value="getSynonyms"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- IntegerField: 'igYear' -->
+<!--
+  <index name="getIgYear" meta_type="">
+  </index>
+-->
+
+  <!-- MarscatField: 'remainType' -->
+  <index name="getRemainType" meta_type="ZCTextIndex">
+  <indexed_attr value="getRemainType"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'measures' -->
+  <index name="getMeasures" meta_type="ZCTextIndex">
+  <indexed_attr value="getMeasures"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'measuresFile' -->
+  <index name="getMeasuresFile" meta_type="ZCTextIndex">
+  <indexed_attr value="getMeasuresFile"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'features' -->
+  <index name="getFeatures" meta_type="ZCTextIndex">
+  <indexed_attr value="getFeatures"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'featuresFile' -->
+  <index name="getFeaturesFile" meta_type="ZCTextIndex">
+  <indexed_attr value="getFeaturesFile"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- MarscatField: 'bones' -->
+  <index name="getBones" meta_type="ZCTextIndex">
+  <indexed_attr value="getBones"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'insiteLocation' -->
+  <index name="getInsiteLocation" meta_type="ZCTextIndex">
+  <indexed_attr value="getInsiteLocation"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- MarscatField: 'taxon' -->
+  <index name="getTaxon" meta_type="ZCTextIndex">
+  <indexed_attr value="getTaxon"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- MarscatField: 'age' -->
+  <index name="getAge" meta_type="ZCTextIndex">
+  <indexed_attr value="getAge"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'gender' -->
+  <index name="getGender" meta_type="ZCTextIndex">
+  <indexed_attr value="getGender"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- MarscatField: 'pathology' -->
+  <index name="getPathology" meta_type="ZCTextIndex">
+  <indexed_attr value="getPathology"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'activityMarkers' -->
+  <index name="getActivityMarkers" meta_type="ZCTextIndex">
+  <indexed_attr value="getActivityMarkers"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'causeOfDeath' -->
+  <index name="getCauseOfDeath" meta_type="ZCTextIndex">
+  <indexed_attr value="getCauseOfDeath"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'diet' -->
+  <index name="getDiet" meta_type="ZCTextIndex">
+  <indexed_attr value="getDiet"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'burial' -->
+  <index name="getBurial" meta_type="ZCTextIndex">
+  <indexed_attr value="getBurial"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- MarscatField: 'chronologies' -->
+  <index name="getChronologies" meta_type="ZCTextIndex">
+  <indexed_attr value="getChronologies"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- IntegerField: 'BPDating' -->
+<!--
+  <index name="getBPdating" meta_type="">
+  </index>
+-->
+
+  <!-- StringField: 'datingAssociation' -->
+  <index name="getDatingAssociation" meta_type="ZCTextIndex">
+  <indexed_attr value="getDatingAssociation"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'relativeGeologicalAge' -->
+  <index name="getRelativeGeologicalAge" meta_type="ZCTextIndex">
+  <indexed_attr value="getRelativeGeologicalAge"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- IntegerField: 'discoveryYear' -->
+<!--
+  <index name="getDiscoveryYear" meta_type="">
+  </index>
+-->
+
+  <!-- TextField: 'discoveryPreciseDate' -->
+  <index name="getDiscoveryPreciseDate" meta_type="ZCTextIndex">
+  <indexed_attr value="getDiscoveryPreciseDate"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'discoverers' -->
+  <index name="getDiscoverers" meta_type="ZCTextIndex">
+  <indexed_attr value="getDiscoverers"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'stratigraphicalLayer' -->
+  <index name="getStratigraphicalLayer" meta_type="ZCTextIndex">
+  <indexed_attr value="getStratigraphicalLayer"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'discoveryPlace' -->
+  <index name="getDiscoveryPlace" meta_type="ZCTextIndex">
+  <indexed_attr value="getDiscoveryPlace"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'excavators' -->
+  <index name="getExcavators" meta_type="ZCTextIndex">
+  <indexed_attr value="getExcavators"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'beginningYear' -->
+  <index name="getBeginningYear" meta_type="ZCTextIndex">
+  <indexed_attr value="getBeginningYear"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'endingYear' -->
+  <index name="getEndingYear" meta_type="ZCTextIndex">
+  <indexed_attr value="getEndingYear"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'preciseDate' -->
+  <index name="getPreciseDate" meta_type="ZCTextIndex">
+  <indexed_attr value="getPreciseDate"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- CoordinatesField: 'excavationCoordinates' -->
+<!--
+  <index name="getExcavationCoordinates" meta_type="">
+  </index>
+-->
+
+  <!-- StringField: 'country' -->
+  <index name="getCountry" meta_type="ZCTextIndex">
+  <indexed_attr value="getCountry"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- LinesField: 'location' -->
+  <index name="getLocation" meta_type="ZCTextIndex">
+  <indexed_attr value="getLocation"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'map' -->
+  <index name="getMap" meta_type="ZCTextIndex">
+  <indexed_attr value="getMap"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- CoordinatesField: 'gisCoordinates' -->
+<!--
+  <index name="getGisCoordinates" meta_type="">
+  </index>
+-->
+
+  <!-- StringField: 'gisPrecision' -->
+  <index name="getGisPrecision" meta_type="ZCTextIndex">
+  <indexed_attr value="getGisPrecision"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- MarscatField: 'gisProjection' -->
+  <index name="getGisProjection" meta_type="ZCTextIndex">
+  <indexed_attr value="getGisProjection"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- LinesField: 'coordinatesOthers' -->
+  <index name="getCoordinatesOthers" meta_type="ZCTextIndex">
+  <indexed_attr value="getCoordinatesOthers"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'archeologicalStatus' -->
+  <index name="getArcheologicalStatus" meta_type="ZCTextIndex">
+  <indexed_attr value="getArcheologicalStatus"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'preservation' -->
+  <index name="getPreservation" meta_type="ZCTextIndex">
+  <indexed_attr value="getPreservation"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'laterality' -->
+  <index name="getLaterality" meta_type="ZCTextIndex">
+  <indexed_attr value="getLaterality"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'polarity' -->
+  <index name="getPolarity" meta_type="ZCTextIndex">
+  <indexed_attr value="getPolarity"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- MarscatField: 'taphonomies' -->
+  <index name="getTaphonomies" meta_type="ZCTextIndex">
+  <indexed_attr value="getTaphonomies"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- IntegerField: 'manufactureYear' -->
+<!--
+  <index name="getManufactureYear" meta_type="">
+  </index>
+-->
+
+  <!-- TextField: 'manufacturePreciseDate' -->
+  <index name="getManufacturePreciseDate" meta_type="ZCTextIndex">
+  <indexed_attr value="getManufacturePreciseDate"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'artisan' -->
+  <index name="getArtisan" meta_type="ZCTextIndex">
+  <indexed_attr value="getArtisan"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- MarscatField: 'technologies' -->
+  <index name="getTechnologies" meta_type="ZCTextIndex">
+  <indexed_attr value="getTechnologies"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'technologyDetails' -->
+  <index name="getTechnologyDetails" meta_type="ZCTextIndex">
+  <indexed_attr value="getTechnologyDetails"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'functionalDescription' -->
+  <index name="getFunctionalDescription" meta_type="ZCTextIndex">
+  <indexed_attr value="getFunctionalDescription"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'usageMarkers' -->
+  <index name="getUsageMarkers" meta_type="ZCTextIndex">
+  <indexed_attr value="getUsageMarkers"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- StringField: 'substratum' -->
+  <index name="getSubstratum" meta_type="ZCTextIndex">
+  <indexed_attr value="getSubstratum"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField:'stratigraphyLayersComposition' -->
+  <index name="getStratigraphyLayersComposition" meta_type="ZCTextIndex">
+  <indexed_attr value="getStratigraphyLayersComposition"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'history' -->
+  <index name="getHistory" meta_type="ZCTextIndex">
+  <indexed_attr value="getHistory"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- ReferenceField: 'stratigraphyEquivalents' -->
+  <index name="getStratigraphyEquivalents" meta_type="ZCTextIndex">
+  <indexed_attr value="getStratigraphyEquivalents"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- MarscatField: 'geologicalComponents' -->
+  <index name="getGeologicalComponents" meta_type="ZCTextIndex">
+  <indexed_attr value="getGeologicalComponents"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- LinesField: 'featuresDistribution' -->
+  <index name="getFeaturesDistribution" meta_type="ZCTextIndex">
+  <indexed_attr value="getFeaturesDistribution"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+  <!-- TextField: 'relativeGeologicalAge' -->
+  <index name="getRelativeGeologicalAge" meta_type="ZCTextIndex">
+  <indexed_attr value="getRelativeGeologicalAge"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+  </index>
+
+ <!-- end MARS -->
+
+ <!-- bibliography -->
+ <column value="Authors"/>
+ <column value="Source"/>
+ <column value="citationLabel"/>
+ <column value="publication_year"/>
+ <!-- end bibliography -->
+
+ <!-- MARS -->
+  <column value="cats_path" />
+  <column value="getInsuranceValue" />
+  <column value="getLegalProperty" />
+  <column value="getCopyright" />
+  <column value="getCurations" />
+  <column value="getCurator" />
+  <column value="getRepository" />
+  <column value="getPreciseRepository" />
+  <column value="getRepositoryLink" />
+  <column value="getRepositoryStatus" />
+  <column value="getRepositoryConditions" />
+<!--
+  <column value="getHowManyComponents" />
+-->
+<!--
+  <column value="getMNI" />
+-->
+  <column value="getComponents" />
+  <column value="getComponentsDistribution" />
+  <column value="getOrigin" />
+  <column value="getPaleoecology" />
+  <column value="IGNumber" />
+  <column value="getSynonyms" />
+<!--
+  <column value="getIgYear" />
+-->
+  <column value="getRemainType" />
+  <column value="getMeasures" />
+  <column value="getMeasuresFile" />
+  <column value="getFeatures" />
+  <column value="getFeaturesFile" />
+  <column value="getBones" />
+  <column value="getInsiteLocation" />
+  <column value="getTaxon" />
+  <column value="getAge" />
+  <column value="getGender" />
+  <column value="getPathology" />
+  <column value="getActivityMarkers" />
+  <column value="getCauseOfDeath" />
+  <column value="getDiet" />
+  <column value="getBurial" />
+  <column value="getChronologies" />
+<!--
+  <column value="getBPdating" />
+-->
+  <column value="getDatingAssociation" />
+  <column value="getRelativeGeologicalAge" />
+<!--
+  <column value="getDiscoveryYear" />
+-->
+  <column value="getDiscoveryPreciseDate" />
+  <column value="getDiscoverers" />
+  <column value="getStratigraphicalLayer" />
+  <column value="getDiscoveryPlace" />
+  <column value="getExcavators" />
+  <column value="getBeginningYear" />
+  <column value="getEndingYear" />
+  <column value="getPreciseDate" />
+<!--
+  <column value="getExcavationCoordinates" />
+-->
+  <column value="getCountry" />
+  <column value="getLocation" />
+  <column value="getMap" />
+<!--
+  <column value="getGisCoordinates" />
+-->
+  <column value="getGisPrecision" />
+  <column value="getGisProjection" />
+  <column value="getCoordinatesOthers" />
+  <column value="getArcheologicalStatus" />
+  <column value="getPreservation" />
+  <column value="getLaterality" />
+  <column value="getPolarity" />
+  <column value="getTaphonomies" />
+<!--
+  <column value="getManufactureYear" />
+-->
+  <column value="getManufacturePreciseDate" />
+  <column value="getArtisan" />
+  <column value="getTechnologies" />
+  <column value="getTechnologyDetails" />
+  <column value="getFunctionalDescription" />
+  <column value="getUsageMarkers" />
+  <column value="getSubstratum" />
+  <column value="getStratigraphyLayersComposition" />
+  <column value="getHistory" />
+  <column value="getStratigraphyEquivalents" />
+  <column value="getGeologicalComponents" />
+  <column value="getFeaturesDistribution" />
+  <column value="getRelativeGeologicalAge" />
+ <!-- end MARS -->
+</object>

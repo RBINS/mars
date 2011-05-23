@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<import-steps>
+ <!-- bibliography -->
+ <!--
+ <import-step id="bibliography-tool" version="20070313-01"
+              handler="Products.CMFBibliographyAT.exportimport.importBibliographyTool"
+              title="Bibliography Tool">
+ <dependency step="componentregistry"/>
+    Import bibliography tool definitions
+ </import-step>
+ <import-step id="various-bibliography" version="20070316-01"
+              handler="marsapp.policy.setuphandlers.importBibliographyVarious"
+              title="Various Bibliographyic Settings">
+  <dependency step="toolset"/>
+  <dependency step="componentregistry"/>
+  Import various settings for CMFBibliographyAT.
+ </import-step>
+ <import-step id="bibliostyles-tool" version="20070321-01"
+              handler="Products.ATBiblioStyles.exportimport.importBiblioStylesTool"
+              title="BiblioStyles Tool">
+  <dependency step="componentregistry"/>
+    Import bibliostyles tool definitions
+ </import-step>
+ -->
+ <!-- end bibliography -->
+
+ <import-step id="form-controller-tool" version="20070321-01"
+              handler="Products.CMFFormController.exportimport.importCMFFormController"
+              title="Form Controller Tool">
+  <dependency step="componentregistry"/>
+    Import form controller tool definitions
+ </import-step>
+
+ <import-step id="mars_products" version="20070911-01"
+              handler="marsapp.policy.setuphandlers.importProducts"
+              title="3rd Party Products Installation for MARS">
+  <dependency step="plone_various"/>
+    MARS dependencies installation
+ </import-step>
+ <import-step id="mars_cats_creation" version="20090526-01"
+              handler="marsapp.policy.setuphandlers.createCategories"
+              title="Categories creation for MARS">
+  <dependency step="toolset"/>
+  <dependency step="typeinfo"/>
+  <dependency step="rolemap"/>
+  <dependency step="plone_various"/>
+    MARS Categories creation
+ </import-step>
+ <import-step id="mars_various" version="20070911-01"
+              handler="marsapp.policy.setuphandlers.importVarious"
+              title="Various MARS Settings for Plone">
+  <dependency step="catalog"/>
+  <dependency step="cssregistry"/>
+  <dependency step="kssregistry"/>
+  <dependency step="jsregistry"/>
+  <dependency step="propertiestool"/>
+  <dependency step="rolemap"/>
+  <dependency step="skins"/>
+  <dependency step="typeinfo"/>
+  <dependency step="content"/>
+  <dependency step="mars_products"/>
+    MARS specific settings
+ </import-step>
+ <import-step id="marscats" version="20071003-01"
+              handler="marsapp.categories.exportimport.storage.importMarscatsSettingsStorage"
+              title="MARS Categories Settings">
+  <dependency step="componentregistry"/>
+    Import MARS Categories settings
+ </import-step>
+</import-steps>

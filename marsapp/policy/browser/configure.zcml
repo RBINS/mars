@@ -1,0 +1,78 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="marsapp.policy">
+
+    <!-- 'MARS Theme' Zope 3 skin layer -->
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="MARS Theme"
+        />
+
+    <!-- schemata view for collection objects -->
+    <browser:page
+        for="Products.ATContentTypes.interface.IATContentType"
+        name="schemata.html"
+        permission="zope.Public"
+        class=".schemata-view.schemataView"
+        />
+
+    <!-- welcome page for Plone Site -->
+    <browser:page
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        name="welcome.html"
+        permission="zope.Public"
+        class=".welcome-page.welcomePage"
+        />
+
+    <!-- display view titles -->
+    <include package="plone.app.contentmenu"/>
+    <browser:menuItems
+        for="*"
+        menu="plone_displayviews"
+        >
+      <browser:menuItem
+          title="Mars Schemata View"
+          action="schemata.html"
+          description="A view that displays values organized in schemata"
+          />
+      <browser:menuItem
+          title="Welcome Page"
+          action="welcome.html"
+          description="Default welcome page of a MARS portal"
+          />
+    </browser:menuItems>
+
+    <!-- Zope 3 browser resources -->
+    <browser:resource
+        name="favicon.ico"
+        file="favicon.ico"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+    <browser:resource
+        name="belspo32.gif"
+        file="images/belspo32.gif"
+        />
+
+    <browser:resource
+        name="belogo_small.gif"
+        file="images/belogo_small.gif"
+        />
+
+    <browser:resource
+        name="mars_logo.jpg"
+        file="images/mars_logo.jpg"
+        />
+
+    <!-- viewlets declaration -->
+    <browser:viewlet
+        name="plone.links.favicon"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
+        class=".viewlets.FaviconViewlet"
+        permission="zope2.View" 
+        layer=".interfaces.IThemeSpecific"
+        />
+
+</configure>

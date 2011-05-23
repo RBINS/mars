@@ -1,0 +1,2182 @@
+Fauna Taxa
+
+Amphibia
+Amphibia / Anura
+Amphibia / Anura / Allophrynidae
+Amphibia / Anura / Arthroleptidae
+Amphibia / Anura / Ascaphidae
+Amphibia / Anura / Astylosternidae
+Amphibia / Anura / Bombinatoridae
+Amphibia / Anura / Brachycephalidae
+Amphibia / Anura / Bufonidae
+Amphibia / Anura / Bufonidae / Bufo
+Amphibia / Anura / Bufonidae / Bufo / bufo
+Amphibia / Anura / Bufonidae / Bufo / calamita
+Amphibia / Anura / Bufonidae / Bufo / viridis
+Amphibia / Anura / Centrolenidae
+Amphibia / Anura / Dendrobatidae
+Amphibia / Anura / Discoglossidae
+Amphibia / Anura / Discoglossidae / Alytes
+Amphibia / Anura / Discoglossidae / Alytes / obstetricanus
+Amphibia / Anura / Discoglossidae / Alytes / cisternassii
+Amphibia / Anura / Discoglossidae / Bombina
+Amphibia / Anura / Discoglossidae / Bombina / bombina
+Amphibia / Anura / Discoglossidae / Bombina / variegata
+Amphibia / Anura / Discoglossidae / Discoglossus
+Amphibia / Anura / Discoglossidae / Discoglossus / pictus
+Amphibia / Anura / Discoglossidae / Discoglossus / sardus
+Amphibia / Anura / Heleophrynidae
+Amphibia / Anura / Hemisotidae
+Amphibia / Anura / Hylidae
+Amphibia / Anura / Hylidae / Hemiphractinae
+Amphibia / Anura / Hylidae / Hylinae
+Amphibia / Anura / Hylidae / Pelodryadinae
+Amphibia / Anura / Hylidae / Phyllomedusinae
+Amphibia / Anura / Hylidae / Phyllomedusinae / Hyla
+Amphibia / Anura / Hylidae / Phyllomedusinae / Hyla / arborea
+Amphibia / Anura / Hylidae / Phyllomedusinae / Hyla / meridionalis
+Amphibia / Anura / Hyperoliidae
+Amphibia / Anura / Hyperoliidae / Hyperoliinae
+Amphibia / Anura / Hyperoliidae / Leptopelinae
+Amphibia / Anura / Leiopelmatidae
+Amphibia / Anura / Leptodactylidae
+Amphibia / Anura / Leptodactylidae / Ceratophryinae
+Amphibia / Anura / Leptodactylidae / Cycloramphinae
+Amphibia / Anura / Leptodactylidae / Eleutherodactylinae
+Amphibia / Anura / Leptodactylidae / Leptodactylinae
+Amphibia / Anura / Leptodactylidae / Telmatobiinae
+Amphibia / Anura / Limnodynastidae
+Amphibia / Anura / Mantellidae
+Amphibia / Anura / Mantellidae / Boophinae
+Amphibia / Anura / Mantellidae / Laliostominae
+Amphibia / Anura / Mantellidae / Mantellinae
+Amphibia / Anura / Megophryidae
+Amphibia / Anura / Microhylidae
+Amphibia / Anura / Microhylidae / Asterophryinae
+Amphibia / Anura / Microhylidae / Brevicipitinae
+Amphibia / Anura / Microhylidae / Cophylinae
+Amphibia / Anura / Microhylidae / Dyscophinae
+Amphibia / Anura / Microhylidae / Genyophryninae
+Amphibia / Anura / Microhylidae / Melanobatrachinae
+Amphibia / Anura / Microhylidae / Microhylinae
+Amphibia / Anura / Microhylidae / Phrynomerinae
+Amphibia / Anura / Microhylidae / Scaphiophryninae
+Amphibia / Anura / Myobatrachidae
+Amphibia / Anura / Nasikabatrachidae
+Amphibia / Anura / Pelobatidae
+Amphibia / Anura / Pelobatidae / Pelobates
+Amphibia / Anura / Pelobatidae / Pelobates / cultripes
+Amphibia / Anura / Pelodytidae
+Amphibia / Anura / Pelodytidae / Pelodytes
+Amphibia / Anura / Pelodytidae / Pelodytes / punctatus
+Amphibia / Anura / Petropedetidae
+Amphibia / Anura / Pipidae
+Amphibia / Anura / Pipidae / Dactylethrinae
+Amphibia / Anura / Pipidae / Pipinae
+Amphibia / Anura / Ranidae
+Amphibia / Anura / Ranidae / Rana
+Amphibia / Anura / Ranidae / Rana / arvalis
+Amphibia / Anura / Ranidae / Rana / dalmatina
+Amphibia / Anura / Ranidae / Rana / esculenta
+Amphibia / Anura / Ranidae / Rana / iberica
+Amphibia / Anura / Ranidae / Rana / ridibunda
+Amphibia / Anura / Ranidae / Rana / temporaria
+Amphibia / Anura / Rhacophoridae
+Amphibia / Anura / Rhacophoridae / Buergeriinae
+Amphibia / Anura / Rhacophoridae / Rhacophorinae
+Amphibia / Anura / Rheobatrachidae
+Amphibia / Anura / Rhinodermatidae
+Amphibia / Anura / Rhinophrynidae
+Amphibia / Anura / Scaphiopodidae
+Amphibia / Anura / Sooglossidae
+Amphibia / Urodela
+Amphibia / Urodela / Ambystomatidae
+Amphibia / Urodela / Amphiumidae
+Amphibia / Urodela / Cryptobranchidae
+Amphibia / Urodela / Dicamptodontidae
+Amphibia / Urodela / Hynobiidae
+Amphibia / Urodela / Plethodontidae
+Amphibia / Urodela / Plethodontidae / Desmognathinae
+Amphibia / Urodela / Plethodontidae / Plethodontinae
+Amphibia / Urodela / Plethodontidae / Plethodontinae / Hydromantes
+Amphibia / Urodela / Plethodontidae / Plethodontinae / Hydromantes / italicus
+Amphibia / Urodela / Proteidae
+Amphibia / Urodela / Proteidae / Proteus
+Amphibia / Urodela / Proteidae / Proteus / anguinus
+Amphibia / Urodela / Rhyacotritonidae
+Amphibia / Urodela / Salamandridae
+Amphibia / Urodela / Salamandridae / Triturus
+Amphibia / Urodela / Salamandridae / Triturus / alpestris
+Amphibia / Urodela / Salamandridae / Triturus / cristatus
+Amphibia / Urodela / Salamandridae / Triturus / helveticus
+Amphibia / Urodela / Salamandridae / Triturus / marmoratus
+Amphibia / Urodela / Salamandridae / Triturus / vulgaris
+Amphibia / Urodela / Salamandridae / Euproctus
+Amphibia / Urodela / Salamandridae / Euproctus / asper
+Amphibia / Urodela / Salamandridae / Euproctus / montanus
+Amphibia / Urodela / Salamandridae / Euproctus / platycephalus
+Amphibia / Urodela / Salamandridae / Salamandra
+Amphibia / Urodela / Salamandridae / Salamandra / atra
+Amphibia / Urodela / Salamandridae / Salamandra / salamandra
+Amphibia / Urodela / Salamandridae / Pleurodeles
+Amphibia / Urodela / Salamandridae / Pleurodeles / waltl
+Amphibia / Urodela / Salamandridae / Chioglossa
+Amphibia / Urodela / Salamandridae / Chioglossa / lusitanica
+Amphibia / Urodela / Sirenidae
+Amphibia / Gymnophiona
+Amphibia / Gymnophiona / Caeciliidae
+Amphibia / Gymnophiona / Caeciliidae / Caeciliinae
+Amphibia / Gymnophiona / Caeciliidae / Typhlonectinae
+Amphibia / Gymnophiona / Ichthyophiidae
+Amphibia / Gymnophiona / Rhinatrematidae
+Amphibia / Gymnophiona / Scolecomorphidae
+Amphibia / Gymnophiona / Uraeotyphlidae
+Mammalia
+Mammalia / Monotremata
+Mammalia / Monotremata / Tachyglossidae
+Mammalia / Monotremata / Ornithorhynchidae
+Mammalia / Didelphimorphia
+Mammalia / Didelphimorphia / Didelphidae
+Mammalia / Didelphimorphia / Didelphidae / Caluromyinae
+Mammalia / Didelphimorphia / Didelphidae / Didelphinae
+Mammalia / Paucituberculata
+Mammalia / Paucituberculata / Caenolestidae
+Mammalia / Microbiotheria
+Mammalia / Microbiotheria / Microbiotheriidae
+Mammalia / Dasyuromorphia
+Mammalia / Dasyuromorphia / Thylacinidae
+Mammalia / Dasyuromorphia / Myrmecobiidae
+Mammalia / Dasyuromorphia / Dasyuridae
+Mammalia / Peramelemorphia
+Mammalia / Peramelemorphia / Peramelidae
+Mammalia / Peramelemorphia / Peroryctidae
+Mammalia / Notoryctemorphia
+Mammalia / Notoryctemorphia / Notoryctidae
+Mammalia / Diprotodontia
+Mammalia / Diprotodontia / Phascolarctidae
+Mammalia / Diprotodontia / Phalangeridae
+Mammalia / Diprotodontia / Potoroidae
+Mammalia / Diprotodontia / Macropodidae
+Mammalia / Diprotodontia / Burramyidae
+Mammalia / Diprotodontia / Pseudocheiridae
+Mammalia / Diprotodontia / Petauridae
+Mammalia / Diprotodontia / Tarsipedidae
+Mammalia / Diprotodontia / Acrobatidae
+Mammalia / Diprotodontia / Vombatidae
+Mammalia / Xenarthra
+Mammalia / Xenarthra / Bradypodidae
+Mammalia / Xenarthra / Megalonychidae
+Mammalia / Xenarthra / Megalonychidae / Choloepinae
+Mammalia / Xenarthra / Dasypodidae
+Mammalia / Xenarthra / Dasypodidae / Chlamyphorinae
+Mammalia / Xenarthra / Dasypodidae / Dasypodinae
+Mammalia / Xenarthra / Myrmecophagidae
+Mammalia / Insectivora
+Mammalia / Insectivora / Solenodontidae
+Mammalia / Insectivora / Nesophontidae
+Mammalia / Insectivora / Tenrecidae
+Mammalia / Insectivora / Tenrecidae / Geogalinae
+Mammalia / Insectivora / Tenrecidae / Oryzorictinae
+Mammalia / Insectivora / Tenrecidae / Potamogalinae
+Mammalia / Insectivora / Tenrecidae / Tenrecinae
+Mammalia / Insectivora / Chrysochloridae
+Mammalia / Insectivora / Erinaceidae
+Mammalia / Insectivora / Erinaceidae / Erinaceinae
+Mammalia / Insectivora / Erinaceidae / Erinaceinae / Erinaceus
+Mammalia / Insectivora / Erinaceidae / Erinaceinae / Erinaceus / europaeus
+Mammalia / Insectivora / Erinaceidae / Hylomyinae
+Mammalia / Insectivora / Soricidae
+Mammalia / Insectivora / Soricidae / Crocidurinae
+Mammalia / Insectivora / Soricidae / Crocidurinae / Crocidura
+Mammalia / Insectivora / Soricidae / Crocidurinae / Crocidura / leucodon
+Mammalia / Insectivora / Soricidae / Crocidurinae / Crocidura / russula
+Mammalia / Insectivora / Soricidae / Crocidurinae / Crocidura / sicula
+Mammalia / Insectivora / Soricidae / Crocidurinae / Crocidura / sp.
+Mammalia / Insectivora / Soricidae / Crocidurinae / Crocidura / suaveolens
+Mammalia / Insectivora / Soricidae / Crocidurinae / Crocidura / zimmermanni
+Mammalia / Insectivora / Soricidae / Crocidurinae / Suncus
+Mammalia / Insectivora / Soricidae / Crocidurinae / Suncus / etruscus
+Mammalia / Insectivora / Soricidae / Soricinae
+Mammalia / Insectivora / Soricidae / Soricinae / Neomys
+Mammalia / Insectivora / Soricidae / Soricinae / Neomys / anomalus
+Mammalia / Insectivora / Soricidae / Soricinae / Neomys / fodiens
+Mammalia / Insectivora / Soricidae / Soricinae / Neomys / newtoni
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / alpinus
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / araneus
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / caecutiens
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / coronatus
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / granarius
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / isodon
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / minutissimus
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / minutus
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / runtonensis
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / samniticus
+Mammalia / Insectivora / Soricidae / Soricinae / Sorex / savini
+Mammalia / Insectivora / Talpidae
+Mammalia / Insectivora / Talpidae / Desmaninae
+Mammalia / Insectivora / Talpidae / Desmaninae / Desmana
+Mammalia / Insectivora / Talpidae / Desmaninae / Desmana / moschata
+Mammalia / Insectivora / Talpidae / Desmaninae / Galemys
+Mammalia / Insectivora / Talpidae / Desmaninae / Galemys / pyrenaicus
+Mammalia / Insectivora / Talpidae / Talpinae
+Mammalia / Insectivora / Talpidae / Talpinae / Talpa
+Mammalia / Insectivora / Talpidae / Talpinae / Talpa / caeca
+Mammalia / Insectivora / Talpidae / Talpinae / Talpa / europaea
+Mammalia / Insectivora / Talpidae / Talpinae / Talpa / minor
+Mammalia / Insectivora / Talpidae / Talpinae / Talpa / romana
+Mammalia / Insectivora / Talpidae / Uropsilinae
+Mammalia / Scandentia
+Mammalia / Scandentia / Tupaiidae
+Mammalia / Scandentia / Tupaiidae / Tupaiinae
+Mammalia / Scandentia / Tupaiidae / Ptilocercinae
+Mammalia / Dermoptera
+Mammalia / Dermoptera / Cynocephalidae
+Mammalia / Chiroptera
+Mammalia / Chiroptera / Pteropodidae
+Mammalia / Chiroptera / Pteropodidae / Pteropodinae
+Mammalia / Chiroptera / Pteropodidae / Macroglossinae
+Mammalia / Chiroptera / Rhinopomatidae
+Mammalia / Chiroptera / Craseonycteridae
+Mammalia / Chiroptera / Emballonuridae
+Mammalia / Chiroptera / Nycteridae
+Mammalia / Chiroptera / Megadermatidae
+Mammalia / Chiroptera / Rhinolophidae
+Mammalia / Chiroptera / Rhinolophidae / Rhinolophinae
+Mammalia / Chiroptera / Rhinolophidae / Rhinolophinae / Rhinolophus
+Mammalia / Chiroptera / Rhinolophidae / Rhinolophinae / Rhinolophus / blasii
+Mammalia / Chiroptera / Rhinolophidae / Rhinolophinae / Rhinolophus / euryale
+Mammalia / Chiroptera / Rhinolophidae / Rhinolophinae / Rhinolophus / ferrumequinum
+Mammalia / Chiroptera / Rhinolophidae / Rhinolophinae / Rhinolophus / hipposideros
+Mammalia / Chiroptera / Rhinolophidae / Rhinolophinae / Rhinolophus / mehelyi
+Mammalia / Chiroptera / Rhinolophidae / Hipposiderinae
+Mammalia / Chiroptera / Mormoopidae
+Mammalia / Chiroptera / Phyllostomidae
+Mammalia / Chiroptera / Phyllostomidae / Phyllostominae
+Mammalia / Chiroptera / Phyllostomidae / Lonchophyllinae
+Mammalia / Chiroptera / Phyllostomidae / Brachyphyllinae
+Mammalia / Chiroptera / Phyllostomidae / Phyllonycterinae
+Mammalia / Chiroptera / Phyllostomidae / Glossophaginae
+Mammalia / Chiroptera / Phyllostomidae / Carolliinae
+Mammalia / Chiroptera / Phyllostomidae / Stenodermatinae
+Mammalia / Chiroptera / Phyllostomidae / Desmodontinae
+Mammalia / Chiroptera / Natalidae
+Mammalia / Chiroptera / Furipteridae
+Mammalia / Chiroptera / Thyropteridae
+Mammalia / Chiroptera / Myzopodidae
+Mammalia / Chiroptera / Vespertilionidae
+Mammalia / Chiroptera / Vespertilionidae / Kerivoulinae
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Barbastella
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Barbastella / barbastellus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Eptesicus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Eptesicus / nilssoni
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Eptesicus / serotinus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis / bechsteini
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis / blythi
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis / brandti
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis / capaccinii
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis / dasycneme
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis / daubentoni
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis / emarginatus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis / myotis
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis / mystacinus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Myotis / natterei
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Nyctalus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Nyctalus / lasiopterus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Nyctalus / leisleri
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Nyctalus / noctula
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Pipistrellus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Pipistrellus / kuhli
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Pipistrellus / nathusii
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Pipistrellus / pipistrellus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Pipistrellus / savii
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Plecotus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Plecotus / auritus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Plecotus / austriacus
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Vespertilio
+Mammalia / Chiroptera / Vespertilionidae / Vespertilioninae / Vespertilio / murinus
+Mammalia / Chiroptera / Vespertilionidae / Murininae
+Mammalia / Chiroptera / Vespertilionidae / Miniopterinae
+Mammalia / Chiroptera / Vespertilionidae / Miniopterinae / Miniopterus
+Mammalia / Chiroptera / Vespertilionidae / Miniopterinae / Miniopterus / schreibersi
+Mammalia / Chiroptera / Vespertilionidae / Tomopeatinae
+Mammalia / Chiroptera / Mystacinidae
+Mammalia / Chiroptera / Molossidae
+Mammalia / Chiroptera / Molossidae / Tadarida
+Mammalia / Chiroptera / Molossidae / Tadarida / teniotis
+Mammalia / Chiroptera / Noctilionidae
+Mammalia / Chiroptera / Palaeochiropterygidae
+Mammalia / Chiroptera / Palaeochiropterygidae / Palaeochiropteryx tupaiodon
+Mammalia / Primates
+Mammalia / Primates / Cheirogaleidae
+Mammalia / Primates / Cheirogaleidae / Cheirogaleinae
+Mammalia / Primates / Cheirogaleidae / Phanerinae
+Mammalia / Primates / Lemuridae
+Mammalia / Primates / Megaladapidae
+Mammalia / Primates / Indridae
+Mammalia / Primates / Daubentoniidae
+Mammalia / Primates / Loridae
+Mammalia / Primates / Galagonidae
+Mammalia / Primates / Tarsiidae
+Mammalia / Primates / Callitrichidae
+Mammalia / Primates / Cebidae
+Mammalia / Primates / Cebidae / Alouattinae
+Mammalia / Primates / Cebidae / Aotinae
+Mammalia / Primates / Cebidae / Atelinae
+Mammalia / Primates / Cebidae / Callicebinae
+Mammalia / Primates / Cebidae / Cebinae
+Mammalia / Primates / Cebidae / Pitheciinae
+Mammalia / Primates / Cercopithecidae
+Mammalia / Primates / Cercopithecidae / Cercopithecinae
+Mammalia / Primates / Cercopithecidae / Cercopithecinae / Macaca
+Mammalia / Primates / Cercopithecidae / Cercopithecinae / Macaca / sylvanus
+Mammalia / Primates / Cercopithecidae / Colobinae
+Mammalia / Primates / Hylobatidae
+Mammalia / Primates / Hominidae
+Mammalia / Primates / Hominidae / Homo
+Mammalia / Primates / Hominidae / Homo / sapiens
+Mammalia / Primates / Hominidae / Homo / sapiens / sapiens
+Mammalia / Carnivora
+Mammalia / Carnivora / Canidae
+Mammalia / Carnivora / Canidae / Alopex
+Mammalia / Carnivora / Canidae / Alopex / lagopus
+Mammalia / Carnivora / Canidae / Canis
+Mammalia / Carnivora / Canidae / Canis / aureus
+Mammalia / Carnivora / Canidae / Canis / familiaris
+Mammalia / Carnivora / Canidae / Canis / lupus
+Mammalia / Carnivora / Canidae / Cuon
+Mammalia / Carnivora / Canidae / Cuon / alpinus
+Mammalia / Carnivora / Canidae / Cuon / alpinus / europaeus
+Mammalia / Carnivora / Canidae / Vulpes
+Mammalia / Carnivora / Canidae / Vulpes / vulpes
+Mammalia / Carnivora / Felidae
+Mammalia / Carnivora / Felidae / Acinonychinae
+Mammalia / Carnivora / Felidae / Acinonychinae / Acinonyx jubatus
+Mammalia / Carnivora / Felidae / Felinae
+Mammalia / Carnivora / Felidae / Felinae / Felis
+Mammalia / Carnivora / Felidae / Felinae / Felis / catus
+Mammalia / Carnivora / Felidae / Felinae / Felis / silvestris
+Mammalia / Carnivora / Felidae / Felinae / Lynx
+Mammalia / Carnivora / Felidae / Felinae / Lynx / lynx
+Mammalia / Carnivora / Felidae / Felinae / Lynx / pardina
+Mammalia / Carnivora / Felidae / Pantherinae
+Mammalia / Carnivora / Felidae / Pantherinae / Panthera
+Mammalia / Carnivora / Felidae / Pantherinae / Panthera / leo
+Mammalia / Carnivora / Felidae / Pantherinae / Panthera / leo / spelaea
+Mammalia / Carnivora / Felidae / Pantherinae / Panthera / pardus
+Mammalia / Carnivora / Felidae / Machairodontinae
+Mammalia / Carnivora / Felidae / Machairodontinae / Homotherium
+Mammalia / Carnivora / Felidae / Machairodontinae / Homotherium / sp.
+Mammalia / Carnivora / Herpestidae
+Mammalia / Carnivora / Herpestidae / Galidiinae
+Mammalia / Carnivora / Herpestidae / Herpestinae
+Mammalia / Carnivora / Hyaenidae
+Mammalia / Carnivora / Hyaenidae / Hyaeninae
+Mammalia / Carnivora / Hyaenidae / Hyaeninae / Crocuta
+Mammalia / Carnivora / Hyaenidae / Hyaeninae / Crocuta / crocuta
+Mammalia / Carnivora / Hyaenidae / Hyaeninae / Crocuta / crocuta / spelaea
+Mammalia / Carnivora / Hyaenidae / Hyaeninae / Crocuta / spelaea
+Mammalia / Carnivora / Hyaenidae / Hyaeninae / Pachycrocuta
+Mammalia / Carnivora / Hyaenidae / Hyaeninae / Pachycrocuta / perrieri
+Mammalia / Carnivora / Hyaenidae / Protelinae
+Mammalia / Carnivora / Mustelidae
+Mammalia / Carnivora / Mustelidae / Lutrinae
+Mammalia / Carnivora / Mustelidae / Lutrinae / Lutra
+Mammalia / Carnivora / Mustelidae / Lutrinae / Lutra / lutra
+Mammalia / Carnivora / Mustelidae / Melinae
+Mammalia / Carnivora / Mustelidae / Melinae / Meles
+Mammalia / Carnivora / Mustelidae / Melinae / Meles / meles
+Mammalia / Carnivora / Mustelidae / Mellivorinae
+Mammalia / Carnivora / Mustelidae / Mephitinae
+Mammalia / Carnivora / Mustelidae / Mustelinae
+Mammalia / Carnivora / Mustelidae / Mustelinae / Gulo
+Mammalia / Carnivora / Mustelidae / Mustelinae / Gulo / gulo
+Mammalia / Carnivora / Mustelidae / Mustelinae / Martes
+Mammalia / Carnivora / Mustelidae / Mustelinae / Martes / foina
+Mammalia / Carnivora / Mustelidae / Mustelinae / Martes / martes
+Mammalia / Carnivora / Mustelidae / Mustelinae / Mustela
+Mammalia / Carnivora / Mustelidae / Mustelinae / Mustela / erminea
+Mammalia / Carnivora / Mustelidae / Mustelinae / Mustela / eversmanni
+Mammalia / Carnivora / Mustelidae / Mustelinae / Mustela / lutreola
+Mammalia / Carnivora / Mustelidae / Mustelinae / Mustela / nivalis
+Mammalia / Carnivora / Mustelidae / Mustelinae / Mustela / putorius
+Mammalia / Carnivora / Mustelidae / Mustelinae / Mustela / putorius / furo
+Mammalia / Carnivora / Mustelidae / Mustelinae / Vormela
+Mammalia / Carnivora / Mustelidae / Mustelinae / Vormela / peregusna
+Mammalia / Carnivora / Mustelidae / Taxidiinae
+Mammalia / Carnivora / Odobenidae
+Mammalia / Carnivora / Odobenidae / Odobenus
+Mammalia / Carnivora / Odobenidae / Odobenus / rosmarus
+Mammalia / Carnivora / Otariidae
+Mammalia / Carnivora / Phocidae
+Mammalia / Carnivora / Phocidae / Cystophora
+Mammalia / Carnivora / Phocidae / Cystophora / cristata
+Mammalia / Carnivora / Phocidae / Erignathus
+Mammalia / Carnivora / Phocidae / Erignathus / barbatus
+Mammalia / Carnivora / Phocidae / Halichoerus
+Mammalia / Carnivora / Phocidae / Halichoerus / grypus
+Mammalia / Carnivora / Phocidae / Monachus
+Mammalia / Carnivora / Phocidae / Monachus / monachus
+Mammalia / Carnivora / Phocidae / Phoca
+Mammalia / Carnivora / Phocidae / Phoca / vitulina
+Mammalia / Carnivora / Phocidae / Phoca / groenlandica
+Mammalia / Carnivora / Phocidae / Phoca / hispida
+Mammalia / Carnivora / Phocidae / Pagophilus
+Mammalia / Carnivora / Phocidae / Pagophilus / groenlandicus
+Mammalia / Carnivora / Procyonidae
+Mammalia / Carnivora / Procyonidae / Potosinae
+Mammalia / Carnivora / Procyonidae / Procyoninae
+Mammalia / Carnivora / Ursidae
+Mammalia / Carnivora / Ursidae / Ailurinae
+Mammalia / Carnivora / Ursidae / Ursinae
+Mammalia / Carnivora / Ursidae / Ursinae / Ursus
+Mammalia / Carnivora / Ursidae / Ursinae / Ursus / arctos
+Mammalia / Carnivora / Ursidae / Ursinae / Ursus / deningeri
+Mammalia / Carnivora / Ursidae / Ursinae / Ursus / spelaeus
+Mammalia / Carnivora / Ursidae / Ursinae / Thalarctos
+Mammalia / Carnivora / Ursidae / Ursinae / Thalarctos / maritimus
+Mammalia / Carnivora / Viverridae
+Mammalia / Carnivora / Viverridae / Cryptoproctinae
+Mammalia / Carnivora / Viverridae / Euplerinae
+Mammalia / Carnivora / Viverridae / Hemigalinae
+Mammalia / Carnivora / Viverridae / Nandiniinae
+Mammalia / Carnivora / Viverridae / Paradoxurinae
+Mammalia / Carnivora / Viverridae / Viverrinae
+Mammalia / Cetacea
+Mammalia / Cetacea / Balaenidae
+Mammalia / Cetacea / Balaenidae / Balaena
+Mammalia / Cetacea / Balaenidae / Balaena / sp.
+Mammalia / Cetacea / Balaenidae / Balaena / mysticetus
+Mammalia / Cetacea / Balaenidae / Eubalaena
+Mammalia / Cetacea / Balaenidae / Eubalaena / glacialis
+Mammalia / Cetacea / Balaenopteridae
+Mammalia / Cetacea / Balaenopteridae / Balaenoptera
+Mammalia / Cetacea / Balaenopteridae / Balaenoptera / sp.
+Mammalia / Cetacea / Balaenopteridae / Balaenoptera / borealis
+Mammalia / Cetacea / Balaenopteridae / Balaenoptera / acutorostrata
+Mammalia / Cetacea / Balaenopteridae / Balaenoptera / musculus
+Mammalia / Cetacea / Balaenopteridae / Balaenoptera / physalus
+Mammalia / Cetacea / Balaenopteridae / Megaptera
+Mammalia / Cetacea / Balaenopteridae / Megaptera / novaeangliae
+Mammalia / Cetacea / Eschrichtiidae
+Mammalia / Cetacea / Neobalaenidae
+Mammalia / Cetacea / Delphinidae
+Mammalia / Cetacea / Delphinidae / Delphinus
+Mammalia / Cetacea / Delphinidae / Delphinus / delphis
+Mammalia / Cetacea / Delphinidae / Globicephala
+Mammalia / Cetacea / Delphinidae / Globicephala / macrorhynchus
+Mammalia / Cetacea / Delphinidae / Globicephala / melaena
+Mammalia / Cetacea / Delphinidae / Grampus
+Mammalia / Cetacea / Delphinidae / Grampus / griseus
+Mammalia / Cetacea / Delphinidae / Lagenorhynchus
+Mammalia / Cetacea / Delphinidae / Lagenorhynchus / acutus
+Mammalia / Cetacea / Delphinidae / Lagenorhynchus / albirostris
+Mammalia / Cetacea / Delphinidae / Orcinus
+Mammalia / Cetacea / Delphinidae / Orcinus / orca
+Mammalia / Cetacea / Delphinidae / Pseudorca
+Mammalia / Cetacea / Delphinidae / Pseudorca / crassidens
+Mammalia / Cetacea / Delphinidae / Stenella
+Mammalia / Cetacea / Delphinidae / Stenella / coeruleoalba
+Mammalia / Cetacea / Delphinidae / Steno
+Mammalia / Cetacea / Delphinidae / Steno / bredanensis
+Mammalia / Cetacea / Delphinidae / Tursiops
+Mammalia / Cetacea / Delphinidae / Tursiops / truncatus
+Mammalia / Cetacea / Delphinidae / Lagenodelphis
+Mammalia / Cetacea / Delphinidae / Lagenodelphis / hosei
+Mammalia / Cetacea / Monodontidae
+Mammalia / Cetacea / Monodontidae / Delphinapterus
+Mammalia / Cetacea / Monodontidae / Delphinapterus / leucas
+Mammalia / Cetacea / Phocoenidae
+Mammalia / Cetacea / Phocoenidae / Phocaena
+Mammalia / Cetacea / Phocoenidae / Phocaena / phocaena
+Mammalia / Cetacea / Physeteridae
+Mammalia / Cetacea / Physeteridae / Kogia
+Mammalia / Cetacea / Physeteridae / Kogia / breviceps
+Mammalia / Cetacea / Physeteridae / Physeter
+Mammalia / Cetacea / Physeteridae / Physeter / catodon
+Mammalia / Cetacea / Platanistidae
+Mammalia / Cetacea / Ziphiidae
+Mammalia / Sirenia
+Mammalia / Sirenia / Dugongidae
+Mammalia / Sirenia / Trichechidae
+Mammalia / Proboscidea
+Mammalia / Proboscidea / Elephantidae
+Mammalia / Proboscidea / Elephantidae / Mammuthus
+Mammalia / Proboscidea / Elephantidae / Mammuthus / primigenius
+Mammalia / Proboscidea / Elephantidae / Mammuthus / trogontherii
+Mammalia / Proboscidea / Elephantidae / Elephas
+Mammalia / Proboscidea / Elephantidae / Elephas / antiquus
+Mammalia / Proboscidea / Elephantidae / Elephas / primigenius
+Mammalia / Perissodactyla
+Mammalia / Perissodactyla / Equidae
+Mammalia / Perissodactyla / Equidae / Equus
+Mammalia / Perissodactyla / Equidae / Equus / caballus
+Mammalia / Perissodactyla / Equidae / Equus / caballus / -
+Mammalia / Perissodactyla / Equidae / Equus / asinus
+Mammalia / Perissodactyla / Equidae / Equus / ferus
+Mammalia / Perissodactyla / Equidae / Equus / ferus / przewalskii
+Mammalia / Perissodactyla / Equidae / Equus / hemionus
+Mammalia / Perissodactyla / Equidae / Equus / przewalskii
+Mammalia / Perissodactyla / Equidae / Equus / hydrontinus
+Mammalia / Perissodactyla / Tapiridae
+Mammalia / Perissodactyla / Rhinocerotidae
+Mammalia / Perissodactyla / Rhinocerotidae / Coelodonta
+Mammalia / Perissodactyla / Rhinocerotidae / Coelodonta / antiquitatis
+Mammalia / Perissodactyla / Rhinocerotidae / Dicerorhinus
+Mammalia / Perissodactyla / Rhinocerotidae / Dicerorhinus / etruscus
+Mammalia / Perissodactyla / Rhinocerotidae / Dicerorhinus / hemitoechus
+Mammalia / Perissodactyla / Rhinocerotidae / Dicerorhinus / kirchbergensis
+Mammalia / Hyracoidea
+Mammalia / Hyracoidea / Procaviidae
+Mammalia / Tubulidentata
+Mammalia / Tubulidentata / Orycteropodidae
+Mammalia / Artiodactyla
+Mammalia / Artiodactyla / Suidae
+Mammalia / Artiodactyla / Suidae / Babyrousinae
+Mammalia / Artiodactyla / Suidae / Phacochoerinae
+Mammalia / Artiodactyla / Suidae / Suinae
+Mammalia / Artiodactyla / Suidae / Suinae / Sus
+Mammalia / Artiodactyla / Suidae / Suinae / Sus / scrofa
+Mammalia / Artiodactyla / Suidae / Suinae / Sus / scrofa / domesticus
+Mammalia / Artiodactyla / Suidae / Suinae / Sus / scrofa / ferus
+Mammalia / Artiodactyla / Tayassuidae
+Mammalia / Artiodactyla / Hippopotamidae
+Mammalia / Artiodactyla / Hippopotamidae / Hippopotamus
+Mammalia / Artiodactyla / Hippopotamidae / Hippopotamus / amphibius
+Mammalia / Artiodactyla / Hippopotamidae / Hippopotamus / incognitus
+Mammalia / Artiodactyla / Hippopotamidae / Hippopotamus / major
+Mammalia / Artiodactyla / Hippopotamidae / Hippopotamus / melitensis
+Mammalia / Artiodactyla / Hippopotamidae / Hippopotamus / pentlandi
+Mammalia / Artiodactyla / Camelidae
+Mammalia / Artiodactyla / Camelidae / Camelus
+Mammalia / Artiodactyla / Camelidae / Camelus / sp.
+Mammalia / Artiodactyla / Tragulidae
+Mammalia / Artiodactyla / Giraffidae
+Mammalia / Artiodactyla / Moschidae
+Mammalia / Artiodactyla / Cervidae
+Mammalia / Artiodactyla / Cervidae / Cervinae
+Mammalia / Artiodactyla / Cervidae / Cervinae / Cervus
+Mammalia / Artiodactyla / Cervidae / Cervinae / Cervus / elaphus
+Mammalia / Artiodactyla / Cervidae / Cervinae / Cervus / elaphus / jerseyensis
+Mammalia / Artiodactyla / Cervidae / Cervinae / Cervus / sicilae
+Mammalia / Artiodactyla / Cervidae / Cervinae / Dama
+Mammalia / Artiodactyla / Cervidae / Cervinae / Dama / clactoniana
+Mammalia / Artiodactyla / Cervidae / Cervinae / Dama / dama
+Mammalia / Artiodactyla / Cervidae / Cervinae / Praemegaceros
+Mammalia / Artiodactyla / Cervidae / Cervinae / Praemegaceros / verticornis
+Mammalia / Artiodactyla / Cervidae / Cervinae / Megaceros
+Mammalia / Artiodactyla / Cervidae / Cervinae / Megaceros / giganteus
+Mammalia / Artiodactyla / Cervidae / Hydropotinae
+Mammalia / Artiodactyla / Cervidae / Muntiacinae
+Mammalia / Artiodactyla / Cervidae / Odocoileinae
+Mammalia / Artiodactyla / Cervidae / Odocoileinae / Alces
+Mammalia / Artiodactyla / Cervidae / Odocoileinae / Alces / alces
+Mammalia / Artiodactyla / Cervidae / Odocoileinae / Alces / latifrons
+Mammalia / Artiodactyla / Cervidae / Odocoileinae / Capreolus
+Mammalia / Artiodactyla / Cervidae / Odocoileinae / Rangifer
+Mammalia / Artiodactyla / Cervidae / Odocoileinae / Rangifer / tarandus
+Mammalia / Artiodactyla / Antilocapridae
+Mammalia / Artiodactyla / Bovidae
+Mammalia / Artiodactyla / Bovidae / Aepycerotinae
+Mammalia / Artiodactyla / Bovidae / Alcelaphinae
+Mammalia / Artiodactyla / Bovidae / Antilopinae
+Mammalia / Artiodactyla / Bovidae / Antilopinae / Saiga
+Mammalia / Artiodactyla / Bovidae / Antilopinae / Saiga / tatarica
+Mammalia / Artiodactyla / Bovidae / Bovinae
+Mammalia / Artiodactyla / Bovidae / Bovinae / Bison
+Mammalia / Artiodactyla / Bovidae / Bovinae / Bison / bonasus
+Mammalia / Artiodactyla / Bovidae / Bovinae / Bison / priscus
+Mammalia / Artiodactyla / Bovidae / Bovinae / Bison / schoetensacki
+Mammalia / Artiodactyla / Bovidae / Bovinae / Bos
+Mammalia / Artiodactyla / Bovidae / Bovinae / Bos / primigenius
+Mammalia / Artiodactyla / Bovidae / Bovinae / Bos / taurus
+Mammalia / Artiodactyla / Bovidae / Bovinae / Bubalus
+Mammalia / Artiodactyla / Bovidae / Bovinae / Bubalus / murrensis
+Mammalia / Artiodactyla / Bovidae / Caprinae
+Mammalia / Artiodactyla / Bovidae / Caprinae / Capra
+Mammalia / Artiodactyla / Bovidae / Caprinae / Capra / caucasica
+Mammalia / Artiodactyla / Bovidae / Caprinae / Capra / hircus
+Mammalia / Artiodactyla / Bovidae / Caprinae / Capra / ibex
+Mammalia / Artiodactyla / Bovidae / Caprinae / Capra / pyrenaica
+Mammalia / Artiodactyla / Bovidae / Caprinae / Ovibos
+Mammalia / Artiodactyla / Bovidae / Caprinae / Ovibos / moschatus
+Mammalia / Artiodactyla / Bovidae / Caprinae / Ovis
+Mammalia / Artiodactyla / Bovidae / Caprinae / Ovis / aries
+Mammalia / Artiodactyla / Bovidae / Caprinae / Ovis / musimon
+Mammalia / Artiodactyla / Bovidae / Caprinae / Rupicapra
+Mammalia / Artiodactyla / Bovidae / Caprinae / Rupicapra / rupicapra
+Mammalia / Artiodactyla / Bovidae / Cephalophinae
+Mammalia / Artiodactyla / Bovidae / Hippotraginae
+Mammalia / Artiodactyla / Bovidae / Peleinae
+Mammalia / Artiodactyla / Bovidae / Reduncinae
+Mammalia / Pholidota
+Mammalia / Pholidota / Manidae
+Mammalia / Rodentia
+Mammalia / Rodentia / Sciurognathi
+Mammalia / Rodentia / Sciurognathi / Aplodontidae
+Mammalia / Rodentia / Sciurognathi / Sciuridae
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae / Citellus
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae / Citellus / citellus
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae / Sciurus
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae / Sciurus / vulgaris
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae / Sciurus / whitei
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae / Spermophilus
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae / Spermophilus / citellus
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae / Marmota
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae / Marmota / bobac
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Sciurinae / Marmota / marmota
+Mammalia / Rodentia / Sciurognathi / Sciuridae / Petauristinae
+Mammalia / Rodentia / Sciurognathi / Castoridae
+Mammalia / Rodentia / Sciurognathi / Castoridae / Castor
+Mammalia / Rodentia / Sciurognathi / Castoridae / Castor / fiber
+Mammalia / Rodentia / Sciurognathi / Castoridae / Trogontherium
+Mammalia / Rodentia / Sciurognathi / Castoridae / Trogontherium / cuvieri
+Mammalia / Rodentia / Sciurognathi / Geomyidae
+Mammalia / Rodentia / Sciurognathi / Heteromyidae
+Mammalia / Rodentia / Sciurognathi / Heteromyidae / Dipodomyinae
+Mammalia / Rodentia / Sciurognathi / Heteromyidae / Heteromyinae
+Mammalia / Rodentia / Sciurognathi / Heteromyidae / Perognathinae
+Mammalia / Rodentia / Sciurognathi / Dipodidae
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Allactaginae
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Allactaginae / Allactaga
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Allactaginae / Allactaga / jaculus
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Dipodinae
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Cardiocraniinae
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Paradipodinae
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Sicistinae
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Sicistinae / Sicista
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Sicistinae / Sicista / betulina
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Sicistinae / Sicista / subtilis
+Mammalia / Rodentia / Sciurognathi / Dipodidae / Zapodinae
+Mammalia / Rodentia / Sciurognathi / Muridae
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Arvicola
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Arvicola / cantiana
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Arvicola / sapidus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Arvicola / terrestris
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Clethrionomys
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Clethrionomys / glareolus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Clethrionomys / rutilus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Clethrionomys / ryfocanus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Dicrostonyx
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Dicrostonyx / torquatus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Dinaromys
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Dinaromys / bogdanovi
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Lemmus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Lemmus / lemmus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Microtus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Microtus / agrestis
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Microtus / arvalis
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Microtus / cabrerae
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Microtus / epiroticus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Microtus / gregalis
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Microtus / guentheri
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Microtus / incertus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Microtus / nivalis
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Microtus / oeconomus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Myopus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Myopus / schisticolor
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / arvaloides
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / bavaricus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / duodecimcostatus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / felteni
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / gregaloides
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / lusitanicus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / majori
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / multiplex
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / pyrenaicus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / savii
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / subterraneus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / tatricus
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Pitymys / thomasi
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Mimomys
+Mammalia / Rodentia / Sciurognathi / Muridae / Arvicolinae / Mimomys / savini
+Mammalia / Rodentia / Sciurognathi / Muridae / Calomyscinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Cricetinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Cricetinae / Cricetulus
+Mammalia / Rodentia / Sciurognathi / Muridae / Cricetinae / Cricetulus / migratorius
+Mammalia / Rodentia / Sciurognathi / Muridae / Cricetinae / Phodopus
+Mammalia / Rodentia / Sciurognathi / Muridae / Cricetinae / Phodopus / sungorus
+Mammalia / Rodentia / Sciurognathi / Muridae / Cricetinae / Cricetus
+Mammalia / Rodentia / Sciurognathi / Muridae / Cricetinae / Cricetus / cricetus
+Mammalia / Rodentia / Sciurognathi / Muridae / Cricetomyinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Dendromurinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Gerbillinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Lophiomyinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Acomys
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Acomys / cahirinus
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Acomys / minous
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Apodemus
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Apodemus / agrarius
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Apodemus / alpicola
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Apodemus / flavicollis
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Apodemus / microps
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Apodemus / mystacinus
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Apodemus / sylvaticus
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Rattus
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Rattus / sp.
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Rattus / rattus norvegicus
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Micromys
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Micromys / minutus
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Mus
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Mus / hortulanus
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Mus / musculus
+Mammalia / Rodentia / Sciurognathi / Muridae / Murinae / Mus / sp.
+Mammalia / Rodentia / Sciurognathi / Muridae / Myospalacinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Mystromyinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Nesomyinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Otomyinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Petromyscinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Platacanthomyinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Rhizomyinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Sigmodontinae
+Mammalia / Rodentia / Sciurognathi / Muridae / Spalacinae
+Mammalia / Rodentia / Sciurognathi / Anomaluridae
+Mammalia / Rodentia / Sciurognathi / Anomaluridae / Anomalurinae
+Mammalia / Rodentia / Sciurognathi / Anomaluridae / Zenkerellinae
+Mammalia / Rodentia / Sciurognathi / Pedetidae
+Mammalia / Rodentia / Sciurognathi / Ctenodactylidae
+Mammalia / Rodentia / Sciurognathi / Myoxidae
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Graphiurinae
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Leithiinae
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Leithiinae / Dryomys
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Leithiinae / Dryomys / nitedula
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Leithiinae / Eliomys
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Leithiinae / Eliomys / quercinus
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Myoxinae
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Myoxinae / Glis
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Myoxinae / Glis / glis
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Myoxinae / Muscardinus
+Mammalia / Rodentia / Sciurognathi / Myoxidae / Myoxinae / Muscardinus / avellanarius
+Mammalia / Rodentia / Hystricognathi
+Mammalia / Rodentia / Hystricognathi / Bathyergidae
+Mammalia / Rodentia / Hystricognathi / Hystricidae
+Mammalia / Rodentia / Hystricognathi / Hystricidae / Hystrix
+Mammalia / Rodentia / Hystricognathi / Hystricidae / Hystrix / cristata
+Mammalia / Rodentia / Hystricognathi / Petromuridae
+Mammalia / Rodentia / Hystricognathi / Thryonomyidae
+Mammalia / Rodentia / Hystricognathi / Erethizontidae
+Mammalia / Rodentia / Hystricognathi / Chinchillidae
+Mammalia / Rodentia / Hystricognathi / Dinomyidae
+Mammalia / Rodentia / Hystricognathi / Caviidae
+Mammalia / Rodentia / Hystricognathi / Caviidae / Caviinae
+Mammalia / Rodentia / Hystricognathi / Caviidae / Dolichotinae
+Mammalia / Rodentia / Hystricognathi / Hydrochaeridae
+Mammalia / Rodentia / Hystricognathi / Dasyproctidae
+Mammalia / Rodentia / Hystricognathi / Agoutidae
+Mammalia / Rodentia / Hystricognathi / Ctenomyidae
+Mammalia / Rodentia / Hystricognathi / Octodontidae
+Mammalia / Rodentia / Hystricognathi / Abrocomidae
+Mammalia / Rodentia / Hystricognathi / Echimyidae
+Mammalia / Rodentia / Hystricognathi / Echimyidae / Chaetomyinae
+Mammalia / Rodentia / Hystricognathi / Echimyidae / Dactylomyinae
+Mammalia / Rodentia / Hystricognathi / Echimyidae / Echimyinae
+Mammalia / Rodentia / Hystricognathi / Echimyidae / Eumysopinae
+Mammalia / Rodentia / Hystricognathi / Echimyidae / Heteropsomyinae
+Mammalia / Rodentia / Hystricognathi / Capromyidae
+Mammalia / Rodentia / Hystricognathi / Capromyidae / Capromyinae
+Mammalia / Rodentia / Hystricognathi / Capromyidae / Hexolobodontinae
+Mammalia / Rodentia / Hystricognathi / Capromyidae / Isolobodontinae
+Mammalia / Rodentia / Hystricognathi / Capromyidae / Plagiodontinae
+Mammalia / Rodentia / Hystricognathi / Heptaxodontidae
+Mammalia / Rodentia / Hystricognathi / Heptaxodontidae / Clidomyinae
+Mammalia / Rodentia / Hystricognathi / Heptaxodontidae / Heptaxodontinae
+Mammalia / Rodentia / Hystricognathi / Myocastoridae
+Mammalia / Lagomorpha
+Mammalia / Lagomorpha / Ochotonidae
+Mammalia / Lagomorpha / Ochotonidae / Ochotona
+Mammalia / Lagomorpha / Ochotonidae / Ochotona / pusilla
+Mammalia / Lagomorpha / Leporidae
+Mammalia / Lagomorpha / Leporidae / Lepus
+Mammalia / Lagomorpha / Leporidae / Lepus / capensis
+Mammalia / Lagomorpha / Leporidae / Lepus / timidus
+Mammalia / Lagomorpha / Leporidae / Oryctolagus
+Mammalia / Lagomorpha / Leporidae / Oryctolagus / cuniculus
+Mammalia / Macroscelidea
+Mammalia / Macroscelidea / Macroscelididae
+Reptilia
+Reptilia / Testudines
+Reptilia / Testudines / Carettochelyidae
+Reptilia / Testudines / Chelidae 
+Reptilia / Testudines / Chelydridae
+Reptilia / Testudines / Dermatemydidae 
+Reptilia / Testudines / Dermochelyidae
+Reptilia / Testudines / Dermochelyidae / Dermochelys
+Reptilia / Testudines / Dermochelyidae / Dermochelys / coriacea
+Reptilia / Testudines / Emydidae
+Reptilia / Testudines / Emydidae / Emys
+Reptilia / Testudines / Emydidae / Emys / orbicularis
+Reptilia / Testudines / Emydidae / Mauremys
+Reptilia / Testudines / Emydidae / Mauremys / leprosa
+Reptilia / Testudines / Kinosternidae
+Reptilia / Testudines / Pelomedusidae
+Reptilia / Testudines / Testudinidae 
+Reptilia / Testudines / Testudinidae  / Testudo
+Reptilia / Testudines / Testudinidae  / Testudo / graeca
+Reptilia / Testudines / Testudinidae  / Testudo / hermanni
+Reptilia / Testudines / Testudinidae  / Testudo / marginata
+Reptilia / Testudines / Trionychidae
+Reptilia / Testudines / Cheloniidae
+Reptilia / Testudines / Cheloniidae / Caretta
+Reptilia / Testudines / Cheloniidae / Caretta / caretta
+Reptilia / Testudines / Cheloniidae / Chelonia
+Reptilia / Testudines / Cheloniidae / Chelonia / mydas
+Reptilia / Testudines / Cheloniidae / Eretmochelys
+Reptilia / Testudines / Cheloniidae / Eretmochelys / imbricata
+Reptilia / Testudines / Cheloniidae / Lepidochelys
+Reptilia / Testudines / Cheloniidae / Lepidochelys / kempii
+Reptilia / Serpentes
+Reptilia / Serpentes / Henophidia
+Reptilia / Serpentes / Henophidia / Aniliidae
+Reptilia / Serpentes / Henophidia / Anomochilidae
+Reptilia / Serpentes / Henophidia / Boidae
+Reptilia / Serpentes / Henophidia / Bolyeridae
+Reptilia / Serpentes / Henophidia / Cylindrophiidae
+Reptilia / Serpentes / Henophidia / Loxocemidae
+Reptilia / Serpentes / Henophidia / Tropidophiidae
+Reptilia / Serpentes / Henophidia / Uropeltidae
+Reptilia / Serpentes / Henophidia / Xenopeltidae
+Reptilia / Serpentes / Typhlopoidea
+Reptilia / Serpentes / Typhlopoidea / Anomalepidae
+Reptilia / Serpentes / Typhlopoidea / Leptotyphlopidae
+Reptilia / Serpentes / Typhlopoidea / Typhlopidae
+Reptilia / Serpentes / Xenophidia
+Reptilia / Serpentes / Xenophidia / Acrochordidae
+Reptilia / Serpentes / Xenophidia / Atractaspididae
+Reptilia / Serpentes / Xenophidia / Colubridae
+Reptilia / Serpentes / Xenophidia / Colubridae / Coluber
+Reptilia / Serpentes / Xenophidia / Colubridae / Coluber / caspius
+Reptilia / Serpentes / Xenophidia / Colubridae / Coluber / gemonensis
+Reptilia / Serpentes / Xenophidia / Colubridae / Coluber / hippocrepis
+Reptilia / Serpentes / Xenophidia / Colubridae / Coluber / najadum
+Reptilia / Serpentes / Xenophidia / Colubridae / Coluber / viridiflavus
+Reptilia / Serpentes / Xenophidia / Colubridae / Coronella
+Reptilia / Serpentes / Xenophidia / Colubridae / Coronella / austriaca
+Reptilia / Serpentes / Xenophidia / Colubridae / Coronella / girondica
+Reptilia / Serpentes / Xenophidia / Colubridae / Elaphe
+Reptilia / Serpentes / Xenophidia / Colubridae / Elaphe / longissima
+Reptilia / Serpentes / Xenophidia / Colubridae / Elaphe / quatuorlineata
+Reptilia / Serpentes / Xenophidia / Colubridae / Elaphe / scalaris
+Reptilia / Serpentes / Xenophidia / Colubridae / Elaphe / situla
+Reptilia / Serpentes / Xenophidia / Colubridae / Macroprotodon
+Reptilia / Serpentes / Xenophidia / Colubridae / Macroprotodon / cucullatus
+Reptilia / Serpentes / Xenophidia / Colubridae / Macroprotodon / monspessulanus
+Reptilia / Serpentes / Xenophidia / Colubridae / Natrix
+Reptilia / Serpentes / Xenophidia / Colubridae / Natrix / maura
+Reptilia / Serpentes / Xenophidia / Colubridae / Natrix / natrix
+Reptilia / Serpentes / Xenophidia / Colubridae / Natrix / tessellata
+Reptilia / Serpentes / Xenophidia / Colubridae / Telescopus
+Reptilia / Serpentes / Xenophidia / Colubridae / Telescopus / fallax
+Reptilia / Serpentes / Xenophidia / Elapidae
+Reptilia / Serpentes / Xenophidia / Hydrophiidae
+Reptilia / Serpentes / Xenophidia / Viperidae
+Reptilia / Serpentes / Xenophidia / Viperidae / Vipera
+Reptilia / Serpentes / Xenophidia / Viperidae / Vipera / ammodytes
+Reptilia / Serpentes / Xenophidia / Viperidae / Vipera / aspis
+Reptilia / Serpentes / Xenophidia / Viperidae / Vipera / berus
+Reptilia / Serpentes / Xenophidia / Viperidae / Vipera / latastei
+Reptilia / Serpentes / Xenophidia / Viperidae / Vipera / seoanei
+Reptilia / Serpentes / Xenophidia / Viperidae / Vipera / ursinii
+Reptilia / Crocodilia
+Reptilia / Crocodilia / Crocodylidae
+Reptilia / Lepidosauria
+Reptilia / Lepidosauria / Rhynchocephalia
+Reptilia / Lepidosauria / Diploglossa
+Reptilia / Lepidosauria / Diploglossa / Anguidae
+Reptilia / Lepidosauria / Diploglossa / Anguidae / Anguis
+Reptilia / Lepidosauria / Diploglossa / Anguidae / Anguis / fragilis
+Reptilia / Lepidosauria / Diploglossa / Anguidae / Ophisaurus
+Reptilia / Lepidosauria / Diploglossa / Anguidae / Ophisaurus / apodus
+Reptilia / Lepidosauria / Diploglossa / Anniellidae
+Reptilia / Lepidosauria / Diploglossa / Xenosauridae
+Reptilia / Lepidosauria / Gekkota
+Reptilia / Lepidosauria / Gekkota / Dibamidae
+Reptilia / Lepidosauria / Gekkota / Gekkonidae
+Reptilia / Lepidosauria / Gekkota / Gekkonidae / Hemidactylus
+Reptilia / Lepidosauria / Gekkota / Gekkonidae / Hemidactylus / turcicus
+Reptilia / Lepidosauria / Gekkota / Gekkonidae / Phyllodactylus
+Reptilia / Lepidosauria / Gekkota / Gekkonidae / Phyllodactylus / europaeus
+Reptilia / Lepidosauria / Gekkota / Gekkonidae / Tarentola
+Reptilia / Lepidosauria / Gekkota / Gekkonidae / Tarentola / mauritanica
+Reptilia / Lepidosauria / Gekkota / Pygopodidae
+Reptilia / Lepidosauria / Iguania
+Reptilia / Lepidosauria / Iguania / Agamidae
+Reptilia / Lepidosauria / Iguania / Agamidae / Agama
+Reptilia / Lepidosauria / Iguania / Agamidae / Agama / stellio
+Reptilia / Lepidosauria / Iguania / Chamaeleonidae
+Reptilia / Lepidosauria / Iguania / Chamaeleonidae / Chamaeleo
+Reptilia / Lepidosauria / Iguania / Chamaeleonidae / Chamaeleo / chamaeleon
+Reptilia / Lepidosauria / Iguania / Corytophanidae
+Reptilia / Lepidosauria / Iguania / Crotaphytidae
+Reptilia / Lepidosauria / Iguania / Hoplocercidae
+Reptilia / Lepidosauria / Iguania / Iguanidae
+Reptilia / Lepidosauria / Iguania / Opluridae
+Reptilia / Lepidosauria / Iguania / Phrynosomatidae
+Reptilia / Lepidosauria / Iguania / Polychrotidae
+Reptilia / Lepidosauria / Iguania / Tropiduridae
+Reptilia / Lepidosauria / Platynota
+Reptilia / Lepidosauria / Platynota / Helodermatidae
+Reptilia / Lepidosauria / Platynota / Lanthanotidae
+Reptilia / Lepidosauria / Platynota / Varanidae
+Reptilia / Lepidosauria / Scincomorpha
+Reptilia / Lepidosauria / Scincomorpha / Cordylidae
+Reptilia / Lepidosauria / Scincomorpha / Gerrhosauridae
+Reptilia / Lepidosauria / Scincomorpha / Gymnophthalmidae
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Acanthodactylus
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Acanthodactylus / erythrurus
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Lacerta
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Lacerta / agilis
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Lacerta / lepida
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Lacerta / monticola
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Lacerta / schreiberi
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Lacerta / trilineata
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Lacerta / viridis
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Lacerta / vivipara
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Podarcis
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Podarcis / hispanica
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Podarcis / muralis
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Podarcis / sicula
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Psammodromus
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Psammodromus / algirus
+Reptilia / Lepidosauria / Scincomorpha / Lacertidae / Psammodromus / hispanicus
+Reptilia / Lepidosauria / Scincomorpha / Scincidae
+Reptilia / Lepidosauria / Scincomorpha / Teiidae
+Reptilia / Lepidosauria / Scincomorpha / Xantusiidae
+Reptilia / Amphisbaenia
+Reptilia / Amphisbaenia / Amphisbaenidae
+Reptilia / Amphisbaenia / Amphisbaenidae / Blanus
+Reptilia / Amphisbaenia / Amphisbaenidae / Blanus / cinereus
+Reptilia / Amphisbaenia / Rhineuridae
+Reptilia / Amphisbaenia / Bipedidae
+Reptilia / Amphisbaenia / Trogonophiidae
+Aves
+Aves / Struthioniformes
+Aves / Struthioniformes / Struthionidae
+Aves / Struthioniformes / Rheidae
+Aves / Struthioniformes / Casuariidae
+Aves / Struthioniformes / Dromiceiidae
+Aves / Struthioniformes / Apterygidae
+Aves / Tinamiformes
+Aves / Tinamiformes / Tinamidae
+Aves / Craciformes
+Aves / Craciformes / Cracidae
+Aves / Craciformes / Megapodiidae
+Aves / Galliformes
+Aves / Galliformes / Phasianidae
+Aves / Galliformes / Phasianidae / Alectoris
+Aves / Galliformes / Phasianidae / Alectoris / graeca
+Aves / Galliformes / Phasianidae / Alectoris / graeca / chukar
+Aves / Galliformes / Phasianidae / Alectoris / graeca / saxatilis
+Aves / Galliformes / Phasianidae / Alectoris / rufa
+Aves / Galliformes / Phasianidae / Coturnix
+Aves / Galliformes / Phasianidae / Coturnix / coturnix
+Aves / Galliformes / Phasianidae / Perdix
+Aves / Galliformes / Phasianidae / Perdix / perdix
+Aves / Galliformes / Phasianidae / Phasianus
+Aves / Galliformes / Phasianidae / Phasianus / colchicus
+Aves / Galliformes / Phasianidae / Syrmaticus
+Aves / Galliformes / Phasianidae / Syrmaticus / reevesi
+Aves / Galliformes / Phasianidae / Gallus
+Aves / Galliformes / Phasianidae / Gallus / domesticus
+Aves / Galliformes / Numididae
+Aves / Galliformes / Odontophoridae
+Aves / Galliformes / Tetraonidae
+Aves / Galliformes / Tetraonidae / Lagopus
+Aves / Galliformes / Tetraonidae / Lagopus / lagopus
+Aves / Galliformes / Tetraonidae / Lagopus / mutus
+Aves / Galliformes / Tetraonidae / Tetrao
+Aves / Galliformes / Tetraonidae / Tetrao / urogallus
+Aves / Galliformes / Tetraonidae / Tetrastes
+Aves / Galliformes / Tetraonidae / Tetrastes / bonasia
+Aves / Anseriformes
+Aves / Anseriformes / Anhimidae
+Aves / Anseriformes / Anseranatidae
+Aves / Anseriformes / Dendrocygnidae
+Aves / Anseriformes / Anatidae
+Aves / Anseriformes / Anatidae / Branta
+Aves / Anseriformes / Anatidae / Branta / bernicla
+Aves / Anseriformes / Anatidae / Aythya
+Aves / Anseriformes / Anatidae / Aythya / ferina
+Aves / Anseriformes / Anatidae / Aythya / fuligula
+Aves / Anseriformes / Anatidae / Aythya / marila
+Aves / Anseriformes / Anatidae / Bucephala
+Aves / Anseriformes / Anatidae / Bucephala / clangula
+Aves / Anseriformes / Anatidae / Clangula
+Aves / Anseriformes / Anatidae / Clangula / hyemalis
+Aves / Anseriformes / Anatidae / Cygnus
+Aves / Anseriformes / Anatidae / Cygnus / sp.
+Aves / Anseriformes / Anatidae / Cygnus / cygnus
+Aves / Anseriformes / Anatidae / Mergus
+Aves / Anseriformes / Anatidae / Mergus / albellus
+Aves / Anseriformes / Anatidae / Mergus / merganser
+Aves / Anseriformes / Anatidae / Mergus / serrator
+Aves / Anseriformes / Anatidae / Netta
+Aves / Anseriformes / Anatidae / Netta / rufina
+Aves / Anseriformes / Anatidae / Tadorna
+Aves / Anseriformes / Anatidae / Tadorna / tadorna
+Aves / Anseriformes / Anatidae / Anas
+Aves / Anseriformes / Anatidae / Anas / sp.
+Aves / Anseriformes / Anatidae / Anas / acuta
+Aves / Anseriformes / Anatidae / Anas / clypeata
+Aves / Anseriformes / Anatidae / Anas / crecca
+Aves / Anseriformes / Anatidae / Anas / penelope
+Aves / Anseriformes / Anatidae / Anas / platyrhynchos
+Aves / Anseriformes / Anatidae / Anas / querquedula
+Aves / Anseriformes / Anatidae / Anas / strepera
+Aves / Anseriformes / Anatidae / Anser
+Aves / Anseriformes / Anatidae / Anser / sp.
+Aves / Anseriformes / Anatidae / Anser / albifrons
+Aves / Anseriformes / Anatidae / Anser / anser
+Aves / Anseriformes / Anatidae / Anser / fabalis
+Aves / Anseriformes / Anatidae / Melanitta
+Aves / Anseriformes / Anatidae / Melanitta / fusca
+Aves / Anseriformes / Anatidae / Melanitta / nigra
+Aves / Anseriformes / Anatidae / Somateria
+Aves / Anseriformes / Anatidae / Somateria / mollissima
+Aves / Turniciformes
+Aves / Turniciformes / Turnicidae
+Aves / Piciformes
+Aves / Piciformes / Indicatoridae
+Aves / Piciformes / Picidae
+Aves / Piciformes / Picidae / Picus
+Aves / Piciformes / Picidae / Picus / viridis
+Aves / Piciformes / Lybiidae
+Aves / Piciformes / Rhamphastidae
+Aves / Piciformes / Megalaimoidae
+Aves / Galbuliformes
+Aves / Galbuliformes / Galbulidae
+Aves / Galbuliformes / Bucconidae
+Aves / Bucerotiformes
+Aves / Bucerotiformes / Bucerotidae
+Aves / Bucerotiformes / Bucorvidae
+Aves / Upupiformes
+Aves / Upupiformes / Upupidae
+Aves / Upupiformes / Upupidae / Upupa
+Aves / Upupiformes / Upupidae / Upupa / epops
+Aves / Upupiformes / Phoeniculidae
+Aves / Upupiformes / Rhinopomastidae
+Aves / Trogoniformes
+Aves / Trogoniformes / Trogonidae
+Aves / Coraciiformes
+Aves / Coraciiformes / Coraciidae
+Aves / Coraciiformes / Brachypteraciidae
+Aves / Coraciiformes / Leptosomidae
+Aves / Coraciiformes / Momotidae
+Aves / Coraciiformes / Alcedinidae
+Aves / Coraciiformes / Alcedinidae / Alcedo
+Aves / Coraciiformes / Alcedinidae / Alcedo / atthis
+Aves / Coraciiformes / Dacelonidae
+Aves / Coraciiformes / Cerylidae
+Aves / Coraciiformes / Meropidae
+Aves / Coraciiformes / Todidae
+Aves / Coliiformes
+Aves / Coliiformes / Coliidae
+Aves / Cuculiformes
+Aves / Cuculiformes / Cuculidae
+Aves / Cuculiformes / Centropodidae
+Aves / Cuculiformes / Coccyzidae
+Aves / Cuculiformes / Opisthocomidae
+Aves / Cuculiformes / Crotophagidae
+Aves / Cuculiformes / Neomorphidae
+Aves / Psittaciformes
+Aves / Psittaciformes / Psittacidae
+Aves / Apodiformes
+Aves / Apodiformes / Apodidae
+Aves / Apodiformes / Hemiprocnidae
+Aves / Trochiliformes
+Aves / Trochiliformes / Trochilidae
+Aves / Musophagiformes
+Aves / Musophagiformes / Musophagidae
+Aves / Strigiformes
+Aves / Strigiformes / Tytonidae
+Aves / Strigiformes / Tytonidae / Tyto
+Aves / Strigiformes / Tytonidae / Tyto / alba
+Aves / Strigiformes / Strigidae
+Aves / Strigiformes / Strigidae / Aegolius
+Aves / Strigiformes / Strigidae / Aegolius / funereus
+Aves / Strigiformes / Strigidae / Bubo
+Aves / Strigiformes / Strigidae / Bubo / bubo
+Aves / Strigiformes / Strigidae / Nyctea
+Aves / Strigiformes / Strigidae / Nyctea / scandiaca
+Aves / Strigiformes / Strigidae / Strix
+Aves / Strigiformes / Strigidae / Strix / aluco
+Aves / Strigiformes / Strigidae / Glaucidium
+Aves / Strigiformes / Strigidae / Glaucidium / passerinum
+Aves / Strigiformes / Aegothelidae
+Aves / Strigiformes / Podargidae
+Aves / Strigiformes / Batrachostomidae
+Aves / Strigiformes / Steatornithidae
+Aves / Strigiformes / Nyctibiidae
+Aves / Strigiformes / Eurostopodidae
+Aves / Strigiformes / Caprimulgidae
+Aves / Columbiformes
+Aves / Columbiformes / Columbidae
+Aves / Columbiformes / Columbidae / Columba
+Aves / Columbiformes / Columbidae / Columba / sp.
+Aves / Columbiformes / Columbidae / Columba / livia
+Aves / Columbiformes / Columbidae / Columba / oenas
+Aves / Columbiformes / Columbidae / Columba / palumbus
+Aves / Columbiformes / Columbidae / Streptopelia
+Aves / Columbiformes / Columbidae / Streptopelia / decaocto
+Aves / Columbiformes / Columbidae / Streptopelia / turtur
+Aves / Gruiformes
+Aves / Gruiformes / Eurypygidae
+Aves / Gruiformes / Otididae
+Aves / Gruiformes / Otididae / Otis
+Aves / Gruiformes / Otididae / Otis / tarda
+Aves / Gruiformes / Otididae / Otis / tetrax
+Aves / Gruiformes / Otididae / Tetrax
+Aves / Gruiformes / Otididae / Tetrax / tetrax
+Aves / Gruiformes / Gruidae
+Aves / Gruiformes / Gruidae / Grus
+Aves / Gruiformes / Gruidae / Grus / grus
+Aves / Gruiformes / Heliornithidae
+Aves / Gruiformes / Psophiidae
+Aves / Gruiformes / Cariamidae
+Aves / Gruiformes / Rhynochetidae
+Aves / Gruiformes / Rallidae
+Aves / Gruiformes / Rallidae / Crex
+Aves / Gruiformes / Rallidae / Crex / crex
+Aves / Gruiformes / Rallidae / Gallinula
+Aves / Gruiformes / Rallidae / Gallinula / chloropus
+Aves / Gruiformes / Rallidae / Porzana
+Aves / Gruiformes / Rallidae / Porzana / porzana
+Aves / Gruiformes / Rallidae / Rallus
+Aves / Gruiformes / Rallidae / Rallus / aquaticus
+Aves / Gruiformes / Rallidae / Fulica
+Aves / Gruiformes / Rallidae / Fulica / atra
+Aves / Gruiformes / Mesitornithidae
+Aves / Ciconiiformes
+Aves / Ciconiiformes / Pteroclidae
+Aves / Ciconiiformes / Thinocoridae
+Aves / Ciconiiformes / Pedionomidae
+Aves / Ciconiiformes / Scolopacidae
+Aves / Ciconiiformes / Scolopacidae / Calidris
+Aves / Ciconiiformes / Scolopacidae / Calidris / alpina
+Aves / Ciconiiformes / Scolopacidae / Calidris / canutus
+Aves / Ciconiiformes / Scolopacidae / Gallinago
+Aves / Ciconiiformes / Scolopacidae / Gallinago / gallinago
+Aves / Ciconiiformes / Scolopacidae / Gallinago / media
+Aves / Ciconiiformes / Scolopacidae / Lymnocryptes
+Aves / Ciconiiformes / Scolopacidae / Lymnocryptes / minimus
+Aves / Ciconiiformes / Scolopacidae / Numenius
+Aves / Ciconiiformes / Scolopacidae / Numenius / sp.
+Aves / Ciconiiformes / Scolopacidae / Numenius / arquata
+Aves / Ciconiiformes / Scolopacidae / Philomachus
+Aves / Ciconiiformes / Scolopacidae / Philomachus / pugnax
+Aves / Ciconiiformes / Scolopacidae / Scolopax
+Aves / Ciconiiformes / Scolopacidae / Scolopax / rusticola
+Aves / Ciconiiformes / Scolopacidae / Tringa
+Aves / Ciconiiformes / Scolopacidae / Tringa / sp.
+Aves / Ciconiiformes / Rostratulidae
+Aves / Ciconiiformes / Jacanidae
+Aves / Ciconiiformes / Chionididae
+Aves / Ciconiiformes / Burhinidae
+Aves / Ciconiiformes / Charadriidae
+Aves / Ciconiiformes / Charadriidae / Charadrius
+Aves / Ciconiiformes / Charadriidae / Charadrius / sp.
+Aves / Ciconiiformes / Charadriidae / Eudromias
+Aves / Ciconiiformes / Charadriidae / Eudromias / morinellus
+Aves / Ciconiiformes / Charadriidae / Pluvialis
+Aves / Ciconiiformes / Charadriidae / Pluvialis / squatarola
+Aves / Ciconiiformes / Charadriidae / Vanellus
+Aves / Ciconiiformes / Charadriidae / Vanellus / vanellus
+Aves / Ciconiiformes / Glareolidae
+Aves / Ciconiiformes / Podicipedidae
+Aves / Ciconiiformes / Podicipedidae / Podiceps
+Aves / Ciconiiformes / Podicipedidae / Podiceps / cristatus
+Aves / Ciconiiformes / Podicipedidae / Podiceps / griseigena
+Aves / Ciconiiformes / Podicipedidae / Podiceps / nigricollis
+Aves / Ciconiiformes / Podicipedidae / Podiceps / ruficollis
+Aves / Ciconiiformes / Phaethonitidae
+Aves / Ciconiiformes / Anhingidae
+Aves / Ciconiiformes / Phalacrocoracidae
+Aves / Ciconiiformes / Phalacrocoracidae / Phalacrocorax
+Aves / Ciconiiformes / Phalacrocoracidae / Phalacrocorax / carbo
+Aves / Ciconiiformes / Ardeidae
+Aves / Ciconiiformes / Ardeidae / Botaurus
+Aves / Ciconiiformes / Ardeidae / Botaurus / stellaris
+Aves / Ciconiiformes / Ardeidae / Ardea
+Aves / Ciconiiformes / Ardeidae / Ardea / cinerea
+Aves / Ciconiiformes / Scopidae
+Aves / Ciconiiformes / Phoenicopteridae
+Aves / Ciconiiformes / Threskiornithidae
+Aves / Ciconiiformes / Pelecanidae
+Aves / Ciconiiformes / Pelecanidae / Pelecanus
+Aves / Ciconiiformes / Pelecanidae / Pelecanus / crispus
+Aves / Ciconiiformes / Ciconiidae
+Aves / Ciconiiformes / Ciconiidae / Ciconia
+Aves / Ciconiiformes / Ciconiidae / Ciconia / ciconia
+Aves / Ciconiiformes / Fregatidae
+Aves / Ciconiiformes / Spheniscidae
+Aves / Ciconiiformes / Gaviidae
+Aves / Ciconiiformes / Gaviidae / Gavia
+Aves / Ciconiiformes / Gaviidae / Gavia / arctica
+Aves / Ciconiiformes / Gaviidae / Gavia / stellata
+Aves / Ciconiiformes / Procellariidae
+Aves / Ciconiiformes / Sulidae
+Aves / Ciconiiformes / Sulidae / Sula
+Aves / Ciconiiformes / Sulidae / Sula / bassana
+Aves / Passeriformes
+Aves / Passeriformes / Acanthissitidae
+Aves / Passeriformes / Pittidae
+Aves / Passeriformes / Eurylaimidae
+Aves / Passeriformes / Philepittidae
+Aves / Passeriformes / Tyrannidae
+Aves / Passeriformes / Thamnophilidae
+Aves / Passeriformes / Funariidae
+Aves / Passeriformes / Formicariidae
+Aves / Passeriformes / Conopophagidae
+Aves / Passeriformes / Rhinocryptidae
+Aves / Passeriformes / Climacteridae
+Aves / Passeriformes / Menuridae
+Aves / Passeriformes / Ptilonorhynchidae
+Aves / Passeriformes / Maluridae
+Aves / Passeriformes / Meliphagidae
+Aves / Passeriformes / Pardalotidae
+Aves / Passeriformes / Eopsaltriidae
+Aves / Passeriformes / Irenidae
+Aves / Passeriformes / Orthonychidae
+Aves / Passeriformes / Pomatostomidae
+Aves / Passeriformes / Laniidae
+Aves / Passeriformes / Vireonidae
+Aves / Passeriformes / Corvidae
+Aves / Passeriformes / Corvidae / Corvus
+Aves / Passeriformes / Corvidae / Corvus / corax
+Aves / Passeriformes / Corvidae / Corvus / corone
+Aves / Passeriformes / Corvidae / Corvus / corone / cornix
+Aves / Passeriformes / Corvidae / Corvus / corone / corone
+Aves / Passeriformes / Corvidae / Corvus / frugilegus
+Aves / Passeriformes / Corvidae / Corvus / monedula
+Aves / Passeriformes / Corvidae / Pica
+Aves / Passeriformes / Corvidae / Pica / pica
+Aves / Passeriformes / Corvidae / Pyrrhocorax
+Aves / Passeriformes / Corvidae / Pyrrhocorax / graculus
+Aves / Passeriformes / Corvidae / Garrulus
+Aves / Passeriformes / Corvidae / Garrulus / glandarius
+Aves / Passeriformes / Corvidae / Nucifraga
+Aves / Passeriformes / Corvidae / Nucifraga / caryocatactes
+Aves / Passeriformes / Callaeatidae
+Aves / Passeriformes / Bombycillidae
+Aves / Passeriformes / Cinclidae
+Aves / Passeriformes / Cinclidae / Cinclus
+Aves / Passeriformes / Cinclidae / Cinclus / cinclus
+Aves / Passeriformes / Muscicapidae
+Aves / Passeriformes / Sturnidae
+Aves / Passeriformes / Sturnidae / Sturnus
+Aves / Passeriformes / Sturnidae / Sturnus / vulgaris
+Aves / Passeriformes / Sittidae
+Aves / Passeriformes / Certhiidae
+Aves / Passeriformes / Paridae
+Aves / Passeriformes / Aegithalidae
+Aves / Passeriformes / Hirundinidae
+Aves / Passeriformes / Hirundinidae / Hirundo
+Aves / Passeriformes / Hirundinidae / Hirundo / daurica
+Aves / Passeriformes / Hirundinidae / Hirundo / rustica
+Aves / Passeriformes / Regulidae
+Aves / Passeriformes / Pycnonotidae
+Aves / Passeriformes / Hypocoliidae
+Aves / Passeriformes / Cisticolidae
+Aves / Passeriformes / Zosteropidae
+Aves / Passeriformes / Sylviidae
+Aves / Passeriformes / Alaudidae
+Aves / Passeriformes / Alaudidae / Alauda
+Aves / Passeriformes / Alaudidae / Alauda / arvensis
+Aves / Passeriformes / Nectariniidae
+Aves / Passeriformes / Melanocharatidae
+Aves / Passeriformes / Paramythiidae
+Aves / Passeriformes / Passeridae
+Aves / Passeriformes / Motacillidae
+Aves / Passeriformes / Frigillidae
+Aves / Passeriformes / Emberizidae
+Aves / Passeriformes / Emberizidae / Emberiza
+Aves / Passeriformes / Emberizidae / Emberiza / citrinella
+Aves / Passeriformes / Emberizidae / Emberiza / hortulana
+Aves / Passeriformes / Emberizidae / Lyrurus
+Aves / Passeriformes / Emberizidae / Lyrurus / tetrix
+Aves / Passeriformes / Emberizidae / Plectrophenax
+Aves / Passeriformes / Emberizidae / Plectrophenax / nivalis
+Aves / Passeriformes / Oriolidae
+Aves / Passeriformes / Oriolidae / Oriolus
+Aves / Passeriformes / Oriolidae / Oriolus / oriolus
+Aves / Passeriformes / Turdidae
+Aves / Passeriformes / Turdidae / Turdus
+Aves / Passeriformes / Turdidae / Turdus / sp.
+Aves / Passeriformes / Turdidae / Turdus / iliacus
+Aves / Passeriformes / Turdidae / Turdus / merula
+Aves / Passeriformes / Turdidae / Turdus / philomelos
+Aves / Passeriformes / Turdidae / Turdus / pilaris
+Aves / Passeriformes / Turdidae / Turdus / viscivorus
+Aves / Falconiformes
+Aves / Falconiformes / Accipitridae
+Aves / Falconiformes / Accipitridae / Accipiter
+Aves / Falconiformes / Accipitridae / Accipiter / genitilis
+Aves / Falconiformes / Accipitridae / Accipiter / nisus
+Aves / Falconiformes / Accipitridae / Aquila
+Aves / Falconiformes / Accipitridae / Aquila / chrysaetos
+Aves / Falconiformes / Accipitridae / Circaetus
+Aves / Falconiformes / Accipitridae / Circaetus / gallicus
+Aves / Falconiformes / Accipitridae / Circus
+Aves / Falconiformes / Accipitridae / Circus / aeruginosus
+Aves / Falconiformes / Accipitridae / Circus / cyaneus
+Aves / Falconiformes / Accipitridae / Haliaeetus 
+Aves / Falconiformes / Accipitridae / Haliaeetus  / albicilla
+Aves / Falconiformes / Accipitridae / Milvus
+Aves / Falconiformes / Accipitridae / Milvus / migrans
+Aves / Falconiformes / Accipitridae / Milvus / milvus
+Aves / Falconiformes / Accipitridae / Pernis
+Aves / Falconiformes / Accipitridae / Pernis / apivorus
+Aves / Falconiformes / Accipitridae / Buteo
+Aves / Falconiformes / Accipitridae / Buteo / buteo
+Aves / Falconiformes / Falconidae
+Aves / Falconiformes / Falconidae / Falco
+Aves / Falconiformes / Falconidae / Falco / sp.
+Aves / Falconiformes / Falconidae / Falco / peregrinus
+Aves / Falconiformes / Falconidae / Falco / subbuteo
+Aves / Falconiformes / Falconidae / Falco / tinnunculus
+Aves / Falconiformes / Sagittariidae
+Aves / Falconiformes / Pandionidae
+Aves / Falconiformes / Pandionidae / Pandion
+Aves / Falconiformes / Pandionidae / Pandion / haliaetus
+Aves / Charadriiformes
+Aves / Charadriiformes / Alcidae 
+Aves / Charadriiformes / Alcidae  / Alca
+Aves / Charadriiformes / Alcidae  / Alca / torda
+Aves / Charadriiformes / Alcidae  / Uria
+Aves / Charadriiformes / Alcidae  / Uria / aalge
+Aves / Charadriiformes / Laridae 
+Aves / Charadriiformes / Laridae  / Larus
+Aves / Charadriiformes / Laridae  / Larus / sp.
+Aves / Charadriiformes / Laridae  / Larus / argentatus
+Aves / Charadriiformes / Laridae  / Larus / canus
+Aves / Charadriiformes / Laridae  / Larus / fuscus
+Aves / Charadriiformes / Laridae  / Larus / marinus
+Aves / Charadriiformes / Laridae  / Larus / ridibundus
+Aves / Charadriiformes / Laridae  / Sterna
+Aves / Charadriiformes / Laridae  / Sterna / hirundo
+Aves / Charadriiformes / Laridae  / Sterna / paradisaea
+Aves / Charadriiformes / Haematopodidae 
+Aves / Charadriiformes / Haematopodidae  / Haematopus
+Aves / Charadriiformes / Haematopodidae  / Haematopus / ostralegus
+Aves / Sphenisciformes
+Aves / Sphenisciformes / Spheniscidae
+Pisces
+Pisces / Actinopterygii
+Pisces / Actinopterygii / Clupeiformes
+Pisces / Actinopterygii / Clupeiformes / Clupeoidei
+Pisces / Actinopterygii / Clupeiformes / Clupeoidei / Clupeidae
+Pisces / Actinopterygii / Clupeiformes / Clupeoidei / Clupeidae / Alosinae
+Pisces / Actinopterygii / Clupeiformes / Clupeoidei / Clupeidae / Alosinae / Alosa
+Pisces / Actinopterygii / Clupeiformes / Clupeoidei / Clupeidae / Alosinae / Alosa / alosa
+Pisces / Actinopterygii / Clupeiformes / Clupeoidei / Clupeidae / Clupeinae
+Pisces / Actinopterygii / Clupeiformes / Clupeoidei / Clupeidae / Clupeinae / Clupea
+Pisces / Actinopterygii / Clupeiformes / Clupeoidei / Clupeidae / Clupeinae / Clupea / harengus
+Pisces / Actinopterygii / Clupeiformes / Clupeoidei / Clupeidae / Clupeinae / Sprattus
+Pisces / Actinopterygii / Clupeiformes / Clupeoidei / Clupeidae / Clupeinae / Sprattus / sprattus
+Pisces / Actinopterygii / Acipenseriformes
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei / Acipenseridae
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei / Acipenseridae / Acipenserinae
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei / Acipenseridae / Acipenserinae / Acipenser
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei / Acipenseridae / Acipenserinae / Acipenser / nudiventrus
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei / Acipenseridae / Acipenserinae / Acipenser / oxyrhynchus
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei / Acipenseridae / Acipenserinae / Acipenser / ruthenus
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei / Acipenseridae / Acipenserinae / Acipenser / sturio
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei / Acipenseridae / Acipenserinae / Huso
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei / Acipenseridae / Acipenserinae / Huso / huso
+Pisces / Actinopterygii / Acipenseriformes / Acipenseroidei / Acipenseridae / Scaphirhynchinae
+Pisces / Actinopterygii / Acipenseriformes / Polyodontidae
+Pisces / Actinopterygii / Anguilliformes
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Anguillidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Anguillidae / Anguilla
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Anguillidae / Anguilla / anguilla
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Aoteidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Dysommidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Dysomminidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Echelidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Heterenchelyidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Macrocephenchelyidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Moringuidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Neenchelyidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Nessorhamphidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Nettodaridae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Simenchelyidae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Todaridae
+Pisces / Actinopterygii / Anguilliformes / Anguilloidei / Xenocongridae
+Pisces / Actinopterygii / Anguilliformes / Congroidei
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Congridae
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Congridae / Conger
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Congridae / Conger / conger
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Colocongridae
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Derichthyidae
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Muraenesocidae
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Nemichthyidae
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Nettastomatidae
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Ophichthidae
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Serrivomeridae
+Pisces / Actinopterygii / Anguilliformes / Congroidei / Synaphobranchidae
+Pisces / Actinopterygii / Anguilliformes / Muraenoidei
+Pisces / Actinopterygii / Anguilliformes / Muraenoidei / Muraenidae
+Pisces / Actinopterygii / Anguilliformes / Muraenoidei / Muraenidae / helena
+Pisces / Actinopterygii / Anguilliformes / Muraenoidei / Chlopsidae
+Pisces / Actinopterygii / Anguilliformes / Muraenoidei / Myrocongridae
+Pisces / Actinopterygii / Cypriniformes
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Leuciscinae
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Leuciscinae / Aspius
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Leuciscinae / Aspius / aspius
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Leuciscinae / Chondrostoma
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Leuciscinae / Chondrostoma / nasus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Leuciscinae / Pelecus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Leuciscinae / Pelecus / cultratus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae 
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Blicca
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Blicca / bjoerkna
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Abramis
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Abramis / ballerus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Abramis / brama
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Abramis / sapa
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Gobio
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Gobio / gobio
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Gobio / kessleri
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Gobio / uranoscopus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Barbus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Barbus / barbus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Barbus / meridionalis
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Leuciscus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Leuciscus / cephalus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Leuciscus / idus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Leuciscus / leuciscus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Alburnoides
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Alburnoides / bipunctatus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Alburnus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Alburnus / alburnus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Carassius
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Carassius / carassius
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Cyprinus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Cyprinus / carpio
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Tinca
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Tinca / tinca
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Phoxinus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Phoxinus / phoxinus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Rutilus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Rutilus / rutilus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Rhodeus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Rhodeus / sericeus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Scardinius
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Scardinius / erythrophthalmus
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Leucaspius
+Pisces / Actinopterygii / Cypriniformes / Cyprinidae / Psilorhynchinae  / Leucaspius / delineatus
+Pisces / Actinopterygii / Cypriniformes / Cobitidae
+Pisces / Actinopterygii / Cypriniformes / Cobitidae / Cobitis
+Pisces / Actinopterygii / Cypriniformes / Cobitidae / Cobitis / taenia
+Pisces / Actinopterygii / Cypriniformes / Cobitidae / Misgurnus
+Pisces / Actinopterygii / Cypriniformes / Cobitidae / Misgurnus / fossilis
+Pisces / Actinopterygii / Cypriniformes / Cobitidae / Noemacheilus
+Pisces / Actinopterygii / Cypriniformes / Balitoridae
+Pisces / Actinopterygii / Cypriniformes / Catostomidae
+Pisces / Actinopterygii / Cypriniformes / Gyrinocheilidae
+Pisces / Actinopterygii / Cypriniformes / Charocoidei
+Pisces / Actinopterygii / Cypriniformes / Charocoidei / Alestidae
+Pisces / Actinopterygii / Cypriniformes / Charocoidei / Characidiidae
+Pisces / Actinopterygii / Cypriniformes / Charocoidei / Chilodontidae
+Pisces / Actinopterygii / Cypriniformes / Charocoidei / Crenuchidae
+Pisces / Actinopterygii / Cypriniformes / Charocoidei / Cynodontidae
+Pisces / Actinopterygii / Cypriniformes / Charocoidei / Distichodontidae
+Pisces / Actinopterygii / Cypriniformes / Charocoidei / Ichthyboridae
+Pisces / Actinopterygii / Cypriniformes / Charocoidei / Parodontidae
+Pisces / Actinopterygii / Cypriniformes / Charocoidei / Prochilodontidae
+Pisces / Actinopterygii / Cypriniformes / Charocoidei / Serrasalmidae
+Pisces / Actinopterygii / Cypriniformes / Cyprinoidei
+Pisces / Actinopterygii / Cypriniformes / Cyprinoidei / Homalopteridae
+Pisces / Actinopterygii / Perciformes
+Pisces / Actinopterygii / Perciformes / Callionymoidei
+Pisces / Actinopterygii / Perciformes / Callionymoidei / Callionymidae
+Pisces / Actinopterygii / Perciformes / Callionymoidei / Callionymidae / Callionymus
+Pisces / Actinopterygii / Perciformes / Callionymoidei / Callionymidae / Callionymus / lyra
+Pisces / Actinopterygii / Perciformes / Callionymoidei / Draconettidae
+Pisces / Actinopterygii / Perciformes / Percoidei
+Pisces / Actinopterygii / Perciformes / Percoidei / Moronidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Moronidae / Dicentrarchus
+Pisces / Actinopterygii / Perciformes / Percoidei / Moronidae / Dicentrarchus / labrax
+Pisces / Actinopterygii / Perciformes / Percoidei / Moronidae / Roccus
+Pisces / Actinopterygii / Perciformes / Percoidei / Moronidae / Roccus / labrax
+Pisces / Actinopterygii / Perciformes / Percoidei / Acanthoclinidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Anisochromidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Aplodactylidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Apogonidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Apolectidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Arripididae
+Pisces / Actinopterygii / Perciformes / Percoidei / Banjosidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Bathyclupeidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Callanthiidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Carangidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Carangidae / Trachurus
+Pisces / Actinopterygii / Perciformes / Percoidei / Carangidae / Trachurus / trachurus
+Pisces / Actinopterygii / Perciformes / Percoidei / Caristiidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Centracanthidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Centrarchidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Centropomidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Cepolidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Cheilodactylidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Chironemidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Coracinidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Dinolestidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Dinopercidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Drepanidae2
+Pisces / Actinopterygii / Perciformes / Percoidei / Echeneidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Emmelichthyidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Enoplosidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Epigonidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Gadopsidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Gerreidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Glaucosomatidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Grammatidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Grammistidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Gregoryinidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Inermiidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Labracoglossidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Leptobramidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Nematistiidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Notograptidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Ostracoberycidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Plesiopidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Pseudochromidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Pseudogrammidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Pseudoplesiopidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae / Perca
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae / Perca / fluviatilis
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae / Gymnocephalus
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae / Gymnocephalus / cernua
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae / Gymnocephalus / schraetzer
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae / Zingel
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae / Zingel / streber
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae / Zingel / zingel
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae / Stizostedion
+Pisces / Actinopterygii / Perciformes / Percoidei / Percidae / Stizostedion / lucioperca
+Pisces / Actinopterygii / Perciformes / Percoidei / Acropomatidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Bramidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Chaetodontidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Chandidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Cirrhitidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Coryphaenidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Ephippididae
+Pisces / Actinopterygii / Perciformes / Percoidei / Haemulidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Kuhliidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Kyphosidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Leiognathidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Lethrinidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Lethrinidae / Lethrininae
+Pisces / Actinopterygii / Perciformes / Percoidei / Lethrinidae / Monotaxinae
+Pisces / Actinopterygii / Perciformes / Percoidei / Lobotidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Lutjanidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Malacanthidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Menidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Monodactylidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Mullidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Mullidae / Mullus
+Pisces / Actinopterygii / Perciformes / Percoidei / Mullidae / Mullus / surmuletus
+Pisces / Actinopterygii / Perciformes / Percoidei / Nandidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Nemipteridae
+Pisces / Actinopterygii / Perciformes / Percoidei / Opistognathidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Oplegnathidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Owstoniidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Pempherididae
+Pisces / Actinopterygii / Perciformes / Percoidei / Pentacerotidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Pentapodidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Percichthyidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Polynemidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Pomacanthidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Pomatomidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Priacanthidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Rachycentridae
+Pisces / Actinopterygii / Perciformes / Percoidei / Rhinoprenidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Sciaenidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Serranidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Serranidae / Anthiinae
+Pisces / Actinopterygii / Perciformes / Percoidei / Serranidae / Epinephelinae
+Pisces / Actinopterygii / Perciformes / Percoidei / Sillaginidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Sparidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Sparidae / Pagellus
+Pisces / Actinopterygii / Perciformes / Percoidei / Sparidae / Pagellus / bogaraveo
+Pisces / Actinopterygii / Perciformes / Percoidei / Sparidae / Pagellus / erythrinus
+Pisces / Actinopterygii / Perciformes / Percoidei / Sparidae / Pagrus
+Pisces / Actinopterygii / Perciformes / Percoidei / Sparidae / Pagrus / pagrus
+Pisces / Actinopterygii / Perciformes / Percoidei / Teraponidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Toxotidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Lactariidae
+Pisces / Actinopterygii / Perciformes / Percoidei / Latrididae
+Pisces / Actinopterygii / Perciformes / Trachinoidei
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Ammodytidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Ammodytidae / Ammodytes tobianus
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Champsodontidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Cheimarrhichthyidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Chiasmodontidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Creediidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Leptoscopidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Limnichthyidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Mugiloididae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Oxudercidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Percophididae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Pholidichthyidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Pinguipedidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Trachinidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Trichodontidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Trichonotidae
+Pisces / Actinopterygii / Perciformes / Trachinoidei / Uranoscopidae
+Pisces / Actinopterygii / Perciformes / Zoarcoidei
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Anarhichadidae
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Anarhichadidae / Anarhichas lupus
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Zoarcidae
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Zoarcidae / Zoarces viviparus
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Cryptacanthodidae
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Bathymasteridae
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Pholidae
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Ptilichthyidae
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Scytalinidae
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Stichaeidae
+Pisces / Actinopterygii / Perciformes / Zoarcoidei / Zaproridae
+Pisces / Actinopterygii / Perciformes / Gobioidei
+Pisces / Actinopterygii / Perciformes / Gobioidei / Gobiidae
+Pisces / Actinopterygii / Perciformes / Gobioidei / Gobiidae / Gobius
+Pisces / Actinopterygii / Perciformes / Gobioidei / Gobiidae / Gobius / niger
+Pisces / Actinopterygii / Perciformes / Gobioidei / Gobiidae / Gobius / minutus
+Pisces / Actinopterygii / Perciformes / Gobioidei / Gobiidae / Pomatoschistus
+Pisces / Actinopterygii / Perciformes / Gobioidei / Gobiidae / Pomatoschistus / microps
+Pisces / Actinopterygii / Perciformes / Gobioidei / Gobiidae / Pomatoschistus / minutus
+Pisces / Actinopterygii / Perciformes / Gobioidei / Gobiidae / Proterorhinus
+Pisces / Actinopterygii / Perciformes / Gobioidei / Gobiidae / Proterorhinus / marmoratus
+Pisces / Actinopterygii / Perciformes / Gobioidei / Eleotridae
+Pisces / Actinopterygii / Perciformes / Gobioidei / Gobioididae
+Pisces / Actinopterygii / Perciformes / Gobioidei / Kraemeriidae
+Pisces / Actinopterygii / Perciformes / Gobioidei / Microdesmidae
+Pisces / Actinopterygii / Perciformes / Gobioidei / Odontobutidae
+Pisces / Actinopterygii / Perciformes / Gobioidei / Rhyacichthyidae
+Pisces / Actinopterygii / Perciformes / Gobioidei / Trypauchenidae
+Pisces / Actinopterygii / Perciformes / Gobioidei / Xenisthmidae
+Pisces / Actinopterygii / Perciformes / Gobioidei / Schindleriidae
+Pisces / Actinopterygii / Perciformes / Scombroidei
+Pisces / Actinopterygii / Perciformes / Scombroidei / Scombridae
+Pisces / Actinopterygii / Perciformes / Scombroidei / Scombridae / Scomber
+Pisces / Actinopterygii / Perciformes / Scombroidei / Scombridae / Scomber / scombrus
+Pisces / Actinopterygii / Perciformes / Scombroidei / Scombridae / Thunnus
+Pisces / Actinopterygii / Perciformes / Scombroidei / Scombridae / Thunnus / thynnus
+Pisces / Actinopterygii / Perciformes / Scombroidei / Gempylidae
+Pisces / Actinopterygii / Perciformes / Scombroidei / Istiophoridae
+Pisces / Actinopterygii / Perciformes / Scombroidei / Sphyraenidae
+Pisces / Actinopterygii / Perciformes / Scombroidei / Trichiuridae
+Pisces / Actinopterygii / Perciformes / Scombroidei / Xiphiidae
+Pisces / Actinopterygii / Perciformes / Ammodytoidei
+Pisces / Actinopterygii / Perciformes / Anabantoidei
+Pisces / Actinopterygii / Perciformes / Anabantoidei / Anabantidae
+Pisces / Actinopterygii / Perciformes / Anabantoidei / Belontiidae
+Pisces / Actinopterygii / Perciformes / Anabantoidei / Osphronemidae
+Pisces / Actinopterygii / Perciformes / Anabantoidei / Luciocephalidae
+Pisces / Actinopterygii / Perciformes / Anabantoidei / Helostomatidae
+Pisces / Actinopterygii / Perciformes / Blennioidei
+Pisces / Actinopterygii / Perciformes / Blennioidei / Blenniidae
+Pisces / Actinopterygii / Perciformes / Blennioidei / Chaenopsidae
+Pisces / Actinopterygii / Perciformes / Blennioidei / Clinidae
+Pisces / Actinopterygii / Perciformes / Blennioidei / Congrogadidae
+Pisces / Actinopterygii / Perciformes / Blennioidei / Dactyloscopidae
+Pisces / Actinopterygii / Perciformes / Blennioidei / Labrisomidae
+Pisces / Actinopterygii / Perciformes / Blennioidei / Ophiclinidae
+Pisces / Actinopterygii / Perciformes / Blennioidei / Peronedysidae
+Pisces / Actinopterygii / Perciformes / Blennioidei / Tripterygiidae
+Pisces / Actinopterygii / Perciformes / Blennioidei / Xenocephalidae
+Pisces / Actinopterygii / Perciformes / Channoidei
+Pisces / Actinopterygii / Perciformes / Channoidei / Channidae
+Pisces / Actinopterygii / Perciformes / Elassomatoidei
+Pisces / Actinopterygii / Perciformes / Elassomatoidei / Elassomatidae
+Pisces / Actinopterygii / Perciformes / Gobiesocoidei
+Pisces / Actinopterygii / Perciformes / Gobiesocoidei / Gobiesocidae
+Pisces / Actinopterygii / Perciformes / Icosteoidei
+Pisces / Actinopterygii / Perciformes / Icosteoidei / Icosteidae
+Pisces / Actinopterygii / Perciformes / Kurtoidei
+Pisces / Actinopterygii / Perciformes / Kurtoidei / Kurtidae
+Pisces / Actinopterygii / Perciformes / Labroidei
+Pisces / Actinopterygii / Perciformes / Labroidei / Cichlidae
+Pisces / Actinopterygii / Perciformes / Labroidei / Embiotocidae
+Pisces / Actinopterygii / Perciformes / Labroidei / Labridae
+Pisces / Actinopterygii / Perciformes / Labroidei / Odacidae
+Pisces / Actinopterygii / Perciformes / Labroidei / Pomacentridae
+Pisces / Actinopterygii / Perciformes / Labroidei / Scaridae
+Pisces / Actinopterygii / Perciformes / Luciocephaloidei
+Pisces / Actinopterygii / Perciformes / Mugiloidei
+Pisces / Actinopterygii / Perciformes / Notothenioidei
+Pisces / Actinopterygii / Perciformes / Notothenioidei / Bovichthyidae
+Pisces / Actinopterygii / Perciformes / Notothenioidei / Channichthyidae
+Pisces / Actinopterygii / Perciformes / Notothenioidei / Harpagiferidae
+Pisces / Actinopterygii / Perciformes / Notothenioidei / Nototheniidae
+Pisces / Actinopterygii / Perciformes / Polynemoidei
+Pisces / Actinopterygii / Perciformes / Schindlerioidei
+Pisces / Actinopterygii / Perciformes / Scombrolabracoidei
+Pisces / Actinopterygii / Perciformes / Scombrolabracoidei / Scombrolabracidae
+Pisces / Actinopterygii / Perciformes / Sphyraenoidei
+Pisces / Actinopterygii / Perciformes / Stromateoidei
+Pisces / Actinopterygii / Perciformes / Stromateoidei / Amarsipidae
+Pisces / Actinopterygii / Perciformes / Stromateoidei / Ariommatidae
+Pisces / Actinopterygii / Perciformes / Stromateoidei / Centrolophidae
+Pisces / Actinopterygii / Perciformes / Stromateoidei / Nomeidae
+Pisces / Actinopterygii / Perciformes / Stromateoidei / Stromateidae
+Pisces / Actinopterygii / Perciformes / Stromateoidei / Tetragonuridae
+Pisces / Actinopterygii / Perciformes / Ephippidae
+Pisces / Actinopterygii / Perciformes / Acanthuroidei
+Pisces / Actinopterygii / Perciformes / Acanthuroidei / Acanthuridae
+Pisces / Actinopterygii / Perciformes / Acanthuroidei / Luvaridae
+Pisces / Actinopterygii / Perciformes / Acanthuroidei / Scatophagidae2
+Pisces / Actinopterygii / Perciformes / Acanthuroidei / Siganidae
+Pisces / Actinopterygii / Perciformes / Acanthuroidei / Zanclidae
+Pisces / Actinopterygii / Mugiliformes
+Pisces / Actinopterygii / Mugiliformes / Mugilidae
+Pisces / Actinopterygii / Mugiliformes / Mugilidae / Chelon
+Pisces / Actinopterygii / Mugiliformes / Mugilidae / Chelon / labrosus
+Pisces / Actinopterygii / Mugiliformes / Mugilidae / Liza
+Pisces / Actinopterygii / Mugiliformes / Mugilidae / Liza / aurata
+Pisces / Actinopterygii / Mugiliformes / Mugilidae / Liza / ramada
+Pisces / Actinopterygii / Mugiliformes / Mugilidae / Mugil
+Pisces / Actinopterygii / Mugiliformes / Mugilidae / Mugil / auratus
+Pisces / Actinopterygii / Mugiliformes / Mugilidae / Mugil / cephalus
+Pisces / Actinopterygii / Salmoniformes
+Pisces / Actinopterygii / Salmoniformes / Salmonidae
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Coregonus
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Coregonus / albula
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Coregonus / lavaretus
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Coregonus / oxyrinchus
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Hucho
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Hucho / hucho
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Salmo
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Salmo / salar
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Salmo / trutta
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Salmo / trutta / fario
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Salmo / trutta / trutta
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Salvelinus
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Salvelinus / alpinus
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Thymallus
+Pisces / Actinopterygii / Salmoniformes / Salmonidae / Thymallus / thymallus
+Pisces / Actinopterygii / Salmoniformes / Bathylaconoidei
+Pisces / Actinopterygii / Salmoniformes / Bathylaconoidei / Bathylaconidae
+Pisces / Actinopterygii / Salmoniformes / Esocoidei
+Pisces / Actinopterygii / Salmoniformes / Galaxioidei
+Pisces / Actinopterygii / Salmoniformes / Galaxioidei / Aplochitonidae
+Pisces / Actinopterygii / Salmoniformes / Salmonoidei
+Pisces / Actinopterygii / Salmoniformes / Salmonoidei / Plecoglossidae
+Pisces / Actinopterygii / Salmoniformes / Stomioidei
+Pisces / Actinopterygii / Salmoniformes / Stomioidei / Astronesthidae
+Pisces / Actinopterygii / Salmoniformes / Stomioidei / Chauliodontidae
+Pisces / Actinopterygii / Salmoniformes / Stomioidei / Idiacanthidae
+Pisces / Actinopterygii / Salmoniformes / Stomioidei / Malacosteidae
+Pisces / Actinopterygii / Salmoniformes / Stomioidei / Melanostomiidae
+Pisces / Actinopterygii / Salmoniformes / Alepocephaloidei
+Pisces / Actinopterygii / Scorpaeniformes
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cottidae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cottidae / Cottus
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cottidae / Cottus / gobio
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cottidae / Taurulus
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cottidae / Taurulus / bubalis
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cottidae / Myoxocephalus
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cottidae / Myoxocephalus / scorpius
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Abyssocottidae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Agonidae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Agonidae / Agonus
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Agonidae / Agonus / cataphractus
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Bathylutichthyidae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Comephoridae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cottocomephoridae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cottunculidae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cyclopteridae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cyclopteridae / Cyclopterus
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Cyclopteridae / Cyclopterus / lumpus
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Ereuniidae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Hemitripteridae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Icelidae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Liparidae2
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Psychrolutidae
+Pisces / Actinopterygii / Scorpaeniformes / Cottoidei / Rhamphocottidae
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Triglidae
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Triglidae / Eutrigla
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Triglidae / Eutrigla / gurnardus
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Triglidae / Trigla
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Triglidae / Trigla / lucerna
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Aploactinidae
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Congiopodidae
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Gnathanacanthidae
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Pataecidae
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Scorpaenidae
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Synancejidae
+Pisces / Actinopterygii / Scorpaeniformes / Scorpaenoidei / Caracanthidae
+Pisces / Actinopterygii / Scorpaeniformes / Anoplopomatoidei
+Pisces / Actinopterygii / Scorpaeniformes / Anoplopomatoidei / Anoplopomatidae
+Pisces / Actinopterygii / Scorpaeniformes / Congiopodoidei
+Pisces / Actinopterygii / Scorpaeniformes / Dactylopteroidei
+Pisces / Actinopterygii / Scorpaeniformes / Dactylopteroidei / Dactylopteridae
+Pisces / Actinopterygii / Scorpaeniformes / Hoplichthyoidei
+Pisces / Actinopterygii / Scorpaeniformes / Normanichthyiodei
+Pisces / Actinopterygii / Scorpaeniformes / Normanichthyiodei / Normanichthyidae
+Pisces / Actinopterygii / Scorpaeniformes / Platycephaloidei
+Pisces / Actinopterygii / Scorpaeniformes / Platycephaloidei / Bembridae
+Pisces / Actinopterygii / Scorpaeniformes / Platycephaloidei / Hoplichthyidae
+Pisces / Actinopterygii / Scorpaeniformes / Platycephaloidei / Platycephalidae
+Pisces / Actinopterygii / Scorpaeniformes / Hexagrammoidei
+Pisces / Actinopterygii / Scorpaeniformes / Hexagrammoidei / Hexagrammidae
+Pisces / Actinopterygii / Scorpaeniformes / Hexagrammoidei / Zaniolepididae
+Pisces / Actinopterygii / Esociformes
+Pisces / Actinopterygii / Esociformes / Esocidae
+Pisces / Actinopterygii / Esociformes / Esocidae / Esox
+Pisces / Actinopterygii / Esociformes / Esocidae / Esox / lucius
+Pisces / Actinopterygii / Esociformes / Umbridae
+Pisces / Actinopterygii / Esociformes / Umbridae / Umbra
+Pisces / Actinopterygii / Esociformes / Umbridae / Umbra / krameri
+Pisces / Actinopterygii / Gadiformes
+Pisces / Actinopterygii / Gadiformes / Gadidae
+Pisces / Actinopterygii / Gadiformes / Gadidae / Gadinae
+Pisces / Actinopterygii / Gadiformes / Gadidae / Gadinae / Gadus
+Pisces / Actinopterygii / Gadiformes / Gadidae / Gadinae / Gadus / morhua
+Pisces / Actinopterygii / Gadiformes / Gadidae / Gadinae / Melanogrammus
+Pisces / Actinopterygii / Gadiformes / Gadidae / Gadinae / Melanogrammus / aeglefinus
+Pisces / Actinopterygii / Gadiformes / Gadidae / Gadinae / Merlangius
+Pisces / Actinopterygii / Gadiformes / Gadidae / Gadinae / Merlangius / merlangus
+Pisces / Actinopterygii / Gadiformes / Gadidae / Gadinae / Pollachius
+Pisces / Actinopterygii / Gadiformes / Gadidae / Gadinae / Pollachius / pollachius
+Pisces / Actinopterygii / Gadiformes / Gadidae / Lotinae
+Pisces / Actinopterygii / Gadiformes / Gadidae / Lotinae / Molva
+Pisces / Actinopterygii / Gadiformes / Gadidae / Lotinae / Molva / molva
+Pisces / Actinopterygii / Gadiformes / Gadidae / Phycinae2
+Pisces / Actinopterygii / Gadiformes / Lotidae
+Pisces / Actinopterygii / Gadiformes / Lotidae / Lota
+Pisces / Actinopterygii / Gadiformes / Lotidae / Lota / lota
+Pisces / Actinopterygii / Gadiformes / Macrouridae
+Pisces / Actinopterygii / Gadiformes / Macrouridae / Bathygadinae
+Pisces / Actinopterygii / Gadiformes / Macrouridae / Macrourinae
+Pisces / Actinopterygii / Gadiformes / Macrouridae / Macrouroidinae
+Pisces / Actinopterygii / Gadiformes / Macrouridae / Trachyrincinae
+Pisces / Actinopterygii / Gadiformes / Bregmacerotidae
+Pisces / Actinopterygii / Gadiformes / Euclichthyidae
+Pisces / Actinopterygii / Gadiformes / Melanonidae
+Pisces / Actinopterygii / Gadiformes / Merlucciidae
+Pisces / Actinopterygii / Gadiformes / Merlucciidae / Merluccinae
+Pisces / Actinopterygii / Gadiformes / Merlucciidae / Steindachneriinae
+Pisces / Actinopterygii / Gadiformes / Moridae
+Pisces / Actinopterygii / Gadiformes / Muraenolepididae
+Pisces / Actinopterygii / Gadiformes / Ranicipitidae
+Pisces / Actinopterygii / Gadiformes / Gadoidei
+Pisces / Actinopterygii / Gadiformes / Macrouroidei
+Pisces / Actinopterygii / Gadiformes / Muraenolepoidei
+Pisces / Actinopterygii / Gasterosteiformes
+Pisces / Actinopterygii / Gasterosteiformes / Gasterosteoidei
+Pisces / Actinopterygii / Gasterosteiformes / Gasterosteoidei / Gasterosteidae
+Pisces / Actinopterygii / Gasterosteiformes / Gasterosteoidei / Gasterosteidae / Gasterosteus
+Pisces / Actinopterygii / Gasterosteiformes / Gasterosteoidei / Gasterosteidae / Gasterosteus / aculeatus
+Pisces / Actinopterygii / Gasterosteiformes / Gasterosteoidei / Gasterosteidae / Pungitius
+Pisces / Actinopterygii / Gasterosteiformes / Gasterosteoidei / Gasterosteidae / Pungitius / pungitius
+Pisces / Actinopterygii / Gasterosteiformes / Gasterosteoidei / Aulorhynchidae
+Pisces / Actinopterygii / Gasterosteiformes / Gasterosteoidei / Hypoptychidae
+Pisces / Actinopterygii / Gasterosteiformes / Aulostomoidei
+Pisces / Actinopterygii / Gasterosteiformes / Aulostomoidei / Macrorhamphosidae
+Pisces / Actinopterygii / Gasterosteiformes / Syngnathoidei
+Pisces / Actinopterygii / Gasterosteiformes / Syngnathoidei / Aulostomidae
+Pisces / Actinopterygii / Gasterosteiformes / Syngnathoidei / Centriscidae
+Pisces / Actinopterygii / Gasterosteiformes / Syngnathoidei / Fistulariidae
+Pisces / Actinopterygii / Gasterosteiformes / Syngnathoidei / Indostomidae
+Pisces / Actinopterygii / Gasterosteiformes / Syngnathoidei / Pegasidae
+Pisces / Actinopterygii / Gasterosteiformes / Syngnathoidei / Syngnathidae
+Pisces / Actinopterygii / Gasterosteiformes / Syngnathoidei / Solenostomidae
+Pisces / Actinopterygii / Pleuronectiformes
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Bothidae
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Bothidae / Arnoglossus
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Bothidae / Arnoglossus / laterna
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Bothidae / Scophthalmus
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Bothidae / Scophthalmus / rhombus
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Bothidae / Scophthalmus / maximus
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Soleidae
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Soleidae / Buglossidium
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Soleidae / Buglossidium / luteum
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Soleidae / Solea
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Soleidae / Solea / vulgaris
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Hippoglossoides
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Hippoglossoides / platessoides
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Hippoglossus
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Hippoglossus / hippoglossus
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Limanda
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Limanda / limanda
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Liopsetta
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Liopsetta / glacialis
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Microstomus
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Microstomus / kitt
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Pleuronectes
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Pleuronectes / platessa
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Platichthys
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Pleuronectidae / Platichthys / flesus
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Achiridae
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Achiropsettidae
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Citharidae
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Cynoglossidae
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Paralichthyidae
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Samaridae
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Scophthalmidae
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Scophthalmidae / Psetta
+Pisces / Actinopterygii / Pleuronectiformes / Pleuronectoidei / Scophthalmidae / Psetta / maxima
+Pisces / Actinopterygii / Pleuronectiformes / Psettodoidei
+Pisces / Actinopterygii / Pleuronectiformes / Psettodoidei / Psettodidae
+Pisces / Actinopterygii / Pleuronectiformes / Soleoidei
+Pisces / Actinopterygii / Beloniformes
+Pisces / Actinopterygii / Beloniformes / Belonoidei
+Pisces / Actinopterygii / Beloniformes / Belonoidei / Belonidae
+Pisces / Actinopterygii / Beloniformes / Belonoidei / Belonidae / Belone
+Pisces / Actinopterygii / Beloniformes / Belonoidei / Belonidae / Belone / belone
+Pisces / Actinopterygii / Beloniformes / Adrianichthyoidei
+Pisces / Actinopterygii / Beloniformes / Adrianichthyoidei / Adrianichthyidae
+Pisces / Actinopterygii / Osmeriformes
+Pisces / Actinopterygii / Osmeriformes / Osmeroidei
+Pisces / Actinopterygii / Osmeriformes / Osmeroidei / Osmeridae
+Pisces / Actinopterygii / Osmeriformes / Osmeroidei / Osmeridae / Osmerus
+Pisces / Actinopterygii / Osmeriformes / Osmeroidei / Osmeridae / Osmerus / eperlanus
+Pisces / Actinopterygii / Osmeriformes / Osmeroidei / Galaxiidae
+Pisces / Actinopterygii / Osmeriformes / Osmeroidei / Lepidogalaxiidae
+Pisces / Actinopterygii / Osmeriformes / Osmeroidei / Retropinnidae
+Pisces / Actinopterygii / Osmeriformes / Osmeroidei / Salangidae
+Pisces / Actinopterygii / Osmeriformes / Osmeroidei / Sundasalangidae
+Pisces / Actinopterygii / Osmeriformes / Argentinoidei
+Pisces / Actinopterygii / Osmeriformes / Argentinoidei / Alepocephalidae
+Pisces / Actinopterygii / Osmeriformes / Argentinoidei / Argentinidae
+Pisces / Actinopterygii / Osmeriformes / Argentinoidei / Bathylagidae
+Pisces / Actinopterygii / Osmeriformes / Argentinoidei / Leptochilichthyidae
+Pisces / Actinopterygii / Osmeriformes / Argentinoidei / Microstomatidae
+Pisces / Actinopterygii / Osmeriformes / Argentinoidei / Opisthoproctidae
+Pisces / Actinopterygii / Osmeriformes / Argentinoidei / Platytroctidae
+Pisces / Actinopterygii / Osmeriformes / Argentinoidei / Searsiidae
+Pisces / Actinopterygii / Siluriformes
+Pisces / Actinopterygii / Siluriformes / Ageneiosidae
+Pisces / Actinopterygii / Siluriformes / Akysidae
+Pisces / Actinopterygii / Siluriformes / Amphiliidae
+Pisces / Actinopterygii / Siluriformes / Astroblepidae
+Pisces / Actinopterygii / Siluriformes / Auchenipteridae
+Pisces / Actinopterygii / Siluriformes / Bagridae
+Pisces / Actinopterygii / Siluriformes / Clariidae
+Pisces / Actinopterygii / Siluriformes / Doradidae
+Pisces / Actinopterygii / Siluriformes / Helogeneidae
+Pisces / Actinopterygii / Siluriformes / Nematogenyidae
+Pisces / Actinopterygii / Siluriformes / Olyridae
+Pisces / Actinopterygii / Siluriformes / Parakysidae
+Pisces / Actinopterygii / Siluriformes / Plotosidae
+Pisces / Actinopterygii / Siluriformes / Scoloplacidae
+Pisces / Actinopterygii / Siluriformes / Sisoridae
+Pisces / Actinopterygii / Siluriformes / Amblycipitidae
+Pisces / Actinopterygii / Siluriformes / Siluridae
+Pisces / Actinopterygii / Siluriformes / Siluridae / Silurus
+Pisces / Actinopterygii / Siluriformes / Siluridae / Silurus / glanis
+Pisces / Actinopterygii / Siluriformes / Ariidae
+Pisces / Actinopterygii / Siluriformes / Aspredinidae
+Pisces / Actinopterygii / Siluriformes / Callichthyidae
+Pisces / Actinopterygii / Siluriformes / Cetopsidae
+Pisces / Actinopterygii / Siluriformes / Chacidae
+Pisces / Actinopterygii / Siluriformes / Cranoglanididae
+Pisces / Actinopterygii / Siluriformes / Diplomystidae
+Pisces / Actinopterygii / Siluriformes / Heteropneustidae
+Pisces / Actinopterygii / Siluriformes / Hypophthalmidae
+Pisces / Actinopterygii / Siluriformes / Ictaluridae
+Pisces / Actinopterygii / Siluriformes / Loricariidae
+Pisces / Actinopterygii / Siluriformes / Malapteruridae
+Pisces / Actinopterygii / Siluriformes / Mochokidae
+Pisces / Actinopterygii / Siluriformes / Pangasiidae
+Pisces / Actinopterygii / Siluriformes / Pimelodidae
+Pisces / Actinopterygii / Siluriformes / Schilbeidae
+Pisces / Actinopterygii / Siluriformes / Trichomycteridae 
+Pisces / Actinopterygii / Zeiformes
+Pisces / Actinopterygii / Zeiformes / Zeioidei
+Pisces / Actinopterygii / Zeiformes / Zeioidei / Zeidae
+Pisces / Actinopterygii / Zeiformes / Zeioidei / Zeidae / Zeus
+Pisces / Actinopterygii / Zeiformes / Zeioidei / Zeidae / Zeus / faber
+Pisces / Actinopterygii / Zeiformes / Zeioidei / Macrurocyttidae
+Pisces / Actinopterygii / Zeiformes / Zeioidei / Parazenidae
+Pisces / Actinopterygii / Zeiformes / Zeioidei / Oreosomatidae
+Pisces / Actinopterygii / Zeiformes / Zeioidei / Grammicolepididae
+Pisces / Actinopterygii / Zeiformes / Caproidei
+Pisces / Actinopterygii / Zeiformes / Caproidei / Caproidae
+Pisces / Cephalaspidomorphi
+Pisces / Cephalaspidomorphi / Petromyzontiformes
+Pisces / Cephalaspidomorphi / Petromyzontiformes / Petromyzontidae
+Pisces / Cephalaspidomorphi / Petromyzontiformes / Petromyzontidae / Eudontomyzon
+Pisces / Cephalaspidomorphi / Petromyzontiformes / Petromyzontidae / Eudontomyzon / danfordi
+Pisces / Cephalaspidomorphi / Petromyzontiformes / Petromyzontidae / Lampetra
+Pisces / Cephalaspidomorphi / Petromyzontiformes / Petromyzontidae / Lampetra / fluviatilis
+Pisces / Cephalaspidomorphi / Petromyzontiformes / Petromyzontidae / Lampetra / planeri
+Pisces / Cephalaspidomorphi / Petromyzontiformes / Petromyzontidae / Petromyzon
+Pisces / Cephalaspidomorphi / Petromyzontiformes / Petromyzontidae / Petromyzon / marinus
+Pisces / Cephalaspidomorphi / Petromyzontiformes / Mordaciidae
+Pisces / Chondrichthyes
+Pisces / Chondrichthyes / Lamniformes
+Pisces / Chondrichthyes / Lamniformes / Lamnidae
+Pisces / Chondrichthyes / Lamniformes / Lamnidae / Lamna
+Pisces / Chondrichthyes / Lamniformes / Lamnidae / Lamna / nasus
+Pisces / Chondrichthyes / Lamniformes / Alopiidae
+Pisces / Chondrichthyes / Lamniformes / Cetorhinidae
+Pisces / Chondrichthyes / Lamniformes / Megachasmidae
+Pisces / Chondrichthyes / Lamniformes / Mitsukurinidae
+Pisces / Chondrichthyes / Lamniformes / Odontaspididae
+Pisces / Chondrichthyes / Lamniformes / Pseudocarchariidae
+Pisces / Chondrichthyes / Rajiformes
+Pisces / Chondrichthyes / Rajiformes / Rajoidei
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Rajidae
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Rajidae / Rajinae
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Rajidae / Rajinae / Raja
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Rajidae / Rajinae / Raja / batis
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Rajidae / Rajinae / Raja / clavata
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Rajidae / Rajinae / Raja / radiata
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Rajidae / Arhynchobatinae
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Dasyatidae
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Dasyatidae / Dasyatinae
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Dasyatidae / Potamotrygoninae
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Urolophidae
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Rhinidae
+Pisces / Chondrichthyes / Rajiformes / Rajoidei / Rhinobatidae
+Pisces / Chondrichthyes / Rajiformes / Myliobatoidei
+Pisces / Chondrichthyes / Rajiformes / Myliobatoidei / Plesiobatidae
+Pisces / Chondrichthyes / Rajiformes / Myliobatoidei / Gymnuridae
+Pisces / Chondrichthyes / Rajiformes / Myliobatoidei / Myliobatidae
+Pisces / Chondrichthyes / Rajiformes / Myliobatoidei / Hexatrygonidae
+Pisces / Chondrichthyes / Rajiformes / Pristoidei
+Pisces / Chondrichthyes / Rajiformes / Pristoidei / Pristidae
+Pisces / Chondrichthyes / Rajiformes / Torpedinoidei
+Pisces / Chondrichthyes / Rajiformes / Torpedinoidei / Narcinidae
+Pisces / Chondrichthyes / Rajiformes / Torpedinoidei / Narcinidae / Narcininae
+Pisces / Chondrichthyes / Rajiformes / Torpedinoidei / Narcinidae / Narkinae
+Pisces / Chondrichthyes / Rajiformes / Torpedinoidei / Torpedinidae
+Pisces / Chondrichthyes / Rajiformes / Torpedinoidei / Torpedinidae / Hypninae
+Pisces / Chondrichthyes / Rajiformes / Torpedinoidei / Torpedinidae / Torpedininae
+Pisces / Chondrichthyes / Squaliformes
+Pisces / Chondrichthyes / Squaliformes / Squalidae
+Pisces / Chondrichthyes / Squaliformes / Squalidae / Squalus
+Pisces / Chondrichthyes / Squaliformes / Squalidae / Squalus / acanthius
+Pisces / Chondrichthyes / Squaliformes / Centrophoridae
+Pisces / Chondrichthyes / Squaliformes / Echinorhinidae
+Pisces / Chondrichthyes / Squaliformes / Dalatiidae
+Pisces / Chondrichthyes / Squatiniformes
+Pisces / Chondrichthyes / Squatiniformes / Squatinidae
+Pisces / Chondrichthyes / Squatiniformes / Squatinidae / Squatina
+Pisces / Chondrichthyes / Squatiniformes / Squatinidae / Squatina / squatina
+Pisces / Chondrichthyes / Chimaeriformes
+Pisces / Chondrichthyes / Chimaeriformes / Chimaeroidei
+Pisces / Chondrichthyes / Chimaeriformes / Chimaeroidei / Chimaeridae
+Pisces / Chondrichthyes / Chimaeriformes / Chimaeroidei / Callorhinchidae
+Pisces / Chondrichthyes / Chimaeriformes / Chimaeroidei / Rhinochimaeridae
+Pisces / Chondrichthyes / Orectolobiformes
+Pisces / Chondrichthyes / Orectolobiformes / Brachaeluridae
+Pisces / Chondrichthyes / Orectolobiformes / Ginglymostomatidae
+Pisces / Chondrichthyes / Orectolobiformes / Orectolobidae
+Pisces / Chondrichthyes / Orectolobiformes / Parascyllidae
+Pisces / Chondrichthyes / Orectolobiformes / Rhincodontidae
+Pisces / Chondrichthyes / Orectolobiformes / Stegostomatidae
+Pisces / Chondrichthyes / Orectolobiformes / Hemiscylliidae
+Pisces / Chondrichthyes / Orectolobiformes / Rhiniodontidae
+Pisces / Chondrichthyes / Pristiophoriformes
+Pisces / Chondrichthyes / Pristiophoriformes / Pristiophoridae
+Pisces / Chondrichthyes / Hexanchiformes
+Pisces / Chondrichthyes / Hexanchiformes / Chlamydoselachidae
+Pisces / Chondrichthyes / Hexanchiformes / Hexanchidae
+Pisces / Chondrichthyes / Heterodontiformes
+Pisces / Chondrichthyes / Heterodontiformes / Heterodontidae
+Pisces / Chondrichthyes / Carcharhiniformes
+Pisces / Chondrichthyes / Carcharhiniformes / Carcharhinidae
+Pisces / Chondrichthyes / Carcharhiniformes / Hemigaleidae
+Pisces / Chondrichthyes / Carcharhiniformes / Leptochariidae
+Pisces / Chondrichthyes / Carcharhiniformes / Proscylliidae
+Pisces / Chondrichthyes / Carcharhiniformes / Pseudotriakidae
+Pisces / Chondrichthyes / Carcharhiniformes / Scyliorhinidae
+Pisces / Chondrichthyes / Carcharhiniformes / Sphyrnidae
+Pisces / Chondrichthyes / Carcharhiniformes / Triakidae
+Pisces / Chondrichthyes / Carcharhiniformes / Triakidae / Galeorhininae
+Pisces / Chondrichthyes / Carcharhiniformes / Triakidae / Triakinae
+Mollusca
+Mollusca / Bivalvia
+Mollusca / Bivalvia / Veneroida
+Mollusca / Bivalvia / Veneroida / Cardiidae
+Mollusca / Bivalvia / Veneroida / Cardiidae / Cardium
+Mollusca / Bivalvia / Veneroida / Cardiidae / Cardium / edule
+Mollusca / Bivalvia / Myoida
+Mollusca / Bivalvia / Myoida / Myidae
+Mollusca / Bivalvia / Myoida / Myidae / Mya
+Mollusca / Bivalvia / Myoida / Myidae / Mya / arenaria
+Mollusca / Bivalvia / Mytiloida
+Mollusca / Bivalvia / Mytiloida / Mytilidae
+Mollusca / Bivalvia / Mytiloida / Mytilidae / Mytilus
+Mollusca / Bivalvia / Mytiloida / Mytilidae / Mytilus / edulis
+Mollusca / Bivalvia / Ostreoida
+Mollusca / Bivalvia / Ostreoida / Ostreidae
+Mollusca / Bivalvia / Ostreoida / Ostreidae / Ostrea
+Mollusca / Bivalvia / Ostreoida / Ostreidae / Ostrea / edulis
+Mollusca / Bivalvia / Ostreoida / Spondylidae
+Mollusca / Bivalvia / Ostreoida / Spondylidae / Spondylus
+Mollusca / Bivalvia / Ostreoida / Spondylidae / Spondylus / sp.
+Mollusca / Bivalvia / Ostreoida / Pectinidae 
+Mollusca / Bivalvia / Unionoida
+Mollusca / Bivalvia / Unionoida / Unionidae
+Mollusca / Bivalvia / Unionoida / Unionidae / Unio
+Mollusca / Bivalvia / Unionoida / Unionidae / Unio / sp.
+Mollusca / Bivalvia / Unionoida / Margaritiferidae
+Mollusca / Bivalvia / Unionoida / Margaritiferidae / Margaritana
+Mollusca / Bivalvia / Unionoida / Margaritiferidae / Margaritana / margaritifera
+Mollusca / Gastropoda 
+Mollusca / Gastropoda  / Archaeogastropoda
+Mollusca / Gastropoda  / Archaeogastropoda / Patellidae
+Mollusca / Gastropoda  / Archaeogastropoda / Patellidae / Patellinae
+Mollusca / Gastropoda  / Archaeogastropoda / Patellidae / Patellinae / Patella
+Mollusca / Gastropoda  / Archaeogastropoda / Patellidae / Patellinae / Patella / vulgata
+Mollusca / Gastropoda  / Neotaenioglossa
+Mollusca / Gastropoda  / Neotaenioglossa / Bithyniidae
+Mollusca / Gastropoda  / Neotaenioglossa / Bithyniidae / Bithynia
+Mollusca / Gastropoda  / Neotaenioglossa / Bithyniidae / Bithynia / sp.
+Mollusca / Gastropoda  / Neotaenioglossa / Littorinidae
+Mollusca / Gastropoda  / Neotaenioglossa / Littorinidae / Littorina
+Mollusca / Gastropoda  / Neotaenioglossa / Littorinidae / Littorina / littorea
+Mollusca / Gastropoda  / Neogastropoda
+Mollusca / Gastropoda  / Neogastropoda / Buccinidae
+Mollusca / Gastropoda  / Neogastropoda / Columbellidae
+Mollusca / Gastropoda  / Neogastropoda / Columbellidae / Columbella
+Mollusca / Gastropoda  / Neogastropoda / Columbellidae / Columbella / rustica
+Mollusca / Gastropoda  / Stylommatophora
+Mollusca / Gastropoda  / Stylommatophora / Helicidae
+Mollusca / Gastropoda  / Stylommatophora / Helicidae / Cepaea
+Mollusca / Gastropoda  / Stylommatophora / Helicidae / Cepaea / nemoralis
+Mollusca / Gastropoda  / Basommatophora
+Mollusca / Gastropoda  / Basommatophora / Lymnaeidae
+Mollusca / Gastropoda  / Basommatophora / Lymnaeidae / Lymnaea
+Mollusca / Gastropoda  / Basommatophora / Lymnaeidae / Lymnaea / stagnalis
+Mollusca / Gastropoda  / Basommatophora / Lymnaeidae / Radix
+Mollusca / Gastropoda  / Basommatophora / Lymnaeidae / Radix / ovata
+Mollusca / Scaphopoda
+Mollusca / Scaphopoda / Dentaliida
+Mollusca / Scaphopoda / Dentaliida / Dentaliidae
+Mollusca / Scaphopoda / Dentaliida / Dentaliidae / Dentalium
+Mollusca / Scaphopoda / Dentaliida / Dentaliidae / Dentalium / entalis
+Mollusca / Cephalopoda
+Mollusca / Cephalopoda / Octopoda
+Mollusca / Cephalopoda / Octopoda / Incirrina
+Mollusca / Cephalopoda / Octopoda / Incirrina / Octopodidae
+Mollusca / Cephalopoda / Octopoda / Incirrina / Octopodidae / Eledoninae
+Mollusca / Cephalopoda / Octopoda / Incirrina / Octopodidae / Eledoninae / Eledone
+Mollusca / Cephalopoda / Octopoda / Incirrina / Octopodidae / Eledoninae / Eledone / cirrhosa
+Mollusca / Cephalopoda / Decapoda2
+Mollusca / Cephalopoda / Decapoda2 / Myopsina
+Mollusca / Cephalopoda / Decapoda2 / Myopsina / Loliginidae
+Mollusca / Cephalopoda / Decapoda2 / Myopsina / Loliginidae / Loligo
+Mollusca / Cephalopoda / Decapoda2 / Myopsina / Loliginidae / Loligo / forbesi
+Malacostraca
+Malacostraca / Decapoda
+Malacostraca / Decapoda / Pleocyemata
+Malacostraca / Decapoda / Pleocyemata / Cancridae
+Malacostraca / Decapoda / Pleocyemata / Cancridae / Cancer
+Malacostraca / Decapoda / Pleocyemata / Cancridae / Cancer / pagurus
+Crustacea

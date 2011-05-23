@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<object name="Plone Site"
+   i18n:domain="plone" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <property name="description"
+      i18n:translate="">The portal_type for the root object in a MARS system.</property>
+ <property name="filter_content_types">True</property>
+ <property name="allowed_content_types" purge="False">
+  <element value="Folder"/>
+  <element value="Large Plone Folder"/>
+  <element value="Document"/>
+  <element value="Picture"/>
+  <element value="Topic"/>
+  <element value="Event"/>
+  <element value="News Item"/>
+  <element value="External File"/>
+ </property>
+ <property name="allow_discussion">False</property>
+ <property name="default_view">welcome.html</property>
+ <property name="view_methods" purge="False">
+  <element value="welcome.html"/>
+ </property>
+</object>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<object name="portal_bibliostyles">
+ <property name="title"></property>
+  <object name="Default" meta_type="Default Bibref Style">
+   <property name="title">Default Bibref Style</property>
+   <property name="bibstyle_enabled">True</property>
+  </object>
+  <object name="Minimal" meta_type="Minimal Bibref Style">
+   <property name="title">Minimal Bibref Style</property>
+   <property name="bibstyle_enabled">True</property>
+  </object>
+  <object name="Chicago" meta_type="Chicago Bibref Style">
+   <property name="title">Chicago Bibref Style</property>
+   <property name="bibstyle_enabled">True</property>
+  </object>
+  <object name="Harvard" meta_type="Harvard Bibref Style">
+   <property name="title">Harvard Bibref Style</property>
+   <property name="bibstyle_enabled">True</property>
+  </object>
+  <object name="MLA" meta_type="MLA Bibref Style">
+   <property name="title">MLA Bibref Style</property>
+   <property name="bibstyle_enabled">True</property>
+  </object>
+  <object name="APA" meta_type="APA Bibref Style">
+   <property name="title">APA Bibref Style</property>
+   <property name="bibstyle_enabled">True</property>
+  </object>
+  <object name="EcoSciences" meta_type="EcoSciences Bibref Style">
+   <property name="title">EcoSciences Bibref Style</property>
+   <property name="bibstyle_enabled">True</property>
+  </object>
+</object>

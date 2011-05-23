@@ -1,57 +1,48 @@
-import os, sys
-
 from setuptools import setup, find_packages
 
-version = u'1.0'
-
-def read(*rnames):
-    return open(
-        os.path.join('.', *rnames)
-    ).read()
-
-long_description = "\n\n".join(
-    [read('README.txt'),
-     read('docs', 'INSTALL.txt'),
-     read('docs', 'HISTORY.txt'),
-    ]
-)
-
-classifiers = [
-    "Programming Language :: Python",
-    "Topic :: Software Development",]
+version = '0.1'
 
 
-setup(
-    name=name,
-    namespace_packages=[                'mars', 'mars.testing',],  
-    version=version,
-    description='Project cadredeville testing product',
-    long_description=long_description,
-    classifiers=classifiers,
-    keywords='',
-    author='mpa <mpa@makina-corpus.com>',
-    author_email='mpa@makina-corpus.com',
-    url='http://pypi.python.org/pypi/%s' % name,
-    license='GPL',
-    packages=find_packages('src'),
-    package_dir = {'': 'src'},
-    include_package_data=True,
-    install_requires=[
-        # -*- Extra requirements: -*-
-        'collective.testcaselayer',
-        'demjson',
-        'setuptools',
-        'z3c.autoinclude',
-        'zope.component',
-        'zope.interface',
-        'zope.testing',
-    ],
-    entry_points = {
-        'z3c.autoinclude.plugin': [
-            'target = plone',
-        ], 
+setup(name='marsapp.policy',
+      version=version,
+      description="Policy package for setting up a MARS portal",
+      long_description="""\
+      """,
+      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
+      classifiers=[
+          "Framework :: Plone",
+          "Framework :: Zope2",
+          "Framework :: Zope3",
+          "Programming Language :: Python",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+      ],
+      keywords='zope plone archaeology',
+      author='David Convent',
+      author_email='mars@naturalsciences.be',
+      url='http://www.naturalsciences.be/metamars',
+      license='GPL',
+      packages=find_packages(exclude=['ez_setup']),
+      namespace_packages=[                'mars', 'mars.testing', 'marsapp'],  
+      include_package_data=True,
+      zip_safe=False,
+      install_requires=[
+          # -*- Extra requirements: -*-
+          'collective.testcaselayer',
+          'demjson',
+          #'plone.reload',
+          'Products.CMFBibliographyAT',
+          'setuptools',
+          'z3c.autoinclude',
+          'zope.component',
+          'zope.interface',
+          'zope.testing',
+      ],
+      entry_points = {
+          'z3c.autoinclude.plugin': [
+              'target = plone',
+          ], 
 
-    },
-    extras_require={'test': ['IPython', 'zope.testing', 'mocker']},
-)
-# vim:set ft=python:
+      }, 
+
+      extras_require={'test': ['IPython', 'zope.testing', 'mocker']},
+     )

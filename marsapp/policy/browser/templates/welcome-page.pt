@@ -1,0 +1,158 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="mars">
+
+  <body>
+    <metal:main fill-slot="main"
+                tal:define="kssClassesView context/@@kss_field_decorator_view;
+                            getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                            templateId template/getId">
+
+      <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+      <tal:remove replace="nothing">
+      <h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view">
+          Title or id
+      </h1>
+
+      <div tal:replace="structure provider:plone.belowcontenttitle" />
+      </tal:remove>
+
+        <div style="text-align: center;">
+          <h1 style="border-bottom:0;" tal:content="context/Description|nothing">
+              Description
+          </h1>
+          <p>
+              Mars is a research action funded by the
+              <a href="http://www.belspo.be" target="_blank">Belgian Science Policy</a>
+          </p>
+          <p>
+              <a class="link-plain" href="http://www.belspo.be/"><img width="32" height="32" src="++resource++belspo32.gif" alt="www.belspo.be" /></a>
+              &nbsp;
+              <a class="link-plain" href="http://www.belgium.be/"><img width="32" height="25" src="++resource++belogo_small.gif" alt="www.belgium.be" /></a>
+          </p>
+        </div>
+
+      <div tal:replace="structure provider:plone.abovecontentbody" />
+
+
+<!-- ######################################################################################## -->
+
+<table width="100%" cellspacing="5" cellpadding="5" border="0" align="center" summary="">
+    <thead>
+      <tr>
+        <td valign="top" align="center">
+          <h3>The project</h3>
+          <img width="128" height="46" src="++resource++mars_logo.jpg" alt="mars.jpg" />
+        </td>
+        <td valign="top" align="center">
+          <h3>RBINS</h3>
+          <img width="128" height="40" src="++resource++rbins_logo.jpg" alt="rbins_logo.gif" />
+        </td>
+        <td valign="top" align="center">
+          <h3>Hosted Websites</h3>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td width="33.33%" valign="top">
+          <dl>
+            <dt><a href="mars-intro">Introduction</a></dt>
+            <dd>Find <a href="mars-intro">here</a> a brief description of the MARS project.</dd>
+            <dt><a href="mars-partners">The Partners</a></dt>
+            <dd>Discover the Partners involved in the MARS project <a href="mars-partners">here</a>.</dd>
+            <dt><a class="link-plain" href="http://www.naturalsciences.be/metamars">METAMARS</a></dt>
+            <dd>The Information and Development Portal for the MARS Project can be found <a href="http://www.naturalsciences.be/metamars">here</a>.</dd>
+          </dl>
+        </td>
+        <td width="33.33%" valign="top">
+          <dl>
+            <dt><a href="./resolveUid/deca8482b26a529274f951d36bdc6326">The Library</a></dt>
+            <dd>
+              <ol>
+                <li><a href="./resolveUid/380c18b57376c7ef6d84d87bb4eb862a">References</a></li>
+                <li><a href="./resolveUid/01c9df900557f99305591745b8448366">Archives</a></li>
+                <li><a href="./resolveUid/d3a816b4a8c7f1a5ef21777abc5bb232">Private Library</a></li>
+                <li><a href="./resolveUid/df9a3eae5c291a521d62ef846307056d">Repository</a></li>
+              </ol>
+            </dd>
+            <dt><a href="./resolveUid/df87b99fd2928a8f1e0ae9ef87a65abd">The Collections</a></dt>
+            <dd>
+              <ol>
+                <li><a href="./resolveUid/34d385c9d66a0c0a55bfb44478cd0e26">Sites</a></li>
+                <li><a href="./resolveUid/6a77c3cbf98e21aec00ee80fa06a5d66">Collections</a></li>
+                <li><a href="./resolveUid/e1c56e5e5580ae8babd2dd63192fa6a8">Index</a></li>
+                <li><a href="./resolveUid/ac6dea7c8673383d5ba9a6b2f7dc30e0">Repository</a></li>
+              </ol>
+            </dd>
+            <dt><a href="./resolveUid/5c9ae459cd3e75745b3fa09536ba9d83">The Projects</a></dt>
+            <dd>
+              <ol>
+                <li><a href="./resolveUid/c2cb5fe00dd98266c71844d9f905eea1">Spy</a></li>
+                <li><a href="./resolveUid/48cf7ce312adc48c00e80d7419ccc554">Ishango</a></li>
+                <li><a href="./resolveUid/143559c1d56f61682221ac1ec66ed608">Centre d'interprétation</a></li>
+                <li><a href="./resolveUid/5261a3b5d9a83a744e0995e790841506">SRPH</a></li>
+                <li><a href="./resolveUid/7d9cfe89c7c0d4fff6f590525527f80f">KUL mandibles</a></li>
+                <li><a href="./resolveUid/ac14bcbb46c07b0a603d208851feb428">Palaeontology test</a></li>
+              </ol>
+            </dd>
+            <dt><a href="./resolveUid/a3c1e58d70b9f3c135208606de8894e9">Intranet (Private)</a></dt>
+            <dd>
+              Internal information
+            </dd>
+          <dl>
+        </td>
+
+            <td width="33.33%" valign="top" align="center">
+            <div style="text-align: center;">
+            <h6>Groupe de Contact F.N.R.S. &laquo;Préhistoire&raquo;<br />
+            <br />
+            Contactgroep &lsquo;Prehistorie&rsquo;</h6>
+            <h2>&nbsp;</h2>
+            <a href="./resolveUid/00c7bb1190d958e51165909669003142"><img width="128" height="90" src="./resolveUid/c1a0256e086ba4d11d8067f7f857b552/image_thumb" alt="logo2.gif" /></a><br />
+            </div>
+            <h6 style="text-align: center;"><br />
+            Société Royale Belge d'Anthropologie et de Préhistoire<br />
+            <br />
+            </h6>
+            <h6 style="text-align: center;">Koninklijke Belgische Maatschappij voor Antropologie en Prehistorie<br />
+            <br />
+            </h6>
+            <h6 style="text-align: center;">Belgian Royal Society of Anthropology and Praehistory</h6>
+            <h2>&nbsp;</h2>
+            <table width="200" cellspacing="1" cellpadding="1" border="0" background="./resolveuid/1e0dba7cefa5279d8582194a103b81ee/image" align="center" summary="" style="text-align: left; margin-left: auto; margin-right: auto;">
+                <tbody>
+                    <tr>
+                        <td><br />
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="http://adia.naturalsciences.be/MENU/langues.htm/"><img width="64" height="35" alt="ADIA.gif" src="./resolveUid/7e091137d49823935e689566026f0808/image_thumb" /></a><br />
+                        <br />
+                        <br />
+                        <br />
+                        <div style="text-align: center;">
+                        <h6><br />
+                        </h6>
+                        <h5 style="color: rgb(255, 102, 0); font-weight: normal;">Association pour la diffusion de l'information archéologique</h5>
+                        <h6><br />
+                        Site pour enfants</h6>
+                        </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ######################################################################################## -->
+      <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    </metal:main>
+  </body>
+</html>

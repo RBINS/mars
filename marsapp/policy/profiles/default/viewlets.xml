@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object>
+  <order manager="plone.abovecontentbody" skinname="*">
+    <viewlet name="marsapp.imagepreview" />
+    <viewlet name="marsapp.schemata" />
+    <viewlet name="plone.presentation" />
+    <viewlet name="marsapp.imagecaption" />
+  </order>
+</object>

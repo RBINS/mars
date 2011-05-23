@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<componentregistry>
+ <adapters/>
+ <utilities>
+  <utility 
+     interface="Products.ATBiblioStyles.interface.IBiblioStylesTool"
+     object="/portal_bibliostyles"/>
+  <utility
+     interface="marsapp.categories.storage.IMarscatsSettingsStorage"
+     factory="marsapp.categories.storage.MarscatsSettingsStorage"/>
+  <utility
+     interface="marsapp.categories.controlpanel.marscatsettings.IMarscatSettings"
+     factory="marsapp.categories.controlpanel.marscatsettings.MarscatSettings"/>
+ </utilities>
+</componentregistry>

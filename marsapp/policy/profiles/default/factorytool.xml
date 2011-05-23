@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<object name="portal_factory">
+ <factorytypes>
+  <!-- bibliography -->
+  <type portal_type="BibrefCustomStyle"/>
+  <type portal_type="BibrefCustomStyleFolder"/>
+  <type portal_type="BibrefCustomStyleSet"/>
+  <type portal_type="BibliographyList"/>
+  <!-- end bibliography -->
+  <type portal_type="Mars Category"/>
+  <type portal_type="Analysis"/>
+  <type portal_type="Analysis Absolute Dating"/>
+  <type portal_type="Analysis Relative Dating"/>
+  <type portal_type="Artefact"/>
+  <type portal_type="Artefact Assemblage"/>
+  <type portal_type="Artefact Individual"/>
+  <type portal_type="Artefact Reference Sample"/>
+  <type portal_type="Collection"/>
+  <type portal_type="Curation"/>
+  <type portal_type="Excavation"/>
+  <type portal_type="External File"/>
+  <type portal_type="Fauna Assemblage"/>
+  <type portal_type="Fauna Individual"/>
+  <type portal_type="Fauna Reference Sample"/>
+  <type portal_type="Fauna Remain"/>
+  <type portal_type="Flora Assemblage"/>
+  <type portal_type="Flora Individual"/>
+  <type portal_type="Flora Reference Sample"/>
+  <type portal_type="Flora Remain"/>
+  <type portal_type="Hominid Assemblage"/>
+  <type portal_type="Hominid Individual"/>
+  <type portal_type="Hominid Reference Sample"/>
+  <type portal_type="Hominid Remain"/>
+  <type portal_type="Institution"/>
+  <type portal_type="Media File 3D Object"/>
+  <type portal_type="Media File Audio"/>
+  <type portal_type="Media File Flash"/>
+  <type portal_type="Media File Video"/>
+  <type portal_type="People"/>
+  <type portal_type="Picture"/>
+  <type portal_type="Reference Sample"/>
+  <type portal_type="Site"/>
+  <type portal_type="Stratigraphical Layer"/>
+  <type portal_type="Stratigraphy"/>
+  <type portal_type="Structure Assemblage"/>
+ </factorytypes>
+</object>

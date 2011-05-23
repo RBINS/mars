@@ -1,0 +1,427 @@
+Archaeological Remain Type 
+
+lithic
+lithic / core
+lithic / core / on a flake
+lithic / core / on a flake / Kombewa core
+lithic / core / atypical / indeterminable
+lithic / core / point core
+lithic / core / flake core
+lithic / core / blade core
+lithic / core / bladelet core
+lithic / core / surface debitage core
+lithic / core / surface debitage core / unipolar
+lithic / core / surface debitage core / bipolar
+lithic / core / surface debitage core / centripetal
+lithic / core / surface debitage core / orthogonal
+lithic / core / surface debitage core / Levallois
+lithic / core / surface debitage core / Levallois / lineal
+lithic / core / surface debitage core / Levallois / unipolar
+lithic / core / surface debitage core / Levallois / bipolar
+lithic / core / surface debitage core / Levallois / centripetal
+lithic / core / volumetric debitage core
+lithic / core / volumetric debitage core / Discoid
+lithic / core / volumetric debitage core / Discoid / unifacial Discoid
+lithic / core / volumetric debitage core / Discoid / bifacial Discoid
+lithic / core / volumetric debitage core / globular
+lithic / core / volumetric debitage core / pyramidal
+lithic / core / volumetric debitage core / prismatic
+lithic / core / volumetric debitage core / prismatic / with one striking platform
+lithic / core / volumetric debitage core / prismatic / with two striking platforms
+lithic / core / volumetric debitage core / prismatic / with two striking platforms / Perigordian
+lithic / core / volumetric debitage core / Quina
+lithic / core / volumetric debitage core / biconvex
+lithic / core / volumetric debitage core / laminar
+lithic / core / volumetric debitage core / laminar / with one striking platform
+lithic / core / volumetric debitage core / laminar / with two striking platforms
+lithic / core / volumetric debitage core / laminar / with two striking platforms / Perigordian
+lithic / core / core preform
+lithic / core / mixed core
+lithic / debitage product
+lithic / debitage product / retouched tool
+lithic / debitage product / retouched tool / retouched flake
+lithic / debitage product / retouched tool / retouched flake / retouched common flake
+lithic / debitage product / retouched tool / retouched flake / retouched Levallois flake
+lithic / debitage product / retouched tool / retouched flake / truncated flake
+lithic / debitage product / retouched tool / retouched blade
+lithic / debitage product / retouched tool / retouched blade / retouched common blade
+lithic / debitage product / retouched tool / retouched blade / retouched Levallois blade
+lithic / debitage product / retouched tool / retouched blade / Aurignacian blade
+lithic / debitage product / retouched tool / retouched blade / Aurignacian blade / strangulated Aurignacian blade
+lithic / debitage product / retouched tool / retouched blade / Aurignacian blade / notched Aurignacian blade
+lithic / debitage product / retouched tool / retouched blade / pointed blade
+lithic / debitage product / retouched tool / retouched blade / backed blade
+lithic / debitage product / retouched tool / retouched blade / truncated blade
+lithic / debitage product / retouched tool / retouched blade / bitruncated blade
+lithic / debitage product / retouched tool / retouched bladelet
+lithic / debitage product / retouched tool / retouched bladelet / Dufour
+lithic / debitage product / retouched tool / retouched bladelet / Caminades
+lithic / debitage product / retouched tool / retouched bladelet / backed bladelet
+lithic / debitage product / retouched tool / retouched bladelet / backed bladelet / rectangular backed bladelet
+lithic / debitage product / retouched tool / retouched bladelet / backed bladelet / denticulated backed bladelet
+lithic / debitage product / retouched tool / retouched bladelet / truncated bladelet
+lithic / debitage product / retouched tool / retouched bladelet / bitruncated bladelet
+lithic / debitage product / retouched tool / retouched bladelet / denticulated bladelet
+lithic / debitage product / retouched tool / retouched bladelet / notched bladelet
+lithic / debitage product / retouched tool / retouched point
+lithic / debitage product / retouched tool / retouched point / Mousterian point
+lithic / debitage product / retouched tool / retouched point / elongated Mousterian point
+lithic / debitage product / retouched tool / retouched point / retouched Levallois point
+lithic / debitage product / retouched tool / retouched point / Tayac point 
+lithic / debitage product / retouched tool / retouched point / leaf point
+lithic / debitage product / retouched tool / retouched point / leaf point / with bifacial retouches
+lithic / debitage product / retouched tool / retouched point / leaf point / with unifacial retouches
+lithic / debitage product / retouched tool / retouched point / leaf point / laurel leaf point
+lithic / debitage product / retouched tool / retouched point / leaf point / willow leaf point
+lithic / debitage product / retouched tool / retouched point / flat retouched point 
+lithic / debitage product / retouched tool / retouched point / invasive retouched point
+lithic / debitage product / retouched tool / retouched point / flat-faced point
+lithic / debitage product / retouched tool / retouched point / tanged point
+lithic / debitage product / retouched tool / retouched point / tanged point / Font-Robert point
+lithic / debitage product / retouched tool / retouched point / tanged point / Teyjat point
+lithic / debitage product / retouched tool / retouched point / tanged point / Arhensburgian shouldered point
+lithic / debitage product / retouched tool / retouched point / shouldered point
+lithic / debitage product / retouched tool / retouched point / shouldered point / Solutrean point
+lithic / debitage product / retouched tool / retouched point / shouldered point / Kostienki point
+lithic / debitage product / retouched tool / retouched point / shouldered point / Hamburgian point
+lithic / debitage product / retouched tool / retouched point / backed point
+lithic / debitage product / retouched tool / retouched point / backed point / Gravette point
+lithic / debitage product / retouched tool / retouched point / backed point / Gravette point / microgravette
+lithic / debitage product / retouched tool / retouched point / backed point / curved backed point
+lithic / debitage product / retouched tool / retouched point / backed point / curved backed point / Châtelperron point
+lithic / debitage product / retouched tool / retouched point / backed point / curved backed point / Federmesser
+lithic / debitage product / retouched tool / retouched point / backed point / curved backed point / Azilian point
+lithic / debitage product / retouched tool / retouched point / backed point / truncated backed point
+lithic / debitage product / retouched tool / retouched point / backed point / truncated backed point / Creswell point
+lithic / debitage product / retouched tool / retouched point / backed point / truncated backed point / Cheddar point
+lithic / debitage product / retouched tool / retouched point / backed point / Vachons point
+lithic / debitage product / retouched tool / retouched point / alternate burin-like point
+lithic / debitage product / retouched tool / retouched point / Font-Yves point
+lithic / debitage product / retouched tool / retouched point / fléchette
+lithic / debitage product / retouched tool / side scraper
+lithic / debitage product / retouched tool / side scraper / simple
+lithic / debitage product / retouched tool / side scraper / simple / straight
+lithic / debitage product / retouched tool / side scraper / simple / concave
+lithic / debitage product / retouched tool / side scraper / simple / convex
+lithic / debitage product / retouched tool / side scraper / double
+lithic / debitage product / retouched tool / side scraper / double / straight
+lithic / debitage product / retouched tool / side scraper / double / biconcave
+lithic / debitage product / retouched tool / side scraper / double / biconvex
+lithic / debitage product / retouched tool / side scraper / double / convex-concave
+lithic / debitage product / retouched tool / side scraper / double / straight-concave
+lithic / debitage product / retouched tool / side scraper / double / straight-convex
+lithic / debitage product / retouched tool / side scraper / convergent
+lithic / debitage product / retouched tool / side scraper / limace
+lithic / debitage product / retouched tool / side scraper / déjeté
+lithic / debitage product / retouched tool / side scraper / transverse
+lithic / debitage product / retouched tool / side scraper / on ventral face
+lithic / debitage product / retouched tool / side scraper / alternate retouched
+lithic / debitage product / retouched tool / side scraper / abrupt retouched
+lithic / debitage product / retouched tool / side scraper / bifacially retouched
+lithic / debitage product / retouched tool / side scraper / with thinned back
+lithic / debitage product / retouched tool / end scraper
+lithic / debitage product / retouched tool / end scraper / convex
+lithic / debitage product / retouched tool / end scraper / pointed
+lithic / debitage product / retouched tool / end scraper / rectilineal
+lithic / debitage product / retouched tool / end scraper / thin
+lithic / debitage product / retouched tool / end scraper / thick
+lithic / debitage product / retouched tool / end scraper / double
+lithic / debitage product / retouched tool / end scraper / on a flake
+lithic / debitage product / retouched tool / end scraper / on a flake / on retouched flake
+lithic / debitage product / retouched tool / end scraper / on a blade
+lithic / debitage product / retouched tool / end scraper / on a blade / on Aurignacian blade
+lithic / debitage product / retouched tool / end scraper / on a blade / on retouched blade
+lithic / debitage product / retouched tool / end scraper / carinated
+lithic / debitage product / retouched tool / end scraper / nosed
+lithic / debitage product / retouched tool / end scraper / shouldered
+lithic / debitage product / retouched tool / end scraper / nucleiform
+lithic / debitage product / retouched tool / end scraper / rabot
+lithic / debitage product / retouched tool / end scraper / circular
+lithic / debitage product / retouched tool / end scraper / ungiform
+lithic / debitage product / retouched tool / burin
+lithic / debitage product / retouched tool / burin / simple
+lithic / debitage product / retouched tool / burin / double
+lithic / debitage product / retouched tool / burin / double / alternate
+lithic / debitage product / retouched tool / burin / double / twin
+lithic / debitage product / retouched tool / burin / double / opposite
+lithic / debitage product / retouched tool / burin / triple
+lithic / debitage product / retouched tool / burin / quadruple
+lithic / debitage product / retouched tool / burin / mixed
+lithic / debitage product / retouched tool / burin / angle
+lithic / debitage product / retouched tool / burin / straight
+lithic / debitage product / retouched tool / burin / transverse
+lithic / debitage product / retouched tool / burin / transverse / on lateral retouch
+lithic / debitage product / retouched tool / burin / transverse / on notch
+lithic / debitage product / retouched tool / burin / dihedral
+lithic / debitage product / retouched tool / burin / dihedral / angle dihedral burin
+lithic / debitage product / retouched tool / burin / dihedral / déjeté dihedral burin
+lithic / debitage product / retouched tool / burin / dihedral / straight dihedral burin
+lithic / debitage product / retouched tool / burin / carinated
+lithic / debitage product / retouched tool / burin / carinated / Vachons burin
+lithic / debitage product / retouched tool / burin / busked
+lithic / debitage product / retouched tool / burin / flat-faced
+lithic / debitage product / retouched tool / burin / flat-faced / Raysse burin
+lithic / debitage product / retouched tool / burin / polyhedric
+lithic / debitage product / retouched tool / burin / on a break
+lithic / debitage product / retouched tool / burin / on natural facet
+lithic / debitage product / retouched tool / burin / on truncation
+lithic / debitage product / retouched tool / burin / on truncation / on straight truncation
+lithic / debitage product / retouched tool / burin / on truncation / on concave truncation
+lithic / debitage product / retouched tool / burin / on truncation / on convex truncation
+lithic / debitage product / retouched tool / burin / on truncation / on oblique truncation
+lithic / debitage product / retouched tool / burin / on truncation / Lacan burin
+lithic / debitage product / retouched tool / burin / on truncation / Noailles burin
+lithic / debitage product / retouched tool / burin / on retouched edge
+lithic / debitage product / retouched tool / burin / on retouched edge / parrot beak burin
+lithic / debitage product / retouched tool / burin / broken
+lithic / debitage product / retouched tool / burin / Corbiac burin
+lithic / debitage product / retouched tool / burin / tertiary retouched burin
+lithic / debitage product / retouched tool / borer
+lithic / debitage product / retouched tool / borer / short tip
+lithic / debitage product / retouched tool / borer / long tip
+lithic / debitage product / retouched tool / borer / thick tip
+lithic / debitage product / retouched tool / borer / beak
+lithic / debitage product / retouched tool / borer / zinken
+lithic / debitage product / retouched tool / borer / denticulated
+lithic / debitage product / retouched tool / borer / on notch
+lithic / debitage product / retouched tool / borer / on truncation
+lithic / debitage product / retouched tool / borer / multiple
+lithic / debitage product / retouched tool / borer / multiple / Chaleux type
+lithic / debitage product / retouched tool / borer / microborer
+lithic / debitage product / retouched tool / composite tool
+lithic / debitage product / retouched tool / composite tool / associated
+lithic / debitage product / retouched tool / composite tool / juxtaposed
+lithic / debitage product / retouched tool / composite tool / opposite
+lithic / debitage product / retouched tool / composite tool / end scraper-burin
+lithic / debitage product / retouched tool / composite tool / burin-borer
+lithic / debitage product / retouched tool / composite tool / burin-truncation
+lithic / debitage product / retouched tool / composite tool / borer-truncation
+lithic / debitage product / retouched tool / composite tool / end scraper-truncation
+lithic / debitage product / retouched tool / notch
+lithic / debitage product / retouched tool / notch / Clactonian
+lithic / debitage product / retouched tool / notch / retouched
+lithic / debitage product / retouched tool / notch / end-notched piece
+lithic / debitage product / retouched tool / notch / unguiform
+lithic / debitage product / retouched tool / notch / notched triangle
+lithic / debitage product / retouched tool / notch / pseudo-microburin
+lithic / debitage product / retouched tool / denticulate
+lithic / debitage product / retouched tool / denticulate / microdenticulate
+lithic / debitage product / retouched tool / backed knife
+lithic / debitage product / retouched tool / backed knife / retouched
+lithic / debitage product / retouched tool / backed knife / naturally
+lithic / debitage product / retouched tool / backed knife / Abri-Audi knife
+lithic / debitage product / retouched tool / tranchet
+lithic / debitage product / retouched tool / tranchet / Mousterian
+lithic / debitage product / retouched tool / cleaver on a flake
+lithic / debitage product / retouched tool / hachoir
+lithic / debitage product / retouched tool / raclette
+lithic / debitage product / retouched tool / piece
+lithic / debitage product / retouched tool / piece / splintered piece
+lithic / debitage product / retouched tool / piece / tanged piece
+lithic / debitage product / retouched tool / piece / shouldered piece
+lithic / debitage product / retouched tool / piece / truncated piece
+lithic / debitage product / retouched tool / piece / truncated piece / rectilineal
+lithic / debitage product / retouched tool / piece / truncated piece / concave
+lithic / debitage product / retouched tool / piece / truncated piece / convex
+lithic / debitage product / retouched tool / piece / truncated piece / oblique
+lithic / debitage product / retouched tool / piece / truncated piece / sinuous
+lithic / debitage product / retouched tool / piece / truncated piece / simple
+lithic / debitage product / retouched tool / piece / truncated piece / double
+lithic / debitage product / retouched tool / piece / notched piece
+lithic / debitage product / retouched tool / piece / denticulated piece
+lithic / debitage product / retouched tool / piece / backed piece
+lithic / debitage product / retouched tool / piece / backed piece / rectilineal
+lithic / debitage product / retouched tool / piece / backed piece / curved
+lithic / debitage product / retouched tool / piece / thin abrupt and alternate retouched piece
+lithic / debitage product / retouched tool / piece / thick abrupt and alternate retouched piece
+lithic / debitage product / retouched tool / piece / bifacially retouched piece
+lithic / debitage product / retouched tool / piece / invasive retouched piece
+lithic / debitage product / retouched tool / piece / on ventral face retouched piece
+lithic / debitage product / retouched tool / microlith
+lithic / debitage product / retouched tool / microlith / triangle
+lithic / debitage product / retouched tool / microlith / triangle / isoceles triangle
+lithic / debitage product / retouched tool / microlith / triangle / scalene triangle
+lithic / debitage product / retouched tool / microlith / triangle / Châteauneuf triangle
+lithic / debitage product / retouched tool / microlith / triangle / Fère triangle
+lithic / debitage product / retouched tool / microlith / triangle / elongated isoceles triangle
+lithic / debitage product / retouched tool / microlith / triangle / Muge triangle
+lithic / debitage product / retouched tool / microlith / triangle / elongated scalene triangle
+lithic / debitage product / retouched tool / microlith / triangle / Montclus triangle
+lithic / debitage product / retouched tool / microlith / triangle / Coincy triangle
+lithic / debitage product / retouched tool / microlith / trapeze
+lithic / debitage product / retouched tool / microlith / trapeze / symetric
+lithic / debitage product / retouched tool / microlith / trapeze / asymetric
+lithic / debitage product / retouched tool / microlith / trapeze / Martinet trapeze
+lithic / debitage product / retouched tool / microlith / trapeze / rectangle
+lithic / debitage product / retouched tool / microlith / trapeze / Vielle trapeze
+lithic / debitage product / retouched tool / microlith / trapeze / Montclus trapeze
+lithic / debitage product / retouched tool / microlith / circular segment
+lithic / debitage product / retouched tool / microlith / circular segment / asymetric circular segment
+lithic / debitage product / retouched tool / microlith / circular segment / wide circular segment
+lithic / debitage product / retouched tool / microlith / backed bladelet
+lithic / debitage product / retouched tool / microlith / backed bladelet / scalene bladelet
+lithic / debitage product / retouched tool / microlith / point
+lithic / debitage product / retouched tool / microlith / point / unretouched base point
+lithic / debitage product / retouched tool / microlith / point / transverse base point
+lithic / debitage product / retouched tool / microlith / point / transverse base point / triangular point
+lithic / debitage product / retouched tool / microlith / point / transverse base point / Tardenois point
+lithic / debitage product / retouched tool / microlith / point / transverse base point / Rouffignac point
+lithic / debitage product / retouched tool / microlith / point / invasive retouched point
+lithic / debitage product / retouched tool / microlith / point / invasive retouched point / mistletoe leaf point
+lithic / debitage product / retouched tool / microlith / point / Châtelet point
+lithic / debitage product / retouched tool / microlith / point / flat inverse retouched point
+lithic / debitage product / retouched tool / microlith / point / flat inverse retouched point / Danubian type
+lithic / debitage product / retouched tool / microlith / point / flat inverse retouched point / Sonchamp point
+lithic / debitage product / retouched tool / microlith / point / oblique truncated point
+lithic / debitage product / retouched tool / microlith / point / oblique truncated point / Zonhoven point
+lithic / debitage product / retouched tool / microlith / point / straight backed point
+lithic / debitage product / retouched tool / microlith / point / spindle-shaped point
+lithic / debitage product / retouched tool / microlith / point / spindle-shaped point / Istres point
+lithic / debitage product / retouched tool / microlith / point / spindle-shaped point / Sauveterre point
+lithic / debitage product / retouched tool / microlith / pygmée
+lithic / debitage product / retouched tool / alternate retouched beaks
+lithic / debitage product / technological product
+lithic / debitage product / technological product / first flake
+lithic / debitage product / technological product / decortification flake
+lithic / debitage product / technological product / trimming flake
+lithic / debitage product / technological product / éclat débordant
+lithic / debitage product / technological product / lame débordante
+lithic / debitage product / technological product / core edge
+lithic / debitage product / technological product / crested flake
+lithic / debitage product / technological product / crested blade
+lithic / debitage product / technological product / crested bladelet
+lithic / debitage product / technological product / core flank
+lithic / debitage product / technological product / core tablet
+lithic / debitage product / technological product / retouch flake
+lithic / debitage product / technological product / retouch flake / handaxe retouch flake
+lithic / debitage product / technological product / sharpening flake
+lithic / debitage product / technological product / sharpening flake / end scraper front sharpening flake
+lithic / debitage product / technological product / sharpening flake / side scraper side sharpening flake
+lithic / debitage product / technological product / thinning flake
+lithic / debitage product / technological product / burin spall
+lithic / debitage product / technological product / burin spall / first
+lithic / debitage product / technological product / burin spall / second
+lithic / debitage product / technological product / burin spall / sharpening spall
+lithic / debitage product / technological product / burin spall / hinged
+lithic / debitage product / technological product / burin spall / plunging
+lithic / debitage product / technological product / burin spall / twisted
+lithic / debitage product / technological product / microburin
+lithic / debitage product / technological product / microburin / common
+lithic / debitage product / technological product / microburin / Krukowski
+lithic / debitage product / technological product / pseudo-Levallois point
+lithic / debitage product / unretouched debitage product/blank
+lithic / debitage product / unretouched debitage product/blank / flake
+lithic / debitage product / unretouched debitage product/blank / flake / common flake
+lithic / debitage product / unretouched debitage product/blank / flake / Kombewa flake
+lithic / debitage product / unretouched debitage product/blank / flake / typical Levallois flake
+lithic / debitage product / unretouched debitage product/blank / flake / atypical Levallois flake
+lithic / debitage product / unretouched debitage product/blank / laminar flake
+lithic / debitage product / unretouched debitage product/blank / blade
+lithic / debitage product / unretouched debitage product/blank / blade / common
+lithic / debitage product / unretouched debitage product/blank / blade / Levallois
+lithic / debitage product / unretouched debitage product/blank / blade / Coincy
+lithic / debitage product / unretouched debitage product/blank / blade / Montbani
+lithic / debitage product / unretouched debitage product/blank / bladelet
+lithic / debitage product / unretouched debitage product/blank / bladelet / common
+lithic / debitage product / unretouched debitage product/blank / bladelet / Montbani
+lithic / debitage product / unretouched debitage product/blank / point
+lithic / debitage product / unretouched debitage product/blank / point / common
+lithic / debitage product / unretouched debitage product/blank / point / Levallois
+lithic / debitage product / butt type
+lithic / debitage product / butt type / cortical butt
+lithic / debitage product / butt type / plain butt
+lithic / debitage product / butt type / dihedral butt
+lithic / debitage product / butt type / faceted butt
+lithic / debitage product / butt type / chapeau de gendarme butt
+lithic / debitage product / butt type / linear butt
+lithic / debitage product / butt type / point butt
+lithic / debitage product / butt type / spur-like butt
+lithic / debitage product / butt type / winged butt
+lithic / debitage product / butt type / pecked butt
+lithic / fragment
+lithic / fragment / flake fragment
+lithic / fragment / flake fragment / distal fragment
+lithic / fragment / flake fragment / mesial fragment
+lithic / fragment / flake fragment / proximal fragment
+lithic / fragment / flake fragment / lateral fragment
+lithic / fragment / core fragment
+lithic / fragment / tool fragment
+lithic / fragment / undefined fragment
+lithic / shaped tool
+lithic / shaped tool / handaxe
+lithic / shaped tool / handaxe / lanceolate
+lithic / shaped tool / handaxe / Micoquian
+lithic / shaped tool / handaxe / ficron
+lithic / shaped tool / handaxe / triangular
+lithic / shaped tool / handaxe / sub-triangular
+lithic / shaped tool / handaxe / cordiform
+lithic / shaped tool / handaxe / elongated cordiform
+lithic / shaped tool / handaxe / sub-cordiform
+lithic / shaped tool / handaxe / amygdaloid
+lithic / shaped tool / handaxe / oval
+lithic / shaped tool / handaxe / discoid
+lithic / shaped tool / handaxe / limande
+lithic / shaped tool / handaxe / nucleiform
+lithic / shaped tool / handaxe / lageniform
+lithic / shaped tool / handaxe / naviform
+lithic / shaped tool / handaxe / Abbevillian
+lithic / shaped tool / handaxe / partial
+lithic / shaped tool / handaxe / miscellaneous
+lithic / shaped tool / handaxe / elongated triangular
+lithic / shaped tool / handaxe / lozenge-shaped
+lithic / shaped tool / chopper
+lithic / shaped tool / chopping-tool
+lithic / shaped tool / inverse chopper
+lithic / shaped tool / polyhedral
+lithic / shaped tool / bola
+lithic / shaped tool / pick
+lithic / shaped tool / disc
+lithic / shaped tool / bifacial cleaver
+lithic / shaped tool / bifacial leaf point
+lithic / shaped tool / bifacial leaf point / laurel leaf point
+lithic / shaped tool / bifacial leaf point / willow leaf point
+lithic / hammer
+lithic / natural product
+lithic / natural product / block
+lithic / natural product / nodule
+lithic / natural product / plaquet
+lithic / natural product / pebble
+lithic / natural product / frost flake
+lithic / debris
+animal hard tissue
+animal hard tissue / group 1 point (point on longitudinally-splited bone)
+animal hard tissue / group 2 point (point with epiphyse)
+animal hard tissue / group 3 point (point on splinter)
+animal hard tissue / group 4 point (pointed pieces)
+animal hard tissue / group 4 point (pointed pieces) / split-based point
+animal hard tissue / group 4 point (pointed pieces) / spindle-shaped point
+animal hard tissue / group 4 point (pointed pieces) / whittled-shaped point
+animal hard tissue / group 4 point (pointed pieces) / lozenge-shaped point
+animal hard tissue / antler rod (point)
+animal hard tissue / ivory rod
+animal hard tissue / ivory rod / square
+animal hard tissue / ivory rod / circular
+animal hard tissue / ivory rod / semi-circular
+animal hard tissue / barbed point (harpoon)
+animal hard tissue / needle
+animal hard tissue / pin
+animal hard tissue / bone segment with polish
+animal hard tissue / retoucher
+animal hard tissue / wedge-shaped segment
+animal hard tissue / perforated bâton
+animal hard tissue / "whistle", flute
+animal hard tissue / spatula, dagger
+animal hard tissue / bead
+animal hard tissue / pendant
+animal hard tissue / perforated ivory disk
+animal hard tissue / ivory ring
+animal hard tissue / perforated tooth
+animal hard tissue / perforated shell
+animal hard tissue / incised piece
+animal hard tissue / representational art
+animal hard tissue / worked debris
+animal soft tissue
+vegetal hard tissue
+vegetal soft tissue
+ceramic
+metal industry

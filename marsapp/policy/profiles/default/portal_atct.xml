@@ -1,0 +1,1270 @@
+<?xml version="1.0"?>
+<atcttool
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <topic_indexes i18n:domain="mars">
+
+   <!-- Possible criteria are as follow:
+   <criteria>ATBooleanCriterion</criteria>
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+   <criteria>ATCurrentAuthorCriterion</criteria>
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+   <criteria>ATSimpleIntCriterion</criteria>
+   <criteria>ATPathCriterion</criteria>
+   <criteria>ATRelativePathCriterion</criteria>
+   <criteria>ATPortalTypeCriterion</criteria>
+   -->
+
+  <!-- StringField: 'insuranceValue' -->
+  <index name="getInsuranceValue"
+         friendlyName="Insurance value"
+         description="The value to be inned by the insurance in case of an accident or theft"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSelectionCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'legalProperty' -->
+  <index name="getLegalProperty"
+         friendlyName="Legal property"
+         description="Select the person or institute that owns this collection item"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'copyright' -->
+  <index name="getCopyright"
+         friendlyName="Copyright"
+         description="Select the person or institute that has the copyright on this collection item"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'curations' -->
+  <index name="getCurations"
+         friendlyName="Curation history"
+         description="Select the curations this object went through, make new ones if no fitting is found"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'curator' -->
+  <index name="getCurator"
+         friendlyName="Curator"
+         description="A curator for a period of time (for Curation objects)"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'repository' -->
+  <index name="getRepository"
+         friendlyName="Repository"
+         description="Select the institution were this object is in repository now"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'preciseRepository' -->
+  <index name="getPreciseRepository"
+         friendlyName="Precise repository"
+         description="Give the precise location (as precise as possible) of this object"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'repositoryLink' -->
+  <index name="getRepositoryLink"
+         friendlyName="Link to Repository"
+         description="The repository in which this object is"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'repositoryStatus' -->
+  <index name="getRepositoryStatus"
+         friendlyName="Repository status"
+         description="Status of this object (e.g. study, exposition, …)"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'repositoryConditions' -->
+  <index name="getRepositoryConditions"
+         friendlyName="Repository conditions"
+         description="he conditions under wich this object is being held in repository (e.g. light, temperature, humidity, ...)"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- IntegerField: 'howManyComponents' -->
+<!--
+  <index name="getHowManyComponents"
+         friendlyName="Object Count"
+         description="Overall number of artefacts in the assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleIntCriterion</criteria>
+  </index>
+-->
+
+  <!-- IntegerField: 'MNI' -->
+<!--
+  <index name="getMNI"
+         friendlyName="Minimum number of individuals"
+         description="Minimum number of components present in assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleIntCriterion</criteria>
+  </index>
+-->
+
+  <!-- ReferenceField: 'components' -->
+  <index name="getComponents"
+         friendlyName="Remain components"
+         description="Remains composing this assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- LinesField: 'componentsDistribution' -->
+  <index name="getComponentsDistribution"
+         friendlyName="Components Distribution"
+         description="Distribution of the contents inside this assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'origin' -->
+  <index name="getOrigin"
+         friendlyName="Origin"
+         description="Origin of the assemblage, or what its cause was"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'paleoecology' -->
+  <index name="getPaleoecology"
+         friendlyName="Paleoecology"
+         description="Paleological information based on the assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'igNumber' -->
+  <!-- LinesField: 'igNumbers' -->
+  <index name="IGNumber"
+         friendlyName="IG number"
+         description="General inventorisation number"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- LinesField: 'synonyms' -->
+  <index name="getSynonyms"
+         friendlyName="Alternate Names or IDs"
+         description="Synonyms, different spellings or given names"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- IntegerField: 'igYear' -->
+<!--
+  <index name="getIgYear"
+         friendlyName="Year of Inventorisation"
+         description="Year this item got its IG nunmber"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleIntCriterion</criteria>
+  </index>
+-->
+
+  <!-- MarscatField: 'remainType' -->
+  <index name="getRemainType"
+         friendlyName="Remain type"
+         description="Type of this remain"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'measures' -->
+  <index name="getMeasures"
+         friendlyName="Measures"
+         description="The measures, and also the protocol used to get these measures"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'measuresFile' -->
+  <index name="getMeasuresFile"
+         friendlyName="Measures file"
+         description="The file with all the measures in it"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'features' -->
+  <index name="getFeatures"
+         friendlyName="Features"
+         description="Features and their determination"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'featuresFile' -->
+  <index name="getFeaturesFile"
+         friendlyName="Features file"
+         description="A file describing the item features"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- MarscatField: 'bones' -->
+  <index name="getBones"
+         friendlyName="Bone Components"
+         description="Select the bones making up this reference sample"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'insiteLocation' -->
+  <index name="getInsiteLocation"
+         friendlyName="In-site location"
+         description="Part of the site excavated"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- MarscatField: 'taxon' -->
+  <index name="getTaxon"
+         friendlyName="Taxon"
+         description="Item taxon"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- MarscatField: 'age' -->
+  <index name="getAge"
+         friendlyName="Age group"
+         description="Age group"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'gender' -->
+  <index name="getGender"
+         friendlyName="Gender"
+         description="Gender"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- MarscatField: 'pathology' -->
+  <index name="getPathology"
+         friendlyName="Pathology"
+         description="Information about the health status and pathologies"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'activityMarkers' -->
+  <index name="getActivityMarkers"
+         friendlyName="Markers of activity"
+         description="Information about traces of activity"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'causeOfDeath' -->
+  <index name="getCauseOfDeath"
+         friendlyName="Cause(s) of death"
+         description="Information about the cause(s) of death"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'diet' -->
+  <index name="getDiet"
+         friendlyName="Diet reconstruction"
+         description="Information about diet"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'burial' -->
+  <index name="getBurial"
+         friendlyName="Burial/Sepulcral evidence"
+         description="Was this individual found in a sepulture/burial place?"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- MarscatField: 'chronologies' -->
+  <index name="getChronologies"
+         friendlyName="General Chronologies"
+         description="Fitting chronologies"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- IntegerField: 'BPDating' -->
+<!--
+  <index name="getBPDating"
+         friendlyName="BP Dating"
+         description="'Before Present' dating (Present is 1950)"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleIntCriterion</criteria>
+  </index>
+-->
+
+  <!-- StringField: 'datingAssociation' -->
+  <index name="getDatingAssociation"
+         friendlyName="Dating association"
+         description="Select the dating association"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'relativeGeologicalAge' -->
+  <index name="getRelativeGeologicalAge"
+         friendlyName="Relative Geological age"
+         description="Relative Geological age"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- IntegerField: 'discoveryYear' -->
+<!--
+  <index name="getDiscoveryYear"
+         friendlyName="Discovery year"
+         description="The year of discovery"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleIntCriterion</criteria>
+  </index>
+-->
+
+  <!-- TextField: 'discoveryPreciseDate' -->
+  <index name="getDiscoveryPreciseDate"
+         friendlyName="Precise Date"
+         description="he precise date of discovery, or comments on *when* the collection item was discovered (YYYY/MM/DD)"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'discoverers' -->
+  <index name="getDiscoverers"
+         friendlyName="Discoverer"
+         description="The people or institution who found a collection item"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'stratigraphicalLayer' -->
+  <index name="getStratigraphicalLayer"
+         friendlyName="Stratigraphical Layer"
+         description="The stratigraphical layer in which an item was found"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'discoverySite' -->
+  <index name="getDiscoverySite"
+         friendlyName="Site"
+         description="The site where it was excavated from"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'discoveryPlace' -->
+  <index name="getDiscoveryPlace"
+         friendlyName="Discovery Place"
+         description="The place where it was excavated from"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'excavators' -->
+  <index name="getExcavators"
+         friendlyName="Excavators"
+         description="The he people who made an excavation"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'beginningYear' -->
+  <index name="getBeginningYear"
+         friendlyName="Beginning year"
+         description="The beginning year of excavation"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'endingYear' -->
+  <index name="getEndingYear"
+         friendlyName="Ending year"
+         description="The ending year of excavation"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'preciseDate' -->
+  <index name="getPreciseDate"
+         friendlyName="Precise Date"
+         description="The precise date of excavation, or comments on *when* the excavation was done (YYYY/MM/DD)"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- CoordinatesField: 'excavationCoordinates' -->
+<!--
+  <index name="getExcavationCoordinates"
+         friendlyName="Numerical excavation coordinates"
+         description="The numeric excavation coordinates of where the item was found in its discovery location"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+-->
+
+  <!-- StringField: 'country' -->
+  <index name="getCountry"
+         friendlyName="Country"
+         description="The country where a site is located"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- LinesField: 'location' -->
+  <index name="getLocation"
+         friendlyName="Location"
+         description="Description of the sites location"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'map' -->
+  <index name="getMap"
+         friendlyName="Administrative Map"
+         description="Administrative Map"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- CoordinatesField: 'gisCoordinates' -->
+<!--
+  <index name="getGisCoordinates"
+         friendlyName="GIS coordinates"
+         description="The GIS coordinates of the site in Longitude, Latitude and Altitude"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+-->
+
+  <!-- StringField: 'gisPrecision' -->
+  <index name="getGisPrecision"
+         friendlyName="GIS Coordinates calculation"
+         description="Select the way you found the GIS coordinates"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- MarscatField: 'gisProjection' -->
+  <index name="getGisProjection"
+         friendlyName="GIS Coordinates projection"
+         description="The projection system for the GIS coordinates"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- LinesField: 'coordinatesOthers' -->
+  <index name="getCoordinatesOthers"
+         friendlyName="Other Coordinates"
+         description="The cordinates in other systems like Lambert Coordinates and such"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'archeologicalStatus' -->
+  <index name="getArcheologicalStatus"
+         friendlyName="Archaeological Status"
+         description="The status of the remain"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'preservation' -->
+  <index name="getPreservation"
+         friendlyName="Preservation"
+         description="Preservation"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'laterality' -->
+  <index name="getLaterality"
+         friendlyName="Laterality"
+         description="The laterality of a remain"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'polarity' -->
+  <index name="getPolarity"
+         friendlyName="Polarity"
+         description="The polarity of a remain"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- MarscatField: 'taphonomies' -->
+  <index name="getTaphonomies"
+         friendlyName="Taphonomy"
+         description="Any possible activity that this collection item was subjected to"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- IntegerField: 'manufactureYear' -->
+<!--
+  <index name="getManufactureYear"
+         friendlyName="Year of manufacture"
+         description="Year of manufacture"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleIntCriterion</criteria>
+  </index>
+-->
+
+  <!-- TextField: 'manufacturePreciseDate' -->
+  <index name="getManufacturePreciseDate"
+         friendlyName="Precise Manufacture Date"
+         description="The precise date of manufacture, or comments on *when* the object was manufactured (YYYY/MM/DD)"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'artisan' -->
+  <index name="getArtisan"
+         friendlyName="Artisan"
+         description="The artisan, tribe or culture who made an item (e.g. Iliad)"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- MarscatField: 'technologies' -->
+  <index name="getTechnologies"
+         friendlyName="Technology"
+         description="Used technology"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'technologyDetails' -->
+  <index name="getTechnologyDetails"
+         friendlyName="Technology details"
+         description="Details on how the techonology was determided"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'functionalDescription' -->
+  <index name="getFunctionalDescription"
+         friendlyName="Functional Description"
+         description="What an item was used for"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'usageMarkers' -->
+  <index name="getUsageMarkers"
+         friendlyName="Markers of Usage"
+         description="Information about usage of the artefact"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- StringField: 'substratum' -->
+  <index name="getSubstratum"
+         friendlyName="Substratum"
+         description=""
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField:'stratigraphyLayersComposition' -->
+  <index name="getStratigraphyLayersComposition"
+         friendlyName="Stratigraphical Layers Composition"
+         description="Description based on the different assemblages"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'history' -->
+  <index name="getHistory"
+         friendlyName="Historical background"
+         description="Older descriptions"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+  <!-- ReferenceField: 'stratigraphyEquivalents' -->
+  <index name="getStratigraphyEquivalents"
+         friendlyName="Equivalent Stratigraphies"
+         description="Stratigraphies from different sites that are the same"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+  </index>
+
+  <!-- MarscatField: 'geologicalComponents' -->
+  <index name="getGeologicalComponents"
+         friendlyName="Geological Components"
+         description="Associated components composing a stratigraphical assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- LinesField: 'featuresDistribution' -->
+  <index name="getFeaturesDistribution"
+         friendlyName="Features Distribution"
+         description="Percentile distribution of materials composing an assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+
+  <!-- TextField: 'relativeGeologicalAge' -->
+  <index name="getRelativeGeologicalAge"
+         friendlyName="Relative Geological age"
+         description=""
+         enabled="True"
+         i18n:attributes="description; friendlyName">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index>
+
+ </topic_indexes>
+
+
+ <topic_metadata i18n:domain="mars">
+
+  <metadata name="getInsuranceValue"
+         friendlyName="Insurance value"
+         description="The value to be inned by the insurance in case of an accident or theft"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getLegalProperty"
+         friendlyName="Legal property"
+         description="Select the person or institute that owns this collection item"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getCopyright"
+         friendlyName="Copyright"
+         description="Select the person or institute that has the copyright on this collection item"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getCurations"
+         friendlyName="Curation history"
+         description="Select the curations this object went through, make new ones if no fitting is found"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getCurator"
+         friendlyName="Curator"
+         description="A curator for a period of time (for Curation objects)"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getRepository"
+         friendlyName="Repository"
+         description="Select the institution were this object is in repository now"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getPreciseRepository"
+         friendlyName="Precise repository"
+         description="Give the precise location (as precise as possible) of this object"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getRepositoryLink"
+         friendlyName="Link to Repository"
+         description="The repository in which this object is"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getRepositoryStatus"
+         friendlyName="Repository status"
+         description="Status of this object (e.g. study, exposition, …)"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getRepositoryConditions"
+         friendlyName="Repository conditions"
+         description="he conditions under wich this object is being held in repository (e.g. light, temperature, humidity, ...)"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+<!--
+  <metadata name="getHowManyComponents"
+         friendlyName="Object Count"
+         description="Overall number of artefacts in the assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+-->
+
+  <metadata name="getMNI"
+         friendlyName="Minimum number of individuals"
+         description="Minimum number of components present in assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getComponents"
+         friendlyName="Remain components"
+         description="Remains composing this assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getComponentsDistribution"
+         friendlyName="Components Distribution"
+         description="Distribution of the contents inside this assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getOrigin"
+         friendlyName="Origin"
+         description="Origin of the assemblage, or what its cause was"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getPaleoecology"
+         friendlyName="Paleoecology"
+         description="Paleological information based on the assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getIgNumber"
+         friendlyName="IG number"
+         description="General inventorisation number"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getIgNumbers"
+         friendlyName="IG numbers"
+         description="General inventorisation numbers"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getSynonyms"
+         friendlyName="Alternate Names or IDs"
+         description="Synonyms, different spellings or given names"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getIgYear"
+         friendlyName="Year of Inventorisation"
+         description="Year this item got its IG nunmber"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getRemainType"
+         friendlyName="Remain type"
+         description="Type of this remain"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getMeasures"
+         friendlyName="Measures"
+         description="The measures, and also the protocol used to get these measures"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getMeasuresFile"
+         friendlyName="Measures file"
+         description="The file with all the measures in it"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getFeatures"
+         friendlyName="Features"
+         description="Features and their determination"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getFeaturesFile"
+         friendlyName="Features file"
+         description="A file describing the item features"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getBones"
+         friendlyName="Bone Components"
+         description="Select the bones making up this reference sample"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getInsiteLocation"
+         friendlyName="In-site location"
+         description="Part of the site excavated"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getTaxon"
+         friendlyName="Taxon"
+         description="Item taxon"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getAge"
+         friendlyName="Age group"
+         description="Age group"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getGender"
+         friendlyName="Gender"
+         description="Gender"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getPathology"
+         friendlyName="Pathology"
+         description="Information about the health status and pathologies"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getActivityMarkers"
+         friendlyName="Markers of activity"
+         description="Information about traces of activity"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getCauseOfDeath"
+         friendlyName="Cause(s) of death"
+         description="Information about the cause(s) of death"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getDiet"
+         friendlyName="Diet reconstruction"
+         description="Information about diet"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getBurial"
+         friendlyName="Burial/Sepulcral evidence"
+         description="Was this individual found in a sepulture/burial place?"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getChronologies"
+         friendlyName="General Chronologies"
+         description="Fitting chronologies"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+<!--
+  <metadata name="getBPDating"
+         friendlyName="BP Dating"
+         description="'Before Present' dating (Present is 1950)"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+-->
+
+  <metadata name="getDatingAssociation"
+         friendlyName="Dating association"
+         description="Select the dating association"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getRelativeGeologicalAge"
+         friendlyName="Relative Geological age"
+         description="Relative Geological age"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+<!--
+  <metadata name="getDiscoveryYear"
+         friendlyName="Discovery year"
+         description="The year of discovery"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+-->
+
+  <metadata name="getDiscoveryPreciseDate"
+         friendlyName="Precise Date"
+         description="he precise date of discovery, or comments on *when* the collection item was discovered (YYYY/MM/DD)"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getDiscoverers"
+         friendlyName="Discoverer"
+         description="The people or institution who found a collection item"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getStratigraphicalLayer"
+         friendlyName="Stratigraphical Layer"
+         description="The stratigraphical layer in which an item was found"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getDiscoverySite"
+         friendlyName="Site"
+         description="The site where it was excavated from"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getDiscoveryPlace"
+         friendlyName="Discovery Place"
+         description="Discovery place (if no link to site)"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getExcavators"
+         friendlyName="Excavators"
+         description="The he people who made an excavation"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getBeginningYear"
+         friendlyName="Beginning year"
+         description="The beginning year of excavation"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getEndingYear"
+         friendlyName="Ending year"
+         description="The ending year of excavation"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getPreciseDate"
+         friendlyName="Precise Date"
+         description="The precise date of excavation, or comments on *when* the excavation was done (YYYY/MM/DD)"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+<!--
+  <metadata name="getExcavationCoordinates"
+         friendlyName="Numerical excavation coordinates"
+         description="The numeric excavation coordinates of where the item was found in its discovery location"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+-->
+
+  <metadata name="getCountry"
+         friendlyName="Country"
+         description="The country where a site is located"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getLocation"
+         friendlyName="Location"
+         description="Description of the sites location"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getMap"
+         friendlyName="Administrative Map"
+         description="Administrative Map"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+<!--
+  <metadata name="getGisCoordinates"
+         friendlyName="GIS coordinates"
+         description="The GIS coordinates of the site in Longitude, Latitude and Altitude"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+-->
+
+  <metadata name="getGisPrecision"
+         friendlyName="GIS Coordinates calculation"
+         description="Select the way you found the GIS coordinates"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getGisProjection"
+         friendlyName="GIS Coordinates projection"
+         description="The projection system for the GIS coordinates"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getCoordinatesOthers"
+         friendlyName="Other Coordinates"
+         description="The cordinates in other systems like Lambert Coordinates and such"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getArcheologicalStatus"
+         friendlyName="Archaeological Status"
+         description="The status of the remain"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getPreservation"
+         friendlyName="Preservation"
+         description="Preservation"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getLaterality"
+         friendlyName="Laterality"
+         description="The laterality of a remain"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getPolarity"
+         friendlyName="Polarity"
+         description="The polarity of a remain"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getTaphonomies"
+         friendlyName="Taphonomy"
+         description="Any possible activity that this collection item was subjected to"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+<!--
+  <metadata name="getManufactureYear"
+         friendlyName="Year of manufacture"
+         description="Year of manufacture"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+-->
+
+  <metadata name="getManufacturePreciseDate"
+         friendlyName="Precise Manufacture Date"
+         description="The precise date of manufacture, or comments on *when* the object was manufactured (YYYY/MM/DD)"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getArtisan"
+         friendlyName="Artisan"
+         description="The artisan, tribe or culture who made an item (e.g. Iliad)"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getTechnologies"
+         friendlyName="Technology"
+         description="Used technology"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getTechnologyDetails"
+         friendlyName="Technology details"
+         description="Details on how the techonology was determided"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getFunctionalDescription"
+         friendlyName="Functional Description"
+         description="What an item was used for"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getUsageMarkers"
+         friendlyName="Markers of Usage"
+         description="Information about usage of the artefact"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getSubstratum"
+         friendlyName="Substratum"
+         description=""
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getStratigraphyLayersComposition"
+         friendlyName="Stratigraphical Layers Composition"
+         description="Description based on the different assemblages"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getHistory"
+         friendlyName="Historical background"
+         description="Older descriptions"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getStratigraphyEquivalents"
+         friendlyName="Equivalent Stratigraphies"
+         description="Stratigraphies from different sites that are the same"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getGeologicalComponents"
+         friendlyName="Geological Components"
+         description="Associated components composing a stratigraphical assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getFeaturesDistribution"
+         friendlyName="Features Distribution"
+         description="Percentile distribution of materials composing an assemblage"
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+  <metadata name="getRelativeGeologicalAge"
+         friendlyName="Relative Geological age"
+         description=""
+         enabled="True"
+         i18n:attributes="description; friendlyName" />
+
+ </topic_metadata>
+
+
+ <property name="image_types" purge="False">
+  <element value="Picture"/>
+ </property>
+ <property name="folder_types" purge="False">
+  <element value="Picture"/>
+ </property>
+ <property name="album_batch_size">30</property>
+ <property name="album_image_scale">thumb</property>
+ <property name="single_image_scale">preview</property>
+</atcttool>

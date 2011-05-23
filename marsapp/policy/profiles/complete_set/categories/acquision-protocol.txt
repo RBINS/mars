@@ -1,0 +1,8 @@
+Acquisition protocol
+--------------------
+
+Pictures / Scanning Electronic microscope / Digital picture
+Pictures / Scanning Electronic microscope / Scanned picture
+Pictures / Digital Picture
+Pictures / Slide
+Pictures / Slide / Digitized slide 

@@ -1,0 +1,52 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:cmf="http://namespaces.zope.org/cmf"
+           xmlns:five="http://namespaces.zope.org/five"
+           xmlns:zcml="http://namespaces.zope.org/zcml"
+           i18n_domain="marsapp.policy">
+
+  <include package="marsapp.content"/>
+  <include package="marsapp.bibliography"/>
+  <include package="marsapp.csvreplicata"/>
+
+  <five:registerPackage package="."/>
+
+  <cmf:registerDirectory name="marsapp_categories_icons"/>
+  <cmf:registerDirectory name="marsapp_content_icons"/>
+  <cmf:registerDirectory name="marsapp_custom"/>
+  <cmf:registerDirectory name="marsapp_styles"/>
+
+  <include package=".browser"/>
+
+  <include file="fss.zcml"/>
+
+  <include file="profiles.zcml"/>
+
+  <utility factory=".setuphandlers.HiddenProfiles"
+           name="marsapp.policy" />
+
+  <utility factory=".setuphandlers.HiddenProducts"
+           name="marsapp.policy" />
+
+  <five:implements
+            class="marsapp.content.artefact.MarsArtefact"
+            interface="Products.csvreplicata.interfaces.ICSVReplicable"
+        />
+  <five:implements
+            class="marsapp.content.artefact.MarsArtefactIndividual"
+            interface="Products.csvreplicata.interfaces.ICSVReplicable"
+        />
+  <five:implements
+            class="marsapp.content.artefact.MarsArtefactAssemblage"
+            interface="Products.csvreplicata.interfaces.ICSVReplicable"
+        />
+  <five:implements
+            class="marsapp.content.artefact.MarsReferenceSample"
+            interface="Products.csvreplicata.interfaces.ICSVReplicable"
+        />
+  <five:implements
+            class="marsapp.content.artefact.MarsArtefactReferenceSample"
+            interface="Products.csvreplicata.interfaces.ICSVReplicable"
+        />
+
+</configure>

@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<object name="portal_types">
+  <!-- bibliography -->
+  <object name="ArticleReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="BibliographyFolder"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="BookReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="BookletReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="ConferenceReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="DuplicatesBibliographyFolder"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="InbookReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="IncollectionReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="InproceedingsReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="LargeBibliographyFolder"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="ManualReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="MastersthesisReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="MiscReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="PDF File"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="PDF Folder"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="PhdthesisReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="PreprintReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="ProceedingsReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="TechreportReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="UnpublishedReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="WebpublishedReference"
+     meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="BibrefCustomStyle"
+     meta_type="Factory-based Type Information"/>
+  <object name="BibrefCustomStyleFolder"
+     meta_type="Factory-based Type Information"/>
+  <object name="BibrefCustomStyleSet"
+     meta_type="Factory-based Type Information"/>
+  <object name="BibliographyList"
+     meta_type="Factory-based Type Information"/>
+ <!-- end bibliography -->
+
+  <object name="Mars Category"
+          meta_type="Factory-based Type Information with dynamic views"/>
+  <object name="Categories Container"
+          meta_type="Factory-based Type Information with dynamic views"/>
+
+  <object name="MarsPDFFile"
+          meta_type="Factory-based Type Information with dynamic views" />
+
+  <object name="Analysis"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Analysis Absolute Dating"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Analysis Relative Dating"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Artefact"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Artefact Assemblage"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Artefact Individual"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Artefact Reference Sample"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Collection"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Curation"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Excavation"
+          meta_type="Factory-based Type Information with dynamic views" />
+<!--
+  <object name="External File"
+          meta_type="Factory-based Type Information with dynamic views" />
+-->
+  <object name="Fauna Assemblage"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Fauna Individual"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Fauna Reference Sample"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Fauna Remain"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Flora Assemblage"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Flora Individual"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Flora Reference Sample"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Flora Remain"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Hominid Assemblage"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Hominid Individual"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Hominid Reference Sample"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Hominid Remain"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Institution"
+          meta_type="Factory-based Type Information with dynamic views" />
+<!--
+  <object name="Media File 3D Object"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Media File Audio"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Media File Flash"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Media File Video"
+          meta_type="Factory-based Type Information with dynamic views" />
+-->
+  <object name="People"
+          meta_type="Factory-based Type Information with dynamic views" />
+
+  <object name="Picture"
+          meta_type="Factory-based Type Information with dynamic views" />
+
+  <object name="Reference Sample"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Site"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Stratigraphy"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Stratigraphical Layer"
+          meta_type="Factory-based Type Information with dynamic views" />
+  <object name="Structure Assemblage"
+          meta_type="Factory-based Type Information with dynamic views" />
+
+  <!-- Default Types customizations -->
+<!--
+  <object name="Topic"/>
+  <object name="File"/>
+  <object name="Image"/>
+-->
+
+</object>

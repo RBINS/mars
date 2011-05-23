@@ -1,0 +1,161 @@
+Remain Type
+-----------
+
+Hominid / Unknown
+Hominid / Undetermined
+
+Hominid / Tooth
+Hominid / Tooth / Indetermined
+Hominid / Tooth / Fragment
+Hominid / Tooth / Decidual
+Hominid / Tooth / Decidual / Incisor
+Hominid / Tooth / Decidual / Incisor / Di1
+Hominid / Tooth / Decidual / Incisor / Di2
+Hominid / Tooth / Decidual / Canine / Dc1
+Hominid / Tooth / Decidual / Molar
+Hominid / Tooth / Decidual / Molar / Dm1
+Hominid / Tooth / Decidual / Molar / Dm2
+Hominid / Tooth / Permanent
+Hominid / Tooth / Permanent / Incisor
+Hominid / Tooth / Permanent / Incisor / I1
+Hominid / Tooth / Permanent / Incisor / I2
+Hominid / Tooth / Permanent / Canine / C1
+Hominid / Tooth / Permanent / Premolar
+Hominid / Tooth / Permanent / Premolar / P3
+Hominid / Tooth / Permanent / Premolar / P4
+Hominid / Tooth / Permanent / Molar
+Hominid / Tooth / Permanent / Molar / M1
+Hominid / Tooth / Permanent / Molar / M2
+Hominid / Tooth / Permanent / Molar / M3
+Hominid / Bone
+Hominid / Bone / Cranium
+Hominid / Bone / Cranium / Cranial Fragment
+Hominid / Bone / Cranium / Cranial Fragment / Frontal
+Hominid / Bone / Cranium / Cranial Fragment / Parietal
+Hominid / Bone / Cranium / Cranial Fragment / Temporal
+Hominid / Bone / Cranium / Cranial Fragment / Occipital
+Hominid / Bone / Cranium / Cranial Fragment / Palatine
+Hominid / Bone / Cranium / Cranial Fragment / Vomer
+Hominid / Bone / Cranium / Cranial Fragment / Inferior Nasal Concha
+Hominid / Bone / Cranium / Cranial Fragment / Ethmoid
+Hominid / Bone / Cranium / Cranial Fragment / Lacrimal
+Hominid / Bone / Cranium / Cranial Fragment / Nasal
+Hominid / Bone / Cranium / Cranial Fragment / Zygomatic
+Hominid / Bone / Cranium / Cranial Fragment / Sphenoid
+Hominid / Bone / Cranium / Cranial Fragment / Maxilla
+Hominid / Bone / Cranium / Cranial Fragment / WormianBone
+Hominid / Bone / Cranium / Natural Endocast
+Hominid / Bone / Cranium / Mandible
+Hominid / Bone / Infracranial
+Hominid / Bone / Infracranial / Axial
+Hominid / Bone / Infracranial / Axial / Hyoid
+Hominid / Bone / Infracranial / Axial / Sternum
+Hominid / Bone / Infracranial / Axial / Sternum / Manubrium
+Hominid / Bone / Infracranial / Axial / Vertebra
+Hominid / Bone / Infracranial / Axial / Vertebra / Indetermined Vertebral Fragment
+Hominid / Bone / Infracranial / Axial / Vertebra / Cervical Vertebra
+Hominid / Bone / Infracranial / Axial / Vertebra / Cervical Vertebra / C-1 (atlas)
+Hominid / Bone / Infracranial / Axial / Vertebra / Cervical Vertebra / C-2 (axis)
+Hominid / Bone / Infracranial / Axial / Vertebra / Cervical Vertebra / C-3
+Hominid / Bone / Infracranial / Axial / Vertebra / Cervical Vertebra / C-4
+Hominid / Bone / Infracranial / Axial / Vertebra / Cervical Vertebra / C-5
+Hominid / Bone / Infracranial / Axial / Vertebra / Cervical Vertebra / C-6
+Hominid / Bone / Infracranial / Axial / Vertebra / Cervical Vertebra / C-7
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-1
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-2
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-3
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-4
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-5
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-6
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-7
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-8
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-9
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-10
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-11
+Hominid / Bone / Infracranial / Axial / Vertebra / Thoracic Vertebra / T-12
+Hominid / Bone / Infracranial / Axial / Vertebra / Lumbar Vertebra
+Hominid / Bone / Infracranial / Axial / Vertebra / Lumbar Vertebra / L-1
+Hominid / Bone / Infracranial / Axial / Vertebra / Lumbar Vertebra / L-2
+Hominid / Bone / Infracranial / Axial / Vertebra / Lumbar Vertebra / L-3
+Hominid / Bone / Infracranial / Axial / Vertebra / Lumbar Vertebra / L-4
+Hominid / Bone / Infracranial / Axial / Vertebra / Lumbar Vertebra / L-5
+Hominid / Bone / Infracranial / Axial / Vertebra / Sacral Vertebra
+Hominid / Bone / Infracranial / Axial / Vertebra / Sacral Vertebra / S-1
+Hominid / Bone / Infracranial / Axial / Vertebra / Sacral Vertebra / S-2
+Hominid / Bone / Infracranial / Axial / Vertebra / Sacral Vertebra / S-3
+Hominid / Bone / Infracranial / Axial / Vertebra / Sacral Vertebra / S-4
+Hominid / Bone / Infracranial / Axial / Vertebra / Sacral Vertebra / S-5
+Hominid / Bone / Infracranial / Axial / Vertebra / Sacral Vertebra / Coccys
+Hominid / Bone / Infracranial / Axial / Vertebra / Sacral Vertebra / Sacrum
+Hominid / Bone / Infracranial / Axial / Rib
+Hominid / Bone / Infracranial / Axial / Rib / 1st Rib
+Hominid / Bone / Infracranial / Axial / Rib / 2nd Rib
+Hominid / Bone / Infracranial / Axial / Rib / 3rd Rib
+Hominid / Bone / Infracranial / Axial / Rib / 4th Rib
+Hominid / Bone / Infracranial / Axial / Rib / 5th Rib
+Hominid / Bone / Infracranial / Axial / Rib / 6th Rib
+Hominid / Bone / Infracranial / Axial / Rib / 7th Rib
+Hominid / Bone / Infracranial / Axial / Rib / 8th Rib
+Hominid / Bone / Infracranial / Axial / Rib / 9th Rib
+Hominid / Bone / Infracranial / Axial / Rib / 10th Rib
+Hominid / Bone / Infracranial / Axial / Rib / 11th Rib
+Hominid / Bone / Infracranial / Axial / Rib / 12th Rib
+Hominid / Bone / Infracranial / Upper Member
+Hominid / Bone / Infracranial / Upper Member / Shoulder Girdle
+Hominid / Bone / Infracranial / Upper Member / Shoulder Girdle / Clavicle
+Hominid / Bone / Infracranial / Upper Member / Shoulder Girdle / Scapula
+Hominid / Bone / Infracranial / Upper Member / Arm
+Hominid / Bone / Infracranial / Upper Member / Arm / Humerus
+Hominid / Bone / Infracranial / Upper Member / Arm / Radius
+Hominid / Bone / Infracranial / Upper Member / Arm / Ulna
+Hominid / Bone / Infracranial / Upper Member / Hand
+Hominid / Bone / Infracranial / Upper Member / Hand / Carpal
+Hominid / Bone / Infracranial / Upper Member / Hand / Carpal / Scaphoid
+Hominid / Bone / Infracranial / Upper Member / Hand / Carpal / Lunate
+Hominid / Bone / Infracranial / Upper Member / Hand / Carpal / Triquetral
+Hominid / Bone / Infracranial / Upper Member / Hand / Carpal / Pisiform
+Hominid / Bone / Infracranial / Upper Member / Hand / Carpal / Trapezium
+Hominid / Bone / Infracranial / Upper Member / Hand / Carpal / Trapezoid
+Hominid / Bone / Infracranial / Upper Member / Hand / Carpal / Capitate
+Hominid / Bone / Infracranial / Upper Member / Hand / Carpal / Hamate
+Hominid / Bone / Infracranial / Upper Member / Hand / Metacarpal
+Hominid / Bone / Infracranial / Upper Member / Hand / Metacarpal / 1st Metacarpal
+Hominid / Bone / Infracranial / Upper Member / Hand / Metacarpal / 2nd Metacarpal
+Hominid / Bone / Infracranial / Upper Member / Hand / Metacarpal / 3rd Metacarpal
+Hominid / Bone / Infracranial / Upper Member / Hand / Metacarpal / 4th Metacarpal
+Hominid / Bone / Infracranial / Upper Member / Hand / Metacarpal / 5th Metacarpal
+Hominid / Bone / Infracranial / Upper Member / Hand / Phalanx
+Hominid / Bone / Infracranial / Upper Member / Hand / Phalanx / Proximal Phalanx
+Hominid / Bone / Infracranial / Upper Member / Hand / Phalanx / Intermediate Phalanx
+Hominid / Bone / Infracranial / Upper Member / Hand / Phalanx / Distal Phalanx
+Hominid / Bone / Infracranial / Lower Member
+Hominid / Bone / Infracranial / Lower Member / Pelvic Girdle
+Hominid / Bone / Infracranial / Lower Member / Pelvic Girdle / Innominate
+Hominid / Bone / Infracranial / Lower Member / Pelvic Girdle / Innominate / Ilium
+Hominid / Bone / Infracranial / Lower Member / Pelvic Girdle / Innominate / Ischium
+Hominid / Bone / Infracranial / Lower Member / Pelvic Girdle / Innominate / Pubis
+Hominid / Bone / Infracranial / Lower Member / Leg
+Hominid / Bone / Infracranial / Lower Member / Leg / Femur
+Hominid / Bone / Infracranial / Lower Member / Leg / Patella
+Hominid / Bone / Infracranial / Lower Member / Leg / Tibia
+Hominid / Bone / Infracranial / Lower Member / Leg / Fibula
+Hominid / Bone / Infracranial / Lower Member / Foot
+Hominid / Bone / Infracranial / Lower Member / Foot / Tarsal
+Hominid / Bone / Infracranial / Lower Member / Foot / Tarsal / Talus
+Hominid / Bone / Infracranial / Lower Member / Foot / Tarsal / Calcaneus
+Hominid / Bone / Infracranial / Lower Member / Foot / Tarsal / Cuboid
+Hominid / Bone / Infracranial / Lower Member / Foot / Tarsal / Navicular
+Hominid / Bone / Infracranial / Lower Member / Foot / Tarsal / Medial (first) Cuneiform
+Hominid / Bone / Infracranial / Lower Member / Foot / Tarsal / Intermediate (second) Cuneiform
+Hominid / Bone / Infracranial / Lower Member / Foot / Tarsal / Lateral (third) Cuneiform
+Hominid / Bone / Infracranial / Lower Member / Foot / Metatarsal
+Hominid / Bone / Infracranial / Lower Member / Foot / Metatarsal / 1st Metatarsal
+Hominid / Bone / Infracranial / Lower Member / Foot / Metatarsal / 2nd Metatarsal
+Hominid / Bone / Infracranial / Lower Member / Foot / Metatarsal / 3rd Metatarsal
+Hominid / Bone / Infracranial / Lower Member / Foot / Metatarsal / 4th Metatarsal
+Hominid / Bone / Infracranial / Lower Member / Foot / Metatarsal / 5th Metatarsal
+Hominid / Bone / Infracranial / Lower Member / Foot / Phalanx
+Hominid / Bone / Infracranial / Lower Member / Foot / Phalanx / Proximal Phalanx
+Hominid / Bone / Infracranial / Lower Member / Foot / Phalanx / Intermediate Phalanx
+Hominid / Bone / Infracranial / Lower Member / Foot / Phalanx / Distal Phalanx

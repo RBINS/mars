@@ -1,0 +1,173 @@
+Remain Type
+-----------
+
+Unknown
+Undetermined
+
+Artefact / Lithic
+Artefact / Animal Hard Tissue
+Artefact / Animal Soft Tissue
+Artefact / Vegetal Hard Tissue
+Artefact / Vegetal Soft Tissue
+Artefact / Ceramic
+Artefact / Metal
+
+Hominid / Tooth
+Hominid / Bone
+
+Fauna / Mammal
+Fauna / Bird
+Fauna / Reptile
+Fauna / Amphibian
+Fauna / Fish
+
+Flora
+
+
+Taxa
+----
+
+Unknown
+Undetermined
+
+Fauna
+Fauna / Mammalia
+Fauna / Mammalia / Primates / Hominidae 
+Fauna / Aves
+Fauna / Reptilia
+Fauna / Pisces
+Fauna / Arthropoda
+Fauna / Amphibia
+Flora
+Flora / Embryophyta
+
+
+Chronology
+----------
+
+Unknown
+Undetermined
+
+Cultural
+Chronostratigraphy
+
+
+Technology
+----------
+
+Lithic
+Animal
+Vegetal
+Other
+
+
+Raw material
+------------
+
+
+Lithic
+Animal
+Vegetal
+Other
+
+
+Acquisition protocol
+--------------------
+
+None
+
+Photography
+Photography / Digital
+Photography / Digital / Calibrated
+
+Medical CT
+Medical CT / Siemens
+Medical CT / Siemens / Volume Zoom
+Medical CT / Siemens / Somaton 4
+Medical CT / Siemens / Sensation 64
+
+µ-CT
+µ-CT / Skyscan
+µ-CT / Skyscan / 1072
+µ-CT / Skyscan / 1076
+µ-CT / Synchrotron
+
+Scanner
+Scanner / Film
+Scanner / Slide
+Scanner / Positive
+
+Surface Scanning
+Surface Scanning / Deios
+Surface Scanning / Breukman
+
+
+Age group
+---------
+
+Unknown
+Undetermined
+
+Hominidae
+
+
+Pathology
+---------
+
+Unknown
+Undetermined
+
+
+Taphonomy
+----------
+
+Unknown
+Undetermined
+
+
+Site
+----
+
+Unknown
+Undetermined
+
+Cave
+Cave / Terrasse
+Cave / Entrance
+Cave / Deep Karst
+Rock Shelter
+Open Air
+Open Air / Alluvial Plaine
+Open Air / Plateau
+Open Air / Mining Area
+
+
+Geological components
+---------------------
+
+
+Analysis technique
+------------------
+
+Absolute dating
+Relative dating
+
+
+Analysis keywords
+-----------------
+
+
+Coordinate Projection
+---------------------
+
+None
+
+
+Nothing
+-------
+
+Undetermined
+Unknown
+None
+
+

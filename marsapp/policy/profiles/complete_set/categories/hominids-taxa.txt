@@ -1,0 +1,13 @@
+Taxa
+----
+
+Fauna / Mammalia / Primates / Hominidae / Homo
+Fauna / Mammalia / Primates / Hominidae / Homo / habilis
+Fauna / Mammalia / Primates / Hominidae / Homo / erectus
+Fauna / Mammalia / Primates / Hominidae / Homo / antecessor
+Fauna / Mammalia / Primates / Hominidae / Homo / heidelbergensis
+Fauna / Mammalia / Primates / Hominidae / Homo / neanderthalensis
+Fauna / Mammalia / Primates / Hominidae / Homo / sapiens
+Fauna / Mammalia / Primates / Hominidae / Homo / sapiens / sapiens
+Fauna / Mammalia / Primates / Hominidae / Australopithecus
+  

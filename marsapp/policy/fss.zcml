@@ -1,0 +1,31 @@
+<configure
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  xmlns:fss="http://namespaces.ingeniweb.com/filesystemstorage">
+
+  <include package="iw.fss"/>
+  <include package="iw.fss" file="meta.zcml" />
+
+<!-- Uncomment those if needed (only if fss is not setup from buildout) -->
+  <fss:typeWithFSS
+    zcml:condition="installed iw.fss"
+    class="Products.ATContentTypes.atct.ATFile"
+    fields="file" />
+
+
+  <fss:typeWithFSS
+     zcml:condition="installed iw.fss"
+     class="Products.ATContentTypes.atct.ATImage"
+     fields="image" />
+
+  <fss:typeWithFSS
+     zcml:condition="installed iw.fss"
+     class="Products.ATContentTypes.atct.ATNewsItem"
+     fields="image" />
+
+<!-- Add FSS declarations for other types here -->
+  <fss:typeWithFSS
+    zcml:condition="installed iw.fss"
+    class="marsapp.content.picture.MarsPicture"
+    fields="image" />
+
+</configure>
