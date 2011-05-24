@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 # Python imports
 from StringIO import StringIO
 import os

@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 FTI_STUFF = [
 'Description', # ()
 'Title', # ()
