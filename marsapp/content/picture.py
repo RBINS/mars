@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 #  mars http://www.naturalsciences.be/metamars/products/
 #  Archetypes implementation of the MARS core types based on ATContentTypes
 #  Copyright (c) 2003-2007 MARS development team
@@ -35,7 +36,7 @@ finalizeATCTSchema(MarsPictureSchema)
 
 class MarsPicture(ATImage):
     security = ClassSecurityInfo()
-    __implements__ = (getattr(ATImage,'__implements__',()),)
+    #__implements__ = (getattr(ATImage,'__implements__',()),)
 
     schema = MarsPictureSchema
 

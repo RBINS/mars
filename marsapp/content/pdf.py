@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 #  mars http://www.naturalsciences.be/metamars/products/
 #  Archetypes implementation of the MARS core types based on ATContentTypes
 #  Copyright (c) 2003-2007 MARS development team
@@ -91,7 +92,7 @@ PDFFileSchema['file'].label_msgid = "label_pdf_file",
 
 class MarsPDFFile(ATFile):
     security = ClassSecurityInfo()
-    __implements__ = (getattr(ATFile,'__implements__',()),)
+    #__implements__ = (getattr(ATFile,'__implements__',()),)
 
     meta_type                  = 'MarsPDFFile'
     portal_type                = 'MarsPDFFile'

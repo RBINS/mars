@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 #  mars http://www.naturalsciences.be/metamars/products/
 #  Archetypes implementation of the MARS core types based on ATContentTypes
 #  Copyright (c) 2003-2007 MARS development team
