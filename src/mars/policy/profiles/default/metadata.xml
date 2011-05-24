@@ -15,5 +15,7 @@
         <dependency>profile-mars.tma:default</dependency>
       -->
       <dependency>profile-mars.skin:default</dependency>
+      <dependency>profile-marsapp.policy:default</dependency>
+      <dependency>profile-marsapp.policy:complete_set</dependency>
  </dependencies>
 </metadata>

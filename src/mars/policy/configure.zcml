@@ -8,6 +8,13 @@
   <!--with_ploneproduct_fivegrok -->
   <!--with_ploneproduct_cz3cformgrok -->
   <!--with_ploneproduct_pz3cform -->
+  <include package="Products.CMFCore" file="permissions.zcml" />
+  <include package="marsapp.policy"/>
+  <include package="marsapp.content"/>
+  <include package="marsapp.categories"/>
+  <include package="marsapp.helpers"/>
+  <include package="marsapp.migration"/>
+  <include package="marsapp.bibliography"/>
   <include package="five.grok" file="configure.zcml"/>
   <!--with_ploneproduct_ploneappblob -->
   <include package="plone.app.blob" file="configure.zcml"/>
