@@ -10,6 +10,30 @@
  <object name="mars_skin_styles"
     meta_type="Filesystem Directory View"
     directory="mars.skin:skins/mars_skin_styles"/>
+ <!-- old products -->
+ <!-- bibliography -->
+ <object name="bibliography" meta_type="Filesystem Directory View"
+    directory="CMFBibliographyAT/skins/bibliography"/>
+ <object name="bibliography_deprecated" meta_type="Filesystem Directory View"
+    directory="CMFBibliographyAT/skins/bibliography_deprecated"/>
+ <object name="bibliography_selenium_tests"
+    meta_type="Filesystem Directory View"
+    directory="CMFBibliographyAT/skins/bibliography_selenium_tests"/>
+ <object name="bibliography_styles" meta_type="Filesystem Directory View"
+    directory="Products.ATBiblioStyles:skins/bibliography_styles"/>
+ <object name="bibliography_list" meta_type="Filesystem Directory View"
+    directory="Products.ATBiblioList:skins/bibliography_list"/>
+ <!-- end bibliography -->
+ <object name="marsapp_categories_icons" meta_type="Filesystem Directory View"
+         directory="marsapp.policy:skins/marsapp_categories_icons"/>
+ <object name="marsapp_content_icons" meta_type="Filesystem Directory View"
+         directory="marsapp.policy:skins/marsapp_content_icons"/>
+ <object name="marsapp_custom" meta_type="Filesystem Directory View"
+         directory="marsapp.policy:skins/marsapp_custom"/>
+ <object name="marsapp_styles" meta_type="Filesystem Directory View"
+         directory="marsapp.policy:skins/marsapp_styles"/>
+ <object name="marsapp_categories" meta_type="Filesystem Directory View"
+         directory="marsapp.categories:skins/marsapp_categories"/> 
 <skin-path name="mars.skin" based-on="Sunburst Theme">
   <layer name="mars_skin_custom_images"
      insert-after="custom"/>
@@ -17,5 +41,19 @@
      insert-after="mars_skin_custom_images"/>
   <layer name="mars_skin_styles"
      insert-after="mars_skin_custom_templates"/>
+ <!-- old products -->
+ <layer name="marsapp_custom" insert-after="custom"/>
+ <layer name="marsapp_styles" insert-after="marsapp_custom"/> 
+ <!-- bibliography -->
+ <layer name="bibliography" insert-after="custom"/>
+ <layer name="bibliography_deprecated" insert-after="bibliography"/>
+ <layer name="bibliography_selenium_tests"
+     insert-after="bibliography_deprecated"/>
+ <layer name="bibliography_styles" insert-after="bibliography_deprecated"/>
+ <layer name="bibliography_list" insert-after="bibliography_styles"/>
+ <!-- end bibliography -->
+ <layer name="marsapp_categories" insert-after="custom"/>
+ <layer name="marsapp_content_icons" insert-after="custom"/>
+ <layer name="marsapp_categories_icons" insert-after="custom"/> 
  </skin-path>
 </object>
