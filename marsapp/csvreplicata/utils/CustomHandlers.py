@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 import marscategory
 import marscoordinates 
 CUSTOMHANDLERS={"marsapp.categories.field.MarscatField": {'handler_class' : marscategory.CSVMarsCat(), 'file' : False},
