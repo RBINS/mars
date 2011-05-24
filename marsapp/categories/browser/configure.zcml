@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/browser"
+    xmlns:zope="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="atreferencebrowserwidget"> 
+   <page
+      name="cat_refbrowser_popup"
+      permission="zope2.Public"
+      for="*"
+      class=".view.MarsReferenceBrowserPopup" />
+  <zope:adapter
+      for="Products.Five.BrowserView"
+      factory=".view.default_popup_template"
+      name="mars_popup"
+      provides="zope.formlib.namedtemplate.INamedTemplate"
+      />
+ 
+</configure>

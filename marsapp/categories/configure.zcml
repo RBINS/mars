@@ -2,12 +2,15 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:grok="http://namespaces.zope.org/grok"
     xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="marsapp.categories">
 
+  <grok:grok package="."/>
     <five:registerPackage package="." initialize=".initialize" />
 
     <include package=".exportimport" />
+    <include package=".browser" />
     <include package=".controlpanel" />
 
     <browser:resourceDirectory

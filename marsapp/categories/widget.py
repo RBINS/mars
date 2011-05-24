@@ -15,7 +15,8 @@ class MarscatWidget(ReferenceBrowserWidget):
     show_fullpath = True
     _properties = ReferenceBrowserWidget._properties.copy()
     _properties.update({
-        'macro': "marscatsbrowser",
+        'macro': 'marscatsbrowser',
+        'popup_name': 'mars_popup',
         'restrict_browsing_to_startup_directory': True,
         })
 
