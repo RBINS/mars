@@ -24,7 +24,7 @@
 
     <subscriber
         for=".category.IMarsCategory
-             zope.app.event.interfaces.IObjectModifiedEvent"
+             zope.lifecycleevent.interfaces.IObjectModifiedEvent"
         handler=".events.modifiedCategoryEventHandler" />
 
   <cmf:registerDirectory name="marsapp_categories"/>

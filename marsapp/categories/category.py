@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 # Inspiration taken from PloneRailroadVideoLibrary
 from zope.interface import Interface, implements
 from zope.interface.verify import verifyObject

@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 #from Acquisition import aq_base, aq_inner, aq_parent
 from zope.component import getMultiAdapter
 #from Products.Five.browser import BrowserView

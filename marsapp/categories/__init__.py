@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 GLOBALS = globals()
 
 from permissions import DEFAULT_ADD_CONTENT_PERMISSION as \

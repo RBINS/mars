@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 from persistent.dict import PersistentDict
 from zope.component import getUtility, queryUtility, queryMultiAdapter
 

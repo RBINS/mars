@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 import re
 from StringIO import StringIO
 from AccessControl import ClassSecurityInfo
