@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 """
 MARS Portal setup handlers.
 """
@@ -28,7 +29,6 @@ from Products.CMFPlone.interfaces import IMigrationTool
 from Products.CMFPlone.interfaces import INonInstallable \
                                                     as INonProfileInstallable
 from Products.CMFPlone.utils import _createObjectByType
-from Products.CMFPlone import migrations as migs
 from Products.CMFPlone.events import SiteManagerCreatedEvent
 from Products.CMFPlone.Portal import member_indexhtml
 from Products.ATContentTypes.lib import constraintypes

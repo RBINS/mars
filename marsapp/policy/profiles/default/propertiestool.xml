@@ -46,13 +46,14 @@
 
  <object name="site_properties">
   <!-- bibliography -->
-  <property name="use_folder_tabs" purge="False">
+  <!--
+  <property name="use_folder_tabs">
    <element value="LargeBibliographyFolder"/>
    <element value="DuplicatesBibliographyFolder"/>
    <element value="BibliographyFolder"/>
    <element value="PDF Folder"/>
    <element value="BibrefCustomStyleFolder"/>
-  </property>
+   </property>-->
   <property name="typesLinkToFolderContentsInFC">
    <element value="BibrefCustomStyleFolder"/>
   </property>

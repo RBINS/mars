@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 from Acquisition import aq_base, aq_inner, aq_parent
 from zope.interface import implements
 from zope.component import getMultiAdapter
