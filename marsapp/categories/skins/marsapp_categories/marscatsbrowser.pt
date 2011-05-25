@@ -57,7 +57,7 @@
             <tal:block
                 tal:define="
                     obj_path python: '/'.join(obj.getPhysicalPath());
-                    mars_view here/@@mars_breadcrumbs;
+                    mars_view here/@@mars_utils;
                     can_view python: checkPermission('View', obj)"
                 tal:condition="python: can_view or not hide_inaccessible">
               <li>
@@ -79,11 +79,8 @@
                     tal:content="field/relationship"
                     >reference object link</a>
 
-                <tal:if condition="show_path"
-                     i18n:translate="label_directory">
-                     (Directory: <span i18n:name="directory"
-                                        tal:replace="python: mars_view.get_parent_breadcrumbs(obj)"
-                                         >directory</span>)
+                <tal:if condition="show_path">
+                     (<span tal:replace="python: mars_view.get_parent_breadcrumbs(obj)">directory</span>)
                 </tal:if>
               </li>
             </tal:block>
