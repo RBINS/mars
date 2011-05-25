@@ -2,7 +2,13 @@
     xmlns="http://namespaces.zope.org/browser"
     xmlns:zope="http://namespaces.zope.org/zope"
     xmlns:zcml="http://namespaces.zope.org/zcml"
-    i18n_domain="atreferencebrowserwidget"> 
+    i18n_domain="atreferencebrowserwidget">
+   <page
+      name="mars_utils"
+      permission="zope2.Public"
+      allowed_interface=".view.IMarsUtils"
+      for="*"
+      class=".view.MarsUtils" />
    <page
       name="cat_refbrowser_popup"
       permission="zope2.Public"
@@ -14,5 +20,5 @@
       name="mars_popup"
       provides="zope.formlib.namedtemplate.INamedTemplate"
       />
- 
+
 </configure>

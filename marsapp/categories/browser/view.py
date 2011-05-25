@@ -1,23 +1,25 @@
-# -*- coding: utf-8 -*-   
+# -*- coding: utf-8 -*-
 from Acquisition import aq_inner
-from archetypes.referencebrowserwidget.interfaces import \
-        IReferenceBrowserHelperView 
+from archetypes.referencebrowserwidget.interfaces import IReferenceBrowserHelperView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from archetypes.referencebrowserwidget.browser.view import ReferenceBrowserPopup as b
+
+from Products.Five import BrowserView
 
 from zope.interface import implements, Interface
 from plone.app.form._named import named_template_adapter
 default_popup_template = named_template_adapter(
-    ViewPageTemplateFile('popup.pt')) 
-class imethods(Interface):
+    ViewPageTemplateFile('popup.pt'))
+
+class IMarsUtils(Interface):
     """methods"""
-
-    def get_breadcrumbs():
+    def get_breadcrumbs(context):
         """get_breadcrumbs."""
+    def get_parent_breadcrumbs(context):
+        """get_parent_breadcrumbs."""
 
-class MarsReferenceBrowserPopup(b):
-    """ A helper view for the reference browser widget."""
-    implements((IReferenceBrowserHelperView, imethods))
+class MarsUtils(BrowserView):
+    implements(IMarsUtils)
 
     def get_breadcrumbs(self, context):
         """get_breadcrumbs."""
@@ -27,3 +29,18 @@ class MarsReferenceBrowserPopup(b):
         crumbs = [a['Title'] for a in crumbsd][1:]
         return u' → '.join(crumbs)
 
+    def get_parent_breadcrumbs(self, context):
+        """get_proxybreadcrumbs."""
+        import pdb;pdb.set_trace()  ## Breakpoint ##
+        context = aq_inner(context.getObject())
+        bc_view = context.restrictedTraverse('@@breadcrumbs_view')
+        crumbsd = bc_view.breadcrumbs()
+        crumbs = [a['Title'] for a in crumbsd][1:-1]
+        return u' → '.join(crumbs)
+
+class MarsReferenceBrowserPopup(b, MarsUtils):
+    """ A helper view for the reference browser widget."""
+    implements((IReferenceBrowserHelperView, IMarsUtils))
+    def __init__(self, *args, **kw):
+        b.__init__(self, *args, **kw)
+        mars_breadcrumbs.__init__(self, *args, **kw)
