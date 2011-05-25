@@ -15,13 +15,14 @@ from Products.Archetypes.Registry import registerPropertyType
 
 from storage import IMarscatsSettingsStorage
 from widget import MarscatWidget
+from container import MarsCategoriesContainer
 
 from marsapp.categories.storage import CAT_CONTAINER
 
 def getTitledPath(obj, startup_folder_url, path=None):
     if path is None:
         path = []
-    if obj.absolute_url() != startup_folder_url:
+    if not isinstance(obj, MarsCategoriesContainer):
         path.insert(0, obj.Title())
         path = getTitledPath(obj.aq_inner.aq_parent, startup_folder_url, path)
     return path
