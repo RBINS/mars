@@ -129,6 +129,7 @@ LocationSchema = Schema((
             label_msgid='label_GIS_projection',
             description='Select the projection system for the GIS coordinates',
             description_msgid='help_GIS_projection',
+            startup_directory='/marscategories/coordinate-projection',
             domain='mars',
             ),
         schemata='location',

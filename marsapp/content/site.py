@@ -51,6 +51,7 @@ SiteSchema += Schema((
             description='Select what kind of type this site is.',
             description_msgid='help_site_type',
             domain='mars',
+            startup_directory='/marscategories/site',
             ),
         schemata='description',
         ),
