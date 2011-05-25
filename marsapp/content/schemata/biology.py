@@ -36,6 +36,7 @@ BiologySchema = Schema((
             label_msgid='label_taxon',
             description='Define the taxon as precisely as possible.',
             description_msgid='help_taxon',
+            startup_directory='/marscategories/taxa',
             domain='mars',
             ),
         schemata='biology',

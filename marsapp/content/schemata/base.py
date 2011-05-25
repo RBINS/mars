@@ -284,6 +284,7 @@ CollectionObjectBaseSchema = CollectionBaseSchema.copy() + Schema((
             description='Type of this remain (as precisely as possible).',
             description_msgid='help_remain_type',
             domain='mars',
+            startup_directory='/marscategories/remain-type',
             ),
         schemata='description',
         ),

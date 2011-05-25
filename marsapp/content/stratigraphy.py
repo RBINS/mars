@@ -117,6 +117,7 @@ StratigraphicalLayerSchema += Schema((
             label_msgid='label_components',
             description="Associated components composing the stratigraphical assemblage.",
             description_msgid='help_stratigraphy_layer_components',
+            startup_directory='/marscategories/geological-components',
             domain='mars',
             ),
         schemata='description',

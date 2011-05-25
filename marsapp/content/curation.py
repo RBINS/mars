@@ -41,6 +41,7 @@ MarsCurationSchema = MarsBaseSchema.copy() + Schema((
             description='Select a curator for this period of time.',
             description_msgid='help_Curator',
             domain='mars',
+            startup_directory='/administration',
             ),
         ),
 
