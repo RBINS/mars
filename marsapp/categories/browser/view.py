@@ -35,7 +35,6 @@ class MarsUtils(BrowserView):
         bc_view = context.restrictedTraverse('@@breadcrumbs_view')
         crumbsd = bc_view.breadcrumbs()
         crumbs = [a['Title'] for a in crumbsd][1:-1]
-        crumbs = [a['Title'] for a in crumbsd][1:]
         return u' → '.join(crumbs)
 
 class MarsReferenceBrowserPopup(b, MarsUtils):
