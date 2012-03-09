@@ -20,5 +20,6 @@ def upgrade(portal_setup):
     #migration_util.loadMigrationProfile(site,
     #                                    'profile-Products.PloneSurvey:default')
 
+    migration_util.loadMigrationProfile( site, 'profile-mars.policy.migrations.v11:1011') 
 
 
