@@ -71,7 +71,7 @@ TechnologySchema = Schema((
             description="Identify the artisan, tribe or culture who made this (e.g. Iliad).",
             description_msgid='help_archeo_ind_name',
             domain='mars',
-            startup_directory='/administration',
+            startup_directory='/administration/organisations',
             ),
         schemata='technology',
         ),
