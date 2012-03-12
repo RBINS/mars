@@ -22,6 +22,7 @@
       directory="stylesheets"
       layer=".interfaces.IThemeSpecific"
     />
+    <!--
   <browser:page
       layer=".interfaces.IThemeSpecific"
       for="*"
@@ -30,5 +31,6 @@
       allowed_interface=".view.IMarsUtils"
       permission="zope2.View"
     />
+    -->
   <!-- vim:set ft=xml: -->
 </configure>
