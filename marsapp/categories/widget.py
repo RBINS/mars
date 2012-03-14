@@ -7,16 +7,16 @@ from zope.component import getMultiAdapter
 
 from Products.CMFCore.utils import getToolByName
 
-from Products.ATReferenceBrowserWidget.ATReferenceBrowserWidget import \
-                                                        ReferenceBrowserWidget
 from Products.Archetypes.Registry import registerWidget
+
+from archetypes.referencebrowserwidget.widget import ReferenceBrowserWidget
 
 class MarscatWidget(ReferenceBrowserWidget):
     show_fullpath = True
     _properties = ReferenceBrowserWidget._properties.copy()
     _properties.update({
-        'macro': 'marscatsbrowser',
-        'popup_name': 'mars_popup',
+        'macro': 'marscats4browser',
+        'popup_name' : 'mars_popup',
         'restrict_browsing_to_startup_directory': True,
         })
 
