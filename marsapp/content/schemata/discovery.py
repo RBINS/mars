@@ -98,7 +98,7 @@ DiscoverySchema = Schema((
             description='Select the stratigraphical layer in which this item was found.',
             description_msgid='help_stratigraphical_layer',
             domain='mars',
-            startup_directory='/administration/layers',
+            #startup_directory='/administration/layers',
             ),
         schemata='discovery',
         ),
@@ -182,7 +182,7 @@ DiscoverySchema = Schema((
         # Unit, orientation?
         subfields=('XCoordinate',
                    'YCoordinate',
-                   'ZCoo0rdinate'),
+                   'ZCoordinate'),
         # 'Unit'='String', 'Orientation'='String'
         subfield_types={'XCoordinate':'string',
                         'YCoordinate':'string',

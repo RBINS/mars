@@ -11,3 +11,7 @@ class IMarsCollectionObject(IATDocument):
 class ISchemataViewletEnabled(Interface):
     """Marker Interface for schemata display viewlet
     """
+
+
+class IFilesAndImagesContainer(Interface):
+    """Marker interface for folders and images container object"""

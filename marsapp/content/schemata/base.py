@@ -30,7 +30,7 @@ except ImportError:
   # No multilingual support
   from Products.Archetypes.public import *
 
-from Products.ATReferenceBrowserWidget.ATReferenceBrowserWidget import ReferenceBrowserWidget
+from archetypes.referencebrowserwidget.widget import ReferenceBrowserWidget
 
 from Products.ATContentTypes.content.schemata import ATContentTypeSchema
 from Products.ATContentTypes.content.folder import ATFolderSchema
@@ -184,7 +184,7 @@ def finalizeMarsSchema(schema, folderish=False, moveDiscussion=True,
         field = LinesField('igNumbers',
             required=False,
             searchable=False,
-            widget=TextAreaWidget(
+            widget=LinesWidget(
                 description=_(u'help_IGs',
                               default=_(u'General inventorisation',
                                        u'numbers (one per line).')),

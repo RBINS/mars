@@ -84,8 +84,10 @@ finalizeMarsSchema(SiteSchema, folderish=True,
 
 class MarsSite(ATFolder):
     """Archeological Site"""
+    implements(
+        (IFilesAndImagesContainer,)+tuple([a for a in implementedBy(ATFolder)])
+    )
     schema = SiteSchema
-
     portal_type = "Site"
     archetype_name = "Site"
 

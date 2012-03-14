@@ -3,16 +3,18 @@
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="marsapp.content">
-
-    <include package="marsapp.categories"/>
-
-    <five:registerPackage package="." initialize=".initialize"/>
-
-    <include package=".browser"/>
-
-    <browser:resourceDirectory
-        name="marsapp.content.icons"
-        directory="icons"
-        />
+  <include package="marsapp.categories"/>
+  <five:registerPackage package="." initialize=".initialize"/>
+  <include package=".browser"/>
+  <browser:resourceDirectory
+      name="marsapp.content.icons"
+      directory="icons"
+    />
+  <subscriber for=".interfaces.IFilesAndImagesContainer
+      Products.Archetypes.interfaces.IObjectInitializedEvent"
+      handler=".subscribers.create_files_and_images_folders" />
+  <subscriber for=".interfaces.IFilesAndImagesContainer
+      Products.Archetypes.interfaces.IObjectEditedEvent"
+      handler=".subscribers.create_files_and_images_folders" /> 
 
 </configure>

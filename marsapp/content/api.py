@@ -24,6 +24,7 @@ __author__  = 'David Convent <david.convent@naturalsciences.be>'
 __docformat__ = 'restructuredtext'
 
 
+from zope.interface import implementedBy, implements
 from AccessControl import ClassSecurityInfo
 
 from Products.Archetypes.public import registerType as _rt
@@ -37,6 +38,8 @@ from Products.ATContentTypes.atct import ATFile
 from Products.ATContentTypes.atct import ATImage
 
 from base import MarsCollectionObject
+
+from interfaces import IFilesAndImagesContainer
 
 registerATCT = _rat
 

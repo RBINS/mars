@@ -64,6 +64,9 @@ finalizeMarsSchema(CollectionSchema, folderish=True, igNumbers=True)
 
 class MarsCollection(ATBTreeFolder):
     """Collection"""
+    implements(
+        (IFilesAndImagesContainer,)+tuple([a for a in implementedBy(ATFolder)])
+    ) 
     schema = CollectionSchema
 
     portal_type = "Collection"
