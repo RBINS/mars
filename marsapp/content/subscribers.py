@@ -20,6 +20,9 @@ def create_files_and_images_folders(obj, event):
                 subf.reindexObject()
                 notify(ObjectInitializedEvent(subf)) 
                 rs = wf_tool.getInfoFor(subf, 'review_state', '')
+                if folder == 'images':
+                    subf.setLayout("atct_album_view")
+
                 if not rs == 'published':
                     wf_tool.doActionFor(
                         subf,

@@ -89,7 +89,7 @@ ExcavationSchema += Schema((
             description='Select the people who made this excavation.',
             description_msgid='help_excavators',
             domain='mars',
-            startup_directory='/administration/organizations',
+            startup_directory='/administration/organisations',
             ),
         schemata='description',
         ),

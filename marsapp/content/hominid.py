@@ -36,6 +36,10 @@ HominidBioRemainSchema = BioRemainSchema.copy()
 HominidBioRemainSchema['polarity'].vocabulary = hominid_polarity
 HominidBioRemainSchema['laterality'].vocabulary = hominid_laterality
 
+HominidBiologySchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna/mammalia/primates/hominidae'
+
+
+
 HominidBioAssemblageSchema = BioAssemblageSchema.copy()
 HominidBioAssemblageSchema['origin'].vocabulary = hominid_origin
 

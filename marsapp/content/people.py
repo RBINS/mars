@@ -97,12 +97,12 @@ MarsPeopleSchema = ATContentTypeSchema.copy() + Schema((
         relationship='worksFor',
         multiValued=True,
         allowed_types=('Institution',),
-        widget=ReferenceBrowserWidgetWidget(
+        widget=ReferenceBrowserWidget(
             label='Institution',
             label_msgid='label_institution',
             description='Pick an institution if this person is working for it.',
             description_msgid='help_institution_reference',
-            startup_directory = '/administration/organizations',
+            startup_directory = '/administration/organisations',
             domain='mars',
             ),
         ),

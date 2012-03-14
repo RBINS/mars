@@ -40,6 +40,7 @@ ArtefactSchema = Schema((
             description='Select the materials composing this item.',
             description_msgid='help_rawmaterials',
             domain='mars',
+            startup_directory='/marscategories/raw-material',
             ),
         schemata='description',
         ),
