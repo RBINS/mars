@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 __docformat__ = 'restructuredtext en'
-from Products.Archetypes.event import ObjectInitializedEvent 
+from Products.Archetypes.event import ObjectInitializedEvent
 from Products.CMFCore.utils import getToolByName
 import logging
 from zope.event import notify
@@ -18,8 +18,11 @@ def create_files_and_images_folders(obj, event):
                 subf.setTitle(folders[folder])
                 subf.unmarkCreationFlag()
                 subf.reindexObject()
-                notify(ObjectInitializedEvent(subf)) 
+                notify(ObjectInitializedEvent(subf))
                 rs = wf_tool.getInfoFor(subf, 'review_state', '')
+                subf.setExcludeFromNav(True)
+                if folder == 'files':
+                    subf.setLayout("folder_tabular_view")
                 if folder == 'images':
                     subf.setLayout("atct_album_view")
 

@@ -98,10 +98,10 @@ MarsCollectionObjectSchema = ATDocumentSchema.copy() + Schema((
 #            languageIndependent = True,
 #            widget = BooleanWidget(
 #                label= _(
-#                    u'help_enable_image_caption', 
+#                    u'help_enable_image_caption',
 #                    default=u'Enable image caption'),
 #                description = _(
-#                    u'help_enable_image_caption', 
+#                    u'help_enable_image_caption',
 #                    default=u'If selected, this will show the first image as a caption at the top of the page.')
 #            ),
 #        ),
@@ -297,7 +297,7 @@ CollectionObjectBaseSchema = CollectionBaseSchema.copy() + Schema((
         default_output_type='text/x-html-safe',
         allowable_content_types = ('text/plain',
                                   'text/structured',
-                                  'text/html',),      
+                                  'text/html',),
         widget=RichWidget(label='Measures',
             label_msgid='label_measures',
             description='Give the measures, and also the protocol used to get these measures.',
@@ -330,7 +330,7 @@ CollectionObjectBaseSchema = CollectionBaseSchema.copy() + Schema((
         default_output_type='text/x-html-safe',
         allowable_content_types = ('text/plain',
                                   'text/structured',
-                                  'text/html',),      
+                                  'text/html',),
         widget=RichWidget(label='Features',
             label_msgid='label_measures',
             description='Features and their determination.',
@@ -397,7 +397,7 @@ InsiteLocationSchema = Schema ((
         #allowable_content_types=('text/plain',),
         allowable_content_types = ('text/plain',
                                   'text/structured',
-                                  'text/html',),      
+                                  'text/html',),
         default_output_type='text/x-html-safe',
         widget=RichWidget(label='In-site location',
             label_msgid='label_excavation_unit',
