@@ -10,6 +10,7 @@
       style="font-size: 150% !important"
       tal:define="fieldName view/fieldName;
                   multiValued view/multiValued;
+                  marsv nocall:here/marscat_utils;
                   fieldRealName view/fieldRealName;
                   at_obj nocall:view/at_obj;
                   widget nocall:view/widget;
@@ -201,14 +202,14 @@
              rel item/Title">
             <label tal:condition="referenceable"
                    tal:attributes="for uid;"
-                   tal:content="title_or_id">Title</label>
+                   tal:content="python: marsv.get_obj_crumb(item.getObject(), sep='/')">Title</label>
             <span tal:condition="not:referenceable" tal:content="title_or_id" />
           </a>
           <tal:foldercheck tal:condition="
               python:not((item.is_folderish and allow_browse) and isNotSelf)" >
             <label tal:condition="referenceable"
                    tal:attributes="for uid;"
-                   tal:content="title_or_id">Title
+                   tal:content="python: marsv.get_obj_crumb(item.getObject(), sep='/')">Title
             </label>
             <span tal:condition="not:referenceable" tal:content="title_or_id" />
           </tal:foldercheck>

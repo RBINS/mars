@@ -117,7 +117,7 @@
 
             <input size="" type="text" value="" id="" readonly="readonly"
                 tal:attributes="
-                    value obj/title_or_id;
+                value python:marsv.get_obj_crumb(obj);
                     size python:test(widget.size=='', 30, widget.size);
                     id string:ref_browser_${fieldName}_label"
                     />

@@ -48,7 +48,7 @@ class IMarscatUtils(Interface):
         """."""
 
 class MarscatUtils(BrowserView):
-    def get_obj_crumb(self, obj):
+    def get_obj_crumb(self, obj, sep='>'):
         """."""
         item = obj.aq_inner
         crumb = []
@@ -57,6 +57,6 @@ class MarscatUtils(BrowserView):
             crumb.append(item.Title() or item.getId())
             item = item.aq_parent
         crumb.reverse()
-        return ' > '.join(crumb)
+        return (' %s ' % (sep)).join(crumb)
 
 # vim:set et sts=4 ts=4 =80:
