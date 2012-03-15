@@ -63,6 +63,7 @@ BiologySchema = Schema((
     MarscatField('age',
         required=True,
         searchable=True,
+        relationship='hasAge',
         default='undetermined',
         widget=MarscatWidget(label='Age group',
             label_msgid='label_age',
