@@ -53,6 +53,7 @@ FloraRemainSchema += ChronologyDatingSchema.copy()
 FloraRemainSchema += TaphonomySchema.copy()
 FloraRemainSchema += DiscoverySchema.copy()
 FloraRemainSchema += AdministrationSchema.copy()
+FloraRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
 finalizeMarsSchema(FloraRemainSchema,
                    delFields=('pathology',
                               'pathologyDetermination',
@@ -76,6 +77,7 @@ FloraIndividualSchema += ChronologyDatingSchema.copy()
 FloraIndividualSchema += TaphonomySchema.copy()
 FloraIndividualSchema += DiscoverySchema.copy()
 FloraIndividualSchema += AdministrationSchema.copy()
+FloraIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
 finalizeMarsSchema(FloraIndividualSchema,
                    delFields=('pathology',
                               'pathologyDetermination',
@@ -100,6 +102,7 @@ FloraAssemblageSchema += ChronologyDatingSchema.copy()
 FloraAssemblageSchema += TaphonomySchema.copy()
 FloraAssemblageSchema += DiscoverySchema.copy()
 FloraAssemblageSchema += AdministrationSchema.copy()
+FloraAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
 finalizeMarsSchema(FloraIndividualSchema,
                    delFields=('pathology',
                               'pathologyDetermination',
@@ -119,6 +122,7 @@ FloraRefSampleSchema += CollectionObjectBaseSchema.copy()
 FloraRefSampleSchema += ChronologySchema.copy()
 FloraRefSampleSchema += AdministrationSchema.copy()
 FloraRefSampleSchema += AssemblageSchema.copy()
+FloraRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
 finalizeMarsSchema(FloraRefSampleSchema)
 
 class MarsFloraReferenceSample(MarsCollectionObject):

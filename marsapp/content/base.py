@@ -15,21 +15,24 @@ from schemata import MarsCollectionObjectSchema
 from Products.CMFCore.utils import getToolByName
 
 class MarsMixin(object):
+    def mars_relative_path(self, cctx):
+        purl = getToolByName(self, 'portal_url')
+        plone = purl.getPortalObject()
+        plonep = len('/'.join(plone.getPhysicalPath()))
+        return '/'.join(cctx.getPhysicalPath())[plonep:] 
+
     def getMarsSite(self):
+        if self.portal_type == 'Site':
+            return self.mars_relative_path(self)
         return '/collections/sites'
 
     def getMarsCol(self, files=False):
         ctx = self.aq_inner
-        purl = getToolByName(self, 'portal_url')
-        plone = purl.getPortalObject()
-        plonep = len('/'.join(plone.getPhysicalPath()))
         oldctx = ctx
-        def relative_path(cctx):
-            return '/'.join(cctx.getPhysicalPath())[plonep:]
         try:
             while (
                 (ctx.portal_type not in ['Plone Site', 'Collection'])
-                and (relative_path(ctx) not in ['/collections', '/collections/collections'])
+                and (self.mars_relative_path(ctx) not in ['/collections', '/collections/collections'])
             ):
                 oldctx = ctx
                 ctx = ctx.aq_parent
@@ -39,7 +42,7 @@ class MarsMixin(object):
                 ctx = ctx['files']
         except Exception, e:
             ctx = oldctx
-        return relative_path(ctx)
+        return self.mars_relative_path(ctx)
 
     def getMarsColFiles(self):
         return self.getMarsCol(files=True)  

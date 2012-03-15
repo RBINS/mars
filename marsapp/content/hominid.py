@@ -61,6 +61,7 @@ HominidRemainSchema += ChronologyDatingSchema.copy()
 HominidRemainSchema += TaphonomySchema.copy()
 HominidRemainSchema += DiscoverySchema.copy()
 HominidRemainSchema += AdministrationSchema.copy()
+HominidRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 finalizeMarsSchema(HominidRemainSchema)
 
 class MarsHominidRemain(MarsCollectionObject):
@@ -82,6 +83,7 @@ HominidIndividualSchema += ChronologyDatingSchema.copy()
 HominidIndividualSchema += TaphonomySchema.copy()
 HominidIndividualSchema += DiscoverySchema.copy()
 HominidIndividualSchema += AdministrationSchema.copy()
+HominidIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 finalizeMarsSchema(HominidIndividualSchema)
 
 class MarsHominidIndividual(MarsCollectionObject):
@@ -103,6 +105,7 @@ HominidAssemblageSchema += ChronologyDatingSchema.copy()
 HominidAssemblageSchema += TaphonomySchema.copy()
 HominidAssemblageSchema += DiscoverySchema.copy()
 HominidAssemblageSchema += AdministrationSchema.copy()
+HominidAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 finalizeMarsSchema(HominidAssemblageSchema)
 
 class MarsHominidAssemblage(MarsCollectionObject):
@@ -120,6 +123,7 @@ HominidRefSampleSchema += ChronologySchema.copy()
 HominidRefSampleSchema += AdministrationSchema.copy()
 HominidRefSampleSchema += AssemblageSchema.copy()
 HominidRefSampleSchema += HominidBiologySchema
+HominidRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 finalizeMarsSchema(HominidRefSampleSchema)
 
 class MarsHominidReferenceSample(MarsCollectionObject):
