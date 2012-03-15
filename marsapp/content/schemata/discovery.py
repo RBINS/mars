@@ -98,7 +98,7 @@ DiscoverySchema = Schema((
             description='Select the stratigraphical layer in which this item was found.',
             description_msgid='help_stratigraphical_layer',
             domain='mars',
-            startup_directory='/collections/sites',
+            startup_directory_method = 'getMarsSite',
             ),
         schemata='discovery',
         ),
