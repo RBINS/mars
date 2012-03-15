@@ -1,4 +1,8 @@
 <?xml version="1.0"?>
 <object>
 
+   <hidden manager="plone.belowcontentbody" skinname="mars.skin">
+      <viewlet name="plone.belowcontentbody.relateditems" />
+  </hidden> 
+
 </object>
