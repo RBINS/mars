@@ -52,5 +52,4 @@ class SchemataViewlet(ViewletBase):
             schemata = fieldset['name']
             fieldset['fields'] = self.getSchemataFields(schemata,
                                                         remove_empty)
-        import pdb;pdb.set_trace()  ## Breakpoint ##
         return fieldsets
