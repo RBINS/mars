@@ -26,8 +26,7 @@
 
       <div tal:replace="structure provider:plone.abovecontentbody" />
 
-      <div div="schemata-view-schemata-list"
-           class="field">
+      <div id="schemata-view-schemata-list" class="field">
       <tal:schemata repeat="fieldset view/getCollapsibleSchemata">
         <dl class="collapsible inline collapsedOnLoad"
             tal:define="set_id fieldset/name;
