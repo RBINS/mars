@@ -30,6 +30,11 @@ def getTitledPath(obj, startup_folder_url, path=None):
 class MarscatField(ReferenceField):
     """ Mars Categories System Field
     """
+    def __init__(self, *args, **kwargs):
+        if not kwargs['relationship']:
+            kwargs['relationship'] = 'hasMarsCat%s' % args[0]
+        ReferenceField.__init__(self, *args, **kwargs)
+
     _properties = ReferenceField._properties.copy()
     _properties.update({
         'type' : 'marscat',
