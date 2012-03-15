@@ -30,13 +30,20 @@
       permission="zope2.Public"
       for="*"
       class=".view.MarscatReferenceBrowserPopup"
-    /> 
+    />
+  <browser:page
+      name="marscat_utils"
+      allowed_interface=".view.IMarscatUtils"
+      permission="zope2.Public"
+      for="*"
+      class=".view.MarscatUtils"
+    />
   <adapter
       for="Products.Five.BrowserView"
       factory=".view.default_popup_template"
       name="mars_popup"
       provides="zope.formlib.namedtemplate.INamedTemplate"
-      /> 
+      />
 
     <subscriber
         for=".category.IMarsCategory

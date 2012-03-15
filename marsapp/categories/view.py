@@ -3,9 +3,9 @@ from zope.component import getMultiAdapter, queryMultiAdapter
 from Acquisition import aq_inner
 from archetypes.referencebrowserwidget import utils
 from plone.app.form._named import named_template_adapter
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile 
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
-default_popup_template=named_template_adapter(ViewPageTemplateFile('mars_popup.pt')) 
+default_popup_template=named_template_adapter(ViewPageTemplateFile('mars_popup.pt'))
 class MarscatReferenceBrowserPopup(ReferenceBrowserPopup):
     """ View class of Popup window """
 
@@ -37,6 +37,26 @@ class MarscatReferenceBrowserPopup(ReferenceBrowserPopup):
             c['absolute_url'] = self.genRefBrowserUrl(c['absolute_url'])
             newcrumbs.append(c)
 
-        return newcrumbs 
+        return newcrumbs
 
-# vim:set et sts=4 ts=4 tw=80:
+
+from Products.Five.browser import BrowserView
+from zope.interface import Interface
+
+class IMarscatUtils(Interface):
+    def get_obj_crumb(obj):
+        """."""
+
+class MarscatUtils(BrowserView):
+    def get_obj_crumb(self, obj):
+        """."""
+        item = obj.aq_inner
+        crumb = []
+        while ((item.portal_type not in ['Plone Site'])
+               and (item.getId() not in 'marscategories')):
+            crumb.append(item.Title() or item.getId())
+            item = item.aq_parent
+        crumb.reverse()
+        return ' > '.join(crumb)
+
+# vim:set et sts=4 ts=4 =80:
