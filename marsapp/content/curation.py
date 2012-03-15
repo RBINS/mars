@@ -99,7 +99,7 @@ MarsCurationSchema['title'].widget.label = "Name"
 MarsCurationSchema['title'].widget.label_msgid = "label_name"
 finalizeATCTSchema(MarsCurationSchema)
 
-class MarsCuration(ATCTContent):
+class MarsCuration(ATCTContent, MarsMixin):
     """Curation object: represents a small cut in the curation history of a
     collection, a collection object, a reference sample or a multimedia file.
     It has data about 'what' happened when 'who' curated this at 'that' date.

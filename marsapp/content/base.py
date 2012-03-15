@@ -10,10 +10,41 @@ from interfaces import IMarsCollectionObject
 from interfaces import ISchemataViewletEnabled
 
 from schemata import MarsCollectionObjectSchema
+#from mixin import MarsMixin
 
 from Products.CMFCore.utils import getToolByName
 
-class MarsCollectionObject(OrderedBaseFolder, ATDocument):
+class MarsMixin(object):
+    def getMarsSite(self):
+        return '/collections/sites'
+
+    def getMarsCol(self, files=False):
+        ctx = self.aq_inner
+        purl = getToolByName(self, 'portal_url')
+        plone = purl.getPortalObject()
+        plonep = len('/'.join(plone.getPhysicalPath()))
+        oldctx = ctx
+        def relative_path(cctx):
+            return '/'.join(cctx.getPhysicalPath())[plonep:]
+        try:
+            while (
+                (ctx.portal_type not in ['Plone Site', 'Collection'])
+                and (relative_path(ctx) not in ['/collections', '/collections/collections'])
+            ):
+                oldctx = ctx
+                ctx = ctx.aq_parent
+            if (files
+                and (ctx.portal_type == 'Collection')
+                and ('files' in ctx.objectIds())):
+                ctx = ctx['files']
+        except Exception, e:
+            ctx = oldctx
+        return relative_path(ctx)
+
+    def getMarsColFiles(self):
+        return self.getMarsCol(files=True)  
+
+class MarsCollectionObject(OrderedBaseFolder, ATDocument, MarsMixin):
     """Base class for collection objects"""
 
     implements(ISchemataViewletEnabled,
@@ -34,26 +65,5 @@ class MarsCollectionObject(OrderedBaseFolder, ATDocument):
 
     # enable FTP/WebDAV and friends
     PUT = ATDocument.PUT
-
-    def getMarsCol(self):
-        ctx = self.aq_inner
-        purl = getToolByName(self, 'portal_url')
-        plone = purl.getPortalObject()
-        plonep = len('/'.join(plone.getPhysicalPath()))
-        oldctx = ctx
-        def relative_path(cctx):
-            return '/'.join(cctx.getPhysicalPath())[plonep:]
-        try:
-            while (
-                (ctx.portal_type not in ['Plone Site', 'Collection'])
-                and (relative_path(ctx) not in ['/collections', '/collections/collections'])
-            ):
-                oldctx = ctx
-                ctx = ctx.aq_parent
-        except Exception, e:
-            ctx = oldctx
-        return relative_path(ctx)
-
-
 
 

@@ -50,6 +50,9 @@ ArtefactSchema = Schema((
 ArtefactRemainSchema = MarsCollectionObjectSchema.copy()
 ArtefactRemainSchema += PreservationSchema.copy()
 ArtefactRemainSchema += CollectionObjectBaseSchema.copy()
+ArtefactRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
+ArtefactRemainSchema['text'].widget.visible['view'] =  ArtefactRemainSchema['text'].widget.visible['edit'] = 'visible'
+
 
 ArtefactRemainSchema += Schema((
 
@@ -97,6 +100,7 @@ ArtefactIndividualSchema += AssemblageSchema.copy()
 ArtefactIndividualSchema += ChronologySchema.copy()
 ArtefactIndividualSchema += ChronologyDatingSchema.copy()
 ArtefactIndividualSchema += TaphonomySchema.copy()
+ArtefactIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
 ArtefactIndividualSchema += TechnologySchema.copy()
 ArtefactIndividualSchema += DiscoverySchema.copy()
 ArtefactIndividualSchema += AdministrationSchema.copy()
@@ -120,6 +124,7 @@ ArtefactAssemblageSchema += ChronologyDatingSchema.copy()
 ArtefactAssemblageSchema += TaphonomySchema.copy()
 ArtefactAssemblageSchema += TechnologySchema.copy()
 ArtefactAssemblageSchema += DiscoverySchema.copy()
+ArtefactAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
 ArtefactAssemblageSchema += AdministrationSchema.copy()
 finalizeMarsSchema(ArtefactAssemblageSchema, igNumbers=True,
                     delFields=('igYear',), multivalued=('remainType',))
@@ -136,6 +141,7 @@ RefSampleSchema = MarsCollectionObjectSchema.copy()
 RefSampleSchema += CollectionObjectBaseSchema.copy()
 RefSampleSchema += ChronologySchema.copy()
 RefSampleSchema += AdministrationSchema.copy()
+RefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
 RefSampleSchema += AssemblageSchema.copy()
 finalizeMarsSchema(RefSampleSchema)
 
@@ -153,6 +159,7 @@ ArtefactRefSampleSchema += ArtefactSchema.copy()
 ArtefactRefSampleSchema += ChronologySchema.copy()
 ArtefactRefSampleSchema += AdministrationSchema.copy()
 ArtefactRefSampleSchema += AssemblageSchema.copy()
+ArtefactRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
 ArtefactRefSampleSchema += TechnologySchema.copy()
 finalizeMarsSchema(ArtefactRefSampleSchema)
 

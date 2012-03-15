@@ -37,7 +37,7 @@ from Products.ATContentTypes.atct import ATBTreeFolder
 from Products.ATContentTypes.atct import ATFile
 from Products.ATContentTypes.atct import ATImage
 
-from base import MarsCollectionObject
+from base import MarsCollectionObject, MarsMixin
 
 from interfaces import IFilesAndImagesContainer
 

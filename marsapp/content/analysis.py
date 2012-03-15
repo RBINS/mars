@@ -261,7 +261,7 @@ AnalysisSchema += Schema((
 
 finalizeMarsSchema(AnalysisSchema)
 
-class MarsAnalysis(ATCTContent):
+class MarsAnalysis(ATCTContent, MarsMixin):
     """Analysis"""
     schema = AnalysisSchema
 

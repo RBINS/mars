@@ -148,7 +148,7 @@ DiscoverySchema = Schema((
             description='Select the excavation where it was excavated from.',
             description_msgid='help_discovery_excavation',
             domain='mars',
-            startup_directory='/collections/sites',
+            startup_directory_method = 'getMarsSite',
             ),
         schemata='discovery',
         ),

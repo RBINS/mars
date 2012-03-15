@@ -79,10 +79,11 @@ SiteSchema += Schema((
 SiteSchema += LocationSchema.copy()
 SiteSchema += ChronologySchema.copy()
 SiteSchema += DiscoverySchema.copy()
+SiteSchema['discoverySite'].widget.visible = {'edit': 'hidden', 'view': 'invisible'}
 finalizeMarsSchema(SiteSchema, folderish=True,
                     delFields=('stratigraphicalLayer','discoveryPlace'))
 
-class MarsSite(ATFolder):
+class MarsSite(ATFolder, MarsMixin):
     """Archeological Site"""
     implements(
         (IFilesAndImagesContainer,)+tuple([a for a in implementedBy(ATFolder)])

@@ -62,7 +62,7 @@ CollectionSchema += Schema((
 CollectionSchema += AdministrationSchema.copy()
 finalizeMarsSchema(CollectionSchema, folderish=True, igNumbers=True)
 
-class MarsCollection(ATBTreeFolder):
+class MarsCollection(ATBTreeFolder, MarsMixin):
     """Collection"""
     implements(
         (IFilesAndImagesContainer,)+tuple([a for a in implementedBy(ATFolder)])

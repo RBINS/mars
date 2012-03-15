@@ -94,7 +94,7 @@ StratigraphySchema += Schema((
 StratigraphySchema += InsiteLocationSchema.copy()
 finalizeMarsSchema(StratigraphySchema, folderish=True)
 
-class MarsStratigraphy(ATFolder):
+class MarsStratigraphy(ATFolder, MarsMixin):
     """Stratigraphy"""
     schema = StratigraphySchema
 

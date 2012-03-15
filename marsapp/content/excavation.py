@@ -138,7 +138,7 @@ ExcavationSchema += Schema((
 
 finalizeMarsSchema(ExcavationSchema)
 
-class MarsExcavation(ATFolder):
+class MarsExcavation(ATFolder, MarsMixin):
     """Excavation"""
     schema = ExcavationSchema
 

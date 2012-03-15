@@ -65,8 +65,8 @@ LocationSchema = Schema((
             description='Pick an (administrative) map (as precise as possible) of the region where this site is located.',
             description_msgid='help_site_administrative_map',
             domain='mars',
-            startup_directory='/litterature/maps/',
-            ),
+            startup_directory='/library/maps',
+                                     ),
         schemata='location',
         ),
 

@@ -175,7 +175,7 @@ MarsInstitutionSchema = Schema((
 MarsInstitutionSchema = HeaderSchema + MarsInstitutionSchema
 finalizeATCTSchema(MarsInstitutionSchema)
 
-class MarsInstitution(ATCTContent):
+class MarsInstitution(ATCTContent, MarsMixin):
     """Institution
     """
 

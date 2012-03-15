@@ -176,7 +176,7 @@ MarsPeopleSchema['title'].widget.visible = {
 MarsPeopleSchema['title'].required = 0
 finalizeATCTSchema(MarsPeopleSchema)
 
-class MarsPeople(ATCTContent):
+class MarsPeople(ATCTContent, MarsMixin):
     """Any kind of people (archeologist discoverer, authors, site members,
     Analysts, Curators, ... This object only contains the basic information on
     these people, all their personall achievements should be found by doing
