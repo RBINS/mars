@@ -10,7 +10,6 @@
 
     <metal:view_macro define-macro="view">
       <tal:define define="
-        marsv nocall:here/marscat_utils;
           image_portal_types field/widget/image_portal_types|string:;
           image_method       field/widget/image_method|string:;
           show_path          field/widget/show_path|nothing;
@@ -34,7 +33,7 @@
           <a href="#"
               tal:attributes="href obj/absolute_url;
                               class python:obj.portal_type.replace(' ', '_')"
-              tal:content="python:marsv.get_obj_crumb(obj)"
+              tal:content="python:obj.Title() or obj.absolute_url(relative=1)"
               >Sole target object's title</a>
 
             <a href="#"
@@ -45,7 +44,7 @@
                tal:content="field/relationship"
                >reference object link</a>
 
-            <tal:if condition="python:False and show_path" i18n:translate="label_directory">
+            <tal:if condition="show_path" i18n:translate="label_directory">
               (Directory: <span i18n:name="directory"
                                  tal:replace="python: obj_path.replace(portal_path + '/', '')"
                                  >directory</span>)
@@ -64,11 +63,11 @@
                 <img tal:condition="python:obj.portal_type in image_portal_types"
                     tal:attributes="src string:${obj/absolute_url}/$image_method" />
                 <a href="#"
-
                     tal:attributes="
                         href obj/absolute_url;
                         class python:obj.portal_type.replace(' ', '_')"
-                        tal:content="python:marsv.get_obj_crumb(obj)"
+                    tal:content="
+                        python:obj.Title() or obj.absolute_url(relative=1)"
                     >Target Title</a>
 
                 <a href="#"
@@ -79,7 +78,7 @@
                     tal:content="field/relationship"
                     >reference object link</a>
 
-                <tal:if condition="python:False and show_path"
+                <tal:if condition="show_path"
                      i18n:translate="label_directory">
                      (Directory: <span i18n:name="directory"
                                         tal:replace="python: obj_path.replace(portal_path + '/', '') "
@@ -109,7 +108,7 @@
           tal:attributes="name string:$fieldName:default:list"
           />
 
-        <tal:single tal:condition="not:multiValued" tal:define="marsv nocall:here/marscat_utils;" >
+      <tal:single tal:condition="not:multiValued" >
         <tal:value tal:condition="value">
           <tal:block tal:define="
               obj python:refs[0];
@@ -126,7 +125,7 @@
                  tal:attributes="src string:${obj/absolute_url}/$image_method"
                  />
 
-            <tal:if condition="python:False and show_path" i18n:translate="label_directory">
+            <tal:if condition="show_path" i18n:translate="label_directory">
                 (Directory: <span i18n:name="directory"
                                   tal:replace="python: obj_path.replace(portal_path + '/', '')"
                                   >directory</span>)
@@ -147,8 +146,7 @@
               />
 
       </tal:single>
-      <tal:multi tal:condition="multiValued"
-        tal:define="marsv nocall:here/marscat_utils;">
+      <tal:multi tal:condition="multiValued">
 
         <input type="hidden" value="0"
             tal:attributes="name string:$fieldName-sortable;
@@ -170,7 +168,7 @@
                        tal:attributes="name string:${fieldName}:list;
                                        value python:helper.getUidFromReference(set);"
                        checked="checked" />
-                <tal:block replace="python:marsv.get_obj_crumb(set)" />
+                <tal:block replace="python: show_path and '%s (%s)' % (title, obj_path.replace(portal_path, '')) or title" />
               </label>
 
               <tal:sorting condition="widget/allow_sorting">
@@ -193,7 +191,7 @@
                tal:define="popup_width widget/popup_width|string:500;
                            popup_height widget/popup_height|string:550;"
                tal:attributes="src string:${startup_directory}/marscatrefbrowser_popup?fieldName=${fieldName}&amp;fieldRealName=${field/getName}&amp;at_url=${at_url};
-                           rel string:#${overlay_id}" />
+                           rel string:#${overlay_id}" />            
         <input type="button" class="destructive" value="Clear reference" onclick=""
                i18n:attributes="value label_remove_reference;"
                tal:condition="not:multiValued"
@@ -221,4 +219,4 @@
       <div metal:use-macro="here/widgets/reference/macros/edit"></div>
     </metal:search_macro>
   </body>
-</html>
+</html> 
