@@ -132,24 +132,24 @@
             i18n:translate="you_are_here">You are here:</span>
         <tal:crumbs tal:repeat="crumb view/breadcrumbs">
 
-        <a class="browsesite" tal:condition="not: repeat/crumb/end" 
+        <a class="browsesite" tal:condition="not: repeat/crumb/end"
             tal:attributes="href crumb/absolute_url;
                             rel crumb/Title">
             <span tal:content="string:${crumb/Title}">
               Breadcrumb Title
             </span>
           </a>
-         <a class="browsesite" tal:condition="repeat/crumb/end" 
+         <a class="browsesite" tal:condition="repeat/crumb/end"
             tal:attributes="href crumb/absolute_url;
                             rel crumb/Title">
             <span tal:content="string:${crumb/Title}">
               Breadcrumb Title
             </span>
-          </a>                       
+          </a>
           <a class="browsesite" tal:condition="repeat/crumb/end"
             tal:attributes="href crumb/edit_url;
                             rel crumb/Title">
-                            <img src="++resource++marsapp.categories.icons/categorytree_icon.gif" 
+                            <img src="++resource++marsapp.categories.icons/categorytree_icon.gif"
                               alt="Edit/add subcategories"
                               title="Edit/add subcategories"
                               />
@@ -239,4 +239,4 @@
 
     </tal:block>
   </body>
-</html> 
+</html>
