@@ -252,6 +252,7 @@ AnalysisSchema += Schema((
             label_msgid='label_keywords_specialised',
             description='Very subject specific keywords.',
             description_msgid='help_keywords_specialised',
+            startup_directory = '/marscategories/analysis-keywords',
             domain='mars',
             ),
         schemata="description",
