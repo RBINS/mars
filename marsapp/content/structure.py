@@ -39,6 +39,12 @@ StructureAssemblageSchema += TaphonomySchema.copy()
 StructureAssemblageSchema += DiscoverySchema.copy()
 StructureAssemblageSchema += AdministrationSchema.copy()
 StructureAssemblageSchema += InsiteLocationSchema.copy()
+for k in 'remainType', 'discoverySite', 'discoveryPlace':
+    if k in StructureAssemblageSchema:
+        del StructureAssemblageSchema[k]
+if StructureAssemblageSchema.has_key('stratigraphicalLayer'):
+    StructureAssemblageSchema.moveField('stratigraphicalLayer', after='discoveryExcavation')
+
 finalizeMarsSchema(StructureAssemblageSchema, igNumbers=True)
 
 class MarsStructureAssemblage(MarsCollectionObject):
