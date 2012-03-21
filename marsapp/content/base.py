@@ -22,7 +22,7 @@ class MarsMixin(object):
         return '/'.join(cctx.getPhysicalPath())[plonep:] 
 
     def getMarsSiteOrCol(self, files=False):
-        if self.portal_type == 'Site':
+        if (self.portal_type == 'Site') and not files:
             return self.mars_relative_path(self)
         ctx = self.aq_inner
         oldctx = ctx
@@ -40,7 +40,7 @@ class MarsMixin(object):
                 oldctx = ctx
                 ctx = ctx.aq_parent
             if (files
-                and (ctx.portal_type == 'Collection')
+                and (ctx.portal_type in ['Site', 'Collection'])
                 and ('files' in ctx.objectIds())):
                 ctx = ctx['files']
         except Exception, e:
