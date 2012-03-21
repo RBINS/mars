@@ -62,7 +62,7 @@ HominidRemainSchema += TaphonomySchema.copy()
 HominidRemainSchema += DiscoverySchema.copy()
 HominidRemainSchema += AdministrationSchema.copy()
 HominidRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
-finalizeMarsSchema(HominidRemainSchema)
+finalizeMarsSchema(HominidRemainSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES)
 
 class MarsHominidRemain(MarsCollectionObject):
     """Hominid Remain"""
@@ -84,7 +84,7 @@ HominidIndividualSchema += TaphonomySchema.copy()
 HominidIndividualSchema += DiscoverySchema.copy()
 HominidIndividualSchema += AdministrationSchema.copy()
 HominidIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
-finalizeMarsSchema(HominidIndividualSchema)
+finalizeMarsSchema(HominidIndividualSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES)
 
 class MarsHominidIndividual(MarsCollectionObject):
     """Hominid Individual"""
@@ -106,7 +106,7 @@ HominidAssemblageSchema += TaphonomySchema.copy()
 HominidAssemblageSchema += DiscoverySchema.copy()
 HominidAssemblageSchema += AdministrationSchema.copy()
 HominidAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
-finalizeMarsSchema(HominidAssemblageSchema)
+finalizeMarsSchema(HominidAssemblageSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES, igNumbers=True)
 
 class MarsHominidAssemblage(MarsCollectionObject):
     """Artefact Assemblage"""
@@ -124,7 +124,7 @@ HominidRefSampleSchema += AdministrationSchema.copy()
 HominidRefSampleSchema += AssemblageSchema.copy()
 HominidRefSampleSchema += HominidBiologySchema
 HominidRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
-finalizeMarsSchema(HominidRefSampleSchema)
+finalizeMarsSchema(HominidRefSampleSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES, igNumbers=True)
 
 class MarsHominidReferenceSample(MarsCollectionObject):
     """Hominid Reference Sample"""

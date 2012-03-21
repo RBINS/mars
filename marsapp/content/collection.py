@@ -65,7 +65,9 @@ finalizeMarsSchema(CollectionSchema, folderish=True, igNumbers=True)
 class MarsCollection(ATBTreeFolder, MarsMixin):
     """Collection"""
     implements(
-        (IFilesAndImagesContainer,)+tuple([a for a in implementedBy(ATFolder)])
+        (IMarsCollection,
+         IFilesAndImagesContainer,
+        )+tuple([a for a in implementedBy(ATFolder)])
     ) 
     schema = CollectionSchema
 

@@ -22,7 +22,8 @@ def create_files_and_images_folders(obj, event):
                 subf.reindexObject()
                 notify(ObjectInitializedEvent(subf))
                 rs = wf_tool.getInfoFor(subf, 'review_state', '')
-                subf.setExcludeFromNav(True)
+                if not obj.portal_type in ['Site']:
+                    subf.setExcludeFromNav(True)
                 if folder == 'files':
                     subf.setLayout("folder_tabular_view")
                 if folder == 'images':

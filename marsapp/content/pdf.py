@@ -43,7 +43,7 @@ from Products.ATContentTypes.content.schemata import finalizeATCTSchema
 #from Products.ATContentTypes.content.base import updateActions
 #from Products.ATContentTypes.content.base import ATCTFileContent
 
-from archetypes.referencebrowserwidget.widget import ReferenceBrowserWidget
+from marsapp.categories.widget import ReferenceBrowserWidget
 
 #from Products.ATContentTypes.configuration import zconf
 

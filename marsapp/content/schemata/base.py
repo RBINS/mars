@@ -24,13 +24,15 @@ __author__  = 'David Convent <david.convent@naturalsciences.be>'
 __docformat__ = 'restructuredtext'
 
 
+import re
+
 try:
   from Products.LinguaPlone.public import *
 except ImportError:
   # No multilingual support
   from Products.Archetypes.public import *
 
-from archetypes.referencebrowserwidget.widget import ReferenceBrowserWidget
+from marsapp.categories.widget import ReferenceBrowserWidget
 
 from Products.ATContentTypes.content.schemata import ATContentTypeSchema
 from Products.ATContentTypes.content.folder import ATFolderSchema
@@ -168,10 +170,15 @@ SEARCHABLE_FIELDS = (
     'repositoryConditions',
     )
 
-def finalizeMarsSchema(schema, folderish=False, moveDiscussion=True,
-                               addBodyText=True, igNumbers=False,
-                               delFields=(), multivalued=(),
-                               ):
+def finalizeMarsSchema(schema,
+                       folderish=False,
+                       moveDiscussion=True,
+                       addBodyText=True,
+                       igNumbers=False,
+                       delFields=(),
+                       multivalued=(),
+                       remain_types = None,
+                      ):
     """Finalizes a Mars type schema to alter some fields
     """
 
@@ -214,6 +221,8 @@ def finalizeMarsSchema(schema, folderish=False, moveDiscussion=True,
         schema.changeSchemataForField('displayAttachments', 'attachments')
     if schema.has_key('imageCaption'):
         schema.changeSchemataForField('imageCaption', 'attachments')
+    if remain_types and ('components' in schema):
+        schema['components'].allowed_types = remain_types
 
     finalizeATCTSchema(schema, folderish, moveDiscussion)
 
@@ -223,6 +232,10 @@ def finalizeMarsSchema(schema, folderish=False, moveDiscussion=True,
         schema.moveField('tableContents', after='presentation')
     if schema.has_key('relatedItems'):
         schema['relatedItems'].widget.visible['edit'] = 'visible'
+    if (schema.has_key('datingAssociation')
+        and schema.has_key('absoluteDatings')):
+        schema.moveField('absoluteDatings', after='datingAssociation')
+
     for fieldname in SEARCHABLE_FIELDS:
         if schema.has_key(fieldname) \
         and bool(schema[fieldname].searchable) is not True:

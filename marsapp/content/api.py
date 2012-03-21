@@ -25,6 +25,8 @@ __docformat__ = 'restructuredtext'
 
 
 from zope.interface import implementedBy, implements
+
+from zope import interface, component
 from AccessControl import ClassSecurityInfo
 
 from Products.Archetypes.public import registerType as _rt
@@ -39,7 +41,7 @@ from Products.ATContentTypes.atct import ATImage
 
 from base import MarsCollectionObject, MarsMixin
 
-from interfaces import IFilesAndImagesContainer
+from interfaces import IFilesAndImagesContainer, IMarsCollection
 
 registerATCT = _rat
 

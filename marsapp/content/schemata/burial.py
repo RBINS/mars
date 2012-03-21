@@ -31,6 +31,7 @@ BurialSchema = Schema((
     StringField('burial',
         required=False,
         searchable=False,
+                default="undetermined",
         vocabulary=default_burial,
         widget=SelectionWidget(label='Burial/Sepulcral evidence',
             label_msgid='label_burial',

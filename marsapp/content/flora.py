@@ -54,10 +54,11 @@ FloraRemainSchema += TaphonomySchema.copy()
 FloraRemainSchema += DiscoverySchema.copy()
 FloraRemainSchema += AdministrationSchema.copy()
 FloraRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
-finalizeMarsSchema(FloraRemainSchema,
+finalizeMarsSchema(FloraRemainSchema, igNumbers=True,
                    delFields=('pathology',
                               'pathologyDetermination',
-                              'activityMarkers'))
+                              'discoverySite',
+                              'activityMarkers'), remain_types=FLORA_TYPES)
 
 class MarsFloraRemain(MarsCollectionObject):
     """Flora Remain"""
@@ -78,11 +79,12 @@ FloraIndividualSchema += TaphonomySchema.copy()
 FloraIndividualSchema += DiscoverySchema.copy()
 FloraIndividualSchema += AdministrationSchema.copy()
 FloraIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
-finalizeMarsSchema(FloraIndividualSchema,
+finalizeMarsSchema(FloraIndividualSchema, igNumbers=True,
                    delFields=('pathology',
                               'pathologyDetermination',
+                              'discoverySite',
                               'activityMarkers',
-                              ))
+                              ), remain_types=FLORA_TYPES)
 
 class MarsFloraIndividual(MarsCollectionObject):
     """Flora Individual"""
@@ -103,11 +105,12 @@ FloraAssemblageSchema += TaphonomySchema.copy()
 FloraAssemblageSchema += DiscoverySchema.copy()
 FloraAssemblageSchema += AdministrationSchema.copy()
 FloraAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
-finalizeMarsSchema(FloraIndividualSchema,
+finalizeMarsSchema(FloraIndividualSchema, igNumbers=True,
                    delFields=('pathology',
                               'pathologyDetermination',
+                              'discoverySite',
                               'activityMarkers',
-                              ))
+                              ), remain_types=FLORA_TYPES)
 
 class MarsFloraAssemblage(MarsCollectionObject):
     """Artefact Assemblage"""
@@ -123,7 +126,7 @@ FloraRefSampleSchema += ChronologySchema.copy()
 FloraRefSampleSchema += AdministrationSchema.copy()
 FloraRefSampleSchema += AssemblageSchema.copy()
 FloraRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
-finalizeMarsSchema(FloraRefSampleSchema)
+finalizeMarsSchema(FloraRefSampleSchema, delFields=['discoverySite'], remain_types=FLORA_TYPES, igNumbers=True)
 
 class MarsFloraReferenceSample(MarsCollectionObject):
     """Flora Reference Sample"""

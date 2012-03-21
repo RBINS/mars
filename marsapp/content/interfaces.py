@@ -15,3 +15,6 @@ class ISchemataViewletEnabled(Interface):
 
 class IFilesAndImagesContainer(Interface):
     """Marker interface for folders and images container object"""
+
+class IMarsCollection(Interface):
+    """Marker for mars collections"""

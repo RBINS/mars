@@ -36,7 +36,7 @@ FOLDER_TYPES = ('Folder', 'Large Plone Folder')
 
 FILE_AND_FOLDER_TYPES = FILE_TYPES + FOLDER_TYPES
 
-IMAGE_FILE_AND_FOLDER_TYPES = IMAGE_FILE_TYPES + FOLDER_TYPES
+IMAGE_FILE_AND_FOLDER_TYPES = IMAGE_FILE_TYPES + FILE_AND_FOLDER_TYPES
 
 PEOPLE = ('People',)
 
@@ -47,19 +47,13 @@ STRATIGRAPHICAL_LAYER = ('Stratigraphical Layer',)
 DISCOVERY_PLACES = ('Site', 'Excavation', 'Stratigraphy',
                     'Stratigraphical Layer', 'Structure Assemblage')
 
-ASSEMBLAGE_COMPONENTS = ('Artefact', 'Hominid Remain',
-                         'Fauna remain', 'Flora remain')
+ASSEMBLAGE_COMPONENTS = ('Artefact', 'Hominid Remain', 'Fauna remain', 'Flora remain')
 
-REFERENCE_SAMPLES = (
-    'Reference Sample', 
-    'EthnoArchaeologyReferenceSample', #XXX
-    'Fauna Reference Sample', 'Flora Reference Sample',
-    'Hominid Reference Sample',
-    'Hominid Remain', 'Hominid Individual',  'Hominid Assemblage',
-    'Flora Remain', 'Flora Individual', 'Flora Assemblage',
-    'Fauna Remain', 'Fauna Individual', 'Fauna Assemblage',
-    'Artefact', 'Artefact Individual', 'Artefact Assemblage',
-    )
+ARTEFACTS_TYPES = ['Artefact Reference Sample', 'Reference Sample', 'Artefact', 'Artefact Individual', 'Artefact Assemblage', 'EthnoArchaeologyReferenceSample', ]
+HOMINIDS_TYPES = ['Hominid Reference Sample', 'Hominid Remain', 'Hominid Individual',  'Hominid Assemblage',]
+FLORA_TYPES = ['Flora Reference Sample', 'Fauna Remain', 'Fauna Individual', 'Fauna Assemblage', ]
+FAUNA_TYPES = ['Fauna Reference Sample', 'Flora Remain', 'Flora Individual', 'Flora Assemblage', ]
+REFERENCE_SAMPLES = ARTEFACTS_TYPES + HOMINIDS_TYPES + FLORA_TYPES + FAUNA_TYPES
 
 # Real vocabs (display lists now):
 

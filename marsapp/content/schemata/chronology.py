@@ -62,6 +62,21 @@ ChronologySchema = Schema((
         schemata='chronology',
         ),
 
+    ReferenceField('absoluteDatings',
+        required=False,
+        searchable=False,
+        multiValued=True,
+        relationship='isAbsoluteDating',
+        allowed_types=("Analysis Absolute Dating"),
+        widget=ReferenceBrowserWidget(label='Absolute dating analyse(s)',
+            label_msgid='label_absolute_datings',
+            description='Select Absolute dating analyse(s).',
+            description_msgid='help_absolute_datings',
+            startup_directory_method="getMarsSiteOrCol",
+            domain='mars',
+            ),
+        schemata='chronology',
+        ),  
     ))
 
 ChronologyDatingSchema = Schema((
@@ -92,6 +107,8 @@ ChronologyDatingSchema = Schema((
             ),
         schemata='chronology',
         ),
+
+
     ))
 
 StratigraphyChronologySchema = Schema((

@@ -31,16 +31,33 @@ from schemata import *
 StratigraphySchema = MarsFolderSchema.copy()
 StratigraphySchema += Schema((
 
-    StringField('substratum',  # was 'strat_substratum'
+    #StringField('substratum',  # was 'strat_substratum'
+    #    required=False,
+    #    searchable=True,
+    #    widget=StringWidget(label='Substratum',
+    #        label_msgid='label_substratum',
+    #        description="Substratum name?/description?",
+    #        description_msgid='help_substratum',
+    #        domain='mars',
+    #        ),
+    #    ),
+
+    MarscatField('substratum',
         required=False,
-        searchable=True,
-        widget=StringWidget(label='Substratum',
+        searchable=False,
+        multiValued=True,
+        relationship='composedBy',
+        widget=MarscatWidget(label='Substratum',
             label_msgid='label_substratum',
             description="Substratum name?/description?",
             description_msgid='help_substratum',
             domain='mars',
+            startup_directory='/marscategories/substratum',
             ),
         ),
+
+
+
 
     ReferenceField('stratigraphyLayersComposition',
         multiValued=True,
@@ -137,6 +154,20 @@ StratigraphicalLayerSchema += Schema((
             ),
         schemata='description',
         ),
+    ReferenceField('featuresDistributionFile',
+        required=False,
+        searchable=False,
+        relationship='hasFeaturesDistributionFile',
+        allowed_types=FILE_TYPES,
+        widget=ReferenceBrowserWidget(label='Features Distribution file',
+            label_msgid='label_features_distribution_file',
+            description='Upload a file for features distributions.',
+            description_msgid='help_features_distribution_file',
+            startup_directory_method='getMarsSite',
+            domain='mars',
+            ),
+        schemata='description',
+        ),   
 
     MarscatField('chronologies',
         required=False,
@@ -174,7 +205,7 @@ StratigraphicalLayerSchema += Schema((
 
 finalizeMarsSchema(StratigraphicalLayerSchema)
 
-class MarsStratigraphicalLayer(ATFolder):
+class MarsStratigraphicalLayer(ATFolder, MarsMixin):
     """Stratigraphical Layer"""
     schema = StratigraphicalLayerSchema
 

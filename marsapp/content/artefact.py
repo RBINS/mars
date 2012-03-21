@@ -64,7 +64,7 @@ ArtefactRemainSchema += Schema((
         default_output_type='text/x-html-safe',
         allowable_content_types = ('text/plain',
                                   'text/structured',
-                                  'text/html',),      
+                                  'text/html',),
         widget=RichWidget(label='Subtype',
             label_msgid='label_archeoligical_subtype',
             description='Detailed Typological identification or precise types if it is a composite object.',
@@ -83,7 +83,7 @@ ArtefactRemainSchema += TaphonomySchema.copy()
 ArtefactRemainSchema += TechnologySchema.copy()
 ArtefactRemainSchema += DiscoverySchema.copy()
 ArtefactRemainSchema += AdministrationSchema.copy()
-finalizeMarsSchema(ArtefactRemainSchema, multivalued=('remainType',))
+finalizeMarsSchema(ArtefactRemainSchema,multivalued=('remainType',), delFields=['discoverySite'], remain_types=ARTEFACTS_TYPES)
 
 class MarsArtefact(MarsCollectionObject):
     """Artefact Remain"""
@@ -105,7 +105,7 @@ ArtefactIndividualSchema += TechnologySchema.copy()
 ArtefactIndividualSchema += DiscoverySchema.copy()
 ArtefactIndividualSchema += AdministrationSchema.copy()
 finalizeMarsSchema(ArtefactIndividualSchema, multivalued=('remainType',),
-                   delFields=('MNI', 'MNIDetermination'))
+                   delFields=('MNI', 'MNIDetermination', 'discoverySite',), remain_types=ARTEFACTS_TYPES)
 
 class MarsArtefactIndividual(MarsCollectionObject):
     """Artefact Individual"""
@@ -127,7 +127,7 @@ ArtefactAssemblageSchema += DiscoverySchema.copy()
 ArtefactAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
 ArtefactAssemblageSchema += AdministrationSchema.copy()
 finalizeMarsSchema(ArtefactAssemblageSchema, igNumbers=True,
-                    delFields=('igYear',), multivalued=('remainType',))
+                    delFields=('igYear','discoverySite',), multivalued=('remainType',), remain_types=ARTEFACTS_TYPES)
 
 class MarsArtefactAssemblage(MarsCollectionObject):
     """Artefact Assemblage"""
@@ -143,7 +143,7 @@ RefSampleSchema += ChronologySchema.copy()
 RefSampleSchema += AdministrationSchema.copy()
 RefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
 RefSampleSchema += AssemblageSchema.copy()
-finalizeMarsSchema(RefSampleSchema)
+finalizeMarsSchema(RefSampleSchema, igNumbers=True, delFields=['discoverySite'], remain_types=ARTEFACTS_TYPES)
 
 class MarsReferenceSample(MarsCollectionObject):
     """Artefact Reference Sample"""
@@ -161,7 +161,7 @@ ArtefactRefSampleSchema += AdministrationSchema.copy()
 ArtefactRefSampleSchema += AssemblageSchema.copy()
 ArtefactRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
 ArtefactRefSampleSchema += TechnologySchema.copy()
-finalizeMarsSchema(ArtefactRefSampleSchema)
+finalizeMarsSchema(ArtefactRefSampleSchema, delFields=['discoverySite'], remain_types=ARTEFACTS_TYPES, igNumbers=True)
 
 class MarsArtefactReferenceSample(MarsCollectionObject):
     """Artefact Reference Sample"""

@@ -79,8 +79,17 @@ SiteSchema += Schema((
 SiteSchema += LocationSchema.copy()
 SiteSchema += ChronologySchema.copy()
 SiteSchema += DiscoverySchema.copy()
+
+SiteSchema['discoveryExcavation'].widget.visible = SiteSchema['excavationCoordinates'].widget.visible = {
+    'view': 'invisible',
+    } 
+
+
 finalizeMarsSchema(SiteSchema, folderish=True,
-                   delFields=('stratigraphicalLayer','discoveryPlace', 'discoverySite'))
+                   delFields=('stratigraphicalLayer',
+                   'discoveryPlace', 'discoverySite',
+                   'discoveryExcavation', 
+                   'excavationCoordinates'))
 
 class MarsSite(ATFolder, MarsMixin):
     """Archeological Site"""

@@ -21,29 +21,21 @@ class MarsMixin(object):
         plonep = len('/'.join(plone.getPhysicalPath()))
         return '/'.join(cctx.getPhysicalPath())[plonep:] 
 
-    def getMarsSite(self):
+    def getMarsSiteOrCol(self, files=False):
         if self.portal_type == 'Site':
             return self.mars_relative_path(self)
         ctx = self.aq_inner
         oldctx = ctx
         try:
             while (
-                (ctx.portal_type not in ['Plone Site', 'Site'])
-                and (self.mars_relative_path(ctx) not in ['/collections', '/collections/sites'])
-            ):
-                oldctx = ctx
-                ctx = ctx.aq_parent
-        except Exception, e:
-            ctx = oldctx
-        return self.mars_relative_path(ctx)
-
-    def getMarsCol(self, files=False):
-        ctx = self.aq_inner
-        oldctx = ctx
-        try:
-            while (
-                (ctx.portal_type not in ['Plone Site', 'Collection'])
-                and (self.mars_relative_path(ctx) not in ['/collections', '/collections/collections'])
+                (ctx.portal_type not in ['Plone Site', 'Site', 'Collection',])
+                and (
+                    self.mars_relative_path(
+                        ctx
+                    ) not in ['/collections', 
+                              '/collections/collections',
+                              '/collections/sites']
+                )
             ):
                 oldctx = ctx
                 ctx = ctx.aq_parent
@@ -53,7 +45,43 @@ class MarsMixin(object):
                 ctx = ctx['files']
         except Exception, e:
             ctx = oldctx
-        return self.mars_relative_path(ctx)
+        return self.mars_relative_path(ctx) 
+
+    def getMarsSite(self):
+        return self.getMarsSiteOrCol()
+        #if self.portal_type == 'Site':
+        #    return self.mars_relative_path(self)
+        #ctx = self.aq_inner
+        #oldctx = ctx
+        #try:
+        #    while (
+        #        (ctx.portal_type not in ['Plone Site', 'Site'])
+        #        and (self.mars_relative_path(ctx) not in ['/collections', '/collections/sites'])
+        #    ):
+        #        oldctx = ctx
+        #        ctx = ctx.aq_parent
+        #except Exception, e:
+        #    ctx = oldctx
+        #return self.mars_relative_path(ctx)
+
+    def getMarsCol(self, files=False):
+        return self.getMarsSiteOrCol(files)
+        #ctx = self.aq_inner
+        #oldctx = ctx
+        #try:
+        #    while (
+        #        (ctx.portal_type not in ['Plone Site', 'Collection'])
+        #        and (self.mars_relative_path(ctx) not in ['/collections', '/collections/collections'])
+        #    ):
+        #        oldctx = ctx
+        #        ctx = ctx.aq_parent
+        #    if (files
+        #        and (ctx.portal_type == 'Collection')
+        #        and ('files' in ctx.objectIds())):
+        #        ctx = ctx['files']
+        #except Exception, e:
+        #    ctx = oldctx
+        #return self.mars_relative_path(ctx)
 
     def getMarsColFiles(self):
         return self.getMarsCol(files=True)  

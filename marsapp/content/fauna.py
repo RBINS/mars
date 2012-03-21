@@ -58,7 +58,7 @@ FaunaRemainSchema += TaphonomySchema.copy()
 FaunaRemainSchema += DiscoverySchema.copy()
 FaunaRemainSchema += AdministrationSchema.copy()
 FaunaRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
-finalizeMarsSchema(FaunaRemainSchema)
+finalizeMarsSchema(FaunaRemainSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES)
 
 class MarsFaunaRemain(MarsCollectionObject):
     """Fauna Remain"""
@@ -80,7 +80,7 @@ FaunaIndividualSchema += TaphonomySchema.copy()
 FaunaIndividualSchema += DiscoverySchema.copy()
 FaunaIndividualSchema += AdministrationSchema.copy()
 FaunaIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
-finalizeMarsSchema(FaunaIndividualSchema)
+finalizeMarsSchema(FaunaIndividualSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES)
 
 class MarsFaunaIndividual(MarsCollectionObject):
     """Fauna Individual"""
@@ -102,7 +102,7 @@ FaunaAssemblageSchema += TaphonomySchema.copy()
 FaunaAssemblageSchema += DiscoverySchema.copy()
 FaunaAssemblageSchema += AdministrationSchema.copy()
 FaunaAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
-finalizeMarsSchema(FaunaAssemblageSchema)
+finalizeMarsSchema(FaunaAssemblageSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES, igNumbers=True)
 
 class MarsFaunaAssemblage(MarsCollectionObject):
     """Fauna Assemblage"""
@@ -120,7 +120,7 @@ FaunaRefSampleSchema += AdministrationSchema.copy()
 FaunaRefSampleSchema += AssemblageSchema.copy()
 FaunaRefSampleSchema += FaunaBiologySchema
 FaunaRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
-finalizeMarsSchema(FaunaRefSampleSchema)
+finalizeMarsSchema(FaunaRefSampleSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES, igNumbers=True)
 
 class MarsFaunaReferenceSample(MarsCollectionObject):
     """Fauna Reference Sample"""
