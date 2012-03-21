@@ -11,8 +11,14 @@ from Products.Archetypes.Registry import registerWidget
 
 from archetypes.referencebrowserwidget.widget import ReferenceBrowserWidget
 
+class ReferenceBrowserWidget(ReferenceBrowserWidget):
+    _properties = ReferenceBrowserWidget._properties.copy()
+    _properties.update({
+        'image_portal_types':['Image',],
+        'image_method':'image_thumb', 
+    })
+
 class MarscatWidget(ReferenceBrowserWidget):
-    show_fullpath = True
     _properties = ReferenceBrowserWidget._properties.copy()
     _properties.update({
         'macro': 'marscats4browser',
