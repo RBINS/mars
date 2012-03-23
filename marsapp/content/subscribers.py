@@ -9,6 +9,7 @@ def create_files_and_images_folders(obj, event):
     log = logging.getLogger('create_files_and_images_folders')
     wf_tool = getToolByName(obj, 'portal_workflow')
     folders = {'images':'Images',
+                'curations': 'Curations',
                'files': 'Files',}
     if obj.portal_type == 'Site':
         folders['curations'] = 'Curations'
