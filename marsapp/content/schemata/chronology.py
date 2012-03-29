@@ -39,7 +39,7 @@ ChronologySchema = Schema((
             description_msgid='help_chronology',
             startup_directory='/marscategories/chronology',
             domain='mars',
-            show_path=True,
+            #show_path=True,
             ),
         schemata='chronology',
         ),
