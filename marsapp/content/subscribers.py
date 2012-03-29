@@ -11,8 +11,8 @@ def create_files_and_images_folders(obj, event):
     folders = {'images':'Images',
                 'curations': 'Curations',
                'files': 'Files',}
-    if obj.portal_type == 'Site':
-        folders['curations'] = 'Curations'
+    #if obj.portal_type == 'Site':
+    #    folders['curations'] = 'Curations'
     try:
         for folder in folders:
             if not folder in obj.objectIds():
