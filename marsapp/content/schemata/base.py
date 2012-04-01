@@ -236,6 +236,13 @@ def finalizeMarsSchema(schema,
         and schema.has_key('absoluteDatings')):
         schema.moveField('absoluteDatings', after='datingAssociation')
 
+    for key in schema.keys():
+        field = schema[key]
+        if hasattr(field, 'required'):
+            field.required = False
+        widget = field.widget
+
+
     for fieldname in SEARCHABLE_FIELDS:
         if schema.has_key(fieldname) \
         and bool(schema[fieldname].searchable) is not True:

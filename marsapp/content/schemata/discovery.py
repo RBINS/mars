@@ -91,6 +91,7 @@ DiscoverySchema = Schema((
         ),
 
     ReferenceField('stratigraphicalLayer',
+        required=False,
         relationship="foundIn",
         allowed_types=STRATIGRAPHICAL_LAYER,
         widget=ReferenceBrowserWidget(label='Stratigraphical Layer',
