@@ -29,7 +29,6 @@
       description="MARS dependencies installation"
       handler="marsapp.policy.setuphandlers.importProducts"
       title="3rd Party Products Installation for MARS">
-    <depends name="plone_various"/>
   </genericsetup:importStep>
   <genericsetup:importStep
       name="mars_cats_creation"
@@ -39,7 +38,6 @@
     <depends name="toolset"/>
     <depends name="typeinfo"/>
     <depends name="rolemap"/>
-    <depends name="plone_various"/>
   </genericsetup:importStep> 
   <genericsetup:importStep
       name="mars_various"
