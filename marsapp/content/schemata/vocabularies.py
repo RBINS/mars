@@ -497,3 +497,41 @@ hominid_age = DisplayList((
         ('juvenile','juvenile (14 - 19y)'),
         ('undetermined','undetermined'),
         ))
+
+
+MarsTypes = [
+    'Analysis Absolute Dating',
+    'Analysis Relative Dating',
+    'Analysis',
+    'Artefact Assemblage',
+    'Artefact Individual',
+    'Artefact Reference Sample',
+    'Artefact',
+    'Categories Container',
+    'Collection',
+    'Curation',
+    'Excavation',
+    'Fauna Assemblage',
+    'Fauna Individual',
+    'Fauna Reference Sample',
+    'Fauna Remain',
+    'Flora Assemblage',
+    'Flora Individual',
+    'Flora Reference Sample',
+    'Flora Remain',
+    'Hominid Assemblage',
+    'Hominid Individual',
+    'Hominid Reference Sample',
+    'Hominid Remain',
+    'InbookReference',
+    'Institution',
+    'Mars Category',
+    'People',
+    'Reference Sample',
+    'Site',
+    'Stratigraphical Layer',
+    'Stratigraphy',
+    'Structure Assemblage',
+]
+
+
