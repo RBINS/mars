@@ -6,5 +6,6 @@
     xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="mars.policy">
   <include package=".v11"/>
+  <include package=".v12"/>
 <!-- vim:set ft=xml: -->
 </configure>
