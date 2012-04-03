@@ -7,5 +7,6 @@
     i18n_domain="mars.policy">
   <include package=".v11"/>
   <include package=".v12"/>
+  <include package=".v13"/>
 <!-- vim:set ft=xml: -->
 </configure>
