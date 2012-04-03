@@ -233,6 +233,8 @@ def finalizeMarsSchema(schema,
     if schema.has_key('relatedItems'):
         schema['relatedItems'].widget.visible['edit'] = 'visible'
         schema['relatedItems'].widget.visible['view'] = 'visible'
+        #schema['relatedItems'].widget.visible['edit'] = 'invisible'
+        schema['relatedItems'].widget.visible['view'] = 'hidden' 
     if (schema.has_key('datingAssociation')
         and schema.has_key('absoluteDatings')):
         schema.moveField('absoluteDatings', after='datingAssociation')
