@@ -76,7 +76,17 @@
       description="description"
       handler="mars.policy.setuphandlers.setupQi">
     <depends name="content"/>
-  </genericsetup:importStep> 
+  </genericsetup:importStep>
   <include package=".migrations"/>
+
+  <!-- hide some Zipfiletranport buttons -->
+ <five:implements
+     class="Products.CMFBibliographyAT.content.folder.BaseBibliographyFolder"
+     interface="collective.zipfiletransport.interfaces.IZipfileNotExportable" />
+ <five:implements
+     class="Products.CMFBibliographyAT.content.folder.BaseBibliographyFolder"
+     interface="collective.zipfiletransport.interfaces.IZipfileNotImportable" /> 
+
+
 <!-- vim:set ft=xml: -->
 </configure>

@@ -8,5 +8,7 @@
   <include package=".v11"/>
   <include package=".v12"/>
   <include package=".v13"/>
+  <include package=".v14"/>
+  <include package=".v15"/>
 <!-- vim:set ft=xml: -->
 </configure>
