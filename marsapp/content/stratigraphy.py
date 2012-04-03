@@ -109,7 +109,7 @@ StratigraphySchema += Schema((
     ))
 
 StratigraphySchema += InsiteLocationSchema.copy()
-finalizeMarsSchema(StratigraphySchema, folderish=True)
+finalizeMarsSchema(StratigraphySchema, folderish=True, delFields=['text'])
 
 class MarsStratigraphy(ATFolder, MarsMixin):
     """Stratigraphy"""
@@ -202,6 +202,7 @@ StratigraphicalLayerSchema += Schema((
         schemata='dating',
         ),
     ))
+
 
 finalizeMarsSchema(StratigraphicalLayerSchema)
 

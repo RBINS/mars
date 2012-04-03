@@ -27,8 +27,9 @@ __docformat__ = 'restructuredtext'
 from api import *
 from config import PROJECTNAME
 from schemata import *
+from Products.ATContentTypes.content.folder import ATFolderSchema
 
-CollectionSchema = MarsBTreeFolderSchema.copy()
+CollectionSchema = ATFolderSchema.copy()
 CollectionSchema += CollectionBaseSchema.copy()
 CollectionSchema += Schema((
 
@@ -62,7 +63,7 @@ CollectionSchema += Schema((
 CollectionSchema += AdministrationSchema.copy()
 finalizeMarsSchema(CollectionSchema, folderish=True, igNumbers=True)
 
-class MarsCollection(ATBTreeFolder, MarsMixin):
+class MarsCollection(ATFolder, MarsMixin):
     """Collection"""
     implements(
         (IMarsCollection,
@@ -73,6 +74,9 @@ class MarsCollection(ATBTreeFolder, MarsMixin):
 
     portal_type = "Collection"
     archetype_name = "Collection"
+
+    def __init__(elf, *args, **kwargs):
+        BaseBTreeFolder.__init__(self, *args, **kwargs)
 
 
 registerATCT(MarsCollection, PROJECTNAME)
