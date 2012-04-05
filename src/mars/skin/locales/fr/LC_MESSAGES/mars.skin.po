@@ -1,5 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
 msgid ""
 msgstr ""
 "Project-Id-Version: mars.skin 1.0\n"
