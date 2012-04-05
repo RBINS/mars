@@ -95,7 +95,9 @@
     <metal:reference_edit
         define-macro="reference_edit"
         tal:define="show_path          field/widget/show_path|nothing;
-                    image_portal_types widget/image_portal_types|string:;
+        image_portal_types widget/image_portal_types|string:;
+                    mv nocall:here/@@marsutils;
+        ploneview nocall:context/@@plone; 
                     image_method       widget/image_method|string:;
                     helper nocall:here/refbrowserhelper;
                     portal_path        helper/getPortalPath;
@@ -153,8 +155,24 @@
                             value python:test(widget.allow_sorting, 1, 0);"
             />
 
-        <div style="float: left"> <!-- don't remove this. it is needed for DOM traversal -->
+            
+          <tal:block
+            tal:define="cat_refs python:mv.related_items(refs);
+            normalizeString nocall:ploneview/normalizeString;"
+            tal:repeat="type cat_refs">
+            <tal:block 
+              tal:define="refs python:cat_refs[type];
+              item_icon           python:ploneview.getIcon(refs[0]);
+              lrel python:len(refs);
+              ldrel python:len(cat_refs); "
+              >
 
+          <div> <!-- don't remove this. it is needed for DOM traversal -->
+          <span tal:attributes="class python:'contenttype-' + normalizeString(type)" 
+            tal:condition="python:ldrel>1">
+                  <img tal:replace="structure item_icon/html_tag" />
+                  <span tal:content="string:${lrel} ${type}"/>
+                </span> 
           <ul class="visualNoMarker"
               tal:attributes="id string:ref_browser_items_${fieldName};"
               tal:condition="refs">
@@ -171,7 +189,7 @@
                 <tal:block replace="python: show_path and '%s (%s)' % (title, obj_path.replace(portal_path, '')) or title" />
               </label>
 
-              <tal:sorting condition="widget/allow_sorting">
+              <tal:sorting condition="nothing|widget/allow_sorting">
                 <a href="" title="Move up"
                     onclick="javascript:refbrowser_moveReferenceUp(this); return false">&#x25b2;</a>
                 <a href="" title="Move down"
@@ -180,7 +198,10 @@
 
             </li>
           </ul>
+          <br>
         </div>
+      </tal:block>
+    </tal:block>
       </tal:multi>
       <div style="clear: both"
           tal:define="
