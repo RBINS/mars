@@ -75,7 +75,7 @@ class MarsCollection(ATFolder, MarsMixin):
     portal_type = "Collection"
     archetype_name = "Collection"
 
-    def __init__(elf, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         BaseBTreeFolder.__init__(self, *args, **kwargs)
 
 
