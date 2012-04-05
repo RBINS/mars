@@ -37,10 +37,11 @@ setup(
     package_dir = {'': 'src'},
     include_package_data=True,
     install_requires=[
+        'collective.testcaselayer',
+        'demjson',
+        # -*- Extra requirements: -*-
         'setuptools',
         'z3c.autoinclude',
-        # -*- Extra requirements: -*-
-        'collective.testcaselayer',
     ],
     entry_points = {
         'z3c.autoinclude.plugin': [

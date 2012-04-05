@@ -23,6 +23,10 @@
 
 
 
+table.mars-datatable {
+  width:100%;
+}
+
 
 /* </dtml-with> */
 

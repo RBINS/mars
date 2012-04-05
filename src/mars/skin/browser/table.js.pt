@@ -1,0 +1,9 @@
+<script language="JavaScript">
+
+%HEADER%
+
+var tableid = "#"+options.tableid;
+jq(tableid).dataTable();
+
+
+</script>

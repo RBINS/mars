@@ -1,0 +1,104 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xml:lang="en" lang="en"
+      i18n:domain="plone"
+      metal:use-macro="here/main_template/macros/master">
+
+  <head>
+      <metal:block fill-slot="top_slot">
+        <tal:insert tal:replace="nothing"
+              tal:define="dummy python:request.set('enable_border', 1)" />
+      </metal:block>
+  </head>
+
+  <body>
+
+      <metal:content-title fill-slot="content-title">
+          <h1 class="documentFirstHeading"> 
+              <tal:block condition="exists:here/aq_explicit/widget">
+                  <metal:field use-macro="python:here.widget('title', mode='view')">
+                  Title
+                  </metal:field>
+              </tal:block>
+              <tal:block condition="not:exists:here/aq_explicit/widget">
+                  <span tal:content="view/title" tal:omit-tag="">Directory Id</span>
+              </tal:block>
+          </h1>        
+      </metal:content-title>
+      
+      <metal:content-description fill-slot="content-description">
+          <div class="documentDescription" tal:condition="exists:here/aq_explicit/widget">
+              <metal:field use-macro="python:here.widget('description', mode='view')">
+                  Description
+              </metal:field>
+          </div>
+          <tal:block condition="not:exists:here/aq_explicit/widget">
+              <div class="documentDescription" 
+                         tal:content="context/Description" 
+                         tal:condition="context/Description"> 
+                  Description
+              </div>
+          </tal:block>
+      </metal:content-description>
+
+      <metal:content-core fill-slot="content-core">
+          <a href=""
+             class="link-parent"
+             tal:define="parent_url view/parent_url"
+             tal:condition="parent_url"
+             tal:attributes="href string:${parent_url}/folder_contents"
+             i18n:translate="go_to_parent_url">
+              Up one level
+          </a>
+
+          <form name="folderContentsForm"
+                method="post"
+                action="folder_object"
+                tal:define="data view/contents_tables;
+                items  view/items"
+                tal:attributes="action context/absolute_url"
+                class="kssattr-serveraction-foldercontents_update_table">
+                <input type="hidden" name="orig_template" tal:attributes="value string:${context/absolute_url}/folder_contents_per_type"/>
+                <input type="hidden" name="pagenumber" tal:attributes="value python:1"/>
+                <input type="hidden" name="show_all" tal:attributes="value python:True"/> 
+                <input type="hidden" name="sort_on" tal:attributes="value request/sort_on|string:getObjPositionInParent" /> 
+                <tal:block 
+                  tal:repeat="type data">
+                  <dl
+                    tal:define="ploneview context/@@plone;
+                    selected python:request.get('select', '') == type;
+                    elemclass string:collapsible;
+                    elemclass python:False==selected and elemclass + ' collapsedOnLoad' or elemclass;
+                    normalizeString nocall:ploneview/normalizeString;
+                    item_icon python:{'html_tag':''};
+                    item_icon python:ploneview.getIcon(items[type][0]);
+                    lrel python:len(items[type]);"
+                    tal:attributes="class elemclass">
+                    <dt class="collapsibleHeader">
+                      <span tal:attributes="class python:'contenttype-' + normalizeString(type)" >
+                        <img tal:replace="structure item_icon/html_tag" />
+                        <span tal:content="string:${lrel} ${type}"/>
+                      </span>  
+                    </dt>
+                    <dd class="collapsibleContent">
+                      <div tal:replace="structure python:data[type].render()"></div> 
+                    </dd>
+                  </dl>
+                </tal:block>
+                <tal:buttons 
+                  tal:condition="nothing">
+                  <input class="context"
+                    type="submit"
+                    name=""
+                    value=""
+                    i18n:attributes="value"
+                    tal:attributes="value button/title; name button/url; class button/cssclass|nothing" />
+                </tal:buttons> 
+            <input tal:replace="structure context/@@authenticator/authenticator" />
+          </form>
+      </metal:content-core>
+      
+  </body>
+</html>

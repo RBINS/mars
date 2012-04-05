@@ -30,8 +30,7 @@
         view="plone.app.layout.globals.interfaces.IViewView"
         permission="zope2.View"
         layer=".interfaces.IThemeSpecific"
-        />     
-    <!--
+        />
   <browser:page
       layer=".interfaces.IThemeSpecific"
       for="*"
@@ -40,6 +39,12 @@
       allowed_interface=".view.IMarsUtils"
       permission="zope2.View"
     />
-    -->
+  <browser:page
+      for="*"
+      layer=".interfaces.IThemeSpecific"
+      class=".view.FolderContentsView"
+      name="folder_contents_per_type"
+      template="folder_contents_per_type.pt"
+      permission="cmf.ListFolderContents" />
   <!-- vim:set ft=xml: -->
 </configure>

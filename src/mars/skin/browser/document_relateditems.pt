@@ -14,21 +14,28 @@
         <dt i18n:translate="label_related_items">Related content</dt>
         <tal:block tal:repeat="type related">
           <dd ><dl class="collapsible collapsedOnLoad">
-          <tal:block tal:define="relateditems python:related[type];
+            <tal:block tal:define="relateditems python:related[type];
+
+              item_icon           python:ploneview.getIcon(relateditems[0]);
+
+
               lrel python:len(relateditems)">
-            <dt class="collapsibleHeader" tal:content="string:${lrel} ${type}"/>
+              <dt class="collapsibleHeader">
+                <span tal:attributes="class python:'contenttype-' + normalizeString(type)" >
+                  <img tal:replace="structure item_icon/html_tag" />
+                  <span tal:content="string:${lrel} ${type}"/>
+                </span>
+              </dt>
             <tal:related repeat="item relateditems">
             <dd tal:define="
                     desc                item/Description;
-                    item_icon           python:ploneview.getIcon(item);
-                    item_type           item/portal_type;
+                    item_type           item/portal_type;     
                     item_type_class     python:'contenttype-' + normalizeString(item_type);
                     item_wf_state       item/review_state|python: getInfoFor(item, 'review_state', '');
                     item_wf_state_class python: 'state-' + normalizeString(item_wf_state);
                     item_url            item/getURL|item/absolute_url;
                     item_url            python:(item_type in use_view_action) and item_url+'/view' or item_url" class="collapsibleContent">
-                <span tal:attributes="class item_type_class">
-                    <img tal:replace="structure item_icon/html_tag" />
+                <span>
                     <a href="" class=""
                        tal:attributes="href  item_url;
                                        title desc;
