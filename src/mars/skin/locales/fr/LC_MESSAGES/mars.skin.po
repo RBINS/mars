@@ -18,5 +18,5 @@ msgstr ""
 
 #: mars/policy/profiles/default/actions.xml
 msgid "Contents Per Type"
-msgstr ""
+msgstr "Contenus par type"
 
