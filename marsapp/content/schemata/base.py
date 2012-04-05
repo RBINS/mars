@@ -231,10 +231,20 @@ def finalizeMarsSchema(schema,
     if schema.has_key('tableContents'):
         schema.moveField('tableContents', after='presentation')
     if schema.has_key('relatedItems'):
-        schema['relatedItems'].widget.visible['edit'] = 'visible'
-        schema['relatedItems'].widget.visible['view'] = 'visible'
+        #schema['relatedItems'].widget.visible['edit'] = 'visible'
+        #schema['relatedItems'].widget.visible['view'] = 'visible'
         #schema['relatedItems'].widget.visible['edit'] = 'invisible'
-        schema['relatedItems'].widget.visible['view'] = 'hidden' 
+        #schema['relatedItems'].widget.visible['view'] = 'hidden' 
+        schema['relatedItems'].widget = ReferenceBrowserWidget(
+            allow_search = True,
+            allow_browse = True,
+            allow_sorting = True,
+            show_indexes = False,
+            force_close_on_insert = True,
+            label = _(u'label_related_items', default=u'Related Items'),
+            description = '',
+            visible = {'edit' : 'visible', 'view' : 'invisible' }
+        ) 
     if (schema.has_key('datingAssociation')
         and schema.has_key('absoluteDatings')):
         schema.moveField('absoluteDatings', after='datingAssociation')
