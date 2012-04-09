@@ -29,12 +29,11 @@ def create_files_and_images_folders(obj, event):
                     subf.setLayout("folder_tabular_view")
                 if folder == 'images':
                     subf.setLayout("atct_album_view")
-
-                if not rs == 'published':
-                    wf_tool.doActionFor(
-                        subf,
-                        "publish",
-                        comment="publised programmatically")
+                #if not rs == 'published':
+                #    wf_tool.doActionFor(
+                #        subf,
+                #        "publish",
+                #        comment="publised programmatically")
     except Exception, e:
         msg = 'Ooops, %s' % e
         log.error(msg)
