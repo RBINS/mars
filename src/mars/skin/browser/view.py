@@ -26,6 +26,7 @@ import demjson
 demjson.dumps = demjson.encode
 demjson.loads = demjson.decode
 
+from Products.CMFPlone import utils
 
 
 
@@ -49,7 +50,13 @@ class Table(tableview.Table):
             self.selectall = True 
         self.id_suf = id_suf
 
+    def get_table_id(self):
+        suf = utils.normalizeString(self.id_suf)
+        return 'listing-table%s' % suf
+
+
     def getJs(self, **jsvars):
+        jsvars['tableid'] = self.get_table_id()
         JS = HEADER = ''
         HEADER += "var options = JSON.parse('%s');\n" % demjson.dumps(jsvars)
         js = self.js().replace('%HEADER%', HEADER)
@@ -73,6 +80,7 @@ class Table(tableview.Table):
 class FolderContentsTable(foldercontents.FolderContentsTable):
     """."""
     def __init__(self, context, request, contentFilter=None, id_suf=None):
+        request.set('show_all', 'true')
         foldercontents.FolderContentsTable.__init__(self, context, request, contentFilter)
         url = context.absolute_url()
         view_url = url + '/folder_contents_per_type'

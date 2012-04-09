@@ -15,16 +15,14 @@
   </p>
 
   <metal:listing define-macro="folder_listing"
-    tal:define="nosortclass view/get_nosort_class;
-    tableid string:listing-table${view/id_suf}">
+    tal:define="nosortclass view/get_nosort_class;">
     
     <div class="visualClear" id="clear-space-before-navigation"><!-- --></div>
 
     <table class="listing mars-datatable"
-           id="listing-table"
            summary="Content listing"
            i18n:attributes="summary summary_content_listing;"
-           tal:attributes="id tableid"
+           tal:attributes="id view/get_table_id"
            tal:condition="view/items">
       <thead>
         <tr tal:condition="python:view.show_select_column and not view.selectcurrentbatch">
@@ -69,7 +67,7 @@
       <metal:block tal:condition="view/batch">
         <tbody>
           <tal:items tal:repeat="item view/batch">
-            <tr  tal:define="id item/id|item/getId;
+            <tr  tal:define="id item/id|item/getId|string:probleme;
                              title item/title|item/Title|item/title_or_id;
                              title_or_id python:title or id;"
                  tal:attributes="class item/table_row_class;
@@ -148,7 +146,7 @@
       </metal:block>
     </table>
     <script language="JavaScript" 
-      tal:replace="structure python:view.getJs(tableid=tableid)">
+      tal:replace="structure python:view.getJs()">
     </script>
     <br/>
     <tal:buttons 
