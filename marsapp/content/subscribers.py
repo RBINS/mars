@@ -17,7 +17,7 @@ def create_files_and_images_folders(obj, event):
         for folder in folders:
             if not folder in obj.objectIds():
                 nt = obj.invokeFactory('Folder', folder)
-                subf = obj[nt]
+                subf = obj.restrictedTraverse(nt)
                 subf.setTitle(folders[folder])
                 subf.unmarkCreationFlag()
                 subf.reindexObject()
@@ -35,6 +35,7 @@ def create_files_and_images_folders(obj, event):
                 #        "publish",
                 #        comment="publised programmatically")
     except Exception, e:
+        import pdb;pdb.set_trace()  ## Breakpoint ##
         msg = 'Ooops, %s' % e
         log.error(msg)
 

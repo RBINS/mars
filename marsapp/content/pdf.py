@@ -87,7 +87,7 @@ PDFFileSchema = ATFileSchema.copy() + Schema((
     ))
 
 finalizeATCTSchema(PDFFileSchema)
-PDFFileSchema['file'].label= "PDF File",
+PDFFileSchema['file'].label= "Mars PDF File",
 PDFFileSchema['file'].label_msgid = "label_pdf_file",
 
 class MarsPDFFile(ATFile):

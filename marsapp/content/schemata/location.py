@@ -45,7 +45,7 @@ LocationSchema = Schema((
     LinesField('location',
         required=True,
         searchable=False,
-        widget=LinesWidget(label='Location',
+        widget=LinesWidget(label='Site Location',
             label_msgid='label_location',
             description="Give an as presise as possible description of the sites location.(e.g.: name of county,name of district,name and distance to closest city,name and distance to closest reference point)",
             description_msgid='help_site_location',
