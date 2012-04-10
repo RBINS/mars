@@ -28,6 +28,31 @@ table.mars-datatable {
 }
 
 
+
+/* related items */
+#relatedItemBox  dd,
+#content #relatedItemBox  dd{
+  margin-bottom:0px;
+}
+.mars-ref-overlay-ajax  table.group  label{
+    font-size: 80%;
+}
+.mars-ref-overlay-ajax  table.group tr a,
+.mars-ref-overlay-ajax  table.group tr td {
+  height:18px;
+}
+.icons-on .mars-ref-overlay-ajax .contenttype-document,
+.icons-on .mars-ref-overlay-ajax .contenttype-event,
+.icons-on .mars-ref-overlay-ajax .contenttype-folder,
+.icons-on .mars-ref-overlay-ajax .contenttype-link,
+.icons-on .mars-ref-overlay-ajax .contenttype-news-item,
+.icons-on .mars-ref-overlay-ajax .contenttype-plone-site,
+.icons-on .mars-ref-overlay-ajax .contenttype-topic,
+.icons-on .mars-ref-overlay-ajax #plone-contentmenu-factories .contenttype-file,
+.icons-on .mars-ref-overlay-ajax #plone-contentmenu-factories .contenttype-image {
+  line-height:18px;
+}
+
 /* </dtml-with> */
 
 /* DOCUMENTATION ON PRE-DEFINED PROPERTIES FROM PLONE */
