@@ -23,7 +23,7 @@
               <dt class="collapsibleHeader">
                 <span tal:attributes="class python:'contenttype-' + normalizeString(type)" >
                   <img tal:replace="structure item_icon/html_tag" />
-                  <span tal:content="string:${lrel} ${type}"/>
+                  <span tal:content="string:${type} : ${lrel} "/>
                 </span>
               </dt>
             <tal:related repeat="item relateditems">
