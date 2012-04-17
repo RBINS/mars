@@ -12,6 +12,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFCore.utils import getToolByName
 from plone.registry.interfaces import IRegistry
 from Products.ATContentTypes.interfaces.interfaces import IATContentType
+from Products.Archetypes.Widget import RichWidget 
 from Acquisition import aq_parent
 from Acquisition import aq_parent
 
@@ -143,6 +144,8 @@ class IMarsUtils(interface.Interface):
         """is frontpage ?"""
     def related_items(res):
         """related items"""
+    def getContentType(object, fieldname):
+        """.""" 
 
 
 class MarsUtils(BrowserView):
@@ -178,6 +181,18 @@ class MarsUtils(BrowserView):
             dres[pt].append(item)
         return dres  
 
+    def getContentType(self, object, fieldname):
+        """i dont know why but BaseUnit return a
+        default text/plain content type for 
+        anything else that 'text', just work around 
+        to setup well the richwidgets"""
+        ct = object.portal_tinymce.getContentType(object=object, fieldname=fieldname)
+        field = object.getField(fieldname)
+        if isinstance(ct, basestring):
+            if 'plain' in ct:
+                if isinstance(field.widget, RichWidget):
+                    ct = 'text/html'
+        return ct
 
 
 class IMarsFrontTopicView(interface.Interface):
