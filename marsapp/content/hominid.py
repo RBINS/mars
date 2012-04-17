@@ -42,6 +42,8 @@ HominidBiologySchema['taxon'].widget.startup_directory = '/marscategories/taxa/f
 
 HominidBioAssemblageSchema = BioAssemblageSchema.copy()
 HominidBioAssemblageSchema['origin'].vocabulary = hominid_origin
+HominidBioOriginSchema = BioOriginSchema.copy()
+HominidBioOriginSchema['origin'].vocabulary = hominid_origin 
 
 HominidPreservationSchema = PreservationSchema.copy()
 HominidPreservationSchema['preservation'].vocabulary = fauna_preservation
@@ -51,11 +53,12 @@ HominidBurialSchema['burial'].vocabulary = hominid_burial
 
 
 HominidRemainSchema = MarsCollectionObjectSchema.copy()
-HominidRemainSchema += HominidPreservationSchema
+HominidRemainSchema += HominidPreservationSchema.copy() 
 HominidRemainSchema += CollectionObjectBaseSchema.copy()
-HominidRemainSchema += HominidBioRemainSchema
-HominidRemainSchema += HominidBiologySchema
-HominidRemainSchema += HominidBurialSchema
+HominidRemainSchema += HominidBioRemainSchema.copy() 
+HominidRemainSchema += HominidBiologySchema.copy() 
+HominidRemainSchema += BioOriginSchema.copy()
+HominidRemainSchema += HominidBurialSchema.copy() 
 HominidRemainSchema += ChronologySchema.copy()
 HominidRemainSchema += ChronologyDatingSchema.copy()
 HominidRemainSchema += TaphonomySchema.copy()
@@ -73,11 +76,13 @@ class MarsHominidRemain(MarsCollectionObject):
 
 
 HominidIndividualSchema = MarsCollectionObjectSchema.copy()
-HominidIndividualSchema += HominidPreservationSchema
+HominidIndividualSchema += HominidPreservationSchema.copy() 
 HominidIndividualSchema += CollectionObjectBaseSchema.copy()
 HominidIndividualSchema += BioIndividualSchema.copy()
-HominidIndividualSchema += HominidBiologySchema
-HominidIndividualSchema += HominidBurialSchema
+HominidIndividualSchema += AssemblageSchema.copy()
+HominidIndividualSchema += BioOriginSchema.copy()
+HominidIndividualSchema += HominidBiologySchema.copy() 
+HominidIndividualSchema += HominidBurialSchema.copy() 
 HominidIndividualSchema += ChronologySchema.copy()
 HominidIndividualSchema += ChronologyDatingSchema.copy()
 HominidIndividualSchema += TaphonomySchema.copy()
@@ -97,9 +102,10 @@ class MarsHominidIndividual(MarsCollectionObject):
 HominidAssemblageSchema = MarsCollectionObjectSchema.copy()
 HominidAssemblageSchema += CollectionObjectBaseSchema.copy()
 HominidAssemblageSchema += AssemblageSchema.copy()
-HominidAssemblageSchema += HominidBioAssemblageSchema
-HominidAssemblageSchema += HominidBiologySchema
-HominidAssemblageSchema += HominidBurialSchema
+HominidAssemblageSchema += HominidBioAssemblageSchema.copy() 
+HominidAssemblageSchema += HominidBiologySchema.copy() 
+HominidAssemblageSchema += HominidBurialSchema.copy() 
+HominidAssemblageSchema += BioIndividualSchema.copy()
 HominidAssemblageSchema += ChronologySchema.copy()
 HominidAssemblageSchema += ChronologyDatingSchema.copy()
 HominidAssemblageSchema += TaphonomySchema.copy()
@@ -122,7 +128,7 @@ HominidRefSampleSchema += RefSampleBonesSchema.copy()
 HominidRefSampleSchema += ChronologySchema.copy()
 HominidRefSampleSchema += AdministrationSchema.copy()
 HominidRefSampleSchema += AssemblageSchema.copy()
-HominidRefSampleSchema += HominidBiologySchema
+HominidRefSampleSchema += HominidBiologySchema.copy() 
 HominidRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 finalizeMarsSchema(HominidRefSampleSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES, igNumbers=True)
 

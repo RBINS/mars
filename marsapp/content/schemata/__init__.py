@@ -27,13 +27,13 @@ __docformat__ = 'restructuredtext'
 from base import *
 from acquisition import AcquisitionSchema
 from administration import AdministrationSchema
+from assemblage import AssemblageSchema, BioAssemblageSchema, BioOriginSchema
 from biology import BiologySchema, BioIndividualSchema
+from burial import BurialSchema
 from chronology import ChronologySchema, ChronologyDatingSchema
 from discovery import DiscoverySchema
 from location import LocationSchema
+from preservation import PreservationSchema
+from remain import BioRemainSchema
 from taphonomy import TaphonomySchema
 from technology import TechnologySchema
-from remain import BioRemainSchema
-from preservation import PreservationSchema
-from assemblage import AssemblageSchema, BioAssemblageSchema
-from burial import BurialSchema

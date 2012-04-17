@@ -78,7 +78,10 @@ SiteSchema += Schema((
 
 SiteSchema += LocationSchema.copy()
 SiteSchema += ChronologySchema.copy()
-SiteSchema += DiscoverySchema.copy()
+DiscoverySiteSchema = DiscoverySchema.copy()
+DiscoverySiteSchema.delField('coordinateFiles')
+SiteSchema += DiscoverySiteSchema.copy()
+SiteSchema += make_coordinates_file_schema()
 
 SiteSchema['discoveryExcavation'].widget.visible = SiteSchema['excavationCoordinates'].widget.visible = {
     'view': 'invisible',

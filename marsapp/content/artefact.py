@@ -28,6 +28,12 @@ from api import *
 from config import PROJECTNAME
 from schemata import *
 
+
+ArtefactBurialSchema = BurialSchema.copy()
+ArtefactBurialSchema['burial'].vocabulary = hominid_burial
+
+
+
 ArtefactSchema = Schema((
 
     MarscatField('rawMaterials',
@@ -50,6 +56,8 @@ ArtefactSchema = Schema((
 ArtefactRemainSchema = MarsCollectionObjectSchema.copy()
 ArtefactRemainSchema += PreservationSchema.copy()
 ArtefactRemainSchema += CollectionObjectBaseSchema.copy()
+ArtefactRemainSchema += BioOriginSchema.copy()
+ArtefactRemainSchema += ArtefactBurialSchema.copy()
 ArtefactRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
 ArtefactRemainSchema['text'].widget.visible['view'] =  ArtefactRemainSchema['text'].widget.visible['edit'] = 'visible'
 
@@ -96,6 +104,7 @@ ArtefactIndividualSchema = MarsCollectionObjectSchema.copy()
 ArtefactIndividualSchema += PreservationSchema.copy()
 ArtefactIndividualSchema += CollectionObjectBaseSchema.copy()
 ArtefactIndividualSchema += ArtefactSchema.copy()
+ArtefactIndividualSchema += BioOriginSchema.copy()
 ArtefactIndividualSchema += AssemblageSchema.copy()
 ArtefactIndividualSchema += ChronologySchema.copy()
 ArtefactIndividualSchema += ChronologyDatingSchema.copy()
@@ -104,6 +113,7 @@ ArtefactIndividualSchema['remainType'].widget.startup_directory = '/marscategori
 ArtefactIndividualSchema += TechnologySchema.copy()
 ArtefactIndividualSchema += DiscoverySchema.copy()
 ArtefactIndividualSchema += AdministrationSchema.copy()
+ArtefactIndividualSchema += ArtefactBurialSchema
 finalizeMarsSchema(ArtefactIndividualSchema, multivalued=('remainType',),
                    delFields=('MNI', 'MNIDetermination', 'discoverySite',), remain_types=ARTEFACTS_TYPES)
 
@@ -119,11 +129,13 @@ ArtefactAssemblageSchema = MarsCollectionObjectSchema.copy()
 ArtefactAssemblageSchema += CollectionObjectBaseSchema.copy()
 ArtefactAssemblageSchema += ArtefactSchema.copy()
 ArtefactAssemblageSchema += AssemblageSchema.copy()
+ArtefactAssemblageSchema += BioOriginSchema.copy()
 ArtefactAssemblageSchema += ChronologySchema.copy()
 ArtefactAssemblageSchema += ChronologyDatingSchema.copy()
 ArtefactAssemblageSchema += TaphonomySchema.copy()
 ArtefactAssemblageSchema += TechnologySchema.copy()
 ArtefactAssemblageSchema += DiscoverySchema.copy()
+ArtefactAssemblageSchema += ArtefactBurialSchema.copy() 
 ArtefactAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
 ArtefactAssemblageSchema += AdministrationSchema.copy()
 finalizeMarsSchema(ArtefactAssemblageSchema, igNumbers=True,

@@ -116,6 +116,8 @@ ExcavationSchema += Schema((
 
 ExcavationSchema += InsiteLocationSchema.copy()
 
+ExcavationSchema += make_coordinates_file_schema()
+
 ExcavationSchema += Schema((
 
     ReferenceField('excavationMap',
@@ -137,7 +139,7 @@ ExcavationSchema += Schema((
 
     ))
 
-finalizeMarsSchema(ExcavationSchema)
+finalizeMarsSchema(ExcavationSchema, add_synonyms=True)
 
 class MarsExcavation(ATFolder, MarsMixin):
     """Excavation"""

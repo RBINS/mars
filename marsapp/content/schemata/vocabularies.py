@@ -428,6 +428,7 @@ flora_laterality = default_laterality
 flora_polarity = default_polarity
 flora_origin = default_origin
 flora_preservation = default_preservation
+flora_burial = default_burial
 
 # Fauna Selection Values
 fauna_gender = default_gender

@@ -37,7 +37,7 @@ AssemblageSchema = Schema((
             description_msgid='help_how_many_components',
             domain='mars',
             ),
-        schemata='description',
+        schemata='composition',
         ),
 
     IntegerField('MNI',
@@ -49,7 +49,7 @@ AssemblageSchema = Schema((
             description_msgid='help_minimum_individuals_ammount',
             domain='mars',
             ),
-        schemata='description',
+        schemata='composition',
         ),
 
     TextField('MNIDetermination',
@@ -67,7 +67,7 @@ AssemblageSchema = Schema((
             description_msgid='help_minimal_ammount_determination',
             domain='mars',
             ),
-        schemata='description'
+        schemata='composition'
         ),
 
     ReferenceField('components',
@@ -84,20 +84,27 @@ AssemblageSchema = Schema((
             domain='mars',
             startup_directory_method = 'getMarsCol',
             ),
-        schemata='description',
+        schemata='composition',
         ),
 
-    LinesField('componentsDistribution',
+    TextField('componentsDistributionDesc',
+
+        searchable=False,
         required=False,
-        searchable=True,
-        widget=LinesWidget(label='Components Distribution',
+        #default_content_type='text/plain',
+        #allowable_content_types=('text/plain',),
+        default_output_type='text/x-html-safe',
+        allowable_content_types = ('text/plain',
+                                  'text/structured',
+                                  'text/html',),
+        widget=RichWidget(label='Minimal number of individuals determination',
             label_msgid='label_structure_contents_distribution',
             description="Distribution of the contents inside this assemblage.",
-            description_msgid='help_structure_contents_distribution',
+            description_msgid='help_structure_contents_distribution', 
             domain='mars',
             ),
-        schemata='description',
-        ),
+        schemata='composition' 
+    ),
     ReferenceField('componentsDistributionFile',
         searchable=False,
         required=False,
@@ -112,7 +119,7 @@ AssemblageSchema = Schema((
             domain='mars',
             startup_directory_method='getMarsCol',
             ),
-        schemata='description',
+        schemata='composition',
         ),
 
 
@@ -131,18 +138,19 @@ AssemblageSchema = Schema((
             description_msgid='help_attribution_determination',
             domain='mars',
             ),
-        schemata='description',
+        schemata='composition',
         ),
 
     ))
 
-BioAssemblageSchema = Schema((
+BioOriginSchema = Schema((
 
     StringField('origin',
         required=False,
         searchable=True,
         vocabulary=default_origin,
         multiValued=True,
+        default="undetermined",
         widget=SelectionWidget(label='Origin',
             label_msgid='label_origin',
             description='Origin of the assemblage, or what its cause was.',
@@ -170,6 +178,8 @@ BioAssemblageSchema = Schema((
         schemata='description',
         ),
 
+    ))
+BioAssemblageSchema = BioOriginSchema + Schema((
     TextField('paleoecology',
         required=False,
         searchable=True,

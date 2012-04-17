@@ -54,6 +54,7 @@ StratigraphySchema += Schema((
             domain='mars',
             startup_directory='/marscategories/substratum',
             ),
+                 schemata='description',
         ),
 
 
@@ -88,6 +89,7 @@ StratigraphySchema += Schema((
             description_msgid='help_stratigraphy_history',
             domain='mars',
             ),
+                 schemata='description',
         ),
 
     ReferenceField('stratigraphyEquivalents',
@@ -103,13 +105,16 @@ StratigraphySchema += Schema((
             domain='mars',
             startup_directory='/collections/sites/',
             ),
-        schemata='equivalences',
+                 schemata='description',
         ),
 
     ))
 
+StratigraphySchema += ChronologySchema.copy()
+StratigraphySchema += ChronologyDatingSchema.copy()
 StratigraphySchema += InsiteLocationSchema.copy()
-finalizeMarsSchema(StratigraphySchema, folderish=True, delFields=['text'])
+StratigraphySchema += make_coordinates_file_schema()
+finalizeMarsSchema(StratigraphySchema, folderish=True, delFields=[])
 
 class MarsStratigraphy(ATFolder, MarsMixin):
     """Stratigraphy"""
@@ -126,6 +131,7 @@ Has been discovered by one or more people.
 Belongs to one ore more stratigraphies.
 """
 StratigraphicalLayerSchema = MarsFolderSchema.copy()
+StratigraphicalLayerSchema += make_coordinates_file_schema()
 StratigraphicalLayerSchema += Schema((
 
     MarscatField('geologicalComponents',
@@ -204,7 +210,7 @@ StratigraphicalLayerSchema += Schema((
     ))
 
 
-finalizeMarsSchema(StratigraphicalLayerSchema)
+finalizeMarsSchema(StratigraphicalLayerSchema, add_synonyms=True)
 
 class MarsStratigraphicalLayer(ATFolder, MarsMixin):
     """Stratigraphical Layer"""

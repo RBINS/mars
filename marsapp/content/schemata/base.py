@@ -66,6 +66,21 @@ MarsFolderSchema = ATFolderSchema.copy()
 MarsBTreeFolderSchema = ATBTreeFolderSchema.copy()
 MarsContentTypeSchema = ATFolderSchema.copy()
 MarsCollectionObjectSchema = ATDocumentSchema.copy() + Schema((
+     ReferenceField('colRelatedSite',
+        required=False,
+        searchable=True,
+        multiValued=False,
+        relationship='colRelatedSite',
+        allowed_types=('Site',),
+        widget=ReferenceBrowserWidget(label='Site',
+            label_msgid='label_discovery_site',
+            description='Select the site related to this object',
+            description_msgid='help_discovery_site',
+            domain='mars',
+            startup_directory='/collections/sites',
+            ),
+        schemata='description',
+        ), 
 
 #        BooleanField('displayImages',
 #            default=False,
@@ -170,6 +185,42 @@ SEARCHABLE_FIELDS = (
     'repositoryConditions',
     )
 
+
+
+
+def make_coordinates_file(schemata='description'):
+    return ReferenceField('coordinateFiles',
+        required=False,
+        searchable=False,
+        relationship='hasCoordinatesFiles',
+        allowed_types=FILE_TYPES,
+        widget=ReferenceBrowserWidget(label='Coordinate File(s)',
+            label_msgid='label_coordinate_files',
+            description='Upload Coordinate File(s).',
+            description_msgid='help_coordinate_files',
+            startup_directory_method='getMarsColFiles',
+            domain='mars',
+            ),
+        schemata=schemata,
+        )
+
+def make_coordinates_file_schema(schemata='description'):
+    return Schema((
+        make_coordinates_file(schemata=schemata),
+    ))
+def make_synonyms_field():
+    return LinesField('synonyms',
+                                   required=False,
+                                   searchable=False,
+                                   widget=LinesWidget(label='Alternate Names or IDs',
+                                                      label_msgid='label_synonym_name',
+                                                      description="Synonyms, different spellings or given names.",
+                                                      description_msgid='help_synonym_name',
+                                                      domain='mars',
+                                                     ),
+                                   schemata='default',
+                                  )
+
 def finalizeMarsSchema(schema,
                        folderish=False,
                        moveDiscussion=True,
@@ -178,6 +229,7 @@ def finalizeMarsSchema(schema,
                        delFields=(),
                        multivalued=(),
                        remain_types = None,
+                       add_synonyms=False,
                       ):
     """Finalizes a Mars type schema to alter some fields
     """
@@ -201,6 +253,9 @@ def finalizeMarsSchema(schema,
         schema.addField(field)
         if schema.has_key('igYear'):
             schema.moveField('igNumbers', before='igYear')
+
+    if not 'synonyms' in schema.keys() and add_synonyms:
+        schema.addField(make_synonyms_field())
 
     for fieldname in delFields:
         if schema.has_key(fieldname):
@@ -262,21 +317,16 @@ def finalizeMarsSchema(schema,
             schema[fieldname].searchable = True
 
 
+
+
+
+
+
 BodyTextSchema = Schema(( BodyTextField, ))
 
 CollectionBaseSchema = Schema((
 
-    LinesField('synonyms',
-        required=False,
-        searchable=False,
-        widget=LinesWidget(label='Alternate Names or IDs',
-            label_msgid='label_synonym_name',
-            description="Synonyms, different spellings or given names.",
-            description_msgid='help_synonym_name',
-            domain='mars',
-            ),
-        schemata='default',
-        ),
+    make_synonyms_field(),
 
     StringField('igNumber',
         required=False,

@@ -47,11 +47,12 @@ FaunaBurialSchema['burial'].vocabulary = fauna_burial
 
 
 FaunaRemainSchema = MarsCollectionObjectSchema.copy()
-FaunaRemainSchema += FaunaPreservationSchema
+FaunaRemainSchema += FaunaPreservationSchema.copy() 
 FaunaRemainSchema += CollectionObjectBaseSchema.copy()
-FaunaRemainSchema += FaunaBioRemainSchema
-FaunaRemainSchema += FaunaBiologySchema
-FaunaRemainSchema += FaunaBurialSchema
+FaunaRemainSchema += FaunaBioRemainSchema.copy()
+FaunaRemainSchema += FaunaBiologySchema.copy()
+FaunaRemainSchema += FaunaBurialSchema.copy()
+FaunaRemainSchema += BioAssemblageSchema.copy()
 FaunaRemainSchema += ChronologySchema.copy()
 FaunaRemainSchema += ChronologyDatingSchema.copy()
 FaunaRemainSchema += TaphonomySchema.copy()
@@ -69,11 +70,13 @@ class MarsFaunaRemain(MarsCollectionObject):
 
 
 FaunaIndividualSchema = MarsCollectionObjectSchema.copy()
-FaunaIndividualSchema += FaunaPreservationSchema
+FaunaIndividualSchema += FaunaPreservationSchema.copy() 
 FaunaIndividualSchema += CollectionObjectBaseSchema.copy()
 FaunaIndividualSchema += BioIndividualSchema.copy()
-FaunaIndividualSchema += FaunaBiologySchema
-FaunaIndividualSchema += FaunaBurialSchema
+FaunaIndividualSchema += AssemblageSchema.copy()
+FaunaIndividualSchema += BioAssemblageSchema.copy()
+FaunaIndividualSchema += FaunaBiologySchema.copy() 
+FaunaIndividualSchema += FaunaBurialSchema.copy() 
 FaunaIndividualSchema += ChronologySchema.copy()
 FaunaIndividualSchema += ChronologyDatingSchema.copy()
 FaunaIndividualSchema += TaphonomySchema.copy()
@@ -93,9 +96,10 @@ class MarsFaunaIndividual(MarsCollectionObject):
 FaunaAssemblageSchema = MarsCollectionObjectSchema.copy()
 FaunaAssemblageSchema += CollectionObjectBaseSchema.copy()
 FaunaAssemblageSchema += AssemblageSchema.copy()
-FaunaAssemblageSchema += FaunaBioAssemblageSchema
-FaunaAssemblageSchema += FaunaBiologySchema
-FaunaAssemblageSchema += FaunaBurialSchema
+FaunaAssemblageSchema += FaunaBioAssemblageSchema.copy() 
+FaunaAssemblageSchema += FaunaBiologySchema.copy() 
+FaunaAssemblageSchema += FaunaBurialSchema.copy() 
+FaunaAssemblageSchema += BioIndividualSchema.copy()
 FaunaAssemblageSchema += ChronologySchema.copy()
 FaunaAssemblageSchema += ChronologyDatingSchema.copy()
 FaunaAssemblageSchema += TaphonomySchema.copy()
@@ -118,7 +122,7 @@ FaunaRefSampleSchema += RefSampleBonesSchema.copy()
 FaunaRefSampleSchema += ChronologySchema.copy()
 FaunaRefSampleSchema += AdministrationSchema.copy()
 FaunaRefSampleSchema += AssemblageSchema.copy()
-FaunaRefSampleSchema += FaunaBiologySchema
+FaunaRefSampleSchema += FaunaBiologySchema.copy() 
 FaunaRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
 finalizeMarsSchema(FaunaRefSampleSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES, igNumbers=True)
 
