@@ -96,7 +96,9 @@ class IFolderContentsButtons(interface.Interface):
 
 class FolderContentsView(foldercontents.FolderContentsView):
     """."""
-    interface.implements(tuple(foldercontents.FolderContentsView.__implemented__)+IFolderContentsButtons)
+    interface.implements(tuple(foldercontents.FolderContentsView.__implemented__)+(
+        IFolderContentsButtons,
+    ))
     index = ViewPageTemplateFile('folder_contents_per_type.pt')
     def button_available(self):
         object = self.context
