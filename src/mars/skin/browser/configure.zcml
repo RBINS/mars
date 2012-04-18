@@ -44,6 +44,7 @@
       layer=".interfaces.IThemeSpecific"
       class=".view.FolderContentsView"
       name="folder_contents_per_type"
+      allowed_interface=".view.IFolderContentsButtons"
       template="folder_contents_per_type.pt"
       permission="cmf.ListFolderContents" />
   <!-- vim:set ft=xml: -->
