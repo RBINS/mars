@@ -200,10 +200,21 @@ class IMarsFrontTopicView(interface.Interface):
 
 class IMarsContentPerType(interface.Interface):
     """."""
+    def available():
+        """."""
 
+
+from marsapp.content.base import MarsCollectionObject
 class MarsContentPerType(BrowserView):
     """."""
     index = ViewPageTemplateFile('folder_contents_per_type.pt')
+
+    def available(self):
+        object = self.context
+        ret = False
+        if not isinstance(object, MarsCollectionObject):
+            ret = object.displayContentsTab()
+        return ret
 
     def test(self, a, b, c):
         """."""
