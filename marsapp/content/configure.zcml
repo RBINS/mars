@@ -20,8 +20,13 @@
   <five:implements
       class="marsapp.content.base.MarsCollectionObject"
       interface="collective.zipfiletransport.interfaces.IZipfileNotImportable"/>
-
   <five:implements
       class="marsapp.content.base.MarsCollectionObject"
       interface="collective.zipfiletransport.interfaces.IZipfileNotExportable"/>
+  <five:implements
+      class="marsapp.content.base.MarsMixin"
+      interface="collective.zipfiletransport.interfaces.IZipfileNotImportable"/>
+  <five:implements
+      class="marsapp.content.base.MarsMixin"
+      interface="collective.zipfiletransport.interfaces.IZipfileNotExportable"/> 
 </configure>

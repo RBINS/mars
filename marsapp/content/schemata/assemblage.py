@@ -97,7 +97,7 @@ AssemblageSchema = Schema((
         allowable_content_types = ('text/plain',
                                   'text/structured',
                                   'text/html',),
-        widget=RichWidget(label='Minimal number of individuals determination',
+        widget=RichWidget(label='Component distribution',
             label_msgid='label_structure_contents_distribution',
             description="Distribution of the contents inside this assemblage.",
             description_msgid='help_structure_contents_distribution', 

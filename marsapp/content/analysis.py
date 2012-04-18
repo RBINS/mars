@@ -374,7 +374,7 @@ class MarsAnalysisAbsoluteDating(MarsAnalysis):
     """Absolute Dating Analysis"""
     schema = AbsoluteDatingAnalysisSchema
 
-    portal_type = "Analysis Absolute Dating"
+    portal_type =    "Analysis Absolute Dating"
     archetype_name = "Analysis Absolute Dating"
 
 
