@@ -65,6 +65,7 @@ HominidRemainSchema += TaphonomySchema.copy()
 HominidRemainSchema += DiscoverySchema.copy()
 HominidRemainSchema += AdministrationSchema.copy()
 HominidRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
+HominidRemainSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna/mammalia/primates/hominidae'
 finalizeMarsSchema(HominidRemainSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES)
 
 class MarsHominidRemain(MarsCollectionObject):
@@ -89,6 +90,7 @@ HominidIndividualSchema += TaphonomySchema.copy()
 HominidIndividualSchema += DiscoverySchema.copy()
 HominidIndividualSchema += AdministrationSchema.copy()
 HominidIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
+HominidIndividualSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna/mammalia/primates/hominidae'
 finalizeMarsSchema(HominidIndividualSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES)
 
 class MarsHominidIndividual(MarsCollectionObject):
@@ -112,6 +114,7 @@ HominidAssemblageSchema += TaphonomySchema.copy()
 HominidAssemblageSchema += DiscoverySchema.copy()
 HominidAssemblageSchema += AdministrationSchema.copy()
 HominidAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
+HominidAssemblageSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna/mammalia/primates/hominidae'
 finalizeMarsSchema(HominidAssemblageSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES, igNumbers=True)
 
 class MarsHominidAssemblage(MarsCollectionObject):

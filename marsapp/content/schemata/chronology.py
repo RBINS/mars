@@ -26,6 +26,7 @@ __docformat__ = 'restructuredtext'
 
 from base import *
 
+
 ChronologySchema = Schema((
 
     MarscatField('chronologies',
@@ -62,21 +63,7 @@ ChronologySchema = Schema((
         schemata='chronology',
         ),
 
-    ReferenceField('absoluteDatings',
-        required=False,
-        searchable=False,
-        multiValued=True,
-        relationship='isAbsoluteDating',
-        allowed_types=("Analysis Absolute Dating"),
-        widget=ReferenceBrowserWidget(label='Dating analyse(s)',
-            label_msgid='label_absolute_datings',
-            description='Select Dating analyse(s).',
-            description_msgid='help_absolute_datings',
-            startup_directory_method="getMarsSiteOrCol",
-            domain='mars',
-            ),
-        schemata='chronology',
-        ),  
+        make_dating_analysis(),
     ))
 
 ChronologyDatingSchema = Schema((

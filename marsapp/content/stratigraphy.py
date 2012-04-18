@@ -175,39 +175,8 @@ StratigraphicalLayerSchema += Schema((
         schemata='description',
         ),   
 
-    MarscatField('chronologies',
-        required=False,
-        searchable=False,
-        relationship='chronologicalyFits',
-        multiValued=True,
-        widget=MarscatWidget(label='Chronologies',
-            label_msgid='label_geochronology',
-            description="Select the general period(OIS) this stratigraphical assemblage dates from.",
-            description_msgid='help_stratigraphy_geochronology',
-            startup_directory='/marscategories/chronology',
-            domain='mars',
-            ),
-        schemata='dating',
-        ),
 
-    TextField('relativeGeologicalAge',
-        searchable=True,
-        required=False,
-        #default_content_type='text/plain',
-        #allowable_content_types=('text/plain',),
-        default_output_type='text/x-html-safe',
-        allowable_content_types = ('text/plain',
-                                  'text/structured',
-                                  'text/html',),      
-        widget=RichWidget(label='Relative Geological age',
-            label_msgid='label_relative_geological_age',
-            description='Give/Describe the relative geological age.',
-            description_msgid='help_relative_geological_age',
-            domain='mars',
-            ),
-        schemata='dating',
-        ),
-    ))
+    )) + ChronologySchema.copy() + StratigraphyChronologySchema.copy()
 
 
 finalizeMarsSchema(StratigraphicalLayerSchema, add_synonyms=True)

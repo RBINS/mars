@@ -187,6 +187,32 @@ SEARCHABLE_FIELDS = (
 
 
 
+def make_dating_analysis(schemata='chronology'):
+    return ReferenceField(
+        'absoluteDatings',
+        required=False,
+        searchable=False,
+        multiValued=True,
+        relationship='isAbsoluteDating',
+        allowed_types=("Analysis Absolute Dating"),
+        widget=ReferenceBrowserWidget(
+            label='Dating analyse(s)',
+            label_msgid='label_absolute_datings',
+            description='Select Dating analyse(s).',
+            description_msgid='help_absolute_datings',
+            startup_directory_method="getMarsSiteOrCol",
+            domain='mars',
+        ),
+        schemata=schemata,
+    )
+
+
+def make_dating_analysis_schema(schemata='chronology'):
+    return Schema((
+        make_dating_analysis(schemata=schemata),
+    )) 
+
+
 
 def make_coordinates_file(schemata='description'):
     return ReferenceField('coordinateFiles',

@@ -59,6 +59,7 @@ FloraRemainSchema += TaphonomySchema.copy()
 FloraRemainSchema += DiscoverySchema.copy()
 FloraRemainSchema += AdministrationSchema.copy()
 FloraRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
+FloraRemainSchema['taxon'].widget.startup_directory = '/marscategories/taxa/flora'
 finalizeMarsSchema(FloraRemainSchema, igNumbers=True,
                    delFields=(#'pathology',
                               #'pathologyDetermination',
@@ -88,6 +89,7 @@ FloraIndividualSchema += FloraBurialSchema.copy()
 FloraIndividualSchema += DiscoverySchema.copy()
 FloraIndividualSchema += AdministrationSchema.copy()
 FloraIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
+FloraIndividualSchema['taxon'].widget.startup_directory = '/marscategories/taxa/flora'
 finalizeMarsSchema(FloraIndividualSchema, igNumbers=True,
                    delFields=('pathology',
                               'pathologyDetermination',
@@ -116,6 +118,7 @@ FloraAssemblageSchema += FloraBurialSchema.copy()
 FloraAssemblageSchema += DiscoverySchema.copy()
 FloraAssemblageSchema += AdministrationSchema.copy()
 FloraAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
+FloraAssemblageSchema['taxon'].widget.startup_directory = '/marscategories/taxa/flora'
 finalizeMarsSchema(FloraIndividualSchema, igNumbers=True,
                    delFields=(#'pathology',
                               #'pathologyDetermination',
@@ -138,6 +141,7 @@ FloraRefSampleSchema += ChronologySchema.copy()
 FloraRefSampleSchema += AdministrationSchema.copy()
 FloraRefSampleSchema += AssemblageSchema.copy()
 FloraRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
+#FloraRefSampleSchema['taxon'].widget.startup_directory = '/marscategories/taxa/flora'
 finalizeMarsSchema(FloraRefSampleSchema, delFields=[ 'laterality', 'polarity', 'discoverySite'], remain_types=FLORA_TYPES, igNumbers=True)
 
 class MarsFloraReferenceSample(MarsCollectionObject):

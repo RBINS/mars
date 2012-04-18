@@ -30,7 +30,7 @@ from administration import AdministrationSchema
 from assemblage import AssemblageSchema, BioAssemblageSchema, BioOriginSchema
 from biology import BiologySchema, BioIndividualSchema
 from burial import BurialSchema
-from chronology import ChronologySchema, ChronologyDatingSchema
+from chronology import ChronologySchema, ChronologyDatingSchema, StratigraphyChronologySchema
 from discovery import DiscoverySchema
 from location import LocationSchema
 from preservation import PreservationSchema
