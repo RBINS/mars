@@ -109,7 +109,7 @@ FaunaAssemblageSchema += DiscoverySchema.copy()
 FaunaAssemblageSchema += AdministrationSchema.copy()
 FaunaAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
 FaunaAssemblageSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna'
-finalizeMarsSchema(FaunaAssemblageSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES, igNumbers=True)
+finalizeMarsSchema(FaunaAssemblageSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES, igNumbers=True, is_assemblage=True)
 
 class MarsFaunaAssemblage(MarsCollectionObject):
     """Fauna Assemblage"""
@@ -131,7 +131,8 @@ FaunaRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/r
 finalizeMarsSchema(FaunaRefSampleSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES, igNumbers=True)
 
 class MarsFaunaReferenceSample(MarsCollectionObject):
-    """Fauna Reference Sample"""
+    """Fauna Reference Sample
+    DEPRECATED DELETED AND NOT USED"""
     schema = FaunaRefSampleSchema
 
     portal_type = "Fauna Reference Sample"

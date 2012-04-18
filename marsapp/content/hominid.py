@@ -115,7 +115,7 @@ HominidAssemblageSchema += DiscoverySchema.copy()
 HominidAssemblageSchema += AdministrationSchema.copy()
 HominidAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 HominidAssemblageSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna/mammalia/primates/hominidae'
-finalizeMarsSchema(HominidAssemblageSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES, igNumbers=True)
+finalizeMarsSchema(HominidAssemblageSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES, igNumbers=True, is_assemblage=True)
 
 class MarsHominidAssemblage(MarsCollectionObject):
     """Artefact Assemblage"""

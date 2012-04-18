@@ -111,15 +111,15 @@ FloraAssemblageSchema += CollectionObjectBaseSchema.copy()
 FloraAssemblageSchema += AssemblageSchema.copy()
 FloraAssemblageSchema += FloraBioAssemblageSchema.copy() 
 FloraAssemblageSchema += FloraBiologySchema.copy() 
+FloraAssemblageSchema += FloraBurialSchema.copy()
 FloraAssemblageSchema += ChronologySchema.copy()
 FloraAssemblageSchema += ChronologyDatingSchema.copy()
 FloraAssemblageSchema += TaphonomySchema.copy()
-FloraAssemblageSchema += FloraBurialSchema.copy()
 FloraAssemblageSchema += DiscoverySchema.copy()
 FloraAssemblageSchema += AdministrationSchema.copy()
 FloraAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
 FloraAssemblageSchema['taxon'].widget.startup_directory = '/marscategories/taxa/flora'
-finalizeMarsSchema(FloraIndividualSchema, igNumbers=True,
+finalizeMarsSchema(FloraAssemblageSchema, igNumbers=True,
                    delFields=(#'pathology',
                               #'pathologyDetermination',
                               'laterality', 'polarity',
@@ -142,10 +142,11 @@ FloraRefSampleSchema += AdministrationSchema.copy()
 FloraRefSampleSchema += AssemblageSchema.copy()
 FloraRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
 #FloraRefSampleSchema['taxon'].widget.startup_directory = '/marscategories/taxa/flora'
-finalizeMarsSchema(FloraRefSampleSchema, delFields=[ 'laterality', 'polarity', 'discoverySite'], remain_types=FLORA_TYPES, igNumbers=True)
+finalizeMarsSchema(FloraRefSampleSchema, delFields=[ 'laterality', 'polarity', 'discoverySite'], remain_types=FLORA_TYPES, igNumbers=True, is_assemblage=True)
 
 class MarsFloraReferenceSample(MarsCollectionObject):
-    """Flora Reference Sample"""
+    """Flora Reference Sample
+    DEPRECATED DELETED AND NOT USED"""
     schema = FloraRefSampleSchema
 
     portal_type = "Flora Reference Sample"

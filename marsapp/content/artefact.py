@@ -139,7 +139,7 @@ ArtefactAssemblageSchema += ArtefactBurialSchema.copy()
 ArtefactAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/artefact'
 ArtefactAssemblageSchema += AdministrationSchema.copy()
 finalizeMarsSchema(ArtefactAssemblageSchema, igNumbers=True,
-                    delFields=('igYear','discoverySite',), multivalued=('remainType',), remain_types=ARTEFACTS_TYPES)
+                    delFields=('igYear','discoverySite',), multivalued=('remainType',), remain_types=ARTEFACTS_TYPES, is_assemblage=True)
 
 class MarsArtefactAssemblage(MarsCollectionObject):
     """Artefact Assemblage"""

@@ -256,12 +256,15 @@ def finalizeMarsSchema(schema,
                        multivalued=(),
                        remain_types = None,
                        add_synonyms=False,
+                       is_assemblage=False,
                       ):
     """Finalizes a Mars type schema to alter some fields
     """
 
     if addBodyText:
         schema.addField(BodyTextField)
+
+
 
     if igNumbers:
         if schema.has_key('igNumber'):
@@ -329,6 +332,12 @@ def finalizeMarsSchema(schema,
     if (schema.has_key('datingAssociation')
         and schema.has_key('absoluteDatings')):
         schema.moveField('absoluteDatings', after='datingAssociation')
+
+    if is_assemblage:
+        if 'taxon' in schema.keys():
+            schema['taxon'].multiValued = True
+
+
 
     for key in schema.keys():
         field = schema[key]
