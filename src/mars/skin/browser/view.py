@@ -90,8 +90,14 @@ class FolderContentsTable(foldercontents.FolderContentsTable):
                            buttons=self.buttons, id_suf=id_suf) 
 
 
+class IFolderContentsButtons(interface.Interface):
+    def button_available():
+        """."""
+
+import pdb;pdb.set_trace()  ## Breakpoint ##
 class FolderContentsView(foldercontents.FolderContentsView):
     """."""
+    interface.implements(tuple(tuple(foldercontents.FolderContentsView.__implemented__))+IFolderContentsButtons)
     index = ViewPageTemplateFile('folder_contents_per_type.pt')
     def button_available(self):
         object = self.context
