@@ -53,6 +53,28 @@ table.mars-datatable {
   line-height:18px;
 }
 
+
+.template-atct_edit .field{
+  border-top: 1px solid black;
+}
+
+.template-facetednavigation_view .documentByLine { 
+  display:none;
+}
+.template-facetednavigation_view #faceted-results ,
+.template-facetednavigation_view #faceted-results dt,
+.template-facetednavigation_view #faceted-results dd{
+  display:inline;
+}
+.template-facetednavigation_view #faceted-results dd:before {
+  content: "—";
+}
+.template-facetednavigation_view #faceted-results dd {
+  margin-left:5px;
+}
+
+
+
 /* </dtml-with> */
 
 /* DOCUMENTATION ON PRE-DEFINED PROPERTIES FROM PLONE */

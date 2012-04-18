@@ -94,11 +94,9 @@ class IFolderContentsButtons(interface.Interface):
     def button_available():
         """."""
 
-class FolderContentsView(foldercontents.FolderContentsView):
+class FolderContentsViewUtils(BrowserView):
     """."""
-    interface.implements(tuple(foldercontents.FolderContentsView.__implemented__)+(
-        IFolderContentsButtons,
-    ))
+    interface.implements(IFolderContentsButtons)
     index = ViewPageTemplateFile('folder_contents_per_type.pt')
     def button_available(self):
         object = self.context
@@ -106,7 +104,17 @@ class FolderContentsView(foldercontents.FolderContentsView):
         if not isinstance(object, MarsCollectionObject):
             ret = object.displayContentsTab()
         return ret 
+ 
 
+class FolderContentsView(foldercontents.FolderContentsView):
+    """."""
+    interface.implements(tuple(foldercontents.FolderContentsView.__implemented__)+(
+        IFolderContentsButtons,
+    ))
+    index = ViewPageTemplateFile('folder_contents_per_type.pt')
+    def button_available(self):
+        return self.context.restrictedTraverse(
+            '@@folder_contents_per_type_utils').button_available()
 
     def __init__(self, context, request):
         super(FolderContentsView, self).__init__(context, request)
@@ -221,8 +229,6 @@ class IMarsContentPerType(interface.Interface):
 from marsapp.content.base import MarsCollectionObject
 class MarsContentPerType(BrowserView):
     """."""
-    index = ViewPageTemplateFile('folder_contents_per_type.pt')
-
 
 
     def test(self, a, b, c):
