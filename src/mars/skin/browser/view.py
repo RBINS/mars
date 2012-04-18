@@ -94,7 +94,6 @@ class IFolderContentsButtons(interface.Interface):
     def button_available():
         """."""
 
-import pdb;pdb.set_trace()  ## Breakpoint ##
 class FolderContentsView(foldercontents.FolderContentsView):
     """."""
     interface.implements(tuple(tuple(foldercontents.FolderContentsView.__implemented__))+IFolderContentsButtons)
