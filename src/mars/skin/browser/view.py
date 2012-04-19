@@ -33,10 +33,14 @@ from Products.CMFPlone import utils
 
 
 def is_folderish(item):
-    if (   ('Topic' in item.meta_type)
-        or ('Folder' in item.meta_type)
-       ):
-        return True
+    try:
+        if (   ('Topic' in item.meta_type)
+            or ('Folder' in item.meta_type)
+           ):
+            return True
+    except Exception, e: 
+        import pdb;pdb.set_trace()  ## Breakpoint ##
+
 
 class Table(tableview.Table):
     """."""
@@ -102,7 +106,7 @@ class FolderContentsTable(foldercontents.FolderContentsTable):
         for item in items:
             if 'view_url' in item:
                 if (('folder_contents' in item['view_url'])
-                    and (is_folderish(item['brain'].meta_type))):
+                    and (is_folderish(item['brain']))):
                     item['view_url'] = item['view_url'].rsplit(
                         '/folder_contents')[0]
         return items
