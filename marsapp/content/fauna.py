@@ -60,7 +60,7 @@ FaunaRemainSchema += DiscoverySchema.copy()
 FaunaRemainSchema += AdministrationSchema.copy()
 FaunaRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
 FaunaRemainSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna'
-finalizeMarsSchema(FaunaRemainSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES)
+finalizeMarsSchema(FaunaRemainSchema, delFields=[], remain_types=FAUNA_TYPES, is_collection_object=True)
 
 class MarsFaunaRemain(MarsCollectionObject):
     """Fauna Remain"""
@@ -85,7 +85,7 @@ FaunaIndividualSchema += DiscoverySchema.copy()
 FaunaIndividualSchema += AdministrationSchema.copy()
 FaunaIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
 FaunaIndividualSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna'
-finalizeMarsSchema(FaunaIndividualSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES)
+finalizeMarsSchema(FaunaIndividualSchema, delFields=[], remain_types=FAUNA_TYPES, is_collection_object=True)
 
 class MarsFaunaIndividual(MarsCollectionObject):
     """Fauna Individual"""
@@ -109,7 +109,7 @@ FaunaAssemblageSchema += DiscoverySchema.copy()
 FaunaAssemblageSchema += AdministrationSchema.copy()
 FaunaAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
 FaunaAssemblageSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna'
-finalizeMarsSchema(FaunaAssemblageSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES, igNumbers=True, is_assemblage=True)
+finalizeMarsSchema(FaunaAssemblageSchema, delFields=[], remain_types=FAUNA_TYPES, igNumbers=True, is_assemblage=True, is_collection_object=True)
 
 class MarsFaunaAssemblage(MarsCollectionObject):
     """Fauna Assemblage"""
@@ -128,7 +128,7 @@ FaunaRefSampleSchema += AssemblageSchema.copy()
 FaunaRefSampleSchema += FaunaBiologySchema.copy() 
 FaunaRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
 #FaunaRefSampleSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna'
-finalizeMarsSchema(FaunaRefSampleSchema, delFields=['discoverySite'], remain_types=FAUNA_TYPES, igNumbers=True)
+finalizeMarsSchema(FaunaRefSampleSchema, delFields=[], remain_types=FAUNA_TYPES, igNumbers=True, is_collection_object=True)
 
 class MarsFaunaReferenceSample(MarsCollectionObject):
     """Fauna Reference Sample

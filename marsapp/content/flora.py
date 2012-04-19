@@ -60,11 +60,11 @@ FloraRemainSchema += DiscoverySchema.copy()
 FloraRemainSchema += AdministrationSchema.copy()
 FloraRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
 FloraRemainSchema['taxon'].widget.startup_directory = '/marscategories/taxa/flora'
-finalizeMarsSchema(FloraRemainSchema, igNumbers=True,
+finalizeMarsSchema(FloraRemainSchema, igNumbers=True, is_collection_object=True,
                    delFields=(#'pathology',
                               #'pathologyDetermination',
                               'laterality', 'polarity',
-                              'discoverySite',
+                           
                               'activityMarkers'), remain_types=FLORA_TYPES)
 
 class MarsFloraRemain(MarsCollectionObject):
@@ -90,11 +90,11 @@ FloraIndividualSchema += DiscoverySchema.copy()
 FloraIndividualSchema += AdministrationSchema.copy()
 FloraIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
 FloraIndividualSchema['taxon'].widget.startup_directory = '/marscategories/taxa/flora'
-finalizeMarsSchema(FloraIndividualSchema, igNumbers=True,
+finalizeMarsSchema(FloraIndividualSchema, igNumbers=True, is_collection_object=True,
                    delFields=('pathology',
                               'pathologyDetermination',
                               'laterality', 'polarity',
-                              'discoverySite',
+                           
                               'activityMarkers',
                               ), remain_types=FLORA_TYPES)
 
@@ -119,11 +119,11 @@ FloraAssemblageSchema += DiscoverySchema.copy()
 FloraAssemblageSchema += AdministrationSchema.copy()
 FloraAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
 FloraAssemblageSchema['taxon'].widget.startup_directory = '/marscategories/taxa/flora'
-finalizeMarsSchema(FloraAssemblageSchema, igNumbers=True,
+finalizeMarsSchema(FloraAssemblageSchema, igNumbers=True, is_collection_object=True,
                    delFields=(#'pathology',
                               #'pathologyDetermination',
                               'laterality', 'polarity',
-                              'discoverySite',
+                           
                               'activityMarkers',
                               ), remain_types=FLORA_TYPES)
 
@@ -142,7 +142,7 @@ FloraRefSampleSchema += AdministrationSchema.copy()
 FloraRefSampleSchema += AssemblageSchema.copy()
 FloraRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/flora'
 #FloraRefSampleSchema['taxon'].widget.startup_directory = '/marscategories/taxa/flora'
-finalizeMarsSchema(FloraRefSampleSchema, delFields=[ 'laterality', 'polarity', 'discoverySite'], remain_types=FLORA_TYPES, igNumbers=True, is_assemblage=True)
+finalizeMarsSchema(FloraRefSampleSchema, delFields=[ 'laterality', 'polarity', 'discoverySite'], remain_types=FLORA_TYPES, igNumbers=True, is_assemblage=True, is_collection_object=True)
 
 class MarsFloraReferenceSample(MarsCollectionObject):
     """Flora Reference Sample

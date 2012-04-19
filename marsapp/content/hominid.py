@@ -66,7 +66,7 @@ HominidRemainSchema += DiscoverySchema.copy()
 HominidRemainSchema += AdministrationSchema.copy()
 HominidRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 HominidRemainSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna/mammalia/primates/hominidae'
-finalizeMarsSchema(HominidRemainSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES)
+finalizeMarsSchema(HominidRemainSchema, delFields=[], remain_types=HOMINIDS_TYPES, is_collection_object=True)
 
 class MarsHominidRemain(MarsCollectionObject):
     """Hominid Remain"""
@@ -91,7 +91,7 @@ HominidIndividualSchema += DiscoverySchema.copy()
 HominidIndividualSchema += AdministrationSchema.copy()
 HominidIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 HominidIndividualSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna/mammalia/primates/hominidae'
-finalizeMarsSchema(HominidIndividualSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES)
+finalizeMarsSchema(HominidIndividualSchema, delFields=[], remain_types=HOMINIDS_TYPES, is_collection_object=True)
 
 class MarsHominidIndividual(MarsCollectionObject):
     """Hominid Individual"""
@@ -115,7 +115,7 @@ HominidAssemblageSchema += DiscoverySchema.copy()
 HominidAssemblageSchema += AdministrationSchema.copy()
 HominidAssemblageSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 HominidAssemblageSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna/mammalia/primates/hominidae'
-finalizeMarsSchema(HominidAssemblageSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES, igNumbers=True, is_assemblage=True)
+finalizeMarsSchema(HominidAssemblageSchema, delFields=[], remain_types=HOMINIDS_TYPES, igNumbers=True, is_assemblage=True, is_collection_object=True)
 
 class MarsHominidAssemblage(MarsCollectionObject):
     """Artefact Assemblage"""
@@ -133,7 +133,7 @@ HominidRefSampleSchema += AdministrationSchema.copy()
 HominidRefSampleSchema += AssemblageSchema.copy()
 HominidRefSampleSchema += HominidBiologySchema.copy() 
 HominidRefSampleSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
-finalizeMarsSchema(HominidRefSampleSchema, delFields=['discoverySite'], remain_types=HOMINIDS_TYPES, igNumbers=True)
+finalizeMarsSchema(HominidRefSampleSchema, delFields=[], remain_types=HOMINIDS_TYPES, igNumbers=True, is_collection_object=True)
 
 class MarsHominidReferenceSample(MarsCollectionObject):
     """Hominid Reference Sample"""

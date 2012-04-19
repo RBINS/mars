@@ -63,7 +63,7 @@ TechnologySchema = Schema((
 
     ReferenceField('artisan',
         required=False,
-        searchable=False,
+        searchable=True,
         relationship="manufacturedBy",
         allowed_types=PEOPLE_AND_INSTITUTION,
         widget=ReferenceBrowserWidget(label='Artisan',

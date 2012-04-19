@@ -66,21 +66,21 @@ MarsFolderSchema = ATFolderSchema.copy()
 MarsBTreeFolderSchema = ATBTreeFolderSchema.copy()
 MarsContentTypeSchema = ATFolderSchema.copy()
 MarsCollectionObjectSchema = ATDocumentSchema.copy() + Schema((
-     ReferenceField('colRelatedSite',
-        required=False,
-        searchable=True,
-        multiValued=False,
-        relationship='colRelatedSite',
-        allowed_types=('Site',),
-        widget=ReferenceBrowserWidget(label='Site',
-            label_msgid='label_discovery_site',
-            description='Select the site related to this object',
-            description_msgid='help_discovery_site',
-            domain='mars',
-            startup_directory='/collections/sites',
-            ),
-        schemata='description',
-        ), 
+#     ReferenceField('colRelatedSite',
+#        required=False,
+#        searchable=True,
+#        multiValued=False,
+#        relationship='colRelatedSite',
+#        allowed_types=('Site',),
+#        widget=ReferenceBrowserWidget(label='Site',
+#            label_msgid='label_discovery_site',
+#            description='Select the site related to this object',
+#            description_msgid='help_discovery_site',
+#            domain='mars',
+#            startup_directory='/collections/sites',
+#            ),
+#        schemata='description',
+#        ), 
 
 #        BooleanField('displayImages',
 #            default=False,
@@ -207,6 +207,25 @@ def make_dating_analysis(schemata='chronology'):
     )
 
 
+def make_discovery_site(schemata='discovery'):
+    return ReferenceField(
+        'discoverySite',
+        required=False,
+        searchable=False,
+        multiValued=True,
+        relationship='extractedFrom',
+        allowed_types=('Site',),
+        widget=ReferenceBrowserWidget(label='Site',
+                                      label_msgid='label_discovery_site',
+                                      description='Select the site where it was excavated from (as precisely as possible).',
+                                      description_msgid='help_discovery_site',
+                                      domain='mars',
+                                      startup_directory='/collections/sites',
+                                     ),
+        schemata=schemata,
+    )
+
+
 def make_dating_analysis_schema(schemata='chronology'):
     return Schema((
         make_dating_analysis(schemata=schemata),
@@ -257,6 +276,7 @@ def finalizeMarsSchema(schema,
                        remain_types = None,
                        add_synonyms=False,
                        is_assemblage=False,
+                       is_collection_object=False,
                       ):
     """Finalizes a Mars type schema to alter some fields
     """
@@ -336,6 +356,12 @@ def finalizeMarsSchema(schema,
     if is_assemblage:
         if 'taxon' in schema.keys():
             schema['taxon'].multiValued = True
+
+    if is_collection_object:
+        if not 'discoverySite' in schema.keys():
+            field = make_discovery_site(schemata='description')
+            schema.addField(field)
+            schema['discoverySite'].schemata = 'description'
 
 
 

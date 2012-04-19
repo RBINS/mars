@@ -43,7 +43,7 @@ AdministrationSchema = Schema((
         ), 
 
     ReferenceField('legalProperty',
-        searchable=False,
+        searchable=True,
         required=False,
         write_permission=EDIT_REPOSITORY_PERMISSION,
         relationship='ownedBy',
@@ -61,7 +61,7 @@ AdministrationSchema = Schema((
         ),
 
     ReferenceField('copyright',
-        searchable=False,
+        searchable=True,
         required=False,
         write_permission=EDIT_REPOSITORY_PERMISSION,
         relationship='hasCopyright',
@@ -79,7 +79,7 @@ AdministrationSchema = Schema((
         ),
 
     ReferenceField('curations',
-        searchable=False,
+        searchable=True,
         required=False,
         write_permission=EDIT_REPOSITORY_PERMISSION,
         relationship='curated',
@@ -96,7 +96,7 @@ AdministrationSchema = Schema((
         ),
 
     ReferenceField('repository',
-        searchable=False,
+        searchable=True,
         required=False,
         write_permission=EDIT_REPOSITORY_PERMISSION,
         relationship='conservatedIn',
@@ -115,7 +115,7 @@ AdministrationSchema = Schema((
     StringField('preciseRepository',
         read_permission=VIEW_REPOSITORY_PERMISSION,
         write_permission=EDIT_REPOSITORY_PERMISSION,
-        searchable=False,
+        searchable=True,
         required=False,
         widget=StringWidget(label='Precise repository',
             label_msgid='label_precise_repository',
