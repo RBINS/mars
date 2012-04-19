@@ -14,6 +14,7 @@ from plone.registry.interfaces import IRegistry
 from Products.ATContentTypes.interfaces.interfaces import IATContentType
 from Products.Archetypes.Widget import RichWidget
 from Acquisition import aq_parent
+from marsapp.content.base import MarsCollectionObject
 from Acquisition import aq_parent
 
 
@@ -223,7 +224,6 @@ class MarsUtils(BrowserView):
         catalog = getToolByName(self.context, 'portal_catalog')
         purl = getToolByName(self.context, 'portal_url')
         plone = purl.getPortalObject()
-        #import pdb;pdb.set_trace()  ## Breakpoint ##
 
     def related_items(self, res):
         """."""
@@ -256,7 +256,6 @@ class IMarsContentPerType(interface.Interface):
 
 
 
-from marsapp.content.base import MarsCollectionObject
 class MarsContentPerType(BrowserView):
     """."""
 
@@ -290,5 +289,6 @@ class MarsContentPerType(BrowserView):
             dres[pt].append(item)
         params['data'] = dres
         return self.index(**params)
+
 
 # vim:set et sts=4 ts=4 tw=80:
