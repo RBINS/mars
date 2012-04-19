@@ -94,6 +94,7 @@
   <index name="getArtisan"
      description="The artisan, tribe or culture who made an item (e.g. Iliad)"
      enabled="True" friendlyName="Artisan">
+   <criteria>ATSimpleStringCriterion</criteria>
    <criteria>ATReferenceCriterion</criteria>
   </index>
   <index name="getAuthors" description="" enabled="False" friendlyName="">
@@ -136,6 +137,7 @@
   <index name="getComponents" description="Remains composing this assemblage"
      enabled="True" friendlyName="Remain components">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getComponentsDistribution"
      description="Distribution of the contents inside this assemblage"
@@ -154,6 +156,7 @@
   <index name="getCopyright"
      description="Select the person or institute that has the copyright on this collection item"
      enabled="True" friendlyName="Copyright">
+   <criteria>ATSimpleStringCriterion</criteria>
    <criteria>ATReferenceCriterion</criteria>
   </index>
   <index name="getCountry" description="The country where a site is located"
@@ -166,11 +169,13 @@
      description="Select the curations this object went through, make new ones if no fitting is found"
      enabled="True" friendlyName="Curation history">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getCurator"
      description="A curator for a period of time (for Curation objects)"
      enabled="True" friendlyName="Curator">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getDatingAssociation"
      description="Select the dating association" enabled="True"
@@ -179,14 +184,27 @@
    <criteria>ATListCriterion</criteria>
    <criteria>ATSelectionCriterion</criteria>
   </index>
+  <index name="getChronologyDetails" 
+      description='Detailed chronological information.'
+      enabled="True"
+     friendlyName="Chronologies Details">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index> 
   <index name="getDiet" description="Information about diet" enabled="True"
      friendlyName="Diet reconstruction">
    <criteria>ATSimpleStringCriterion</criteria>
   </index>
+  <index name="getColRelatedSite" remove="true"
+     description="Select the site related to this object"
+     enabled="True" friendlyName="Site">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index> 
   <index name="getDiscoverers"
      description="The people or institution who found a collection item"
-     enabled="True" friendlyName="Discoverer">
+     enabled="True" friendlyName="Discoverers">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getDiscoveryPlace"
      description="The place where it was excavated from" enabled="True"
@@ -213,6 +231,7 @@
      description="The he people who made an excavation" enabled="True"
      friendlyName="Excavators">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getFeatures" description="Features and their determination"
      enabled="True" friendlyName="Features">
@@ -229,11 +248,13 @@
      description="A file describing the item features" enabled="True"
      friendlyName="Features file">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getFunctionalDescription"
      description="What an item was used for" enabled="True"
      friendlyName="Functional Description">
    <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATReferenceCriterion</criteria>
   </index>
   <index name="getGender" description="Gender" enabled="True"
      friendlyName="Gender">
@@ -252,6 +273,14 @@
   <index name="getGisPrecision"
      description="Select the way you found the GIS coordinates" enabled="True"
      friendlyName="GIS Coordinates calculation">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria>
+  </index>
+  <index name="getRawMaterials"
+     description="Select the materials composing this item."
+     enabled="True" friendlyName="Raw Materials">
+   <criteria>ATReferenceCriterion</criteria>
    <criteria>ATSimpleStringCriterion</criteria>
    <criteria>ATListCriterion</criteria>
    <criteria>ATSelectionCriterion</criteria>
@@ -303,6 +332,7 @@
      description="Select the person or institute that owns this collection item"
      enabled="True" friendlyName="Legal property">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getLocation" description="Description of the sites location"
      enabled="True" friendlyName="Sites Location">
@@ -318,6 +348,7 @@
   <index name="getMap" description="Administrative Map" enabled="True"
      friendlyName="Administrative Map">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getMeasures"
      description="The measures, and also the protocol used to get these measures"
@@ -328,6 +359,7 @@
      description="The file with all the measures in it" enabled="True"
      friendlyName="Measures file">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getObjPositionInParent"
      description="The order of an item in its parent folder" enabled="True"
@@ -346,6 +378,11 @@
      enabled="True" friendlyName="Paleoecology">
    <criteria>ATSimpleStringCriterion</criteria>
   </index>
+  <index name="getDiscoveryDetails"
+     description="Describe the general information about the discovery"
+     enabled="True" friendlyName="Discovery detailed Information">
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index> 
   <index name="getPathology"
      description="Information about the health status and pathologies"
      enabled="True" friendlyName="Pathology">
@@ -382,6 +419,7 @@
      description="Find items related to the selected items" enabled="True"
      friendlyName="Related To">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getRelativeGeologicalAge" description="" enabled="True"
      friendlyName="Relative Geological age">
@@ -398,16 +436,26 @@
      description="Select the institution were this object is in repository now"
      enabled="True" friendlyName="Repository">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getRepositoryConditions"
      description="he conditions under wich this object is being held in repository (e.g. light, temperature, humidity, ...)"
      enabled="True" friendlyName="Repository conditions">
    <criteria>ATSimpleStringCriterion</criteria>
   </index>
+  <index name="getAbsoluteDatings"
+      description='Dating analyse(s)'
+      enabled="True"
+      friendlyName="Dating analyse(s)">
+    <criteria>ATReferenceCriterion</criteria>
+    <criteria>ATSimpleIntCriterion</criteria>
+    <criteria>ATSimpleStringCriterion</criteria>
+  </index> 
   <index name="getRepositoryLink"
      description="The repository in which this object is" enabled="True"
      friendlyName="Link to Repository">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getRepositoryStatus"
      description="Status of this object (e.g. study, exposition, …)"
@@ -418,16 +466,25 @@
      description="The stratigraphical layer in which an item was found"
      enabled="True" friendlyName="Stratigraphical Layer">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
+  <index name="getDiscoveryExcavation"
+      description="The excavation where it was excavated from."
+      enabled="True" friendlyName="Excavation">
+   <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+  </index> 
   <index name="getStratigraphyEquivalents"
      description="Stratigraphies from different sites that are the same"
      enabled="True" friendlyName="Equivalent Stratigraphies">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getStratigraphyLayersComposition"
      description="Description based on the different assemblages"
      enabled="True" friendlyName="Stratigraphical Layers Composition">
    <criteria>ATReferenceCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
   </index>
   <index name="getSubstratum" description="" enabled="True"
      friendlyName="Substratum">
@@ -703,6 +760,9 @@
   <metadata name="getDiscoverySite"
      description="The site where it was excavated from" enabled="True"
      friendlyName="Site"/>
+  <metadata name="getDiscoveryExcavation"
+     description="The excavation where it was excavated from." enabled="True"
+     friendlyName="Excavation"/> 
   <metadata name="getEndingYear" description="The ending year of excavation"
      enabled="True" friendlyName="Ending year"/>
   <metadata name="getExcavators"
@@ -727,6 +787,12 @@
   <metadata name="getGisPrecision"
      description="Select the way you found the GIS coordinates" enabled="True"
      friendlyName="GIS Coordinates calculation"/>
+  <metadata name="getChronologyDetails"
+            description='Detailed chronological information.'
+     enabled="True" friendlyName="Chronology Details"/>  
+  <metadata name="getRawMaterials"
+     description="Select the materials composing this item."
+     enabled="True" friendlyName="Raw Materials"/> 
   <metadata name="getGisProjection"
      description="The projection system for the GIS coordinates"
      enabled="True" friendlyName="GIS Coordinates projection"/>
@@ -856,6 +922,10 @@
      friendlyName="Item Type (internal)"/>
   <metadata name="publication_year" description="" enabled="False"
      friendlyName=""/>
+<metadata name="getAbsoluteDatings"
+     description='Dating analyse(s)'
+     enabled="True"
+     friendlyName="Dating analyse(s)"/> 
   <metadata name="review_state"
      description="An item's workflow state (e.g.published)" enabled="True"
      friendlyName="State"/>
@@ -866,6 +936,8 @@
      description="Tags are used for ad-hoc organization of content"
      enabled="True" friendlyName="Tags"/>
   <metadata name="Title" description="" enabled="True" friendlyName="Title"/>
+  <metadata name="getColRelatedSite"  remove="true"
+      description="Select the site related to this object" enabled="True" friendlyName="Site"/>
   <metadata name="Type" description="An item's type (e.g. Event)"
      enabled="True" friendlyName="Item Type"/>
   <metadata name="UID" description="" enabled="False" friendlyName=""/>

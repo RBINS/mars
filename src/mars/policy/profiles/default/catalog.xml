@@ -85,30 +85,29 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <index name="getArcheologicalStatus" meta_type="ZCTextIndex">
+ <index name="getArcheologicalStatus" meta_type="KeywordIndex">
   <indexed_attr value="getArcheologicalStatus"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <index name="getArtisan" meta_type="ZCTextIndex">
   <indexed_attr value="getArtisan"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <index name="getBeginningYear" meta_type="ZCTextIndex">
-  <indexed_attr value="getBeginningYear"/>
+ <index name="getAuthors" meta_type="ZCTextIndex">
+  <indexed_attr value="Authors"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
+ </index>
+ <index name="getBeginningYear" meta_type="KeywordIndex">
+  <indexed_attr value="getBeginningYear"/>
  </index>
  <index name="getBones" meta_type="ZCTextIndex">
   <indexed_attr value="getBones"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <index name="getBurial" meta_type="ZCTextIndex">
+ <index name="getBurial" meta_type="KeywordIndex">
   <indexed_attr value="getBurial"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <index name="getCauseOfDeath" meta_type="ZCTextIndex">
   <indexed_attr value="getCauseOfDeath"/>
@@ -120,6 +119,11 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
+ <index name="getChronologyDetails" meta_type="ZCTextIndex">
+  <indexed_attr value="getChronologyDetails"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+ </index> 
  <index name="getComponents" meta_type="ZCTextIndex">
   <indexed_attr value="getComponents"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
@@ -130,6 +134,11 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
+ <index name="getComponentsDistributionDesc" meta_type="ZCTextIndex">
+  <indexed_attr value="getComponentsDistributionDesc"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+ </index> 
  <index name="getCoordinatesOthers" meta_type="ZCTextIndex">
   <indexed_attr value="getCoordinatesOthers"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
@@ -140,15 +149,8 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <index name="getCountry" meta_type="ZCTextIndex">
+ <index name="getCountry" meta_type="KeywordIndex">
   <indexed_attr value="getCountry"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
- </index>
- <index name="getDiscoverySite" meta_type="ZCTextIndex">
-  <indexed_attr value="getDiscoverySite"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <index name="getCurations" meta_type="ZCTextIndex">
   <indexed_attr value="getCurations"/>
@@ -160,10 +162,8 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <index name="getDatingAssociation" meta_type="ZCTextIndex">
+ <index name="getDatingAssociation" meta_type="KeywordIndex">
   <indexed_attr value="getDatingAssociation"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <index name="getDiet" meta_type="ZCTextIndex">
   <indexed_attr value="getDiet"/>
@@ -185,10 +185,13 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <index name="getEndingYear" meta_type="ZCTextIndex">
-  <indexed_attr value="getEndingYear"/>
+ <index name="getDiscoverySite" meta_type="ZCTextIndex">
+  <indexed_attr value="getDiscoverySite"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
+ </index>
+ <index name="getEndingYear" meta_type="KeywordIndex">
+  <indexed_attr value="getEndingYear"/>
  </index>
  <index name="getExcavators" meta_type="ZCTextIndex">
   <indexed_attr value="getExcavators"/>
@@ -215,26 +218,32 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <index name="getGender" meta_type="ZCTextIndex">
+ <index name="getGender" meta_type="KeywordIndex">
   <indexed_attr value="getGender"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <index name="getGeologicalComponents" meta_type="ZCTextIndex">
   <indexed_attr value="getGeologicalComponents"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <index name="getGisPrecision" meta_type="ZCTextIndex">
+ <index name="getGisPrecision" meta_type="KeywordIndex">
   <indexed_attr value="getGisPrecision"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <index name="getGisProjection" meta_type="ZCTextIndex">
   <indexed_attr value="getGisProjection"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
+ <index name="getRawMaterials" meta_type="ZCTextIndex">
+  <indexed_attr value="getRawMaterials"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+ </index> 
+ <index name="getAbsoluteDatings" meta_type="ZCTextIndex">
+  <indexed_attr value="getAbsoluteDatings"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+ </index>  
  <index name="getHistory" meta_type="ZCTextIndex">
   <indexed_attr value="getHistory"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
@@ -256,10 +265,8 @@
  <index name="getKeywords" meta_type="KeywordIndex">
   <indexed_attr value="getKeywords"/>
  </index>
- <index name="getLaterality" meta_type="ZCTextIndex">
+ <index name="getLaterality" meta_type="KeywordIndex">
   <indexed_attr value="getLaterality"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <index name="getLegalProperty" meta_type="ZCTextIndex">
   <indexed_attr value="getLegalProperty"/>
@@ -294,10 +301,8 @@
  <index name="getObjPositionInParent" meta_type="GopipIndex">
   <indexed_attr value="getObjPositionInParent"/>
  </index>
- <index name="getOrigin" meta_type="ZCTextIndex">
+ <index name="getOrigin" meta_type="KeywordIndex">
   <indexed_attr value="getOrigin"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <index name="getPaleoecology" meta_type="ZCTextIndex">
   <indexed_attr value="getPaleoecology"/>
@@ -309,10 +314,8 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <index name="getPolarity" meta_type="ZCTextIndex">
+ <index name="getPolarity" meta_type="KeywordIndex">
   <indexed_attr value="getPolarity"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <index name="getPreciseDate" meta_type="ZCTextIndex">
   <indexed_attr value="getPreciseDate"/>
@@ -324,10 +327,8 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
- <index name="getPreservation" meta_type="ZCTextIndex">
+ <index name="getPreservation" meta_type="KeywordIndex">
   <indexed_attr value="getPreservation"/>
-  <extra name="index_type" value="Okapi BM25 Rank"/>
-  <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
  <index name="getRawRelatedItems" meta_type="KeywordIndex">
   <indexed_attr value="getRawRelatedItems"/>
@@ -367,6 +368,16 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
+ <index name="getDiscoveryExcavation" meta_type="ZCTextIndex">
+   <indexed_attr value="getDiscoveryExcavation"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+ </index> 
+ <index name="getDiscoveryDetails" meta_type="ZCTextIndex">
+   <indexed_attr value="getDiscoveryDetails"/>
+  <extra name="index_type" value="Okapi BM25 Rank"/>
+  <extra name="lexicon_id" value="plone_lexicon"/>
+ </index>  
  <index name="getStratigraphyEquivalents" meta_type="ZCTextIndex">
   <indexed_attr value="getStratigraphyEquivalents"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
@@ -402,6 +413,11 @@
   <extra name="index_type" value="Okapi BM25 Rank"/>
   <extra name="lexicon_id" value="plone_lexicon"/>
  </index>
+ <index name="getColRelatedSite" meta_type="ZCTextIndex" purge="true" remove="true">
+   <indexed_attr value="getColRelatedSite"/>
+   <extra name="index_type" value="Okapi BM25 Rank"/>
+   <extra name="lexicon_id" value="plone_lexicon"/>
+ </index> 
  <index name="getTechnologyDetails" meta_type="ZCTextIndex">
   <indexed_attr value="getTechnologyDetails"/>
   <extra name="index_type" value="Okapi BM25 Rank"/>
@@ -493,7 +509,10 @@
  <column value="getDiet"/>
  <column value="getDiscoverers"/>
  <column value="getDiscoveryPlace"/>
+ <column value="getRawMaterials"/>
+ <column value="getChronologyDetails"/>
  <column value="getDiscoveryPreciseDate"/>
+ <column value="getDiscoverySite"/>
  <column value="getEndingYear"/>
  <column value="getExcavators"/>
  <column value="getFeatures"/>
@@ -511,7 +530,6 @@
  <column value="getInsuranceValue"/>
  <column value="getLaterality"/>
  <column value="getLegalProperty"/>
- <column value="getDiscoverySite"/>
  <column value="getLocation"/>
  <column value="getManufacturePreciseDate"/>
  <column value="getMap"/>
@@ -526,6 +544,7 @@
  <column value="getPreciseRepository"/>
  <column value="getPreservation"/>
  <column value="getRelativeGeologicalAge"/>
+ <column value="getAbsoluteDatings"/>
  <column value="getRemainType"/>
  <column value="getRemoteUrl"/>
  <column value="getRepository"/>
@@ -551,5 +570,6 @@
  <column value="portal_type"/>
  <column value="publication_year"/>
  <column value="review_state"/>
+ <column value="getColRelatedSite" remove="True" purge="true"/>
  <column value="start"/>
 </object>

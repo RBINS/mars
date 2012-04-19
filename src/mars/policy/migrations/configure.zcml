@@ -14,5 +14,6 @@
   <include package=".v17"/>
   <include package=".v18"/>
   <include package=".v19"/>
+  <include package=".v20"/>
 <!-- vim:set ft=xml: -->
 </configure>
