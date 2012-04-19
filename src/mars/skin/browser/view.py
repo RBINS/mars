@@ -12,7 +12,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFCore.utils import getToolByName
 from plone.registry.interfaces import IRegistry
 from Products.ATContentTypes.interfaces.interfaces import IATContentType
-from Products.Archetypes.Widget import RichWidget 
+from Products.Archetypes.Widget import RichWidget
 from Acquisition import aq_parent
 from Acquisition import aq_parent
 
@@ -21,6 +21,7 @@ from plone.app.content.browser import foldercontents
 
 from Acquisition import aq_inner
 from plone.app.content.browser import tableview
+from marsapp.content.excavation import MarsExcavation
 
 import demjson
 ### ... as well as demjson's
@@ -31,13 +32,19 @@ from Products.CMFPlone import utils
 
 
 
+def is_folderish(item):
+    if (   ('Topic' in item.meta_type)
+        or ('Folder' in item.meta_type)
+       ):
+        return True
+
 class Table(tableview.Table):
     """."""
     render = ViewPageTemplateFile("table.pt")
     js = ViewPageTemplateFile("table.js.pt")
     def __init__(self, request, base_url, view_url, items, show_sort_column=False,
                  buttons=[], pagesize=20, show_select_column=True, show_size_column=True,
-                 show_modified_column=True, show_status_column=True, id_suf=None): 
+                 show_modified_column=True, show_status_column=True, id_suf=None):
         tableview.Table.__init__(self, request, base_url, view_url, items, show_sort_column,
                  buttons, pagesize, show_select_column, show_size_column,
                  show_modified_column, show_status_column)
@@ -48,7 +55,7 @@ class Table(tableview.Table):
             id_suf = '-custom'
         if self.selection == id_suf[1:]:
             self.selectcurrentbatch=True
-            self.selectall = True 
+            self.selectall = True
         self.id_suf = id_suf
 
     def get_table_id(self):
@@ -87,11 +94,23 @@ class FolderContentsTable(foldercontents.FolderContentsTable):
         view_url = url + '/folder_contents_per_type'
         self.table = Table(request, url, view_url, self.items,
                            show_sort_column=self.show_sort_column,
-                           buttons=self.buttons, id_suf=id_suf) 
+                           buttons=self.buttons, id_suf=id_suf)
 
+
+    def folderitems(self):
+        items = foldercontents.FolderContentsTable.folderitems(self)
+        for item in items:
+            if 'view_url' in item:
+                if (('folder_contents' in item['view_url'])
+                    and (is_folderish(item['brain'].meta_type))):
+                    item['view_url'] = item['view_url'].rsplit(
+                        '/folder_contents')[0]
+        return items
 
 class IFolderContentsButtons(interface.Interface):
     def button_available():
+        """."""
+    def button_available_for_folder():
         """."""
 
 class FolderContentsViewUtils(BrowserView):
@@ -101,10 +120,17 @@ class FolderContentsViewUtils(BrowserView):
     def button_available(self):
         object = self.context
         ret = False
-        if not isinstance(object, MarsCollectionObject):
+        if not isinstance(object, (MarsCollectionObject, 
+                                   MarsExcavation)):
             ret = object.displayContentsTab()
-        return ret 
- 
+        return ret
+    def button_available_for_folder(self):
+        ret = False
+        if hasattr(self.context, 'meta_type'):
+            if is_folderish(self.context):
+                ret = True
+        return ret
+
 
 class FolderContentsView(foldercontents.FolderContentsView):
     """."""
@@ -121,10 +147,10 @@ class FolderContentsView(foldercontents.FolderContentsView):
 
     def test(self, a, b, c):
         """."""
-        return True==bool(a) and b or c 
+        return True==bool(a) and b or c
 
     @property
-    @instance.memoize 
+    @instance.memoize
     def items(self):
         catalog = getToolByName(self.context, 'portal_catalog')
         brains = catalog.searchResults(
@@ -144,18 +170,18 @@ class FolderContentsView(foldercontents.FolderContentsView):
         params = {'test': self.test,
                   'myview' : self}
 
-        return self.index(**params) 
+        return self.index(**params)
 
     def contents_table(self):
         table = FolderContentsTable(aq_inner(self.context), self.request)
-        return table.render()  
+        return table.render()
 
     def contents_tables(self):
         tables = {}
         for item  in self.items:
             table = FolderContentsTable(
-                aq_inner(self.context), 
-                self.request, 
+                aq_inner(self.context),
+                self.request,
                 contentFilter={'portal_type':item},
                 id_suf = '-' + item)
             tables[item] = table
@@ -168,7 +194,7 @@ class IMarsUtils(interface.Interface):
     def related_items(res):
         """related items"""
     def getContentType(object, fieldname):
-        """.""" 
+        """."""
 
 
 class MarsUtils(BrowserView):
@@ -202,12 +228,12 @@ class MarsUtils(BrowserView):
             pt = item.portal_type
             if not pt in dres: dres[pt] = []
             dres[pt].append(item)
-        return dres  
+        return dres
 
     def getContentType(self, object, fieldname):
         """i dont know why but BaseUnit return a
-        default text/plain content type for 
-        anything else that 'text', just work around 
+        default text/plain content type for
+        anything else that 'text', just work around
         to setup well the richwidgets"""
         ct = object.portal_tinymce.getContentType(object=object, fieldname=fieldname)
         field = object.getField(fieldname)
@@ -242,7 +268,7 @@ class MarsContentPerType(BrowserView):
             pt = item.portal_type
             if not pt in dres: dres[pt] = []
             dres[pt].append(item)
-        return dres   
+        return dres
 
     def __call__(self, *args):
         params = {'test': self.test}
@@ -258,7 +284,7 @@ class MarsContentPerType(BrowserView):
             pt = item.portal_type
             if not pt in dres: dres[pt] = []
             dres[pt].append(item)
-        params['data'] = dres   
+        params['data'] = dres
         return self.index(**params)
- 
+
 # vim:set et sts=4 ts=4 tw=80:

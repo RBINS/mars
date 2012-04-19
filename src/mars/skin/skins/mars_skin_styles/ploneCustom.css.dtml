@@ -75,6 +75,9 @@ table.mars-datatable {
 
 
 
+.template-folder_contents a.link-parent {display:none;}
+
+
 /* </dtml-with> */
 
 /* DOCUMENTATION ON PRE-DEFINED PROPERTIES FROM PLONE */
