@@ -20,6 +20,8 @@ from Acquisition import aq_parent
 
 from plone.app.content.browser import foldercontents
 
+from marsapp.categories.category import MarsCategory
+from marsapp.categories.container import MarsCategoriesContainer
 from Acquisition import aq_inner
 from plone.app.content.browser import tableview
 from marsapp.content.excavation import MarsExcavation
@@ -33,14 +35,13 @@ from Products.CMFPlone import utils
 
 
 
-def is_folderish(item):
-    try:
-        if (   ('Topic' in item.meta_type)
-            or ('Folder' in item.meta_type)
-           ):
-            return True
-    except Exception, e: 
-        import pdb;pdb.set_trace()  ## Breakpoint ##
+def is_bareplone_folderish(item):
+    if (   ('Topic' in item.meta_type)
+        or ('Folder' in item.meta_type)
+        or ('MarsCategor' in item.meta_type)
+        or ('Plone Site' == item.meta_type)
+       ):
+        return True
 
 
 class Table(tableview.Table):
@@ -107,7 +108,7 @@ class FolderContentsTable(foldercontents.FolderContentsTable):
         for item in items:
             if 'view_url' in item:
                 if (('folder_contents' in item['view_url'])
-                    and (is_folderish(item['brain']))):
+                    and (not is_bareplone_folderish(item['brain']))):
                     item['view_url'] = item['view_url'].rsplit(
                         '/folder_contents')[0]
         return items
@@ -121,18 +122,20 @@ class IFolderContentsButtons(interface.Interface):
 class FolderContentsViewUtils(BrowserView):
     """."""
     interface.implements(IFolderContentsButtons)
-    index = ViewPageTemplateFile('folder_contents_per_type.pt')
     def button_available(self):
-        object = self.context
-        ret = False
+        """."""
+        ret, object = False, self.context
         if not isinstance(object, (MarsCollectionObject, 
+                                   MarsCategory,
+                                   MarsCategoriesContainer,
                                    MarsExcavation)):
             ret = object.displayContentsTab()
         return ret
     def button_available_for_folder(self):
+        """."""
         ret = False
         if hasattr(self.context, 'meta_type'):
-            if is_folderish(self.context):
+            if is_bareplone_folderish(self.context):
                 ret = True
         return ret
 
@@ -144,6 +147,7 @@ class FolderContentsView(foldercontents.FolderContentsView):
     ))
     index = ViewPageTemplateFile('folder_contents_per_type.pt')
     def button_available(self):
+        """backward compatiblity"""
         return self.context.restrictedTraverse(
             '@@folder_contents_per_type_utils').button_available()
 
