@@ -36,6 +36,24 @@
    <criteria>ATFriendlyDateCriteria</criteria>
    <criteria>ATDateRangeCriterion</criteria>
   </index>
+  <index name="getDiscoveryYear"
+            description='Enter the year of discovery.'
+     enabled="True" friendlyName="Discovery Year">
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+  </index> 
+  <index name="getIgYear"
+      description='Year this item got its IG nunmber.'
+     enabled="True" friendlyName="Year of Inventorisation">
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+  </index>         
+  <index name="getBPDating"
+            description='"Before Present" dating (Present is 1950).',
+     enabled="True" friendlyName="BP Dating">
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+  </index>          
   <index name="Creator" description="" enabled="True" friendlyName="Creator">
    <criteria>ATSelectionCriterion</criteria>
    <criteria>ATCurrentAuthorCriterion</criteria>
