@@ -49,7 +49,7 @@
    <criteria>ATDateRangeCriterion</criteria>
   </index>         
   <index name="getBPDating"
-            description='"Before Present" dating (Present is 1950).',
+            description='"Before Present" dating (Present is 1950).'
      enabled="True" friendlyName="BP Dating">
    <criteria>ATFriendlyDateCriteria</criteria>
    <criteria>ATDateRangeCriterion</criteria>
@@ -966,7 +966,7 @@
      description='Year this item got its IG nunmber.'
      enabled="True" friendlyName="Year of Inventorisation"/>
  <metadata name="getBPDating"
-     description='"Before Present" dating (Present is 1950).',
+     description='"Before Present" dating (Present is 1950).'
      enabled="True" friendlyName="BP Dating"/>
 
 
