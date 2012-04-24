@@ -25,6 +25,8 @@ __docformat__ = 'restructuredtext'
 
 
 import re
+from DateTime import DateTime
+import datetime 
 
 try:
   from Products.LinguaPlone.public import *
@@ -35,6 +37,7 @@ except ImportError:
 from marsapp.categories.widget import ReferenceBrowserWidget
 
 from Products.ATContentTypes.content.schemata import ATContentTypeSchema
+from plone.formwidget.datetime.at import DateWidget, DatetimeWidget, YearWidget
 from Products.ATContentTypes.content.folder import ATFolderSchema
 from Products.ATContentTypes.content.folder import ATBTreeFolderSchema
 from Products.ATContentTypes.content.file import ATFileSchema
@@ -80,7 +83,7 @@ MarsCollectionObjectSchema = ATDocumentSchema.copy() + Schema((
 #            startup_directory='/collections/sites',
 #            ),
 #        schemata='description',
-#        ), 
+#        ),
 
 #        BooleanField('displayImages',
 #            default=False,
@@ -229,7 +232,7 @@ def make_discovery_site(schemata='discovery'):
 def make_dating_analysis_schema(schemata='chronology'):
     return Schema((
         make_dating_analysis(schemata=schemata),
-    )) 
+    ))
 
 
 
@@ -338,7 +341,7 @@ def finalizeMarsSchema(schema,
         #schema['relatedItems'].widget.visible['edit'] = 'visible'
         #schema['relatedItems'].widget.visible['view'] = 'visible'
         #schema['relatedItems'].widget.visible['edit'] = 'invisible'
-        #schema['relatedItems'].widget.visible['view'] = 'hidden' 
+        #schema['relatedItems'].widget.visible['view'] = 'hidden'
         schema['relatedItems'].widget = ReferenceBrowserWidget(
             allow_search = True,
             allow_browse = True,
@@ -348,7 +351,7 @@ def finalizeMarsSchema(schema,
             label = _(u'label_related_items', default=u'Related Items'),
             description = '',
             visible = {'edit' : 'visible', 'view' : 'invisible' }
-        ) 
+        )
     if (schema.has_key('datingAssociation')
         and schema.has_key('absoluteDatings')):
         schema.moveField('absoluteDatings', after='datingAssociation')
@@ -361,9 +364,10 @@ def finalizeMarsSchema(schema,
         if not 'discoverySite' in schema.keys():
             field = make_discovery_site(schemata='description')
             schema.addField(field)
-            schema['discoverySite'].schemata = 'description'
+            schema.changeSchemataForField('discoverySite', 'description')
 
-
+    if schema.has_key("stratigraphicalLayer") and schema.has_key("discoveryExcavation"):
+        schema.moveField("discoveryExcavation", after="stratigraphicalLayer")
 
     for key in schema.keys():
         field = schema[key]
@@ -400,16 +404,15 @@ CollectionBaseSchema = Schema((
         schemata='default',
         ),
 
-    IntegerField('igYear',
-        size=4,
+    DateTimeField('igYear',
         required=False,
         searchable=False,
-        Validator=('isInt','isYear'),
-        widget=IntegerWidget(label='Year of Inventorisation',
+        widget=YearWidget(label='Year of Inventorisation',
             label_msgid='label_IG_date',
             description='Year this item got its IG nunmber.',
             description_msgid='help_IG_date',
             domain='mars',
+            years_range = (-datetime.datetime.now().year, 10),
             ),
         schemata='default',
         ),

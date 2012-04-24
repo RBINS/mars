@@ -68,14 +68,15 @@ ChronologySchema = Schema((
 
 ChronologyDatingSchema = Schema((
 
-    IntegerField('BPDating',
+    DateTimeField('BPDating',
         required=False,
         searchable=False,
-        vocabulary=bp_dating_years,
-        widget=SelectionWidget(label='BP Dating',
+        widget=YearWidget(label='BP Dating',
             label_msgid='label_dating',
             description='"Before Present" dating (Present is 1950).',
             description_msgid='help_dating',
+            default = DateTime('1/1/0'),
+            years_range = (-datetime.datetime.now().year, 10),
             domain='mars',
             ),
         schemata='chronology',

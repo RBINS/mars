@@ -26,7 +26,10 @@ __docformat__ = 'restructuredtext'
 
 from api import *
 from config import PROJECTNAME
+
+import datetime
 from schemata import *
+
 
 SiteSchema = MarsFolderSchema.copy()
 SiteSchema += Schema((
@@ -54,8 +57,7 @@ SiteSchema += Schema((
             startup_directory='/marscategories/site',
             ),
         schemata='description',
-        ),
-
+                ),
     TextField(
         'detailedDescription',
         required=False,
@@ -85,13 +87,13 @@ SiteSchema += make_coordinates_file_schema()
 
 SiteSchema['discoveryExcavation'].widget.visible = SiteSchema['excavationCoordinates'].widget.visible = {
     'view': 'invisible',
-    } 
+    }
 
 
 finalizeMarsSchema(SiteSchema, folderish=True,
                    delFields=('stratigraphicalLayer',
                    'discoveryPlace', 'discoverySite',
-                   'discoveryExcavation', 
+                   'discoveryExcavation',
                    'excavationCoordinates'))
 
 class MarsSite(ATFolder, MarsMixin):

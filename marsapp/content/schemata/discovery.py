@@ -1,4 +1,4 @@
-# #-*- coding: utf-8 -*-   
+# #-*- coding: utf-8 -*-
 #  mars http://www.naturalsciences.be/metamars/products/
 #  Archetypes implementation of the MARS core types based on ATContentTypes
 #  Copyright (c) 2003-2007 MARS development team
@@ -28,15 +28,14 @@ from base import *
 
 DiscoverySchema = Schema((
 
-    IntegerField('discoveryYear',
-        size=4,
+    DateTimeField('discoveryYear',
         required=False,
         searchable=True,
-        Validator=('isInt','isYear'),
-        widget=IntegerWidget(label='Discovery year',
+        widget=YearWidget(label='Discovery year',
             label_msgid='label_discovery_date',
             description='Enter the year of discovery.',
             description_msgid='help_discovery_date',
+            years_range = (-datetime.datetime.now().year, 10),
             domain='mars',
             ),
         schemata='discovery',
@@ -63,7 +62,7 @@ DiscoverySchema = Schema((
         default_output_type='text/x-html-safe',
         allowable_content_types = ('text/plain',
                                   'text/structured',
-                                  'text/html',),     
+                                  'text/html',),
         widget=RichWidget(label='Precise Date',
             label_msgid='label_discovery_precise_date',
             description='Enter the precise date of discovery, or comments on *when* the collection item was discovered (YYYY/MM/DD).',
@@ -114,7 +113,7 @@ DiscoverySchema = Schema((
     #    default_output_type='text/x-html-safe',
     #    allowable_content_types = ('text/plain',
     #                              'text/structured',
-    #                              'text/html',),       
+    #                              'text/html',),
     #    widget=RichWidget(label='Discovery Site',
     #        label_msgid='label_discovery_place',
     #        description='Insert information about discovery site if it is not available from the site list.',
@@ -148,7 +147,7 @@ DiscoverySchema = Schema((
         default_output_type='text/x-html-safe',
         allowable_content_types = ('text/plain',
                                   'text/structured',
-                                  'text/html',),      
+                                  'text/html',),
         widget=RichWidget(label='Discovery detailed Information',
             label_msgid='label_discovery_details',
             description='Describe the general information about the discovery',
@@ -186,6 +185,6 @@ DiscoverySchema = Schema((
             ),
         schemata='discovery',
         ),
-     make_coordinates_file(schemata='discovery'), 
+     make_coordinates_file(schemata='discovery'),
 
     ))

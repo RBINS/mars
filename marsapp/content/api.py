@@ -29,6 +29,10 @@ from zope.interface import implementedBy, implements
 from zope import interface, component
 from AccessControl import ClassSecurityInfo
 
+
+from DateTime import DateTime
+import datetime
+
 from Products.Archetypes.public import registerType as _rt
 from Products.ATContentTypes.content.base import registerATCT as _rat
 from Products.ATContentTypes.interface import IATDocument
@@ -43,6 +47,7 @@ from base import MarsCollectionObject, MarsMixin
 
 from interfaces import IFilesAndImagesContainer, IMarsCollection
 
+from plone.formwidget.datetime.at import DateWidget, DatetimeWidget, YearWidget
 registerATCT = _rat
 
 def registerType(class_, project=None):
