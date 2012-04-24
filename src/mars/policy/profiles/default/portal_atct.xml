@@ -958,7 +958,20 @@
       description="Select the site related to this object" enabled="True" friendlyName="Site"/>
   <metadata name="Type" description="An item's type (e.g. Event)"
      enabled="True" friendlyName="Item Type"/>
-  <metadata name="UID" description="" enabled="False" friendlyName=""/>
+ <metadata name="UID" description="" enabled="False" friendlyName=""/>
+ <metadata name="getDiscoveryYear"
+     description='Enter the year of discovery.'
+     enabled="True" friendlyName="Discovery Year"/>
+ <metadata name="getIgYear"
+     description='Year this item got its IG nunmber.'
+     enabled="True" friendlyName="Year of Inventorisation"/>
+ <metadata name="getBPDating"
+     description='"Before Present" dating (Present is 1950).',
+     enabled="True" friendlyName="BP Dating"/>
+
+
+
+
  </topic_metadata>
  <property name="title">ATContentTypes Tool</property>
  <property name="image_types">
