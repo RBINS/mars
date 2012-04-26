@@ -50,15 +50,16 @@ AnalysisSchema += Schema((
         schemata="description",
         ),
 
-    IntegerField('year',
+    DateTimeField('year',
         required=False,
         searchable=True,
-        size=4,
-        widget=IntegerWidget(
+        #size=4,
+        widget=YearWidget(
             label='Year of analysis',
             label_msgid='label_analysis_year',
             description='Choose the year when this analysis was performed.',
             description_msgid='help_analysis_year',
+            years_range = (-1800, 10),
             domain='mars',
             ),
         ),

@@ -35,7 +35,7 @@ DiscoverySchema = Schema((
             label_msgid='label_discovery_date',
             description='Enter the year of discovery.',
             description_msgid='help_discovery_date',
-            years_range = (-datetime.datetime.now().year, 10),
+            years_range = (-300, 0),
             domain='mars',
             ),
         schemata='discovery',

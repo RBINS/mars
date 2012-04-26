@@ -412,7 +412,7 @@ CollectionBaseSchema = Schema((
             description='Year this item got its IG nunmber.',
             description_msgid='help_IG_date',
             domain='mars',
-            years_range = (-datetime.datetime.now().year, 10),
+            years_range = (-300, 10),
             ),
         schemata='default',
         ),
