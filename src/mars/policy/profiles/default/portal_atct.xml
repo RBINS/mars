@@ -42,6 +42,13 @@
    <criteria>ATFriendlyDateCriteria</criteria>
    <criteria>ATDateRangeCriterion</criteria>
   </index> 
+  <index name="getYear"
+    friendlyName='Year of analysis'
+    description='Choose the year when this analysis was performed.'
+    enabled="True" >
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+  </index>  
   <index name="getIgYear"
       description='Year this item got its IG nunmber.'
      enabled="True" friendlyName="Year of Inventorisation">
@@ -51,8 +58,9 @@
   <index name="getBPDating"
             description='"Before Present" dating (Present is 1950).'
      enabled="True" friendlyName="BP Dating">
-   <criteria>ATFriendlyDateCriteria</criteria>
-   <criteria>ATDateRangeCriterion</criteria>
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+   <criteria>ATSelectionCriterion</criteria> 
   </index>          
   <index name="Creator" description="" enabled="True" friendlyName="Creator">
    <criteria>ATSelectionCriterion</criteria>
@@ -121,9 +129,8 @@
   <index name="getBeginningYear"
      description="The beginning year of excavation" enabled="True"
      friendlyName="Beginning year">
-   <criteria>ATSimpleStringCriterion</criteria>
-   <criteria>ATListCriterion</criteria>
-   <criteria>ATSelectionCriterion</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+   <criteria>ATFriendlyDateCriteria</criteria> 
   </index>
   <index name="getBones"
      description="Select the bones making up this reference sample"
@@ -241,9 +248,8 @@
   </index>
   <index name="getEndingYear" description="The ending year of excavation"
      enabled="True" friendlyName="Ending year">
-   <criteria>ATSimpleStringCriterion</criteria>
-   <criteria>ATListCriterion</criteria>
-   <criteria>ATSelectionCriterion</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+   <criteria>ATFriendlyDateCriteria</criteria>  
   </index>
   <index name="getExcavators"
      description="The he people who made an excavation" enabled="True"
