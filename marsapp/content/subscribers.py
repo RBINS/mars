@@ -35,7 +35,6 @@ def create_files_and_images_folders(obj, event):
                 #        "publish",
                 #        comment="publised programmatically")
     except Exception, e:
-        import pdb;pdb.set_trace()  ## Breakpoint ##
         msg = 'Ooops, %s' % e
         log.error(msg)
 

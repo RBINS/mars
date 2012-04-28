@@ -56,6 +56,7 @@ CollectionSchema += Schema((
             description='Site or excavation this collection comes from.',
             description_msgid='help_collection_origin',
             domain='mars',
+            startup_directory = '/collections/sites',
             ),
         ),
 
