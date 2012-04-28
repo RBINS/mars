@@ -3,7 +3,43 @@
 %HEADER%
 
 var tableid = "#"+options.tableid;
-jq(tableid).dataTable();
-
-
+fcpt_asInitVals[tableid] = new Array();
+fcpt_tables[tableid] = jq(tableid).dataTable(
+{ bJQueryUI: true,
+  aoColumnDefs: [
+      {aTargets: [1], bSearchable: true},
+      {aTargets: [3], bSearchable: true},
+      {aTargets: [4], bSearchable: true}
+]});
+/*
+jq("tfoot input", fcpt_tables[tableid]).keyup(function () {
+  fcpt_tables[tableid].fnFilter(this.value, $("tfoot input", fcpt_tables[tableid]).index(this) );
+});
+jq("tfoot input", fcpt_tables[tableid]).each( function (i) {
+  fcpt_asInitVals[tableid][i] = this.value;
+});
+jq("tfoot input", fcpt_tables[tableid]).focus( function () {
+  if (this.className == "search_init")
+  {
+    this.className = "";
+    this.value = "";
+  }
+} );
+jq("tfoot input", fcpt_tables[tableid]).blur( function (i) {
+  if ( this.value == "" )
+  {
+    this.className = "search_init";
+    this.value = fcpt_asInitVals[tableid][$("tfoot input").index(this)];
+  }
+});
+*/
+fcpt_tables[tableid].columnFilter(
+{ aoColumns: [
+  {type: "null"             },
+  {type: "text", bSmart:true, bRegex:true},
+  {type: "null"             },
+  {type: "text", bSmart:true, bRegex:true},
+  {type: "text", bSmart:true, bRegex:true}
+  ]
+});
 </script>

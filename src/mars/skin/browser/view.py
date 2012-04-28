@@ -146,13 +146,16 @@ class FolderContentsView(foldercontents.FolderContentsView):
         IFolderContentsButtons,
     ))
     index = ViewPageTemplateFile('folder_contents_per_type.pt')
+
+
+    def __init__(self, context, request):
+        BrowserView.__init__(self, context, request)
+
     def button_available(self):
         """backward compatiblity"""
         return self.context.restrictedTraverse(
             '@@folder_contents_per_type_utils').button_available()
 
-    def __init__(self, context, request):
-        super(FolderContentsView, self).__init__(context, request)
 
     def test(self, a, b, c):
         """."""

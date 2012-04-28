@@ -15,6 +15,7 @@
 
   <body>
 
+
       <metal:content-title fill-slot="content-title">
           <h1 class="documentFirstHeading"> 
               <tal:block condition="exists:here/aq_explicit/widget">
@@ -64,6 +65,11 @@
                 <input type="hidden" name="pagenumber" tal:attributes="value python:1"/>
                 <input type="hidden" name="show_all" tal:attributes="value python:True"/> 
                 <input type="hidden" name="sort_on" tal:attributes="value request/sort_on|string:getObjPositionInParent" /> 
+      <script language="JavaScript">
+          var fcpt_asInitVals = new Array();
+          var fcpt_tables = new Array();
+      </script>
+        
                 <tal:block 
                   tal:repeat="type data">
                   <dl
@@ -99,6 +105,6 @@
             <input tal:replace="structure context/@@authenticator/authenticator" />
           </form>
       </metal:content-core>
-      
+
   </body>
 </html>

@@ -142,7 +142,14 @@
               </td>
             </tr>
           </tal:items>
-        </tbody>
+        </tbody>      
+        <tfoot>
+          <th></th>
+          <th><input type="text" class="search_init" value="Search title" name="search_title"/></th>
+          <th></th>
+          <th><input type="text" class="search_init" value="Search modified" name="search_modified"/></th>
+          <th><input type="text" class="search_init" value="Search state" name="search_state"/></th>
+        </tfoot>
       </metal:block>
     </table>
     <script language="JavaScript" 
