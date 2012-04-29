@@ -45,7 +45,7 @@ from Products.ATContentTypes.atct import ATImage
 
 from base import MarsCollectionObject, MarsMixin
 
-from interfaces import IFilesAndImagesContainer, IMarsCollection
+from interfaces import IFilesAndImagesContainer, IMarsCollection, IMarsObject
 
 from plone.formwidget.datetime.at import DateWidget, DatetimeWidget, YearWidget
 registerATCT = _rat

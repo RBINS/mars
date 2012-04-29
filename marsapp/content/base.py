@@ -6,7 +6,7 @@ from Products.Archetypes.public import OrderedBaseFolder
 from Products.ATContentTypes.interface import IATDocument
 from Products.ATContentTypes.atct import ATDocument
 
-from interfaces import IMarsCollectionObject
+from interfaces import IMarsCollectionObject, IMarsObject
 from interfaces import ISchemataViewletEnabled
 
 from schemata import MarsCollectionObjectSchema
@@ -15,6 +15,7 @@ from schemata import MarsCollectionObjectSchema
 from Products.CMFCore.utils import getToolByName
 
 class MarsMixin(object):
+    implements((IMarsObject,))
     def mars_relative_path(self, cctx):
         purl = getToolByName(self, 'portal_url')
         plone = purl.getPortalObject()

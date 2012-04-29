@@ -535,4 +535,5 @@ MarsTypes = [
     'Structure Assemblage',
 ]
 
+REFERENCEFIELDS_INDEXES = {}
 

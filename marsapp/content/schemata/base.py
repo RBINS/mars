@@ -26,7 +26,7 @@ __docformat__ = 'restructuredtext'
 
 import re
 from DateTime import DateTime
-import datetime 
+import datetime
 
 try:
   from Products.LinguaPlone.public import *
@@ -62,7 +62,6 @@ from marsapp.content.permissions import EDIT_REPOSITORY_PERMISSION
 from marsapp.content import MarsMessageFactory as _
 
 from Products.ATContentTypes.content.schemata import relatedItemsField
-
 
 MarsBaseSchema = ATContentTypeSchema.copy()
 MarsFolderSchema = ATFolderSchema.copy()
@@ -380,12 +379,6 @@ def finalizeMarsSchema(schema,
         if schema.has_key(fieldname) \
         and bool(schema[fieldname].searchable) is not True:
             schema[fieldname].searchable = True
-
-
-
-
-
-
 
 BodyTextSchema = Schema(( BodyTextField, ))
 

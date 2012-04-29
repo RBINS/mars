@@ -27,6 +27,7 @@ __docformat__ = 'restructuredtext'
 from AccessControl import ModuleSecurityInfo
 from zope.i18nmessageid import MessageFactory
 
+
 from Products.CMFCore.DirectoryView import registerDirectory
 from Products.CMFCore.utils import ContentInit
 from Products.ATContentTypes.config import HAS_LINGUA_PLONE
@@ -85,4 +86,65 @@ def initialize(context):
             constructors = (constructors[i],),
             permission   = ADD_CONTENT_PERMISSIONS[klassname]
             )
-                              
+
+    # register custom indexers for relateditems fields
+    from zope.component import provideAdapter
+    from plone.indexer.decorator import indexer
+    from marsapp.content.interfaces import IMarsObject
+    from marsapp.content.schemata import vocabularies
+    from Products.Archetypes.interfaces.field import IReferenceField
+    from Products.CMFCore.utils import getToolByName
+    # allow us to index all related fields on title & desc
+    for ct in contentTypes:
+        for key in ct.schema.keys():
+            field = ct.schema[key]
+            if (IReferenceField.providedBy(field) 
+                and not key
+                in vocabularies.REFERENCEFIELDS_INDEXES):
+                vocabularies.REFERENCEFIELDS_INDEXES[key] = []
+                if (not field.accessor 
+                    in vocabularies.REFERENCEFIELDS_INDEXES[
+                        key]):
+                    vocabularies.REFERENCEFIELDS_INDEXES[
+                        key].append(
+                            field.accessor
+                        )
+    def make_reindex_related(index_name):
+        iname = index_name
+        def reindex_related(obj, *args, **kwargs):
+            catalog = getToolByName(obj, 'reference_catalog')
+            inamee = iname
+            if not inamee in obj.schema.keys():
+                return
+            field = obj.getField(iname)
+            items = field.getRaw(obj)
+            indexed = []
+            res = ''
+            if bool(items):
+                if isinstance(items, list):
+                    indexed.extend(items)
+                else:
+                    indexed.append(items)
+            for sitem in indexed:
+                item = catalog.lookupObject(sitem)
+                try:
+                    res += ' %s' % item.Title()
+                except:
+                    pass
+                try:
+                    res += ' %s' % item.Description()
+                except:
+                    pass
+                try:
+                    res += ' %s' % item.description
+                except:
+                    pass 
+            if not res:
+                res = None
+            return res
+        return reindex_related
+    for field in vocabularies.REFERENCEFIELDS_INDEXES:
+        frn = indexer(IMarsObject)(make_reindex_related(field))
+        for accessor in vocabularies.REFERENCEFIELDS_INDEXES[field]:
+            provideAdapter(frn, name=accessor)
+

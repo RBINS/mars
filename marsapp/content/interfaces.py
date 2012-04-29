@@ -3,6 +3,9 @@ from zope.interface import Interface
 
 from Products.ATContentTypes.interface import IATDocument
 
+class IMarsObject(Interface):
+    """MarsObject marker interface"""
+
 class IMarsCollectionObject(IATDocument):
     """MarsCollectionObject marker interface
     """
