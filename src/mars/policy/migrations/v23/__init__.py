@@ -7,6 +7,7 @@ import datetime
 import logging
 from Products.BTreeFolder2.BTreeFolder2 import BTreeFolder2Base as BTreeFolder
 from Acquisition import aq_base
+from marsapp.content.schemata.base import REFERENCEFIELDS_INDEXES
 
 try:
     from Products.CMFPlone.migrations import migration_util
@@ -48,7 +49,16 @@ def upgrade(portal_setup):
 
     # migrate fields to datetimefields
 
-
+    cindexes = catalog.Indexes.objectIds()
+    ref_indexes = []
+    for a in REFERENCEFIELDS_INDEXES:
+        for c in REFERENCEFIELDS_INDEXES[a]:
+            if (not c in ref_indexes) and (c in cindexes):
+                ref_indexes.append(c)
+    llen = len(ref_indexes)
+    for i, index in enumerate(ref_indexes):
+        l.error('Reindexing %s (%s/%s)' % (index, 1+i, llen))
+        catalog.reindexIndex(index, request)
     #portal_setup.runAllImportStepsFromProfile('profile-eea.facetednavigation:default')
                 
 
