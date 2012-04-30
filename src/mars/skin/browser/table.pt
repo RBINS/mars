@@ -16,7 +16,7 @@
 
   <metal:listing define-macro="folder_listing"
     tal:define="nosortclass view/get_nosort_class;">
-    
+
     <div class="visualClear" id="clear-space-before-navigation"><!-- --></div>
 
     <table class="listing mars-datatable"
@@ -32,12 +32,12 @@
           <th colspan="6" class="nosort">
             <span tal:omit-tag="" i18n:translate="tableheading_all_items_selected_in_folder">
             All <tal:block replace="view/batch/size" i18n:name="count"/> items in this folder
-            are selected. 
+            are selected.
             </span>
             <a tal:attributes="href view/selectnone_url"  i18n:translate="tableheading_clear_selection"
                id="foldercontents-clearselection">Clear selection</a>
           </th>
-        </tr> 
+        </tr>
         <tr>
           <th class="nosort column"
               id="foldercontents-order-column"
@@ -103,7 +103,7 @@
                 <input type="hidden" name="selected_obj_paths:list" value="#"
                        tal:attributes="value item/path|id" />
                 <label tal:content="title_or_id"
-                       tal:attributes="for string:cb_${id}" 
+                       tal:attributes="for string:cb_${id}"
                        class="hiddenStructure">
                   Item Title
                 </label>
@@ -142,7 +142,7 @@
               </td>
             </tr>
           </tal:items>
-        </tbody>      
+        </tbody>
         <tfoot>
           <th></th>
           <th><input type="text" class="search_init" value="Search title" name="search_title"/></th>
@@ -152,11 +152,11 @@
         </tfoot>
       </metal:block>
     </table>
-    <script language="JavaScript" 
+    <script language="JavaScript"
       tal:replace="structure python:view.getJs()">
     </script>
     <br/>
-    <tal:buttons 
+    <tal:buttons
       tal:repeat="button view/buttons">
       <input class="context"
              type="submit"

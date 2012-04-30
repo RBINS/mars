@@ -113,40 +113,11 @@ class FolderContentsTable(foldercontents.FolderContentsTable):
                         '/folder_contents')[0]
         return items
 
-class IFolderContentsButtons(interface.Interface):
-    def button_available():
-        """."""
-    def button_available_for_folder():
-        """."""
-
-class FolderContentsViewUtils(BrowserView):
-    """."""
-    interface.implements(IFolderContentsButtons)
-    def button_available(self):
-        """."""
-        ret, object = False, self.context
-        if not isinstance(object, (MarsCollectionObject, 
-                                   MarsCategory,
-                                   MarsCategoriesContainer,
-                                   MarsExcavation)):
-            ret = object.displayContentsTab()
-        return ret
-    def button_available_for_folder(self):
-        """."""
-        ret = False
-        if hasattr(self.context, 'meta_type'):
-            if is_bareplone_folderish(self.context):
-                ret = True
-        return ret
-
 
 class FolderContentsView(foldercontents.FolderContentsView):
     """."""
-    interface.implements(tuple(foldercontents.FolderContentsView.__implemented__)+(
-        IFolderContentsButtons,
-    ))
+    interface.implements(tuple(foldercontents.FolderContentsView.__implemented__))
     index = ViewPageTemplateFile('folder_contents_per_type.pt')
-
 
     def __init__(self, context, request):
         BrowserView.__init__(self, context, request)
@@ -166,9 +137,11 @@ class FolderContentsView(foldercontents.FolderContentsView):
     def items(self):
         catalog = getToolByName(self.context, 'portal_catalog')
         brains = catalog.searchResults(
-            {'path':{
-                'query': '/'.join(self.context.getPhysicalPath()),
-                'depth': 1}
+            {
+                'path':{
+                    'query': '/'.join(self.context.getPhysicalPath()),
+                    'depth': 1} ,
+                'sort_order': 'getObjPositionInParent'
             }
         )
         dres = {}
@@ -194,7 +167,7 @@ class FolderContentsView(foldercontents.FolderContentsView):
             table = FolderContentsTable(
                 aq_inner(self.context),
                 self.request,
-                contentFilter={'portal_type':item},
+                contentFilter={'portal_type':item, 'sort_order': 'getObjPositionInParent'},
                 id_suf = '-' + item)
             tables[item] = table
         return tables
@@ -253,6 +226,34 @@ class MarsUtils(BrowserView):
                 if isinstance(field.widget, RichWidget):
                     ct = 'text/html'
         return ct
+
+
+
+class IFolderContentsButtons(interface.Interface):
+    def button_available():
+        """."""
+    def button_available_for_folder():
+        """."""
+
+class FolderContentsViewUtils(BrowserView):
+    """."""
+    interface.implements(IFolderContentsButtons)
+    def button_available(self):
+        """."""
+        ret, object = False, self.context
+        if not isinstance(object, (MarsCollectionObject,
+                                   MarsCategory,
+                                   MarsCategoriesContainer,
+                                   MarsExcavation)):
+            ret = object.displayContentsTab()
+        return ret
+    def button_available_for_folder(self):
+        """."""
+        ret = False
+        if hasattr(self.context, 'meta_type'):
+            if is_bareplone_folderish(self.context):
+                ret = True
+        return ret
 
 
 class IMarsFrontTopicView(interface.Interface):

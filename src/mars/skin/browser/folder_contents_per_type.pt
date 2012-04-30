@@ -17,7 +17,7 @@
 
 
       <metal:content-title fill-slot="content-title">
-          <h1 class="documentFirstHeading"> 
+          <h1 class="documentFirstHeading">
               <tal:block condition="exists:here/aq_explicit/widget">
                   <metal:field use-macro="python:here.widget('title', mode='view')">
                   Title
@@ -26,9 +26,9 @@
               <tal:block condition="not:exists:here/aq_explicit/widget">
                   <span tal:content="view/title" tal:omit-tag="">Directory Id</span>
               </tal:block>
-          </h1>        
+          </h1>
       </metal:content-title>
-      
+
       <metal:content-description fill-slot="content-description">
           <div class="documentDescription" tal:condition="exists:here/aq_explicit/widget">
               <metal:field use-macro="python:here.widget('description', mode='view')">
@@ -36,9 +36,9 @@
               </metal:field>
           </div>
           <tal:block condition="not:exists:here/aq_explicit/widget">
-              <div class="documentDescription" 
-                         tal:content="context/Description" 
-                         tal:condition="context/Description"> 
+              <div class="documentDescription"
+                         tal:content="context/Description"
+                         tal:condition="context/Description">
                   Description
               </div>
           </tal:block>
@@ -53,6 +53,14 @@
              i18n:translate="go_to_parent_url">
               Up one level
           </a>
+          <a href=""
+            style="margin-left:15px"
+            class="link-parent"
+             tal:define="parent_url view/parent_url"
+             tal:condition="parent_url"
+             tal:attributes="href string:${here/absolute_url}/folder_contents">
+              Reorder content
+          </a>
 
           <form name="folderContentsForm"
                 method="post"
@@ -63,14 +71,14 @@
                 class="kssattr-serveraction-foldercontents_update_table">
                 <input type="hidden" name="orig_template" tal:attributes="value string:${context/absolute_url}/folder_contents_per_type"/>
                 <input type="hidden" name="pagenumber" tal:attributes="value python:1"/>
-                <input type="hidden" name="show_all" tal:attributes="value python:True"/> 
-                <input type="hidden" name="sort_on" tal:attributes="value request/sort_on|string:getObjPositionInParent" /> 
+                <input type="hidden" name="show_all" tal:attributes="value python:True"/>
+                <input type="hidden" name="sort_on" tal:attributes="value request/sort_on|string:getObjPositionInParent" />
       <script language="JavaScript">
           var fcpt_asInitVals = new Array();
           var fcpt_tables = new Array();
       </script>
-        
-                <tal:block 
+
+                <tal:block
                   tal:repeat="type data">
                   <dl
                     tal:define="ploneview context/@@plone;
@@ -86,14 +94,14 @@
                       <span tal:attributes="class python:'contenttype-' + normalizeString(type)" >
                         <img tal:replace="structure item_icon/html_tag" />
                         <span tal:content="string:${type} : ${lrel} "/>
-                      </span>  
+                      </span>
                     </dt>
                     <dd class="collapsibleContent">
-                      <div tal:replace="structure python:data[type].render()"></div> 
+                      <div tal:replace="structure python:data[type].render()"></div>
                     </dd>
                   </dl>
                 </tal:block>
-                <tal:buttons 
+                <tal:buttons
                   tal:condition="nothing">
                   <input class="context"
                     type="submit"
@@ -101,7 +109,7 @@
                     value=""
                     i18n:attributes="value"
                     tal:attributes="value button/title; name button/url; class button/cssclass|nothing" />
-                </tal:buttons> 
+                </tal:buttons>
             <input tal:replace="structure context/@@authenticator/authenticator" />
           </form>
       </metal:content-core>

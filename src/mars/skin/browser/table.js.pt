@@ -6,11 +6,14 @@ var tableid = "#"+options.tableid;
 fcpt_asInitVals[tableid] = new Array();
 fcpt_tables[tableid] = jq(tableid).dataTable(
 { bJQueryUI: true,
+  aaSorting: [],
   aoColumnDefs: [
       {aTargets: [1], bSearchable: true},
       {aTargets: [3], bSearchable: true},
       {aTargets: [4], bSearchable: true}
 ]});
+
+
 /*
 jq("tfoot input", fcpt_tables[tableid]).keyup(function () {
   fcpt_tables[tableid].fnFilter(this.value, $("tfoot input", fcpt_tables[tableid]).index(this) );
