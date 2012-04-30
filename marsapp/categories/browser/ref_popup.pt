@@ -134,7 +134,7 @@
         <a class="browsesite"
             tal:attributes="href crumb/absolute_url;
                             rel crumb/Title">
-            <span tal:content="string:${crumb/Title}">
+            <span i18n:translate="" tal:content="crumb/Title">
               Breadcrumb Title
             </span>
           </a>
@@ -162,6 +162,7 @@
             uid python:view.getUid(item);
             isNotSelf python:view.isNotSelf(item);
             referenceable python:view.isReferencable(item);
+            browsable python:allow_browse and view.isBrowsable(item);
             title_or_id python:view.title_or_id(item);
             color view/discreetColor;">
 
@@ -170,7 +171,7 @@
 
         <td>
           <tal:referenceable tal:condition="referenceable">
-            <input type="checkbox" class="insertreference" tal:attributes="rel uid" />
+            <input type="checkbox" class="insertreference" tal:attributes="rel uid; id uid" />
           </tal:referenceable>
         </td>
 
@@ -179,22 +180,24 @@
                tal:attributes="src string:${item/getURL}/$image_method"
                />
         </td>
-        <td tal:attributes="class python:'contenttype-' + item.portal_type.lower()"
-          tal:define="crumbs python:view.get_breadcrumbs(item)">
-          <a class="browsesite" tal:condition="python: item.is_folderish and allow_browse"
+        <td tal:attributes="class python:'contenttype-' + item.portal_type.lower()">
+          <a class="browsesite" tal:condition="browsable"
              tal:attributes="
              href python:view.genRefBrowserUrl(item.getURL());
              rel item/Title">
-            <strong tal:condition="referenceable"
-                tal:content="crumbs">Title</strong>
+            <label tal:condition="referenceable"
+                   tal:attributes="for uid;"
+                   tal:content="title_or_id">Title</label>
             <span tal:condition="not:referenceable" tal:content="title_or_id" />
           </a>
           <tal:foldercheck tal:condition="
-              python:not((item.is_folderish and allow_browse) and isNotSelf)" >
-            <strong tal:condition="referenceable"
-                tal:content="crumbs">Title
-            </strong>
-            <span tal:condition="not:referenceable" tal:content="title_or_id" />
+              python:not(browsable and isNotSelf)" >
+            <label tal:condition="referenceable"
+                   tal:attributes="for uid;"
+                   tal:content="title_or_id">Title
+            </label>
+            <span tal:condition="not:referenceable"
+                  tal:content="title_or_id" />
           </tal:foldercheck>
 
           <div tal:condition="widget/show_review_state">

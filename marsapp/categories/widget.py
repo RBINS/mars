@@ -17,6 +17,7 @@ class ReferenceBrowserWidget(BReferenceBrowserWidget):
         'macro': 'marsrefbrowser',
         'image_portal_types':['Image',],
         'image_method':'image_thumb', 
+        'popup_name' : 'mars_refpopup',
     })
 
 class MarscatWidget(BReferenceBrowserWidget):
@@ -25,7 +26,7 @@ class MarscatWidget(BReferenceBrowserWidget):
         'macro': 'marscats4browser',
         'image_portal_types':['Image',],
         'image_method':'image_thumb',  
-        'popup_name' : 'mars_popup',
+        'popup_name' : 'mars_catpopup',
         'restrict_browsing_to_startup_directory': True,
         })
 

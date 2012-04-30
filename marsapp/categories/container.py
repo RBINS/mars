@@ -17,6 +17,8 @@ from Products.ATContentTypes.content.folder import ATFolderSchema
 
 from storage import CAT_CONTAINER
 
+from ordereddict import OrderedDict as odict
+
 
 def getEncodedStrings(s):
     if not isinstance(s, basestring):
@@ -73,14 +75,14 @@ class MarsCategoriesContainer(ATFolder):
         rootname = None
         rootcontainer = None
 
-        catsdict = dict()
+        catsdict = odict()
         for line in lines:
             if not line.startswith('---'):
                 if not catseparator in line \
                 and not lines.index(line) == len(lines)-1 \
                 and lines[lines.index(line)+1].startswith('---'):
                     rootname = line.strip()
-                    catsdict[rootname] = dict()
+                    catsdict[rootname] = odict()
                 else:
                     cats = [ m[2] or twoquotes.sub('"', m[1]) for m in catspat.findall(line) ]
                     if rootname and rootname != cats[0]:

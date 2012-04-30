@@ -25,19 +25,7 @@
       permission="cmf.ManagePortal"
       />
 
-  <browser:page
-      name="marscatrefbrowser_popup"
-      permission="zope2.Public"
-      for="*"
-      class=".view.MarscatReferenceBrowserPopup"
-    />
-  <browser:page
-      name="marscat_utils"
-      allowed_interface=".view.IMarscatUtils"
-      permission="zope2.Public"
-      for="*"
-      class=".view.MarscatUtils"
-    />
+
   <adapter
       for="Products.Five.BrowserView"
       factory=".view.default_popup_template"
