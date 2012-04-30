@@ -215,7 +215,7 @@ def make_discovery_site(schemata='discovery'):
         required=False,
         searchable=False,
         multiValued=True,
-        relationship='extractedFrom',
+        relationship='siteFrom',
         allowed_types=('Site',),
         widget=ReferenceBrowserWidget(label='Site',
                                       label_msgid='label_discovery_site',
