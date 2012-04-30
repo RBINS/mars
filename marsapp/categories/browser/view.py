@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
+from Products.CMFPlone.PloneBatch import Batch
+from zope.component import getMultiAdapter
 from archetypes.referencebrowserwidget.interfaces import IReferenceBrowserHelperView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from archetypes.referencebrowserwidget.browser.view import ReferenceBrowserPopup as b
@@ -38,6 +40,37 @@ class MarsUtils(BrowserView):
         return u' → '.join(crumbs)
 
 class MarsReferenceBrowserPopup(b, MarsUtils):
+    def getResult(self):
+        assert self._updated
+        result = []
+        qc = getMultiAdapter((self.context, self.request),
+                             name='refbrowser_querycatalog')
+        if self.widget.show_results_without_query or self.search_text:
+            if self.widget.restrict_browsing_to_startup_directory:
+                pass
+            result = (self.widget.show_results_without_query or \
+                      self.search_text) and \
+                      qc(search_catalog=self.widget.search_catalog)
+
+            self.has_queryresults = bool(result)
+
+        elif self.widget.allow_browse:
+            ploneview = getMultiAdapter((self.context, self.request),
+                                        name="plone")
+            folder = ploneview.getCurrentFolder()
+            self.request.form['path'] = {
+                              'query': '/'.join(folder.getPhysicalPath()),
+                              'depth':1}
+            self.request.form['portal_type'] = []
+            result = qc(search_catalog=self.widget.search_catalog)
+        else:
+            result = []
+        b_size = int(self.request.get('b_size', 20))
+        b_start = int(self.request.get('b_start', 0))
+
+        return Batch(result, b_size, b_start, orphan=1) 
+
+class MarsCatReferenceBrowserPopup(MarsReferenceBrowserPopup):
     """ A helper view for the reference browser widget."""
     implements((IReferenceBrowserHelperView, IMarsUtils))
     def __init__(self, *args, **kw):
