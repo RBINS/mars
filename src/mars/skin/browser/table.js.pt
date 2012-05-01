@@ -14,7 +14,6 @@ fcpt_tables[tableid] = jq(tableid).dataTable(
 ]});
 
 
-/*
 jq("tfoot input", fcpt_tables[tableid]).keyup(function () {
   fcpt_tables[tableid].fnFilter(this.value, $("tfoot input", fcpt_tables[tableid]).index(this) );
 });
@@ -35,7 +34,6 @@ jq("tfoot input", fcpt_tables[tableid]).blur( function (i) {
     this.value = fcpt_asInitVals[tableid][$("tfoot input").index(this)];
   }
 });
-*/
 fcpt_tables[tableid].columnFilter(
 { aoColumns: [
   {type: "null"             },
