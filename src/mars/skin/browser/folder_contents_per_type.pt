@@ -45,6 +45,7 @@
       </metal:content-description>
 
       <metal:content-core fill-slot="content-core">
+
           <a href=""
              class="link-parent"
              tal:define="parent_url view/parent_url"
@@ -73,11 +74,6 @@
                 <input type="hidden" name="pagenumber" tal:attributes="value python:1"/>
                 <input type="hidden" name="show_all" tal:attributes="value python:True"/>
                 <input type="hidden" name="sort_on" tal:attributes="value request/sort_on|string:getObjPositionInParent" />
-      <script language="JavaScript">
-          var fcpt_asInitVals = new Array();
-          var fcpt_tables = new Array();
-      </script>
-
                 <tal:block
                   tal:repeat="type data">
                   <dl
@@ -112,6 +108,55 @@
                 </tal:buttons>
             <input tal:replace="structure context/@@authenticator/authenticator" />
           </form>
+          <script language="JavaScript">
+          if(typeof(fcpt_tables) == "undefined") {
+            var fcpt_asInitVals = new Array();
+            var fcpt_tables = new Array();
+          } 
+          jq(document).ready(function(){
+            var fcpt_elems = jq("table.mars-datatable");
+            fcpt_elems.each(function(i, elem){
+              var jelem = jq(elem);
+              var id = jelem.attr("id");
+              var tfoot = $("tfoot", jelem);
+              fcpt_asInitVals[id] = new Array(); 
+              fcpt_tables[id] = jelem.dataTable(
+              { bJQueryUI: true,
+                aaSorting: [],
+                aoColumnDefs: [
+                    {aTargets: [1], bSearchable: true},
+                    {aTargets: [3], bSearchable: true},
+                    {aTargets: [4], bSearchable: true}
+              ]
+              });
+              $("input", tfoot).each(function(i, inp){
+                 jinp = jq(inp);
+                 fcpt_asInitVals[id][i] = jinp.val();
+                 jinp.keyup(function (e) {
+                   einp = jq(e.currentTarget);
+                   var key = einp.parents("table").attr("id");
+                   fcpt_tables[key].fnFilter(einp.val(), jq("input", tfoot).index(einp), true, true);
+                 }); 
+                 jinp.focus(function (e) {
+                   einp = jq(e.currentTarget);
+                   if (einp.hasClass("search_init")){
+                     einp.removeClass("search_init");
+                     einp.val("");
+                   }
+                 }); 
+                 jinp.blur(function (e) {
+                    einp = jq(e.currentTarget);
+                    if (enip.val() == "") {
+                      $(this).addClass("search_init");
+                      var i = jq("input", einp.parents("tfoot")).index(einp); 
+                      var key = einp.parents("table").attr("id");
+                      einp.val(fcpt_asInitVals[key][i]);  
+                    } 
+                 }); 
+              }); 
+            });
+          });
+          </script>
       </metal:content-core>
 
   </body>
