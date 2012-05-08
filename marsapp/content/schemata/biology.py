@@ -66,7 +66,7 @@ BiologySchema = Schema((
         required=True,
         searchable=True,
         relationship='hasAge',
-        default='undetermined',
+        #default='undetermined',
         widget=MarscatWidget(label='Age group',
             label_msgid='label_age',
             description='Select the most appropriate age group.',
