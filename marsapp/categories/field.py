@@ -153,12 +153,13 @@ class MarscatField(ReferenceField):
         startup_folder_url = startup_folder.absolute_url()
         refcat = getToolByName(instance, 'reference_catalog')
         items = []
-        for uid in ReferenceField.getRaw(self, instance, aslist=True, **kwargs):
+        kwargs['aslist'] = True
+        value = ReferenceField.getRaw(self, instance,  **kwargs)
+        for uid in value:
             obj = refcat.lookupObject(uid)
             item = getTitledPath(obj, startup_folder_url)
             items.append(' / '.join(item))
         return items
-
 
 registerField(MarscatField, title='Mars Categories',
               description=('Used for categorizing MARS Collection Objects.'))
