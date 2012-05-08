@@ -18,8 +18,10 @@ from Products.csvreplicata.handlers.base import CSVdefault
 import logging
 logger = logging.getLogger('HANDLER')
  
+
+from Products.csvreplicata.handlers.reference import CSVReference
         
-class CSVMarsCat(CSVdefault):
+class CSVMarsCat(CSVReference):
     """
     """
     
@@ -27,33 +29,41 @@ class CSVMarsCat(CSVdefault):
         """
         """
         f = obj.Schema().getField(field)
+        value = ReferenceField.getRaw(f, obj, aslist=True)
+        #if 'taphono' in f.__name__ and bool(value):
+        #    import pdb;pdb.set_trace()  ## Breakpoint ##
         refcat = getToolByName(obj, 'reference_catalog')
         v = []
         startup = f.getStartupDirectory(obj)
-        for uid in ReferenceField.getRaw(f, obj, aslist=True):
+        for uid in value:
             target = refcat.lookupObject(uid)
-            url = target.absolute_url()
-            path = url[url.index(startup)+len(startup):]
-            v.append(path)
-        
-        return '\n'.join(v)
+            current = "/".join(obj.getPhysicalPath())+"/"
+            path = "/".join(target.getPhysicalPath())
+            if path.startswith(current):
+                v.append(path[len(current):])
+            else:
+                v.append(path)
+        ret = ''
+        if v:
+            ret = '\n'.join(v)
+        return ret
     
-    def set(self, obj, field, value, context=None):
-        if value=='':
-            ref = []
-        else:
-            value = value.split('\n')
-            ref = []
-            f = obj.Schema().getField(field)
-            startup = f.getStartupDirectory(obj)
-            portal_url = getToolByName(obj, 'portal_url')
-            portal = portal_url.getPortalObject()
-            for path in value:
-                try:
-                    complete_path = "/".join(portal.getPhysicalPath())+'/'+startup+path
-                    target = obj.unrestrictedTraverse(complete_path)
-                    ref.append(target)
-                except Exception:
-                    raise csvreplicataBrokenReferenceException, path+" cannot be found"
-        self.store(field, obj, ref)
+    #def set(self, obj, field, value, context=None):
+    #    if value=='':
+    #        ref = []
+    #    else:
+    #        value = value.split('\n')
+    #        ref = []
+    #        f = obj.Schema().getField(field)
+    #        startup = f.getStartupDirectory(obj)
+    #        portal_url = getToolByName(obj, 'portal_url')
+    #        portal = portal_url.getPortalObject()
+    #        for path in value:
+    #            try:
+    #                complete_path = "/".join(portal.getPhysicalPath())+'/'+startup+path
+    #                target = obj.unrestrictedTraverse(complete_path)
+    #                ref.append(target)
+    #            except Exception:
+    #                raise csvreplicataBrokenReferenceException, path+" cannot be found"
+    #    self.store(field, obj, ref)
         

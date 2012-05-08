@@ -4,7 +4,8 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="marsapp.csvreplicata">
 
-    <five:registerPackage package="." />
+    <include package="Products.csvreplicata"/>
+    <five:registerPackage package="." initialize=".initialize"/>
 
     <genericsetup:registerProfile
         name="default"
@@ -13,5 +14,12 @@
         directory="profile"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
+  <genericsetup:importStep
+        name="mars_csvreplicata"
+        title="CSVReplicata: mars handlers"
+        description=""
+        handler="marsapp.csvreplicata.setuphandlers.importVarious">
+        <depends name="importcsvStep" />
+  </genericsetup:importStep> 
 
 </configure>
