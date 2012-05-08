@@ -18,5 +18,8 @@
   <include package=".v21"/>
   <include package=".v22"/>
   <include package=".v23"/>
+  <include package=".v24"/>
+  <include package=".v25"/>
+  <include package=".v26"/>
 <!-- vim:set ft=xml: -->
 </configure>
