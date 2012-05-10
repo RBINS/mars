@@ -61,7 +61,7 @@ table.mars-datatable {
 .template-facetednavigation_view .documentByLine { 
   display:none;
 }
-.template-facetednavigation_view #faceted-results ,
+.template-facetednavigation_view #faceted-results div.eea-preview-items,
 .template-facetednavigation_view #faceted-results dt,
 .template-facetednavigation_view #faceted-results dd{
   display:inline;
@@ -72,6 +72,28 @@ table.mars-datatable {
 .template-facetednavigation_view #faceted-results dd {
   margin-left:5px;
 }
+
+div.faceted-center-widgets div.faceted-widget{
+  float:left;
+}
+
+#center-top-area {
+  clear:both;
+}
+
+
+#faceted-results {
+  clear:both;
+}
+
+/* 
+ * #faceted-center-column div.faceted-widget,
+#faceted-center-column div.faceted-widget fieldset{
+  max-width:200px;
+
+}
+*/
+
 
 
 
