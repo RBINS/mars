@@ -61,6 +61,7 @@ StratigraphySchema += Schema((
 
 
     ReferenceField('stratigraphyLayersComposition',
+                 schemata='description',
         multiValued=True,
         required=False,
         searchable=True,

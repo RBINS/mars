@@ -63,6 +63,9 @@ from marsapp.content import MarsMessageFactory as _
 
 from Products.ATContentTypes.content.schemata import relatedItemsField
 
+
+from ordereddict import OrderedDict
+
 MarsBaseSchema = ATContentTypeSchema.copy()
 MarsFolderSchema = ATFolderSchema.copy()
 MarsBTreeFolderSchema = ATBTreeFolderSchema.copy()
@@ -286,8 +289,6 @@ def finalizeMarsSchema(schema,
     if addBodyText:
         schema.addField(BodyTextField)
 
-
-
     if igNumbers:
         if schema.has_key('igNumber'):
             schema.delField('igNumber')
@@ -315,12 +316,7 @@ def finalizeMarsSchema(schema,
     for fieldname in multivalued:
         schema[fieldname].multiValued = True
 
-    if schema.has_key('synonyms'):
-        schema.moveField('synonyms', before='description')
-    if schema.has_key('remainSubtype'):
-        schema.moveField('remainSubtype', after='remainType')
-    if schema.has_key('rawmaterials'):
-        schema.moveField('rawmaterials', before='measures')
+
     if schema.has_key('displayImages'):
         schema.changeSchemataForField('displayImages', 'attachments')
     if schema.has_key('displayAttachments'):
@@ -332,10 +328,6 @@ def finalizeMarsSchema(schema,
 
     finalizeATCTSchema(schema, folderish, moveDiscussion)
 
-    if schema.has_key('presentation'):
-        schema.moveField('presentation', before='allowDiscussion')
-    if schema.has_key('tableContents'):
-        schema.moveField('tableContents', after='presentation')
     if schema.has_key('relatedItems'):
         #schema['relatedItems'].widget.visible['edit'] = 'visible'
         #schema['relatedItems'].widget.visible['view'] = 'visible'
@@ -351,9 +343,7 @@ def finalizeMarsSchema(schema,
             description = '',
             visible = {'edit' : 'visible', 'view' : 'invisible' }
         )
-    if (schema.has_key('datingAssociation')
-        and schema.has_key('absoluteDatings')):
-        schema.moveField('absoluteDatings', after='datingAssociation')
+
 
     if is_assemblage:
         if 'taxon' in schema.keys():
@@ -365,20 +355,121 @@ def finalizeMarsSchema(schema,
             schema.addField(field)
             schema.changeSchemataForField('discoverySite', 'description')
 
-    if schema.has_key("stratigraphicalLayer") and schema.has_key("discoveryExcavation"):
-        schema.moveField("discoveryExcavation", after="stratigraphicalLayer")
-
     for key in schema.keys():
         field = schema[key]
         if hasattr(field, 'required'):
             field.required = False
         widget = field.widget
 
-
     for fieldname in SEARCHABLE_FIELDS:
         if schema.has_key(fieldname) \
         and bool(schema[fieldname].searchable) is not True:
             schema[fieldname].searchable = True
+
+
+    order1 = OrderedDict([
+        #('title',     {'after':[], 'before':[],},),
+        ('synonmyms', {'after':["title"], 'before':[],},),
+        ('text', {'after':["synonyms"], 'before':[],},),
+        ('beginningYear', {'after':[], 'before':['endingYear'],},),
+        ('endingYear', {'after':[], 'before':['preciseDate'],},),
+        ('preciseDate', {'after':[], 'before':['siteType', 'remainType'],},),
+        ('siteType', {'after':[],   'before':["description"],},),
+        ('description', {'after':["siteType"],'before':[],},),
+        ('detailedDescription', {'after':["description"],"before":[], },),
+        ('country', {'after':["detailedDescription"], 'before':[],},),
+        ('map', {'after':['county'],'before': [] },),
+        ('location', {'after':["map"], 'before':[],},),
+        ('gisCoordinates', {'after':['location'],'before': []},),
+        ('gisPrecision', {'after':["gisCoordinates"], 'before':[],},),
+        ('gisProjection', {'after':['gisPrecision'], 'before':[],},),
+        ('coordinatesOthers', {'after':["gisProjection"], 'before': [],},),
+        ('coordinateFiles', {'after':["coordinatesOthers"], 'before':[],},),
+        ('extGeoMapping', {'after':["coordinateFiles"], 'before':[],},), 
+        ('substratum', {'after':["insiteLocation"], 'before': [],},),
+        ('stratigraphyEquivalents', {'after': ["substratum"], 'before':[],},),
+        ('stratigraphyLayersComposition', {'after': ["stratigraphyEquivalents"], 'before': [],},),
+        ('insiteLocation', {'after':["history"], 'before': [],},),
+        ('excavators', {'after':['coordinateFiles'], 'before': [],},),
+        ('excavationDetails', {'after':['excavators'], 'before': [],},),
+        ('excavationMap', {'after':['excavationDetails'], 'before': [],},),
+        ('chronomlogies', {'after':[], 'before': ['chronologyDetails'],},),
+        ('chronologyDetails', {'after':[], 'before': ['BPDating'],},),
+        ('BPDating', {'after': [], 'before': ['datingAssociation'],},),
+        ('discoveryYear', {'after':[], 'before': ['datePrecision'],},),
+        ('datePrecision', {'after':[], 'before': ['discoveryPreciseDate'],},),
+        ('discoveryPreciseDate', {'after': [], 'before': ['discoverers'],},),
+        ('discoverers', {'after':[], 'before': ['discoveryDetails'],},),
+        ('coordinatesOthers', {'after':['gisProjection'], 'before':[],},),
+        ('remainType', {'after':['status'], 'before':[],},),
+        ('measures', {'after':['remainType'], 'before':[],},),
+        ('measuresFile', {'after':['measures'], 'before':[],},),
+        ('features', {'after':['measuresFile'], 'before':[],},),
+        ('featuresFile', {'after':['features'], 'before':[],},),
+        ('laterality:!', {'after':['featuresFile'], 'before':[],},),
+        ('polarity', {'after':['laterality'], 'before':[],},),
+        ('burial', {'after':['polarity'], 'before':[],},),
+        ('burialDetermination', {'after':['burial'], 'before':[],},),
+        ('rawMaterials', {'after':['burialDetermination'], 'before':[],},),
+        ('origin', {'after':['rawMaterials'], 'before':[],},),
+        ('originDetermination', {'after':['origin'], 'before':[],},),
+        ('paleoecology', {'after':['originDetermination'], 'before':[],},),
+        ('components', {'after':['howManyComponents'], 'before':[],},),
+        ('componentsDistributionDesc', {'after':['components'], 'before':[],},),
+        ('componentsDistributionFile', {'after':['componentsDistributionDesc'], 'before':[],},),
+        ('attributionInfo', {'after':['componentsDistributionFile'], 'before':[],},),
+        ('MNI', {'after':['componentsDistributionDesc'], 'before':[],},),
+        ('MNIDetermination', {'after':['MNI'], 'before':[],},),
+    ])
+    #for k in order.keys():
+    #    orders = order[k]
+    #    for item in orders['before']:
+    #        if not item in order:
+    #            order[item] = {'after': [], 'before': []}
+    #        if not k in order[item]['after']:
+    #            order[item]['after'].append(k)
+    #    for item in orders['after']:
+    #        if not item in order:
+    #            order[item] = {'after': [], 'before': []}
+    #        if not item in order[item]['before']:
+    #            order[item]['before'].append(k) 
+            
+    if schema.has_key('synonyms'):
+        schema.moveField('synonyms', before='description')
+    if schema.has_key('remainSubtype'):
+        schema.moveField('remainSubtype', after='remainType')
+    if schema.has_key('rawmaterials'):
+        schema.moveField('rawmaterials', before='measures') 
+    if schema.has_key('presentation'):
+        schema.moveField('presentation', before='allowDiscussion')
+    if schema.has_key('tableContents'):
+        schema.moveField('tableContents', after='presentation')
+    if (schema.has_key('datingAssociation')
+        and schema.has_key('absoluteDatings')):
+        schema.moveField('absoluteDatings', after='datingAssociation') 
+    if schema.has_key("stratigraphicalLayer") and schema.has_key("discoveryExcavation"):
+        schema.moveField("discoveryExcavation", after="stratigraphicalLayer") 
+    keys = schema.keys()
+    def reorder(order):
+        for k in order:
+            for o in order[k]:
+                for field in order[k][o]:
+                    op = 'before'
+                    if o == 'before':
+                        op = 'after'
+                    op = o
+                    kw = {op:field}
+                    if field in keys and k in keys:
+                        try:
+                            schema.moveField(k, **kw)
+                        except:
+                            import pdb;pdb.set_trace()  ## Breakpoint ##
+    reorder(order1)
+    # second pass
+    order2 = OrderedDict([
+        ('map', {'after':["country"], 'before':[],},), 
+    ])
+    reorder(order2)
 
 BodyTextSchema = Schema(( BodyTextField, ))
 
