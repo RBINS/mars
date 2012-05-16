@@ -66,6 +66,11 @@
       -->
 
       <div tal:replace="structure provider:plone.belowcontentbody" />
+      <div tal:condition="here/portal_membership/isAnonymousUser">
+        <a 
+          tal:condition="python:here.restrictedTraverse('@@folder_contents_per_type_utils').button_available()"
+          href="./folder_contents_per_type">View object contents</a>
+      </div>
 
     </metal:main>
   </body>
