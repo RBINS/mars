@@ -62,6 +62,7 @@ CollectionSchema += Schema((
 
     ))
 CollectionSchema += AdministrationSchema.copy()
+CollectionSchema['repository'].multiValued = True
 finalizeMarsSchema(CollectionSchema, folderish=True, igNumbers=True)
 
 class MarsCollection(ATFolder, MarsMixin):
