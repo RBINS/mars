@@ -33,8 +33,26 @@ demjson.loads = demjson.decode
 
 from Products.CMFPlone import utils
 
+from ordereddict import OrderedDict
 
 
+
+def get_sorted_dict(d):
+    od = OrderedDict()
+    ks = d.keys()
+    # alpha sort
+    ks.sort()
+    for k in ks:
+        od[k] = d[k]
+    
+    # stack wanted types at end
+    for otype in ['folder', 
+                  'Folder']:
+        if otype in od:
+            del od[otype]
+            od[otype] = d[otype]  
+    return od
+    
 def is_bareplone_folderish(item):
     if (   ('Topic' in item.meta_type)
         or ('Folder' in item.meta_type)
@@ -149,7 +167,7 @@ class FolderContentsView(foldercontents.FolderContentsView):
             pt = item.portal_type
             if not pt in dres: dres[pt] = []
             dres[pt].append(item)
-        return dres
+        return get_sorted_dict(dres)
 
     def __call__(self, *args):
         params = {'test': self.test,
@@ -170,7 +188,7 @@ class FolderContentsView(foldercontents.FolderContentsView):
                 contentFilter={'portal_type':item, 'sort_order': 'getObjPositionInParent'},
                 id_suf = '-' + item)
             tables[item] = table
-        return tables
+        return get_sorted_dict(tables)
 
 class IMarsUtils(interface.Interface):
     """Marker interface for IMarsUtils"""

@@ -46,13 +46,13 @@
       name="folder_contents_per_type"
       allowed_interface=".view.IFolderContentsButtons"
       template="folder_contents_per_type.pt"
-      permission="cmf.ListFolderContents" />
+      permission="zope2.View" />
   <browser:page
       for="*"
       layer=".interfaces.IThemeSpecific"
       class=".view.FolderContentsViewUtils"
       name="folder_contents_per_type_utils"
       allowed_interface=".view.IFolderContentsButtons"
-      permission="cmf.ListFolderContents" /> 
+      permission="zope2.View" /> 
   <!-- vim:set ft=xml: -->
 </configure>
