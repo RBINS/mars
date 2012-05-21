@@ -30,7 +30,9 @@
       class="marsapp.content.base.MarsMixin"
       interface="collective.zipfiletransport.interfaces.IZipfileNotExportable"/> 
 
+  <!--
   <five:implements
       class="marsapp.content.base.MarsMixin"
       interface="eea.geotags.interfaces.IGeoTaggable"/>
+  -->
 </configure>

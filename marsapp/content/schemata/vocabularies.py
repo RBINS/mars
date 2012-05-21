@@ -406,7 +406,7 @@ default_burial = DisplayList((
         ('certain','certain'),
         ('supposed','supposed'),
         ('improbable','improbable'),
-        ('impossible','impossible'),
+        ('No','No'),
         ('unknown','unknown'),
         ('undetermined','undetermined'),
         ))

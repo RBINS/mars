@@ -98,6 +98,7 @@ AdministrationSchema = Schema((
     ReferenceField('repository',
         searchable=True,
         required=False,
+        multiValued=False,
         write_permission=EDIT_REPOSITORY_PERMISSION,
         relationship='conservatedIn',
         allowed_types=PEOPLE_AND_INSTITUTION,

@@ -45,37 +45,67 @@ MarsCurationSchema = MarsBaseSchema.copy() + Schema((
             ),
         ),
 
-    IntegerField('beginYear',  # was 'curat_begin_date'
+    #IntegerField('beginYear',  # was 'curat_begin_date'
+    #    required=False,
+    #    searchable=True,
+    #    size=4,
+    #    widget=IntegerWidget(#forcedigits, lenght=4,
+    #        label='Begin year of curation',
+    #        label_msgid='label_curat_begin_year',
+    #        description='Enter the starting year for this curation.',
+    #        description_msgid='help_curat_begin_year',
+    #        domain='mars',
+    #        starting_year=1830, # not supported by the plone templates yet
+    #        ending_year=None, # not supported by the plone templates yet
+    #        future_years=5, # not supported by the plone templates yet
+    #        ),
+    #    ),
+
+    #IntegerField('endYear',  # was 'curat_end_date'
+    #    required=False,
+    #    searchable=True,
+    #    size=4,
+    #    widget=IntegerWidget(#forcedigits, lenght=4,
+    #        label='End date of curation',
+    #        label_msgid='label_curat_end_year',
+    #        description='Enter the ending year for this curation.',
+    #        description_msgid='help_curat_end_year',
+    #        domain='mars',
+    #        starting_year=1830, # not supported by the plone templates yet
+    #        ending_year=None, # not supported by the plone templates yet
+    #        future_years=5, # not supported by the plone templates yet
+    #        ),
+    #    ),
+
+    DateTimeField('beginYear',  # was 'curat_begin_date'
         required=False,
         searchable=True,
-        size=4,
-        widget=IntegerWidget(#forcedigits, lenght=4,
+        widget=YearWidget(#forcedigits, lenght=4,
             label='Begin year of curation',
             label_msgid='label_curat_begin_year',
             description='Enter the starting year for this curation.',
             description_msgid='help_curat_begin_year',
             domain='mars',
-            starting_year=1830, # not supported by the plone templates yet
-            ending_year=None, # not supported by the plone templates yet
-            future_years=5, # not supported by the plone templates yet
+            years_range = (-300, 10),
             ),
         ),
 
-    IntegerField('endYear',  # was 'curat_end_date'
+    DateTimeField('endYear',  # was 'curat_end_date'
         required=False,
         searchable=True,
-        size=4,
-        widget=IntegerWidget(#forcedigits, lenght=4,
+        widget=YearWidget(#forcedigits, lenght=4,
             label='End date of curation',
             label_msgid='label_curat_end_year',
             description='Enter the ending year for this curation.',
             description_msgid='help_curat_end_year',
             domain='mars',
-            starting_year=1830, # not supported by the plone templates yet
-            ending_year=None, # not supported by the plone templates yet
-            future_years=5, # not supported by the plone templates yet
+            years_range = (-300, 10),
             ),
-        ),
+        ), 
+
+
+
+
 
     TextField('history',  # was 'curat_history'
         searchable=True,
