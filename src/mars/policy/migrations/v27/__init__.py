@@ -41,7 +41,7 @@ def upgrade(portal_setup):
     #portal_setup.runAllImportStepsFromProfile('profile-collective.js.datatables:default')
     #portal_setup.runAllImportStepsFromProfile('profile-plone.formwidget.datetime:default')
     #portal_setup.runAllImportStepsFromProfile('profile-collective.ckeditor:default')
-    #portal_setup.runAllImportStepsFromProfile('profile-eea.geotags:default')
+    portal_setup.runAllImportStepsFromProfile('profile-collective.bibliocustomviews:default')
     #portal_setup.runImportStepFromProfile('profile-mars.policy:default', 'atcttool', run_dependencies=False)
     ### reindex new indexes
     #for i in catalog.indexes():
