@@ -43,6 +43,22 @@ TechnologySchema = Schema((
         schemata='technology',
         ),
 
+
+    #DateTimeField('manufactureYear',
+    #    required=False,
+    #    searchable=True,
+    #    widget=YearWidget(
+    #        label='Year of manufacture',
+    #        label_msgid='label_manufacture_year',
+    #        description='Enter the year of manufacture.', 
+    #        description_msgid='help_manufacture_year',
+    #        years_range = (-300, 0),
+    #        domain='mars',
+    #        ),
+    #    schemata='technology',
+    #    ), 
+
+
     TextField('manufacturePreciseDate',
         searchable=False,
         required=False,
