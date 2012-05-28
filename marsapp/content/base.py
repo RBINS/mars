@@ -20,7 +20,11 @@ class MarsMixin(object):
         purl = getToolByName(self, 'portal_url')
         plone = purl.getPortalObject()
         plonep = len('/'.join(plone.getPhysicalPath()))
-        return '/'.join(cctx.getPhysicalPath())[plonep:] 
+        try:
+            return '/'.join(cctx.getPhysicalPath())[plonep:] 
+        except:
+            import pdb;pdb.set_trace()  ## Breakpoint ##
+
 
     def getMarsSiteOrCol(self, files=False, curations=False):
         if (self.portal_type == 'Site') and not files:
@@ -47,47 +51,15 @@ class MarsMixin(object):
             if (curations
                 and (ctx.portal_type in ['Site', 'Collection'])
                 and ('curations' in ctx.objectIds())):
-                ctx = ctx['curations'] 
+                ctx = ctx._getOb('curations')
         except Exception, e:
             ctx = oldctx
         return self.mars_relative_path(ctx) 
 
     def getMarsSite(self):
         return self.getMarsSiteOrCol()
-        #if self.portal_type == 'Site':
-        #    return self.mars_relative_path(self)
-        #ctx = self.aq_inner
-        #oldctx = ctx
-        #try:
-        #    while (
-        #        (ctx.portal_type not in ['Plone Site', 'Site'])
-        #        and (self.mars_relative_path(ctx) not in ['/collections', '/collections/sites'])
-        #    ):
-        #        oldctx = ctx
-        #        ctx = ctx.aq_parent
-        #except Exception, e:
-        #    ctx = oldctx
-        #return self.mars_relative_path(ctx)
-
     def getMarsCol(self, files=False, curations=False):
         return self.getMarsSiteOrCol(files=files, curations=curations)
-        #ctx = self.aq_inner
-        #oldctx = ctx
-        #try:
-        #    while (
-        #        (ctx.portal_type not in ['Plone Site', 'Collection'])
-        #        and (self.mars_relative_path(ctx) not in ['/collections', '/collections/collections'])
-        #    ):
-        #        oldctx = ctx
-        #        ctx = ctx.aq_parent
-        #    if (files
-        #        and (ctx.portal_type == 'Collection')
-        #        and ('files' in ctx.objectIds())):
-        #        ctx = ctx['files']
-        #except Exception, e:
-        #    ctx = oldctx
-        #return self.mars_relative_path(ctx)
-
     def getMarsColFiles(self):
         return self.getMarsCol(files=True)  
     def getMarsColCurations(self):
