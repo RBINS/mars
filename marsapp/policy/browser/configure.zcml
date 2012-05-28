@@ -18,13 +18,6 @@
         class=".schemata-view.schemataView"
         />
 
-    <!-- welcome page for Plone Site -->
-    <browser:page
-        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        name="welcome.html"
-        permission="zope.Public"
-        class=".welcome-page.welcomePage"
-        />
 
     <!-- display view titles -->
     <include package="plone.app.contentmenu"/>
@@ -33,16 +26,21 @@
         menu="plone_displayviews"
         >
       <browser:menuItem
-          title="Mars Schemata View"
-          action="schemata.html"
-          description="A view that displays values organized in schemata"
-          />
-      <browser:menuItem
           title="Welcome Page"
           action="welcome.html"
           description="Default welcome page of a MARS portal"
           />
     </browser:menuItems>
+    <!-- welcome page for Plone Site -->
+    <browser:page
+        title="Mars Schemata View"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        name="welcome.html"
+        menu="plone_displayviews"
+        permission="zope.Public"
+        class=".welcome-page.welcomePage"
+        />
+ 
 
     <!-- Zope 3 browser resources -->
     <browser:resource

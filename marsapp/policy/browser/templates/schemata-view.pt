@@ -20,10 +20,27 @@
 
       <div tal:replace="structure provider:plone.belowcontenttitle" />
 
-      <p metal:use-macro="context/kss_generic_macros/macros/generic_description_view">
-          Description
-      </p>
-
+        <metal:description_view define-macro="generic_description_view"
+                                tal:define="kssClassesView context/@@kss_field_decorator_view;
+                                            getKssClasses nocall:kssClassesView/getKssClassesInlineEditable">
+            <tal:archetypes condition="exists:context/getField">
+                <div metal:define-macro="description-field-view"
+                   id="parent-fieldname-description"
+                   tal:define="kss_class python:getKssClasses('description',
+                               templateId='kss_generic_macros', macro='description-field-view');"
+                   tal:condition="context/Description"
+                   tal:attributes="class string:documentDescription$kss_class;">
+                   <span metal:define-slot="inside">
+                     <span tal:replace="structure python:view.getDesc(context.Description())">Description</span></span>
+                </div>
+            </tal:archetypes>
+            <div class="documentDescription description"
+                 tal:content="structure python:view.getDesc(context.Description())"
+                 tal:define="have_at exists:context/getField"
+                 tal:condition="python:context.Description() and not have_at">
+                Description
+            </div>
+        </metal:description_view> 
       <div tal:replace="structure provider:plone.abovecontentbody" />
 
       <div id="schemata-view-schemata-list" class="field">

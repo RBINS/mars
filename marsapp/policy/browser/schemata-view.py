@@ -44,6 +44,17 @@ class schemataView(BrowserView):
     def getDefaultFields(self, remove_empty=False):
         return self.getSchemataFields('default', remove_empty)
 
+
+    def getDesc(self, desc):
+        ret = desc
+        if isinstance(ret, tuple):
+            ret = [a for a in ret]
+        if not isinstance(ret, list):
+            ret = [ret]
+        ret = ['%s<br/>'%p for p in ret]
+        return '<p>%s</p>' % (''.join(ret))
+
+
     def getCollapsibleSchemata(self, remove_empty=False):
         schematas = aq_inner(self.context).Schemata()
         fieldsets = [ {'name': key,} for key in schematas.keys()
