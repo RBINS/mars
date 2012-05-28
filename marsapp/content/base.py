@@ -20,10 +20,7 @@ class MarsMixin(object):
         purl = getToolByName(self, 'portal_url')
         plone = purl.getPortalObject()
         plonep = len('/'.join(plone.getPhysicalPath()))
-        try:
-            return '/'.join(cctx.getPhysicalPath())[plonep:] 
-        except:
-            import pdb;pdb.set_trace()  ## Breakpoint ##
+        return '/'.join(cctx.getPhysicalPath())[plonep:] 
 
 
     def getMarsSiteOrCol(self, files=False, curations=False):
