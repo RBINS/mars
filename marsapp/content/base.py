@@ -22,7 +22,7 @@ class MarsMixin(object):
         plonep = len('/'.join(plone.getPhysicalPath()))
         return '/'.join(cctx.getPhysicalPath())[plonep:] 
 
-    def getMarsSiteOrCol(self, files=False):
+    def getMarsSiteOrCol(self, files=False, curations=False):
         if (self.portal_type == 'Site') and not files:
             return self.mars_relative_path(self)
         ctx = self.aq_inner
@@ -44,6 +44,10 @@ class MarsMixin(object):
                 and (ctx.portal_type in ['Site', 'Collection'])
                 and ('files' in ctx.objectIds())):
                 ctx = ctx['files']
+            if (curations
+                and (ctx.portal_type in ['Site', 'Collection'])
+                and ('curations' in ctx.objectIds())):
+                ctx = ctx['curations'] 
         except Exception, e:
             ctx = oldctx
         return self.mars_relative_path(ctx) 
@@ -65,8 +69,8 @@ class MarsMixin(object):
         #    ctx = oldctx
         #return self.mars_relative_path(ctx)
 
-    def getMarsCol(self, files=False):
-        return self.getMarsSiteOrCol(files)
+    def getMarsCol(self, files=False, curations=False):
+        return self.getMarsSiteOrCol(files=files, curations=curations)
         #ctx = self.aq_inner
         #oldctx = ctx
         #try:
@@ -86,6 +90,8 @@ class MarsMixin(object):
 
     def getMarsColFiles(self):
         return self.getMarsCol(files=True)  
+    def getMarsColCurations(self):
+        return self.getMarsCol(curations=True)   
 
 class MarsCollectionObject(OrderedBaseFolder, ATDocument, MarsMixin):
     """Base class for collection objects"""

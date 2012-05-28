@@ -117,7 +117,7 @@ AssemblageSchema = Schema((
             description='select the Components distribution File',
             description_msgid='help_component_distribution_file',
             domain='mars',
-            startup_directory_method='getMarsCol',
+            startup_directory_method='getMarsColFiles',
             ),
         schemata='composition',
         ),

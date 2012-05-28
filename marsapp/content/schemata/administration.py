@@ -90,7 +90,7 @@ AdministrationSchema = Schema((
             description='Select the curations this object went through, make new ones if no fitting is found.',
             description_msgid='help_curation_history',
             domain='mars',
-            startup_directory_method='getMarsCol',
+            startup_directory_method='getMarsColCurations',
             ),
         schemata='administration',
         ),

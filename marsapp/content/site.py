@@ -90,6 +90,8 @@ SiteSchema['discoveryExcavation'].widget.visible = SiteSchema['excavationCoordin
     }
 
 
+SiteSchema['description'].widget.label = 'Description'
+
 finalizeMarsSchema(SiteSchema, folderish=True,
                    delFields=('stratigraphicalLayer',
                    'discoveryPlace', 'discoverySite',
