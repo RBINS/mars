@@ -95,10 +95,14 @@ div.faceted-center-widgets div.faceted-widget{
 */
 
 
-
-
 .template-folder_contents a.link-parent {display:none;}
 
+/* datatables skinning */
+.dataTables_paginate .fg-button {
+  margin-left: 2px; 
+  padding-left:5px;
+  padding-right:5px;
+}
 
 /* </dtml-with> */
 
