@@ -70,9 +70,6 @@ def upgrade(portal_setup):
     l.error('Reindex %s' % indexes)
     for i, item in enumerate(brains):
         l.error('Reindex %s (%s/%s)' % (item.getPath(),  i, lbrains))
-        try:
-            item.getObject().reindexObject(indexes)
-        except:
-            import pdb;pdb.set_trace()  ## Breakpoint ##
+        item.getObject().reindexObject(indexes)
 
 
