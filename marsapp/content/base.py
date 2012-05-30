@@ -20,7 +20,7 @@ class MarsMixin(object):
         purl = getToolByName(self, 'portal_url')
         plone = purl.getPortalObject()
         plonep = len('/'.join(plone.getPhysicalPath()))
-        return '/'.join(cctx.getPhysicalPath())[plonep:] 
+        return '/'.join(cctx.getPhysicalPath())[plonep:]
 
 
     def getMarsSiteOrCol(self, files=False, curations=False):
@@ -34,7 +34,7 @@ class MarsMixin(object):
                 and (
                     self.mars_relative_path(
                         ctx
-                    ) not in ['/collections', 
+                    ) not in ['/collections',
                               '/collections/collections',
                               '/collections/sites']
                 )
@@ -51,16 +51,16 @@ class MarsMixin(object):
                 ctx = ctx._getOb('curations')
         except Exception, e:
             ctx = oldctx
-        return self.mars_relative_path(ctx) 
+        return self.mars_relative_path(ctx)
 
     def getMarsSite(self):
         return self.getMarsSiteOrCol()
     def getMarsCol(self, files=False, curations=False):
         return self.getMarsSiteOrCol(files=files, curations=curations)
     def getMarsColFiles(self):
-        return self.getMarsCol(files=True)  
+        return self.getMarsCol(files=True)
     def getMarsColCurations(self):
-        return self.getMarsCol(curations=True)   
+        return self.getMarsCol(curations=True)
 
 class MarsCollectionObject(OrderedBaseFolder, ATDocument, MarsMixin):
     """Base class for collection objects"""

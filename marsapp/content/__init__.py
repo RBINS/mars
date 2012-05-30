@@ -27,6 +27,7 @@ __docformat__ = 'restructuredtext'
 from AccessControl import ModuleSecurityInfo
 from zope.i18nmessageid import MessageFactory
 
+from marsapp.categories.category import MarsCategory
 
 from Products.CMFCore.DirectoryView import registerDirectory
 from Products.CMFCore.utils import ContentInit
@@ -127,10 +128,16 @@ def initialize(context):
                     indexed.append(items)
             for sitem in indexed:
                 item = catalog.lookupObject(sitem)
-                try:
-                    res += ' %s' % item.Title()
-                except:
-                    pass
+                if isinstance(item, MarsCategory):
+                    try:
+                        res +=  ' / '.join(item.cats_path())
+                    except:
+                        pass 
+                else:
+                    try:
+                        res += ' %s' % item.Title()
+                    except:
+                        pass
                 try:
                     res += ' %s' % item.Description()
                 except:

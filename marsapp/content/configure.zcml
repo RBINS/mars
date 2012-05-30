@@ -15,7 +15,7 @@
       handler=".subscribers.create_files_and_images_folders" />
   <subscriber for=".interfaces.IFilesAndImagesContainer
       Products.Archetypes.interfaces.IObjectEditedEvent"
-      handler=".subscribers.create_files_and_images_folders" /> 
+      handler=".subscribers.create_files_and_images_folders" />
 
   <five:implements
       class="marsapp.content.base.MarsCollectionObject"
@@ -28,7 +28,7 @@
       interface="collective.zipfiletransport.interfaces.IZipfileNotImportable"/>
   <five:implements
       class="marsapp.content.base.MarsMixin"
-      interface="collective.zipfiletransport.interfaces.IZipfileNotExportable"/> 
+      interface="collective.zipfiletransport.interfaces.IZipfileNotExportable"/>
 
   <!--
   <five:implements
