@@ -23,5 +23,6 @@
   <include package=".v26"/>
   <include package=".v27"/>
   <include package=".v28"/>
+  <include package=".v29"/>
 <!-- vim:set ft=xml: -->
 </configure>
