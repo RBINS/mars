@@ -54,5 +54,4 @@ class MarsCategory(ATFolder):
     def cats_path(self):
         return getFullTitledPath(self)
 
-
 registerATCT(MarsCategory, 'marsapp.categories')
