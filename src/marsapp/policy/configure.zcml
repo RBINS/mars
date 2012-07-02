@@ -15,7 +15,7 @@
   <cmf:registerDirectory name="marsapp_categories_icons"/>
   <cmf:registerDirectory name="marsapp_content_icons"/>
   <cmf:registerDirectory name="marsapp_custom"/>
-  <cmf:registerDirectory name="marsapp_styles"/>
+  <cmf:registerDirectory name="marsapp_templates"/>
 
   <genericsetup:importStep
       name="form-controller-tool"

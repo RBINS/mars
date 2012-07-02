@@ -26,13 +26,6 @@
       />
 
 
-  <adapter
-      for="Products.Five.BrowserView"
-      factory=".view.default_popup_template"
-      name="mars_popup"
-      provides="zope.formlib.namedtemplate.INamedTemplate"
-      />
-
     <subscriber
         for=".category.IMarsCategory
              zope.lifecycleevent.interfaces.IObjectModifiedEvent"

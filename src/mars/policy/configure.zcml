@@ -9,12 +9,31 @@
   <!--with_ploneproduct_cz3cformgrok -->
   <!--with_ploneproduct_pz3cform -->
   <include package="Products.CMFCore" file="permissions.zcml" />
+  <include package="mars.tma"/>
+  <include package="mars.skin"/>
   <include package="marsapp.policy"/>
   <include package="marsapp.content"/>
+  <include package="collective.ckeditor"/>
   <include package="marsapp.categories"/>
+  <include package="marsapp.csvreplicata"/>
   <include package="marsapp.helpers"/>
   <include package="marsapp.migration"/>
   <include package="marsapp.bibliography"/>
+
+  <include package="collective.uploadify"         file="configure.zcml"/>
+  <include package="collective.zipfiletransport"  file="configure.zcml"/>
+  <include package="collective.js.datatables"     file="configure.zcml"/>
+  <include package="bibliograph.core"             file="configure.zcml"/>
+  <include package="bibliograph.parsing"          file="configure.zcml"/>
+  <include package="bibliograph.rendering"        file="configure.zcml"/>
+  <include package="Products.Maps"                file="configure.zcml"/>
+  <include package="Products.CMFBibliographyAT"   file="configure.zcml"/>
+  <include package="plone.formwidget.datetime"    file="configure.zcml"/>
+  <include package="eea.facetednavigation"        file="configure.zcml"/>
+  <include package="eea.facetednavigation" file="meta.zcml"/>
+
+
+
   <include package="five.grok" file="configure.zcml"/>
   <!--with_ploneproduct_ploneappblob -->
   <include package="plone.app.blob" file="configure.zcml"/>
@@ -85,7 +104,7 @@
      interface="collective.zipfiletransport.interfaces.IZipfileNotExportable" />
  <five:implements
      class="Products.CMFBibliographyAT.content.folder.BaseBibliographyFolder"
-     interface="collective.zipfiletransport.interfaces.IZipfileNotImportable" /> 
+     interface="collective.zipfiletransport.interfaces.IZipfileNotImportable" />
 
 
 <!-- vim:set ft=xml: -->
