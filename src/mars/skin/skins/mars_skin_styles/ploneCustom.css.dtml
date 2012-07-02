@@ -21,14 +21,21 @@
     border:none;
 }  
 
-
-
+/* datatables skinning */
+.dataTables_paginate .fg-button {
+  margin-left: 2px; 
+  padding-left:5px;
+  padding-right:5px;
+}
 table.mars-datatable {
   width:100%;
 }
 
 
-
+/* remove double relateditems box for biblio*/
+.template-bibliography_entry_view fieldset#relatedItemBox {
+  display:none;
+} 
 /* related items */
 #relatedItemBox  dd,
 #content #relatedItemBox  dd{
@@ -54,10 +61,12 @@ table.mars-datatable {
 }
 
 
+/* petite lignes separator sur /edit */
 .template-atct_edit .field{
   border-top: 1px solid black;
 }
 
+/* widgets inline in center top area of faceted nav */
 .template-facetednavigation_view .documentByLine { 
   display:none;
 }
@@ -75,34 +84,15 @@ table.mars-datatable {
 
 div.faceted-center-widgets div.faceted-widget{
   float:left;
+  width:295px;
 }
-
-#center-top-area {
-  clear:both;
-}
+#center-top-area { clear:both; }
+#faceted-results { clear:both; }
 
 
-#faceted-results {
-  clear:both;
-}
-
-/* 
- * #faceted-center-column div.faceted-widget,
-#faceted-center-column div.faceted-widget fieldset{
-  max-width:200px;
-
-}
-*/
-
-
+/* no up one level */
 .template-folder_contents a.link-parent {display:none;}
 
-/* datatables skinning */
-.dataTables_paginate .fg-button {
-  margin-left: 2px; 
-  padding-left:5px;
-  padding-right:5px;
-}
 
 /* </dtml-with> */
 
