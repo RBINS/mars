@@ -7,7 +7,7 @@
  </predicate>
  <!-- end bibliography -->
 
- <predicate name="ATImage_ext" content_type_name="Picture"
+ <predicate name="ATImage_ext" content_type_name="Image"
     predicate_type="extension">
   <argument value="jpg,jpeg,png,gif"/>
  </predicate>

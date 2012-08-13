@@ -1006,11 +1006,9 @@
   <property name="image_types">
     <element value="Image"/>
     <element value="News Item"/>
-    <element value="Picture"/>
   </property>
   <property name="folder_types">
     <element value="Image"/>
-    <element value="Picture"/>
   </property>
   <property name="album_batch_size">30</property>
   <property name="album_image_scale">thumb</property>
