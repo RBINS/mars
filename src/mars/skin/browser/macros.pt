@@ -99,7 +99,9 @@
       </script>
     </div>
     <p metal:define-macro="listitem"
-      tal:define="editable editable|nothing;">
+      tal:define="editable editable|nothing;
+      item_wf_state_class string:state-${item/review_state};
+      plone_view item/@@plone">
       <span tal:condition="editable">
         <input
           name="item.selected:record:list"
@@ -110,9 +112,16 @@
       <span>
         <a
           href="#"
-          class="summary url"
-          tal:content="string:${infos/title} (${infos/path})"
-          tal:attributes="href infos/url|nothing;"> </a>
+          tal:define="
+          item_icon python:plone_view.getIcon(item);
+          portaltype infos/type|python:'';
+          portaltype python:normalizeString(portaltype)"
+          tal:attributes="href infos/url|nothing;
+          class string:${item_wf_state_class} summary url contenttype-${portaltype}">
+          <img tal:replace="structure item_icon/html_tag" />
+          <span
+            tal:replace="structure string:${infos/title} (${infos/path})"/>
+        </a>
       </span>
     </p>
   </body>

@@ -150,6 +150,7 @@ class SummaryView(BrowserView, ViewMixin):
         data = {
             'title': title.strip(),
             'path': path,
+            'type': it.portal_type,
             'url': it.getURL(),
         }
         return  data
