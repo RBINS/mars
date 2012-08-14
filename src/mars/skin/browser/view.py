@@ -316,5 +316,4 @@ class MarsContentPerType(BrowserView):
         params['data'] = dres
         return self.index(**params)
 
-
 # vim:set et sts=4 ts=4 tw=80:

@@ -3,6 +3,7 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="mars.skin">
   <!-- ' mars.skin' Zope 3 browser layer -->
+  <include file="faceted.zcml"/>
   <interface
       interface=".interfaces.IThemeSpecific"
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
@@ -17,6 +18,11 @@
       layer=".interfaces.IThemeSpecific"
     />
   <!-- Resource directory for stylesheets -->
+  <browser:resourceDirectory
+      name="mars.skin"
+      directory="resources"
+      layer=".interfaces.IThemeSpecific"
+    />
   <browser:resourceDirectory
       name="mars.skin.stylesheets"
       directory="stylesheets"
@@ -53,6 +59,6 @@
       class=".view.FolderContentsViewUtils"
       name="folder_contents_per_type_utils"
       allowed_interface=".view.IFolderContentsButtons"
-      permission="zope2.View" /> 
+      permission="zope2.View" />
   <!-- vim:set ft=xml: -->
 </configure>

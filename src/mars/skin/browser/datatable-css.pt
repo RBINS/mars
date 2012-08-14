@@ -1,0 +1,5 @@
+<tal:block tal:condition="view/available">
+  <link rel="stylesheet"
+    type="text/css" media="screen"
+    tal:attributes="href string:${here/portal_url}/++resource++mars.skin/dt.css" />
+</tal:block>

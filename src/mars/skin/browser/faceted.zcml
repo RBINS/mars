@@ -1,0 +1,38 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:faceted="http://namespaces.zope.org/faceted"
+    i18n_domain="mars.skin">
+  <include package="eea.facetednavigation"/>
+  <include package="eea.facetednavigation" file="meta.zcml"/>
+  <faceted:view
+      name="faceted-datatable-items"
+      class=".faceted.Search"
+      template="datatables-items.pt"
+      title="Faceted items preview in a table"
+      permission="zope2.View">
+  </faceted:view>
+  <browser:page
+      name="faceteddatatable_macros"
+      for="*"
+      class=".faceted.FacetedDatatablecvMacros"
+      template="macros.pt"
+      permission="zope.Public"
+      allowed_interface=".faceted.IFacetedDatatablecvMacros"
+      layer=".interfaces.IThemeSpecific"
+    />
+  <browser:viewlet
+      manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+      name="faceteddatatable.css"
+      for="mars.skin.browser.faceted.IFacetedDatatableView"
+      template="datatable-css.pt"
+      class=".faceted.CSS"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+    />
+  <five:implements
+      class="Products.ATContentTypes.content.topic.ATTopic"
+      interface="mars.skin.browser.faceted.IFacetedDatatableView"/>
+  <!-- vim:set ft=xml: -->
+</configure>

@@ -1,0 +1,13 @@
+#content .faceted-resultsperpage-widget,
+.faceteddatatable-datatable  .DataTables_sort_wrapper {
+  display:none !important;
+} 
+.dataTables_paginate .fg-button {
+  margin-left: 2px; 
+  padding-left:5px;
+  padding-right:5px;
+} 
+
+#content .dataTables_paginate a{
+ color: #fff !important;
+} 

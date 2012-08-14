@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xml:lang="en" lang="en"
+  xmlns:tal="http://xml.zope.org/namespaces/tal"
+  xmlns:metal="http://xml.zope.org/namespaces/metal"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  metal:use-macro="context/main_template/macros/master"
+  i18n:domain="eea">
+  <body>
+    <metal:content-core fill-slot="content-core">
+      <metal:block define-macro="content-core">
+        <div tal:define="
+          global props python:container.portal_properties;
+          editable python:True;
+          portal_membership nocall:here/portal_membership;
+          self nocall:here/@@faceted-datatable-items;
+          test python:self.test;
+          cvmacros nocall:here/@@faceteddatatable_macros;
+          folderContents python:self.arrange(folderContents);"
+          >
+          <div tal:define="view nocall:self">
+            <form
+              method="post"
+              action="">
+              <div metal:use-macro="cvmacros/do-listing"/>
+              <br/>
+            </form>
+          </div>
+          <div class="eea-preview-items">
+            <div class="listingBar"
+            style="display: none"></div>
+          </div>
+        </div>
+      </metal:block>
+    </metal:content-core>
+  </body>
+</html>

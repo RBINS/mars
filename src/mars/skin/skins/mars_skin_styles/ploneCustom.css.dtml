@@ -42,7 +42,7 @@ table.mars-datatable {
   margin-bottom:0px;
 }
 .mars-ref-overlay-ajax  table.group  label{
-    font-size: 80%;
+  font-size: 80%;
 }
 .mars-ref-overlay-ajax  table.group tr a,
 .mars-ref-overlay-ajax  table.group tr td {
@@ -88,6 +88,10 @@ div.faceted-center-widgets div.faceted-widget{
 }
 #center-top-area { clear:both; }
 #faceted-results { clear:both; }
+#faceted-results .listingBar {
+  display: block;
+  clear: left;
+}
 
 
 /* no up one level */
