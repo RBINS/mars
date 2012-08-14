@@ -110,9 +110,12 @@
               </td>
               <td>
                   <img tal:replace="structure item/icon|nothing" />
-                  <a href="#" tal:attributes="href  item/view_url|string:${view/base_url}/${id};
-                                              title item/url_href_title|nothing;
-                                              class string: ${item/state_class|python:''} ${item/type_class|python:''};">
+                  <a href="#"
+                    tal:define="cssctype string:${item/state_class}|python:'';
+                    cssptype string:${item/type_class}|python:''"
+                    tal:attributes="href  item/view_url|string:${view/base_url}/${id};
+                    title item/url_href_title|nothing;
+                    class string:${cssctype} ${cssptype} ;">
                     <strong tal:omit-tag="not: item/is_browser_default|nothing"
                             tal:content="title_or_id"/>
                   </a>
@@ -146,7 +149,7 @@
         <tfoot>
           <th></th>
           <th><input name="search_title"    type="text" class="search_init" value="Search title"   /></th>
-          <th></th>                        
+          <th></th>
           <th><!--<input name="search_modified" type="text" class="search_init" value="Search modified"/>--></th>
           <th><!--<input name="search_state"    type="text" class="search_init" value="Search state"   />--></th>
         </tfoot>
