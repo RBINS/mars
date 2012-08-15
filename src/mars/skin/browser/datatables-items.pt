@@ -10,7 +10,7 @@
       <metal:block define-macro="content-core">
         <div tal:define="
           global props python:container.portal_properties;
-          editable python:True;
+          editable python:False;
           portal_membership nocall:here/portal_membership;
           self nocall:here/@@faceted-datatable-items;
           test python:self.test;

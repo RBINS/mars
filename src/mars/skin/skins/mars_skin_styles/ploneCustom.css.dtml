@@ -97,6 +97,20 @@ div.faceted-center-widgets div.faceted-widget{
 /* no up one level */
 .template-folder_contents a.link-parent {display:none;}
 
+.faceted-form #center-content-area {
+  margin-right: 5px;
+}
+#faceted-right-column .faceted-right-widgets,
+#faceted-form #right-area,
+#faceted-right-column .faceted-widget,
+#faceted-right-column {
+  clear:both;
+}
+#faceted-form{
+}
+#faceted-form #right-area {
+}
+ 
 
 /* </dtml-with> */
 

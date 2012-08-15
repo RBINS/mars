@@ -99,7 +99,7 @@
       </script>
     </div>
     <p metal:define-macro="listitem"
-      tal:define="editable editable|nothing;
+      tal:define="editable editable|python:False;
       item_wf_state_class string:state-${item/review_state};
       plone_view item/@@plone">
       <span tal:condition="editable">
