@@ -250,6 +250,7 @@
                         <tal:results tal:repeat="item batch">
                             <tal:row  tal:define="uid item/aq_explicit/UID|string:'';
                                                   item_referenceable python:((allowed_types and (item.portal_type in allowed_types)) or not allowed_types);
+                                                  item_icon python:plone_view.getIcon(item);
                                                   review_state_allows python: test(filter_review_states, getInfoFor(item, 'review_state', None) in (only_for_review_states or ()), True);
                                                   has_uid python:hasattr(item.aq_explicit, 'UID');
                                                   referenceable python:has_uid and item_referenceable and review_state_allows and item!=at_obj;
@@ -263,10 +264,10 @@
                                       </tal:if>
                                     </td>
                                     <td width="50%">
-                                        <img src="#" tal:attributes="src string:${here/portal_url}/${item/getIcon};alt item/Title" />
+                                        <img tal:replace="structure item_icon/html_tag" />
                                         <a tal:condition="python: item.isPrincipiaFolderish and allow_browse"
                                            tal:attributes="href python:item.absolute_url() + '/' + template.getId() + '?fieldName='+ fieldName + '&amp;fieldRealName=' + fieldRealName + '&amp;at_url='+at_url">
-                                            <strong tal:condition="referenceable"
+                                           <strong tal:condition="referenceable"
                                                     tal:content="item/title_or_id">Title</strong>
                                             <span style="" 
                                                   tal:condition="not: referenceable" 
@@ -305,7 +306,8 @@
                                         style="text-align:right"
                                         tal:define="title python:(True==full_path) and  ' > '.join(item.getPhysicalPath()[1:-1])+ ' > %s' % item.Title() or title">
                                         <tal:referenceable tal:condition="referenceable">
-                                            <a href=""
+                                          <img tal:replace="structure item_icon/html_tag" />
+                                          <a href=""
                                                 onclick=""
                                                 tal:attributes="href string:#;
                                                                 onclick string:window.opener.referencebrowser_setReference('${fieldName}', '${uid}', '${title}', ${multi});; if (0==${close_window}) {window.close()} else {showMessage('${title}')};; ;">

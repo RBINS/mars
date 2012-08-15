@@ -177,6 +177,7 @@
         tal:define="
             uid python:view.getUid(item);
             isNotSelf python:view.isNotSelf(item);
+            item_icon python:plone_view.getIcon(item);
             referenceable python:view.isReferencable(item);
             title_or_id python:view.title_or_id(item);
             color view/discreetColor;">
@@ -196,6 +197,7 @@
                />
         </td>
         <td tal:attributes="class python:'contenttype-' + item.portal_type.lower()">
+          <img tal:replace="structure item_icon/html_tag" />
           <a class="browsesite" tal:condition="python: item.is_folderish and allow_browse"
              tal:attributes="
              href python:view.genRefBrowserUrl(item.getURL());

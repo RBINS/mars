@@ -12,6 +12,8 @@
       <tal:define define="
           image_portal_types field/widget/image_portal_types|string:;
           image_method       field/widget/image_method|string:;
+          ploneview nocall:context/@@plone; 
+          normalizeString nocall:ploneview/normalizeString;
           show_path          field/widget/show_path|nothing;
           hide_inaccessible  field/widget/hide_inaccessible | nothing;
           helper nocall:here/refbrowserhelper;
@@ -24,12 +26,14 @@
                tal:condition="python: not field.multiValued and (can_view or not hide_inaccessible)"
                tal:define="obj python:refs[0];
                            obj_path python: '/'.join(obj.getPhysicalPath());
+                           item_icon python:plone_view.getIcon(obj);
                            can_view python: helper.canView(obj)">
           <img src="#" alt="Image"
               tal:condition="python: obj.portal_type in image_portal_types"
               tal:attributes="src string:${obj/absolute_url}/$image_method"
               />
 
+          <img tal:replace="structure item_icon/html_tag" />
           <a href="#"
               tal:attributes="href obj/absolute_url;
                               class python:obj.portal_type.replace(' ', '_')"
@@ -57,12 +61,14 @@
             <tal:block
                 tal:define="
                     obj_path python: '/'.join(obj.getPhysicalPath());
+                    item_icon python:plone_view.getIcon(obj);
                     can_view python: helper.canView(obj)"
                 tal:condition="python: can_view or not hide_inaccessible">
               <li>
                 <img tal:condition="python:obj.portal_type in image_portal_types"
                     tal:attributes="src string:${obj/absolute_url}/$image_method" />
-                <a href="#"
+                  <img tal:replace="structure item_icon/html_tag" />
+                  <a href="#"
                     tal:attributes="
                         href obj/absolute_url;
                         class python:obj.portal_type.replace(' ', '_')"
@@ -114,8 +120,10 @@
         <tal:value tal:condition="value">
           <tal:block tal:define="
               obj python:refs[0];
+              item_icon           python:ploneview.getIcon(refs[0]);
               obj_path python: '/'.join(obj.getPhysicalPath())" >
 
+          <img tal:replace="structure item_icon/html_tag" />
             <input size="" type="text" value="" id="" readonly="readonly"
                 tal:attributes="
                     value obj/title_or_id;
@@ -169,7 +177,7 @@
 
           <div> <!-- don't remove this. it is needed for DOM traversal -->
           <span tal:attributes="class python:'contenttype-' + normalizeString(type)" 
-            tal:condition="python:ldrel>1">
+            tal:condition="python:ldrel>=1">
                   <img tal:replace="structure item_icon/html_tag" />
                   <span tal:content="string:${type} : ${lrel} "/>
                 </span> 
