@@ -6,31 +6,24 @@
     xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="marsapp.categories">
 
-  <grok:grok package="."/>
+    <grok:grok package="."/>
     <five:registerPackage package="." initialize=".initialize" />
-
     <include package=".exportimport" />
     <include package=".browser" />
     <include package=".controlpanel" />
-
     <browser:resourceDirectory
         name="marsapp.categories.icons"
         directory="icons"
         />
-
-  <browser:page
+    <browser:page
       name="marscats-export"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       class=".exporter.MarscatFlatExporter"
       permission="cmf.ManagePortal"
       />
-
-
     <subscriber
         for=".category.IMarsCategory
              zope.lifecycleevent.interfaces.IObjectModifiedEvent"
         handler=".events.modifiedCategoryEventHandler" />
-
   <cmf:registerDirectory name="marsapp_categories"/>
-
 </configure>
