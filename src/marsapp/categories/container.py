@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+import logging
 import re
 from StringIO import StringIO
 from AccessControl import ClassSecurityInfo
@@ -20,6 +21,8 @@ from storage import CAT_CONTAINER
 from ordereddict import OrderedDict as odict
 
 
+log = logging.getLogger('mars.categories.container')
+
 def getEncodedStrings(s):
     if not isinstance(s, basestring):
         raise TypeError
@@ -28,27 +31,49 @@ def getEncodedStrings(s):
     if isinstance(s, unicode):
         return s.encode('utf-8'), s
 
-def getOrCreateCategory(container, catname):
+
+_categscache = {}
+def getOrCreateCategory(catalog,
+                        container, 
+                        catname):
     if not isinstance(catname, unicode):
         catname = unicode(catname, 'utf-8')
     catid = queryUtility(IURLNormalizer).normalize(catname)
     catid = catid.replace('"', '').replace("'", '')
-    #print catid
-    if catid not in container.objectIds():
-        _createObjectByType('Mars Category', container,
-                            id=catid,
-                            title=catname, excludeFromNav=True)
-    return getattr(container, catid)
+    cpath = '%s/%s' % ( container, catid,)
+    br = list(
+        catalog.search(
+            {'path': { 'query': cpath, 'depth' :0}}
+        ))
+    if not len(br):
+        c = _categscache.get(
+            container,
+            catalog.search(
+                {'path': {'query':container, 'depth' :0}}
+            )[0].getObject()
+        )
+        _categscache[container] = c
+        _createObjectByType(
+            'Mars Category', c, id=catid,
+            title=catname, excludeFromNav=True)
+        log.info(u'Created category %s' % cpath)
+    return cpath
 
-def createCatsFromDict(container, catsdict):
+def createCatsFromDict(catalog, containerp, catsdict):
     for catname in catsdict.keys():
-        newcat = getOrCreateCategory(container, catname)
+        newcatp = getOrCreateCategory(
+            catalog, containerp, catname)
         if len(catsdict[catname].keys()) > 0:
-            createCatsFromDict(newcat, catsdict[catname])
+            createCatsFromDict(
+                catalog, newcatp, catsdict[catname])
 
 schema = ATFolderSchema.copy()
 
-catspat = re.compile(r'(/ )|(?:(?!$)(?: *"((?:.*?"")*?[^"]*)"|(.*?))(?: +/ +| +/$| *$))')
+catspat = re.compile(
+    r'(/ )|(?:'
+    '(?!$)(?: *"((?:.*?"")*'
+    '?[^"]*)"|(.*?))'
+    '(?: +/ +| +/$| *$))')
 twoquotes = re.compile('""')
 
 class MarsCategoriesContainer(ATFolder):
@@ -94,6 +119,11 @@ class MarsCategoriesContainer(ATFolder):
                         if cat not in parent.keys():
                             parent[cat] = dict()
                         parent = parent[cat]
-        createCatsFromDict(self, catsdict)
+        catalog = getToolByName(self, 'portal_catalog')
+        _categscache.clear()
+        createCatsFromDict(catalog, 
+                           '/'.join(self.getPhysicalPath()), 
+                           catsdict)
+        log.info('Creation done.')
 
 registerATCT(MarsCategoriesContainer, 'marsapp.categories')
