@@ -1,0 +1,899 @@
+Taxa
+----
+
+Flora / Abies alba / Mill. / Pinaceae / 
+Flora / Abies amabilis / Parl. / Pinaceae / 
+Flora / Abies brachyphylla / Maxim. / Pinaceae / 
+Flora / Abies lasiocarpa / Hook. / Pinaceae / 
+Flora / Abies nordmanniana / Spach / Pinaceae / 
+Flora / Abies veitchii / Lindley / Pinaceae / 
+Flora / Acer campestre / L. / Aceraceae / Erable champêtre
+Flora / Acer campestre subsp. hebecarpum / (DC.) Pax / Aceraceae / 
+Flora / Acer platanoides / L. / Aceraceae / Erable plane
+Flora / Acer pseudoplatanus / L. / Aceraceae / Erable sycomore
+Flora / Acer sp. / / Aceraceae / 
+Flora / Aconitum napellus subsp. vulgare / Rouy & Fouc. / Ranunculaceae / 
+Flora / Actaea spicata / L. / Ranunculaceae / 
+Flora / Actinophloeus macarthurii / Becc. ex Radermacher / Palmaceae / 
+Flora / Actinophloeus sanderianus / Burret / Palmaceae / 
+Flora / Adinandra dumosa / Jack / Theaceae / 
+Flora / Adoxa moschatellina / L. / Adoxaceae / Moschatelline
+Flora / Aegopodium podagraria / L. / Apiaceae / "Podagraire / Herbe aux goutteux"
+Flora / Aesculus hippocastanum / L. / Hippocastanaceae / Marronnier commun
+Flora / Aethusa cynapium / L. / Apiaceae / Petite ciguë
+Flora / Agrimonia eupatoria / L. / Rosaceae / Aigremoine eupatoire
+Flora / Ailanthus altissima / (Mill.) Swingle / Simaroubaceae / Ailanthe glanduleux
+Flora / Ajuga chamaepitys / (L.) Schreb. / Lamiaceae / Bugle petit-pin
+Flora / Ajuga genevensis / L. / Lamiaceae / Bugle de Genève
+Flora / Ajuga iva / (L.) Schreb. / Lamiaceae / 
+Flora / Alchemilla vulgaris / L. / Rosaceae / Alchémille à lobes aigus
+Flora / Alisma nutans / L. / Alismataceae / 
+Flora / Alisma plantago-aquatica / L. / Alismataceae / 
+Flora / Alliaria petiolata / (Bieb.) Cavara & Grande / Brassicaceae / Alliaire
+Flora / Allium sphaerocephalon / L. / Alliaceae / 
+Flora / Allium ursinum / L. / Alliaceae / Ail des ours
+Flora / Alnaster fruticosa / (Somm.) an Ledeb.? / Betulaceae / 
+Flora / Alnus glutinosa / (L.) Gaertn. / Betulaceae / "Aulne noir / Aulne glutineux"
+Flora / Alnus incana / (L.) Moench / Betulaceae / Aulne blanc
+Flora / Alnus japonica / Sieb. & Zucc. / Betulaceae / 
+Flora / Alnus rubra / Desf.ex Steud. / Betulaceae / 
+Flora / Alnus tenuifolia / Nutt. / Betulaceae / 
+Flora / Althaea officinalis / L. / Malvaceae / Mauve
+Flora / Alyssum alyssoides / (L.) L. / Brassicaceae / Alysson calicinal
+Flora / Amelanchier ovalis / Med. / Malaceae / Amélanchier sauvage
+Flora / Ammophila arundinacea / Host / Poaceae / 
+Flora / Anagalis arvensis / L. / Primulaceae / 
+Flora / Anagallis arvensis subsp. arvensis / L. / Primulaceae / 
+Flora / Anchusa officinalis / L. / Boraginaceae / Buglosse officinale
+Flora / Andromeda polifolia / L. / Ericaceae / Andromède
+Flora / Anemone nemorosa / L. / Ranunculaceae / Anémone sylvie
+Flora / Angelica archangelica / L. / Apiaceae / Angélique vraie
+Flora / Anthoxanthum odoratum / L. / Poaceae / Flouve odorante
+Flora / Anthriscus sylvestris / (L.) Hoffm. / Apiaceae / Cerfeuil sauvage
+Flora / Anthyllis vulneraria / L. / Fabaceae / Vulnéraire
+Flora / Apium graveolens / L. / Apiaceae / Céleri
+Flora / Apium nodiflorum / (L.) Lag. / Apiaceae / Ache faux-cresson
+Flora / Aquilegia vulgaris / L. / Ranunculaceae / 
+Flora / Arbustus unedo / L. / Ericaceae / 
+Flora / Arctium minus / (Hill) Bernh. / Asteraceae / Petite bardane
+Flora / Arctostaphylos patula / Greene / Ericaceae / 
+Flora / Arctostaphylos uva-ursi / Spreng. / Ericaceae / 
+Flora / Areca triandra / Roxb. / Palmaceae / 
+Flora / Arenaria serpyllifolia / L. / Caryophyllaceae / Sabine à feuilles de serpolet
+Flora / Armeria maritima / Willd. / Plumbaginaceae / Gazon d'Olympe
+Flora / Armeria maritima subsp. maritima / (Mill.) Willd. / Plumbaginaceae / 
+Flora / Arum italicum / Mill. / Araceae / 
+Flora / Arum maculatum / L. / Araceae / 
+Flora / Asparagus officinalis / L. / Liliaceae / Asperge
+Flora / Asperula cynanchica / L. / Rubiaceae / Herbe à l'esquinancie
+Flora / Asperula odorata / L. / Rubiaceae / Aspérule odorante
+Flora / Aster tripolium / L. / Asteraceae / Aster maritime
+Flora / Atriplex / L. / Chenopodiaceae / Arroche
+Flora / Atriplex confertifolia / S. Wats. / Chenopodiaceae / 
+Flora / Atriplex halimus / L. / Chenopodiaceae / 
+Flora / Atriplex littoralis / L. / Chenopodiaceae / Arroche littorale
+Flora / Atriplex patula / L. / Chenopodiaceae / 
+Flora / Atriplex prostrata / Boucher ex DC. / Chenopodiaceae / Arroche hastée
+Flora / Atropa bella-donna / L. / Solanaceae / 
+Flora / Azolla filiculoides / Lam. / Azollaceae / 
+Flora / Baldellia ranunculoides / (L.) Parl. / Alismataceae / 
+Flora / Ballota nigra / L. / Lamiaceae / Ballotte noire
+Flora / Balota nigra subsp. foetida / Hayek / Lamiaceae / Ballote fétide
+Flora / Berteroa incana / (L.) DC. / Brassicaceae / Alysson blanc
+Flora / Betula alba / L. / Betulaceae / Bouleau pubescent
+Flora / Betula carpathica / / Betulaceae / 
+Flora / Betula nana / L. / Betulaceae / Bouleau nain
+Flora / Betula pendula / Roth / Betulaceae / Bouleau verruqueux
+Flora / Bidens tripartita / L. / Asteraceae / Bident triparti
+Flora / Brasenia schreberi / J.F. Gmel. / Nymphaeaceae / 
+Flora / Brunella vulgaris / Greene / Lamiaceae / 
+Flora / Bryonia dioica / Jacq. / Cucurbitaceae / Bryonne dioïque
+Flora / Buxus sempervirens / L. / Buxaceae / 
+Flora / Cakile maritima / Scop. / Brassicaceae / Cakilier
+Flora / Calla palustris / L. / Araceae / Calla
+Flora / Calluna vulgaris / (L.) Hull / Ericaceae / Callune
+Flora / Caltha palustris / L. / Ranunculaceae / 
+Flora / Calystegia sepium / (L.) R. Br. / Convolvulaceae / 
+Flora / Campanula rapunculus / L. / Campanulaceae / 
+Flora / Campanula rotundifolia / L. / Campanulaceae / 
+Flora / Cannabis sativa / L. / Cannabaceae / 
+Flora / Capsella bursa-patoris / (L.) Med. / Brassicaceae / Bourse à pasteur
+Flora / Cardamine / L. / Brassicaceae / Cardamine
+Flora / Cardamine hirsuta / L. / Brassicaceae / Cardamine hirsute
+Flora / Cardamine impatiens / L. / Brassicaceae / Cardamine impatiente
+Flora / Cardamine pratensis / L. / Brassicaceae / Cardamine des prés
+Flora / Cardaria draba / (L.) Desv. / Brassicaceae / Cardaire drave
+Flora / Carex acuta / L. / Cyperaceae / 
+Flora / Carex acutiformis / Ehrh. / Cyperaceae / Laîche des marais
+Flora / Carex adelostoma / Krecz. / Cyperaceae / 
+Flora / Carex alba / Scop. / Cyperaceae / 
+Flora / Carex aquatilis / Wahlenb. / Cyperaceae / 
+Flora / Carex arcuaria / / Cyperaceae / 
+Flora / Carex arenaria / L. / Cyperaceae / 
+Flora / Carex asa-grayi / L.H.Bailey / Cyperaceae / 
+Flora / Carex atrata / Sammelart / Cyperaceae / 
+Flora / Carex atrofusca / Schkuhr / Cyperaceae / 
+Flora / Carex austroalpina / Becherer / Cyperaceae / 
+Flora / Carex bequaerti / De Wild. / Cyperaceae / 
+Flora / Carex binervis / Smith / Cyperaceae / 
+Flora / Carex broteriana / G.Sampaio / Cyperaceae / 
+Flora / Carex brunnescens / (Pers.) Poir. / Cyperaceae / 
+Flora / Carex buxbaumii / Wahlenb. / Cyperaceae / 
+Flora / Carex canescens / L. / Cyperaceae / Laîche blanchâtre
+Flora / Carex capillaris / L. / Cyperaceae / 
+Flora / Carex capitata / L. / Cyperaceae / 
+Flora / Carex caryophyllea / Latourr. / Cyperaceae / 
+Flora / Carex contigua / Hoppe / Cyperaceae / 
+Flora / Carex crawfordii / Fernald / Cyperaceae / 
+Flora / Carex crinita / Lam. / Cyperaceae / 
+Flora / Carex curruela / / Cyperaceae / 
+Flora / Carex curta / Good. / Cyperaceae / 
+Flora / Carex demissa / Vahl ex Hartman / Cyperaceae / 
+Flora / Carex diandra / Schrank / Cyperaceae / 
+Flora / Carex digitata / L. / Cyperaceae / 
+Flora / Carex dioica / L. / Cyperaceae / 
+Flora / Carex distans / L. / Cyperaceae / 
+Flora / Carex distans var. vikingensis / (C. B. Clarke) Gadec. / Cyperaceae / 
+Flora / Carex divisa / Huds. / Cyperaceae / 
+Flora / Carex echinata / Murray / Cyperaceae / 
+Flora / Carex elata / All. / Cyperaceae / 
+Flora / Carex elongata / L. / Cyperaceae / 
+Flora / Carex erythorrhiza var. scacrida / Boeck. / Cyperaceae / 
+Flora / Carex extensa / Good. / Cyperaceae / 
+Flora / Carex ferruginea / Scop. / Cyperaceae / 
+Flora / Carex fimbriata / Schkuhr / Cyperaceae / 
+Flora / Carex firma / Host / Cyperaceae / 
+Flora / Carex flacca / Schreb. / Cyperaceae / 
+Flora / Carex flacca var. clavaeformis / Schreb. / Cyperaceae / 
+Flora / Carex flacca var. flacca / Schreb. / Cyperaceae / 
+Flora / Carex flava / L. / Cyperaceae / 
+Flora / Carex foetida / All. / Cyperaceae / 
+Flora / Carex frigida / All. / Cyperaceae / 
+Flora / Carex fusca / All. / Cyperaceae / 
+Flora / Carex glareosa / Wahlenb. / Cyperaceae / 
+Flora / Carex globularis / L. / Cyperaceae / 
+Flora / Carex halophila / Heuff / Cyperaceae / 
+Flora / Carex hirta / L. / Cyperaceae / 
+Flora / Carex hostiana / DC. / Cyperaceae / 
+Flora / Carex houghtonii / Torr. / Cyperaceae / 
+Flora / Carex juncella / Fr. / Cyperaceae / 
+Flora / Carex lachenalii / Schkuhr / Cyperaceae / 
+Flora / Carex laevigata / Sm. / Cyperaceae / 
+Flora / Carex lamprophysa / G.Samuelsson ex Nordh. / Cyperaceae / 
+Flora / Carex lapponica / Lang / Cyperaceae / 
+Flora / Carex lasiocarpa / Ehrh. / Cyperaceae / 
+Flora / Carex lepidocarpa / Tausch / Cyperaceae / 
+Flora / Carex leporina / auct. non L. / Cyperaceae / 
+Flora / Carex ligerica / J. Gay / Cyperaceae / 
+Flora / Carex limosa / L. / Cyperaceae / 
+Flora / Carex liparocarpus / Gaud. / Cyperaceae / 
+Flora / Carex longiseta / Brot. / Cyperaceae / 
+Flora / Carex lurida / Wahlenb. / Cyperaceae / 
+Flora / Carex mackenziei / Krecz. / Cyperaceae / 
+Flora / Carex magellanica / Lam. / Cyperaceae / 
+Flora / Carex melanostachya / Willd. / Cyperaceae / 
+Flora / Carex microcarpa / Bertol.ex Maris / Cyperaceae / 
+Flora / Carex nigra / (L.) Reichard / Cyperaceae / 
+Flora / Carex obscura / Nees / Cyperaceae / 
+Flora / Carex oederi / auct. non Retz. / Cyperaceae / 
+Flora / Carex otrubae / Podp. / Cyperaceae / 
+Flora / Carex ovalis / Good. / Cyperaceae / 
+Flora / Carex pairae / F. W. Schultz / Cyperaceae / 
+Flora / Carex pallescens / L. / Cyperaceae / 
+Flora / Carex panicea / L. / Cyperaceae / 
+Flora / Carex paniculata / L. / Cyperaceae / 
+Flora / Carex pauciflora / Lightf. / Cyperaceae / 
+Flora / Carex paupercula / Michx. / Cyperaceae / 
+Flora / Carex pendula / Huds. / Cyperaceae / 
+Flora / Carex pilulifera / L. / Cyperaceae / 
+Flora / Carex praecox / Schreb. / Cyperaceae / 
+Flora / Carex projecta / Mack. / Cyperaceae / 
+Flora / Carex pseudocyperus / L. / Cyperaceae / 
+Flora / Carex pulicaris / L. / Cyperaceae / Laîche puce
+Flora / Carex punctata / Gaudin / Cyperaceae / 
+Flora / Carex remota / Jusl. Ex L. / Cyperaceae / 
+Flora / Carex riparia / Curt. / Cyperaceae / 
+Flora / Carex rostrata / Stokes / Cyperaceae / 
+Flora / Carex rotundata / Wahlenb. / Cyperaceae / 
+Flora / Carex saxatilis / L. / Cyperaceae / 
+Flora / Carex serotina / Mérat / Cyperaceae / 
+Flora / Carex spicata / Huds. / Cyperaceae / 
+Flora / Carex strigosa / Huds. / Cyperaceae / Laîche maigre
+Flora / Carex supina subsp. spaniocarpa / (Steud.) Hultén / Cyperaceae / 
+Flora / Carex sylvatica / Huds. / Cyperaceae / 
+Flora / Carex tomentosa / L. / Cyperaceae / 
+Flora / Carex trinervis / Degl. / Cyperaceae / 
+Flora / Carex vaginata / Tausch / Cyperaceae / 
+Flora / Carex vesicaria / L. / Cyperaceae / 
+Flora / Carex vulpina / L. / Cyperaceae / 
+Flora / Carex vulpinoidea / Michaux / Cyperaceae / 
+Flora / Carlina vulgaris / L. / Asteraceae / Carline vulgaire
+Flora / Carpinus betulus / L. / Betulaceae / 
+Flora / Carya / / Juglandaceae / 
+Flora / Carya glabra / Sweet / Juglandaceae / 
+Flora / Carya porcina / Nutt. / Juglandaceae / 
+Flora / Castanea sativa / Mill. / Fagaceae / Châtaigner
+Flora / Cedrus atlantica / Manetti / Pinaceae / 
+Flora / Cedrus libanotica / Link. / Pinaceae / 
+Flora / Celastrus orbicularis / Willd. in Roem. & Schult. / Celastraceae / 
+Flora / Centaurium erythraea / Rafn / Gentianaceae / Erythrée petite centaurée
+Flora / Centranthus ruber / (L.) DC. / Valerianaceae / 
+Flora / Cephalotaxus drupacea / Sieb. & Zucc. / Coniferaceae / 
+Flora / Cerastium arvense / L. / Caryophyllaceae / Céraiste des champs
+Flora / Cerastium caepitosum / Gilib. / Caryophyllaceae / 
+Flora / Ceratophyllum demersum var. oxyocarthum / Clem. / Ceratophyllaceae / 
+Flora / Ceratophyllum submersum / L. / Ceratophyllaceae / Cératophylle interne
+Flora / Chaenorhinum minus / (L.) Lange / Scrophulariaceae / 
+Flora / Chelidonium majus / L. / Papaveraceae / 
+Flora / Chenopodium album / L. / Chenopodiaceae / 
+Flora / Chenopodium bonus-henricus / L. / Chenopodiaceae / "Bon-Henri / épinard sauvage"
+Flora / Chenopodium ficifolium / Smith / Chenopodiaceae / Chénopode à feuiles de figuier
+Flora / Chenopodium hybridum / L. / Chenopodiaceae / 
+Flora / Chenopodium murale / L. / Chenopodiaceae / 
+Flora / Chenopodium polyspermum / L. / Chenopodiaceae / Chénopode polysperme
+Flora / Chenopodium rubrum / L. / Chenopodiaceae / Chénopode rouge
+Flora / Chenopodium vulvaria / L. / Chenopodiaceae / 
+Flora / Chrysalidocarpus madascariensis / Becc. / Palmaceae / 
+Flora / Chrysosplenium / L. / Saxifragaceae / Dorine
+Flora / Cichorium intybus / L. / Asteraceae / Chicorée sauvage
+Flora / Circaea lutetiana / L. / Onagraceae / Circée de Paris
+Flora / Cirsium oleraceum / (L.) Scop. / Asteraceae / Cirse maraîcher
+Flora / Cirsium palustre / (L.) Scop. / Asteraceae / Cirse des marais
+Flora / Cirsium vulgare / (Savi) Ten. / Asteraceae / Cirse commun
+Flora / Cistus / L. / Cistaceae / 
+Flora / Cistus albidus / L. / Cistaceae / 
+Flora / Cistus clusii / Dun. / Cistaceae / 
+Flora / Cistus creticus subsp. corsicus / (Lois.) W.Greuter & Burdet / Cistaceae / 
+Flora / Cistus creticus subsp. eriocephalus / (Viv.) W Greuter & Burdet / Cistaceae / 
+Flora / Cistus crispus / L. / Cistaceae / 
+Flora / Cistus ladanifer var. ladanifer / / Cistaceae / 
+Flora / Cistus laurifolius / L. / Cistaceae / 
+Flora / Cistus monspeliensis / L. / Cistaceae / 
+Flora / Cistus populifolius / L. / Cistaceae / 
+Flora / Cistus salviifolius / L. / Cistaceae / 
+Flora / Cistus symphytifolius / Lam. / Cistaceae / 
+Flora / Citrullus colocynthis / (L.) Schrad. / Cucurbitaceae / 
+Flora / Cladium mariscus / (L.) Pohl / Cyperaceae / Marisque
+Flora / Cladrastis amurensis / Benth.ex Maxim. / Poaceae / 
+Flora / Cleistanthus myrianthus / Kurz / Euphorbiaceae / 
+Flora / Clematis flammula / L. / Ranunculaceae / 
+Flora / Clematis vitalba / L. / Ranunculaceae / 
+Flora / Cleome africana / Botsch. / Capparaceae / 
+Flora / Cochlearia danica / L. / Brassicaceae / Cochléaire danoise
+Flora / Colchicum autumnale / L. / Liliaceae / Colchique d'automne
+Flora / Comarum palustre / L. / Rosaceae / Comaret
+Flora / Combretum / / Combretaceae / 
+Flora / Convolvulus arvensis / L. / Convolvulaceae / Liseron des champs
+Flora / Convolvulus sepium / L. / Convolvulaceae / 
+Flora / Coris monspelierensis / L. / Primulaceae / 
+Flora / Corispermum leptopterum / (Aschers.) Iljin / Chenopodiaceae / Corisperme à fruit ailé
+Flora / Cornus mas / L. / Cornaceae / Cornouiller mâle
+Flora / Cornus sanguinea / L. / Cornaceae / Cornouiller sanguin
+Flora / Coronopus squamatus / (Forssk.) Aschers. / Brassicaceae / Corne de cerf droite
+Flora / Corydalis lutea / (L.) DC. / Papaveraceae / 
+Flora / Corylus avellana / L. / Betulaceae / "Coudrier / noisetier"
+Flora / Cotoneaster integerrimus / Med. / Malaceae / Cotonéaster sauvage
+Flora / Crataegus laevigata / (Poiret) DC. / Malaceae / Aubépine à deux styles
+Flora / Crataegus monogyna subsp. monogyna / Jacq. / Rosaceae / Aubépine à un style
+Flora / Crataegus oxyacantha / L. / Malaceae / 
+Flora / Crataegus sp. / / Malaceae / 
+Flora / Crucianella angustifolia / L. / Rubiaceae / 
+Flora / Cryptomeria japonica / D. Don / Cupressaceae / Cryptoméria du Japon
+Flora / Cupressus fastigiata / DC. / Cupressaceae / Cyprès fastigié
+Flora / Cuscusta epithymum subsp. epithymum / (L.) L. / Cucustaceae / Petite cuscute
+Flora / Cuscusta europaea / L. / Cucustaceae / Gande cucuste
+Flora / Cydonia oblonga / Mill. / Rosaceae / 
+Flora / Cynoglossum officinale / L. / Boraginaceae / Cynoglosse officinale
+Flora / Cyperus fuscus / L. / Cyperaceae / Souchet brun
+Flora / Cyperus longus subsp. badius / (Desf.) Bonnier / Cyperaceae / 
+Flora / Cyrtostachys renda / Blume / Palmaceae / 
+Flora / Cytisus scoparius / (L.) Link / Fabaceae / Genêt à balais
+Flora / Dactylorhiza maculata / (L.) Soó / Orchidaceae / Orchis tacheté
+Flora / Daphne laureola subsp. laureola / L. / Thymelaeaceae / 
+Flora / Daphne mezereum / L. / Thymelaeaceae / 
+Flora / Datura stramonium / L. / Solanaceae / Stramoine
+Flora / Datura stramonium var. stramonium / L. / Solanaceae / 
+Flora / Daucus carota / L. / Apiaceae / Carotte
+Flora / Dianthus armeria / L. / Caryophyllaceae / Œillet velu
+Flora / Dianthus deltoides / L. / Caryophyllaceae / Œillet couché
+Flora / Digitalis lutea subsp. lutea / L. / Scrophulariaceae / 
+Flora / Digitalis purpurea / L. / Scrophulariaceae / 
+Flora / Digitaria glabra / Roem. & Schult. / Poaceae / 
+Flora / Digitaria ischaemum / (Schreb. & Schweigg.) Muhlenb. / Poaceae / Digitaire glabre
+Flora / Diploglottis cunninghamii / Hook. / Sapindaceae / 
+Flora / Diplotaxis tenuifolia / (L.) DC. / Brassicaceae / Diplotaxe vulgaire
+Flora / Dipsacus fullonum / L. / Dipsacaceae / Cabaret des oiseaux
+Flora / Dipsacus sylvestris / Huds. / Dipsacaceae / 
+Flora / Drosera intermedia / Hayne / Droseraceae / Rossolis intermédiaire
+Flora / Ecballium elaterium / (L.) A. Rich. / Cucurbitaceae / 
+Flora / Echinochloa crus-galli / (L.) Beauv. / Poaceae / Pied-de-coq
+Flora / Eleocharis acicularis / (L.) Roem. & Schult. / Cyperaceae / Scirpe épingle
+Flora / Eleocharis multicaulis / (Smith) Desv. / Cyperaceae / Scirpe à nombreuses tiges
+Flora / Eleocharis ovata / (Roth) Roem. & Schult. / Cyperaceae / Scirpe à inflorescence ovoïde
+Flora / Eleocharis palustris / (L.) Roem. & Schult. / Cyperaceae / Scirpe des marais
+Flora / Emex spinosa / (L.) Campd. / Polygonaceae / 
+Flora / Empetrum nigrum / L. / Empetraceae / Camarine noire
+Flora / Ephedra alata / Decne / Gnetaceae / 
+Flora / Ephedra scoparia / Lange / Gnetaceae / 
+Flora / Epilobium angustifolium / L. / Onagraceae / 
+Flora / Epilobium hirsutum / L. / Onagraceae / 
+Flora / Epilobium palustre / L. / Onagraceae / Epilobe des marais
+Flora / Epipactis atrorubens / (Hoffm.) Besser / Orchidaceae / Epipactis brun rouge
+Flora / Epipactis palustris / (L.) Crantz / Orchidaceae / Epipactis des marais
+Flora / Erica arborea / L. / Ericaceae / 
+Flora / Erica cinerea / L. / Ericaceae / 
+Flora / Erica scoparia / L. / Ericaceae / 
+Flora / Erica tetralix / L. / Ericaceae / 
+Flora / Erigeron acer / L. / Asteraceae / Erigéron âcre
+Flora / Eriophorum latifolium / Hoppe / Cyperaceae / 
+Flora / Eriophorum polystachion / L. / Cyperaceae / Linaigrette à feuilles étroites
+Flora / Erodium cicutarium / (L.) L'Hérit. / Geraniaceae / Bec-de-Cigogne musqué
+Flora / Erodium cicutarium subsp. dunense / Andreas / Geraniaceae / 
+Flora / Eryngium maritimum / L. / Apiaceae / Panicaut des dunes
+Flora / Erythronium montanum / / Liliaceae / 
+Flora / Eucalyptus cornuta / Labill. / Myrtaceae / 
+Flora / Eupatorium cannabinum / L. / Asteraceae / Eupatoire chanvrine
+Flora / Euphorbia amygdaloides / L. / Euphorbiaceae / 
+Flora / Euphorbia helioscopia / L. / Euphorbiaceae / 
+Flora / Euphorbia nicaeensis subsp. nicaeensis / All. / Euphorbiaceae / 
+Flora / Euphorbia palustris / L. / Euphorbiaceae / 
+Flora / Euphorbia paralias / L. / Euphorbiaceae / 
+Flora / Euphorbia peplis / L. / Euphorbiaceae / 
+Flora / Euphorbia peplus / L. / Euphorbiaceae / 
+Flora / Eurya acuminata / DC. / Ternstroemiaceae / 
+Flora / Eurya japonica / Thumb. / Ternstroemiaceae / 
+Flora / Evonymus europaeus / L. / Celastraceae / 
+Flora / Evonymus latifolius / (L.) Mill. / Celastraceae / 
+Flora / Fagus sylvatica / L. / Fagaceae / Hêtre
+Flora / Fallopia aubertii / (L. Henry) Holub / Polygonaceae / Renouée de Chine
+Flora / Filipendula ulmaria subsp. denudata / (J. & C. Presl) Hayek / Rosaceae / 
+Flora / Filipendula ulmaria subsp. ulmaria / (L.) Maxim. / Rosaceae / Reine-des-prés
+Flora / Filipendula vulgaris / Moench / Rosaceae / Filipendule
+Flora / Fragaria vesca / L. / Rosaceae / Fraisier sauvage
+Flora / Frangula alnus / Mill. / Rhamnaceae / Bourdaine
+Flora / Fraxinus excelsior / L. / Oleaceae / Frêne commun
+Flora / Fumaria officinalis / L. / Papaveraceae / 
+Flora / Galeopsis ladanum / L. / Lamiaceae / Galéopsis ladanum
+Flora / Galeopsis tetrahit / L. / Lamiaceae / Galéopsis tétrahit
+Flora / Galium aparine / L. / Rubiaceae / Gratteron
+Flora / Galium lucidum / All. / Rubiaceae / 
+Flora / Galium maritimum / L. / Rubiaceae / Gaillum maritime
+Flora / Galium mollugo subsp. erectum / Syme / Rubiaceae / 
+Flora / Galium palustre / L. / Rubiaceae / Gaillet des marais
+Flora / Galium palustre subsp. palustre / L. / Rubiaceae / Gailet des marais
+Flora / Galium saxatile / L. / Rubiaceae / Gaillet du Harz
+Flora / Galium verum var. verum / L. / Rubiaceae / Gaillet jaune
+Flora / Genista anglica / L. / Fabaceae / Genêt d'Angleterre
+Flora / Gentiana / L. / Gentianaceae / Gentiane
+Flora / Gentiana lutea / L. / Gentianaceae / "Grande gentiane / Gentiane jaune"
+Flora / Geranium dissectum / L. / Geraniaceae / Géranium découpé
+Flora / Geranium molle / L. / Geraniaceae / Géranium mollet
+Flora / Geranium pratense / L. / Geraniaceae / Géranium des prés
+Flora / Geranium robertianum / L. / Geraniaceae / Herbe à Robert
+Flora / Geranium sylvaticum / L. / Geraniaceae / Géranium des bois
+Flora / Geum montanum / L. / Rosaceae / 
+Flora / Geum rivale / L. / Rosaceae / Benoîte des ruisseaux
+Flora / Geum urbanum / L. / Rosaceae / Benoîte commune
+Flora / Ginkgo biloba / L. / Ginkgoaceae / Abre aux quarante écus
+Flora / Glaucium flavum / Crantz / Papaveraceae / 
+Flora / Globularia alypum / L. / Globulariaceae / = Globularia alepensis ?
+Flora / Globularia vulgaris / L. / Globulariaceae / 
+Flora / Glyptostrobus pensilis / K. Koch / Coniferae / 
+Flora / Gordonia anomala / Spreng. / Ternstroemiaceae / 
+Flora / Gypto / Mill. / Pinaceae / Sapin pectiné
+Flora / Hamamelis / Gronov.ex Linn. / Hamamelidaceae / 
+Flora / Hedera helix / L. / Araliaceae / Lierre
+Flora / Helianthemum nummularium / (L.) Mill. / Cistaceae / Hélianthème jaune
+Flora / Heliotropium curassavicum / L. / Boraginaceae / 
+Flora / Heliotropium europaeum / L. / Boraginaceae / 
+Flora / Helleborus foetidus / L. / Ranunculaceae / 
+Flora / Helleborus viridis subsp. occidentalis / (Reut.) Schiffn. / Ranunculaceae / 
+Flora / Heracleum sphondylium / L. / Apiaceae / Berce commune
+Flora / Hibiscus sp. / / Malvaceae / 
+Flora / Hibiscus syriacus / L. / Malvaceae / Hibiscus
+Flora / Hippocrepis comosa / L. / Fabaceae / Hippocrépide en ombelle
+Flora / Hippophae rhamnoides / L. / Elaeagnaceae / Argousier
+Flora / Hottonia palustris / L. / Primulaceae / Hottonie des marais
+Flora / Humulus lupulus / L. / Cannabaceae / 
+Flora / Hyacinthoides non-scripta / (L.) Chouard ex Rothm. / Liliaceae / Jacinthe des bois
+Flora / Hydrocharis morsus-ranae / L. / Hydrocharitaceae / Petit nénuphar
+Flora / Hydrocotyle vulgaris / L. / Apiaceae / Ecuelle d'eau
+Flora / Hyoscyamus albus / L. / Solanaceae / 
+Flora / Hyoscyamus niger / L. / Solanaceae / 
+Flora / Hypericum hirsutum / L. / Clusiaceae / 
+Flora / Hypericum humifusum / L. / Hypericaceae / Millepertuis couché
+Flora / Hypericum montanum / L. / Clusiaceae / 
+Flora / Hypericum perforatum / L. / Hypericaceae / Millepertuis commun
+Flora / Hypericum perforatum var. perforatum / L. / Clusiaceae / 
+Flora / Hypericum quadrangulum / L. / Hypericaceae / Millepertuis à quatre ailes
+Flora / Hyphaene thebaica / Mart. / Palmaceae / 
+Flora / Iberis amara / L. / Brassicaceae / Ibéris amer
+Flora / Ilex aquifolium / L. / Aquifoliaceae / Houx
+Flora / Illecebrum verticillatum / L. / Caryophyllaceae / Illécèbre verticillé
+Flora / Impatiens glandulifera / Royle / Balsaminaceae / Balsamine géante
+Flora / Impatiens parviflora / DC. / Balsaminaceae / 
+Flora / Inula conyzae / (Griesselich) Meikle / Asteraceae / Inule conyze
+Flora / Inula helenium / L. / Asteraceae / Inule grande aunée
+Flora / Iris foetidissima / L. / Iridaceae / 
+Flora / Iris pseudacorus / L. / Iridaceae / 
+Flora / Jasione montana / L. / Campanulaceae / Jasione des montagnes
+Flora / Jasminum fruticans / L. / Oleaceae / 
+Flora / Juglans nigra / L. / Juglandaceae / Noyer noir
+Flora / Juglans regia / L. / Juglandaceae / Noyer royal
+Flora / Juglans sp. / / Juglandaceae / Noyer
+Flora / Juncus bufonius / L. / Juncaceae / Jonc des crapauds
+Flora / Juncus effusus / L. / Juncaceae / Jonc épars
+Flora / Juncus filiformis / L. / Juncaceae / Jonc filiforme
+Flora / Juncus gerardii / Loisel. / Juncaceae / Jonc de Gérard
+Flora / Juncus squarrosus / L. / Juncaceae / Jonc raide
+Flora / Juncus subnodulosus / Schrank / Juncaceae / Jonc à tépales obtus
+Flora / Juncus tenageia / L. / Juncaceae / Jonc des marécages
+Flora / Juncus tenuis / Willd. / Juncaceae / Jonc grêle
+Flora / Juniperus communis / L. / Cupressaceae / 
+Flora / Juniperus communis subsp. communis / L. / Cupressaceae / 
+Flora / Juniperus drupacea / Labill. / Cupressaceae / 
+Flora / Juniperus occidentalis / Hook. / Cupressaceae / 
+Flora / Juniperus oxycedrus subsp. macrocarpa / (Sibth. & Sm.) Ball / Cupressaceae / 
+Flora / Juniperus oxycedrus subsp. oxycedrus / L. / Cupressaceae / 
+Flora / Juniperus phoenicea / L. / Cupressaceae / 
+Flora / Knautia arvensis / (L.) Coult. / Dipsacaceae / 
+Flora / Kopsia fruticosa / A. DC. / Apocynaceae / 
+Flora / Lactuca saligna / L. / Asteraceae / 
+Flora / Lactuca serriola / L. / Asteraceae / 
+Flora / Lactuca virosa / L. / Asteraceae / Laitue vireuse
+Flora / Lamium galeobdolon / L. / Lamiaceae / Lamier jaune
+Flora / Lampsana communis / L. / Asteraceae / Lampsane commune
+Flora / Larix decidua / Mill. / Pinaceae / Mélèze d'Europe
+Flora / Larix europaea / DC. / Pinaceae / 
+Flora / Larix leptolepis / (Sieb. & Zucc.) Endl. / Pinaceae / 
+Flora / Larix occidentalis / Nutt. / Pinaceae / 
+Flora / Latania loddigesii / Mart. / Palmaceae / 
+Flora / Lathyrus montanus / Bernh. / Fabaceae / Gesse des montagnes
+Flora / Lathyrus nissolia / L. / Fabaceae / Gesse de Nissole
+Flora / Lavandula latifolia / Medic. / Lamiaceae / 
+Flora / Lavandula multifida / L. / Lamiaceae / 
+Flora / Lavandula stoechas subsp. stoechas / L. / Lamiaceae / 
+Flora / Lavatera arborea / L. / Malvaceae / 
+Flora / Lavatera cretica / L. / Malvaceae / 
+Flora / Leontodon autumnalis / L. / Asteraceae / Léontodon d'automne
+Flora / Leonurus cardiaca / L. / Lamiaceae / Agripaume
+Flora / Lepidium ruderale / L. / Brassicaceae / Passerage rudérale
+Flora / Libocedrus decurrens / Torr. / Coniferae / 
+Flora / Licuala grandis / H. Wendl. / Palmaceae / 
+Flora / Ligustrum vulgare / L. / Oleaceae / Troène commun
+Flora / Limonium vulgare subsp. vulgare / Mill. / Plumbaginaceae / 
+Flora / Linaria vulgaris / Mill. / Scrophulariaceae / 
+Flora / Linnaea borealis / L. / Caprifoliaceae / 
+Flora / Linospadix petrichiana / Hort. / Palmaceae / 
+Flora / Linum bienne / Mill. / Linaceae / 
+Flora / Linum catharticum / L. / Linaceae / Lin purgatif
+Flora / Liquidambar styraciflua / L. / Hamamelidaceae / Liquidambar
+Flora / Lithocarpus densiflora / Rehder / Fagaceae / 
+Flora / Lithospermum officinale / L. / Boraginaceae / Grémil officinal
+Flora / Littorella uniflora / (L.) Aschers. / Plantaginaceae / Littorelle
+Flora / Lonicera periclymenum / L. / Caprifoliaceae / Chèvrefeuille des bois
+Flora / Lotus corniculatus / L. / Fabaceae / 
+Flora / Luzula alpino-pilosa / (Chaix) Breitstr. / Cyperaceae / 
+Flora / Luzula campestris / (L.) DC. / Juncaceae / 
+Flora / Luzula multiflora subsp. congesta / (Thuill.) Arcang. / Juncaceae / 
+Flora / Luzula nivea / (L.) DC. / Juncaceae / 
+Flora / Luzula spicata / (L.) DC. / Juncaceae / 
+Flora / Luzula sylvatica / (Huds.) Gaudin / Juncaceae / 
+Flora / Lychnis flos-cuculi / L. / Caryophyllaceae / Lychnis fleur-de-coucou
+Flora / Lychnis githago / (L.) Scop. / Caryophyllaceae / 
+Flora / Lycium barbarum / L. / Solanaceae / Lyciet
+Flora / Lycium europaeum / L. / Solanaceae / 
+Flora / Lycopsis arvensis / L. / Boraginaceae / 
+Flora / Lycopus europaeus / L. / Lamiaceae / Lycope
+Flora / Lysimachia nemorum / L. / Primulaceae / 
+Flora / Lysimachia vulgaris / L. / Primulaceae / 
+Flora / Lythrum salicaria / L. / Lythraceae / 
+Flora / Macadamia ternifolia / F. Muell. / Proteaceae / 
+Flora / Magnolia acuminata / L. / Magnoliaceae / 
+Flora / Magnolia macrophylla / Michx. / Magnoliaceae / Magnolia à grandes fleurs
+Flora / Magnolia schiedeana / / Magnoliaceae / 
+Flora / Malus sylvestris / (L.) Mill. / Malaceae / pommier
+Flora / Malva moschata / L. / Malvaceae / Mauve musquée
+Flora / Malva parviflora / L. / Malvaceae / 
+Flora / Malva sylvestris / L. / Malvaceae / 
+Flora / Martinezia erosa / Linden / Arecaceae / 
+Flora / Mastixia / / Cornaceae / 
+Flora / Medicago lupunlina / L. / Fabaceae / Luzerne lupuline
+Flora / Melampyrum pratense subsp. pratense / L. / Scrophulariaceae / 
+Flora / Melandrium diurnum / Dmrt. / Caryophyllaceae / 
+Flora / Meliotus albus / Med. / Fabaceae / Méliot blanc
+Flora / Melissa officinalis subsp. officinalis / L. / Lamiaceae / Mélisse
+Flora / Mentha aquatica / L. / Lamiaceae / Menthe aquatique
+Flora / Mentha arvensis / L. / Lamiaceae / Menthe des champs
+Flora / Mentha arvensis subsp. austriaca / (Jacq.) Briq. / Lamiaceae / Menthe des champs
+Flora / Mentha pulegium / L. / Lamiaceae / Menthe pouillot
+Flora / Mentha suaveolens / Ehrh. / Lamiaceae / Menthe à feuilles rondes
+Flora / Mentha suaveolens subsp. suaveolens / Ehrh. / Lamiaceae / Menthe à feuilles rondes
+Flora / Menyanthes trifoliata / L. / Menyanthaceae / 
+Flora / Mercurialis annua / L. / Euphorbiaceae / Mercuriale annuelle
+Flora / Mespilus germanica / L. / Rosaceae / 
+Flora / Meum athamanticum / Jacq. / Apiaceae / Fenouil des Alpes
+Flora / Minuartia hybrida / (Vill.) Schischkin / Caryophyllaceae / Alsine à feuilles ténues
+Flora / Moehringia trinervia / (L.) Clairv. / Caryophylaceae / 
+Flora / Molinia caerulea / (L.) Moench / Poaceae / Molinie
+Flora / Montia fontana subsp. fontana / L. / Portulariaceae / Montie des sources
+Flora / Montia minor / C.C. Gmel. / Portulacaceae / Montie printanière
+Flora / Morus nigra / L. / Moraceae / Mûrier noir
+Flora / Myosotis arvensis / (L.) Hill. / Boraginaceae / Myosotis des champs
+Flora / Myosotis cespitosa / C.F. Schultz / Boraginaceae / Myosotis cespiteux
+Flora / Myosotis scorpioides / L. / Boraginaceae / Myosotis des marais
+Flora / Myrica gale / L. / Myricaceae / 
+Flora / Myrtus communis / L. / Myrtaceae / 
+Flora / Narthecium ossifragum / (L.) Huds. / Liliaceae / Narthécie des marais
+Flora / Nasturtium officinale / R. Brown / Brassicaceae / Cresson de fontaine
+Flora / Nepeta cataria / L. / Lamiaceae / Herbe aux chats
+Flora / Nepeta glechoma / Benth. / Lamiaceae / 
+Flora / Nephelium lichi / Steud. / Sapindaceae / 
+Flora / Nigella damascena / L. / Ranunculaceae / 
+Flora / Nipa fruticans / Thunb. / Palmaceae / 
+Flora / Nuphar lutea / (L.) Smith / Nyphaeaceae / Profondeville
+Flora / Nymphaea alba / L. / Nymphaeaceae / Nénuphar blanc
+Flora / Nyssa sylvatica / Marsh. / Cornaceae / 
+Flora / Odontites luteus / (L.) Clairv. / Scrophulariaceae / 
+Flora / Odontites vernus subsp. serotinus / Corb. / Scrophulariaceae / 
+Flora / Oenanthe / L. / Apiaceae / 
+Flora / Oenanthe aquatica / (L.) Poiret / Apiaceae / Oenanthe phellandrium
+Flora / Oenanthe aquatica var. latifolia / / Apiaceae / 
+Flora / Oenanthe fistulosa / L. / Apiaceae / Oenanthe fistuleuse
+Flora / Oenanthe lachenalii / C.C. Gmel. / Apiaceae / Oenanthe de Lachenal
+Flora / Oenanthe peucedanifolia / Pollich / Apiaceae / Oenanthe à feuilles de peucédan
+Flora / Oenanthe peucedanifolia var. media / / Apiaceae / 
+Flora / Oenothera biennis / L. / Onagraceae / Onagre bisannuelle
+Flora / Oenothera parviflora / L. / Onagraceae / 
+Flora / Olea europaea var. europaea / L. / Oleaceae / 
+Flora / Olea maritima var. sylvestris / Brot / Oleaceae / 
+Flora / Origanum vulgare / L. / Lamiaceae / Origan
+Flora / Osyris alba / L. / Santalaceae / 
+Flora / Oxalis acetosella / L. / Oxalidaceae / 
+Flora / Oxytropis podocarpa / A.Gray / Fabaceae / 
+Flora / Pandanus utilis / Bory / Pandanaceae / 
+Flora / Papaver dubium / L. / Papaveraceae / 
+Flora / Papaver rhoeas f. rhoeas / L. / Papaveraceae / 
+Flora / Parentucellia latifolia / (L.) Carusel / Scrophulariaceae / 
+Flora / Parietaria judaica / L. / Urticaceae / 
+Flora / Paris quadrifolia / L. / Liliaceae / Parisette
+Flora / Parnassia palustris / L. / Saxifragaceae / Parnassie
+Flora / Paronychia argentea / Lam. / Illecebraceae / 
+Flora / Parthenocissus / / Vitaceae / 
+Flora / Pastinaca sativa / L. / Apiaceae / 
+Flora / Pedicularis palustris / L. / Scrophulariaceae / Pédiculaire des marais
+Flora / Pedicularis sylvatica / L. / Scrophulariaceae / Pédiculaire des bois
+Flora / Peucedanum carvifolia / Vill. / Apiaceae / Peucédan à feuille de carvi
+Flora / Peucedanum palustre / (L.) Moench / Apiaceae / Impératoire
+Flora / Phillyrea angustifolia / L. / Oleaceae / 
+Flora / Phillyrea media / L. / Oleaceae / 
+Flora / Phlomis fruticosa / L. / Lamiaceae / 
+Flora / Phragmites australis / (Cav.) Steud. / Poaceae / "Roseau / Phragmite"
+Flora / Physalis / L. / Solanaceae / 
+Flora / Physalis alkekengi var. alkekengi / L. / Solanaceae / 
+Flora / Phyteuma nigrum / F.W. Schmidt / Campanulaceae / Rainponce bleue
+Flora / Phyteuma spicatum / L. / Campanulaceae / Raiponce en épi
+Flora / Picea / / Pinaceae / 
+Flora / Picea abies / (L.) Karst. / Pinaceae / 
+Flora / Picea alba / Link / Pinaceae / 
+Flora / Picea excelsa / Link / Pinaceae / 
+Flora / Picea glehnii / Mast. / Pinaceae / 
+Flora / Picea mariana / Britton / Pinaceae / 
+Flora / Picea obovata / Ledeb. / Pinaceae / 
+Flora / Picea omorika / Mast. / Pinaceae / Epicéa de Serbie
+Flora / Picea orientalis / (L.) Link / Pinaceae / 
+Flora / Picea sitchensis / Carr. / Pinaceae / Epicea de Sitka
+Flora / Picris echioides / L. / Asteraceae / Picris fausse-vipérine
+Flora / Pimpinella major / (L.) Huds. / Apiaceae / Grand boucage
+Flora / Pimpinella saxifraga / L. / Apiaceae / Petit boucage
+Flora / Pinguicula vulgaris / L. / Lentibulariaceae / 
+Flora / Pinus austriaca / Höss / Pinaceae / Pin noir d'Autriche
+Flora / Pinus ayacahuite / Ehrenb.ex Schlecht. / Pinaceae / 
+Flora / Pinus canariensis / C. Sm. / Pinaceae / Pin des Canaries
+Flora / Pinus contorta / Dougl. / Pinaceae / 
+Flora / Pinus edulis / Engelm. / Pinaceae / 
+Flora / Pinus excelsa / Wall. ex Lamb. / Pinaceae / 
+Flora / Pinus halepensis / Mill. / Pinaceae / 
+Flora / Pinus monophylla / Hort.ex Parl. / Pinaceae / 
+Flora / Pinus montana var. pumilio / Haenk. / Pinaceae / 
+Flora / Pinus montana var. uncinata / Willk. / Pinaceae / 
+Flora / Pinus montezumae / Lamb. / Pinaceae / 
+Flora / Pinus mugo / Turra / Pinaceae / 
+Flora / Pinus muricata / Don. / Pinaceae / 
+Flora / Pinus murrayana / Balf. / Pinaceae / 
+Flora / Pinus nigra / Arnold / Pinaceae / Pin noir
+Flora / Pinus nigra subsp. calabrica / (Loud.) E.Murray / Pinaceae / 
+Flora / Pinus patula / Schiede & Deppe ex Schlecht. / Pinaceae / 
+Flora / Pinus pinaster / Galand / Pinaceae / Pin maritime
+Flora / Pinus pinea / L. / Pinaceae / 
+Flora / Pinus ponderosa / Dougl. / Pinaceae / 
+Flora / Pinus pumila / Hort.ex C.Koch / Pinaceae / 
+Flora / Pinus radiata / D. Don / Pinaceae / 
+Flora / Pinus rigida / Mill. / Pinaceae / 
+Flora / Pinus rotundata / Link / Pinaceae / 
+Flora / Pinus strobus / L. / Pinaceae / 
+Flora / Pinus sylvestris / L. / Pinaceae / 
+Flora / Pistacia lentiscus / L. / Anacardiaceae / 
+Flora / Pistacia terebinthus / L. / Anacardiaceae / 
+Flora / Plantago major / L. / Plantaginaceae / Plantain à larges feuilles
+Flora / Plantago maritima / L. / Plantaginaceae / Plantain maritime
+Flora / Plantago media / L. / Plantaginaceae / Plantain moyen
+Flora / Polygonum aviculare / L. / Polygonaceae / Traînasse
+Flora / Polygonum bistorta / L. / Polygonaceae / 
+Flora / Polygonum dumetorum / L. / Polygonaceae / 
+Flora / Polygonum hydropiper / L. / Polygonaceae / 
+Flora / Polygonum lapathifolium / L. / Polygonaceae / Renouée à feuilles de patience
+Flora / Polygonum lapathifolium subsp. pallidum / (With.) Fries / Polygonaceae / 
+Flora / Polygonum maritimum / L. / Polygonaceae / 
+Flora / Polygonum mite / Schrank / Polygonaceae / 
+Flora / Polygonum persicaria / L. / Polygonaceae / 
+Flora / Populus alba / L. / Falicaceae / Peuplier blanc
+Flora / Populus tremula / L. / Salicaceae / Peuplier tremble
+Flora / Potamogeton acutifolius / Link / Potamogetonaceae / Potamot à feuilles aiguës
+Flora / Potamogeton alpinus / Balb. / Potamogetonaceae / Potamot des Alpes
+Flora / Potamogeton coloratus / Hornem. / Potamogetonaceae / Potamot des tourbières alcalines
+Flora / Potamogeton filiformis / Pers. / Potamogetonaceae / 
+Flora / Potamogeton natans / L. / Potamogetonaceae / Potamot nageant
+Flora / Potamogeton perfoliatus / L. / Potamogetonaceae / Potamot à feuilles perfoliées
+Flora / Potentilla erecta / (L.) Räuschel / Rosaceae / Tormentille
+Flora / Potentilla recta / L. / Rosaceae / Potentille droite
+Flora / Potentilla reptans / L. / Rosaceae / Potentille rampante
+Flora / Primula elatior / (L.) L. / Primulaceae / 
+Flora / Prunella hyssopifolia / L. / Lamiaceae / 
+Flora / Prunus avium / (L.) L. / Amygdalaceae / Merisier
+Flora / Prunus padus / L. / Amygdalaceae / Cerisier à grappes
+Flora / Prunus spinosa / L. / Amygdalaceae / "Prunellier / épine noire"
+Flora / Prunus virginiana / L. / Amygdalaceae / Cerisier de Virginie
+Flora / Prunus x fruticans / Weihe / Amygdalaceae / 
+Flora / Pseudotsuga menziesii / (Mirb.) Franco / Pinaceae / Sapin de Douglas
+Flora / Pterocarya fraxinifolia / Spach / Juglandaceae / 
+Flora / Ptychorhaphis augsusta / / Palmaceae / 
+Flora / Pulicaria dysenterica / (L.) Bernh. / Asteraceae / Pulicaire dysentérique
+Flora / Pulsatilla vulgaris / Mill. / Ranunculaceae / Anémone mulsatile
+Flora / Pyrus communis / L. / Rosaceae / 
+Flora / Pyrus pyraster / Burgsd. / Malaceae / poirier sauvage
+Flora / Quercus coccifera / L. / Fagaceae / 
+Flora / Quercus ilex / L. / Fagaceae / 
+Flora / Quercus incana / Bartr. / Fagaceae / 
+Flora / Quercus kelloggii / Newberry / Fagaceae / 
+Flora / Quercus petraea / (Mattuschka) Lieblein / Fagaceae / Chêne sessile
+Flora / Quercus pubescens / Willd. / Fagaceae / 
+Flora / Quercus robur / L. / Fagaceae / Chêne pédonculé
+Flora / Quercus rubra / L. / Fagaceae / Chêne rouge d'Amérique
+Flora / Quercus sessiliflora / Salisb. / Fagaceae / 
+Flora / Quercus skinneri / Benth. / Fagaceae / 
+Flora / Quercus sp. / / Fagaceae / 
+Flora / Quercus vaccinifolia / / Fagaceae / 
+Flora / Ranunculus acris / L. / Ranunculaceae / Renoncule âcre
+Flora / Ranunculus acris subsp. acris / L. / Ranunculaceae / Renoncule âcre
+Flora / Ranunculus aquatilis / L. / Ranunculaceae / Renoncule aquatique
+Flora / Ranunculus auricomus / L. / Ranunculaceae / Renoncule à tête d'or
+Flora / Ranunculus bulbosus / L. / Ranunculaceae / Renoncule bulbeuse
+Flora / Ranunculus flammula / L. / Ranunculaceae / Renoncule flammette
+Flora / Ranunculus lingua / L. / Ranunculaceae / Grande douve
+Flora / Ranunculus repens / L. / Ranunculaceae / Renoncule rampante
+Flora / Ranunculus sardous / Crantz / Ranunculaceae / Renoncule sardonie
+Flora / Ranunculus sceleratus / L. / Ranunculaceae / Renoncule scélérate
+Flora / Reseda alba / L. / Resedaceae / 
+Flora / Reseda lutea / L. / Resedaceae / 
+Flora / Reseda luteola / L. / Resedaceae / 
+Flora / Reseda phyteuma / Brot. / Resedaceae / 
+Flora / Rhamnus alaternus / L. / Rhamnaceae / 
+Flora / Rhamnus cathartica / L. / Rhamnales / Nerprun purgatif
+Flora / Rhinanthus / L. / Scrophulariaceae / Rhinanthe
+Flora / Rhinanthus alectorolophus subsp. buccalis var. arvensis / U. Schneider / Scrophulariaceae / 
+Flora / Rhinanthus minor subsp. minor / L. / Scrophulariaceae / 
+Flora / Rhododendron ferrugineum / L. / Ericaceae / 
+Flora / Rhododendron hirsutum / L. / Ericaceae / 
+Flora / Rhus pentaphylla / (Jacq.) Desf. / Anacardiaceae / 
+Flora / Rhynchospora alba / (L.) Vahl / Cyperaceae / 
+Flora / Rhynchospora fusca / (L.) Ait. / Cyperaceae / 
+Flora / Ribes petraeum / Wulfen / Grossulariaceae / 
+Flora / Ribes rubrum / L. / Grossulariaceae / Groseiller rouge
+Flora / Ribes uva-crispa / L. / Grossulariaceae / Groseiller épineux
+Flora / Ricinus / / Euphorbiaceae / Ricin
+Flora / Robinia pseudoacacia / L. / Fabaceae / Robinier faux-acacia
+Flora / Rorippa amphibia / (L.) Besser / Brassicaceae / Rorippe amphibie
+Flora / Rorippa islandica / (Oeder & Gunnerus) Borbás / Brassicaceae / 
+Flora / Rorippa sylvestris / (L.) Besser / Brassicaceae / Rorippe des champs
+Flora / Rosa / / Rosaceae / 
+Flora / Rosa canina / L. / Rosaceae / Rosier des chiens
+Flora / Rosa pimpinellifolia / L. / Rosaceae / Rosier pimprenelle
+Flora / Rosa rugosa / Thunb. / Rosaceae / Rosier rugueux
+Flora / Rosa sempervirens / L. / Rosaceae / 
+Flora / Rosa sp. / L. / Rosaceae / 
+Flora / Rosmarinus officinalis / L. / Lamiaceae / romarin
+Flora / Rubia peregrina / L. / Rubiaceae / 
+Flora / Rubus caesius / L. / Rosaceae / Ronce bleue
+Flora / Rubus fruticosus / L. / Rosaceae / 
+Flora / Rubus idaeus / L. / Rosaceae / Framboisier
+Flora / Rubus saxatilis / L. / Rosaceae / Ronce des rochers
+Flora / Rumex / L. / Polygonaceae / "Oseille / patience"
+Flora / Rumex acetosa / L. / Polygonaceae / 
+Flora / Rumex acetosella / L. / Polygonaceae / Petite oseile
+Flora / Rumex bucephalophorus subsp. bucephalophorus / L. / Polygonaceae / 
+Flora / Rumex conglomeratus / Murray / Polygonaceae / 
+Flora / Rumex crispus / L. / Polygonaceae / Patience crépue
+Flora / Rumex crispus var. crispus / L. / Polygonaceae / 
+Flora / Rumex hydrolapathum / Huds. / Polygonaceae / Patience des eaux
+Flora / Rumex maritimus / L. / Polygonaceae / 
+Flora / Rumex obtusifolius / L. / Polygonaceae / Patience élégante
+Flora / Rumex obtusifolius subsp. obtusifolius / L. / Polygonaceae / 
+Flora / Rumex palustris / Sm. / Polygonaceae / 
+Flora / Rumex sanguineus / L. / Polygonaceae / Patience sang-de-dragon
+Flora / Rumex sanguineus subsp. viridis / (Sm.) R.Knapp / Polygonaceae / 
+Flora / Rumex scutatus / L. / Polygonaceae / 
+Flora / Rumex X heterophyllus / C.F. Schultz / Polygonaceae / 
+Flora / Ruta angustifolia / Pers. / Rutaceae / 
+Flora / Sagina apetala / Ard. / Caryophyllaceae / Sagine apétale
+Flora / Sagina nodosa / (L.) Fenzl / Caryophyllaceae / Sagine noueuse
+Flora / Sagittaria sagittifolia / L. / Alismataceae / 
+Flora / Salicornia emerici / Duval-Jouve / Chenopodiaceae / 
+Flora / Salix aurita / L. / Salicaceae / Saule à oreillettes
+Flora / Salix caprea / L. / Salicaceae / Saule marsault
+Flora / Salix fragilis / L. / Salicaceae / 
+Flora / Salix repens / L. / Salicaceae / Saule rampant
+Flora / Salix silesiaca / Willd. / Salicaceae / 
+Flora / Salix vagans / Anderss. / Salicaceae / 
+Flora / Salsola kali / L. / Chenopodiaceae / Soude
+Flora / Salsola kali subsp. kali / L. / Chenopodiaceae / 
+Flora / Salvia blancoana / Webb & Heldr. / Lamiaceae / 
+Flora / Salvia pratensis / L. / Lamiaceae / Sauge des prés
+Flora / Salvia verbenaca / L. / Lamiaceae / 
+Flora / Sambucus nigra / L. / Caprifoliaceae / Sureau noir
+Flora / Sambucus nigra var. laciniata / L. / Caprifoliaceae / 
+Flora / Sambucus nigra var. nigra / L. / Caprifoliaceae / 
+Flora / Sambucus racemosa / L. / Caprifoliaceae / 
+Flora / Sambucus sp. / / Caprifoliaceae / sureau
+Flora / Samolus valerandi / L. / Primulaceae / 
+Flora / Sanguisorba minor subsp. minor / Scop. / Rosaceae / Petite pinprenelle
+Flora / Sanguisorba officinalis / L. / Rosaceae / Sanguisorbe
+Flora / Sanicula europaea / L. / Apiaceae / Sanicule
+Flora / Saponaria officinalis / L. / Caryophyllaceae / 
+Flora / Sarcobatus vermifolia / / Chenopodiaceae / 
+Flora / Saurauja tristyla / DC. / Ternstroemiaceae / 
+Flora / Scabiosa argentea / L. / Dipsacaceae / 
+Flora / Scabiosa columbaria / L. / Dipsacaceae / 
+Flora / Schoenus nigricans / L. / Cyperaceae / 
+Flora / Scirpus holoschoenus subsp. holoschoenus / L. / Cyperaceae / 
+Flora / Scirpus lacustris / L. / Cyperaceae / 
+Flora / Scirpus maritimus / L. / Cyperaceae / 
+Flora / Scirpus tabernaemontani / C.C. Gmel / Cyperaceae / Jonc des chaisiers glauque
+Flora / Scirpus triqueter / L. / Cyperaceae / Scirpe à tige trigone
+Flora / Scleranthus annuus subsp. annuus / L. / Caryophyllaceae / 
+Flora / Scleranthus perennis subsp. dichotomus / (Schur) Nyman / Caryophyllaceae / 
+Flora / Scrophularia auriculata / L. / Scrophulariaceae / 
+Flora / Scrophularia nodosa / L. / Scrophulariaceae / 
+Flora / Scutellaria galericulata / L. / Lamiaceae / Scutellaire toque
+Flora / Senecio ovatus / "(Gaertn. / B. Mey. & Scherb.) Wild." / Asteraceae / Séneçon de Fuchs
+Flora / Senecio vulgaris / L. / Asteraceae / Séneçon vulgaire
+Flora / Sequoia gigantea / Endl. / Taxodiaceae / 
+Flora / Sequoia sempervirens / (D. Don) End. / Taxodiaceae / 
+Flora / Seseli libanotis / (L.) Koch / Apiaceae / Libanotis
+Flora / Setaria / Beauv. / Poaceae / 
+Flora / Setaria viridis / (L.) Beauv. / Poaceae / Sétaire verte
+Flora / Sherardia arvensis / L. / Rubiaceae / Shérardie des champs
+Flora / Sherardia arvensis var. arvensis / L. / Rubiaceae / Shérardie des champs
+Flora / Sideritis hirsuta / L. / Lamiaceae / 
+Flora / Sideritis hyssopifolia var. hyssopifolia / L. / Lamiaceae / 
+Flora / Sideritis montana subsp. montana / L. / Lamiaceae / 
+Flora / Sideritis romana / L. / Lamiaceae / 
+Flora / Silene conica / L. / Caryophyllaceae / Silène conique
+Flora / Silene dichotoma / Ehrh. / Caryophyllaceae / Silene à deux grappes
+Flora / Silene noctiflora / L. / Caryophyllaceae / Compagnon de nuit
+Flora / Silene nutans / L. / Caryophyllaceae / 
+Flora / Silene vulgaris subsp. vulgaris / (Moench) Garcke / Caryophyllaceae / 
+Flora / Solanum dulcamara / L. / Solanaceae / 
+Flora / Solanum nigrum / L. / Solanaceae / Morelle noire
+Flora / Solanum nigrum subsp. nigrum / L. / Solanaceae / 
+Flora / Sonchus arvensis / L. / Asteraceae / Laiteron des champs
+Flora / Sorbus aucuparia / L. / Malaceae / Sorbier des oiseleurs
+Flora / Sorbus domestica / L. / Rosaceae / 
+Flora / Sorbus hybrida / / Malaceae / 
+Flora / Sorbus intermedia / Pers. / Rosaceae / 
+Flora / Sorbus torminalis / Garsault / Rosaceae / 
+Flora / Sparganium erectum / L. / Sparganiaceae / Rubanier rameux
+Flora / Sparganium erectum subsp. neglectum / (Beeby) K. Richt. / Sparganiaceae / 
+Flora / Spergula arvensis / L. / Caryophyllaceae / Spargoute des champs
+Flora / Spergula morisonii / Boreau / Caryophyllaceae / Spargoute printanière
+Flora / Stachys annua / (L.) L. / Lamiaceae / Epiaire annuelle
+Flora / Stachys arvensis / (L.) L. / Lamiaceae / Epiaire des champs
+Flora / Stachys officinalis / (L.) Trev. / Lamiaceae / Bétoine
+Flora / Stachys palustris / L. / Lamiaceae / 
+Flora / Stachys sylvatica / L. / Lamiaceae / 
+Flora / Staehelina dubia / L. / Asteraceae / 
+Flora / Stellaria graminea / L. / Caryophyllaceae / Stellaire graminée
+Flora / Stellaria holostea / L. / Caryophyllaceae / Stellaire holostée
+Flora / Stellaria media / (L.) Vill. / Caryophyllaceae / Mouron des oiseaux
+Flora / Stellaria palustris / Retz. / Caryophyllaceae / Stellaire glauque
+Flora / Strychnos / L. / Loganiaceae / Vomiquier
+Flora / Suaeda maritima / (L.) Dum. / Chenopodiaceae / Suéda maritime
+Flora / Suaeda maritima subsp. maritima / (L.) Dum. / Chenopodiaceae / 
+Flora / Succisa pratensis / Moench / Dipsacaceae / 
+Flora / Symphoricarpos rivularis / Suksd. / Caprifoliaceae / Symphorine
+Flora / Symphytum officinale / L. / Boraginaceae / 
+Flora / Syringa vulgaris / L. / Oleaceae / 
+Flora / Tamarix africana / Poir. / Tamaricaceae / 
+Flora / Tamus communis / L. / Dioscoreaceae / Tamier
+Flora / Taraxacum officinale / / Asteraceae / 
+Flora / Taxus baccata / L. / Taxaceae / If commun
+Flora / Taxus brevifolia / Nutt. / Taxaceae / 
+Flora / Ternstroemia penangiana / Choisy / Ternstroemiaceae / 
+Flora / Teucrium botrys / L. / Lamiaceae / 
+Flora / Teucrium chamaedrys / L. / Lamiaceae / 
+Flora / Teucrium fruticans / L. / Lamiaceae / 
+Flora / Teucrium scorodonia / L. / Lamiaceae / 
+Flora / Thalictrum flavum / L. / Ranunculaceae / 
+Flora / Thalictrum minus / L. / Ranunculaceae / Petit pigamon
+Flora / Thesium humifuscum / DC. / Santalaceae / 
+Flora / Thymus pulegioides / L. / Lamiaceae / 
+Flora / Thymus vulgaris / L. / Lamiaceae / 
+Flora / Tilia cordata / Mill. / Tiliaceae / Tilleul à petites feuilles
+Flora / Tilia dasystyla / Stev. / Tiliaceae / 
+Flora / Tilia platyphyllos / Scop. / Tiliaceae / Tilleul à larges feuilles
+Flora / Torilis japonica / (Houtt.) DC. / Apiaceae / Torilis anthrisque
+Flora / Tragopogon pratensis / L. / Asteraceae / Salsifis des prés
+Flora / Trapa bispinosa / Roxb. / Hydrocaryaceae / 
+Flora / Trigenia edulis / Myrtaceae / Myrtaceae / 
+Flora / Triglochin maritimum / L. / Juncaginaceae / Troscart maritime
+Flora / Triglochin palustre / L. / Juncaginaceae / Troscart des marais
+Flora / Tsuga caroliniana / Engelm. / Pinaceae / 
+Flora / Tsuga diversifolia / (Max.) Mast. / Pinaceae / 
+Flora / Tsuga heterophylla / (Rafin.) Sarg. / Pinaceae / Tsuga de Californie
+Flora / Tsuga sieboldii / Carr. / Pinaceae / 
+Flora / Tussilago farfara / L. / Asteraceae / Tussilage pas-d'âne
+Flora / Typha angustifolia / L. / Typhaceae / 
+Flora / Typha latifolia / L. / Thyphaceae / 
+Flora / Ulex parviflorus / Lasc. & Pard. / Leguminosae / 
+Flora / Ulmus glabra / Huds. / Ulmaceae / 
+Flora / Ulmus minor / Mill. / Ulmaceae / Orme champêtre
+Flora / Ulmus minor var. suberosa / / Ulmaceae / 
+Flora / Ulmus montana / With. / Ulmaceae / Orme des montagnes
+Flora / Ulmus sp. / / Ulmaceae / 
+Flora / Umbilicus rupestris / (Salisb.) Dandy / Crassulaceae / 
+Flora / Urtica dioica / L. / Urticaceae / Grande ortie
+Flora / Urtica urens / L. / Urticaceae / Petite ortie
+Flora / Vaccinium myrtillus / L. / Ericaceae / 
+Flora / Vaccinium oxycoccos / L. / Ericaceae / Canneberge
+Flora / Vaccinium uliginosum / L. / Ericaceae / Myrtille de loup
+Flora / Vaccinium vitis-albae / L. / Ericaceae / 
+Flora / Vaccinum vitis-idaea / L. / Ericaceae / Airelle
+Flora / Valeriana repens / Host / Valerianaceae / 
+Flora / Valeriana wallrothii / Kreyer / Valerianaceae / Valériane officinale des collines
+Flora / Valerianella dentata / (L.) Pollich / Valerianaceae / Valérianelle dentée
+Flora / Valerianella discoidea / (L.) Loisel. / Valerianaceae / 
+Flora / Valerianella locusta / (L.) Laterr. / Valerianaceae / 
+Flora / Valerianella locusta subsp. dunensis / (D.E. Allen) P.D. Sell / Valerianaceae / 
+Flora / Valerianella rimosa / Bast. / Valerianaceae / 
+Flora / Verbascum blattaria / L. / Scrophulariaceae / Molène blattaire
+Flora / Verbascum lychnitis / L. / Scrophulariaceae / 
+Flora / Verbascum thapsus / L. / Scrophulariaceae / 
+Flora / Verbena officinalis / L. / Verbenaceae / 
+Flora / Veronica agrestis / L. / Scrophulariaceae / Véronique des campagnes
+Flora / Veronica anagallis-aquatica subsp. aqnagallis-aquatica / L. / Scrophulariaceae / 
+Flora / Veronica anagallis-aquatica subsp. aquatica / (Bernh.) Nyman / Scrophulariaceae / 
+Flora / Veronica arvensis / L. / Scrophulariaceae / 
+Flora / Veronica beccabunga / L. / Scrophulariaceae / Véronique des ruisseaux
+Flora / Veronica hederifolia / L. / Scrophulariaceae / Véronique à feuilles de lierre
+Flora / Veronica hederifolia subsp. hederifolia / L. / Scrophulariaceae / 
+Flora / Veronica officinalis / L. / Scrophulariaceae / 
+Flora / Veronica persica / Poir. / Scrophulariaceae / 
+Flora / Veronica scutellata / L. / Scrophulariaceae / Véronique à écus
+Flora / Verschafeltia splendida / Wende / Palmaceae / 
+Flora / Viburnum lantana / L. / Caprifoliaceae / 
+Flora / Viburnum opulus / L. / Caprifoliaceae / 
+Flora / Vicia cracca / L. / Fabaceae / Vesce à épis
+Flora / Vicia hirsuta / (L.) S.F. Gray / Fabaceae / Vesce hirsute
+Flora / Vicia sativa subsp. angustifolia / (L.) Batt. / Fabaceae / Vesce à folioles étroites
+Flora / Vicia tetrasperma / (L.) Schreb. / Fabaceae / Vesce à quatre graines
+Flora / Vincetoxicum hirundinaria / Med. / Asclepiadaceae / Dompte-venin
+Flora / Viola arvensis / Muray / Violaceae / 
+Flora / Viola calaminaria / (DC.) Lej. / Violaceae / 
+Flora / Viola canina / L. / Violaceae / Violette des chiens
+Flora / Viola cornuta / L. / Violaceae / 
+Flora / Viola riviniana / Reichenb. / Violaceae / 
+Flora / Viola tricolor / L. / Violaceae / Pensée sauvage
+Flora / Viscum album / L. / Loranthaceae / Gui
+Flora / Vitex agnus-castus / L. / Verbenaceae / 
+Flora / Vitis vinifera / L. / Vitaceae / Vigne
+Flora / Zannichellia palustris / L. / Zannichelliaceae / Zannichellie des marais

@@ -1,0 +1,164 @@
+Remain Type
+-----------
+
+Fauna / None
+Fauna / Unknown
+Fauna / Undetermined
+
+Fauna / Mammal
+Fauna / Mammal / Tooth
+Fauna / Mammal / Tooth / Decidual
+Fauna / Mammal / Tooth / Decidual / Incisor
+Fauna / Mammal / Tooth / Decidual / Incisor / Di1
+Fauna / Mammal / Tooth / Decidual / Incisor / Di2
+Fauna / Mammal / Tooth / Decidual / Incisor / Dc1
+Fauna / Mammal / Tooth / Decidual / Molar
+Fauna / Mammal / Tooth / Decidual / Molar / Dm1
+Fauna / Mammal / Tooth / Decidual / Molar / Dm2
+Fauna / Mammal / Tooth / Permanent
+Fauna / Mammal / Tooth / Permanent / Incisor
+Fauna / Mammal / Tooth / Permanent / Incisor / I1
+Fauna / Mammal / Tooth / Permanent / Incisor / I2
+Fauna / Mammal / Tooth / Permanent / Incisor / I3
+Fauna / Mammal / Tooth / Permanent / Canine / C1
+Fauna / Mammal / Tooth / Permanent / Premolar
+Fauna / Mammal / Tooth / Permanent / Premolar / P1
+Fauna / Mammal / Tooth / Permanent / Premolar / P2
+Fauna / Mammal / Tooth / Permanent / Premolar / P3
+Fauna / Mammal / Tooth / Permanent / Premolar / P4
+Fauna / Mammal / Tooth / Permanent / Molar
+Fauna / Mammal / Tooth / Permanent / Molar / M1
+Fauna / Mammal / Tooth / Permanent / Molar / M2
+Fauna / Mammal / Tooth / Permanent / Molar / M3
+Fauna / Mammal / Bone
+Fauna / Mammal / Bone / Cranium
+Fauna / Mammal / Bone / Cranium / Cranial Fragment
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Frontal
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Parietal
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Temporal
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Occipital
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Palatine
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Vomer
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Inferior Nasal Concha
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Ethmoid
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Lacrimal
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Nasal
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Zygomatic
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Sphenoid
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Maxilla
+Fauna / Mammal / Bone / Cranium / Cranial Fragment / Wormian Mammal / Bone
+Fauna / Mammal / Bone / Cranium / Natural Endocast
+Fauna / Mammal / Bone / Cranium / Mandible
+Fauna / Mammal / Bone / Postcranium
+Fauna / Mammal / Bone / Postcranium / Axial
+Fauna / Mammal / Bone / Postcranium / Axial / Hyoid
+Fauna / Mammal / Bone / Postcranium / Axial / Sternum
+Fauna / Mammal / Bone / Postcranium / Axial / Sternum / Manubrium
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Indetermined Vertebral Fragment
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Cervical Vertebra
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Cervical Vertebra / C-1 (atlas)
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Cervical Vertebra / C-2 (axis)
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Cervical Vertebra / C-3
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Cervical Vertebra / C-4
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Cervical Vertebra / C-5
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Cervical Vertebra / C-6
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Cervical Vertebra / C-7
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-1
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-2
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-3
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-4
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-5
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-6
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-7
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-8
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-9
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-10
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-11
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Thoracic Vertebra / T-12
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Lumbar Vertebra
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Lumbar Vertebra / L-1
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Lumbar Vertebra / L-2
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Lumbar Vertebra / L-3
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Lumbar Vertebra / L-4
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Lumbar Vertebra / L-5
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Sacral Vertebra
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Sacral Vertebra / S-1
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Sacral Vertebra / S-2
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Sacral Vertebra / S-3
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Sacral Vertebra / S-4
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Sacral Vertebra / S-5
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Sacral Vertebra / Coccys
+Fauna / Mammal / Bone / Postcranium / Axial / Vertebra / Sacral Vertebra / Sacrum
+Fauna / Mammal / Bone / Postcranium / Axial / Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 1st Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 2nd Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 3rd Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 4th Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 5th Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 6th Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 7th Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 8th Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 9th Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 10th Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 11th Rib
+Fauna / Mammal / Bone / Postcranium / Axial / Rib / 12th Rib
+Fauna / Mammal / Bone / Postcranium / Upper Member
+Fauna / Mammal / Bone / Postcranium / Upper Member / Shoulder Girdle
+Fauna / Mammal / Bone / Postcranium / Upper Member / Shoulder Girdle / Clavicle
+Fauna / Mammal / Bone / Postcranium / Upper Member / Shoulder Girdle / Scapula
+Fauna / Mammal / Bone / Postcranium / Upper Member / Arm
+Fauna / Mammal / Bone / Postcranium / Upper Member / Arm / Humerus
+Fauna / Mammal / Bone / Postcranium / Upper Member / Arm / Radius
+Fauna / Mammal / Bone / Postcranium / Upper Member / Arm / Ulna
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Carpal
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Carpal / Scaphoid
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Carpal / Lunate
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Carpal / Triquetral
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Carpal / Pisiform
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Carpal / Trapezium
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Carpal / Trapezoid
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Carpal / Capitate
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Carpal / Hamate
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Metacarpal
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Metacarpal / 1st Metacarpal
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Metacarpal / 2nd Metacarpal
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Metacarpal / 3rd Metacarpal
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Metacarpal / 4th Metacarpal
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Metacarpal / 5th Metacarpal
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Phalanx
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Phalanx / Proximal Phalanx
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Phalanx / Intermediate Phalanx
+Fauna / Mammal / Bone / Postcranium / Upper Member / Hand / Phalanx / Distal Phalanx
+Fauna / Mammal / Bone / Postcranium / Lower Member
+Fauna / Mammal / Bone / Postcranium / Lower Member / Pelvic Girdle
+Fauna / Mammal / Bone / Postcranium / Lower Member / Pelvic Girdle / Innominate
+Fauna / Mammal / Bone / Postcranium / Lower Member / Pelvic Girdle / Innominate / Ilium
+Fauna / Mammal / Bone / Postcranium / Lower Member / Pelvic Girdle / Innominate / Ischium
+Fauna / Mammal / Bone / Postcranium / Lower Member / Pelvic Girdle / Innominate / Pubis
+Fauna / Mammal / Bone / Postcranium / Lower Member / Leg
+Fauna / Mammal / Bone / Postcranium / Lower Member / Leg / Femur
+Fauna / Mammal / Bone / Postcranium / Lower Member / Leg / Patella
+Fauna / Mammal / Bone / Postcranium / Lower Member / Leg / Tibia
+Fauna / Mammal / Bone / Postcranium / Lower Member / Leg / Fibula
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Tarsal
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Tarsal / Talus
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Tarsal / Calcaneus
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Tarsal / Cuboid
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Tarsal / Navicular
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Tarsal / Medial (first) Cuneiform
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Tarsal / Intermediate (second) Cuneiform
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Tarsal / Lateral (third) Cuneiform
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Metatarsal
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Metatarsal / 1st Metatarsal
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Metatarsal / 2nd Metatarsal
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Metatarsal / 3rd Metatarsal
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Metatarsal / 4th Metatarsal
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Metatarsal / 5th Metatarsal
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Phalanx
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Phalanx / Proximal Phalanx
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Phalanx / Intermediate Phalanx
+Fauna / Mammal / Bone / Postcranium / Lower Member / Foot / Phalanx / Distal Phalanx
