@@ -78,7 +78,7 @@
       name="marsCatalog"
       title="marsCatalog"
       description="marsCatalog"
-      handler="mars.policy.setuphandlers.setupCalog">
+      handler="mars.policy.setuphandlers.setupCatalog">
     <depends name="content"/>
   </genericsetup:importStep>      
   <genericsetup:importStep
