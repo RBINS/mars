@@ -2,6 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:cmf="http://namespaces.zope.org/cmf"
     xmlns:monkey="http://namespaces.plone.org/monkey"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
@@ -9,15 +10,12 @@
   <five:registerPackage package="." initialize=".skin.initialize" />
   <include package=".browser" />
   <include file="skins.zcml" />
-  <include file="profiles.zcml" />
+  <browser:resourceDirectory
+      name="marsapp.content.icons"
+      directory="skins/mars_skin_custom_images"
+    />
   <i18n:registerTranslations directory="locales" />
-  <genericsetup:importStep
-      name="mars_skin setupVarious"
-      title="various setup for skin Skin"
-      description="description"
-      handler="mars.skin.setuphandlers.setupVarious">
-    <depends name="content"/>
-  </genericsetup:importStep>
+
   <!--
   <include package="collective.monkeypatcher" />
   <monkey:patch
