@@ -42,6 +42,19 @@
   </genericsetup:upgradeSteps>
   <genericsetup:upgradeSteps  profile="mars.policy:default" source="1003" destination="1004">
     <genericsetup:upgradeStep title="mars.policy v1004" description="" handler=".upgrade.v1004" />
-  </genericsetup:upgradeSteps> 
+  </genericsetup:upgradeSteps>
+  <genericsetup:upgradeSteps  profile="mars.policy:default" source="1004" destination="1005">
+    <genericsetup:upgradeStep title="" description="" handler=".upgrade.v1005" />
+  </genericsetup:upgradeSteps>
+  <genericsetup:registerProfile
+      name="1006" directory="1006"
+      title="mars.migration 1006"
+      description=""
+      for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+   />
+  <genericsetup:upgradeSteps  profile="mars.policy:default" source="1005" destination="1006">
+    <genericsetup:upgradeStep title="" description="" handler=".upgrade.v1006" />
+  </genericsetup:upgradeSteps>
 <!-- vim:set ft=xml: -->
 </configure>
