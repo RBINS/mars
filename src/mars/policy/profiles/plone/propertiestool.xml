@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+ <object name="alchemyapi" meta_type="Plone Property Sheet">
+  <property name="title">Alchemy API</property>
+  <property name="key"
+     type="string">64609e82b3a99e2bf1180055f089b45d835a3bcf</property>
+ </object>
+ <object name="ckeditor_properties" meta_type="Plone Property Sheet">
+  <property name="title">CKEditor properties</property>
+  <property name="forcePasteAsPlainText" type="boolean">False</property>
+  <property name="toolbar" type="string">Plone</property>
+  <property name="toolbar_Custom" type="text">
+   [
+   ['Source','-','AjaxSave','Preview','-','Templates'],
+   ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print', 'SpellChecker', 'Scayt'],
+   ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+   ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
+   '/',
+   ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
+   ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+   ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+   ['Link','Unlink','Anchor'],
+   ['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+   '/',
+   ['Styles','Format','Font','FontSize'],
+   ['TextColor','BGColor'],
+   ['Maximize', 'ShowBlocks','-','About']
+   ]</property>
+  <property name="menuStyles" type="text">
+   [
+   /* Block Styles */
+   { name : 'Grey Title'		, element : 'h2', styles : { 'color' : '#888' } },
+   { name : 'Grey Sub Title'		, element : 'h3', styles : { 'color' : '#888' } },
+   { name : 'Discreet bloc'		, element : 'p', attributes : { 'class' : 'discreet' } },
+   /* Inline styles */
+   { name : 'Discreet text'		, element : 'span', attributes : { 'class' : 'discreet' } },
+   { name : 'Marker: Yellow'	, element : 'span', styles : { 'background-color' : 'Yellow' } },
+   { name : 'Typewriter'		, element : 'tt' },
+   { name : 'Computer Code'	, element : 'code' },
+   { name : 'Keyboard Phrase'	, element : 'kbd' },
+   { name : 'Sample Text'		, element : 'samp' },
+   { name : 'Variable'			, element : 'var' },
+   { name : 'Deleted Text'		, element : 'del' },
+   { name : 'Inserted Text'	, element : 'ins' },
+   { name : 'Cited Work'		, element : 'cite' },
+   { name : 'Inline Quotation'	, element : 'q' },
+   { name : 'Language: RTL'	, element : 'span', attributes : { 'dir' : 'rtl' } },
+   { name : 'Language: LTR'	, element : 'span', attributes : { 'dir' : 'ltr' } },
+   /* Objects styles */
+   { name : 'Image on right'	, element : 'img', attributes : { 'class' : 'image-right' } },
+   { name : 'Image on left'	, element : 'img', attributes : { 'class' : 'image-left' } },
+   { name : 'Image centered'	, element : 'img', attributes : { 'class' : 'image-inline' } },
+   { name : 'Borderless Table', element : 'table', styles: { 'border-style': 'hidden', 'background-color' : '#E6E6FA' } },
+   { name : 'Square Bulleted List', element : 'ul', styles : { 'list-style-type' : 'square' } }
+   
+   ]</property>
+  <property name="customTemplates" type="lines"/>
+  <property name="templatesReplaceContent" type="boolean">False</property>
+  <property name="bodyId" type="string">content</property>
+  <property name="bodyClass" type="string"></property>
+  <property name="width" type="string"></property>
+  <property name="height" type="string"></property>
+  <property name="allow_link_byuid" type="boolean">True</property>
+  <property name="allow_relative_links" type="boolean">True</property>
+  <property name="allow_server_browsing" type="boolean">True</property>
+  <property name="allow_file_upload" type="boolean">True</property>
+  <property name="allow_image_upload" type="boolean">True</property>
+  <property name="allow_flash_upload" type="boolean">True</property>
+  <property name="allow_folder_creation" type="boolean">True</property>
+  <property name="file_portal_type" type="string">auto</property>
+  <property name="file_portal_type_custom" type="lines">
+   <element value="*|File"/>
+   <element value="Folder|File"/>
+  </property>
+  <property name="image_portal_type" type="string">auto</property>
+  <property name="image_portal_type_custom" type="lines">
+   <element value="*|Image"/>
+   <element value="Folder|Image"/>
+  </property>
+  <property name="browse_images_portal_types" type="lines">
+   <element value="Image"/>
+  </property>
+  <property name="flash_portal_type" type="string">auto</property>
+  <property name="flash_portal_type_custom" type="lines">
+   <element value="*|File"/>
+   <element value="Folder|File"/>
+  </property>
+  <property name="browse_flashs_portal_types" type="lines">
+   <element value="File"/>
+  </property>
+  <property name="folder_portal_type" type="string">custom</property>
+  <property name="folder_portal_type_custom" type="lines">
+   <element value="*|Folder"/>
+   <element value="Large Plone Folder|Large Plone Folder"/>
+  </property>
+  <property name="ck_force_path" type="boolean">False</property>
+  <property name="ck_force_other_path" type="string"></property>
+  <property name="ck_force_root" type="boolean">False</property>
+  <property name="ck_force_other_root" type="string"></property>
+  <property name="properties_overloaded" type="lines">
+   <element value="width"/>
+  </property>
+  <property name="entities" type="boolean">False</property>
+  <property name="entities_greek" type="boolean">False</property>
+  <property name="entities_latin" type="boolean">False</property>
+  <property name="plugins" type="lines">
+   <element value="ajaxsave;/++resource++cke_ajaxsave/plugin.js"/>
+  </property>
+ </object>
+ <object name="cmfbibat_properties" meta_type="Plone Property Sheet">
+  <property name="title"></property>
+  <property name="BibTeX_parser_enabled" type="boolean">True</property>
+  <property name="EndNote_parser_enabled" type="boolean">True</property>
+  <property name="Medline_parser_enabled" type="boolean">True</property>
+  <property name="RIS_parser_enabled" type="boolean">True</property>
+  <property name="XMLMODS_parser_enabled" type="boolean">True</property>
+  <property name="BibTeX_renderer_enabled" type="boolean">True</property>
+  <property name="EndNote_renderer_enabled" type="boolean">True</property>
+  <property name="PDF_renderer_enabled" type="boolean">True</property>
+  <property name="RIS_renderer_enabled" type="boolean">True</property>
+  <property name="XMLMODS_renderer_enabled" type="boolean">True</property>
+  <property name="ref_renderer_enabled" type="boolean">True</property>
+  <property name="ref_parser_enabled" type="boolean">True</property>
+ </object>
+ <object name="extensions_properties" meta_type="Plone Property Sheet">
+  <property name="title">Properties of the ATExtension product</property>
+  <property name="phone_number_types" type="lines">
+   <element value="Office"/>
+   <element value="Secretariat"/>
+   <element value="Laboratory"/>
+   <element value="Mobile"/>
+   <element value="Fax"/>
+   <element value="Private"/>
+  </property>
+  <property name="country_names" type="lines">
+   <element value="Afghanistan"/>
+   <element value="Albania"/>
+   <element value="Algeria"/>
+   <element value="American Samoa"/>
+   <element value="Andorra"/>
+   <element value="Angola"/>
+   <element value="Anguilla"/>
+   <element value="Antarctica"/>
+   <element value="Antigua Barbuda"/>
+   <element value="Argentina"/>
+   <element value="Armenia"/>
+   <element value="Aruba"/>
+   <element value="Australia"/>
+   <element value="Austria"/>
+   <element value="Azerbaijan"/>
+   <element value="Bahamas"/>
+   <element value="Bahrain"/>
+   <element value="Bangladesh"/>
+   <element value="Barbados"/>
+   <element value="Belarus"/>
+   <element value="Belgium"/>
+   <element value="Belize"/>
+   <element value="Benin"/>
+   <element value="Bermuda"/>
+   <element value="Bhutan"/>
+   <element value="Bolivia"/>
+   <element value="Bosnia Herzegovina"/>
+   <element value="Botswana"/>
+   <element value="Bouvet Island"/>
+   <element value="Brazil"/>
+   <element value="British Indian Ocean Territory"/>
+   <element value="Brunei Darussalam"/>
+   <element value="Bulgaria"/>
+   <element value="Burkina Faso"/>
+   <element value="Burundi"/>
+   <element value="Cambodia"/>
+   <element value="Cameroon"/>
+   <element value="Canada"/>
+   <element value="Cape Verde"/>
+   <element value="Cayman Islands"/>
+   <element value="Central African Republic"/>
+   <element value="Chad"/>
+   <element value="Chile"/>
+   <element value="China"/>
+   <element value="Christmas Island"/>
+   <element value="Cocos (Keeling) Islands"/>
+   <element value="Colombia"/>
+   <element value="Comoros"/>
+   <element value="Congo"/>
+   <element value="Congo, Democratic Republic"/>
+   <element value="Cook Islands"/>
+   <element value="Costa Rica"/>
+   <element value="Cote D'Ivoire"/>
+   <element value="Croatia"/>
+   <element value="Cuba"/>
+   <element value="Cyprus"/>
+   <element value="Czech Republic"/>
+   <element value="Denmark"/>
+   <element value="Djibouti"/>
+   <element value="Dominica"/>
+   <element value="Dominican Republic"/>
+   <element value="Ecuador"/>
+   <element value="Egypt"/>
+   <element value="El Salvador"/>
+   <element value="Equatorial Guinea"/>
+   <element value="Eritrea"/>
+   <element value="Estonia"/>
+   <element value="Ethiopia"/>
+   <element value="Falkland Islands (Malvinas)"/>
+   <element value="Faroe Islands"/>
+   <element value="Fiji"/>
+   <element value="Finland"/>
+   <element value="France"/>
+   <element value="French Guiana"/>
+   <element value="French Polynesia"/>
+   <element value="French Southern Territories"/>
+   <element value="Gabon"/>
+   <element value="Gambia"/>
+   <element value="Georgia"/>
+   <element value="Germany"/>
+   <element value="Ghana"/>
+   <element value="Gibraltar"/>
+   <element value="Greece"/>
+   <element value="Greenland"/>
+   <element value="Grenada"/>
+   <element value="Guadeloupe"/>
+   <element value="Guam"/>
+   <element value="Guatemala"/>
+   <element value="Guinea"/>
+   <element value="Guinea-Bissau"/>
+   <element value="Guyana"/>
+   <element value="Haiti"/>
+   <element value="Heard Island Mcdonald Islands"/>
+   <element value="Holy See (Vatican City State)"/>
+   <element value="Honduras"/>
+   <element value="Hong Kong"/>
+   <element value="Hungary"/>
+   <element value="Iceland"/>
+   <element value="India"/>
+   <element value="Indonesia"/>
+   <element value="Iran, Islamic Republic"/>
+   <element value="Iraq"/>
+   <element value="Ireland"/>
+   <element value="Israel"/>
+   <element value="Italy"/>
+   <element value="Jamaica"/>
+   <element value="Japan"/>
+   <element value="Jordan"/>
+   <element value="Kazakhstan"/>
+   <element value="Kenya"/>
+   <element value="Kiribati"/>
+   <element value="Korea, Democratic People's Republic"/>
+   <element value="Korea, Republic"/>
+   <element value="Kuwait"/>
+   <element value="Kyrgyzstan"/>
+   <element value="Lao People's Democratic Republic"/>
+   <element value="Latvia"/>
+   <element value="Lebanon"/>
+   <element value="Lesotho"/>
+   <element value="Liberia"/>
+   <element value="Libyan Arab Jamahiriya"/>
+   <element value="Liechtenstein"/>
+   <element value="Lithuania"/>
+   <element value="Luxembourg"/>
+   <element value="Macao"/>
+   <element value="Macedonia, Former Yugoslav Republic"/>
+   <element value="Madagascar"/>
+   <element value="Malawi"/>
+   <element value="Malaysia"/>
+   <element value="Maldives"/>
+   <element value="Mali"/>
+   <element value="Malta"/>
+   <element value="Marshall Islands"/>
+   <element value="Martinique"/>
+   <element value="Mauritania"/>
+   <element value="Mauritius"/>
+   <element value="Mayotte"/>
+   <element value="Mexico"/>
+   <element value="Micronesia, Federated States"/>
+   <element value="Moldova, Republic"/>
+   <element value="Monaco"/>
+   <element value="Mongolia"/>
+   <element value="Montserrat"/>
+   <element value="Morocco"/>
+   <element value="Mozambique"/>
+   <element value="Myanmar"/>
+   <element value="Namibia"/>
+   <element value="Nauru"/>
+   <element value="Nepal"/>
+   <element value="Netherlands"/>
+   <element value="Netherlands Antilles"/>
+   <element value="New Caledonia"/>
+   <element value="New Zealand"/>
+   <element value="Nicaragua"/>
+   <element value="Niger"/>
+   <element value="Nigeria"/>
+   <element value="Niue"/>
+   <element value="Norfolk Island"/>
+   <element value="Northern Mariana Islands"/>
+   <element value="Norway"/>
+   <element value="Oman"/>
+   <element value="Pakistan"/>
+   <element value="Palau"/>
+   <element value="Palestinian Territory, Occupied"/>
+   <element value="Panama"/>
+   <element value="Papua New Guinea"/>
+   <element value="Paraguay"/>
+   <element value="Peru"/>
+   <element value="Philippines"/>
+   <element value="Pitcairn"/>
+   <element value="Poland"/>
+   <element value="Portugal"/>
+   <element value="Puerto Rico"/>
+   <element value="Qatar"/>
+   <element value="Reunion"/>
+   <element value="Romania"/>
+   <element value="Russian Federation"/>
+   <element value="Rwanda"/>
+   <element value="Saint Helena"/>
+   <element value="Saint Kitts Nevis"/>
+   <element value="Saint Lucia"/>
+   <element value="Saint Pierre Miquelon"/>
+   <element value="Saint Vincent Grenadines"/>
+   <element value="Samoa"/>
+   <element value="San Marino"/>
+   <element value="Sao Tome Principe"/>
+   <element value="Saudi Arabia"/>
+   <element value="Senegal"/>
+   <element value="Serbia Montenegro"/>
+   <element value="Seychelles"/>
+   <element value="Sierra Leone"/>
+   <element value="Singapore"/>
+   <element value="Slovakia"/>
+   <element value="Slovenia"/>
+   <element value="Solomon Islands"/>
+   <element value="Somalia"/>
+   <element value="South Africa"/>
+   <element value="South Georgia South Sandwich Islands"/>
+   <element value="Spain"/>
+   <element value="Sri Lanka"/>
+   <element value="Sudan"/>
+   <element value="Suriname"/>
+   <element value="Svalbard Jan Mayen"/>
+   <element value="Swaziland"/>
+   <element value="Sweden"/>
+   <element value="Switzerland"/>
+   <element value="Syrian Arab Republic"/>
+   <element value="Taiwan, Province China"/>
+   <element value="Tajikistan"/>
+   <element value="Tanzania, United Republic"/>
+   <element value="Thailand"/>
+   <element value="Timor-Leste"/>
+   <element value="Togo"/>
+   <element value="Tokelau"/>
+   <element value="Tonga"/>
+   <element value="Trinidad Tobago"/>
+   <element value="Tunisia"/>
+   <element value="Turkey"/>
+   <element value="Turkmenistan"/>
+   <element value="Turks Caicos Islands"/>
+   <element value="Tuvalu"/>
+   <element value="Uganda"/>
+   <element value="Ukraine"/>
+   <element value="United Arab Emirates"/>
+   <element value="United Kingdom"/>
+   <element value="United States"/>
+   <element value="United States Minor Outlying Islands"/>
+   <element value="Uruguay"/>
+   <element value="Uzbekistan"/>
+   <element value="Vanuatu"/>
+   <element value="Venezuela"/>
+   <element value="Vietnam"/>
+   <element value="Virgin Islands, British"/>
+   <element value="Virgin Islands, U.S."/>
+   <element value="Wallis Futuna"/>
+   <element value="Western Sahara"/>
+   <element value="Yemen"/>
+   <element value="Zambia"/>
+   <element value="Zimbabwe"/>
+  </property>
+  <property name="publication_identifiers" type="lines">
+   <element value="DOI"/>
+   <element value="ISBN"/>
+   <element value="PMID"/>
+  </property>
+  <property name="available_input_encodings" type="lines">
+   <element value="UTF-8"/>
+   <element value="ISO-8859-15"/>
+   <element value="ASCII"/>
+  </property>
+ </object>
+ <object name="imaging_properties" meta_type="Plone Property Sheet">
+  <property name="title">Image handling properties</property>
+  <property name="allowed_sizes" type="lines">
+   <element value="large 768:768"/>
+   <element value="preview 400:400"/>
+   <element value="mini 200:200"/>
+   <element value="thumb 128:128"/>
+   <element value="tile 64:64"/>
+   <element value="icon 32:32"/>
+   <element value="listing 16:16"/>
+  </property>
+ </object>
+ <object name="jqueryui_properties" meta_type="Plone Property Sheet">
+  <property name="title">JQueryUI properties</property>
+  <property name="global_include" type="boolean">True</property>
+  <property name="views_and_templates" type="lines">
+   <element value="example.jqueryui"/>
+  </property>
+  <property name="example_activated" type="boolean">False</property>
+ </object>
+ <object name="maps_properties" meta_type="Plone Property Sheet">
+  <property name="title">Maps Properties</property>
+  <property name="map_google_api_keys" type="lines">
+   <element
+      value="http://localhost:8080 | ABQIAAAAaKes6QWqobpCx2AOamo-shTwM0brOpm-All5BF6PoaKBxRWWERSUWbHs4SIAMkeC1KV98E2EdJKuJw"/>
+   <element
+      value="http://testing:8080 | ABQIAAAAaKes6QWqobpCx2AOamo-shS8tbwkwQvVo8y2jCgM8I6Nv1EJJxSpbhzdXfa06Vx2SpX3do9jOWJM6g"/>
+   <element
+      value="http://preprod-mars.makina-corpus.net | AIzaSyCuJY85C86nhf5wGyvOpz1raYI-BYBeRVk"/>
+  </property>
+  <property name="google_ajaxsearch_api_keys" type="lines">
+   <element
+      value="http://localhost:8080 | ABQIAAAAMKqifBTazCnHqAnQfZ6DAxTwM0brOpm-All5BF6PoaKBxRWWERTY0DuDpOVZe50LuUPSi4EGcO9Bxg"/>
+   <element
+      value="http://testing:8080 | ABQIAAAAMKqifBTazCnHqAnQfZ6DAxS8tbwkwQvVo8y2jCgM8I6Nv1EJJxQCGO61VsKeAyjbr4Nl6XCQc_gtqQ"/>
+  </property>
+  <property name="map_markers" type="lines">
+   <element
+      value="Name | Icon | iconSize | iconAnchor | infoWindowAnchor | Shadow | shadowSize | infoShadowAnchor"/>
+   <element
+      value="Red Marker     | marker-red.png       | 20,34 | 9,34 | 9,2 | shadow50.png | 37,34 | 18,25"/>
+   <element
+      value="Green Marker   | marker-green.png     | 20,34 | 9,34 | 9,2 | shadow50.png | 37,34 | 18,25"/>
+   <element
+      value="Blue Marker    | marker-blue.png      | 20,34 | 9,34 | 9,2 | shadow50.png | 37,34 | 18,25"/>
+   <element
+      value="Yellow Marker  | marker-yellow.png    | 20,34 | 9,34 | 9,2 | shadow50.png | 37,34 | 18,25"/>
+   <element
+      value="Magenta Marker | marker-magenta.png   | 20,34 | 9,34 | 9,2 | shadow50.png | 37,34 | 18,25"/>
+  </property>
+  <property name="map_default_location" type="string">0.0, 0.0</property>
+  <property name="map_default_maptype" type="string">normal</property>
+ </object>
+ <object name="navtree_properties" meta_type="Plone Property Sheet">
+  <property name="title">NavigationTree properties</property>
+  <property name="sortAttribute"
+     type="string">getObjPositionInParent</property>
+  <property name="sortOrder" type="string">asc</property>
+  <property name="sitemapDepth" type="int">3</property>
+  <property name="name" type="string"></property>
+  <property name="root" type="string">/</property>
+  <property name="currentFolderOnlyInNavtree" type="boolean">False</property>
+  <property name="includeTop" type="boolean">True</property>
+  <property name="topLevel" type="int">0</property>
+  <property name="bottomLevel" type="int">0</property>
+  <property name="showAllParents" type="boolean">True</property>
+  <property name="idsNotToList" type="lines">
+   <element value="portal_csvreplicatatool"/>
+  </property>
+  <property name="parentMetaTypesNotToQuery" type="lines">
+   <element value="TempFolder"/>
+  </property>
+  <property name="metaTypesNotToList" type="lines">
+   <element value="ATBooleanCriterion"/>
+   <element value="ATDateCriteria"/>
+   <element value="ATDateRangeCriterion"/>
+   <element value="ATListCriterion"/>
+   <element value="ATPortalTypeCriterion"/>
+   <element value="ATReferenceCriterion"/>
+   <element value="ATSelectionCriterion"/>
+   <element value="ATSimpleIntCriterion"/>
+   <element value="ATSimpleStringCriterion"/>
+   <element value="ATSortCriterion"/>
+   <element value="ChangeSet"/>
+   <element value="Discussion Item"/>
+   <element value="Plone Site"/>
+   <element value="TempFolder"/>
+   <element value="ATCurrentAuthorCriterion"/>
+   <element value="ATPathCriterion"/>
+   <element value="ATRelativePathCriterion"/>
+   <element value="MarsCategoriesContainer"/>
+   <element value="PlominoAgent"/>
+   <element value="PlominoForm"/>
+   <element value="PlominoField"/>
+   <element value="PlominoDocument"/>
+   <element value="PlominoColumn"/>
+   <element value="PlominoAction"/>
+   <element value="PlominoHidewhen"/>
+   <element value="VocabularyLibrary"/>
+  </property>
+  <property name="enable_wf_state_filtering" type="boolean">False</property>
+  <property name="wf_states_to_show" type="lines"/>
+ </object>
+ <object name="quickupload_properties" meta_type="Plone Property Sheet">
+  <property name="title">Quick Upload properties</property>
+  <property name="use_flashupload" type="boolean">False</property>
+  <property name="auto_upload" type="boolean">False</property>
+  <property name="fill_titles" type="boolean">True</property>
+  <property name="fill_descriptions" type="boolean">False</property>
+  <property name="size_limit" type="int">0</property>
+  <property name="sim_upload_limit" type="int">2</property>
+ </object>
+ <object name="site_properties" meta_type="Plone Property Sheet">
+  <property name="title">Site wide properties</property>
+  <property name="allowAnonymousViewAbout" type="boolean">True</property>
+  <property name="localTimeFormat" type="string">%b %d, %Y</property>
+  <property name="localLongTimeFormat"
+     type="string">%b %d, %Y %I:%M %p</property>
+  <property name="localTimeOnlyFormat" type="string">%I:%M %p</property>
+  <property name="default_language" type="string">en</property>
+  <property name="default_charset" type="string">utf-8</property>
+  <property name="ext_editor" type="boolean">False</property>
+  <property name="available_editors" type="lines">
+   <element value="None"/>
+   <element value="TinyMCE"/>
+   <element value="Kupu"/>
+   <element value="CKeditor"/>
+  </property>
+  <property name="default_editor" type="string">CKeditor</property>
+  <property name="allowRolesToAddKeywords" type="lines">
+   <element value="Manager"/>
+   <element value="Reviewer"/>
+   <element value="Site Administrator"/>
+  </property>
+  <property name="auth_cookie_length" type="int">0</property>
+  <property name="calendar_starting_year" type="int">2001</property>
+  <property name="calendar_future_years_available" type="int">5</property>
+  <property name="invalid_ids" type="lines">
+   <element value="actions"/>
+  </property>
+  <property name="default_page" type="lines">
+   <element value="index_html"/>
+   <element value="index.html"/>
+   <element value="index.htm"/>
+   <element value="FrontPage"/>
+  </property>
+  <property name="search_results_description_length" type="int">160</property>
+  <property name="ellipsis" type="string">...</property>
+  <property name="typesLinkToFolderContentsInFC" type="lines">
+   <element value="BibrefCustomStyleFolder"/>
+   <element value="Mars Collection"/>
+   <element value="Mars Site"/>
+  </property>
+  <property name="visible_ids" type="boolean">False</property>
+  <property name="exposeDCMetaTags" type="boolean">False</property>
+  <property name="types_not_searched" type="lines">
+   <element value="ATBooleanCriterion"/>
+   <element value="ATCurrentAuthorCriterion"/>
+   <element value="ATDateCriteria"/>
+   <element value="ATDateRangeCriterion"/>
+   <element value="ATListCriterion"/>
+   <element value="ATPathCriterion"/>
+   <element value="ATPortalTypeCriterion"/>
+   <element value="ATReferenceCriterion"/>
+   <element value="ATRelativePathCriterion"/>
+   <element value="ATSelectionCriterion"/>
+   <element value="ATSimpleIntCriterion"/>
+   <element value="ATSimpleStringCriterion"/>
+   <element value="ATSortCriterion"/>
+   <element value="InbookReference"/>
+   <element value="Plone Site"/>
+   <element value="TempFolder"/>
+   <element value="AliasVocabulary"/>
+   <element value="SimpleVocabulary"/>
+   <element value="SimpleVocabularyTerm"/>
+   <element value="SortedSimpleVocabulary"/>
+   <element value="TreeVocabulary"/>
+   <element value="TreeVocabularyTerm"/>
+   <element value="VdexFileVocabulary"/>
+   <element value="VdexLangstring"/>
+   <element value="VdexMediaDescriptor"/>
+   <element value="VdexRelationEndPoint"/>
+   <element value="VdexTerm"/>
+   <element value="VdexVocabulary"/>
+   <element value="VocabularyLibrary"/>
+  </property>
+  <property name="search_review_state_for_anon"
+     type="boolean">False</property>
+  <property name="search_enable_title_search" type="lines"/>
+  <property name="search_enable_description_search" type="lines"/>
+  <property name="search_enable_sort_on" type="lines">
+   <element value="anon"/>
+   <element value="auth"/>
+  </property>
+  <property name="search_enable_batch_size" type="lines">
+   <element value="anon"/>
+   <element value="auth"/>
+  </property>
+  <property name="search_collapse_options" type="boolean">True</property>
+  <property name="disable_folder_sections" type="boolean">False</property>
+  <property name="disable_nonfolderish_sections"
+     type="boolean">False</property>
+  <property name="typesUseViewActionInListings" type="lines">
+   <element value="Image"/>
+   <element value="File"/>
+   <element value="Picture"/>
+   <element value="External File"/>
+  </property>
+  <property name="verify_login_name" type="boolean">True</property>
+  <property name="many_users" type="boolean">False</property>
+  <property name="many_groups" type="boolean">False</property>
+  <property name="enable_livesearch" type="boolean">True</property>
+  <property name="default_page_types" type="lines">
+   <element value="Topic"/>
+  </property>
+  <property name="use_folder_contents" type="lines">
+   <element value="SimpleVocabulary"/>
+   <element value="SortedSimpleVocabulary"/>
+   <element value="TreeVocabulary"/>
+   <element value="TreeVocabularyTerm"/>
+   <element value="VdexTerm"/>
+   <element value="VdexTerm"/>
+   <element value="VdexMediaDescriptor"/>
+   <element value="VocabularyLibrary"/>
+  </property>
+  <property name="forbidden_contenttypes" type="lines">
+   <element value="text/structured"/>
+   <element value="text/restructured"/>
+   <element value="text/x-rst"/>
+   <element value="text/plain"/>
+   <element value="text/plain-pre"/>
+   <element value="text/x-python"/>
+   <element value="text/x-web-markdown"/>
+   <element value="text/x-web-intelligent"/>
+   <element value="text/x-web-textile"/>
+  </property>
+  <property name="default_contenttype" type="string">text/html</property>
+  <property name="enable_sitemap" type="boolean">False</property>
+  <property name="number_of_days_to_keep" type="int">7</property>
+  <property name="enable_inline_editing" type="boolean">False</property>
+  <property name="lock_on_ttw_edit" type="boolean">True</property>
+  <property name="enable_link_integrity_checks" type="boolean">True</property>
+  <property name="webstats_js" type="text"></property>
+  <property name="external_links_open_new_window"
+     type="string">true</property>
+  <property name="icon_visibility" type="string">enabled</property>
+  <property name="mark_special_links" type="string">false</property>
+  <property name="redirect_links" type="boolean">False</property>
+  <property name="use_email_as_login" type="boolean">False</property>
+  <property name="user_registration_fields" type="lines">
+   <element value="fullname"/>
+   <element value="username"/>
+   <element value="email"/>
+   <element value="password"/>
+   <element value="mail_me"/>
+  </property>
+  <property name="allow_external_login_sites" type="lines"/>
+  <property name="external_login_url" type="string"></property>
+  <property name="external_logout_url" type="string"></property>
+  <property name="external_login_iframe" type="boolean">False</property>
+ </object>
+ <object name="zipfile_properties" meta_type="Plone Property Sheet">
+  <property name="title">Zip File Tool</property>
+  <property name="image_type" type="string">Image</property>
+  <property name="file_type" type="string">File</property>
+  <property name="doc_type" type="string">Document</property>
+  <property name="folder_type" type="string">Folder</property>
+  <property name="name_by_title" type="boolean">False</property>
+ </object>
+</object>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object>
+  <hidden manager="plone.belowcontentbody" skinname="mars.skin">
+    <viewlet name="plone.belowcontentbody.relateditems" remove="True"/>
+  </hidden> 
+  <hidden manager="plone.abovecontentbody" skinname="mars.skin">
+    <viewlet name="marsapp.schemata" />
+  </hidden>
+  <order manager="plone.abovecontentbody" skinname="*">
+    <viewlet name="marsapp.imagepreview" />
+    <viewlet name="marsapp.schemata" />
+    <viewlet name="plone.presentation" />
+    <viewlet name="marsapp.imagecaption" />
+  </order>
+</object>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<action-icons>
+ <action-icon category="controlpanel" action_id="versioning" title="Versioning" priority="0" icon_expr="versioning.gif"/>
+ <action-icon category="controlpanel" action_id="csvreplicata" title="CSV replicata" priority="0" icon_expr="csvreplicataTool.gif"/>
+ <action-icon category="plone" action_id="exportBib" title="Export" priority="0" icon_expr="bibliography_export.png"/>
+ <action-icon category="plone" action_id="import" title="Import" priority="0" icon_expr="bibliography_import.png"/>
+ <action-icon category="plone" action_id="download_pdf" title="Printable file" priority="0" icon_expr="bibliography_pdffile.png"/>
+</action-icons>

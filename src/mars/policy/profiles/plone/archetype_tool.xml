@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<archetypetool>
+ <catalogmap>
+  <type portal_type="ATBooleanCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATSimpleIntCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATTopic">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATSelectionCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATDocument">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATFolder">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATPathCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATImage">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATSortCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATEvent">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATReferenceCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATNewsItem">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATSimpleStringCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATCurrentAuthorCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATListCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATLink">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATPortalTypeCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATDateRangeCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATDateCriteria">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATRelativePathCriterion">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATFile">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="TreeVocabularyTerm">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="AliasVocabulary">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="TreeVocabulary">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="SortedSimpleVocabulary">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="IMSVDEXVocabulary">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="VocabularyLibrary">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="SimpleVocabulary">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="SimpleVocabularyTerm">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="InbookReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PreprintReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MastersthesisReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ArticleReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ManualReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PhdthesisReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ProceedingsReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="BookletReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="TechreportReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="DuplicatesBibliographyFolder">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="UnpublishedReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="BibliographyFolder">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="WebpublishedReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ConferenceReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="BookReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="LargeBibliographyFolder">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MiscReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="InproceedingsReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="IncollectionReference">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PlominoView">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PlominoAction">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PlominoCache">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PlominoHidewhen">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PlominoAgent">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PlominoForm">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PlominoColumn">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PlominoField">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="PlominoDatabase">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="Location">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="csvreplicataTool">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsCategory">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsCategoriesContainer">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsFloraIndividual">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsHominidIndividual">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsArtefact">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsReferenceSample">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsFaunaIndividual">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsSite">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsExcavation">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsFaunaRemain">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsAnalysisRelativeDating">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsStratigraphicalLayer">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsHominidRemain">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsFloraAssemblage">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsHominidAssemblage">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsFaunaAssemblage">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsHominidReferenceSample">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsInstitution">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsStratigraphy">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsAnalysisAbsoluteDating">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsAnalysis">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsArtefactAssemblage">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsStructureAssemblage">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsFloraRemain">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsArtefactReferenceSample">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsCollection">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsPeople">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsArtefactIndividual">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="MarsCuration">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATBlob">
+   <catalog value="portal_catalog"/>
+  </type>
+  <type portal_type="ATFolder">
+   <catalog value="portal_catalog"/>
+  </type>
+ </catalogmap>
+</archetypetool>
