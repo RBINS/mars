@@ -11,7 +11,7 @@ def create_files_and_images_folders(obj, event):
     folders = {'images':'Images',
                 'curations': 'Curations',
                'files': 'Files',}
-    #if obj.portal_type == 'Site':
+    #if obj.portal_type == 'Mars Site':
     #    folders['curations'] = 'Curations'
     try:
         for folder in folders:
@@ -23,7 +23,7 @@ def create_files_and_images_folders(obj, event):
                 subf.reindexObject()
                 notify(ObjectInitializedEvent(subf))
                 rs = wf_tool.getInfoFor(subf, 'review_state', '')
-                if not obj.portal_type in ['Site']:
+                if not obj.portal_type in ['Mars Site']:
                     subf.setExcludeFromNav(True)
                 if folder == 'files':
                     subf.setLayout("folder_tabular_view")

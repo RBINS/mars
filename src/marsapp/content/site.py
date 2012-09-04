@@ -104,8 +104,8 @@ class MarsSite(ATFolder, MarsMixin):
         (IFilesAndImagesContainer,)+tuple([a for a in implementedBy(ATFolder)])
     )
     schema = SiteSchema
-    portal_type = "Site"
-    archetype_name = "Site"
+    portal_type = "Mars Site"
+    archetype_name = "MarsSite"
 
 
 registerATCT(MarsSite, PROJECTNAME)

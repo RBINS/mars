@@ -6,10 +6,7 @@
   <include package="marsapp.categories"/>
   <five:registerPackage package="." initialize=".initialize"/>
   <include package=".browser"/>
-  <browser:resourceDirectory
-      name="marsapp.content.icons"
-      directory="icons"
-    />
+
   <subscriber for=".interfaces.IFilesAndImagesContainer
       Products.Archetypes.interfaces.IObjectInitializedEvent"
       handler=".subscribers.create_files_and_images_folders" />

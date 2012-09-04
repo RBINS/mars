@@ -49,7 +49,7 @@ CollectionSchema += Schema((
         searchable=False,
         required=False,
         relationship='belongsTo',
-        allowed_types=('Site', 'Excavation'),
+        allowed_types=('Mars Site', 'Excavation'),
         multiValued=True,
         widget=ReferenceBrowserWidget(label='Origin',
             label_msgid='label_collection_origin',
@@ -74,8 +74,8 @@ class MarsCollection(ATFolder, MarsMixin):
     ) 
     schema = CollectionSchema
 
-    portal_type = "Collection"
-    archetype_name = "Collection"
+    portal_type = "Mars Collection"
+    archetype_name = "MarsCollection"
 
     #def __init__(self, *args, **kwargs):
     #    BaseBTreeFolder.__init__(self, *args, **kwargs)

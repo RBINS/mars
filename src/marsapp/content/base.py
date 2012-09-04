@@ -24,13 +24,13 @@ class MarsMixin(object):
 
 
     def getMarsSiteOrCol(self, files=False, curations=False):
-        if (self.portal_type == 'Site') and not files:
+        if (self.portal_type == 'Mars Site') and not files:
             return self.mars_relative_path(self)
         ctx = self.aq_inner
         oldctx = ctx
         try:
             while (
-                (ctx.portal_type not in ['Plone Site', 'Site', 'Collection',])
+                (ctx.portal_type not in ['Plone Site', 'Mars Site', 'Mars Collection',])
                 and (
                     self.mars_relative_path(
                         ctx
@@ -42,11 +42,11 @@ class MarsMixin(object):
                 oldctx = ctx
                 ctx = ctx.aq_parent
             if (files
-                and (ctx.portal_type in ['Site', 'Collection'])
+                and (ctx.portal_type in ['Mars Site', 'Mars Collection'])
                 and ('files' in ctx.objectIds())):
                 ctx = ctx['files']
             if (curations
-                and (ctx.portal_type in ['Site', 'Collection'])
+                and (ctx.portal_type in ['Mars Site', 'Mars Collection'])
                 and ('curations' in ctx.objectIds())):
                 ctx = ctx._getOb('curations')
         except Exception, e:

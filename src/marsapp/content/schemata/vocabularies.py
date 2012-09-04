@@ -44,7 +44,7 @@ PEOPLE_AND_INSTITUTION = PEOPLE + ('Institution',)
 
 STRATIGRAPHICAL_LAYER = ('Stratigraphical Layer',)
 
-DISCOVERY_PLACES = ('Site', 'Excavation', 'Stratigraphy',
+DISCOVERY_PLACES = ('Mars Site', 'Excavation', 'Stratigraphy',
                     'Stratigraphical Layer', 'Structure Assemblage')
 
 ASSEMBLAGE_COMPONENTS = ('Artefact', 'Hominid Remain', 'Fauna remain', 'Flora remain')
@@ -509,7 +509,7 @@ MarsTypes = [
     'Artefact Reference Sample',
     'Artefact',
     'Categories Container',
-    'Collection',
+    'Mars Collection',
     'Curation',
     'Excavation',
     'Fauna Assemblage',
@@ -529,7 +529,7 @@ MarsTypes = [
     'Mars Category',
     'People',
     'Reference Sample',
-    'Site',
+    'Mars Site',
     'Stratigraphical Layer',
     'Stratigraphy',
     'Structure Assemblage',

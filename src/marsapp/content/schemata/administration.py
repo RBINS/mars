@@ -155,7 +155,7 @@ AdministrationSchema = Schema((
                                   'text/html',),     
         widget=RichWidget(label='Repository status',
             label_msgid='label_repository_status',
-            description='Status of this object (e.g. study, exposition, …)',
+            description='Status of this object (e.g. study, exposition, ...)',
             description_msgid='help_repository_status',
             domain='mars',
             ),
