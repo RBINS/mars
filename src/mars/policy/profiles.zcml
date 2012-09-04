@@ -1,0 +1,121 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    i18n_domain="mars.policy">
+  <genericsetup:registerProfile
+      name="qi"
+      title="mars Policy QI"
+      directory="profiles/qi"
+      description="Turn a Plone site into the mars QIINFO site."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+  <genericsetup:registerProfile
+      name="default"
+      title="Mars"
+      description="Turn a Plone site into the mars site."
+      directory="profiles/default"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+  <genericsetup:registerProfile
+      name="z_mars_plone"
+      title="Mars/Plone Policy"
+      description="Mars/Plone Policy"
+      directory="profiles/plone"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+  <!--
+  <gs:registerProfile
+      name="z_mars_removepacollection"
+      title="Mars/Remove plone.app.collection"
+      description="Mars/Remove plone.app.collection"
+      directory="profiles/r"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    />
+  -->
+  <gs:registerProfile
+      name="z_mars_categories"
+      title="Mars/Categories"
+      description="Mars/Categories"
+      directory="profiles/categories"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+  <gs:registerProfile
+      name="z_mars_institutions"
+      title="Mars/Institutions"
+      description="Mars/Institutions"
+      directory="profiles/mars"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      /> 
+  <gs:registerProfile
+      name="z_mars_mars"
+      title="Mars/Collections"
+      description="Mars/Collections"
+      directory="profiles/mars"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      /> 
+  <include package=".migrations"/>     
+  <genericsetup:importStep
+      name="mars_policy setupVarious"
+      title="various setup for policy Policy"
+      description="description"
+      handler="mars.policy.setuphandlers.setupVarious">
+    <depends name="content"/>
+  </genericsetup:importStep>
+  <genericsetup:importStep
+      name="mars_policy setupQi"
+      title="Quick Installer  setup for policy Policy"
+      description="description"
+      handler="mars.policy.setuphandlers.setupQi">
+    <depends name="content"/>
+  </genericsetup:importStep>
+  <genericsetup:importStep
+      name="marsCatalog"
+      title="marsCatalog"
+      description="marsCatalog"
+      handler="mars.policy.setuphandlers.setupCalog">
+    <depends name="content"/>
+  </genericsetup:importStep>      
+  <genericsetup:importStep
+      name="mars_removepacollection"
+      title="remove plone.app.collection"
+      description=""
+      handler="mars.policy.setuphandlers.remove_pacollection">
+    <depends name="content"/>
+  </genericsetup:importStep>       
+  <genericsetup:importStep
+      name="form-controller-tool"
+      handler="Products.CMFFormController.exportimport.importCMFFormController"
+      description="Import form controller tool definitions"
+      title="Form Controller Tool">
+    <depends name="componentregistry"/>
+  </genericsetup:importStep>  
+  <genericsetup:importStep
+      description="Import MARS Categories settings"
+      name="marscats"
+      handler="marsapp.categories.exportimport.storage.importMarscatsSettingsStorage"
+      title="MARS Categories Settings">
+    <depends name="componentregistry"/>
+  </genericsetup:importStep>
+  <genericsetup:exportStep
+      name="marscats"
+      handler="marsapp.categories.exportimport.storage.exportMarscatsSettingsStorage"
+      description="Export MARS Categories settings"
+      title="MARS Categories Settings">
+  </genericsetup:exportStep> 
+  <genericsetup:importStep
+      name="mars_cats_creation"
+      title="Categories creation for MARS"
+      handler="mars.policy.setuphandlers.createCategories"
+      description="MARS Categories creation">
+    <depends name="toolset"/>
+    <depends name="typeinfo"/>
+    <depends name="rolemap"/>
+  </genericsetup:importStep>
+</configure>
+
