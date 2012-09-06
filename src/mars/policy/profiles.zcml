@@ -47,7 +47,7 @@
       name="z_mars_institutions"
       title="Mars/Institutions"
       description="Mars/Institutions"
-      directory="profiles/mars"
+      directory="profiles/institutions"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       /> 
@@ -62,7 +62,7 @@
   <include package=".migrations"/>     
   <genericsetup:importStep
       name="mars_policy setupVarious"
-      title="various setup for policy Policy"
+      title="Mars post install various setup"
       description="description"
       handler="mars.policy.setuphandlers.setupVarious">
     <depends name="content"/>
@@ -83,7 +83,7 @@
   </genericsetup:importStep>      
   <genericsetup:importStep
       name="mars_removepacollection"
-      title="remove plone.app.collection"
+      title="mars remove plone.app.collection"
       description=""
       handler="mars.policy.setuphandlers.remove_pacollection">
     <depends name="content"/>

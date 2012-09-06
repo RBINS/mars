@@ -167,9 +167,13 @@
     <layer name="marsapp_content_icons" remove="true"/>
     <layer name="marsapp_styles" remove="true"/>
     <layer name="marsapp_custom" remove="true"/>
+    <layer name="marsapp_categories"
+      insert-after="mars_skin_custom_images"
+      insert-before="mars_skin_custom_templates"/>
     <layer name="mars_skin_custom_images"
      insert-after="custom"
-     insert-before="mars_skin_custom_templates"/>
+     insert-before="marsapp_categories"
+/>
     <layer name="custom"
      insert-before="*"/>
  </skin-path>
