@@ -367,6 +367,7 @@ default_date_precision = DisplayList((
 default_gender = DisplayList((
         ('female','female'),
         ('male','male'),
+        ('both','both'),
         ('unknown','unknown'),
         ('undetermined','undetermined'),
         ))
