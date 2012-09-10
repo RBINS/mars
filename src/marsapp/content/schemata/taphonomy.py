@@ -35,7 +35,7 @@ TaphonomySchema = Schema((
         relationship='alteredBy',
         widget=MarscatWidget(label='Taphonomy(ies)',
             label_msgid='label_geology_taphonomy',
-            description='Select all posible activities that this collection item was subjected to.',
+            description='Select all possible activities that this collection item was subjected to.',
             description_msgid='help_geology_taphonomy',
             startup_directory='/marscategories/taphonomy',
             domain='mars',
