@@ -14,6 +14,7 @@ from Products.ATContentTypes.interface.image import IATImage
 from Products.ATContentTypes.content.image import ATImage
 import transaction
 
+from Products.CMFPlone.utils import _createObjectByType
 
 import logging
 
@@ -196,4 +197,39 @@ def v1006(portal_setup):
         if changed:
             obj.reindexObject()
     log.warn('Upgrade v1006 runned.')
+
+
+def v1007(context):
+    purl = getToolByName(context, 'portal_url')
+    portal = site = purl.getPortalObject()
+    qi = site.portal_quickinstaller
+    ttool = getToolByName(context, 'portal_types')
+    catalog = getToolByName(portal, 'portal_catalog')
+    pm = getToolByName(portal, 'portal_migration')
+    report = pm.upgrade(dry_run=False)
+    for i in catalog.search({'portal_type': 'PDF Folder'}):
+        obj = i.getObject()
+        parent = obj.aq_parent.aq_inner
+        id = obj.getId()
+        parent.manage_delObjects([id])
+    for i in catalog.search({'portal_type': 'MarsPDFFile'}):
+        obj = i.getObject()
+        parent = obj.aq_parent.aq_inner
+        content = obj.getField('file', obj).get(obj).data.data
+        id = obj.getId()
+        t = obj.Title()
+        d = obj.Description()
+        parent.manage_delObjects([id])
+        nobj = _createObjectByType('File',
+                           parent,
+                           id)
+        nobj.processForm()
+        nobj.setTitle(t)
+        nobj.setDescription(d)
+        nobj.getField('file', nobj).set(nobj, content)
+    tps = ('Mars Collection', 'Folder', 'Topic', 'Collection')
+    collections = portal['collections']
+    collections.setLocallyAllowedTypes(tps)
+    collections.setImmediatelyAddableTypes(tps)
+    log.warn('Upgrade v1007 runned.')
 
