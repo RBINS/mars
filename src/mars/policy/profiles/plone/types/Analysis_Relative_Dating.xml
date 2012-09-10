@@ -5,9 +5,8 @@
  <property name="title" i18n:translate="">Analysis Relative Dating</property>
  <property name="description"
     i18n:translate="">Analysis Relative Dating</property>
- <property
-    name="icon_expr">string:${portal_url}/++resource++marsapp.content.icons/analysis_green_atom_icon.gif</property>
  <property name="content_meta_type">MarsAnalysisRelativeDating</property>
+ <property name="icon_expr">string:${portal_url}/++resource++marsapp.content.icons/analysis_green_icon.gif</property>
  <property name="product">marsapp.content</property>
  <property name="factory">addMarsAnalysisRelativeDating</property>
  <property name="add_view_expr"></property>

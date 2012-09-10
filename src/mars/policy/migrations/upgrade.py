@@ -233,3 +233,20 @@ def v1007(context):
     collections.setImmediatelyAddableTypes(tps)
     log.warn('Upgrade v1007 runned.')
 
+def v1008(context):
+    purl = getToolByName(context, 'portal_url')
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal = site = purl.getPortalObject()
+    qi = site.portal_quickinstaller
+    ttool = getToolByName(context, 'portal_types')
+    catalog = getToolByName(portal, 'portal_catalog')
+    pm = getToolByName(portal, 'portal_migration')
+    report = pm.upgrade(dry_run=False)
+    for step in [
+        'typeinfo',
+    ]:
+        portal_setup.runImportStepFromProfile(
+            PROFILEID, step, run_dependencies=False)
+    recook_resources(portal_setup)
+    log.warn('Upgrade v1008 runned.')
+ 
