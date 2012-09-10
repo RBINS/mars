@@ -10,6 +10,7 @@ def create_files_and_images_folders(obj, event):
     wf_tool = getToolByName(obj, 'portal_workflow')
     folders = {'images':'Images',
                 'curations': 'Curations',
+                'analyses': 'Analyses',
                'files': 'Files',}
     #if obj.portal_type == 'Mars Site':
     #    folders['curations'] = 'Curations'
