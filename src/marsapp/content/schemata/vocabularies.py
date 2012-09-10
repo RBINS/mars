@@ -51,8 +51,8 @@ ASSEMBLAGE_COMPONENTS = ('Artefact', 'Hominid Remain', 'Fauna remain', 'Flora re
 
 ARTEFACTS_TYPES = ['Artefact Reference Sample', 'Reference Sample', 'Artefact', 'Artefact Individual', 'Artefact Assemblage', 'EthnoArchaeologyReferenceSample', ]
 HOMINIDS_TYPES = ['Hominid Reference Sample', 'Hominid Remain', 'Hominid Individual',  'Hominid Assemblage',]
-FLORA_TYPES = ['Flora Reference Sample', 'Fauna Remain', 'Fauna Individual', 'Fauna Assemblage', ]
-FAUNA_TYPES = ['Fauna Reference Sample', 'Flora Remain', 'Flora Individual', 'Flora Assemblage', ]
+FAUNA_TYPES = ['Flora Reference Sample', 'Fauna Remain', 'Fauna Individual', 'Fauna Assemblage', ]
+FLORA_TYPES = ['Fauna Reference Sample', 'Flora Remain', 'Flora Individual', 'Flora Assemblage', ]
 REFERENCE_SAMPLES = ARTEFACTS_TYPES + HOMINIDS_TYPES + FLORA_TYPES + FAUNA_TYPES
 
 # Real vocabs (display lists now):
