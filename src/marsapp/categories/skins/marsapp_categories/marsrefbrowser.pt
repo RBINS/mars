@@ -109,6 +109,8 @@
         ploneview nocall:context/@@plone; 
                     image_method       widget/image_method|string:;
                     helper nocall:here/refbrowserhelper;
+                    marshelper nocall:here/marscat_utils;
+                    cvmacros here/bibliocv_macros/macros;
                     portal_path        helper/getPortalPath;
                     multiValued python:test(field.multiValued, 1, 0);
                     refs python:helper.getFieldRelations(field, value);
@@ -194,12 +196,20 @@
                   id string:ref-${fieldName}-${repeat/set/index};">
               <label tal:define="
                    title set/title_or_id | string:Undisclosed;
+                   infos python:marshelper.get_ref_info(set);
                    obj_path python: '/'.join(set.getPhysicalPath());">
                 <input type="checkbox"
                        tal:attributes="name string:${fieldName}:list;
                                        value python:helper.getUidFromReference(set);"
                        checked="checked" />
-                <tal:block replace="python: show_path and '%s (%s)' % (title, obj_path.replace(portal_path, '')) or title" />
+                     <tal:block 
+                       tal:condition="python:infos"
+                       tal:define="view marshelper/get_biblio_view" >
+                       <metal:block metal:use-macro="cvmacros/display-reference"> This is a biblio!  </metal:block>
+                     </tal:block>
+                     <tal:block 
+                       tal:condition="python:not infos"
+                       replace="python: show_path and '%s (%s)' % (title, obj_path.replace(portal_path, '')) or title" />
               </label>
 
               <tal:sorting condition="nothing|widget/allow_sorting">

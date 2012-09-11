@@ -15,9 +15,15 @@ ref_popup_template = named_template_adapter(
     ViewPageTemplateFile('ref_popup.pt'))
 cat_popup_template = named_template_adapter(
     ViewPageTemplateFile('cat_popup.pt'))
+from Products.CMFBibliographyAT.interface import IBibliographicItem
+from collective.bibliocustomviews.browser import view
 
 class IMarsUtils(Interface):
     """methods"""
+    def get_biblio_view():
+        """."""
+    def get_ref_info(obj):
+        """."""  
     def get_obj_crumb(obj):
         """.""" 
     def get_breadcrumbs(context):
@@ -25,8 +31,19 @@ class IMarsUtils(Interface):
     def get_parent_breadcrumbs(context):
         """get_parent_breadcrumbs."""
 
+
 class MarsUtils(BrowserView):
     implements(IMarsUtils)
+    def get_biblio_view(self):
+        return view.SummaryView(self.context, self.request)
+    def get_ref_info(self, obj):
+        """."""
+        infos = None
+        bview = self.get_biblio_view()
+        if IBibliographicItem.providedBy(obj):
+            infos = bview.infosFor(obj)
+        return infos
+
     def get_obj_crumb(self, obj, sep='>'):
         """."""
         item = obj.aq_inner
