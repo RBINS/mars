@@ -14,6 +14,8 @@ from schemata import MarsCollectionObjectSchema
 
 from Products.CMFCore.utils import getToolByName
 
+MarsBaseContainers = ['Mars Site', 'Mars Collection']
+
 class MarsMixin(object):
     implements((IMarsObject,))
     def mars_relative_path(self, cctx):
@@ -30,7 +32,9 @@ class MarsMixin(object):
         oldctx = ctx
         try:
             while (
-                (ctx.portal_type not in ['Plone Site', 'Mars Site', 'Mars Collection',])
+                (ctx.portal_type not in [
+                    'Plone Site', 
+                ] + MarsBaseContainers)
                 and (
                     self.mars_relative_path(
                         ctx
@@ -42,11 +46,11 @@ class MarsMixin(object):
                 oldctx = ctx
                 ctx = ctx.aq_parent
             if (files
-                and (ctx.portal_type in ['Mars Site', 'Mars Collection'])
+                and (ctx.portal_type in MarsBaseContainers)
                 and ('files' in ctx.objectIds())):
                 ctx = ctx['files']
             if (curations
-                and (ctx.portal_type in ['Mars Site', 'Mars Collection'])
+                and (ctx.portal_type in MarsBaseContainers)
                 and ('curations' in ctx.objectIds())):
                 ctx = ctx._getOb('curations')
         except Exception, e:

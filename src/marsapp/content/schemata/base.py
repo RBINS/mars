@@ -199,7 +199,10 @@ def make_dating_analysis(schemata='chronology'):
         searchable=False,
         multiValued=True,
         relationship='isAbsoluteDating',
-        allowed_types=("Analysis Absolute Dating"),
+        allowed_types=(
+            "Analysis Absolute Dating",
+            "Analysis Relative Dating",
+        ),
         widget=ReferenceBrowserWidget(
             label='Dating analyse(s)',
             label_msgid='label_absolute_datings',
