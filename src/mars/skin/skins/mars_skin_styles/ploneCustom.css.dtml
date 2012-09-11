@@ -37,6 +37,7 @@ table.mars-datatable {
   display:none;
 } 
 /* related items */
+
 #relatedItemBox  dd,
 #content #relatedItemBox  dd{
   margin-bottom:0px;
@@ -58,6 +59,20 @@ table.mars-datatable {
 .icons-on .mars-ref-overlay-ajax #plone-contentmenu-factories .contenttype-file,
 .icons-on .mars-ref-overlay-ajax #plone-contentmenu-factories .contenttype-image {
   line-height:18px;
+}
+#content ul.marsref li,
+#content ul.marsref,
+ul.marsref li,
+ul.marsref {
+  list-style-type:none;
+}
+
+/* component assemblage must be displayyed inline */
+
+ul.marsref.components li {
+  display:inline;
+  float:left;
+  margin-right:5px;
 }
 
 

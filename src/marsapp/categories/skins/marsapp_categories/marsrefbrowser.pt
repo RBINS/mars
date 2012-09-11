@@ -56,7 +56,10 @@
 
         </tal:block>
 
-        <ul tal:condition="field/multiValued">
+        <ul 
+          tal:define="ptype python:normalizeString(here.portal_type)"
+          tal:attributes="class string:marsref $fieldName $ptype"
+          tal:condition="field/multiValued">
           <tal:block tal:repeat="obj refs">
             <tal:block
                 tal:define="
@@ -181,8 +184,10 @@
                   <img tal:replace="structure item_icon/html_tag" />
                   <span tal:content="string:${type} : ${lrel} "/>
                 </span> 
-          <ul class="visualNoMarker"
-              tal:attributes="id string:ref_browser_items_${fieldName};"
+          <ul 
+            tal:define="ptype python:normalizeString(here.portal_type)"
+            tal:attributes="id string:ref_browser_items_${fieldName};
+            class string:visualNoMarker marsref $fieldName $ptype"
               tal:condition="refs">
             <li tal:repeat="set refs"
                 tal:attributes="
