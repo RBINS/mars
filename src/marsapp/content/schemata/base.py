@@ -496,7 +496,7 @@ CollectionBaseSchema = Schema((
         searchable=False,
         widget=YearWidget(label='Year of Inventorisation',
             label_msgid='label_IG_date',
-            description='Year this item got its IG nunmber.',
+            description='Year this item got its IG number.',
             description_msgid='help_IG_date',
             domain='mars',
             years_range = (-300, 10),

@@ -61,6 +61,13 @@
       /> 
   <include package=".migrations"/>     
   <genericsetup:importStep
+      name="mars_policy_logo"
+      title="Mars logo"
+      description=""
+      handler="mars.policy.setuphandlers.setupLogo">
+    <depends name="content"/>
+  </genericsetup:importStep>
+  <genericsetup:importStep
       name="mars_policy setupVarious"
       title="Mars post install various setup"
       description="description"

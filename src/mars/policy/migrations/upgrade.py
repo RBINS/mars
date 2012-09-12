@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os, sys
+import pkg_resources
 
 try:
     from Products.CMFPlone.migrations import migration_util
@@ -23,6 +24,7 @@ PROFILEIDS = 'mars.policy:z_mars_plone'
 PROFILEID = 'profile-%s' % PROFILEIDS
 TPROFILEIDS = 'mars.policy:default'
 TPROFILEID = 'profile-%s' % PROFILEIDS
+root = pkg_resources.resource_filename('mars.policy', '/')
 
 def css_upgrade(portal_setup):
     portal = site = portal_setup.aq_parent
@@ -250,3 +252,54 @@ def v1008(context):
     recook_resources(portal_setup)
     log.warn('Upgrade v1008 runned.')
  
+def v1009(context):
+    purl = getToolByName(context, 'portal_url')
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal = site = purl.getPortalObject()
+    qi = site.portal_quickinstaller
+    ttool = getToolByName(context, 'portal_types')
+    catalog = getToolByName(portal, 'portal_catalog')
+    pm = getToolByName(portal, 'portal_migration')
+    report = pm.upgrade(dry_run=False)
+    for step in [
+        'mars_policy_logo',
+    ]:
+        portal_setup.runImportStepFromProfile(
+            PROFILEID, step, run_dependencies=False)
+    recook_resources(portal_setup)
+    log.warn('Upgrade v1009 runned.')
+        
+def v1010(context):
+    purl = getToolByName(context, 'portal_url')
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal = site = purl.getPortalObject()
+    qi = site.portal_quickinstaller
+    ttool = getToolByName(context, 'portal_types')
+    catalog = getToolByName(portal, 'portal_catalog')
+    pm = getToolByName(portal, 'portal_migration')
+    report = pm.upgrade(dry_run=False)
+    keyfile = os.path.join(root, 'aviary.txt')
+    for step in [
+        'atcttool',
+    ]:
+        portal_setup.runImportStepFromProfile(
+            PROFILEID, step, run_dependencies=False)
+    portal_setup.runAllImportStepsFromProfile(
+    'profile-collective.externalimageeditor:default', ignore_dependencies=True)
+    from zope.component import getUtility
+    from plone.registry.interfaces import IRegistry
+    from collective.externalimageeditor import interfaces as eie
+    registry = getUtility(IRegistry)
+    settings = registry.forInterface(
+            eie.IExternalimageeditorConfiguration) 
+    if not os.path.exists(keyfile):
+        raise Exception('You must create %s in the form key:keysecret' % keyfile)
+
+    key, secret=open(keyfile).read().strip('\n').split(':')
+    settings.has_aviary = True
+    settings.has_pixlr = True
+    settings.aviary_key = key
+    settings.aviary_secret = secret
+    recook_resources(portal_setup)
+    log.warn('Upgrade v1010 runned.')
+        

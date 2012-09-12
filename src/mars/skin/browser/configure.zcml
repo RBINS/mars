@@ -28,15 +28,22 @@
       directory="stylesheets"
       layer=".interfaces.IThemeSpecific"
     />
-    <!-- The related items -->
-    <browser:viewlet
-        name="plone.belowcontentbody.relateditems"
-        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
-        class=".content.ContentRelatedItems"
-        view="plone.app.layout.globals.interfaces.IViewView"
-        permission="zope2.View"
-        layer=".interfaces.IThemeSpecific"
-        />
+  <!-- The related items -->
+  <browser:viewlet
+      name="plone.belowcontentbody.relateditems"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+      class=".content.ContentRelatedItems"
+      view="plone.app.layout.globals.interfaces.IViewView"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+    />
+  <browser:viewlet
+      name="plone.logo"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.LogoViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+    /> 
   <browser:page
       layer=".interfaces.IThemeSpecific"
       for="*"

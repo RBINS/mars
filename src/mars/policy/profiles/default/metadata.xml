@@ -1,5 +1,5 @@
 <metadata>
-  <version>1008</version>
+  <version>1010</version>
   <dependencies>
       <dependency>profile-mars.policy:z_mars_plone</dependency>
       <dependency>profile-mars.policy:z_mars_categories</dependency>

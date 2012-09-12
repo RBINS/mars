@@ -349,7 +349,7 @@
    <criteria>ATSimpleStringCriterion</criteria>
    <criteria>ATListCriterion</criteria>
   </index>
-  <index name="getIgYear" description="Year this item got its IG nunmber."
+  <index name="getIgYear" description="Year this item got its IG number."
      enabled="True" friendlyName="Year of Inventorisation">
    <criteria>ATFriendlyDateCriteria</criteria>
    <criteria>ATDateRangeCriterion</criteria>
@@ -886,7 +886,7 @@
      enabled="True" friendlyName="IG number"/>
   <metadata name="getIgNumbers" description="General inventorisation numbers"
      enabled="True" friendlyName="IG numbers"/>
-  <metadata name="getIgYear" description="Year this item got its IG nunmber."
+  <metadata name="getIgYear" description="Year this item got its IG number."
      enabled="True" friendlyName="Year of Inventorisation"/>
   <metadata name="getInsiteLocation" description="Part of the site excavated"
      enabled="True" friendlyName="In-site location"/>

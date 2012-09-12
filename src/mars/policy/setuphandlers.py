@@ -3,17 +3,57 @@
 MARS Portal setup handlers.
 """
 from StringIO import StringIO
+import os
 import transaction
+import pkg_resources
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import _createObjectByType
 
 from marsapp.categories.storage import CAT_CONTAINER
+from mars.skin.browser import viewlets
 
 import logging
 from Products.CMFCore.utils import getToolByName
 from mars.policy.app_config import PRODUCT_DEPENDENCIES
 
 from lxml import etree
+root = pkg_resources.resource_filename('mars.policy', '/')
+
+
+
+ 
+def publish_all(context):
+    url = getToolByName(context, 'portal_url')
+    site = url.getPortalObject()
+    catalog = getToolByName(site, 'portal_catalog')
+    wftool = getToolByName(site, 'portal_workflow')
+    brains = catalog.search({
+        'path': {'query':
+                 '/'.join(context.getPhysicalPath())},
+        'review_state': 'private',
+    })
+
+    for fp in brains:
+        wftool.doActionFor(fp.getObject(), 'publish')
+
+
+def setupLogo(context):
+    """
+    """
+    if context.readDataFile('mars.policy_various.txt') is None: return
+    site = context.getSite()
+    portal = getToolByName(site, 
+                           'portal_url').getPortalObject()
+    data = open(os.path.join(root, viewlets.LOGO_ID)).read()
+    if not 'marslogo.png' in portal.objectIds():
+        obj = _createObjectByType('Image',
+                                  portal, 
+                                  viewlets.LOGO_ID)
+        obj.processForm()
+        obj.setExcludeFromNav(True)
+        obj.setTitle('Logo')
+        obj.getField('image', obj).set(obj, data)
+        publish_all(obj)
 
 def setupVarious(context):
     """
@@ -80,19 +120,6 @@ def setupQi(context):
             transaction.savepoint()
 
 
-def publish_all(context):
-    url = getToolByName(context, 'portal_url')
-    site = url.getPortalObject()
-    catalog = getToolByName(site, 'portal_catalog')
-    wftool = getToolByName(site, 'portal_workflow')
-    brains = catalog.search({
-        'path': {'query':
-                 '/'.join(context.getPhysicalPath())},
-        'review_state': 'private',
-    })
-
-    for fp in brains:
-        wftool.doActionFor(fp.getObject(), 'publish')
 
 def createCategories(context):
     """
