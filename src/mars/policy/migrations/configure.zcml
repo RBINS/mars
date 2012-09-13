@@ -68,5 +68,14 @@
   <genericsetup:upgradeSteps  profile="mars.policy:default" source="1009" destination="1010">
     <genericsetup:upgradeStep title="" description="" handler=".upgrade.v1010" />
   </genericsetup:upgradeSteps>   
+  <genericsetup:upgradeSteps  profile="mars.policy:default" source="1010" destination="1011">
+    <genericsetup:upgradeStep title="" description="" handler=".upgrade.v1011" />
+  </genericsetup:upgradeSteps>   
+  <genericsetup:upgradeSteps  profile="mars.policy:default" source="1011" destination="1012">
+    <genericsetup:upgradeStep title="" description="" handler=".upgrade.v1012" />
+  </genericsetup:upgradeSteps>    
+  <genericsetup:upgradeSteps  profile="mars.policy:default" source="1012" destination="1013">
+    <genericsetup:upgradeStep title="" description="" handler=".upgrade.v1013" />
+  </genericsetup:upgradeSteps>    
   <!-- vim:set ft=xml: -->
 </configure>

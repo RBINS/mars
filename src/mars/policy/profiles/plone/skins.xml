@@ -14,7 +14,7 @@
  <object name="marsapp_categories_icons" meta_type="Filesystem Directory View"
     directory="marsapp.policy:skins/marsapp_categories_icons"/>
 
- <skin-path name="mars.skin">
+ <skin-path name="mars.skin"  based-on="Sunburst Theme">
     <layer name="cmf_legacy"
      insert-after="*"/>
     <layer name="plone_3rdParty"
@@ -153,8 +153,14 @@
      insert-after="collective_bibliocustomviews_custom"
      insert-before="bibliography"/>
     <layer name="collective_bibliocustomviews_custom"
-     insert-after="mars_skin_styles"
+     insert-after="csvreplicata_styles"
      insert-before="ZipFileTransport"/>
+    <layer name="csvreplicata_styles"
+     insert-after="querywidget"
+     insert-before="collective_bibliocustomviews_custom"/>
+    <layer name="querywidget"
+     insert-after="marsapp_categories_icons"
+     insert-before="csvreplicata_styles" />
     <layer name="marsapp_categories_icons"
      insert-after="mars_skin_styles"
      insert-before="collective_bibliocustomviews_custom"/>

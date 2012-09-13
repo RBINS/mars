@@ -3,6 +3,9 @@
 
 import os, sys
 import pkg_resources
+from zope.component import getUtility
+from plone.registry.interfaces import IRegistry
+from collective.externalimageeditor import interfaces as eie
 
 try:
     from Products.CMFPlone.migrations import migration_util
@@ -269,26 +272,8 @@ def v1009(context):
     recook_resources(portal_setup)
     log.warn('Upgrade v1009 runned.')
         
-def v1010(context):
-    purl = getToolByName(context, 'portal_url')
-    portal_setup = getToolByName(context, 'portal_setup')
-    portal = site = purl.getPortalObject()
-    qi = site.portal_quickinstaller
-    ttool = getToolByName(context, 'portal_types')
-    catalog = getToolByName(portal, 'portal_catalog')
-    pm = getToolByName(portal, 'portal_migration')
-    report = pm.upgrade(dry_run=False)
+def configure_eie(context):        
     keyfile = os.path.join(root, 'aviary.txt')
-    for step in [
-        'atcttool',
-    ]:
-        portal_setup.runImportStepFromProfile(
-            PROFILEID, step, run_dependencies=False)
-    portal_setup.runAllImportStepsFromProfile(
-    'profile-collective.externalimageeditor:default', ignore_dependencies=True)
-    from zope.component import getUtility
-    from plone.registry.interfaces import IRegistry
-    from collective.externalimageeditor import interfaces as eie
     registry = getUtility(IRegistry)
     settings = registry.forInterface(
             eie.IExternalimageeditorConfiguration) 
@@ -300,6 +285,75 @@ def v1010(context):
     settings.has_pixlr = True
     settings.aviary_key = key
     settings.aviary_secret = secret
+ 
+def v1010(context):
+    purl = getToolByName(context, 'portal_url')
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal = site = purl.getPortalObject()
+    qi = site.portal_quickinstaller
+    ttool = getToolByName(context, 'portal_types')
+    catalog = getToolByName(portal, 'portal_catalog')
+    pm = getToolByName(portal, 'portal_migration')
+    for step in [
+        'atcttool',
+    ]:
+        portal_setup.runImportStepFromProfile(
+            PROFILEID, step, run_dependencies=False)
+    portal_setup.runAllImportStepsFromProfile(
+    'profile-collective.externalimageeditor:default', ignore_dependencies=True)
+    configure_eie(portal)
     recook_resources(portal_setup)
     log.warn('Upgrade v1010 runned.')
-        
+
+def v1011(context):
+    purl = getToolByName(context, 'portal_url')
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal = site = purl.getPortalObject()
+    qi = site.portal_quickinstaller
+    ttool = getToolByName(context, 'portal_types')
+    catalog = getToolByName(portal, 'portal_catalog')
+    pm = getToolByName(portal, 'portal_migration')
+    for step in [
+        'skins',
+    ]:
+        portal_setup.runImportStepFromProfile(
+            PROFILEID, step, run_dependencies=False)
+    recook_resources(portal_setup)
+    log.warn('Upgrade v1011 runned.')
+
+def v1012(context):
+    purl = getToolByName(context, 'portal_url')
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal = site = purl.getPortalObject()
+    qi = site.portal_quickinstaller
+    ttool = getToolByName(context, 'portal_types')
+    catalog = getToolByName(portal, 'portal_catalog')
+    pm = getToolByName(portal, 'portal_migration')
+    for item in catalog.search({
+        'portal_type': [
+            'Analysis',
+            'Analysis Absolute Dating',
+            'Analysis Relative Dating',
+        ]
+    }):
+        item.getObject().reindexObject()
+    recook_resources(portal_setup)
+    log.warn('Upgrade v1012 runned.') 
+
+def v1013(context):
+    purl = getToolByName(context, 'portal_url')
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal = site = purl.getPortalObject()
+    qi = site.portal_quickinstaller
+    ttool = getToolByName(context, 'portal_types')
+    catalog = getToolByName(portal, 'portal_catalog')
+    pm = getToolByName(portal, 'portal_migration')
+    for i in catalog.search({'portal_type': 'PDF Folder'}):
+        obj = i.getObject()
+        parent = obj.aq_parent.aq_inner
+        id = obj.getId()
+        parent.manage_delObjects([id])
+        parent.reindexObject()
+    recook_resources(portal_setup)
+    log.warn('Upgrade v1013 runned.') 
+

@@ -30,6 +30,7 @@
       <dependency>profile-plone.formwidget.datetime:default</dependency>
       <dependency>profile-Products.RefBiblioParser:default</dependency>
       <dependency>profile-collective.bibliocustomviews:default</dependency>
+      <dependency>profile-collective.externalimageeditor:default</dependency>
  </dependencies>
 </metadata>
 
