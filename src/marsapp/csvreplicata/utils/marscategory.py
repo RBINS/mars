@@ -6,7 +6,6 @@
 # GNU General Public License (GPL)
 #
 
-__author__ = """Eric BREHAULT <eric.brehault@makina-corpus.org>"""
 __docformat__ = 'plaintext'
 
 from Products.CMFCore.utils import getToolByName

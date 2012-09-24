@@ -7,7 +7,6 @@
 $Id$
 """
 __docformat__ = 'reStructuredText'
-__author__  = 'David Convent <david.convent@naturalsciences.be>'
 
 # python imports
 import logging

@@ -20,7 +20,6 @@
 """
 A lot of code stolen from ATPhoto
 """
-__author__  = 'David Convent <david.convent@naturalsciences.be>'
 __docformat__ = 'restructuredtext'
 
 
