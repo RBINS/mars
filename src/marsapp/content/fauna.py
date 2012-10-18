@@ -59,7 +59,7 @@ FaunaRemainSchema += DiscoverySchema.copy()
 FaunaRemainSchema += AdministrationSchema.copy()
 FaunaRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
 FaunaRemainSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna'
-finalizeMarsSchema(FaunaRemainSchema, delFields=[], remain_types=FAUNA_TYPES, is_collection_object=True)
+finalizeMarsSchema(FaunaRemainSchema, delFields=[], remain_types=FAUNA_TYPES, igNumbers=True, is_collection_object=True)
 
 class MarsFaunaRemain(MarsCollectionObject):
     """Fauna Remain"""
@@ -84,7 +84,7 @@ FaunaIndividualSchema += DiscoverySchema.copy()
 FaunaIndividualSchema += AdministrationSchema.copy()
 FaunaIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/fauna'
 FaunaIndividualSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna'
-finalizeMarsSchema(FaunaIndividualSchema, delFields=[], remain_types=FAUNA_TYPES, is_collection_object=True)
+finalizeMarsSchema(FaunaIndividualSchema, delFields=[], remain_types=FAUNA_TYPES, igNumbers=True, is_collection_object=True)
 
 class MarsFaunaIndividual(MarsCollectionObject):
     """Fauna Individual"""

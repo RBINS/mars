@@ -90,7 +90,7 @@ ArtefactRemainSchema += TaphonomySchema.copy()
 ArtefactRemainSchema += TechnologySchema.copy()
 ArtefactRemainSchema += DiscoverySchema.copy()
 ArtefactRemainSchema += AdministrationSchema.copy()
-finalizeMarsSchema(ArtefactRemainSchema,multivalued=('remainType',), delFields=[], remain_types=ARTEFACTS_TYPES, is_collection_object=True)
+finalizeMarsSchema(ArtefactRemainSchema,multivalued=('remainType',), delFields=[], remain_types=ARTEFACTS_TYPES, igNumbers=True, is_collection_object=True)
 
 class MarsArtefact(MarsCollectionObject):
     """Artefact Remain"""
@@ -114,7 +114,7 @@ ArtefactIndividualSchema += DiscoverySchema.copy()
 ArtefactIndividualSchema += AdministrationSchema.copy()
 ArtefactIndividualSchema += ArtefactBurialSchema
 finalizeMarsSchema(ArtefactIndividualSchema, multivalued=('remainType',),
-                   delFields=('MNI', 'MNIDetermination', ), remain_types=ARTEFACTS_TYPES, is_collection_object=True)
+                   delFields=('MNI', 'MNIDetermination', ), remain_types=ARTEFACTS_TYPES, igNumbers=True, is_collection_object=True)
 
 class MarsArtefactIndividual(MarsCollectionObject):
     """Artefact Individual"""
