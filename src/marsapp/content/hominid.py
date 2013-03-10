@@ -20,7 +20,6 @@
 """
 
 """
-__author__  = 'David Convent <david.convent@naturalsciences.be>'
 __docformat__ = 'restructuredtext'
 
 
@@ -66,7 +65,7 @@ HominidRemainSchema += DiscoverySchema.copy()
 HominidRemainSchema += AdministrationSchema.copy()
 HominidRemainSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 HominidRemainSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna/mammalia/primates/hominidae'
-finalizeMarsSchema(HominidRemainSchema, delFields=[], remain_types=HOMINIDS_TYPES, is_collection_object=True)
+finalizeMarsSchema(HominidRemainSchema, igNumbers=True,delFields=[], remain_types=HOMINIDS_TYPES, is_collection_object=True)
 
 class MarsHominidRemain(MarsCollectionObject):
     """Hominid Remain"""
@@ -91,7 +90,7 @@ HominidIndividualSchema += DiscoverySchema.copy()
 HominidIndividualSchema += AdministrationSchema.copy()
 HominidIndividualSchema['remainType'].widget.startup_directory = '/marscategories/remain-type/hominid'
 HominidIndividualSchema['taxon'].widget.startup_directory = '/marscategories/taxa/fauna/mammalia/primates/hominidae'
-finalizeMarsSchema(HominidIndividualSchema, delFields=[], remain_types=HOMINIDS_TYPES, is_collection_object=True)
+finalizeMarsSchema(HominidIndividualSchema, igNumbers=True, delFields=[], remain_types=HOMINIDS_TYPES, is_collection_object=True)
 
 class MarsHominidIndividual(MarsCollectionObject):
     """Hominid Individual"""

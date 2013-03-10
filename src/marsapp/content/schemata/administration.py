@@ -20,7 +20,6 @@
 """
 
 """
-__author__  = 'David Convent <david.convent@naturalsciences.be>'
 __docformat__ = 'restructuredtext'
 
 
@@ -131,6 +130,7 @@ AdministrationSchema = Schema((
         read_permission=VIEW_REPOSITORY_PERMISSION,
         write_permission=EDIT_REPOSITORY_PERMISSION,
         relationship="isStoredIn",
+        multiValued=True,
         # allowed_types=('Institution',),
         widget=ReferenceBrowserWidget(label='Link to Repository',
             label_msgid='label_repository_link',
