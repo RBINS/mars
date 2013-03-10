@@ -23,23 +23,60 @@ from Products.CMFPlone.utils import _createObjectByType
 import logging
 
 log = logging.getLogger('mars migrations')
+PRODUCT = 'mars.policy'
 PROFILEIDS = 'mars.policy:z_mars_plone'
 PROFILEID = 'profile-%s' % PROFILEIDS
 TPROFILEIDS = 'mars.policy:default'
 TPROFILEID = 'profile-%s' % PROFILEIDS
 root = pkg_resources.resource_filename('mars.policy', '/')
 
+def log(message, level='info'):
+    logger = logging.getLogger('%s.upgrades' % PRODUCT)
+    getattr(logger, level)(message)
+
+def commit(context):
+    transaction.commit()
+    context._p_jar.sync()
+ 
+def quickinstall_addons(context, install=None, uninstall=None, upgrades=None):
+    qi = getToolByName(context, 'portal_quickinstaller')
+
+    if install is not None:
+        for addon in install:
+            if qi.isProductInstallable(addon):
+                qi.installProduct(addon)
+            else:
+                log('%s can t be installed' % addon, 'error')
+
+    if uninstall is not None:
+        qi.uninstallProducts(uninstall)
+
+    if upgrades is not None:
+        if upgrades in ("all", True):
+            # find which addons should be upgrades
+            installedProducts = qi.listInstalledProducts(showHidden=True)
+            upgrades = [p['id'] for p in installedProducts]
+        for upgrade in upgrades:
+            # do not try to upgrade myself -> recursion
+            if upgrade == PRODUCT:
+                continue
+            try:
+                qi.upgradeProduct(upgrade)
+                log('Upgraded %s' % upgrade)
+            except KeyError:
+                log('can t upgrade %s' % upgrade, 'error')
+ 
 def css_upgrade(portal_setup):
     portal = site = portal_setup.aq_parent
     portal_setup.runImportStepFromProfile(PROFILEID, 'cssregistry', run_dependencies=False)
     transaction.commit()
-    log.warn('Css upgraded')
+    log('Css upgraded')
 
 def js_upgrade(portal_setup):
     portal = site = portal_setup.aq_parent
     portal_setup.runImportStepFromProfile(PROFILEID, 'jsregistry', run_dependencies=False)
     transaction.commit()
-    log.warn('Js upgraded')
+    log('Js upgraded')
 
 def recook_resources(portal_setup):
     portal = site = portal_setup.aq_parent
@@ -48,8 +85,42 @@ def recook_resources(portal_setup):
     jsregistry.cookResources()
     cssregistry.cookResources()
     transaction.commit()
-    log.warn('Recooked resources (js/css)')
+    log('Recooked resources (js/css)')
 
+def upgrade_profile(context, profile_id, steps=None):
+    """
+    >>> upgrade_profile(context, 'foo:default')
+    """
+    portal_setup = getToolByName(context.aq_parent, 'portal_setup')
+    gsteps = portal_setup.listUpgrades(profile_id)
+    class fakeresponse(object):
+        def redirect(self, *a, **kw): pass
+    class fakerequest(object):
+        RESPONSE = fakeresponse()
+        def __init__(self):
+            self.form = {}
+            self.get = self.form.get
+    fr = fakerequest()
+    if steps is None:
+        steps = []
+        for col in gsteps:
+            if not isinstance(col, list):
+                col = [col]
+            for ustep in col:
+                steps.append(ustep['id'])
+        fr.form.update({
+            'profile_id': profile_id,
+            'upgrades': steps,
+        })
+    portal_setup.manage_doUpgrades(fr)
+
+def upgrade_plone(portal_setup):
+    """
+    """
+    portal = getToolByName(portal_setup, 'portal_url').getPortalObject()
+    pm = getToolByName(portal_setup, 'portal_migration')
+    report = pm.upgrade(dry_run=False)
+     
 def v1000(portal_setup):
     """
     """
@@ -73,7 +144,7 @@ def v1000(portal_setup):
 
     #portal_setup.runImportStepFromProfile(PROFILEID, 'propertiestool', run_dependencies=False)
     transaction.commit()
-    log.warn('Upgrade v1000 runned.')
+    log('Upgrade v1000 runned.')
 
 def v1003(portal_setup):
     """
@@ -83,7 +154,7 @@ def v1003(portal_setup):
     pm = portal.portal_migration
     report = pm.upgrade(dry_run=False)
     transaction.commit()
-    log.warn('Upgrade v1003 runned.')
+    log('Upgrade v1003 runned.')
 
 def v1004(portal_setup):
     """
@@ -97,7 +168,7 @@ def v1004(portal_setup):
         ],)
 
     transaction.commit()
-    log.warn('Upgrade v1004 runned.')
+    log('Upgrade v1004 runned.')
 
 def v1005(portal_setup):
     """
@@ -109,7 +180,7 @@ def v1005(portal_setup):
     portal_setup.runAllImportStepsFromProfile(
     'profile-Products.ATVocabularyManager:default', ignore_dependencies=True)
     portal_setup.runImportStepFromProfile(PROFILEID, 'skins', run_dependencies=False)
-    log.warn('Upgrade v1005 runned.')
+    log('Upgrade v1005 runned.')
 
 
 def constrain_mars(portal):
@@ -201,7 +272,7 @@ def v1006(portal_setup):
             changed = True
         if changed:
             obj.reindexObject()
-    log.warn('Upgrade v1006 runned.')
+    log('Upgrade v1006 runned.')
 
 
 def v1007(context):
@@ -236,7 +307,7 @@ def v1007(context):
     collections = portal['collections']
     collections.setLocallyAllowedTypes(tps)
     collections.setImmediatelyAddableTypes(tps)
-    log.warn('Upgrade v1007 runned.')
+    log('Upgrade v1007 runned.')
 
 def v1008(context):
     purl = getToolByName(context, 'portal_url')
@@ -253,7 +324,7 @@ def v1008(context):
         portal_setup.runImportStepFromProfile(
             PROFILEID, step, run_dependencies=False)
     recook_resources(portal_setup)
-    log.warn('Upgrade v1008 runned.')
+    log('Upgrade v1008 runned.')
  
 def v1009(context):
     purl = getToolByName(context, 'portal_url')
@@ -270,7 +341,7 @@ def v1009(context):
         portal_setup.runImportStepFromProfile(
             PROFILEID, step, run_dependencies=False)
     recook_resources(portal_setup)
-    log.warn('Upgrade v1009 runned.')
+    log('Upgrade v1009 runned.')
         
 def configure_eie(context):        
     keyfile = os.path.join(root, 'aviary.txt')
@@ -303,7 +374,7 @@ def v1010(context):
     'profile-collective.externalimageeditor:default', ignore_dependencies=True)
     configure_eie(portal)
     recook_resources(portal_setup)
-    log.warn('Upgrade v1010 runned.')
+    log('Upgrade v1010 runned.')
 
 def v1011(context):
     purl = getToolByName(context, 'portal_url')
@@ -319,7 +390,7 @@ def v1011(context):
         portal_setup.runImportStepFromProfile(
             PROFILEID, step, run_dependencies=False)
     recook_resources(portal_setup)
-    log.warn('Upgrade v1011 runned.')
+    log('Upgrade v1011 runned.')
 
 def v1012(context):
     purl = getToolByName(context, 'portal_url')
@@ -338,7 +409,7 @@ def v1012(context):
     }):
         item.getObject().reindexObject()
     recook_resources(portal_setup)
-    log.warn('Upgrade v1012 runned.') 
+    log('Upgrade v1012 runned.') 
 
 def v1013(context):
     purl = getToolByName(context, 'portal_url')
@@ -355,5 +426,8 @@ def v1013(context):
         parent.manage_delObjects([id])
         parent.reindexObject()
     recook_resources(portal_setup)
-    log.warn('Upgrade v1013 runned.') 
+    log('Upgrade v1013 runned.') 
 
+def v1014(context):
+    upgrade_plone(context)
+    log('Upgrade v1014 runned.')  
