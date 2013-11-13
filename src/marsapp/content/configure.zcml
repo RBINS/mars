@@ -6,6 +6,9 @@
   <include package="marsapp.categories"/>
   <five:registerPackage package="." initialize=".initialize"/>
   <include package=".browser"/>
+  <include package="archetypes.schemaextender" />
+  <adapter factory=".at.RefFolderFields" name="mars.reffolderfields"
+    provides="archetypes.schemaextender.interfaces.ISchemaExtender" />
 
   <subscriber for=".interfaces.IFilesAndImagesContainer
       Products.Archetypes.interfaces.IObjectInitializedEvent"

@@ -1,53 +1,56 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:five="http://namespaces.zope.org/five"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
-    xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:cmf="http://namespaces.zope.org/cmf"
-    xmlns:monkey="http://namespaces.plone.org/monkey"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    i18n_domain="mars.skin">
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:cmf="http://namespaces.zope.org/cmf"
+  xmlns:monkey="http://namespaces.plone.org/monkey"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  i18n_domain="mars.skin">
   <five:registerPackage package="." initialize=".skin.initialize" />
   <include package=".browser" />
   <include file="skins.zcml" />
   <browser:resourceDirectory
-      name="marsapp.content.icons"
-      directory="skins/mars_skin_custom_images"
+    name="marsapp.content.icons"
+    directory="skins/mars_skin_custom_images"
     />
   <i18n:registerTranslations directory="locales" />
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot directory="jbot" layer="mars.skin.interfaces.ILayer" />
 
-  <!--
-  <include package="collective.monkeypatcher" />
-  <monkey:patch
-      description="profiling stuff"
-      handler=".patch.apply_patch"
-      class="Products.Archetypes.BaseObject.BaseObject"
-      original="_processForm"
-      replacement=".patch._processForm"
-    />
-  <monkey:patch
-      description="profiling stuff"
-      handler=".patch.apply_patch"
-      class="Products.Archetypes.Field.ReferenceField"
-      original="_Vocabulary"
-      replacement=".patch._Vocabulary"
-    />
-   <monkey:patch
-      description="profiling stuff"
-      handler=".patch.apply_patch"
-      module="ZPublisher.Publish"
-      original="publish"
-      replacement=".patch.profiled_publish"
-    />   
-  <include package="collective.profiler" file="meta.zcml"/>
-  <configure 
-      xmlns:profiler="http://namespaces.plone.org/profiler">
-    <profiler:profile
+      <!--
+      <include package="collective.monkeypatcher" />
+      <monkey:patch
+        description="profiling stuff"
+        handler=".patch.apply_patch"
         class="Products.Archetypes.BaseObject.BaseObject"
-        method="_processForm"
-        filename="mymarsprof"/>
+        original="_processForm"
+        replacement=".patch._processForm"
+        />
+      <monkey:patch
+        description="profiling stuff"
+        handler=".patch.apply_patch"
+        class="Products.Archetypes.Field.ReferenceField"
+        original="_Vocabulary"
+        replacement=".patch._Vocabulary"
+        />
+      <monkey:patch
+        description="profiling stuff"
+        handler=".patch.apply_patch"
+        module="ZPublisher.Publish"
+        original="publish"
+        replacement=".patch.profiled_publish"
+        />   
+      <include package="collective.profiler" file="meta.zcml"/>
+      <configure 
+        xmlns:profiler="http://namespaces.plone.org/profiler">
+        <profiler:profile
+          class="Products.Archetypes.BaseObject.BaseObject"
+          method="_processForm"
+          filename="mymarsprof"/>
 
-  </configure>
--->
-  <!-- vim:set ft=xml: -->
-</configure>
+
+      </configure>
+      -->
+      <!-- vim:set ft=xml: -->
+    </configure>

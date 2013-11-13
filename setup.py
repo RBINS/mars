@@ -70,6 +70,7 @@ setup(name='mars',
           'lxml',
           'zope.component',
           'zope.interface',
+          'z3c.jbot',
           'zope.testing',
       ] ,
       entry_points = {

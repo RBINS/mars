@@ -505,4 +505,9 @@ def v1016(context):
     registerTransformPolicy(
         site, DOCUMENT_DEFAULT_OUTPUT_TYPE,
         REQUIRED_TRANSFORM)
+    log('Upgrade v1016 runned.')
 
+def v1017(context):
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal_setup.runImportStepFromProfile(PROFILEID, 'browserlayer', run_dependencies=True)
+    log('Upgrade v1017 runned.')

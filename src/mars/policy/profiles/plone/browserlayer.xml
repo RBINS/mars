@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers>
+  <layer name="mars.skin-theme" interface="mars.skin.interfaces.IThemeSpecific"/>
+  <layer name="mars.skin" interface="mars.skin.interfaces.ILayer"/>
+</layers>
