@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import os, sys
+from Testing.makerequest import makerequest
+from StringIO import StringIO
 import pkg_resources
 from zope.component import getUtility
 from plone.registry.interfaces import IRegistry
@@ -19,6 +21,10 @@ from Products.ATContentTypes.content.image import ATImage
 import transaction
 
 from Products.CMFPlone.utils import _createObjectByType
+from collective.ckeditor.setuphandlers import (
+    registerTransformPolicy,
+    DOCUMENT_DEFAULT_OUTPUT_TYPE,
+    REQUIRED_TRANSFORM)
 
 import logging
 
@@ -37,7 +43,7 @@ def log(message, level='info'):
 def commit(context):
     transaction.commit()
     context._p_jar.sync()
- 
+
 def quickinstall_addons(context, install=None, uninstall=None, upgrades=None):
     qi = getToolByName(context, 'portal_quickinstaller')
 
@@ -45,11 +51,15 @@ def quickinstall_addons(context, install=None, uninstall=None, upgrades=None):
         for addon in install:
             if qi.isProductInstallable(addon):
                 qi.installProduct(addon)
+                log('Installed %s' % addon)
             else:
                 log('%s can t be installed' % addon, 'error')
 
     if uninstall is not None:
-        qi.uninstallProducts(uninstall)
+        for p in uninstall:
+            if qi.isProductInstalled(p):
+                qi.uninstallProducts([p])
+                log('Uninstalled %s' % p)
 
     if upgrades is not None:
         if upgrades in ("all", True):
@@ -65,7 +75,37 @@ def quickinstall_addons(context, install=None, uninstall=None, upgrades=None):
                 log('Upgraded %s' % upgrade)
             except KeyError:
                 log('can t upgrade %s' % upgrade, 'error')
- 
+
+
+def recook_resources(context):
+    """
+    """
+    site = getToolByName(context, 'portal_url').getPortalObject()
+    jsregistry = getToolByName(site, 'portal_javascripts')
+    cssregistry = getToolByName(site, 'portal_css')
+    jsregistry.cookResources()
+    cssregistry.cookResources()
+    log('Recooked css/js')
+
+
+def import_js(context):
+    """
+    """
+    site = getToolByName(context, 'portal_url').getPortalObject()
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal_setup.runImportStepFromProfile(PROFILEID, 'jsregistry', run_dependencies=False)
+    log('Imported js')
+
+
+def import_css(context):
+    """
+    """
+    site = getToolByName(context, 'portal_url').getPortalObject()
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal_setup.runImportStepFromProfile(PROFILEID, 'cssregistry', run_dependencies=False)
+    log('Imported css')
+
+
 def css_upgrade(portal_setup):
     portal = site = portal_setup.aq_parent
     portal_setup.runImportStepFromProfile(PROFILEID, 'cssregistry', run_dependencies=False)
@@ -117,10 +157,18 @@ def upgrade_profile(context, profile_id, steps=None):
 def upgrade_plone(portal_setup):
     """
     """
-    portal = getToolByName(portal_setup, 'portal_url').getPortalObject()
-    pm = getToolByName(portal_setup, 'portal_migration')
+    out = StringIO()
+    portal = makerequest(
+        getToolByName(
+            portal_setup, 'portal_url'
+        ).getPortalObject(),
+        stdout=out, environ={'REQUEST_METHOD':'POST'})
+    # pm = getToolByName(portal, 'portal_migration')
+    # use direct acquisition for REQUEST to be always there
+    pm = portal.portal_migration
     report = pm.upgrade(dry_run=False)
-     
+    return report
+
 def v1000(portal_setup):
     """
     """
@@ -325,7 +373,7 @@ def v1008(context):
             PROFILEID, step, run_dependencies=False)
     recook_resources(portal_setup)
     log('Upgrade v1008 runned.')
- 
+
 def v1009(context):
     purl = getToolByName(context, 'portal_url')
     portal_setup = getToolByName(context, 'portal_setup')
@@ -342,12 +390,12 @@ def v1009(context):
             PROFILEID, step, run_dependencies=False)
     recook_resources(portal_setup)
     log('Upgrade v1009 runned.')
-        
-def configure_eie(context):        
+
+def configure_eie(context):
     keyfile = os.path.join(root, 'aviary.txt')
     registry = getUtility(IRegistry)
     settings = registry.forInterface(
-            eie.IExternalimageeditorConfiguration) 
+            eie.IExternalimageeditorConfiguration)
     if not os.path.exists(keyfile):
         raise Exception('You must create %s in the form key:keysecret' % keyfile)
 
@@ -356,7 +404,7 @@ def configure_eie(context):
     settings.has_pixlr = True
     settings.aviary_key = key
     settings.aviary_secret = secret
- 
+
 def v1010(context):
     purl = getToolByName(context, 'portal_url')
     portal_setup = getToolByName(context, 'portal_setup')
@@ -409,7 +457,7 @@ def v1012(context):
     }):
         item.getObject().reindexObject()
     recook_resources(portal_setup)
-    log('Upgrade v1012 runned.') 
+    log('Upgrade v1012 runned.')
 
 def v1013(context):
     purl = getToolByName(context, 'portal_url')
@@ -426,8 +474,35 @@ def v1013(context):
         parent.manage_delObjects([id])
         parent.reindexObject()
     recook_resources(portal_setup)
-    log('Upgrade v1013 runned.') 
+    log('Upgrade v1013 runned.')
 
 def v1014(context):
     upgrade_plone(context)
-    log('Upgrade v1014 runned.')  
+    log('Upgrade v1014 runned.')
+
+def v1015(context):
+    upgrade_plone(context)
+    log('Upgrade v1015 runned.')
+
+def v1016(context):
+    quickinstall_addons(
+        context,
+        uninstall=['kupu'],
+        upgrades=[
+            'collective.ckeditor',
+            'CMFPlomino',
+            'plone.app.dexterity',
+            'plone.app.jquery',
+            'collective.quickupload',
+            'collective.js.jqueryui',
+            'collective.js.datatables',
+        ])
+    import_js(context)
+    import_css(context)
+    recook_resources(context)
+    # https://dev.plone.org/ticket/13645
+    site = getToolByName(context, 'portal_url').getPortalObject()
+    registerTransformPolicy(
+        site, DOCUMENT_DEFAULT_OUTPUT_TYPE,
+        REQUIRED_TRANSFORM)
+
