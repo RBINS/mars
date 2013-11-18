@@ -44,15 +44,15 @@ def get_sorted_dict(d):
     ks.sort()
     for k in ks:
         od[k] = d[k]
-    
+
     # stack wanted types at end
-    for otype in ['folder', 
+    for otype in ['folder',
                   'Folder']:
         if otype in od:
             del od[otype]
-            od[otype] = d[otype]  
+            od[otype] = d[otype]
     return od
-    
+
 def is_bareplone_folderish(item):
     if (   ('Topic' in item.meta_type)
         or ('Folder' in item.meta_type)
@@ -198,11 +198,52 @@ class IMarsUtils(interface.Interface):
         """related items"""
     def getContentType(object, fieldname):
         """."""
+    def infolder_keywords(ctx=None, field='Subject', vocab=None):
+        """."""
 
 
 class MarsUtils(BrowserView):
     """MarsUtils an image after being edited on a webservice"""
     interface.implements(IMarsUtils)
+
+    def infolder_keywords(self, ctx=None, field='Subject', vocab=None):
+        """."""
+        if ctx is None:
+            ctx = self.context
+        catalog = getToolByName(self.context, 'portal_catalog')
+        purl = getToolByName(self.context, 'portal_url')
+        pobj = purl.getPortalObject()
+        keywords = []
+        ppath = ctx.getPhysicalPath()
+        opath = pobj.getPhysicalPath()
+        if ppath != opath:
+            for k in catalog .searchResults(
+                **{
+                    'path': {
+                        'query': '/'.join(ppath[:-1]),
+                        'depth': 0
+                    }
+                }
+            ):
+                subjects = getattr(k, field)
+                for s in subjects:
+                    if not s in keywords:
+                        keywords.append(s)
+        for k in catalog.searchResults(
+            **{'path': '/'.join(ppath)}
+        ):
+            subjects = getattr(k, field)
+            for s in subjects:
+                if not s in keywords:
+                    keywords.append(s)
+        allowed_keywords = keywords[:]
+        if vocab == 'portal_catalog':
+            allowed_keywords = catalog.uniqueValuesFor(field)
+        allowed_keywords = [a for a in allowed_keywords
+                            if a in keywords]
+        return keywords
+
+
     def is_frontpage(self, context):
         allowed = ['/mars/front-page',]
         return (
