@@ -29,7 +29,7 @@
                 <tal:define metal:fill-slot="widget_body" define="contentKeywords accessor;
                         marsutils nocall:here/@@marsutils;
                         allowedKeywords python: context.collectKeywords(fieldName, field.accessor, widget.vocab_source);
-                        infolderKeywords python: marsutils.infolder_keywords(field=field.accessor, vocab=widget.vocab_source);
+                        infolderKeywords python: marsutils.infolder_keywords(field=field.accessor);
                         site_props context/portal_properties/site_properties|nothing;
                         format widget/format | string:select;
                         allowRolesToAddKeywords site_props/allowRolesToAddKeywords|nothing;">

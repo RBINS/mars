@@ -1,5 +1,5 @@
 from zope.i18nmessageid import MessageFactory
-marsskinMessageFactory = MessageFactory('mars.skin')
+MessageFactory = MessageFactory('mars.skin')
 
 def initialize(context):
     """Initializer called when used as a Zope 2 product.""" 

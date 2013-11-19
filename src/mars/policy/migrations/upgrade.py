@@ -511,3 +511,12 @@ def v1017(context):
     portal_setup = getToolByName(context, 'portal_setup')
     portal_setup.runImportStepFromProfile(PROFILEID, 'browserlayer', run_dependencies=True)
     log('Upgrade v1017 runned.')
+
+def v1018(context):
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal_setup.runAllImportStepsFromProfile('profile-Products.PloneKeywordManager:default')
+    portal_setup.runAllImportStepsFromProfile('profile-collective.z3cform.widgets:default')
+    portal_setup.runImportStepFromProfile(PROFILEID, 'actions', run_dependencies=True)
+    log('Upgrade v1018 runned.')
+
+

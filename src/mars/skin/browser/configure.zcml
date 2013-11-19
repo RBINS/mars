@@ -4,6 +4,7 @@
     i18n_domain="mars.skin">
   <!-- ' mars.skin' Zope 3 browser layer -->
   <include file="faceted.zcml"/>
+  <include package="collective.z3cform.keywordwidget"/>
   <interface
       interface=".interfaces.IThemeSpecific"
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
@@ -67,5 +68,13 @@
       name="folder_contents_per_type_utils"
       allowed_interface=".view.IFolderContentsButtons"
       permission="zope2.View" />
+    <browser:page
+      for="*"
+      name="mars_masschange_form"
+      class=".masschange.masschange_form_frame"
+      permission="cmf.ManagePortal"
+      />
+
+
   <!-- vim:set ft=xml: -->
 </configure>

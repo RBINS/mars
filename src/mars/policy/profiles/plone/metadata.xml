@@ -31,6 +31,8 @@
       <dependency>profile-Products.RefBiblioParser:default</dependency>
       <dependency>profile-collective.bibliocustomviews:default</dependency>
       <dependency>profile-collective.externalimageeditor:default</dependency>
+      <dependency>profile-Products.PloneKeywordManager:default</dependency>
+      <dependency>profile-collective.z3cform.widgets:default</dependency>
  </dependencies>
 </metadata>
 

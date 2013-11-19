@@ -17,8 +17,12 @@
   <i18n:registerTranslations directory="locales" />
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot directory="jbot" layer="mars.skin.interfaces.ILayer" />
-
+  <utility
+    component=".vocabulary.LocalSubjectsVocabulary"
+    name="mars.localKeywords"
+    />
       <!--
+    provides="zope.schema.interfaces.IContextSourceBinder"
       <include package="collective.monkeypatcher" />
       <monkey:patch
         description="profiling stuff"
@@ -40,9 +44,9 @@
         module="ZPublisher.Publish"
         original="publish"
         replacement=".patch.profiled_publish"
-        />   
+        />
       <include package="collective.profiler" file="meta.zcml"/>
-      <configure 
+      <configure
         xmlns:profiler="http://namespaces.plone.org/profiler">
         <profiler:profile
           class="Products.Archetypes.BaseObject.BaseObject"

@@ -9,11 +9,11 @@
   <object name="rss" meta_type="CMF Action" i18n:domain="plone">
    <property name="title" i18n:translate="">RSS feed</property>
    <property name="description" i18n:translate=""></property>
-   <property name="url_expr">string:$object_url/RSS</property>
+   <property name="url_expr">object/@@syndication-util/rss_url</property>
    <property name="link_target"></property>
    <property name="icon_expr">string:$portal_url/rss.png</property>
    <property
-      name="available_expr">python:portal.portal_syndication.isSyndicationAllowed(object)</property>
+      name="available_expr">object/@@syndication-util/context_enabled</property>
    <property name="permissions">
     <element value="View"/>
    </property>
@@ -204,6 +204,18 @@
    </property>
    <property name="visible">True</property>
   </object>
+  <object name="mass_change" meta_type="CMF Action" i18n:domain="mars">
+   <property name="title" i18n:translate="">Mass change</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:@@mars_masschange_form:method</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr">python: True</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
   <object name="import" meta_type="CMF Action" i18n:domain="ZipFileTransport">
    <property name="title" i18n:translate="">Import</property>
    <property name="description" i18n:translate=""></property>
@@ -263,11 +275,11 @@
   <object name="syndication" meta_type="CMF Action" i18n:domain="plone">
    <property name="title" i18n:translate="">Syndication</property>
    <property name="description" i18n:translate=""></property>
-   <property name="url_expr">string:${folder_url}/synPropertiesForm</property>
+   <property name="url_expr">string:${object_url}/synPropertiesForm</property>
    <property name="link_target"></property>
    <property name="icon_expr"></property>
    <property
-      name="available_expr">python:folder is object and portal.portal_syndication.isSiteSyndicationAllowed()</property>
+      name="available_expr">object/@@syndication-util/context_allowed</property>
    <property name="permissions">
     <element value="Manage properties"/>
    </property>
@@ -322,6 +334,22 @@
       name="available_expr">object/@@faceted_subtyper/is_faceted</property>
    <property name="permissions">
     <element value="eea.facetednavigation: Configure faceted"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="upload" meta_type="CMF Action"
+     i18n:domain="collective.quickupload">
+   <property name="title" i18n:translate="">Upload</property>
+   <property name="description"
+      i18n:translate="">Batch upload files.</property>
+   <property
+      name="url_expr">string:${plone_context_state/canonical_object_url}/@@quick_upload</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property
+      name="available_expr">object/@@quickupload_helper/show_quickupload_action</property>
+   <property name="permissions">
+    <element value="Add portal content"/>
    </property>
    <property name="visible">True</property>
   </object>

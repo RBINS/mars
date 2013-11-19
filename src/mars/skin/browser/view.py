@@ -202,47 +202,17 @@ class IMarsUtils(interface.Interface):
         """."""
 
 
+
+from mars.skin.utils import infolder_keywords
 class MarsUtils(BrowserView):
     """MarsUtils an image after being edited on a webservice"""
     interface.implements(IMarsUtils)
 
-    def infolder_keywords(self, ctx=None, field='Subject', vocab=None):
+    def infolder_keywords(self, ctx=None, field='Subject'):
         """."""
         if ctx is None:
             ctx = self.context
-        catalog = getToolByName(self.context, 'portal_catalog')
-        purl = getToolByName(self.context, 'portal_url')
-        pobj = purl.getPortalObject()
-        keywords = []
-        ppath = ctx.getPhysicalPath()
-        opath = pobj.getPhysicalPath()
-        if ppath != opath:
-            for k in catalog .searchResults(
-                **{
-                    'path': {
-                        'query': '/'.join(ppath[:-1]),
-                        'depth': 0
-                    }
-                }
-            ):
-                subjects = getattr(k, field)
-                for s in subjects:
-                    if not s in keywords:
-                        keywords.append(s)
-        for k in catalog.searchResults(
-            **{'path': '/'.join(ppath)}
-        ):
-            subjects = getattr(k, field)
-            for s in subjects:
-                if not s in keywords:
-                    keywords.append(s)
-        allowed_keywords = keywords[:]
-        if vocab == 'portal_catalog':
-            allowed_keywords = catalog.uniqueValuesFor(field)
-        allowed_keywords = [a for a in allowed_keywords
-                            if a in keywords]
-        return keywords
-
+        return infolder_keywords(ctx, field=field)
 
     def is_frontpage(self, context):
         allowed = ['/mars/front-page',]
@@ -325,7 +295,6 @@ class IMarsContentPerType(interface.Interface):
 
 class MarsContentPerType(BrowserView):
     """."""
-
 
     def test(self, a, b, c):
         """."""
