@@ -44,6 +44,15 @@
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       />
   <gs:registerProfile
+      name="z_mars_ldap"
+      title="Mars/Ldap"
+      description="Mars/Ldap"
+      directory="profiles/ldap"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+
+  <gs:registerProfile
       name="z_mars_institutions"
       title="Mars/Institutions"
       description="Mars/Institutions"

@@ -82,5 +82,6 @@ setup(name='mars',
               'target = plone',
           ],
       },
-      extras_require={'test': ['IPython', 'zope.testing', 'mocker']},
+      extras_require={'ldap': ['plone.app.ldap'],
+                       'test': ['IPython', 'zope.testing', 'mocker']},
      )
