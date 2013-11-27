@@ -75,6 +75,13 @@
       permission="cmf.ManagePortal"
       />
 
+  <browser:page
+      for="*"
+      layer=".interfaces.IThemeSpecific"
+      class=".view.FullReindex"
+      name="mars_full_reindex"
+      allowed_interface=".view.IFullReindex"
+      permission="zope2.View" />
 
   <!-- vim:set ft=xml: -->
 </configure>

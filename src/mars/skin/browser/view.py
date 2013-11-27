@@ -4,6 +4,7 @@ __docformat__ = 'restructuredtext en'
 
 
 from plone.memoize import instance
+import logging
 from zope import component, interface
 from zope.component import getAdapter, getMultiAdapter, queryMultiAdapter, getUtility
 
@@ -16,6 +17,7 @@ from Products.Archetypes.Widget import RichWidget
 from Acquisition import aq_parent
 from marsapp.content.base import MarsCollectionObject
 from Acquisition import aq_parent
+import transaction
 
 
 from plone.app.content.browser import foldercontents
@@ -292,7 +294,6 @@ class IMarsContentPerType(interface.Interface):
     """."""
 
 
-
 class MarsContentPerType(BrowserView):
     """."""
 
@@ -325,5 +326,32 @@ class MarsContentPerType(BrowserView):
             dres[pt].append(item)
         params['data'] = dres
         return self.index(**params)
+
+
+class IFullReindex(interface.Interface):
+        """."""
+
+class FullReindex(BrowserView):
+    """."""
+
+    def __call__(self):
+        """."""
+        logger = logging.getLogger('mars.fullreindex')
+        catalog = getToolByName(self.context, 'portal_catalog')
+        brains = catalog.search({})
+        llen = len(brains)
+        for idx, i in enumerate(brains):
+            obj = i.getObject()
+            try:
+                obj.reindexObject()
+            except:
+                pass
+            if idx % 5 == 0:
+                transaction.commit()
+            if idx % 100 == 0:
+                logger.info('%s/%s done' % (idx, llen))
+        transaction.commit()
+
+
 
 # vim:set et sts=4 ts=4 tw=80:
