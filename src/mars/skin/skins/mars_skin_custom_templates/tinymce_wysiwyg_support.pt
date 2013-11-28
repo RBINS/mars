@@ -7,11 +7,12 @@
           mu nocall:here/@@marsutils;
                      fname fieldName|inputname|nothing;
                      force_wysiwyg force_wysiwyg|nothing;
-                     text_format python:mu.getContentType(object=here, fieldname=fname);
+                     object nocall:object|here;
+                     text_format python: mu.getContentType(object=object, fieldname=fname);
                      suppressed python:request.form.get('tinymce.suppress') == fname;
                      wysiwyg python:(not suppressed and 'html' in text_format.lower()) or force_wysiwyg;
                      configuration_method nocall:here/@@tinymce-jsonconfiguration;
-                     configuration_json python:configuration_method(fieldname=field);
+                     configuration_json python:configuration_method(field=field);
                      element_id id|inputname;">
   <textarea cols="80"
             rows="25"
@@ -23,13 +24,15 @@
                             onblur onblur|nothing;
                             rows rows|default;
                             cols cols|default;
-                            title python:wysiwyg and configuration_json or None;
-                            class python:wysiwyg and 'mce_editable' or None"></textarea>
-
+                            maxlength maxlength|nothing;
+                            data-mce-config configuration_json;
+                            class python:wysiwyg and 'mce_editable pat-tinymce' or None"></textarea>
+<tal:b tal:condition="nothing">
   <script type="text/javascript"
       tal:condition="wysiwyg"
       tal:content="string:
       tinymce.dom.Event.add(window, 'load', function(e) { var config = new TinyMCEConfig('${element_id}'); config.init(); });"></script>
+</tal:b>
 
   <div tal:condition="wysiwyg"
        class="discreet suppressVisualEditor" style="margin-top: -1em;">
@@ -39,6 +42,15 @@
       Edit without visual editor
     </a>
   </div>
+  <div tal:condition="not: wysiwyg"
+       class="discreet suppressVisualEditor">
+    <a i18n:translate="suppress_visual_editor_with"
+       i18n:domain="plone.tinymce"
+       tal:attributes="href string:${request/URL0}">
+      Edit with visual editor
+    </a>
+  </div>
+
 
   </tal:block>
 </div>
