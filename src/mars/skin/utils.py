@@ -129,7 +129,7 @@ def infolder_keywords(ctx, field='Subject'):
             **{
                 'path': {
                     'query': '/'.join(ppath[:-1]),
-                    'depth': 0
+#                    'depth': 0
                 }
             }
         ):
