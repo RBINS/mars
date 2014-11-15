@@ -13,6 +13,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFCore.utils import getToolByName
 from plone.registry.interfaces import IRegistry
 from Products.ATContentTypes.interfaces.interfaces import IATContentType
+import datetime
 from Products.Archetypes.Widget import RichWidget
 from Acquisition import aq_parent
 from marsapp.content.base import MarsCollectionObject
@@ -372,5 +373,17 @@ class FullReindex(BrowserView):
         transaction.commit()
 
 
+class IExportUtils(interface.Interface):
+    """."""
 
+    def output_date():
+        """."""
+
+
+class ExportUtils(BrowserView):
+    """."""
+
+    def output_date(self, dt, fmt):
+        """."""
+        return dt.strftime(fmt)
 # vim:set et sts=4 ts=4 tw=80:

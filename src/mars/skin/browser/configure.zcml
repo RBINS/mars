@@ -44,7 +44,7 @@
       class=".viewlets.LogoViewlet"
       layer=".interfaces.IThemeSpecific"
       permission="zope2.View"
-    /> 
+    />
   <browser:page
       layer=".interfaces.IThemeSpecific"
       for="*"
@@ -74,6 +74,13 @@
       class=".view.FullReindex"
       name="mars_full_reindex"
       allowed_interface=".view.IFullReindex"
+      permission="zope2.View" />
+  <browser:page
+      for="*"
+      layer=".interfaces.IThemeSpecific"
+      class=".view.ExportUtils"
+      name="mars_export_utils"
+      allowed_interface=".view.IExportUtils"
       permission="zope2.View" />
 
   <!-- vim:set ft=xml: -->
