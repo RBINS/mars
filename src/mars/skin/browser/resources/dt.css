@@ -1,14 +1,29 @@
 #content .faceted-resultsperpage-widget,
 .faceteddatatable-datatable  .DataTables_sort_wrapper {
   display:none !important;
-} 
+}
 .dataTables_paginate .fg-button {
-  margin-left: 2px; 
+  margin-left: 2px;
   padding-left:5px;
   padding-right:5px;
-} 
+}
 
 #content .dataTables_paginate a{
  color: #fff !important;
-} 
+}
 
+#content #faceteddatatable-datatable tr.odd {
+  ￼background: #E2E4FF;
+}
+
+#faceteddatatable-datatable_wrapper a.DTTT_button:hover,
+#faceteddatatable-datatable_wrapper a.DTTT_button {
+  color:black !important;
+}
+#faceteddatatable-datatable tbody th, #faceteddatatable-datatable tbody td {
+  padding:2px 10px;
+}
+
+#content #faceteddatatable-datatable p {
+  margin-bottom: 5px;
+}

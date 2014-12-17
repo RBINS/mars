@@ -68,13 +68,6 @@
       name="folder_contents_per_type_utils"
       allowed_interface=".view.IFolderContentsButtons"
       permission="zope2.View" />
-    <browser:page
-      for="*"
-      name="mars_masschange_form"
-      class=".masschange.masschange_form_frame"
-      permission="cmf.ManagePortal"
-      />
-
   <browser:page
       for="*"
       layer=".interfaces.IThemeSpecific"

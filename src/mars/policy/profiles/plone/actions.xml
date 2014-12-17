@@ -207,7 +207,7 @@
   <object name="mass_change" meta_type="CMF Action" i18n:domain="mars">
    <property name="title" i18n:translate="">Mass change</property>
    <property name="description" i18n:translate=""></property>
-   <property name="url_expr">string:@@mars_masschange_form:method</property>
+   <property name="url_expr">string:@@rbins_masschange_form:method</property>
    <property name="link_target"></property>
    <property name="icon_expr"></property>
    <property name="available_expr">python: True</property>
