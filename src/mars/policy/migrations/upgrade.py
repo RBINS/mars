@@ -331,11 +331,11 @@ def v1007(context):
     catalog = getToolByName(portal, 'portal_catalog')
     pm = getToolByName(portal, 'portal_migration')
     report = pm.upgrade(dry_run=False)
-    for i in catalog.search({'portal_type': 'PDF Folder'}):
-        obj = i.getObject()
-        parent = obj.aq_parent.aq_inner
-        id = obj.getId()
-        parent.manage_delObjects([id])
+    #for i in catalog.search({'portal_type': 'PDF Folder'}):
+    #    obj = i.getObject()
+    #    parent = obj.aq_parent.aq_inner
+    #    id = obj.getId()
+    #    parent.manage_delObjects([id])
     for i in catalog.search({'portal_type': 'MarsPDFFile'}):
         obj = i.getObject()
         parent = obj.aq_parent.aq_inner
@@ -467,12 +467,12 @@ def v1013(context):
     ttool = getToolByName(context, 'portal_types')
     catalog = getToolByName(portal, 'portal_catalog')
     pm = getToolByName(portal, 'portal_migration')
-    for i in catalog.search({'portal_type': 'PDF Folder'}):
-        obj = i.getObject()
-        parent = obj.aq_parent.aq_inner
-        id = obj.getId()
-        parent.manage_delObjects([id])
-        parent.reindexObject()
+    #for i in catalog.search({'portal_type': 'PDF Folder'}):
+    #    obj = i.getObject()
+    #    parent = obj.aq_parent.aq_inner
+    #    id = obj.getId()
+    #    parent.manage_delObjects([id])
+    #    parent.reindexObject()
     recook_resources(portal_setup)
     log('Upgrade v1013 runned.')
 

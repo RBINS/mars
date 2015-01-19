@@ -25,6 +25,13 @@
       directory="profiles/plone"
       provides="Products.GenericSetup.interfaces.EXTENSION"
     />
+  <genericsetup:registerProfile
+      name="z_mars_paztch"
+      title="Mars/Patch profile"
+      description="Mars/Patch Policy"
+      directory="profiles/patch"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    /> 
   <!--
   <gs:registerProfile
       name="z_mars_removepacollection"
