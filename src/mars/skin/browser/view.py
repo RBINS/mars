@@ -248,16 +248,20 @@ class MarsUtils(BrowserView):
         return dres
 
     def getContentType(self, object, fieldname):
-        """i dont know why but BaseUnit return a
+        """
+        i dont know why but BaseUnit return a
         default text/plain content type for
         anything else that 'text', just work around
-        to setup well the richwidgets"""
+        to setup well the richwidgets
+        """
         try:
             tinymce = object.portal_tinymce
             ctx = object
         except AttributeError:
-            # dexteriry
-            if isinstance(self.context, TypeSchemaContext):
+            # dexterity
+            dx1 = isinstance(self.context, TypeSchemaContext)
+            dx2 = '.widgets' in fieldname
+            if any([dx1, dx2]):
                 tinymce = getToolByName(self.context, 'portal_tinymce')
                 ctx = self.context
             else:
