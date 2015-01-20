@@ -263,10 +263,13 @@ class MarsUtils(BrowserView):
             else:
                 raise
         ct = tinymce.getContentType(object=ctx, fieldname=fieldname)
-        field = object.getField(fieldname)
         if isinstance(ct, basestring):
             if 'plain' in ct:
-                if isinstance(field.widget, RichWidget):
+                try:
+                    field = object.getField(fieldname)
+                    if isinstance(field.widget, RichWidget):
+                        ct = 'text/html'
+                except AttributeError:
                     ct = 'text/html'
         return ct
 
