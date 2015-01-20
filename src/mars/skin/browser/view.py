@@ -19,6 +19,8 @@ from marsapp.content.base import MarsCollectionObject
 from Acquisition import aq_parent
 import transaction
 
+from plone.app.dexterity.browser.types import TypeSchemaContext
+
 
 from plone.app.content.browser import foldercontents
 
@@ -250,7 +252,17 @@ class MarsUtils(BrowserView):
         default text/plain content type for
         anything else that 'text', just work around
         to setup well the richwidgets"""
-        ct = object.portal_tinymce.getContentType(object=object, fieldname=fieldname)
+        try:
+            tinymce = object.portal_tinymce
+            ctx = object
+        except AttributeError:
+            # dexteriry
+            if isinstance(self.context, TypeSchemaContext):
+                tinymce = getToolByName(self.context, 'portal_tinymce')
+                ctx = self.context
+            else:
+                raise
+        ct = tinymce.getContentType(object=ctx, fieldname=fieldname)
         field = object.getField(fieldname)
         if isinstance(ct, basestring):
             if 'plain' in ct:
