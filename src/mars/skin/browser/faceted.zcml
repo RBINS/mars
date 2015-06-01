@@ -7,10 +7,10 @@
   <include package="eea.facetednavigation"/>
   <include package="eea.facetednavigation" file="meta.zcml"/>
   <faceted:view
-      name="faceted-datatable-items"
+      name="mars-faceted-datatable-items"
       class=".faceted.Search"
       template="datatables-items.pt"
-      title="Faceted items preview in a table"
+      title="Faceted items preview in a table (mars)"
       permission="zope2.View">
   </faceted:view>
   <browser:page
