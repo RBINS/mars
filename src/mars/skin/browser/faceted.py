@@ -22,24 +22,32 @@ from time import time
 def five_minutes():
     return time() // (5 * 60)
 
+
 def fifteen_minutes():
     return time() // (15 * 60)
 
+
 def _render_details_cachekey(method, self, brain):
-    return (brain.getPath(), fifteen_minutes())
+    return (brain.getPath()+ fifteen_minutes())
+
 
 def _render_contents(method, self, *args, **kwargs):
     hs = fifteen_minutes()
     ids = [a for a in self.context.objectIds()]
     ids.sort()
     return (self.context.getPhysicalPath(), ids, hs)
+
+
 def comparecustom(a):
     """
     sort by author and year."""
     return '%s___%s' % (a.getPath(), a.Title)
 
+
 class IFacetedDatatableView(interface.Interface):
     """Marker interface"""
+
+
 class ISummaryView(interface.Interface):
     """Marker interface"""
     def test(a, b, c):
@@ -142,7 +150,7 @@ class SummaryView(BrowserView, ViewMixin):
                 ret = True
         return ret
 
-    @ram.cache(_render_details_cachekey)
+    #@ram.cache(_render_details_cachekey)
     def infosFor(self, it):
         title = it.Title
         path = it.getPath()
@@ -153,7 +161,8 @@ class SummaryView(BrowserView, ViewMixin):
             'type': it.portal_type,
             'url': it.getURL(),
         }
-        return  data
+        return data
+
 
 class IFacetedDatatablecvMacros(ISummaryView):
     """."""
@@ -184,5 +193,4 @@ class CSS(ViewletBase):
 
     def available(self):
         return True
- 
 # vim:set et sts=4 ts=4 tw=80:
