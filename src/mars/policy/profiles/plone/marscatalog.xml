@@ -58,6 +58,9 @@
  <index name="getBPDating" meta_type="FieldIndex">
   <indexed_attr value="getBPDating"/>
  </index>
+ <index name="free_date" meta_type="DateIndex">
+  <property name="index_naive_time_as_local">True</property>
+ </index>
  <index name="getBeginningYear" meta_type="DateIndex">
   <property name="index_naive_time_as_local">True</property>
  </index>
@@ -464,4 +467,5 @@
  <column value="getTechnologyDetails"/>
  <column value="getUsageMarkers"/>
  <column value="publication_year"/>
+ <column value="free_date"/>
 </object>
