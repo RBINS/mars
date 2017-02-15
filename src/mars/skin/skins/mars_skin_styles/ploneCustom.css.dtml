@@ -204,5 +204,10 @@ div.faceted-center-widgets div.faceted-widget{
           
  */
 
+.template-specimen_folder_full_view .item {
+    witdh: 400px;
+    margin: 1em;
+    float: left;
+}
 
 /* Stylesheet for the 'mars.skin' Plone theme */
