@@ -498,7 +498,7 @@
  </object>
  <object name="site_properties" meta_type="Plone Property Sheet">
   <property name="title">Site wide properties</property>
-  <property name="allowAnonymousViewAbout" type="boolean">True</property>
+  <property name="allowAnonymousViewAbout" type="boolean">False</property>
   <property name="localTimeFormat" type="string">%b %d, %Y</property>
   <property name="localLongTimeFormat"
      type="string">%b %d, %Y %I:%M %p</property>
@@ -557,6 +557,7 @@
    <element value="Plone Site"/>
    <element value="TempFolder"/>
    <element value="AliasVocabulary"/>
+   <element value="Discussion Item"/>
    <element value="SimpleVocabulary"/>
    <element value="SimpleVocabularyTerm"/>
    <element value="SortedSimpleVocabulary"/>
