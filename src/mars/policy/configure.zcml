@@ -27,6 +27,7 @@
   <include package="plone.app.dexterity" file="meta.zcml"/>
   <include package="Products.ContentWellPortlets" file="configure.zcml"/>
   <include package="Products.TinyMCE" file="configure.zcml"/>
+  <include package="Products.PloneKeywordManager" file="configure.zcml"/>
   <include package="plone.directives.form" file="configure.zcml"/>
   <include package="plone.directives.form" file="meta.zcml"/>
   <include package="plone.z3cform" file="configure.zcml"/>
