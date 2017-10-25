@@ -1,39 +1,41 @@
 <metadata>
   <version>1005</version>
   <dependencies>
-  <!-- QuickInstalled dependencies -->
-      <dependency>profile-mars.policy:qi</dependency>
-  <!-- GenericSetup dependencies -->
-      <dependency>profile-plone.app.blob:default</dependency>
-      <dependency>profile-Products.TinyMCE:TinyMCE</dependency>
-      <dependency>profile-Products.ContentWellPortlets:default</dependency>
-      <dependency>profile-Products.csvreplicata:default</dependency>
-      <dependency>profile-plone.app.z3cform:default</dependency>
-      <dependency>profile-eea.facetednavigation:default</dependency>
-      <dependency>profile-Products.ATExtensions:default</dependency>
-      <dependency>profile-Products.ATVocabularyManager:default</dependency>
-      <dependency>profile-collective.ckeditor:default</dependency>
-      <dependency>profile-Products.CMFPlomino:default</dependency>
-      <dependency>profile-collective.plonefinder:default</dependency>
-      <dependency>profile-plone.app.dexterity:default</dependency>
-      <dependency>profile-plonetheme.classic:default</dependency>
-      <dependency>profile-plone.app.jquery:default</dependency>
-      <dependency>profile-plone.app.jquerytools:default</dependency>
-      <dependency>profile-collective.quickupload:default</dependency>
-      <dependency>profile-Products.Maps:default</dependency>
-      <dependency>profile-collective.zipfiletransport:default</dependency>
-      <dependency>profile-collective.z3cform.datetimewidget:default</dependency>
-      <dependency>profile-Products.csvreplicata:default</dependency>
-      <dependency>profile-collective.js.jqueryui:default</dependency>
-      <dependency>profile-collective.js.datatables:default</dependency>
-      <dependency>profile-Products.CMFBibliographyAT:default</dependency>
-      <dependency>profile-plone.formwidget.datetime:default</dependency>
-      <dependency>profile-Products.RefBiblioParser:default</dependency>
-      <dependency>profile-collective.bibliocustomviews:default</dependency>
-      <dependency>profile-collective.externalimageeditor:default</dependency>
-      <dependency>profile-Products.PloneKeywordManager:default</dependency>
-      <dependency>profile-collective.z3cform.widgets:default</dependency>
- </dependencies>
+    <!-- QuickInstalled dependencies -->
+    <dependency>profile-mars.policy:qi</dependency>
+    <!-- GenericSetup dependencies -->
+    <dependency>profile-plone.app.blob:default</dependency>
+    <dependency>profile-Products.TinyMCE:TinyMCE</dependency>
+    <dependency>profile-Products.ContentWellPortlets:default</dependency>
+    <dependency>profile-Products.csvreplicata:default</dependency>
+    <dependency>profile-plone.app.z3cform:default</dependency>
+    <dependency>profile-eea.facetednavigation:default</dependency>
+    <dependency>profile-Products.ATExtensions:default</dependency>
+    <dependency>profile-Products.ATVocabularyManager:default</dependency>
+    <dependency>profile-collective.ckeditor:default</dependency>
+    <dependency>profile-Products.CMFPlomino:default</dependency>
+    <dependency>profile-collective.plonefinder:default</dependency>
+    <dependency>profile-plone.app.dexterity:default</dependency>
+    <dependency>profile-plonetheme.classic:default</dependency>
+    <dependency>profile-plone.app.jquery:default</dependency>
+    <dependency>profile-plone.app.jquerytools:default</dependency>
+    <dependency>profile-plone.restapi:default</dependency>
+    <dependency>profile-collective.quickupload:default</dependency>
+    <dependency>profile-Products.Maps:default</dependency>
+    <dependency>profile-collective.zipfiletransport:default</dependency>
+    <dependency>profile-collective.z3cform.datetimewidget:default</dependency>
+    <dependency>profile-Products.csvreplicata:default</dependency>
+    <dependency>profile-collective.js.jqueryui:default</dependency>
+    <dependency>profile-collective.js.datatables:default</dependency>
+    <dependency>profile-Products.CMFBibliographyAT:default</dependency>
+    <dependency>profile-plone.formwidget.datetime:default</dependency>
+    <dependency>profile-Products.RefBiblioParser:default</dependency>
+    <dependency>profile-collective.bibliocustomviews:default</dependency>
+    <dependency>profile-collective.externalimageeditor:default</dependency>
+    <dependency>profile-Products.PloneKeywordManager:default</dependency>
+    <dependency>profile-collective.z3cform.widgets:default</dependency>
+    <dependency>profile-rbins.restapi:default</dependency>
+  </dependencies>
 </metadata>
 
 

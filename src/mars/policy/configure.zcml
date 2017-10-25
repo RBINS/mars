@@ -25,6 +25,7 @@
   <include package="plone.app.z3cform" file="configure.zcml"/>
   <include package="plone.app.dexterity" file="configure.zcml"/>
   <include package="plone.app.dexterity" file="meta.zcml"/>
+  <include package="plone.restapi" file="configure.zcml"/>
   <include package="Products.ContentWellPortlets" file="configure.zcml"/>
   <include package="Products.TinyMCE" file="configure.zcml"/>
   <include package="Products.PloneKeywordManager" file="configure.zcml"/>
@@ -37,6 +38,7 @@
   <include package="marsapp.csvreplicata"/>
   <include package="marsapp.helpers"/>
   <include package="marsapp.policy"/>
+  <include package="rbins.restapi"/>
   <include package="mars.skin" />
   <include file="profiles.zcml"/>
   <utility factory=".app_config.HiddenProducts" name="mars.hiddenproducts"/>
