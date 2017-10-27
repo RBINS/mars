@@ -11,6 +11,7 @@
     <include package=".exportimport" />
     <include package=".browser" />
     <include package=".controlpanel" />
+    <include package=".restapi" />
     <browser:resourceDirectory
         name="marsapp.categories.icons"
         directory="icons"

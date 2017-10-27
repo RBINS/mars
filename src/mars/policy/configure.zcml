@@ -38,6 +38,7 @@
   <include package="marsapp.csvreplicata"/>
   <include package="marsapp.helpers"/>
   <include package="marsapp.policy"/>
+  <include package="plone.app.collection"/>
   <include package="rbins.restapi"/>
   <include package="mars.skin" />
   <include file="profiles.zcml"/>

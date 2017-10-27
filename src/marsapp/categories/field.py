@@ -1,25 +1,19 @@
 #-*- coding: utf-8 -*-
-from zope.component import getUtility
-
 from AccessControl import ClassSecurityInfo
-from Products.CMFCore.utils import getToolByName
 from Products.Archetypes import PloneMessageFactory as _
-#from Products.CMFCore import permissions
-
-#from Products.Archetypes.Field import Image
 from Products.Archetypes import config
 from Products.Archetypes.Field import ReferenceField
-from Products.Archetypes.public import DisplayList
 from Products.Archetypes.Registry import registerField
 from Products.Archetypes.Registry import registerPropertyType
-#from Products.Archetypes.config import TOOL_NAME
-#from Products.Archetypes import config
-
+from Products.Archetypes.public import DisplayList
+from Products.CMFCore.utils import getToolByName
+from container import MarsCategoriesContainer
 from storage import IMarscatsSettingsStorage
 from widget import MarscatWidget
-from container import MarsCategoriesContainer
+from zope.component import getUtility
+from zope.interface import implements
+from .interfaces import IMarsCatField
 
-from marsapp.categories.storage import CAT_CONTAINER
 
 def getTitledPath(obj, startup_folder_url, path=None):
     if path is None:
@@ -32,6 +26,7 @@ def getTitledPath(obj, startup_folder_url, path=None):
 class MarscatField(ReferenceField):
     """ Mars Categories System Field
     """
+    implements(IMarsCatField)
     def __init__(self, *args, **kwargs):
         if not kwargs['relationship']:
             kwargs['relationship'] = 'hasMarsCat%s' % args[0]
@@ -43,6 +38,7 @@ class MarscatField(ReferenceField):
         'default': None,
         'widget': MarscatWidget,
         'allowed_types': ('Mars Category',),
+        'multiValued': True,
         #'allowed_type_column' : 'portal_type',
         #'addable': 1,
         #'destination': None,
@@ -53,7 +49,7 @@ class MarscatField(ReferenceField):
 
     security  = ClassSecurityInfo()
     def _Vocabulary(self, content_instance):
-        """overload 
+        """overload
             Archetypes Products.Archetypes.Field.ReferenceField._Vocabulary to make a restriction on the _path_ for performance gain
             """
         pairs = []
@@ -90,15 +86,15 @@ class MarscatField(ReferenceField):
         abs_path = lambda b, p=portal_base: '%s/%s' % (p, b.getPath())
 
         # modifications
-        sd =  (portal_base + 
-               "/" + 
+        sd =  (portal_base +
+               "/" +
                self.widget.getStartupDirectory(
                    content_instance, self)).replace('//', '/')
 
         for b in brains:
             apath = abs_path(b)
             if apath.startswith(sd):
-                abs_paths.update({apath:b}) 
+                abs_paths.update({apath:b})
         # end modifications
 
         pc_brains = pc(path=abs_paths.keys(), **skw)
@@ -137,7 +133,7 @@ class MarscatField(ReferenceField):
 
         __traceback_info__ = (content_instance, self.getName(), pairs)
 
-        return DisplayList(pairs) 
+        return DisplayList(pairs)
 
     def getStartupDirectory(self, instance):
         storage = getUtility(IMarscatsSettingsStorage)

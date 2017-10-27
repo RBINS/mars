@@ -3,6 +3,7 @@
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="marsapp.content">
+  <include package="plone.app.collection"/>
   <include package="marsapp.categories"/>
   <five:registerPackage package="." initialize=".initialize"/>
   <include package=".browser"/>
