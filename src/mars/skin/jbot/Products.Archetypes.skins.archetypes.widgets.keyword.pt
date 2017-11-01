@@ -100,11 +100,12 @@
 	                                size="14"
 	                                multiple="multiple"
 	                                tal:condition="python:format!='checkbox'"
+																		 tal:define="selected_values python:context.unicodeIntersect(allowedKeywords, value)"
 	                                tal:attributes="id string:${fieldName};
 	                                                name string:${fieldName}_existing_keywords:list;">
 	                                <option value="#" tal:repeat="keyword allowedKeywords"
 	                                    tal:content="keyword" tal:attributes="value keyword;
-	                                    selected python:test(context.unicodeTestIn(keyword, value), 'selected', None)">
+	                                    selected python:test(keyword in selected_values, 'selected', None)">
 	                                    An existing tag
 	                                </option>
 	                            </select>
@@ -127,6 +128,7 @@
 	                            <input type="hidden"
 	                                   value=""
 	                                   tal:condition="not:field/required | nothing"
+																		 tal:define="checked_values python:context.unicodeIntersect(allowedKeywords, value)"
 	                                   tal:attributes="name string:${fieldName}_existing_keywords:default:list" />
 	                            <tal:loop tal:repeat="keyword allowedKeywords"
 	                                      tal:condition="python:format=='checkbox'">
@@ -136,7 +138,7 @@
 	                                        tal:attributes="
 	                                            name string:${fieldName}_existing_keywords:list;
 	                                            id string:${fieldName}_${repeat/keyword/number};
-	                                            checked python:test(context.unicodeTestIn(keyword, value), 'checked', None);
+	                                            checked python:test(keyword in checked_values, 'checked', None);
 	                                            value keyword" />
 	                                    <label
 	                                        tal:content="keyword"
@@ -173,7 +175,7 @@
 	                                    rows="4"
 	                                    tal:attributes="id string:${fieldName}_keywords;
 	                                                    name string:${fieldName}_keywords:lines;"
-	                                    tal:define="subject python:[item for item in value if not context.unicodeTestIn(item,allowedKeywords)]"
+	                                    tal:define="subject python:context.unicodeIntersect(value,allowedKeywords)"
 	                                    tal:content="python:'\n'.join(subject)">
 	                                    A new tag
 	                                </textarea>
