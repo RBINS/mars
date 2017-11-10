@@ -60,28 +60,40 @@
       name="folder_contents_per_type"
       allowed_interface=".view.IFolderContentsButtons"
       template="folder_contents_per_type.pt"
-      permission="zope2.View" />
+      permission="zope2.View"/>
   <browser:page
       for="*"
       layer=".interfaces.IThemeSpecific"
       class=".view.FolderContentsViewUtils"
       name="folder_contents_per_type_utils"
       allowed_interface=".view.IFolderContentsButtons"
-      permission="zope2.View" />
+      permission="zope2.View"/>
   <browser:page
       for="*"
       layer=".interfaces.IThemeSpecific"
       class=".view.FullReindex"
       name="mars_full_reindex"
       allowed_interface=".view.IFullReindex"
-      permission="zope2.View" />
+      permission="zope2.View"/>
   <browser:page
       for="*"
       layer=".interfaces.IThemeSpecific"
       class=".view.ExportUtils"
       name="mars_export_utils"
       allowed_interface=".view.IExportUtils"
-      permission="zope2.View" />
+      permission="zope2.View"/>
 
-  <!-- vim:set ft=xml: -->
+  <browser:viewlet
+      name="collective.tablepage.switchtable"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+      for="collective.tablepage.interfaces.ITablePage"
+      template="switchtable.pt"
+      permission="zope2.View"
+      view="plone.app.layout.globals.interfaces.IViewView"
+  />
+
+  <class class="collective.tablepage.browser.multiple_tables.MultipleTablesView">
+    <implements interface="plone.app.layout.globals.interfaces.IViewView"/>
+  </class>
+
 </configure>

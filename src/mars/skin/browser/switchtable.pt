@@ -1,0 +1,8 @@
+
+<a tal:condition="python:'multiple-tables-view' not in request.URL"
+   tal:attributes="href string:${context/absolute_url}/multiple-tables-view">Switch to multiple tables view
+</a>
+
+<a tal:condition="python:'multiple-tables-view' in request.URL"
+   tal:attributes="href string:${context/absolute_url}">Switch to default view
+</a>
