@@ -9,7 +9,7 @@
       interface=".interfaces.IThemeSpecific"
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
       name="mars.skin"
-    />
+  />
   <!-- Viewlets registration -->
   <!-- Zope 3 browser resources -->
   <!-- Resource directory for images -->
@@ -17,18 +17,18 @@
       name="mars.skin.images"
       directory="images"
       layer=".interfaces.IThemeSpecific"
-    />
+  />
   <!-- Resource directory for stylesheets -->
   <browser:resourceDirectory
       name="mars.skin"
       directory="resources"
       layer=".interfaces.IThemeSpecific"
-    />
+  />
   <browser:resourceDirectory
       name="mars.skin.stylesheets"
       directory="stylesheets"
       layer=".interfaces.IThemeSpecific"
-    />
+  />
   <!-- The related items -->
   <browser:viewlet
       name="plone.belowcontentbody.relateditems"
@@ -37,14 +37,14 @@
       view="plone.app.layout.globals.interfaces.IViewView"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
-    />
+  />
   <browser:viewlet
       name="plone.logo"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.LogoViewlet"
       layer=".interfaces.IThemeSpecific"
       permission="zope2.View"
-    />
+  />
   <browser:page
       layer=".interfaces.IThemeSpecific"
       for="*"
@@ -52,7 +52,7 @@
       class=".view.MarsUtils"
       allowed_interface=".view.IMarsUtils"
       permission="zope2.View"
-    />
+  />
   <browser:page
       for="*"
       layer=".interfaces.IThemeSpecific"

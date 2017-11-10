@@ -9,6 +9,7 @@
   <!-- Load the ZCML configuration for the mars.policy package.-->
   <include package="Products.CMFCore" file="permissions.zcml" />
   <include package="collective.ckeditor"/>
+  <include package="collective.tablepage" file="configure.zcml"/>
   <include package="collective.uploadify"         file="configure.zcml"/>
   <include package="collective.zipfiletransport"  file="configure.zcml"/>
   <include package="collective.js.datatables"     file="configure.zcml"/>

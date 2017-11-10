@@ -35,6 +35,7 @@
     <dependency>profile-Products.PloneKeywordManager:default</dependency>
     <dependency>profile-collective.z3cform.widgets:default</dependency>
     <dependency>profile-rbins.restapi:default</dependency>
+    <dependency>profile-collective.tablepage:default</dependency>
   </dependencies>
 </metadata>
 

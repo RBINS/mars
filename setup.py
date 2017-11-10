@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 import os
 
@@ -8,7 +8,7 @@ setup(name='mars',
       version=version,
       description="",
       long_description=open("README.rst").read() + "\n" +
-      open(os.path.join("docs", "HISTORY.rst")).read(),
+                       open(os.path.join("docs", "HISTORY.rst")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
           "Framework :: Plone",
@@ -24,7 +24,7 @@ setup(name='mars',
       license='GPL',
       namespace_packages=['mars', 'marsapp'],
       packages=find_packages('src'),
-      package_dir = {'': 'src'},
+      package_dir={'': 'src'},
       include_package_data=True,
       zip_safe=False,
       install_requires=[
@@ -37,6 +37,7 @@ setup(name='mars',
           'rbins.restapi',
           'collective.ckeditor',
           'collective.externalimageeditor',
+          'collective.tablepage',
           'collective.js.jqueryui',
           'collective.js.datatables',
           'collective.testcaselayer',
@@ -82,12 +83,12 @@ setup(name='mars',
           'zope.interface',
           'z3c.jbot',
           'zope.testing',
-      ] ,
-      entry_points = {
+      ],
+      entry_points={
           'z3c.autoinclude.plugin': [
               'target = plone',
           ],
       },
       extras_require={'ldap': ['plone.app.ldap'],
-                       'test': ['IPython', 'zope.testing', 'mocker']},
-     )
+                      'test': ['IPython', 'zope.testing', 'mocker']},
+      )
