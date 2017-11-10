@@ -34,7 +34,8 @@
                         format widget/format | string:select;
                         allowRolesToAddKeywords site_props/allowRolesToAddKeywords|nothing;">
                     <div tal:attributes="id string:$fieldName-foldertags;"
-                        class="infolderTagsContainer">
+                         tal:condition="python: not (context.portal_type.endswith('Reference') and hasattr(context, 'Authors'))"
+												 class="infolderTagsContainer">
                            <div tal:condition="allowedKeywords" class="existingInFolderTagsSection">
 	                        <tal:comment tal:replace="nothing">
 	                            dl semantically associates selector name with values
