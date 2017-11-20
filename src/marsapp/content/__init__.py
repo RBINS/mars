@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 #  mars http://www.naturalsciences.be/metamars/products/
 #  Archetypes implementation of the MARS core types based on ATContentTypes
 #  Copyright (c) 2003-2007 MARS development team
@@ -20,17 +20,19 @@
 """
 
 """
-__docformat__ = 'restructuredtext'
+from Products.Archetypes.Widget import LinesWidget
 
+__docformat__ = 'restructuredtext'
 
 from AccessControl import ModuleSecurityInfo
 from zope.i18nmessageid import MessageFactory
 
 from marsapp.categories.category import MarsCategory
 
-from Products.CMFCore.DirectoryView import registerDirectory
+from Products.Archetypes import PloneMessageFactory as _
 from Products.CMFCore.utils import ContentInit
 from Products.ATContentTypes.config import HAS_LINGUA_PLONE
+
 if HAS_LINGUA_PLONE:
     from Products.LinguaPlone.public import process_types
     from Products.LinguaPlone.public import listTypes
@@ -51,12 +53,12 @@ import artefact
 import collection
 import curation
 import excavation
-#import externalfile
+# import externalfile
 import fauna
 import flora
 import hominid
 import institution
-#import multimedia
+# import multimedia
 import people
 import picture
 import site
@@ -64,28 +66,31 @@ import stratigraphy
 import structure
 import pdf
 
-def initialize(context):
+import Products.CMFBibliographyAT.content as CMFBibliographyATContent
+from Products.CMFBibliographyAT.content.base import BaseEntry
 
+
+def initialize(context):
     contentTypes, constructors, ftis = process_types(
         listTypes(PROJECTNAME), PROJECTNAME)
 
     ContentInit(
         PROJECTNAME + ' Content',
-        content_types      = contentTypes,
-        permission         = DEFAULT_ADD_CONTENT_PERMISSION,
-        extra_constructors = constructors,
-        fti                = ftis,
-        ).initialize(context)
+        content_types=contentTypes,
+        permission=DEFAULT_ADD_CONTENT_PERMISSION,
+        extra_constructors=constructors,
+        fti=ftis,
+    ).initialize(context)
 
     for i in range(0, len(contentTypes)):
         klassname = contentTypes[i].__name__
         if not klassname in ADD_CONTENT_PERMISSIONS:
             continue
         context.registerClass(
-            meta_type    = ftis[i]['meta_type'],
-            constructors = (constructors[i],),
-            permission   = ADD_CONTENT_PERMISSIONS[klassname]
-            )
+            meta_type=ftis[i]['meta_type'],
+            constructors=(constructors[i],),
+            permission=ADD_CONTENT_PERMISSIONS[klassname]
+        )
 
     # register custom indexers for relateditems fields
     from zope.component import provideAdapter
@@ -98,19 +103,21 @@ def initialize(context):
     for ct in contentTypes:
         for key in ct.schema.keys():
             field = ct.schema[key]
-            if (IReferenceField.providedBy(field) 
+            if (IReferenceField.providedBy(field)
                 and not key
                 in vocabularies.REFERENCEFIELDS_INDEXES):
                 vocabularies.REFERENCEFIELDS_INDEXES[key] = []
-                if (not field.accessor 
-                    in vocabularies.REFERENCEFIELDS_INDEXES[
+                if (not field.accessor
+                in vocabularies.REFERENCEFIELDS_INDEXES[
                         key]):
                     vocabularies.REFERENCEFIELDS_INDEXES[
                         key].append(
-                            field.accessor
-                        )
+                        field.accessor
+                    )
+
     def make_reindex_related(index_name):
         iname = index_name
+
         def reindex_related(obj, *args, **kwargs):
             catalog = getToolByName(obj, 'reference_catalog')
             inamee = iname
@@ -129,9 +136,9 @@ def initialize(context):
                 item = catalog.lookupObject(sitem)
                 if isinstance(item, MarsCategory):
                     try:
-                        res +=  ' / '.join(item.cats_path())
+                        res += ' / '.join(item.cats_path())
                     except:
-                        pass 
+                        pass
                 else:
                     try:
                         res += ' %s' % item.Title()
@@ -144,13 +151,44 @@ def initialize(context):
                 try:
                     res += ' %s' % item.description
                 except:
-                    pass 
+                    pass
             if not res:
                 res = None
             return res
+
         return reindex_related
+
     for field in vocabularies.REFERENCEFIELDS_INDEXES:
         frn = indexer(IMarsObject)(make_reindex_related(field))
         for accessor in vocabularies.REFERENCEFIELDS_INDEXES[field]:
             provideAdapter(frn, name=accessor)
 
+
+modules = [getattr(CMFBibliographyATContent, c) for c in dir(CMFBibliographyATContent) if not c.startswith('__')]
+for module in modules:
+    # get all bibliography content classes
+    klass = [getattr(module, k) for k in dir(module) if k.endswith('Reference')]
+    klass = [k for k in klass if BaseEntry in k.__bases__]
+    if klass:
+        klass = klass[0]
+    else:
+        continue
+
+    klass.schema.get('subject').widget.helper_js = ('keywordmultiselect.js',)
+    klass.schema.get('keywords').widget = LinesWidget(
+        label=_(u'label_keywords', default=u'Keywords'),
+        description=_(u'help_keywords',
+                      default=u'Categorization of the publications content.'),
+        i18n_domain="cmfbibliographyat",
+    )
+#
+# try:
+#     import Products.PDBDebugMode.pdblogging
+#     import re
+#
+#     Products.PDBDebugMode.pdblogging._mars_old_matchers = Products.PDBDebugMode.pdblogging.ignore_matchers
+#     Products.PDBDebugMode.pdblogging.ignore_matchers = Products.PDBDebugMode.pdblogging._mars_old_matchers + (
+#     re.compile(r"Couldn't load state for").search,)
+# except ImportError:
+#     print("Products.PDBDebugMode.pdblogging not available")
+#     pass
