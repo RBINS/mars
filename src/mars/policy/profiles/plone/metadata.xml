@@ -22,6 +22,7 @@
     <dependency>profile-plone.restapi:default</dependency>
     <dependency>profile-collective.quickupload:default</dependency>
     <dependency>profile-Products.Maps:default</dependency>
+    <dependency>profile-collective.excelexport:default</dependency>
     <dependency>profile-collective.zipfiletransport:default</dependency>
     <dependency>profile-collective.z3cform.datetimewidget:default</dependency>
     <dependency>profile-Products.csvreplicata:default</dependency>
