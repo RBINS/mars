@@ -154,6 +154,12 @@
       <role name="Owner"/>
       <role name="Site Administrator"/>
     </permission>
+    <permission name="Google Analytics: Manage Analytics Reports" acquire="True">
+      <role name="Manager"/>
+    </permission>
+    <permission name="Google Analytics: View Analytics Results" acquire="True">
+      <role name="Manager"/>
+    </permission>
     <permission name="List folder contents" acquire="True">
       <role name="Contributor"/>
       <role name="Editor"/>
@@ -185,6 +191,7 @@
       <role name="Contributor"/>
       <role name="Manager"/>
       <role name="Owner"/>
+      <role name="Site Administrator"/>
     </permission>
     <permission name="Modify portal content" acquire="True">
       <role name="Editor"/>
@@ -195,6 +202,10 @@
       <role name="Editor"/>
       <role name="Manager"/>
       <role name="Owner"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="PloneKeywordManager: Use PloneKeywordManager" acquire="True">
+      <role name="Manager"/>
       <role name="Site Administrator"/>
     </permission>
     <permission name="Portlets: Manage own portlets" acquire="True">
@@ -290,10 +301,67 @@
     <permission name="WebDAV access" acquire="True">
       <role name="Site Administrator"/>
     </permission>
+    <permission name="collective.tablepage: Access Search Configuration" acquire="False">
+      <role name="Editor"/>
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="collective.tablepage: Add TablePage" acquire="False">
+      <role name="Contributor"/>
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="collective.tablepage: Edit Table" acquire="False">
+      <role name="Contributor"/>
+      <role name="Editor"/>
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="collective.tablepage: Manage Label" acquire="False">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="collective.tablepage: Manage Table" acquire="False">
+      <role name="Editor"/>
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="collective.tablepage: Show Search" acquire="False">
+      <role name="Anonymous"/>
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="collective.tablepage: Upload CSV" acquire="False">
+      <role name="Contributor"/>
+      <role name="Editor"/>
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
     <permission name="eea.facetednavigation: Configure faceted" acquire="True">
       <role name="Editor"/>
       <role name="Manager"/>
       <role name="Owner"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="plone.app.collection: Add Collection" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="plone.restapi: Access Plone vocabularies" acquire="True">
+      <role name="Anonymous"/>
+      <role name="Authenticated"/>
+      <role name="Manager"/>
+    </permission>
+    <permission name="plone.restapi: Use REST API" acquire="True">
+      <role name="Anonymous"/>
+      <role name="Authenticated"/>
+      <role name="Manager"/>
+    </permission>
+    <permission name="rbins.masschange" acquire="True">
+      <role name="Editor"/>
+      <role name="Manager"/>
+      <role name="Owner"/>
+      <role name="Site Administrator"/>
     </permission>
   </permissions>
 </rolemap>
