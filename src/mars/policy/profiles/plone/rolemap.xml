@@ -341,7 +341,93 @@
       <role name="Editor"/>
       <role name="Manager"/>
       <role name="Owner"/>
-      <role name="Site Administrator"/>
+    </permission>
+    <permission name="marsapp.content: Add Absolute Dating Analysis" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Analysis" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Artefact" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Artefact Assemblage" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Artefact Individual" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Artefact Reference Sample" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Collection" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Curation" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Excavation" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Fauna Assemblage" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Fauna Individual" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Fauna Reference Sample" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Fauna Remain" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Flora Assemblage" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Flora Individual" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Flora Reference Sample" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Flora Remain" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Hominid Assemblage" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Hominid Individual" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Hominid Reference Sample" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Hominid Remain" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Institution" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add PDF File" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add People" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Reference Sample" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Relative Dating Analysis" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Stratigraphical Layer" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Stratigraphy" acquire="True">
+      <role name="Contributor"/>
+    </permission>
+    <permission name="marsapp.content: Add Structure Assemblage" acquire="True">
+      <role name="Contributor"/>
     </permission>
     <permission name="plone.app.collection: Add Collection" acquire="True">
       <role name="Manager"/>
