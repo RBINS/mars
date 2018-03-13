@@ -1,5 +1,5 @@
 <metadata>
-  <version>1005</version>
+  <version>1020</version>
   <dependencies>
     <!-- QuickInstalled dependencies -->
     <dependency>profile-mars.policy:qi</dependency>

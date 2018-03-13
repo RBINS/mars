@@ -524,4 +524,6 @@ def v1019(context):
     portal_setup.runAllImportStepsFromProfile('profile-plone.app.ldap:ldap')
     log('Upgrade v1019 runned.')
 
-
+def v1020(context):
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal_setup.runImportStepFromProfile(PROFILEID, 'browserlayer', run_dependencies=True)
