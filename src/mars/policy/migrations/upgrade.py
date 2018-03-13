@@ -526,4 +526,4 @@ def v1019(context):
 
 def v1020(context):
     portal_setup = getToolByName(context, 'portal_setup')
-    portal_setup.runImportStepFromProfile(PROFILEID, 'browserlayer', run_dependencies=True)
+    portal_setup.runImportStepFromProfile(PROFILEID, 'rolemap', run_dependencies=True)
