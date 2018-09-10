@@ -1,3 +1,4 @@
+from eea.facetednavigation.browser.app import query
 
 try:
     from Products.ATExtensions.datatype import formattablename
@@ -20,3 +21,6 @@ if HAS_ATEXTENSIONS:
 
 
         formattablename.abbreviate = two_bytes_chars_capable_abbreviate
+
+
+query.DEFAULT_NUM_PER_PAGE = 10000
