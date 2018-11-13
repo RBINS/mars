@@ -1,3 +1,5 @@
+from collective.excelexport.exportables.dexterityfields import TextFieldRenderer as DxTextFieldRenderer
+from collective.excelexport.exportables.archetypesfields import TextFieldRenderer as AtTextFieldRenderer
 from eea.facetednavigation.browser.app import query
 
 try:
@@ -24,3 +26,7 @@ if HAS_ATEXTENSIONS:
 
 
 query.DEFAULT_NUM_PER_PAGE = 10000
+
+AtTextFieldRenderer.truncate_at = 2048
+DxTextFieldRenderer.truncate_at = 2048
+
