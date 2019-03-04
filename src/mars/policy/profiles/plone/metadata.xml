@@ -21,9 +21,11 @@
     <dependency>profile-plone.app.dexterity:default</dependency>
     <dependency>profile-plone.app.jquery:default</dependency>
     <dependency>profile-plone.app.jquerytools:default</dependency>
+    <dependency>profile-plone.app.relationfield:default</dependency>
     <dependency>profile-plone.app.z3cform:default</dependency>
 
     <dependency>profile-plone.formwidget.datetime:default</dependency>
+    <dependency>profile-plone.formwidget.contenttree:default</dependency>
     <dependency>profile-plone.restapi:default</dependency>
 
     <dependency>profile-plonetheme.classic:default</dependency>
