@@ -31,17 +31,7 @@
       description="Mars/Patch Policy"
       directory="profiles/patch"
       provides="Products.GenericSetup.interfaces.EXTENSION"
-    /> 
-  <!--
-  <gs:registerProfile
-      name="z_mars_removepacollection"
-      title="Mars/Remove plone.app.collection"
-      description="Mars/Remove plone.app.collection"
-      directory="profiles/r"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
     />
-  -->
   <gs:registerProfile
       name="z_mars_categories"
       title="Mars/Categories"
@@ -66,7 +56,7 @@
       directory="profiles/institutions"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      /> 
+      />
   <gs:registerProfile
       name="z_mars_mars"
       title="Mars/Collections"
@@ -74,8 +64,8 @@
       directory="profiles/mars"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      /> 
-  <include package=".migrations"/>     
+      />
+  <include package=".migrations"/>
   <genericsetup:importStep
       name="mars_policy_logo"
       title="Mars logo"
@@ -103,21 +93,21 @@
       description="marsCatalog"
       handler="mars.policy.setuphandlers.setupCatalog">
     <depends name="content"/>
-  </genericsetup:importStep>      
+  </genericsetup:importStep>
   <genericsetup:importStep
       name="mars_removepacollection"
       title="mars remove plone.app.collection"
       description=""
       handler="mars.policy.setuphandlers.remove_pacollection">
     <depends name="content"/>
-  </genericsetup:importStep>       
+  </genericsetup:importStep>
   <genericsetup:importStep
       name="form-controller-tool"
       handler="Products.CMFFormController.exportimport.importCMFFormController"
       description="Import form controller tool definitions"
       title="Form Controller Tool">
     <depends name="componentregistry"/>
-  </genericsetup:importStep>  
+  </genericsetup:importStep>
   <genericsetup:importStep
       description="Import MARS Categories settings"
       name="marscats"
@@ -130,7 +120,7 @@
       handler="marsapp.categories.exportimport.storage.exportMarscatsSettingsStorage"
       description="Export MARS Categories settings"
       title="MARS Categories Settings">
-  </genericsetup:exportStep> 
+  </genericsetup:exportStep>
   <genericsetup:importStep
       name="mars_cats_creation"
       title="Categories creation for MARS"
