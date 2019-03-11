@@ -1,0 +1,124 @@
+
+* a.link-plain img,.link-plain:link,.link-plain:visited {
+    border:none;
+}
+
+* a img,:link,:visited {
+    border:none;
+}
+
+/* datatables skinning */
+.dataTables_paginate .fg-button {
+  margin-left: 2px;
+  padding-left:5px;
+  padding-right:5px;
+}
+table.mars-datatable {
+  width:100%;
+}
+
+/* hide field description on view */
+.template-view .formHelp {
+    display: none;
+}
+
+
+/* remove double relateditems box for biblio*/
+.template-bibliography_entry_view fieldset#relatedItemBox {
+  display:none;
+}
+/* related items */
+
+#relatedItemBox  dd,
+#content #relatedItemBox  dd{
+  margin-bottom:0;
+}
+.mars-ref-overlay-ajax  table.group  label{
+  font-size: 80%;
+}
+.mars-ref-overlay-ajax  table.group tr a,
+.mars-ref-overlay-ajax  table.group tr td {
+  height:18px;
+}
+.icons-on .mars-ref-overlay-ajax .contenttype-document,
+.icons-on .mars-ref-overlay-ajax .contenttype-event,
+.icons-on .mars-ref-overlay-ajax .contenttype-folder,
+.icons-on .mars-ref-overlay-ajax .contenttype-link,
+.icons-on .mars-ref-overlay-ajax .contenttype-news-item,
+.icons-on .mars-ref-overlay-ajax .contenttype-plone-site,
+.icons-on .mars-ref-overlay-ajax .contenttype-topic,
+.icons-on .mars-ref-overlay-ajax #plone-contentmenu-factories .contenttype-file,
+.icons-on .mars-ref-overlay-ajax #plone-contentmenu-factories .contenttype-image {
+  line-height:18px;
+}
+#content ul.marsref li,
+#content ul.marsref,
+ul.marsref li,
+ul.marsref {
+  list-style-type:none;
+}
+
+/* component assemblage must be displayyed inline */
+
+ul.marsref.components li {
+  display:inline;
+  float:left;
+  margin-right:5px;
+}
+
+
+/* petite lignes separator sur /edit */
+.template-atct_edit .field{
+  border-top: 1px solid black;
+}
+
+/* widgets inline in center top area of faceted nav */
+.template-facetednavigation_view .documentByLine {
+  display:none;
+}
+.template-facetednavigation_view #faceted-results div.eea-preview-items,
+.template-facetednavigation_view #faceted-results dt,
+.template-facetednavigation_view #faceted-results dd{
+  display:inline;
+}
+.template-facetednavigation_view #faceted-results dd:before {
+  content: "—";
+}
+.template-facetednavigation_view #faceted-results dd {
+  margin-left:5px;
+}
+
+div.faceted-center-widgets div.faceted-widget{
+  float:left;
+  width:295px;
+}
+#center-top-area { clear:both; }
+#faceted-results { clear:both; }
+#faceted-results .listingBar {
+  display: block;
+  clear: left;
+}
+
+
+/* no up one level */
+.template-folder_contents a.link-parent {display:none;}
+
+.faceted-form #center-content-area {
+  margin-right: 5px;
+}
+#faceted-right-column .faceted-right-widgets,
+#faceted-form #right-area,
+#faceted-right-column .faceted-widget,
+#faceted-right-column {
+  clear:both;
+}
+#faceted-form{
+}
+#faceted-form #right-area {
+}
+
+.template-specimen_folder_full_view .item {
+    witdh: 400px;
+    margin: 1em;
+    float: left;
+}
