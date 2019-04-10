@@ -37,6 +37,7 @@
     <dependency>profile-collective.plonefinder:default</dependency>
     <dependency>profile-collective.quickupload:default</dependency>
     <dependency>profile-collective.tablepage:default</dependency>
+    <dependency>profile-collective.taxonomy:default</dependency>
     <dependency>profile-collective.zipfiletransport:default</dependency>
     <dependency>profile-collective.z3cform.datetimewidget:default</dependency>
     <dependency>profile-collective.z3cform.widgets:default</dependency>
