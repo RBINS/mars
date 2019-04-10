@@ -122,3 +122,10 @@ div.faceted-center-widgets div.faceted-widget{
     margin: 1em;
     float: left;
 }
+
+@media print {
+  .field { margin-top: 12px; }
+  .field label {
+    font-weight: bold;
+  }
+}
