@@ -391,6 +391,7 @@
   <indexed_attr value="publication_year"/>
  </index>
  <column value="Authors"/>
+ <column value="Contributors"/>
  <column value="IGNumber"/>
  <column value="Source"/>
  <column value="bAuthorsList"/>
