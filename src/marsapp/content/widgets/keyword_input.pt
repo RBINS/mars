@@ -1,0 +1,166 @@
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+     tal:omit-tag=""
+     i18n:domain="plone">
+<tal:define
+    define="contentKeywords view/value;
+          value view/value;
+          fieldName python:view.name.replace('.', '-');
+          fieldId view/id;
+          marsutils nocall:context/@@marsutils;
+          allowedKeywords python: context.collectKeywords(fieldName, 'Subject');
+          infolderKeywords python: marsutils.infolder_keywords(field='Subject');
+          site_props context/portal_properties/site_properties|nothing;
+          format widget/format | string:select;">
+  <style type="text/css" media="all"><!-- @import url(keywordwidget.css); --></style>
+  <div tal:attributes="id string:$fieldName-foldertags;"
+        class="infolderTagsContainer">
+    <div tal:condition="allowedKeywords" class="existingInFolderTagsSection">
+      <tal:comment tal:replace="nothing">
+        dl semantically associates selector name with values
+      </tal:comment>
+      <dl class="existingTags">
+        <label tal:attributes="for fieldName">
+          <dt id="existingTagsTitle">
+            <span i18n:translate="">
+              Select from existing tags in folder.
+            </span>
+          </dt>
+        </label>
+        <div class="visualClear"><!-- --></div>
+        <select id="predefined_subjects_in_folder"
+                name="predefined_subjects:list"
+                size="14"
+                multiple="multiple"
+             tal:condition="python:format!='checkbox'"
+             tal:attributes="id string:${fieldName}_in_folder;
+            name string:${fieldName}_existing_keywords:list;">
+          <option value="#"
+               tal:repeat="keyword infolderKeywords"
+               tal:content="keyword"
+               tal:attributes="value keyword;
+              selected python:context.unicodeTestIn(keyword, value) and 'selected' or None">
+            An existing tag
+          </option>
+        </select>
+      </dl>
+    </div>
+    <div class="visualClear"><!-- --></div>
+  </div>
+  <div tal:attributes="id string:$fieldId-tags;"
+      class="tagsContainer">
+      <div tal:condition="allowedKeywords" class="existingTagsSection">
+    <tal:comment tal:replace="nothing">
+      dl semantically associates selector name with values
+    </tal:comment>
+    <dl class="existingTags">
+      <label tal:attributes="for fieldName">
+        <dt id="existingTagsTitle">
+          <span i18n:translate="label_select_existing_tags">
+              Select from existing tags.
+          </span>
+        </dt>
+        <span class="existingTagsHelp" class="formHelp" i18n:translate="label_existingTagsHelp">
+	                                    Use Control/Command/Shift keys to select multiple tags.
+	                                </span>
+        <tal:comment tal:replace="nothing">
+          Type-to-skip functionality with javascript enabled
+          could be described as
+          "Hover and type the first letter to skip through tags."
+          However, on touch-driven devices, vertical hover typically
+          scrolls the page, so horizontal hover is necessary to enable this.
+          Alternatively, clicking any of the tags also enables type-to-skip.
+          So the help could technically be extended to handle this special case
+          as "Hover or click and type the first letter to skip through tags.",
+          but I think this would be confusing to the majority of users.
+          The decision at this point is to not try to explain any of this on the page.
+        </tal:comment>
+      </label>
+      <div class="visualClear"><!-- --></div>
+      <select id="predefined_subjects"
+              name="predefined_subjects:list"
+              size="14"
+              multiple="multiple"
+           tal:condition="python:format!='checkbox'"
+           tal:define="selected_values python:context.unicodeIntersect(allowedKeywords, value)"
+           tal:attributes="id string:predefined-${fieldId};
+              name string:${fieldName}_existing_keywords:list;">
+        <option value="#" tal:repeat="keyword python:context.unicodeExclude(allowedKeywords, infolderKeywords)"
+             tal:content="keyword" tal:attributes="value keyword;
+            selected python:keyword in selected_values and 'selected' or None">
+          An existing tag
+        </option>
+      </select>
+      <tal:comment tal:replace="nothing">
+        These spans are hidden by css, and used by the JavaScript called below.
+      </tal:comment>
+      <span class="noTagsSelected" i18n:translate="label_noTagsSelected">No tags currently selected.</span>
+      <span class="oneOrMoreTagsSelected" i18n:translate="label_oneOrMoreTagsSelected">% tags currently selected.</span>
+      <tal:comment tal:replace="nothing">
+        Call js to modify this widget with both a scrollbar and checkboxes.
+        There may be a better place to put this js call;
+        examples exist in others' widget.py and js files,
+        but having it here covers cases where some but not all select elements
+        call js to be modified.
+        Todo: The #subject should eventually refer to the template variable.
+      </tal:comment>
+      <script type="text/javascript"
+           tal:content="string:(function($){$(document).ready( function() {$('#predefined-${fieldId}').multiSelect();});})(jQuery)">
+      </script>
+      <input type="hidden"
+             value=""
+           tal:condition="not:field/required | nothing"
+           tal:attributes="name string:${fieldId}_existing_keywords:default:list" />
+      <tal:loop tal:repeat="keyword python:context.unicodeExclude(allowedKeywords, infolderKeywords)"
+           tal:condition="python:format=='checkbox'">
+        <div class="ArchetypesKeywordValue" id=""
+             tal:attributes="id string:archetypes-value-${fieldName}_${repeat/keyword/number}">
+          <input class="blurrable" type="checkbox"
+               tal:attributes="
+                  name string:${fieldId}_existing_keywords:list;
+              id string:${fieldName}_${repeat/keyword/number};
+              checked python:keyword in value and 'checked' or None;
+              value keyword" />
+          <label
+               tal:content="keyword"
+               tal:attributes="for string:${fieldName}_${repeat/keyword/number}">
+            An existing tag
+          </label>
+        </div>
+      </tal:loop>
+    </dl>
+    <dl class="selectedTagsSection">
+      <dt class="selectedTagsHeading" class="formHelp"></dt>
+      <dd class="selectedTags"></dd>
+    </dl>
+    <div class="visualClear"><!-- --></div>
+  </div>
+
+    <tal:condition
+        condition="view/allowed_to_add_keyword">
+      <dl class="newTagsSection">
+        <label for="subject_keywords">
+          <dt class="newTagsTitle">
+            <span i18n:translate="label_create_new_tags">
+                Create and apply new tags.
+            </span>
+          </dt>
+          <span class="newTagsHelp formHelp" i18n:translate="label_newTagsHelp">
+	                                    Enter one tag per line, multiple words allowed.
+	                                </span>
+        </label>
+        <br />
+        <dd class="newTags">
+          <textarea
+              id="entered_subjects"
+              name="subject:lines"
+              rows="4"
+               tal:attributes="id string:${fieldName}_keywords;
+              name string:${fieldName}_keywords:lines;"></textarea>
+        </dd>
+      </dl>
+    </tal:condition>
+  </div>
+</tal:define>
+</html>

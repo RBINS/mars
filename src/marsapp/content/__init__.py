@@ -174,7 +174,7 @@ for module in modules:
     else:
         continue
 
-    klass.schema.get('subject').widget.helper_js = ('keywordmultiselect.js',)
+    # klass.schema.get('subject').widget.helper_js = ('keywordmultiselect.js',)
     klass.schema.get('keywords').widget = LinesWidget(
         label=_(u'label_keywords', default=u'Keywords'),
         description=_(u'help_keywords',
