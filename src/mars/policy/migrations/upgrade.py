@@ -1,13 +1,13 @@
-
 # -*- coding: utf-8 -*-
 
-import os, sys
-from Testing.makerequest import makerequest
+import os
 from StringIO import StringIO
+
 import pkg_resources
-from zope.component import getUtility
-from plone.registry.interfaces import IRegistry
+from Testing.makerequest import makerequest
 from collective.externalimageeditor import interfaces as eie
+from plone.registry.interfaces import IRegistry
+from zope.component import getUtility
 
 try:
     from Products.CMFPlone.migrations import migration_util
@@ -16,8 +16,6 @@ except:
     from plone.app.upgrade import utils as migration_util
 
 from Products.CMFCore.utils import getToolByName
-from Products.ATContentTypes.interface.image import IATImage
-from Products.ATContentTypes.content.image import ATImage
 import transaction
 
 from Products.CMFPlone.utils import _createObjectByType
@@ -36,13 +34,16 @@ TPROFILEIDS = 'mars.policy:default'
 TPROFILEID = 'profile-%s' % PROFILEIDS
 root = pkg_resources.resource_filename('mars.policy', '/')
 
+
 def log(message, level='info'):
     logger = logging.getLogger('%s.upgrades' % PRODUCT)
     getattr(logger, level)(message)
 
+
 def commit(context):
     transaction.commit()
     context._p_jar.sync()
+
 
 def quickinstall_addons(context, install=None, uninstall=None, upgrades=None):
     qi = getToolByName(context, 'portal_quickinstaller')
@@ -112,11 +113,13 @@ def css_upgrade(portal_setup):
     transaction.commit()
     log('Css upgraded')
 
+
 def js_upgrade(portal_setup):
     portal = site = portal_setup.aq_parent
     portal_setup.runImportStepFromProfile(PROFILEID, 'jsregistry', run_dependencies=False)
     transaction.commit()
     log('Js upgraded')
+
 
 def recook_resources(portal_setup):
     portal = site = portal_setup.aq_parent
@@ -126,6 +129,7 @@ def recook_resources(portal_setup):
     cssregistry.cookResources()
     transaction.commit()
     log('Recooked resources (js/css)')
+
 
 def upgrade_profile(context, profile_id, steps=None):
     """
@@ -154,6 +158,7 @@ def upgrade_profile(context, profile_id, steps=None):
         })
     portal_setup.manage_doUpgrades(fr)
 
+
 def upgrade_plone(portal_setup):
     """
     """
@@ -168,6 +173,7 @@ def upgrade_plone(portal_setup):
     pm = portal.portal_migration
     report = pm.upgrade(dry_run=False)
     return report
+
 
 def v1000(portal_setup):
     """
@@ -194,6 +200,7 @@ def v1000(portal_setup):
     transaction.commit()
     log('Upgrade v1000 runned.')
 
+
 def v1003(portal_setup):
     """
     """
@@ -203,6 +210,7 @@ def v1003(portal_setup):
     report = pm.upgrade(dry_run=False)
     transaction.commit()
     log('Upgrade v1003 runned.')
+
 
 def v1004(portal_setup):
     """
@@ -217,6 +225,7 @@ def v1004(portal_setup):
 
     transaction.commit()
     log('Upgrade v1004 runned.')
+
 
 def v1005(portal_setup):
     """
@@ -268,6 +277,7 @@ def constrain_mars(portal):
         mars.setImmediatelyAddableTypes(
             ('Collection', 'Folder', 'Topic')
         )
+
 
 def v1006(portal_setup):
     """
@@ -357,6 +367,7 @@ def v1007(context):
     collections.setImmediatelyAddableTypes(tps)
     log('Upgrade v1007 runned.')
 
+
 def v1008(context):
     purl = getToolByName(context, 'portal_url')
     portal_setup = getToolByName(context, 'portal_setup')
@@ -373,6 +384,7 @@ def v1008(context):
             PROFILEID, step, run_dependencies=False)
     recook_resources(portal_setup)
     log('Upgrade v1008 runned.')
+
 
 def v1009(context):
     purl = getToolByName(context, 'portal_url')
@@ -391,6 +403,7 @@ def v1009(context):
     recook_resources(portal_setup)
     log('Upgrade v1009 runned.')
 
+
 def configure_eie(context):
     keyfile = os.path.join(root, 'aviary.txt')
     registry = getUtility(IRegistry)
@@ -404,6 +417,7 @@ def configure_eie(context):
     settings.has_pixlr = True
     settings.aviary_key = key
     settings.aviary_secret = secret
+
 
 def v1010(context):
     purl = getToolByName(context, 'portal_url')
@@ -419,10 +433,11 @@ def v1010(context):
         portal_setup.runImportStepFromProfile(
             PROFILEID, step, run_dependencies=False)
     portal_setup.runAllImportStepsFromProfile(
-    'profile-collective.externalimageeditor:default', ignore_dependencies=True)
+     'profile-collective.externalimageeditor:default', ignore_dependencies=True)
     configure_eie(portal)
     recook_resources(portal_setup)
     log('Upgrade v1010 runned.')
+
 
 def v1011(context):
     purl = getToolByName(context, 'portal_url')
@@ -439,6 +454,7 @@ def v1011(context):
             PROFILEID, step, run_dependencies=False)
     recook_resources(portal_setup)
     log('Upgrade v1011 runned.')
+
 
 def v1012(context):
     purl = getToolByName(context, 'portal_url')
@@ -459,6 +475,7 @@ def v1012(context):
     recook_resources(portal_setup)
     log('Upgrade v1012 runned.')
 
+
 def v1013(context):
     purl = getToolByName(context, 'portal_url')
     portal_setup = getToolByName(context, 'portal_setup')
@@ -476,13 +493,16 @@ def v1013(context):
     recook_resources(portal_setup)
     log('Upgrade v1013 runned.')
 
+
 def v1014(context):
     upgrade_plone(context)
     log('Upgrade v1014 runned.')
 
+
 def v1015(context):
     upgrade_plone(context)
     log('Upgrade v1015 runned.')
+
 
 def v1016(context):
     quickinstall_addons(
@@ -507,10 +527,12 @@ def v1016(context):
         REQUIRED_TRANSFORM)
     log('Upgrade v1016 runned.')
 
+
 def v1017(context):
     portal_setup = getToolByName(context, 'portal_setup')
     portal_setup.runImportStepFromProfile(PROFILEID, 'browserlayer', run_dependencies=True)
     log('Upgrade v1017 runned.')
+
 
 def v1018(context):
     portal_setup = getToolByName(context, 'portal_setup')
@@ -519,11 +541,19 @@ def v1018(context):
     portal_setup.runImportStepFromProfile(PROFILEID, 'actions', run_dependencies=True)
     log('Upgrade v1018 runned.')
 
+
 def v1019(context):
     portal_setup = getToolByName(context, 'portal_setup')
     portal_setup.runAllImportStepsFromProfile('profile-plone.app.ldap:ldap')
     log('Upgrade v1019 runned.')
 
+
 def v1020(context):
     portal_setup = getToolByName(context, 'portal_setup')
     portal_setup.runImportStepFromProfile(PROFILEID, 'rolemap', run_dependencies=True)
+
+
+def v1021(context):
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal_setup.runImportStepFromProfile('profile-mars.policy:default', 'jsregistry', run_dependencies=False)
+    recook_resources(context)
