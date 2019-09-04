@@ -43,6 +43,7 @@
     <dependency>profile-collective.z3cform.widgets:default</dependency>
 
     <dependency>profile-rbins.restapi:default</dependency>
+    <dependency>profile-rbins_masschange:default</dependency>
 
     <!-- QuickInstalled dependencies -->
     <dependency>profile-mars.policy:qi</dependency>

@@ -42,6 +42,7 @@
   <include package="marsapp.policy"/>
   <include package="plone.app.collection"/>
   <include package="rbins.restapi"/>
+  <include package="rbins_masschange"/>
   <include package="mars.skin" />
   <include file="profiles.zcml"/>
   <utility factory=".app_config.HiddenProducts" name="mars.hiddenproducts"/>
