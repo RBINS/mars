@@ -1,8 +1,5 @@
-<html
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:tal="http://xml.zope.org/namespaces/tal"
-     tal:omit-tag=""
-     i18n:domain="plone">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:tal="http://xml.zope.org/namespaces/tal"
+     tal:omit-tag="" i18n:domain="plone">
 <tal:define
     define="contentKeywords view/value;
           value view/value;
@@ -14,12 +11,10 @@
           site_props context/portal_properties/site_properties|nothing;
           format widget/format | string:select;">
   <style type="text/css" media="all"><!-- @import url(keywordwidget.css); --></style>
-  <div tal:attributes="id string:$fieldName-foldertags;"
-        class="infolderTagsContainer">
-    <div tal:condition="allowedKeywords" class="existingInFolderTagsSection">
-      <tal:comment tal:replace="nothing">
-        dl semantically associates selector name with values
-      </tal:comment>
+  <div class="tagsContainer"
+       tal:attributes="id string:$fieldName-foldertags">
+      <div tal:condition="allowedKeywords"
+      class="existingTagsSection">
       <dl class="existingTags">
         <label tal:attributes="for fieldName">
           <dt id="existingTagsTitle">
@@ -34,8 +29,8 @@
                 size="14"
                 multiple="multiple"
              tal:condition="python:format!='checkbox'"
-             tal:attributes="id string:${fieldName}_in_folder;
-            name string:${fieldName}_existing_keywords:list;">
+             tal:attributes="id string:predefined-in-folder-${fieldId};
+                             name string:${fieldName}_existing_keywords:list">
           <option value="#"
                tal:repeat="keyword infolderKeywords"
                tal:content="keyword"
@@ -44,7 +39,43 @@
             An existing tag
           </option>
         </select>
+        <span
+            class="noTagsSelected"
+             i18n:translate="label_noTagsSelected"
+        >No tags currently selected.</span>
+        <span
+            class="oneOrMoreTagsSelected"
+             i18n:translate="label_oneOrMoreTagsSelected"
+        >% tags currently selected.</span>
+        <script type="text/javascript"
+             tal:content="string:(function($){$(document).ready( function() {$('#predefined-in-folder-${fieldId}').multiSelect();});})(jQuery)">
+        </script>
+        <input type="hidden"
+               value=""
+             tal:condition="not:field/required | nothing"
+             tal:attributes="name string:${fieldId}_existing_keywords:default:list" />
+        <tal:loop tal:repeat="keyword inFolderKeywords"
+             tal:condition="python:format=='checkbox'">
+          <div class="ArchetypesKeywordValue" id=""
+               tal:attributes="id string:archetypes-value-${fieldName}_${repeat/keyword/number}">
+            <input class="blurrable" type="checkbox"
+                 tal:attributes="
+                    name string:${fieldId}_existing_keywords:list;
+                id string:${fieldName}_${repeat/keyword/number};
+                checked python:keyword in value and 'checked' or None;
+                value keyword" />
+            <label
+                 tal:content="keyword"
+                 tal:attributes="for string:${fieldName}_${repeat/keyword/number}">
+              An existing tag
+            </label>
+          </div>
+        </tal:loop>
       </dl>
+    <dl class="selectedTagsSection">
+      <dt class="selectedTagsHeading" class="formHelp"></dt>
+      <dd class="selectedTags"></dd>
+    </dl>
     </div>
     <div class="visualClear"><!-- --></div>
   </div>
@@ -86,25 +117,17 @@
            tal:define="selected_values python:context.unicodeIntersect(allowedKeywords, value)"
            tal:attributes="id string:predefined-${fieldId};
               name string:${fieldName}_existing_keywords:list;">
-        <option value="#" tal:repeat="keyword python:context.unicodeExclude(allowedKeywords, infolderKeywords)"
-             tal:content="keyword" tal:attributes="value keyword;
-            selected python:keyword in selected_values and 'selected' or None">
+        <option
+             tal:repeat="keyword python:context.unicodeExclude(allowedKeywords, infolderKeywords)"
+             tal:content="keyword"
+             tal:attributes="value keyword;
+                selected python:keyword in selected_values and 'selected' or None">
           An existing tag
         </option>
       </select>
-      <tal:comment tal:replace="nothing">
-        These spans are hidden by css, and used by the JavaScript called below.
-      </tal:comment>
+
       <span class="noTagsSelected" i18n:translate="label_noTagsSelected">No tags currently selected.</span>
       <span class="oneOrMoreTagsSelected" i18n:translate="label_oneOrMoreTagsSelected">% tags currently selected.</span>
-      <tal:comment tal:replace="nothing">
-        Call js to modify this widget with both a scrollbar and checkboxes.
-        There may be a better place to put this js call;
-        examples exist in others' widget.py and js files,
-        but having it here covers cases where some but not all select elements
-        call js to be modified.
-        Todo: The #subject should eventually refer to the template variable.
-      </tal:comment>
       <script type="text/javascript"
            tal:content="string:(function($){$(document).ready( function() {$('#predefined-${fieldId}').multiSelect();});})(jQuery)">
       </script>
