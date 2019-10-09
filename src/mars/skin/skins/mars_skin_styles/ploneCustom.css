@@ -129,6 +129,11 @@ div.faceted-center-widgets div.faceted-widget{
   }
 }
 
+/* hide search for anonymous */
+.userrole-anonymous #portal-searchbox {
+  display: none;
+}
+
 #portal-siteactions li {
     vertical-align: top;
 }
