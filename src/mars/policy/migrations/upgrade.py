@@ -557,3 +557,8 @@ def v1021(context):
     portal_setup = getToolByName(context, 'portal_setup')
     portal_setup.runImportStepFromProfile('profile-mars.policy:default', 'jsregistry', run_dependencies=False)
     recook_resources(context)
+
+
+def v1022(context):
+    portal_setup = getToolByName(context, 'portal_setup')
+    portal_setup.runImportStepFromProfile('profile-mars.policy:z_mars_plone', 'viewlets', run_dependencies=False)

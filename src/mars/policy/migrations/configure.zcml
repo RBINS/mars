@@ -1,9 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
-    xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="mars.policy">
   <include package=".v11"/>
   <include package=".v12"/>
@@ -85,5 +82,11 @@
   <genericsetup:upgradeStep source="1018" destination="1019" handler=".upgrade.v1019" title="1019" profile="mars.policy:default" description="" />
   <genericsetup:upgradeStep source="1019" destination="1020" handler=".upgrade.v1020" title="1020" profile="mars.policy:default" description="" />
   <genericsetup:upgradeStep source="1020" destination="1021" handler=".upgrade.v1021" title="1021" profile="mars.policy:default" description="" />
-  <!-- vim:set ft=xml: -->
+  <genericsetup:upgradeStep
+      source="1021" destination="1022"
+      title="Remove global sections"
+      description=""
+      handler=".upgrade.v1022"
+      profile="mars.policy:default"
+  />
 </configure>

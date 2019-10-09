@@ -15,4 +15,7 @@
  <hidden manager="plone.abovecontentbody" skinname="mars.skin">
   <viewlet name="marsapp.schemata"/>
  </hidden>
+ <hidden manager="plone.portalheader" skinname="mars.skin">
+  <viewlet name="plone.global_sections"/>
+ </hidden>
 </object>
