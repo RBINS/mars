@@ -118,7 +118,6 @@ div.faceted-center-widgets div.faceted-widget{
 }
 
 .template-specimen_folder_full_view .item {
-    witdh: 400px;
     margin: 1em;
     float: left;
 }
@@ -128,4 +127,20 @@ div.faceted-center-widgets div.faceted-widget{
   .field label {
     font-weight: bold;
   }
+}
+
+#portal-siteactions li {
+    vertical-align: top;
+}
+
+#portal-siteactions #siteaction-plone-link a {
+	background: url("logo.png") no-repeat;
+    background-size: contain;
+    color: transparent;
+    min-width: 55px;
+    min-height: 14px;
+    display: inline-block;
+}
+#portal-siteactions #siteaction-plone-link a:hover {
+  color: transparent;
 }

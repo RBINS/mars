@@ -75,6 +75,16 @@
  </object>
  <object name="site_actions" meta_type="CMF Action Category">
   <property name="title"></property>
+  <object name="plone-link" meta_type="CMF Action">
+   <property name="title">Plone</property>
+   <property name="description"></property>
+   <property name="url_expr">string:https://www.plone.org</property>
+   <property name="link_target">_new</property>
+   <property name="icon_expr">string:logo.png</property>
+   <property name="available_expr"></property>
+   <property name="permissions"/>
+   <property name="visible">True</property>
+  </object>
   <object name="sitemap" meta_type="CMF Action" i18n:domain="plone">
    <property name="title" i18n:translate="">Site Map</property>
    <property name="description" i18n:translate=""></property>

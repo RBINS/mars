@@ -11,6 +11,7 @@
   </hidden>
  <hidden manager="plone.portalfooter" skinname="mars.skin">
   <viewlet name="plone.footer"/>
+  <viewlet name="plone.colophon"/>
  </hidden>
  <hidden manager="plone.abovecontentbody" skinname="mars.skin">
   <viewlet name="marsapp.schemata"/>
