@@ -562,3 +562,4 @@ def v1021(context):
 def v1022(context):
     portal_setup = getToolByName(context, 'portal_setup')
     portal_setup.runImportStepFromProfile('profile-mars.policy:z_mars_plone', 'viewlets', run_dependencies=False)
+    portal_setup.runImportStepFromProfile('profile-mars.policy:z_mars_plone', 'actions', run_dependencies=False)
