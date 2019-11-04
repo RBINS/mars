@@ -32,7 +32,8 @@ class KeywordWidget(TokenInputWidget):
             return default
 
         existing_keywords = (n.strip() for n in request.get(existing_keywords_name, default or ()) if n.strip())
-        keywords = (n.strip() for n in request.get(keywords_name, default or ()) if n.strip())
+        val = request.get(keywords_name, (default if default != NO_VALUE else ()) or ())
+        keywords = (n.strip() for n in val if n.strip())
         return "\n".join((sorted(set(existing_keywords).union(keywords))))
 
     def update(self):
