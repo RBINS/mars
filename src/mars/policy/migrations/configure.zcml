@@ -89,4 +89,11 @@
       handler=".upgrade.v1022"
       profile="mars.policy:default"
   />
+  <genericsetup:upgradeStep
+      source="1022" destination="1023"
+      title="Install "
+      description=""
+      handler=".upgrade.v1023"
+      profile="mars.policy:default"
+  />
 </configure>

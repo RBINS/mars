@@ -24,6 +24,8 @@ from collective.ckeditor.setuphandlers import (
     DOCUMENT_DEFAULT_OUTPUT_TYPE,
     REQUIRED_TRANSFORM)
 
+from ecreall.helpers.upgrade.interfaces import IUpgradeTool
+
 import logging
 
 log = logging.getLogger('mars migrations')
@@ -564,3 +566,9 @@ def v1022(context):
     portal_setup.runImportStepFromProfile('profile-mars.policy:z_mars_plone', 'viewlets', run_dependencies=False)
     portal_setup.runImportStepFromProfile('profile-mars.policy:z_mars_plone', 'actions', run_dependencies=False)
     recook_resources(context)
+
+
+def v1023(context):
+    tool = IUpgradeTool(context)
+    tool.installProduct('Products.PloneFormGen')
+    tool.installProduct('collective.pfg.dexterity')

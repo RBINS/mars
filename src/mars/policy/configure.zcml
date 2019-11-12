@@ -8,19 +8,22 @@
   <five:registerPackage package="." initialize=".policy.initialize" />
   <!-- Load the ZCML configuration for the mars.policy package.-->
   <include package="Products.CMFCore" file="permissions.zcml" />
+  <include package="Products.PloneFormGen" file="configure.zcml"/>
   <include package="collective.ckeditor"/>
   <include package="collective.tablepage" file="configure.zcml"/>
   <include package="collective.taxonomy" file="configure.zcml"/>
-  <include package="collective.uploadify"         file="configure.zcml"/>
-  <include package="collective.zipfiletransport"  file="configure.zcml"/>
-  <include package="collective.js.datatables"     file="configure.zcml"/>
-  <include package="bibliograph.core"             file="configure.zcml"/>
-  <include package="bibliograph.parsing"          file="configure.zcml"/>
-  <include package="bibliograph.rendering"        file="configure.zcml"/>
-  <include package="Products.Maps"                file="configure.zcml"/>
-  <include package="Products.CMFBibliographyAT"   file="configure.zcml"/>
-  <include package="plone.formwidget.datetime"    file="configure.zcml"/>
-  <include package="eea.facetednavigation"        file="configure.zcml"/>
+  <include package="collective.uploadify" file="configure.zcml"/>
+  <include package="collective.pfg.dexterity" file="configure.zcml"/>
+  <include package="collective.zipfiletransport" file="configure.zcml"/>
+  <include package="collective.js.datatables" file="configure.zcml"/>
+  <include package="bibliograph.core" file="configure.zcml"/>
+  <include package="bibliograph.parsing" file="configure.zcml"/>
+  <include package="bibliograph.rendering" file="configure.zcml"/>
+  <include package="Products.Maps" file="configure.zcml"/>
+  <include package="Products.CMFBibliographyAT" file="configure.zcml"/>
+  <include package="plone.formwidget.datetime" file="configure.zcml"/>
+  <include package="ecreall.helpers.upgrade" file="configure.zcml"/>
+  <include package="eea.facetednavigation" file="configure.zcml"/>
   <include package="eea.facetednavigation" file="meta.zcml"/>
   <include package="five.grok" file="configure.zcml"/>
   <include package="plone.app.blob" file="configure.zcml"/>
@@ -75,6 +78,6 @@
   <five:implements
             class="marsapp.content.artefact.MarsArtefactReferenceSample"
             interface="Products.csvreplicata.interfaces.ICSVReplicable"
-        />
+  />
 <!-- vim:set ft=xml: -->
 </configure>

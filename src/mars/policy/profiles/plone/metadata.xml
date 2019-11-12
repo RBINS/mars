@@ -1,5 +1,5 @@
 <metadata>
-  <version>1020</version>
+  <version>1023</version>
   <dependencies>
     <!-- GenericSetup dependencies -->
     <dependency>profile-Products.ATExtensions:default</dependency>
@@ -9,6 +9,7 @@
     <dependency>profile-Products.ContentWellPortlets:default</dependency>
     <dependency>profile-Products.Maps:default</dependency>
     <dependency>profile-Products.PloneKeywordManager:default</dependency>
+    <dependency>profile-Products.PloneFormGen:default</dependency>
     <dependency>profile-Products.RefBiblioParser:default</dependency>
     <dependency>profile-Products.TinyMCE:TinyMCE</dependency>
     <dependency>profile-Products.csvreplicata:default</dependency>
