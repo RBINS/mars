@@ -509,7 +509,6 @@
   <property name="available_editors" type="lines">
    <element value="None"/>
    <element value="TinyMCE"/>
-   <element value="Kupu"/>
    <element value="CKeditor"/>
   </property>
   <property name="default_editor" type="string">CKeditor</property>
