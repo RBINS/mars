@@ -50,6 +50,7 @@
   <include file="profiles.zcml"/>
   <utility factory=".app_config.HiddenProducts" name="mars.hiddenproducts"/>
   <utility factory=".app_config.HiddenProfiles" name="mars.hiddenprofiles"/>
+  <adapter name="relateditems_fullpath" factory=".catalog.relateditems_fullpath"/>
   <adapter name="free_date" factory=".catalog.AFreedate" />
   <adapter name="free_date" factory=".catalog.BFreedate" />
   <!-- hide some Zipfiletranport buttons -->
