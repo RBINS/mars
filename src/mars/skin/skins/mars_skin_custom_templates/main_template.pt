@@ -77,7 +77,7 @@
                tal:attributes="class python:show_border and 'documentEditable' or ''">
 
             <div id="edit-bar"
-                 tal:condition="show_border"
+                 tal:condition="python:show_border and checkPermission('Review portal content', context)"
                  tal:content="structure provider:plone.contentviews"/>
 
             <div metal:use-macro="context/global_statusmessage/macros/portal_message">
