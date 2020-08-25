@@ -193,4 +193,3 @@ class CSS(ViewletBase):
 
     def available(self):
         return True
-# vim:set et sts=4 ts=4 tw=80:

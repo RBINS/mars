@@ -96,4 +96,11 @@
       handler=".upgrade.v1023"
       profile="mars.policy:default"
   />
+  <genericsetup:upgradeStep
+      source="1023" destination="1024"
+      title="Add view_without_contents to dexterity folderish"
+      description=""
+      handler=".upgrade.v1024"
+      profile="mars.policy:default"
+  />
 </configure>

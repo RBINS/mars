@@ -87,6 +87,7 @@ setup(name='mars',
           'zope.interface',
           'z3c.jbot',
           'zope.testing',
+          'six',
       ],
       entry_points={
           'z3c.autoinclude.plugin': [

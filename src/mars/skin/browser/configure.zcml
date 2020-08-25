@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:faceted="http://namespaces.zope.org/faceted"
     i18n_domain="mars.skin">
   <!-- ' mars.skin' Zope 3 browser layer -->
   <include file="faceted.zcml"/>
@@ -95,5 +96,21 @@
   <class class="collective.tablepage.browser.multiple_tables.MultipleTablesView">
     <implements interface="plone.app.layout.globals.interfaces.IViewView"/>
   </class>
+
+  <browser:page
+        for="plone.dexterity.interfaces.IDexterityContainer"
+        name="view_without_contents"
+        class="plone.dexterity.browser.view.DefaultView"
+        template="container_without_content.pt"
+        permission="zope2.View"
+        />
+
+<!--  <faceted:view-->
+<!--      name="faceted-folder-with-image-preview-items-and-object-fields-before"-->
+<!--      class="plone.dexterity.browser.view.DefaultView"-->
+<!--      template="folder-with-image-preview-items-and-object-fields-before.pt"-->
+<!--      title="Faceted folder items with an image preview with object fields before"-->
+<!--      permission="zope2.View">-->
+<!--  </faceted:view>-->
 
 </configure>

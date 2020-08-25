@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+  xmlns:tal="http://xml.zope.org/namespaces/tal"
+  xmlns:metal="http://xml.zope.org/namespaces/metal"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  metal:use-macro="context/main_template/macros/master"
+  i18n:domain="eea">
+
+<body>
+  <metal:content-core fill-slot="content-core">
+    <metal:block define-macro="content-core">
+
+      <tal:block repeat="widget view/widgets/values">
+          <tal:block tal:condition="python:widget.__name__ not in ('IBasic.title', 'IBasic.description', 'title', 'description',)">
+              <tal:widget tal:replace="structure widget/@@ploneform-render-widget"/>
+          </tal:block>
+      </tal:block>
+
+      <fieldset tal:repeat="group view/groups"
+                tal:attributes="id python:''.join((group.prefix, 'groups.', group.__name__)).replace('.', '-')">
+          <legend tal:content="group/label" />
+          <tal:block tal:repeat="widget group/widgets/values">
+              <tal:widget tal:replace="structure widget/@@ploneform-render-widget"/>
+          </tal:block>
+      </fieldset>
+
+      <div tal:define="
+        folderContents folderContents | python:context.getFolderContents();
+        Batch python:modules['Products.CMFPlone'].Batch;
+        b_start python:request.get('b_start', 0);
+        batch python:isinstance(folderContents, Batch) and folderContents or Batch(folderContents, 100, int(b_start), orphan=2);">
+
+        <div metal:use-macro="context/batch_macros/macros/navigation" />
+
+        <div class="eea-preview-items">
+          <tal:entries repeat="brain batch">
+            <tal:entry
+              define="doc brain/getObject|nothing"
+              condition="exists:doc/@@faceted-folder-with-image-preview-item"
+              replace="structure doc/@@faceted-folder-with-image-preview-item" />
+          </tal:entries>
+        </div>
+
+        <div metal:use-macro="context/batch_macros/macros/navigation" />
+
+      </div>
+
+    </metal:block>
+  </metal:content-core>
+</body>
+</html>

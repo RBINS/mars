@@ -572,3 +572,10 @@ def v1023(context):
     tool = IUpgradeTool(context)
     tool.installProduct('Products.PloneFormGen')
     tool.installProduct('collective.pfg.dexterity')
+
+
+def v1024(context):
+    portal_types = getToolByName(context, 'portal_types')
+    for portal_type in portal_types:
+        if getattr(portal_types[portal_type], 'klass', '') == 'plone.dexterity.content.Container':
+            portal_types[portal_type].view_methods = portal_types[portal_type].view_methods + ('view_without_contents',)
