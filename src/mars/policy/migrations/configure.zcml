@@ -103,4 +103,11 @@
       handler=".upgrade.v1024"
       profile="mars.policy:default"
   />
+  <genericsetup:upgradeStep
+      source="1024" destination="1025"
+      title="Fix mixed_contents"
+      description=""
+      handler=".upgrade.v1025"
+      profile="mars.policy:default"
+  />
 </configure>
