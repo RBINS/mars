@@ -148,3 +148,12 @@ div.faceted-center-widgets div.faceted-widget{
 span.text-field {
   white-space: pre;
 }
+
+.documentDescription {
+  white-space: pre-line;
+}
+
+#content pre, .portletStaticText pre {
+  color: inherit;
+  background-color: inherit;
+}
