@@ -144,3 +144,7 @@ div.faceted-center-widgets div.faceted-widget{
 #portal-siteactions #siteaction-plone-link a:hover {
   color: transparent;
 }
+
+span.text-field {
+  white-space: pre;
+}
