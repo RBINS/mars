@@ -4,6 +4,7 @@ __docformat__ = 'restructuredtext en'
 
 
 from plone.memoize import instance
+import time
 import logging
 from zope import component, interface
 from zope.component import getAdapter, getMultiAdapter, queryMultiAdapter, getUtility
@@ -378,6 +379,17 @@ class IExportUtils(interface.Interface):
 
     def output_date():
         """."""
+
+
+class ISleep(interface.Interface):
+    """."""
+
+
+class Sleep(BrowserView):
+
+    def __call__(self, timer=1):
+        time.sleep(float(timer))
+        return 'OK'
 
 
 class ExportUtils(BrowserView):

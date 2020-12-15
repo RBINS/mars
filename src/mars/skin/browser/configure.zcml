@@ -84,6 +84,14 @@
       allowed_interface=".view.IExportUtils"
       permission="zope2.View"/>
 
+   <browser:page
+      for="*"
+      layer=".interfaces.IThemeSpecific"
+      class=".view.Sleep"
+      name="mars_sleep"
+      allowed_interface=".view.ISleep"
+      permission="cmf.ManagePortal"/>
+
   <browser:viewlet
       name="collective.tablepage.switchtable"
       manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
