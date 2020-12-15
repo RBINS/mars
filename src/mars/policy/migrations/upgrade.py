@@ -650,7 +650,10 @@ def v1025(context):
             "ContentWellPortlets.FooterPortletManager5",
             "ContentWellPortlets.FooterPortletManager6",
         ]:
-            manager = getUtility(IPortletManager, name=manager_name, context=context)
+            try:
+                manager = getUtility(IPortletManager, name=manager_name, context=context)
+            except Exception:
+                continue
             mapping = getMultiAdapter((context, manager), IPortletAssignmentMapping)
 
             for id, assignment in mapping.items():
