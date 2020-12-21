@@ -1,5 +1,5 @@
 <metadata>
-  <version>1023</version>
+  <version>1024</version>
   <dependencies>
     <!-- GenericSetup dependencies -->
     <dependency>profile-Products.ATExtensions:default</dependency>
@@ -15,6 +15,7 @@
     <dependency>profile-Products.csvreplicata:default</dependency>
 
     <dependency>profile-eea.facetednavigation:default</dependency>
+    <dependency>profile-collective.geo.faceted:default</dependency>
 
     <dependency>profile-plone.app.blob:default</dependency>
     <dependency>profile-plone.app.dexterity:default</dependency>

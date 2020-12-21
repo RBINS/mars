@@ -110,4 +110,11 @@
       handler=".upgrade.v1025"
       profile="mars.policy:default"
   />
+  <genericsetup:upgradeStep
+      source="1025" destination="1026"
+      title="Added collective.geo.faceted"
+      description=""
+      handler=".upgrade.v1026"
+      profile="mars.policy:default"
+  />
 </configure>

@@ -669,3 +669,11 @@ def v1025(context):
     for brain in brains:
         obj = brain.getObject()
         replace_portlet_text(obj)
+
+
+def v1026(context):
+    quickinstall_addons(
+        context,
+        install=['collective.geo.faceted'],
+    )
+    log('Upgrade v1026 runned.')
