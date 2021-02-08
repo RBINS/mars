@@ -10,6 +10,9 @@
   <five:registerPackage package="." initialize=".skin.initialize" />
   <include package=".browser" />
   <include file="skins.zcml" />
+
+  <include package="archetypes.schemaextender" />
+
   <browser:resourceDirectory
     name="marsapp.content.icons"
     directory="skins/mars_skin_custom_images"
@@ -21,6 +24,13 @@
     component=".vocabulary.LocalSubjectsVocabulary"
     name="mars.localKeywords"
     />
+
+  <adapter
+      for="Products.CMFBibliographyAT.interface.IArticleReference"
+      provides="archetypes.schemaextender.interfaces.ISchemaExtender"
+      name="instancebiblio.articlereferencekeywordsext"
+      factory=".at.ArticleReferenceKeywordsExtender"/>
+
       <!--
     provides="zope.schema.interfaces.IContextSourceBinder"
       <include package="collective.monkeypatcher" />
