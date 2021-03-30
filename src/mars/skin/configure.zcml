@@ -6,6 +6,7 @@
   xmlns:cmf="http://namespaces.zope.org/cmf"
   xmlns:monkey="http://namespaces.plone.org/monkey"
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:z3c="http://namespaces.zope.org/z3c"
   i18n_domain="mars.skin">
   <five:registerPackage package="." initialize=".skin.initialize" />
   <include package=".browser" />
@@ -30,6 +31,34 @@
       provides="archetypes.schemaextender.interfaces.ISchemaExtender"
       name="instancebiblio.articlereferencekeywordsext"
       factory=".at.ArticleReferenceKeywordsExtender"/>
+
+  <utility
+      name="mars._bootstrapfields.URL"
+      component=".fields.URLFactory"
+      />
+  <adapter
+      factory=".fields.URLFieldWidget"
+      for="zope.schema.interfaces.IURI
+           mars.skin.interfaces.ILayer"
+      />
+  <z3c:widgetTemplate
+      mode="display"
+      widget=".fields.IURLWidget"
+      layer="mars.skin.interfaces.ILayer"
+      template="browser/url_display.pt"
+      />
+  <z3c:widgetTemplate
+      mode="input"
+      widget=".fields.IURLWidget"
+      layer="mars.skin.interfaces.ILayer"
+      template="browser/text_input.pt"
+      />
+  <z3c:widgetTemplate
+      mode="hidden"
+      widget=".fields.IURLWidget"
+      layer="mars.skin.interfaces.ILayer"
+      template="browser/text_hidden.pt"
+      />
 
       <!--
     provides="zope.schema.interfaces.IContextSourceBinder"
