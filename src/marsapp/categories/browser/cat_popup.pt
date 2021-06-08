@@ -17,11 +17,19 @@
                   title python:widget.Label(at_obj);
                   search_index view/search_index;
                   search_text view/search_text;
+                  wildcardable_indexes view/wildcardable_indexes;
+                  wildcardable_indexes_as_json view/wildcardable_indexes_as_json;
                   available_indexes widget/available_indexes;
                   allow_browse widget/allow_browse;
                   image_portal_types widget/image_portal_types;
                   image_method widget/image_method|string:image_icon;
                   ">
+
+    <div id="atrefbrowserpopup-top-helper"
+         tal:condition="widget/top_popup_helper"
+
+         tal:content="structure widget/top_popup_helper"
+         i18n:translate="" />
 
     <div id="messageWrapper" style="position: relative">
       <div style="position: absolute; width: 100%">
@@ -79,8 +87,10 @@
                name="searchValue"
                size="25"
                title="Search Site"
-               class="inputLabel"
+               placeholder="Search Site"
                value=""
+               i18n:attributes="title referencebrowser_search_site;
+                                placeholder referencebrowser_search_site"
                tal:attributes="value search_text;"
                />
         <input class="searchButton"
@@ -90,6 +100,14 @@
                i18n:domain="plone"
                i18n:attributes="value label_search;"
                />
+  &nbsp;<span style="font-weight: bold; color: grey; border-bottom: 1px dotted; cursor: help;"
+              title="#"
+              id="searchWildcardHelp"
+              tal:condition="python: search_index in wildcardable_indexes"
+              i18n:attributes="title"
+              data-wildcardableIndexes="#"
+              tal:attributes="title view/wildcard_help_message;
+                              data-wildcardableIndexes wildcardable_indexes_as_json">?</span>
       </div>
      </tal:formactions>
 
@@ -107,7 +125,7 @@
             tal:attributes="value view/close_window" />
     </form>
     <!-- actual list of objects, either searchresults or folder contents -->
-    <tal:block tal:define="batch view/getResult;">
+    <div id="atrbResults" tal:define="batch view/getResult;">
 
       <!-- history -->
       <div tal:condition="python:widget.history_length > 0" style="float: right; clear: right;">
@@ -132,17 +150,10 @@
             i18n:translate="you_are_here">You are here:</span>
         <tal:crumbs tal:repeat="crumb view/breadcrumbs">
 
-        <a class="browsesite" tal:condition="not: repeat/crumb/end"
+        <a class="browsesite"
             tal:attributes="href crumb/absolute_url;
                             rel crumb/Title">
-            <span tal:content="string:${crumb/Title}">
-              Breadcrumb Title
-            </span>
-          </a>
-         <a class="browsesite" tal:condition="repeat/crumb/end"
-            tal:attributes="href crumb/absolute_url;
-                            rel crumb/Title">
-            <span tal:content="string:${crumb/Title}">
+            <span i18n:translate="" tal:content="crumb/Title">
               Breadcrumb Title
             </span>
           </a>
@@ -167,36 +178,52 @@
 
       <!-- object list -->
       <p tal:condition="not:view/has_queryresults"
+         id="atrbNoResults"
          i18n:translate="referencebrowser_no_items_found">No items found.</p>
 
       <table class="group" width="100%" cellspacing="0" cellpadding="2"
-         tal:condition="batch">
+         tal:condition="batch"
+         id="atrbResultsTable">
+         <colgroup>
+           <col width="20px" />
+           <col />
+         </colgroup>
     <tbody>
-      <tal:results tal:repeat="item batch">
+      <tal:results tal:define="plone_view context/@@plone;
+                               normalizeString nocall:plone_view/normalizeString;"
+                   tal:repeat="info batch">
         <tal:row
         tal:define="
+            item info/item;
             uid python:view.getUid(item);
             isNotSelf python:view.isNotSelf(item);
-            referenceable python:view.isReferencable(item);
+            referenceable info/referenceable;
+            browsable python:allow_browse and info['browsable'];
             title_or_id python:view.title_or_id(item);
             color view/discreetColor;">
 
-          <tr tal:define="oddrow repeat/item/odd"
+          <tr tal:define="oddrow repeat/info/odd"
           tal:attributes="class python:oddrow and 'even' or 'odd'">
 
         <td>
           <tal:referenceable tal:condition="referenceable">
-            <input type="checkbox" class="insertreference" tal:attributes="rel uid; id uid" />
+            <input type="checkbox" class="insertreference" tal:attributes="id uid; rel uid" />
           </tal:referenceable>
         </td>
 
         <td tal:condition="image_portal_types">
-          <img tal:condition="python: item.Type in image_portal_types"
-               tal:attributes="src string:${item/getURL}/$image_method"
-               />
+          <label tal:omit-tag="not: referenceable"
+                 tal:attributes="for uid;">
+            <img tal:condition="python: item.Type in image_portal_types"
+                 tal:attributes="src string:${item/getURL}/$image_method"
+                 />
+          </label>
         </td>
-        <td tal:attributes="class python:'contenttype-' + item.portal_type.lower()">
-          <a class="browsesite" tal:condition="python: item.is_folderish and allow_browse"
+        <td tal:attributes="class python:'contenttype-' + normalizeString(item.portal_type)">
+          <img tal:define="icon item/getIcon"
+               tal:condition="icon"
+               tal:attributes="src string:${view/portal_url}/$icon" />
+          <a class="browsesite" tal:condition="browsable"
              tal:attributes="
              href python:view.genRefBrowserUrl(item.getURL());
              rel item/Title">
@@ -206,17 +233,24 @@
             <span tal:condition="not:referenceable" tal:content="title_or_id" />
           </a>
           <tal:foldercheck tal:condition="
-              python:not((item.is_folderish and allow_browse) and isNotSelf)" >
+              python:not(browsable and isNotSelf)" >
             <label tal:condition="referenceable"
                    tal:attributes="for uid;"
                    tal:content="python: marsv.get_obj_crumb(item.getObject(), sep='/')">Title
             </label>
-            <span tal:condition="not:referenceable" tal:content="title_or_id" />
+            <span tal:condition="not:referenceable"
+                  tal:content="title_or_id" />
           </tal:foldercheck>
+          <a class="discreet"
+             tal:condition="referenceable"
+             onclick="window.open(jQuery(this).attr('href'));return false;"
+             tal:attributes="href python:view.preview_url(item)">
+            (<span i18n:translate="" i18n:domain="plone">View</span>)
+          </a>
 
           <div tal:condition="widget/show_review_state">
             <span tal:define="state item/review_state"
-              tal:attributes="class string:state-$state"
+              tal:attributes="class python:'state-' + normalizeString(state)"
               i18n:translate="" i18n:domain="plone"
               tal:content="state"
               />
@@ -237,6 +271,11 @@
     <div metal:use-macro="here/batch_macros/macros/navigation" />
       </tal:var>
 
-    </tal:block>
+    <div id="atrefbrowserpopup-bottom-helper"
+         tal:condition="widget/bottom_popup_helper"
+         tal:content="structure widget/bottom_popup_helper"
+         i18n:translate="" />
+
+    </div>
   </body>
 </html>
