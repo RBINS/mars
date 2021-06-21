@@ -4,11 +4,13 @@ import zope.interface
 import zope.schema.interfaces
 from zope import schema
 
+import plone.supermodel.exportimport
 from plone.schemaeditor.fields import FieldFactory
+from plone.formwidget.contenttree import UUIDSourceBinder
 from z3c.form import interfaces
 from z3c.form.widget import Widget, FieldWidget
 from z3c.form.browser import widget
-
+from z3c.relationfield.schema import RelationChoice, RelationList
 
 
 URLFactory = FieldFactory(
@@ -37,3 +39,9 @@ class URLWidget(widget.HTMLTextInputWidget, Widget):
 def URLFieldWidget(field, request):
     """IFieldWidget factory for URLWidget."""
     return FieldWidget(field, URLWidget(request))
+
+
+RelationListFactory = FieldFactory(RelationList, u'Relations', value_type=RelationChoice(source=UUIDSourceBinder()))
+
+RelationListHandler = plone.supermodel.exportimport.BaseHandler(RelationList)
+RelationChoiceHandler = plone.supermodel.exportimport.ChoiceHandler(RelationChoice)

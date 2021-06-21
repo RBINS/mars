@@ -60,6 +60,19 @@
       template="browser/text_hidden.pt"
       />
 
+    <utility
+      name="mars._bootstrapfields.RelationList"
+      component=".fields.RelationListFactory"
+      />
+    <utility
+        name="z3c.relationfield.schema.RelationList"
+        component=".fields.RelationListHandler"
+        />
+    <utility
+        name="z3c.relationfield.schema.RelationChoice"
+        component=".fields.RelationChoiceHandler"
+        />
+
       <!--
     provides="zope.schema.interfaces.IContextSourceBinder"
       <include package="collective.monkeypatcher" />
