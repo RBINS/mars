@@ -10,6 +10,7 @@
   <include package="Products.CMFCore" file="permissions.zcml" />
   <include package="Products.PloneFormGen" file="configure.zcml"/>
   <include package="collective.ckeditor"/>
+  <include package="collective.exportimport" file="configure.zcml"/>
   <include package="collective.tablepage" file="configure.zcml"/>
   <include package="collective.taxonomy" file="configure.zcml"/>
   <include package="collective.uploadify" file="configure.zcml"/>
