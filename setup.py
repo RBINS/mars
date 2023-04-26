@@ -92,6 +92,7 @@ setup(name='mars',
           'zope.testing',
           'six',
           'collective.importexport',
+          'collective.exportimport',
       ],
       entry_points={
           'z3c.autoinclude.plugin': [
